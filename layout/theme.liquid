@@ -237,10 +237,12 @@
     }
     </script>
 
-    <& -- Include jQuery -- -%>
+    {%
+      ###############################
+      # Include jQuery and GSAP plugins
+      ###############################
+    %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" defer="defer"></script>
-
-    <% -- Include GSAP Scrolltrigger -- -%>
     <script src="{{ 'gsap.min.js' | asset_url }}" defer></script>
     <script src="{{ 'ScrollTrigger.min.js' | asset_url }}" defer></script>
     <script src="{{ 'MotionPathPlugin.min.js' | asset_url }}" defer></script>
