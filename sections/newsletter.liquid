@@ -15,11 +15,11 @@
   }
 {%- endstyle -%}
 
-<div class="newsletter footer-newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
+<div class="newsletter footer-newsletter">
 
-  <img class="cloud cloud-rainbow cloud-footer" src="{{ 'cloud-rainbow.svg' | asset_url }}>" width="808" height="328" role="presentation" alt="colorful cloud" />
+  <img class="cloud cloud-rainbow cloud-footer fade-in-left" src="{{ 'cloud-rainbow.svg' | asset_url }}>" width="808" height="328" role="presentation" alt="colorful cloud" />
 
-  <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
+  <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate section-{{ section.id }}-padding">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when '@app' -%}
@@ -131,12 +131,6 @@
       ],
       "default": "background-1",
       "label": "t:sections.all.colors.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "full_width",
-      "default": true,
-      "label": "t:sections.newsletter.settings.full_width.label"
     },
     {
       "type": "paragraph",
