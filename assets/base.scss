@@ -3155,3 +3155,21 @@ details-disclosure > details {
     100% { transform: rotate(360deg) translateX(1em) rotate(-360deg) scale(1.2); }
   }
 }
+/* ---------------- Logo ---------------- */
+
+.logo {
+    display:block;
+
+    &.logo-white {
+        path,
+        rect {
+            fill:#ffffff;
+        }
+    }
+    &.logo-blue {
+        path,
+        rect {
+            fill:#00142A;
+        }
+    }
+}

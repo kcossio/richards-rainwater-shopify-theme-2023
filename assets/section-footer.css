@@ -1,6 +1,129 @@
 @charset "UTF-8";
-.footer .logo path {
-  fill: #ffffff;
+:root {
+  --font-body-family: $tt_commons, sans-serif;
+}
+
+/* ------ Font Includes ------ */
+@font-face {
+  font-family: "VadelmaLight";
+  src: url("font_VadelmaLight.woff2") format("woff2"), url("font_VadelmaLight.woff2") format("woff");
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("webFonts/TTCommonsProMedium/font.woff2") format("woff2"), url("webFonts/TTCommonsProMedium/font.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("webFonts/TTCommonsProMediumItalic/font.woff2") format("woff2"), url("webFonts/TTCommonsProMediumItalic/font.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("webFonts/TTCommonsProDemiBold/font.woff2") format("woff2"), url("webFonts/TTCommonsProDemiBold/font.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("webFonts/TTCommonsProDemiBoldItalic/font.woff2") format("woff2"), url("webFonts/TTCommonsProDemiBoldItalic/font.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("webFonts/TTCommonsProBold/font.woff2") format("woff2"), url("webFonts/TTCommonsProBold/font.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("webFonts/TTCommonsProBoldItalic/font.woff2") format("woff2"), url("webFonts/TTCommonsProBoldItalic/font.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("webFonts/TTCommonsProBlack/font.woff2") format("woff2"), url("webFonts/TTCommonsProBlack/font.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("webFonts/TTCommonsProBlackItalic/font.woff2") format("woff2"), url("webFonts/TTCommonsProBlackItalic/font.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+}
+/*
+@font-face {
+  font-family: "TTCommonsProThin";
+  src: url('webFonts/TTCommonsProThin/font.woff2') format('woff2'), url('webFonts/TTCommonsProThin/font.woff') format('woff');
+}
+@font-face {
+  font-family: "TTCommonsProThinItalic";
+  src: url('webFonts/TTCommonsProThinItalic/font.woff2') format('woff2'), url('webFonts/TTCommonsProThinItalic/font.woff') format('woff');
+}
+
+@font-face {
+  font-family: "TTCommonsProExtraLight";
+  src: url('webFonts/TTCommonsProExtraLight/font.woff2') format('woff2'), url('webFonts/TTCommonsProExtraLight/font.woff') format('woff');
+}
+@font-face {
+  font-family: "TTCommonsProExtraLightItalic";
+  src: url('webFonts/TTCommonsProExtraLightItalic/font.woff2') format('woff2'), url('webFonts/TTCommonsProExtraLightItalic/font.woff') format('woff');
+}
+
+@font-face {
+  font-family: "TTCommonsProLight";
+  src: url('webFonts/TTCommonsProLight/font.woff2') format('woff2'), url('webFonts/TTCommonsProLight/font.woff') format('woff');
+} 
+@font-face {
+  font-family: "TTCommonsProLightItalic";
+  src: url('webFonts/TTCommonsProLightItalic/font.woff2') format('woff2'), url('webFonts/TTCommonsProLightItalic/font.woff') format('woff');
+}
+
+@font-face {
+  font-family: "TTCommonsProRegular";
+  src: url('webFonts/TTCommonsProRegular/font.woff2') format('woff2'), url('webFonts/TTCommonsProRegular/font.woff') format('woff');
+}
+@font-face {
+  font-family: "TTCommonsProItalic";
+  src: url('webFonts/TTCommonsProItalic/font.woff2') format('woff2'), url('webFonts/TTCommonsProItalic/font.woff') format('woff');
+}
+
+@font-face {
+  font-family: "TTCommonsProNormal";
+  src: url('webFonts/TTCommonsProNormal/font.woff2') format('woff2'), url('webFonts/TTCommonsProNormal/font.woff') format('woff');
+}
+@font-face {
+  font-family: "TTCommonsProNormalItalic";
+  src: url('webFonts/TTCommonsProNormalItalic/font.woff2') format('woff2'), url('webFonts/TTCommonsProNormalItalic/font.woff') format('woff');
+}
+
+@font-face {
+  font-family: "TTCommonsProExtraBold";
+  src: url('webFonts/TTCommonsProExtraBold/font.woff2') format('woff2'), url('webFonts/TTCommonsProExtraBold/font.woff') format('woff');
+}
+@font-face {
+  font-family: "TTCommonsProExtraBoldItalic";
+  src: url('webFonts/TTCommonsProExtraBoldItalic/font.woff2') format('woff2'), url('webFonts/TTCommonsProExtraBoldItalic/font.woff') format('woff');
+}
+
+@font-face {
+  font-family: "TTCommonsProExtraBlack";
+  src: url('webFonts/TTCommonsProExtraBlack/font.woff2') format('woff2'), url('webFonts/TTCommonsProExtraBlack/font.woff') format('woff');
+}
+@font-face {
+  font-family: "TTCommonsProExtraBlackItalic";
+  src: url('webFonts/TTCommonsProExtraBlackItalic/font.woff2') format('woff2'), url('webFonts/TTCommonsProExtraBlackItalic/font.woff') format('woff');
+}
+
+*/
+.footer {
+  background: #00142A;
+  color: #ffffff;
 }
 
 .footer {
