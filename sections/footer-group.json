@@ -8,14 +8,14 @@
         "sections--18829367181599__959c0c66-dc08-4cf1-8373-327213399d07-1683147192a32e07d6-0": {
           "type": "heading",
           "settings": {
-            "heading": "Subscribe to our emails",
+            "heading": "Thirsty 4 More?",
             "heading_size": "h1"
           }
         },
         "sections--18829367181599__959c0c66-dc08-4cf1-8373-327213399d07-1683147192a32e07d6-1": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+            "text": "<p>Join the rainmaker movement.<\/p>"
           }
         },
         "sections--18829367181599__959c0c66-dc08-4cf1-8373-327213399d07-1683147192a32e07d6-2": {
@@ -40,8 +40,6 @@
       "type": "footer",
       "settings": {
         "color_scheme": "background-1",
-        "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": true,
