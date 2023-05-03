@@ -8,11 +8,19 @@
 
 .inner {
     width:1320px;
+    max-width:100%;
     padding:0px 40px;
     margin:0px auto;
-
 }
-
+.wide {
+    width:1320px;
+    max-width:100%;
+    padding:0px 40px;
+    margin:0px auto;
+}
+.full {
+    width:100%;
+}
 /* Color custom properties */
 
 :root,
