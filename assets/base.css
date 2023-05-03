@@ -121,6 +121,12 @@
 }
 
 */
+.inner {
+  width: 1320px;
+  padding: 0px 40px;
+  margin: 0px auto;
+}
+
 /* Color custom properties */
 :root,
 .color-background-1 {
