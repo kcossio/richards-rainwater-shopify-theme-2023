@@ -16,6 +16,9 @@
 {%- endstyle -%}
 
 <div class="newsletter footer-newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
+
+  <img class="cloud cloud-rainbow cloud-footer" src="{{ 'cloud-rainbow.svg' | asset_url }}>" width="808" height="328" role="presentation" alt="colorful cloud" />
+
   <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
