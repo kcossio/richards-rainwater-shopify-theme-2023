@@ -213,7 +213,7 @@
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s 0s ease-in-out;
 }
 .footer .footer-top ul.footer-menu li a:hover {
   background-position: 0;
