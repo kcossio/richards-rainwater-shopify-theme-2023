@@ -28,6 +28,10 @@
   color: #00142A;
 }
 
+.white {
+  color: #ffffff;
+}
+
 :root {
   --font-body-family: "TT Commons", sans-serif;
 }

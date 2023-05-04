@@ -27,11 +27,13 @@
   }
 {%- endstyle -%}
 
-<footer class="footer site-footer section-{{ section.id }}-padding">
+<footer class="footer site-footer">
+
   <div class="footer-wrap wide">
+
     <div class="footer-top">
       <div class="footer-top-left">
-        <h2 class="message">
+        <h2 class="footer-messaging">
           <span class="medium-blue">Renewable.</span>
           <span class="light-blue">Refreshing.</span>
           <span class="white">Rainwater.</span>
@@ -39,6 +41,7 @@
         {%- render 'social-icons' -%}
       </div>
     </div><!--End footer-top-->
+
     <div class="footer-bottom">
       {% render 'logo', name: 'white' %}
       <div class="terms-policies">
@@ -60,23 +63,10 @@
         {%- endif -%}
       </div>
     </div><!--End footer-bottom-->
+
   </div><!--End footer-wrap wide-->
 
   
-  
- 
-
-  <div class="footer__content-bottom">
-    <div class="footer__content-bottom-wrapper page-width">
-      
-      
-    </div>
-    <div class="footer__content-bottom-wrapper page-width">
-      <div class="footer__copyright caption">
-           
-      </div>
-    </div>
-  </div>
 </footer>
 
 
