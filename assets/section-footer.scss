@@ -35,6 +35,12 @@
       display:flex;
       flex-wrap:wrap;
       width:100%;
+      border-top:1px solid $light_blue;
+      padding:34px 0px 0px 0px;
+
+      @include breakpoint(tablet) {
+        padding-top:42px;
+      }
     }
 }
 
@@ -113,17 +119,7 @@
       padding: 0;
     }
   }
-  @keyframes animateLocalization {
-    0% {
-      opacity: 0;
-      transform: translateY(0);
-    }
   
-    100% {
-      opacity: 1;
-      transform: translateY(-1rem);
-    }
-  }
   
   
   

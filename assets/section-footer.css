@@ -190,6 +190,13 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  border-top: 1px solid #009AE1;
+  padding: 34px 0px 0px 0px;
+}
+@media (min-width: 768px) {
+  .footer .footer-bottom {
+    padding-top: 42px;
+  }
 }
 
 @media screen and (max-width: 749px) {
@@ -248,15 +255,5 @@
 @media screen and (min-width: 750px) {
   .policies li a {
     padding: 0;
-  }
-}
-@keyframes animateLocalization {
-  0% {
-    opacity: 0;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(-1rem);
   }
 }
