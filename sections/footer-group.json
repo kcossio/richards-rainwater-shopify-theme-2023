@@ -36,6 +36,17 @@
     },
     "footer": {
       "type": "footer",
+      "blocks": {
+        "2a6e9e49-054b-4d9e-a2d1-a6d18e56c2d3": {
+          "type": "footer_menu",
+          "settings": {
+            "footer_menu": "footer"
+          }
+        }
+      },
+      "block_order": [
+        "2a6e9e49-054b-4d9e-a2d1-a6d18e56c2d3"
+      ],
       "settings": {
         "show_social": true,
         "show_policy": true
