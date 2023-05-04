@@ -15,6 +15,9 @@
     .footer-top {
       display:flex;
       flex-wrap:wrap;
+      align-items:flex-start;
+      align-content:flex-start;
+      justify-content: space-between;
       width:100%;
 
       h2.footer-messaging {
@@ -43,6 +46,8 @@
             font-size:22.5px;
             line-height:1em;
             margin-bottom:22px;
+            text-decoration:none;
+            position:relative;
           }
 
           @include breakpoint(tablet) {
