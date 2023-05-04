@@ -1,3 +1,32 @@
+.red {
+  color: #E31C11;
+}
+
+.orange {
+  color: #FFAD00;
+}
+
+.pink {
+  color: #E74F6C;
+}
+
+.light-blue {
+  color: #009AE1;
+}
+
+.medium-blue {
+  color: #004894;
+}
+
+.dark-blue {
+  color: #000F44;
+}
+
+.black,
+.darkest-blue {
+  color: #00142A;
+}
+
 :root {
   --font-body-family: "TT Commons", sans-serif;
 }

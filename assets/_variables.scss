@@ -14,6 +14,29 @@ $medium_blue: #004894;
 $dark_blue: #000F44;
 $darkest_blue: #00142A;
 
+.red {
+    color: $red;
+}
+.orange {
+    color:$orange;
+}
+.pink {
+    color:$pink;
+}
+.light-blue {
+    color:$light_blue;
+}
+.medium-blue {
+    color:$medium_blue;
+}
+.dark-blue {
+    color:$dark_blue;
+}
+.black,
+.darkest-blue {
+    color:$darkest_blue;
+}
+
 
 // ----- CSS Variables ---- //
 

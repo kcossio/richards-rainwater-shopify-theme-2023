@@ -31,11 +31,34 @@
   <div class="footer-wrap wide">
     <div class="footer-top">
       <div class="footer-top-left">
+        <h2 class="message">
+          <span class="medium-blue">Renewable.</span>
+          <span class="light-blue">Refreshing.</span>
+          <span class="white">Rainwater.</span>
+        </h2>
         {%- render 'social-icons' -%}
       </div>
     </div><!--End footer-top-->
     <div class="footer-bottom">
       {% render 'logo', name: 'white' %}
+      <div class="terms-policies">
+        <small class="copyright__content">
+          &copy; {{ 'now' | date: '%Y' }}, {{ "Richard's" | link_to: routes.root_url -}}
+        </small>   
+        {%- if section.settings.show_policy -%}
+          <ul class="policies list-unstyled">
+            {%- for policy in shop.policies -%}
+              {%- if policy != blank -%}
+                <li>
+                  <small class="copyright__content"
+                    ><a href="{{ policy.url }}">{{ policy.title }}</a></small
+                  >
+                </li>
+              {%- endif -%}
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+      </div>
     </div><!--End footer-bottom-->
   </div><!--End footer-wrap wide-->
 
@@ -50,23 +73,7 @@
     </div>
     <div class="footer__content-bottom-wrapper page-width">
       <div class="footer__copyright caption">
-        <small class="copyright__content"
-          >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
-        </small>
-        <small class="copyright__content">{{ powered_by_link }}</small>
-        {%- if section.settings.show_policy -%}
-          <ul class="policies list-unstyled">
-            {%- for policy in shop.policies -%}
-              {%- if policy != blank -%}
-                <li>
-                  <small class="copyright__content"
-                    ><a href="{{ policy.url }}">{{ policy.title }}</a></small
-                  >
-                </li>
-              {%- endif -%}
-            {%- endfor -%}
-          </ul>
-        {%- endif -%}
+           
       </div>
     </div>
   </div>
