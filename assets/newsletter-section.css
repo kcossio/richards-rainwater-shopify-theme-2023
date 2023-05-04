@@ -19,8 +19,12 @@
   max-width: 70rem;
   margin-left: auto;
   margin-right: auto;
+  
 }
-
+.newsletter__subheading p {
+  font-size:17.25px;
+  font-weight:600;
+}
 .newsletter__wrapper .newsletter-form__field-wrapper {
   max-width: 36rem;
 }
