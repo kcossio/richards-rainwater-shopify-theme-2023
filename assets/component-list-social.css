@@ -1,21 +1,21 @@
 .red {
-  color: #E31C11;
+  color: #DE0000;
 }
 
 .orange {
-  color: #FFAD00;
+  color: #FFA500;
 }
 
 .pink {
-  color: #E74F6C;
+  color: #FC4A6A;
 }
 
 .light-blue {
-  color: #009AE1;
+  color: #0094DA;
 }
 
 .medium-blue {
-  color: #004894;
+  color: #0040A8;
 }
 
 .dark-blue {
@@ -184,16 +184,16 @@
   aspect-ratio: 1/1;
 }
 .list-social__link.facebook {
-  background: #E31C11;
+  background: #DE0000;
 }
 .list-social__link.instagram {
-  background: #E74F6C;
+  background: #FC4A6A;
 }
 .list-social__link.twitter {
-  background: #009AE1;
+  background: #0094DA;
 }
 .list-social__link.tiktok {
-  background: #FFAD00;
+  background: #FFA500;
 }
 
 .list-social__link:hover .icon {
