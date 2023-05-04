@@ -52,9 +52,9 @@
 
             background-image: linear-gradient(
               to right,
-              #ffffff,
-              #ffffff 50%,
-              $light_blue 50%
+              $light_blue,
+              $light_blue 50%,
+              $white 50%
             );
             background-size: 200% 100%;
             background-position: -100%;

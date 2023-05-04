@@ -207,7 +207,7 @@
   margin-bottom: 22px;
   text-decoration: none;
   position: relative;
-  background-image: linear-gradient(to right, #ffffff, #ffffff 50%, #0094DA 50%);
+  background-image: linear-gradient(to right, #0094DA, #0094DA 50%, #ffffff 50%);
   background-size: 200% 100%;
   background-position: -100%;
   -webkit-background-clip: text;
