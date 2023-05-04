@@ -28,21 +28,7 @@
     aspect-ratio:1 / 1;
     margin:0px 6px;
 
-    background-image: linear-gradient(
-      to right,
-      #ffffff,
-      #ffffff 50%,
-      $light_blue 50%
-    );
-    background-size: 200% 100%;
-    background-position: -100%;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all 0.3s ease-in-out;
-
-    &:hover {
-      background-position:0;
-    }
+    
 
     @include breakpoint(tablet) {
       margin:0px 8px 0px 0px;

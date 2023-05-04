@@ -207,6 +207,16 @@
   margin-bottom: 22px;
   text-decoration: none;
   position: relative;
+  background-image: linear-gradient(to right, #ffffff, #ffffff 50%, #0094DA 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.footer .footer-top ul.footer-menu li a:hover {
+  background-position: 0;
 }
 @media (min-width: 768px) {
   .footer .footer-top ul.footer-menu li {
