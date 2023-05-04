@@ -27,7 +27,11 @@
   }
 {%- endstyle -%}
 
-<footer class="footer site-footer section-{{ section.id }}-padding wide">
+<footer class="footer site-footer section-{{ section.id }}-padding">
+  <div class="footer-wrap wide">
+    <div class="footer-top">
+    </div><!--End footer-top-->
+  </div><!--End footer-wrap wide-->
 
   {% render 'logo', name: 'white' %} 
   
@@ -41,14 +45,13 @@
       assign brand_empty = true
     endif
 
-    if section.blocks.size == 1 and section.blocks[0].type == 'brand_information' and brand_empty and has_social_icons == false and section.settings.newsletter_enable == false and section.settings.enable_follow_on_shop == false
+    if section.blocks.size == 1 and section.blocks[0].type == 'brand_information' and brand_empty and has_social_icons == false and section.settings.newsletter_enable == false
       assign only_empty_brand = true
     endif
   -%}
   {%- if section.blocks.size > 0
     or section.settings.newsletter_enable
     or section.settings.show_social
-    or section.settings.enable_follow_on_shop
   -%}
     {%- unless only_empty_brand -%}
       <div class="footer__content-top page-width">
@@ -297,48 +300,9 @@
   ],
   "settings": [
     {
-      "type": "select",
-      "id": "color_scheme",
-      "options": [
-        {
-          "value": "accent-1",
-          "label": "t:sections.all.colors.accent_1.label"
-        },
-        {
-          "value": "accent-2",
-          "label": "t:sections.all.colors.accent_2.label"
-        },
-        {
-          "value": "background-1",
-          "label": "t:sections.all.colors.background_1.label"
-        },
-        {
-          "value": "background-2",
-          "label": "t:sections.all.colors.background_2.label"
-        },
-        {
-          "value": "inverse",
-          "label": "t:sections.all.colors.inverse.label"
-        }
-      ],
-      "default": "background-1",
-      "label": "t:sections.all.colors.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.footer.settings.header__1.content",
-      "info": "t:sections.footer.settings.header__1.info"
-    },
-    {
       "type": "header",
       "content": "t:sections.footer.settings.header__9.content",
       "info": "t:sections.footer.settings.header__9.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "enable_follow_on_shop",
-      "default": true,
-      "label": "t:sections.footer.settings.enable_follow_on_shop.label"
     },
     {
       "type": "header",
