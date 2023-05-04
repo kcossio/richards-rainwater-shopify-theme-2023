@@ -187,6 +187,26 @@
     font-size: 36px;
   }
 }
+.footer .footer-top ul.footer-menu {
+  margin: 0px;
+  list-style: none;
+}
+.footer .footer-top ul.footer-menu li {
+  display: block;
+  list-style: none;
+}
+.footer .footer-top ul.footer-menu li a {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 22.5px;
+  line-height: 1em;
+  margin-bottom: 22px;
+}
+@media (min-width: 768px) {
+  .footer .footer-top ul.footer-menu li {
+    margin-bottom: 28px;
+  }
+}
 .footer .footer-bottom {
   display: flex;
   flex-wrap: wrap;

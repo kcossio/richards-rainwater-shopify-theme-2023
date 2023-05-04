@@ -30,6 +30,27 @@
         }
       }
 
+      ul.footer-menu {
+        margin:0px;
+        list-style:none;
+
+        li {
+          display:block;
+          list-style:none;
+          a {
+            color:#ffffff;
+            font-weight:900;
+            font-size:22.5px;
+            line-height:1em;
+            margin-bottom:22px;
+          }
+
+          @include breakpoint(tablet) {
+            margin-bottom:28px;
+          }
+        }
+      }
+
     }
     .footer-bottom {
       display:flex;
