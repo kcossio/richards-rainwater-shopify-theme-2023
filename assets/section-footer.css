@@ -172,10 +172,24 @@
 .footer .footer-top {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+}
+.footer .footer-top h2.footer-messaging {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.footer .footer-top h2.footer-messaging span {
+  display: block;
+}
+@media (min-width: 768px) {
+  .footer .footer-top h2.footer-messaging {
+    font-size: 36px;
+  }
 }
 .footer .footer-bottom {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 @media screen and (max-width: 749px) {

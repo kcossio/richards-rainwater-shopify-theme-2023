@@ -15,11 +15,26 @@
     .footer-top {
       display:flex;
       flex-wrap:wrap;
+      width:100%;
+
+      h2.footer-messaging {
+        text-transform:uppercase;
+        font-weight:900;
+
+        span {
+          display:block;
+        }
+
+        @include breakpoint(tablet) {
+          font-size:36px;
+        }
+      }
 
     }
     .footer-bottom {
       display:flex;
       flex-wrap:wrap;
+      width:100%;
     }
 }
 

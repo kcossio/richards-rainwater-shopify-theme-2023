@@ -40,6 +40,34 @@
         </h2>
         {%- render 'social-icons' -%}
       </div>
+      <div class="footer-top-right">
+
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+        
+            {%- when 'footer_menu' -%}
+              {%- ########################################################################## 
+              # Label: Footer Menu
+              # Returns: a linklist or blank(if no selection has been made)
+              # LinkList Properties: https://shopify.dev/api/liquid/objects#linklist
+              ########################################################################## -%}
+              {%- assign footer_menu = block.settings.footer_menu.links -%}
+              {%- if footer_menu != blank -%}
+                <ul class="footer-menu">
+                  {%- for link in footer_menu -%}
+                    <li>
+                    {{ link.title | link_to: link.url }}
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              {%- endif -%}
+             
+        
+          {%- endcase -%}
+        {%- endfor -%}
+
+        
+      </div><!--End footer-top-right-->
     </div><!--End footer-top-->
 
     <div class="footer-bottom">
@@ -79,21 +107,14 @@
       "type": "@app"
     },
     {
-      "type": "link_list",
-      "name": "t:sections.footer.blocks.link_list.name",
+      "name": "Footer Menu",
+      "type": "footer_menu",
       "settings": [
         {
-          "type": "inline_richtext",
-          "id": "heading",
-          "default": "Quick links",
-          "label": "t:sections.footer.blocks.link_list.settings.heading.label"
-        },
-        {
           "type": "link_list",
-          "id": "menu",
-          "default": "footer",
-          "label": "t:sections.footer.blocks.link_list.settings.menu.label",
-          "info": "t:sections.footer.blocks.link_list.settings.menu.info"
+          "id": "footer_menu",
+          "label": "Footer Menu",
+          "info": "Choose a menu to add to the footer"
         }
       ]
     },
