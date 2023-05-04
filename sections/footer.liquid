@@ -60,8 +60,7 @@
                     </li>
                   {%- endfor -%}
                 </ul>
-              {%- endif -%}
-             
+              {%- endif -%}             
         
           {%- endcase -%}
         {%- endfor -%}
@@ -76,19 +75,32 @@
         <small class="copyright__content">
           &copy; {{ 'now' | date: '%Y' }}, {{ "Richard's" | link_to: routes.root_url -}}
         </small>   
-        {%- if section.settings.show_policy -%}
-          <ul class="policies list-unstyled">
-            {%- for policy in shop.policies -%}
-              {%- if policy != blank -%}
-                <li>
-                  <small class="copyright__content"
-                    ><a href="{{ policy.url }}">{{ policy.title }}</a></small
-                  >
-                </li>
-              {%- endif -%}
-            {%- endfor -%}
-          </ul>
-        {%- endif -%}
+
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+        
+            {%- when 'bottom_menu' -%}
+              {%- ########################################################################## 
+              # Label: Footer Menu
+              # Returns: a linklist or blank(if no selection has been made)
+              # LinkList Properties: https://shopify.dev/api/liquid/objects#linklist
+              ########################################################################## -%}
+              {%- assign bottom_menu = block.settings.bottom_menu.links -%}
+              {%- if bottom_menu != blank -%}
+                <ul class="policies list-unstyled">
+                  {%- for link in bottom_menu -%}
+                    <li>
+                      <small class="copyright__content">
+                    {{ link.title | link_to: link.url }}
+                      </small>
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              {%- endif -%}             
+        
+          {%- endcase -%}
+        {%- endfor -%}
+        
       </div>
     </div><!--End footer-bottom-->
 
@@ -114,28 +126,22 @@
           "type": "link_list",
           "id": "footer_menu",
           "label": "Footer Menu",
-          "info": "Choose a menu to add to the footer"
+          "info": "Choose a navigationmenu to add to the footer"
         }
       ]
     },
     {
-      "type": "text",
-      "name": "t:sections.footer.blocks.text.name",
+      "name": "Bottom Menu",
+      "type": "bottom_menu",
       "settings": [
         {
-          "type": "inline_richtext",
-          "id": "heading",
-          "default": "Heading",
-          "label": "t:sections.footer.blocks.text.settings.heading.label"
-        },
-        {
-          "type": "richtext",
-          "id": "subtext",
-          "default": "<p>Share contact information, store details, and brand content with your customers.</p>",
-          "label": "t:sections.footer.blocks.text.settings.subtext.label"
+          "type": "link_list",
+          "id": "bottom_menu",
+          "label": "Bottom Navigation Menu",
+          "info": "Choose a navigation menu to add to the footer"
         }
       ]
-    }
+    },
   ],
   "settings": [
     {
