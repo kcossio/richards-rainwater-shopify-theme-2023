@@ -5,7 +5,7 @@
 .list-social {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
   
   @media only screen and (max-width: 749px) {
@@ -26,6 +26,11 @@
     border-radius:50%;
     color: #ffffff;;
     aspect-ratio:1 / 1;
+    margin:0px 6px;
+
+    @include breakpoint(tablet) {
+      margin:0px 8px 0px 0px;
+    }
     
     &.facebook {
         background:$red;
