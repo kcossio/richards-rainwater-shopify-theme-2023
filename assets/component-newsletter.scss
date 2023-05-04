@@ -15,6 +15,11 @@
         width:50%;
         text-align:left;
     }
+    h2.newsletter-signup-heading {
+        margin-bottom:0px;
+        color:$darkest_blue;
+        font-size:37.5px;
+    }
 }
 .newsletter-form {
     display: flex;
