@@ -36,23 +36,9 @@
     },
     "footer": {
       "type": "footer",
-      "blocks": {
-        "951be120-a6ea-4dbd-9c6b-f53a83808644": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Quick links",
-            "menu": "footer"
-          }
-        }
-      },
-      "block_order": [
-        "951be120-a6ea-4dbd-9c6b-f53a83808644"
-      ],
       "settings": {
-        "color_scheme": "background-1",
-        "enable_follow_on_shop": true,
         "show_social": true,
-        "show_policy": false
+        "show_policy": true
       }
     }
   },
