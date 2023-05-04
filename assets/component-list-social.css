@@ -8,6 +8,11 @@
   src: url("font_VadelmaLight.woff2") format("woff2"), url("font_VadelmaLight.woff2") format("woff");
 }
 @font-face {
+  font-family: "ImperialURW";
+  src: url("font_ImperialURWUltraBold.woff2") format("woff2"), url("font_ImperialURWUltraBold.woff2") format("woff");
+  font-weight: 800;
+}
+@font-face {
   font-family: "TT Commons";
   src: url("webFonts/TTCommonsProMedium/font.woff2") format("woff2"), url("webFonts/TTCommonsProMedium/font.woff") format("woff");
   font-weight: 400;

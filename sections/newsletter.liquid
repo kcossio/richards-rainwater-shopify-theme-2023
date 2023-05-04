@@ -27,7 +27,7 @@
           {%- when '@app' -%}
             {% render block %}
           {%- when 'heading' -%}
-            <h2 class="inline-richtext {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+            <h2 class="inline-richtext imperial {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
               {{ block.settings.heading }}
             </h2>
           {%- when 'paragraph' -%}
