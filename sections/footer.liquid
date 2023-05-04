@@ -31,9 +31,12 @@
   <div class="footer-wrap wide">
     <div class="footer-top">
     </div><!--End footer-top-->
+    <div class="footer-bottom">
+      {% render 'logo', name: 'white' %}
+    </div><!--End footer-bottom-->
   </div><!--End footer-wrap wide-->
 
-  {% render 'logo', name: 'white' %} 
+  
   
   {%- liquid
     assign has_social_icons = true
