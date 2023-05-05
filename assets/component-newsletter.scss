@@ -52,6 +52,10 @@
     &::after {
       border-radius:50px;
     }
+
+    &:hover {
+      border-radius:50px;
+    }
   }
   
   .newsletter-form__message {
