@@ -235,6 +235,18 @@
     padding-top: 42px;
   }
 }
+.footer .footer-logo {
+  display: block;
+  width: 250px;
+}
+.footer .footer-logo svg {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .footer .footer-logo {
+    width: 230px;
+  }
+}
 
 @media screen and (max-width: 749px) {
   .footer-block.footer-block--menu:only-child {

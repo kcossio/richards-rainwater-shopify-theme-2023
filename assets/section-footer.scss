@@ -33,6 +33,7 @@
           font-size:36px;
         }
       }
+      
 
       ul.footer-menu {
         margin:0px;
@@ -84,6 +85,19 @@
 
       @include breakpoint(tablet) {
         padding-top:42px;
+      }
+    }
+
+    .footer-logo {
+      display:block;
+      width:250px;
+
+      svg {
+        width:100%;
+      }
+
+      @include breakpoint(tablet) {
+        width:230px;
       }
     }
 }
