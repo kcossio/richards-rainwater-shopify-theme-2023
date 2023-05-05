@@ -70,7 +70,9 @@
     </div><!--End footer-top-->
 
     <div class="footer-bottom">
+      <a class="footer-logo" href="/">
       {% render 'logo', name: 'white' %}
+      </a>
       <div class="terms-policies">
         <small class="copyright__content">
           &copy; {{ 'now' | date: '%Y' }}, {{ "Richard's" | link_to: routes.root_url -}}. All rights reserved.
