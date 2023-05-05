@@ -203,6 +203,9 @@
 .newsletter-form__field-wrapper .field {
   z-index: 0;
 }
+.newsletter-form__field-wrapper .field::after {
+  border-radius: 50px;
+}
 
 .newsletter-form__message {
   justify-content: center;

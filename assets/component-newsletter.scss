@@ -48,6 +48,10 @@
   
   .newsletter-form__field-wrapper .field {
     z-index: 0;
+
+    &::after {
+      border-radius:50px;
+    }
   }
   
   .newsletter-form__message {
