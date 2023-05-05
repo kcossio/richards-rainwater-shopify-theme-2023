@@ -126,6 +126,7 @@
     margin:0px;
     font-size:11px;
     color:$white;
+    line-height:1em;
   }
   ul {
     display:inline-flex;
@@ -134,6 +135,8 @@
     li {
       margin:0px;
       display:inline-block;
+      font-size:11px;
+      line-height:1em;
 
       a {
         color:currentColor;

@@ -74,9 +74,9 @@
       {% render 'logo', name: 'white' %}
       </a>
       <div class="terms-policies">
-        <small class="copyright__content">
+        <p>
           &copy; {{ 'now' | date: '%Y' }}, {{ "Richard's" | link_to: routes.root_url -}}. All rights reserved.
-        </small>   
+        </p>   
 
         {%- for block in section.blocks -%}
           {%- case block.type -%}
@@ -87,9 +87,7 @@
                 <ul class="policies list-unstyled">
                   {%- for link in bottom_menu -%}
                     <li>
-                      <small class="copyright__content">
                     {{ link.title | link_to: link.url }}
-                      </small>
                     </li>
                   {%- endfor -%}
                 </ul>
