@@ -73,18 +73,13 @@
       {% render 'logo', name: 'white' %}
       <div class="terms-policies">
         <small class="copyright__content">
-          &copy; {{ 'now' | date: '%Y' }}, {{ "Richard's" | link_to: routes.root_url -}}
+          &copy; {{ 'now' | date: '%Y' }}, {{ "Richard's" | link_to: routes.root_url -}}. All rights reserved.
         </small>   
 
         {%- for block in section.blocks -%}
           {%- case block.type -%}
         
             {%- when 'bottom_menu' -%}
-              {%- ########################################################################## 
-              # Label: Footer Menu
-              # Returns: a linklist or blank(if no selection has been made)
-              # LinkList Properties: https://shopify.dev/api/liquid/objects#linklist
-              ########################################################################## -%}
               {%- assign bottom_menu = block.settings.bottom_menu.links -%}
               {%- if bottom_menu != blank -%}
                 <ul class="policies list-unstyled">
