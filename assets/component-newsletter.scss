@@ -57,6 +57,9 @@
 
     &:hover {
       border-radius:50px;
+      &::after {
+        border-radius:50px;
+      }
     }
   }
   

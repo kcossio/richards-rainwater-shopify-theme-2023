@@ -211,6 +211,9 @@
 .newsletter-form__field-wrapper .field:hover {
   border-radius: 50px;
 }
+.newsletter-form__field-wrapper .field:hover::after {
+  border-radius: 50px;
+}
 
 .newsletter-form__message {
   justify-content: center;
