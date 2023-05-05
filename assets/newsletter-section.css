@@ -26,7 +26,7 @@
   font-weight:600;
 }
 .newsletter__wrapper .newsletter-form__field-wrapper {
-  max-width: 36rem;
+  max-width: 100%;
 }
 
 .newsletter-form__field-wrapper .newsletter-form__message {
