@@ -53,6 +53,7 @@
 
     &::after {
       border-radius:50px;
+      border-color:#707070;
     }
 
     &:hover {
@@ -89,7 +90,7 @@
     background:$dark_blue;
     color:$white;
     text-transform:uppercase;
-    letter-spacing:.5px;
+    letter-spacing:4px;
     font-weight: 900;
     font-size:15px;
 
