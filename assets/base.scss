@@ -3165,17 +3165,11 @@ details-disclosure > details {
 
 .logo {
     display:block;
+    
 
-    &.logo-white {
-        path,
-        rect {
-            fill:#ffffff;
-        }
-    }
-    &.logo-blue {
-        path,
-        rect {
-            fill:#00142A;
-        }
-    }
+    path,
+      rect {
+          fill:currentColor;
+      }
+
 }

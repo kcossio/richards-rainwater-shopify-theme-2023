@@ -3207,11 +3207,7 @@ details-disclosure > details {
 .logo {
   display: block;
 }
-.logo.logo-white path,
-.logo.logo-white rect {
-  fill: #ffffff;
-}
-.logo.logo-blue path,
-.logo.logo-blue rect {
-  fill: #00142A;
+.logo path,
+.logo rect {
+  fill: currentColor;
 }
