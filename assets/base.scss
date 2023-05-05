@@ -1868,7 +1868,7 @@ details[open] > .share-button__fallback {
 .customer .field label {
   font-size:18px;
   font-weight:600;
-  letter-spacing:1px;
+  letter-spacing:.6px;
   left: calc(var(--inputs-border-width) + 2rem);
   top: calc(1rem + var(--inputs-border-width));
   margin-bottom: 0;
@@ -1877,7 +1877,7 @@ details[open] > .share-button__fallback {
   transition: top var(--duration-short) ease,
     font-size var(--duration-short) ease;
   color: #BDBDBD;
-  line-height: 1.5;
+  line-height: 1.2em;
 
   @include breakpoint(tablet) {
     font-size:22.5px;
