@@ -182,14 +182,20 @@
 
 .newsletter__subheading {
   max-width: 100%;
-  margin: 0px;
+  margin: 0px 0px 34px 0px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .newsletter__subheading {
+    text-align: center;
+    padding-left: 21px;
+  }
 }
 
 .newsletter__subheading p {
   font-size: 17.25px;
   color: #000F44;
   font-weight: 600;
-  margin: 0px 0px 34px 0px;
 }
 
 .newsletter__wrapper .newsletter-form__field-wrapper {
