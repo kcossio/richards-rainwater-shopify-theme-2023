@@ -235,8 +235,3 @@
   color: #ffffff;
   text-transform: uppercase;
 }
-
-.newsletter-form__button:not(:focus-visible):not(.focused) {
-  box-shadow: inherit;
-  background-color: inherit;
-}

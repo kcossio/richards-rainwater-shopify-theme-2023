@@ -85,15 +85,4 @@
     text-transform:uppercase;
   }
   
-  .newsletter-form__button:focus-visible {
-  }
-  
-  .newsletter-form__button:focus {
-  }
-  
-  .newsletter-form__button:not(:focus-visible):not(.focused) {
-    box-shadow: inherit;
-    background-color: inherit;
-  }
-  
   
