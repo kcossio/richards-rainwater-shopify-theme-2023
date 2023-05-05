@@ -42,10 +42,17 @@
           "settings": {
             "footer_menu": "footer"
           }
+        },
+        "c56fcbe5-2a91-4a23-bf2f-b9ccb7aa335e": {
+          "type": "bottom_menu",
+          "settings": {
+            "bottom_menu": "bottom-terms-menu"
+          }
         }
       },
       "block_order": [
-        "2a6e9e49-054b-4d9e-a2d1-a6d18e56c2d3"
+        "2a6e9e49-054b-4d9e-a2d1-a6d18e56c2d3",
+        "c56fcbe5-2a91-4a23-bf2f-b9ccb7aa335e"
       ],
       "settings": {
         "show_social": true,
