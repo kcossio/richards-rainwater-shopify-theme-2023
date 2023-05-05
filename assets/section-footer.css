@@ -275,10 +275,15 @@
   margin: 0px;
 }
 .terms-policies ul li {
-  margin: 0px;
+  margin: 12px;
   display: inline-block;
   font-size: 11px;
   line-height: 1em;
+}
+@media (min-width: 768px) {
+  .terms-policies ul li {
+    margin: 0px 0px 0px 22px;
+  }
 }
 .terms-policies ul li a {
   color: currentColor;
