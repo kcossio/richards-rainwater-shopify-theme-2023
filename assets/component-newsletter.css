@@ -202,6 +202,8 @@
 
 .newsletter-form__field-wrapper .field {
   z-index: 0;
+  border-radius: 50px;
+  overflow: hidden;
 }
 .newsletter-form__field-wrapper .field::after {
   border-radius: 50px;
@@ -225,7 +227,8 @@
   }
 }
 .newsletter-form__button {
-  width: 4.4rem;
+  width: auto;
+  padding: 0px 23px;
   margin: 0;
   right: 0;
   top: 0;
@@ -234,4 +237,13 @@
   background: #000F44;
   color: #ffffff;
   text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 900;
+  font-size: 15px;
+}
+@media (min-width: 768px) {
+  .newsletter-form__button {
+    padding: 0px 32px;
+    font-size: 22.5px;
+  }
 }
