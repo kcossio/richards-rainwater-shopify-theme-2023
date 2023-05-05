@@ -6,9 +6,10 @@
 .footer-newsletter {
     display:flex;
     flex-wrap:wrap;
+    justify-content:space-between;
 
     img {
-        width:50%;
+        width:41%;
     }
 
     .newsletter__wrapper {
@@ -43,9 +44,6 @@
     width: 100%;
   }
   
-  .newsletter-form__field-wrapper .field__input {
-    padding-right: 5rem;
-  }
   
   .newsletter-form__field-wrapper .field {
     z-index: 0;

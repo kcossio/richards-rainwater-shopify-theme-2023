@@ -162,9 +162,10 @@
 .footer-newsletter {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .footer-newsletter img {
-  width: 50%;
+  width: 41%;
 }
 .footer-newsletter .newsletter__wrapper {
   width: 50%;
@@ -195,10 +196,6 @@
 }
 .newsletter-form__field-wrapper {
   width: 100%;
-}
-
-.newsletter-form__field-wrapper .field__input {
-  padding-right: 5rem;
 }
 
 .newsletter-form__field-wrapper .field {
