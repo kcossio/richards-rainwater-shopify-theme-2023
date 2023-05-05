@@ -1331,6 +1331,9 @@ deferred-media {
 /* component-button */
 /* Button - default */
 
+button {
+  font-family: var(--font-body-family);
+}
 .button,
 .shopify-challenge__button,
 .customer button,
