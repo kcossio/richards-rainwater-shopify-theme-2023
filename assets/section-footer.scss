@@ -79,12 +79,15 @@
     .footer-bottom {
       display:flex;
       flex-wrap:wrap;
+      justify-content:space-between;
       width:100%;
       border-top:1px solid $light_blue;
       padding:34px 0px 0px 0px;
+      margin-top:34px;
 
       @include breakpoint(tablet) {
         padding-top:42px;
+        margin-top:42px;
       }
     }
 
@@ -94,6 +97,7 @@
 
       svg {
         width:100%;
+        pointer-events: none;
       }
 
       @include breakpoint(tablet) {
