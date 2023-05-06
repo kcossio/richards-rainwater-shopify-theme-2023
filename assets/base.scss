@@ -2453,10 +2453,11 @@ a {
   justify-self: center;
   width:164px;
   color:$darkest_blue;
+  transition:all .3s ease 0s;
 
   path,
   rect {
-    transition:fill .3s ease 0s;
+    transition:all .3s ease 0s;
   }
 
   &:hover {
