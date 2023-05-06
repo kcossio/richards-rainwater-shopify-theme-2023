@@ -42,6 +42,7 @@ class DetailsModal extends HTMLElement {
     event.target.closest('header').setAttribute('open', true);
     document.body.addEventListener('click', this.onBodyClickEvent);
     document.body.classList.add('overflow-hidden');
+    console.log('Hey. The mobile menu has been toggled open.')
 
     trapFocus(
       this.detailsContainer.querySelector('[tabindex="-1"]'),
