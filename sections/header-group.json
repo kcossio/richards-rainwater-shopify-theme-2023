@@ -12,10 +12,19 @@
             "text_alignment": "center",
             "link": "shopify:\/\/products\/gift-card"
           }
+        },
+        "c754b9c7-1979-4ad5-bbf6-5b46fce14ab3": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "text_alignment": "center",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "c754b9c7-1979-4ad5-bbf6-5b46fce14ab3"
       ],
       "settings": {
       }
