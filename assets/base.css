@@ -2633,7 +2633,6 @@ a svg {
   width: 25px;
   height: 23px;
   padding: 0;
-  margin-left: 12px;
 }
 @media (min-width: 768px) {
   .header__icon,
@@ -2641,6 +2640,10 @@ a svg {
     width: 38px;
     height: 34px;
   }
+}
+
+.header__icon.link {
+  margin-left: 12px;
 }
 
 .header__icon--cart {

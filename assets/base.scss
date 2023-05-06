@@ -2560,11 +2560,15 @@ a {
   width: 25px;
   height: 23px;
   padding: 0;
-  margin-left:12px;
 
   @include breakpoint(tablet) {
     width: 38px;
     height:34px;
+  }
+}
+.header__icon {
+  &.link {
+    margin-left:12px;
   }
 }
 
