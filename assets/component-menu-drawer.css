@@ -284,6 +284,12 @@ details[open].menu-opening > .menu-drawer__submenu {
   letter-spacing: 2px;
   font-weight: 900;
 }
+.menu-drawer__menu-item.secondary-mobile-menu__item {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: none;
+}
 
 .no-js .menu-drawer__menu-item {
   font-size: 1.6rem;

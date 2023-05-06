@@ -135,6 +135,13 @@
     text-transform:uppercase;
     letter-spacing:2px;
     font-weight:900;
+
+    &.secondary-mobile-menu__item {
+        font-size:14px;
+        font-weight:600;
+        letter-spacing:1px;
+        text-transform: none;
+    }
   }
   
   .no-js .menu-drawer__menu-item {
