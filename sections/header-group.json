@@ -22,6 +22,17 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "a1d0016a-b486-476f-9e0e-dc635c02f815": {
+          "type": "mobile_menu_main",
+          "settings": {
+            "mobile_menu_main": "mobile-menu-main"
+          }
+        }
+      },
+      "block_order": [
+        "a1d0016a-b486-476f-9e0e-dc635c02f815"
+      ],
       "settings": {
         "logo_position": "middle-left",
         "menu": "main-menu",
