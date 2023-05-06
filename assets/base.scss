@@ -2455,10 +2455,7 @@ a {
   color:$darkest_blue;
   transition:all .3s ease 0s;
 
-  path,
-  rect {
-    //transition:all .3s ease 0s;
-  }
+  
 
   &:hover {
     color:$light_blue;
