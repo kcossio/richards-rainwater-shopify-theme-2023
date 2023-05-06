@@ -2349,7 +2349,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
   font-size: 0.9rem;
   top: 0px;
   right: 0px;
-  transform: translate(50%, -50%);
+  transform: translate(50%, -25%);
   line-height: calc(1 + 0.1 / var(--font-body-scale));
 }
 
