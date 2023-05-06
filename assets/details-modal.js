@@ -39,6 +39,7 @@ class DetailsModal extends HTMLElement {
     this.onBodyClickEvent =
       this.onBodyClickEvent || this.onBodyClick.bind(this);
     event.target.closest('details').setAttribute('open', true);
+    event.target.closest('header').setAttribute('open', true);
     document.body.addEventListener('click', this.onBodyClickEvent);
     document.body.classList.add('overflow-hidden');
 
@@ -51,6 +52,7 @@ class DetailsModal extends HTMLElement {
   close(focusToggle = true) {
     removeTrapFocus(focusToggle ? this.summaryToggle : null);
     this.detailsContainer.removeAttribute('open');
+    this.detailsContainer.closest('header').removeAttribute('open');
     document.body.removeEventListener('click', this.onBodyClickEvent);
     document.body.classList.remove('overflow-hidden');
   }
