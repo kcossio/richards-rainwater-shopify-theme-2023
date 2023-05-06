@@ -2314,12 +2314,15 @@ a {
 
 .section-header {
   padding:0px 24px;
+  width:100%;
 
-  @include breakpoint(tablet) {
-    padding:0px 36px;
-  }
-  @include breakpoint(laptop) {
-    padding:0px 58px;
+  .header {
+    @include breakpoint(tablet) {
+      padding:0px 36px;
+    }
+    @include breakpoint(laptop) {
+      padding:0px 58px;
+    }
   }
 }
 .section-header.shopify-section-group-header-group {

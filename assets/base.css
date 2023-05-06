@@ -2404,14 +2404,15 @@ a svg {
 /* section-header */
 .section-header {
   padding: 0px 24px;
+  width: 100%;
 }
 @media (min-width: 768px) {
-  .section-header {
+  .section-header .header {
     padding: 0px 36px;
   }
 }
 @media (min-width: 1280px) {
-  .section-header {
+  .section-header .header {
     padding: 0px 58px;
   }
 }
