@@ -2568,7 +2568,11 @@ a {
 }
 .header__icon {
   &.link {
-    margin-left:12px;
+    //margin-left:12px;
+
+    @include breakpoint(tablet) {
+      margin-left:24px;
+    }
   }
 }
 

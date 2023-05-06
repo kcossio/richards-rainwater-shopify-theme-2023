@@ -2642,8 +2642,10 @@ a svg {
   }
 }
 
-.header__icon.link {
-  margin-left: 12px;
+@media (min-width: 768px) {
+  .header__icon.link {
+    margin-left: 24px;
+  }
 }
 
 .header__icon--cart {
