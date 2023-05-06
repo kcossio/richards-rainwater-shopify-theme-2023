@@ -187,7 +187,7 @@
 }
 @media (min-width: 768px) {
   .newsletter__subheading {
-    text-align: center;
+    text-align: left;
     padding-left: 21px;
   }
 }

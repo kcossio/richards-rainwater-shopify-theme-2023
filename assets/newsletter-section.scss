@@ -34,7 +34,7 @@
     text-align:center;
 
     @include breakpoint(tablet) {
-        text-align:center;
+        text-align:left;
         padding-left:21px;
     }
     
