@@ -2239,8 +2239,8 @@ product-info .loading-overlay:not(.hidden) ~ *,
 
 .cart-count-bubble {
   position: absolute;
-  background-color: rgb(var(--color-button));
-  color: rgb(var(--color-button-text));
+  background-color: $light_blue;
+  color: $white;
   height: 1.7rem;
   width: 1.7rem;
   border-radius: 100%;
@@ -2248,8 +2248,9 @@ product-info .loading-overlay:not(.hidden) ~ *,
   justify-content: center;
   align-items: center;
   font-size: 0.9rem;
-  bottom: 0.8rem;
-  left: 2.2rem;
+  top:0px;
+  right:0px;
+  transform:translate(50%,-50%);
   line-height: calc(1 + 0.1 / var(--font-body-scale));
 }
 
