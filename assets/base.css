@@ -2545,7 +2545,7 @@ a svg {
 
 .header__heading-link {
   display: inline-block;
-  padding: 0.75rem;
+  padding: 0px;
   text-decoration: none;
   word-break: break-word;
 }
