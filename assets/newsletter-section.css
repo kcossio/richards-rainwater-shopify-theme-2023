@@ -164,17 +164,17 @@
   padding-left: calc(4rem / var(--font-body-scale));
 }
 .newsletter__wrapper .field__input {
-  padding: 2.5rem 1rem;
+  padding: 2.5rem 25px;
 }
 .newsletter__wrapper .field__input:focus, .newsletter__wrapper .field__input:active {
-  padding: 2.5rem 1rem;
+  padding: 2.5rem 25px;
 }
 @media (min-width: 768px) {
   .newsletter__wrapper .field__input {
-    padding: 2.8rem 1rem;
+    padding: 2.8rem 25px;
   }
   .newsletter__wrapper .field__input:focus, .newsletter__wrapper .field__input:active {
-    padding: 2.8rem 1rem;
+    padding: 2.8rem 25px;
   }
 }
 
