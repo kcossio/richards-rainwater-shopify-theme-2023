@@ -2573,6 +2573,12 @@ a {
   width: 30px;
   fill: none;
   vertical-align: middle;
+
+  &.icon-hamburger {
+    fill:$darkest_blue;
+    width:27px;
+    height:21px;
+  }
 }
 
 .header__icon,

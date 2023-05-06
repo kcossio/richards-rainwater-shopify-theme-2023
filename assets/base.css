@@ -2648,6 +2648,11 @@ a svg {
   fill: none;
   vertical-align: middle;
 }
+.header__icon .icon.icon-hamburger {
+  fill: #00142A;
+  width: 27px;
+  height: 21px;
+}
 
 .header__icon,
 .header__icon--cart .icon {
