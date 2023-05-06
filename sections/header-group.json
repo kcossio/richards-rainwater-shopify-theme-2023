@@ -28,10 +28,17 @@
           "settings": {
             "mobile_menu_main": "mobile-menu-main"
           }
+        },
+        "9c3600e5-d44f-42eb-972c-65145ccc8474": {
+          "type": "mobile_menu_secondary",
+          "settings": {
+            "mobile_menu_secondary": "bottom-terms-menu"
+          }
         }
       },
       "block_order": [
-        "a1d0016a-b486-476f-9e0e-dc635c02f815"
+        "a1d0016a-b486-476f-9e0e-dc635c02f815",
+        "9c3600e5-d44f-42eb-972c-65145ccc8474"
       ],
       "settings": {
         "logo_position": "middle-left",
