@@ -1858,7 +1858,7 @@ details[open] > .share-button__fallback {
   right: var(--inputs-border-width);
   bottom: var(--inputs-border-width);
   left: var(--inputs-border-width);
-  border: 1px solid transparent;
+  border: 1px solid #707070;
   border-radius: var(--inputs-radius);
   transition: box-shadow var(--duration-short) ease;
   z-index: 1;
