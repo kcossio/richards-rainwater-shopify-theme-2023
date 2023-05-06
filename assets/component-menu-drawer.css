@@ -422,10 +422,13 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 .section-header.menu-open .header__icon .icon.icon-hamburger {
   fill: #ffffff;
+  color: #ffffff;
 }
 .section-header.menu-open .header__icon .icon.icon-close {
   fill: #ffffff;
+  color: #ffffff;
 }
 .section-header.menu-open .header__icon--cart {
   fill: #ffffff;
+  color: #ffffff;
 }
