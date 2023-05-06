@@ -84,6 +84,17 @@
 }
 @font-face {
   font-family: "TT Commons";
+  src: url("font_TTCommonsProExtraBold.woff2") format("woff2"), url("font_TTCommonsProExtraBold.woff") format("woff");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("font_TTCommonsProExtraBoldItalic.woff2") format("woff2"), url("font_TTCommonsProExtraBoldItalic.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TT Commons";
   src: url("font_TTCommonsProBlack.woff2") format("woff2"), url("font_TTCommonsProBlack.woff") format("woff");
   font-weight: 900;
   font-style: normal;
@@ -140,14 +151,7 @@
   src: url('font_TTCommonsProNormalItalic.woff2') format('woff2'), url('font_TTCommonsProNormalItalic.woff') format('woff');
 }
 
-@font-face {
-  font-family: "TTCommonsProExtraBold";
-  src: url('font_TTCommonsProExtraBold.woff2') format('woff2'), url('font_TTCommonsProExtraBold.woff') format('woff');
-}
-@font-face {
-  font-family: "TTCommonsProExtraBoldItalic";
-  src: url('font_TTCommonsProExtraBoldItalic.woff2') format('woff2'), url('font_TTCommonsProExtraBoldItalic.woff') format('woff');
-}
+
 
 @font-face {
   font-family: "TTCommonsProExtraBlack";
