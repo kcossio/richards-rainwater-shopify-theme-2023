@@ -2454,6 +2454,15 @@ a {
   width:164px;
   color:$darkest_blue;
 
+  path,
+  rect {
+    transition:fill .3s ease 0s;
+  }
+
+  &:hover {
+    color:$light_blue;
+  }
+
   @include breakpoint(tablet) {
     width:228px;
   }
@@ -2504,10 +2513,7 @@ a {
 }
 
 @media screen and (min-width: 990px) {
-  .header--middle-left .header__heading-link,
-  .header--top-left .header__heading-link {
-    margin-left: -0.75rem;
-  }
+  
 
   .header__heading,
   .header__heading-link {

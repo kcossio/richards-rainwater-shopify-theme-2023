@@ -2536,6 +2536,16 @@ a svg {
   width: 164px;
   color: #00142A;
 }
+.header__heading path,
+.header__heading rect,
+.header__heading-link path,
+.header__heading-link rect {
+  transition: fill 0.3s ease 0s;
+}
+.header__heading:hover,
+.header__heading-link:hover {
+  color: #0094DA;
+}
 @media (min-width: 768px) {
   .header__heading,
   .header__heading-link {
@@ -2585,10 +2595,6 @@ a svg {
   }
 }
 @media screen and (min-width: 990px) {
-  .header--middle-left .header__heading-link,
-  .header--top-left .header__heading-link {
-    margin-left: -0.75rem;
-  }
   .header__heading,
   .header__heading-link {
     justify-self: start;
