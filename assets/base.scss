@@ -2454,6 +2454,8 @@ a {
   width:164px;
   color:$darkest_blue;
   transition:all .3s ease 0s;
+  position:relative;
+  z-index:5;
 
   
 
@@ -2536,6 +2538,8 @@ a {
   display: flex;
   grid-area: icons;
   justify-self: end;
+  position:relative;
+  z-index: 5;
 }
 
 .header__icons .shopify-app-block {
@@ -2557,6 +2561,8 @@ a {
 
 .header__icon span {
   height: 100%;
+  position:relative;
+  z-index:5;
 }
 
 .header__icon::after {

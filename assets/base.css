@@ -2536,6 +2536,8 @@ a svg {
   width: 164px;
   color: #00142A;
   transition: all 0.3s ease 0s;
+  position: relative;
+  z-index: 5;
 }
 .header__heading:hover,
 .header__heading-link:hover {
@@ -2610,6 +2612,8 @@ a svg {
   display: flex;
   grid-area: icons;
   justify-self: end;
+  position: relative;
+  z-index: 5;
 }
 
 .header__icons .shopify-app-block {
@@ -2631,6 +2635,8 @@ a svg {
 
 .header__icon span {
   height: 100%;
+  position: relative;
+  z-index: 5;
 }
 
 .header__icon::after {

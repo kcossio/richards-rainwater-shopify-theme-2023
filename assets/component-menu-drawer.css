@@ -282,6 +282,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-weight: 900;
 }
 
 .no-js .menu-drawer__menu-item {
