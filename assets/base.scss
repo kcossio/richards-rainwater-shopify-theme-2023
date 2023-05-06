@@ -2428,6 +2428,12 @@ product-info .loading-overlay:not(.hidden) ~ *,
 .header__heading-link {
   grid-area: heading;
   justify-self: center;
+  width:164px;
+  color:$darkest_blue;
+
+  @include breakpoint(tablet) {
+    width:228px;
+  }
 }
 
 .header__heading-link {

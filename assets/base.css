@@ -2508,6 +2508,14 @@ product-info .loading-overlay:not(.hidden) ~ *,
 .header__heading-link {
   grid-area: heading;
   justify-self: center;
+  width: 164px;
+  color: #00142A;
+}
+@media (min-width: 768px) {
+  .header__heading,
+  .header__heading-link {
+    width: 228px;
+  }
 }
 
 .header__heading-link {
