@@ -2622,8 +2622,8 @@ a svg {
 }
 
 .header__icon .icon {
-  height: 2rem;
-  width: 2rem;
+  height: 30px;
+  width: 30px;
   fill: none;
   vertical-align: middle;
 }
@@ -2633,6 +2633,7 @@ a svg {
   width: 25px;
   height: 23px;
   padding: 0;
+  margin-left: 12px;
 }
 @media (min-width: 768px) {
   .header__icon,
