@@ -2317,12 +2317,13 @@ a {
   width:100%;
 
   .header {
-    padding:0px 24px;
+    padding:10px 24px;
     @include breakpoint(tablet) {
-      padding:0px 36px;
+      padding:18px 36px;
+      
     }
     @include breakpoint(laptop) {
-      padding:0px 58px;
+      padding:22px 58px;
     }
   }
 }
