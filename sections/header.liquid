@@ -894,7 +894,7 @@
 {
   "name": "t:sections.header.name",
   "class": "section-header",
-  "max_blocks": 3,
+  "max_blocks": 5,
   "settings": [
     {
       "type": "select",
@@ -920,18 +920,6 @@
       "default": "middle-left",
       "label": "t:sections.header.settings.logo_position.label",
       "info": "t:sections.header.settings.logo_help.content"
-    },
-    {
-      "type": "link_list",
-      "id": "menu_mob",
-      "default": "main-menu",
-      "label": "t:sections.header.settings.menu.label"
-    },
-    {
-      "type": "link_list",
-      "id": "menu_1",
-      "default": "main-menu",
-      "label": "Menu 1"
     },
     {
       "type": "link_list",
@@ -1102,6 +1090,30 @@
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "name": "Mobile Menu (Main)",
+      "type": "mobile_menu_main",
+      "settings": [
+        {
+          "type": "link_list",
+          "id": "mobile_menu_main",
+          "label": "Mobile Menu (Main)",
+          "info": "Add the main menu for the mobile version of the site"
+        }
+      ]
+    },
+    {
+      "name": "Mobile Menu (Secondary)",
+      "type": "mobile_menu_secondary",
+      "settings": [
+        {
+          "type": "link_list",
+          "id": "mobile_menu_secondary",
+          "label": "Mobile Menu (Secondary)",
+          "info": "Add the secondary menu for mobile devices"
+        }
+      ]
     }
   ]
 }
