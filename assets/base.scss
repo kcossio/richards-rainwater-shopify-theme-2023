@@ -2804,11 +2804,15 @@ details[open] > .header__submenu {
 .header__menu-item {
   padding: 1.2rem;
   text-decoration: none;
-  color: rgba(var(--color-foreground), 0.75);
+  color: $darkest_blue;
+  font-size:18.75px;
+  text-transform:uppercase;
+  font-weight:800;
+  letter-spacing:1px;
 }
 
 .header__menu-item:hover {
-  color: rgb(var(--color-foreground));
+  color: $light_blue;
 }
 
 .header__menu-item span {
