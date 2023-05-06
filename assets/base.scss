@@ -2320,7 +2320,7 @@ a {
     padding:10px 24px;
     @include breakpoint(tablet) {
       padding:18px 36px;
-      
+
     }
     @include breakpoint(laptop) {
       padding:22px 58px;
@@ -2387,10 +2387,10 @@ a {
 
   .header--top-left,
   .header--middle-left:not(.header--has-menu) {
-    grid-template-areas:
-      'heading icons'
-      'navigation navigation';
-    grid-template-columns: 1fr auto;
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    flex-wrap:wrap;
   }
 
   .header--top-left.drawer-menu,
@@ -2817,18 +2817,32 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item {
-  padding: 1.2rem;
+  padding: 10px 40px;
   text-decoration: none;
   color: $darkest_blue;
   font-size:18.75px;
   text-transform:uppercase;
   font-weight:900;
   letter-spacing:1.5px;
+
+  background-image: linear-gradient(
+      to right,
+      $light_blue,
+      $light_blue 50%,
+      $darkest_blue 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.2s 0s ease-in-out;
+
+    &:hover {
+      background-position:0;
+      text-decoration:none;
+    }
 }
 
-.header__menu-item:hover {
-  color: $light_blue;
-}
 
 .header__menu-item span {
   transition: text-decoration var(--duration-short) ease;
