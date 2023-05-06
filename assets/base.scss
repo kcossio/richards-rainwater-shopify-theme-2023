@@ -2255,8 +2255,13 @@ product-info .loading-overlay:not(.hidden) ~ *,
 
 /* section-announcement-bar */
 .announcement-bar {
-  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
-  color: rgb(var(--color-foreground));
+  color:$white;
+  background:$orange;
+  font-size:22.5px;
+  font-weight:900;
+  letter-spacing:1px;
+  -webkit-box-shadow: 0px 5px 5px -4px rgba(0,0,0,0.44); 
+  box-shadow: 0px 5px 5px -4px rgba(0,0,0,0.44);
 }
 
 .announcement-bar__link {
