@@ -2629,8 +2629,8 @@ a svg {
 
 .header__icon,
 .header__icon--cart .icon {
-  height: 4.4rem;
-  width: 4.4rem;
+  width: 48px;
+  height: 45px;
   padding: 0;
 }
 
