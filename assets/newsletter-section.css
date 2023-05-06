@@ -169,6 +169,14 @@
 .newsletter__wrapper .field__input:focus, .newsletter__wrapper .field__input:active {
   padding: 2.5rem 1rem;
 }
+@media (min-width: 768px) {
+  .newsletter__wrapper .field__input {
+    padding: 2.8rem 1rem;
+  }
+  .newsletter__wrapper .field__input:focus, .newsletter__wrapper .field__input:active {
+    padding: 2.8rem 1rem;
+  }
+}
 
 @media screen and (min-width: 750px) {
   .newsletter__wrapper {

@@ -13,6 +13,15 @@
       &:active {
         padding:2.5rem 1rem;
       }
+
+      @include breakpoint(tablet) {
+        padding:2.8rem 1rem;
+
+        &:focus,
+        &:active {
+            padding:2.8rem 1rem;
+        }
+      }
     }
   }
   
