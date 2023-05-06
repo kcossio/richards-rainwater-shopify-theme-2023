@@ -2299,6 +2299,12 @@ product-info .loading-overlay:not(.hidden) ~ *,
   }
 }
 
+a {
+  svg {
+    pointer-events:none;
+  }
+}
+
 
 
 

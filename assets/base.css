@@ -2396,6 +2396,10 @@ product-info .loading-overlay:not(.hidden) ~ *,
   padding: 0;
 }
 
+a svg {
+  pointer-events: none;
+}
+
 /* section-header */
 .section-header.shopify-section-group-header-group {
   z-index: 3;
