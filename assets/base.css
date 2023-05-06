@@ -2537,12 +2537,6 @@ a svg {
   color: #00142A;
   transition: all 0.3s ease 0s;
 }
-.header__heading path,
-.header__heading rect,
-.header__heading-link path,
-.header__heading-link rect {
-  transition: all 0.3s ease 0s;
-}
 .header__heading:hover,
 .header__heading-link:hover {
   color: #0094DA;
