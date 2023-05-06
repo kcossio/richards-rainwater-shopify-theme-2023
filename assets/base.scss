@@ -2293,6 +2293,11 @@ product-info .loading-overlay:not(.hidden) ~ *,
   margin: 0;
   font-size:14px;
   font-weight:800;
+  line-height:1.2em;
+
+  a {
+    color:$white;
+  }
 
   @include breakpoint(tablet) {
     font-size:22.5px;

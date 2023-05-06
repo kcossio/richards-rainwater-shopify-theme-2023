@@ -2391,6 +2391,10 @@ product-info .loading-overlay:not(.hidden) ~ *,
   margin: 0;
   font-size: 14px;
   font-weight: 800;
+  line-height: 1.2em;
+}
+.announcement-bar__message a {
+  color: #ffffff;
 }
 @media (min-width: 768px) {
   .announcement-bar__message {
