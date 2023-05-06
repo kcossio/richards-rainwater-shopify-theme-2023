@@ -2389,7 +2389,15 @@ product-info .loading-overlay:not(.hidden) ~ *,
 .announcement-bar__message {
   padding: 10px 0px;
   margin: 0;
+  font-size: 14px;
+  font-weight: 800;
 }
+@media (min-width: 768px) {
+  .announcement-bar__message {
+    font-size: 22.5px;
+  }
+}
+
 /* section-header */
 .section-header.shopify-section-group-header-group {
   z-index: 3;
