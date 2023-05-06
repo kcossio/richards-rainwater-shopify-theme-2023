@@ -1,3 +1,7 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+
 .header__icon--menu {
     position: initial;
   }
@@ -263,3 +267,23 @@
     padding: 1.3rem 1.25rem;
   }
   
+  // When Open, style the mobile menu
+  .section-header.menu-open {
+
+    .header__heading-link {
+        color:$white;
+    }
+    .header-wrapper {
+        background-color:$dark_blue;
+    }
+    .header__icon .icon.icon-hamburger {
+        fill:$white;
+    }
+    .header__icon .icon.icon-close {
+        fill:$white;
+    }
+    .header__icon--cart {
+        fill:$white;
+    }
+
+  }
