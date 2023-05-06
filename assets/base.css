@@ -2406,6 +2406,9 @@ a svg {
   padding: 0px;
   width: 100%;
 }
+.section-header .header {
+  padding: 0px 24px;
+}
 @media (min-width: 768px) {
   .section-header .header {
     padding: 0px 36px;
