@@ -2362,30 +2362,6 @@ product-info .loading-overlay:not(.hidden) ~ *,
   box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.3);
 }
 
-.announcement-bar__link {
-  display: block;
-  width: 100%;
-  padding: 10px 0px;
-  text-decoration: none;
-}
-
-.announcement-bar__link:hover {
-  color: rgb(var(--color-foreground));
-  background-color: rgba(var(--color-card-hover), 0.06);
-}
-
-.announcement-bar__link .icon-arrow {
-  display: inline-block;
-  pointer-events: none;
-  margin-left: 0.8rem;
-  vertical-align: middle;
-  margin-bottom: 0.2rem;
-}
-
-.announcement-bar__link .announcement-bar__message {
-  padding: 0;
-}
-
 .announcement-bar__message {
   padding: 10px 0px;
   margin: 0;
@@ -2393,13 +2369,31 @@ product-info .loading-overlay:not(.hidden) ~ *,
   font-weight: 800;
   line-height: 1.2em;
 }
-.announcement-bar__message a {
-  color: #ffffff;
-}
 @media (min-width: 768px) {
   .announcement-bar__message {
     font-size: 22.5px;
   }
+}
+
+.announcement-bar__link {
+  display: block;
+  width: 100%;
+  padding: 10px 0px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.announcement-bar__link:hover {
+  color: #ffffff;
+}
+.announcement-bar__link .icon-arrow {
+  display: inline-block;
+  pointer-events: none;
+  margin-left: 0.8rem;
+  vertical-align: middle;
+  margin-bottom: 0.2rem;
+}
+.announcement-bar__link .announcement-bar__message {
+  padding: 0;
 }
 
 /* section-header */
