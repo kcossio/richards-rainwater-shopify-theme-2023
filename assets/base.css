@@ -2402,6 +2402,20 @@ a svg {
 }
 
 /* section-header */
+.section-header {
+  padding: 0px 24px;
+}
+@media (min-width: 768px) {
+  .section-header {
+    padding: 0px 36px;
+  }
+}
+@media (min-width: 1280px) {
+  .section-header {
+    padding: 0px 58px;
+  }
+}
+
 .section-header.shopify-section-group-header-group {
   z-index: 3;
 }
