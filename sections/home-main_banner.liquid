@@ -19,19 +19,18 @@
 {{ bottle_2_image | image_url: width: bottle_2_image.width | image_tag: class: 'home-banner-bottle home-banner-bottle-right', loading: 'lazy' }}
 {%- endif -%}
 
-{%- ########################################################################## 
-# Label: Callout Text
-# Returns: a string or an empty object(if nothing has been entered)
-# Filters: https://shopify.dev/api/liquid/objects#string 
-########################################################################## -%}
+<h2 class="home-banner-slogan-letters">
+<div class="letters-row"><span>S</span><span>I</span><span>P</span></div>
+<div class="letters-row"><span>T</span><span>H</span><span>E</span></div>
+<div class="letters-row"><span>S</span><span>K</span><span>Y<br /><small>™</small></span></div>
+</h2>
+
+
 <div class="home-banner-bar">
 <p>{{ section.settings.callout_text }}</p>
 </div><!--End home-banner-bar-->
 
-{%- ########################################################################## 
-# Label: Enable Audio Player
-# Returns: a boolean. i.e. A binary value, either true or false.
-########################################################################## -%}
+
 {%- if section.settings.enable_audio_player -%}
   {%- # Write your logic here -%} 
 {%- endif -%}
