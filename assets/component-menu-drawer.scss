@@ -2,6 +2,15 @@
 @import "mixins";
 @import "fonts";
 
+.menu-drawer__menu {
+  margin:0px;
+  padding:0px;
+
+  &..mobile-secondary {
+    margin-top:40px;
+  }
+}
+
 .header__icon--menu {
     position: initial;
   }
@@ -129,9 +138,8 @@
     margin-bottom: 0.2rem;
   }
   
-  .mobile-secondary {
-    margin-top:40px;
-  }
+  
+  
   .menu-drawer__menu-item {
     padding: 10px 0px;
     text-decoration: none;
