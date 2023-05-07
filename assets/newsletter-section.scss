@@ -104,65 +104,74 @@
 }
 
 // Image Animation //
+.clouds {
 
-.clouds-mobile-wrap {
-    width:100vw;
-    height:56px;
     overflow:hidden;
     position:relative;
-  
-  .scroll-parent {
-    position: relative;
-    width: 512px;
-    height: 56px;
-    overflow-x: hidden;
-  }
-  
-  .scroll-element {
-    width: inherit;
-    height: inherit;
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    animation: primary 10s linear infinite;
-  }
 
-  .primary {
-    animation: primary 10s linear infinite;
+    .scroll-parent {
+        position: relative;
+        overflow-x: hidden;
+     }
 
-    &.slow {
-        animation: primary 20s linear infinite;
-    }
-    &.bg {
+     .scroll-element {
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        animation: primary 10s linear infinite;
+      }
+    
+      .primary {
+        animation: primary 10s linear infinite;
+    
+        &.slow {
+            animation: primary 20s linear infinite;
+        }
+        &.bg {
+            top:50%;
+        }
+      }
+      
+      .secondary {
+        animation: secondary 10s linear infinite;
+    
+        &.slow {
+            animation: primary 20s linear infinite;
+        }
+        &.bg {
+            top:50%;
+        }
+    
+      }
+      
+      @keyframes primary {
+        from {
+          left: 0%;
+        }
+        to {
+          left: -100%;
+        }
+      }
+      
+      @keyframes secondary {
+        from {
+          left: 100%;
+        }
+        to {
+          left: 0%;
+        }
+      }
 
-    }
-  }
-  
-  .secondary {
-    animation: secondary 10s linear infinite;
+    &.clouds-mobile-wrap {
+        width:100vw;
+        height:56px;
 
-    &.slow {
-        animation: primary 20s linear infinite;
+        .scroll-parent {
+            width: 512px;
+            height: 56px;
+        }
     }
-
-  }
-  
-  @keyframes primary {
-    from {
-      left: 0%;
-    }
-    to {
-      left: -100%;
-    }
-  }
-  
-  @keyframes secondary {
-    from {
-      left: 100%;
-    }
-    to {
-      left: 0%;
-    }
-  }
 
 }

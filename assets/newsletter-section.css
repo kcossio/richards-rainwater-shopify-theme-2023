@@ -249,19 +249,15 @@
   overflow: hidden;
 }
 
-.clouds-mobile-wrap {
-  width: 100vw;
-  height: 56px;
+.clouds {
   overflow: hidden;
   position: relative;
 }
-.clouds-mobile-wrap .scroll-parent {
+.clouds .scroll-parent {
   position: relative;
-  width: 512px;
-  height: 56px;
   overflow-x: hidden;
 }
-.clouds-mobile-wrap .scroll-element {
+.clouds .scroll-element {
   width: inherit;
   height: inherit;
   position: absolute;
@@ -269,17 +265,23 @@
   top: 0%;
   animation: primary 10s linear infinite;
 }
-.clouds-mobile-wrap .primary {
+.clouds .primary {
   animation: primary 10s linear infinite;
 }
-.clouds-mobile-wrap .primary.slow {
+.clouds .primary.slow {
   animation: primary 20s linear infinite;
 }
-.clouds-mobile-wrap .secondary {
+.clouds .primary.bg {
+  top: 50%;
+}
+.clouds .secondary {
   animation: secondary 10s linear infinite;
 }
-.clouds-mobile-wrap .secondary.slow {
+.clouds .secondary.slow {
   animation: primary 20s linear infinite;
+}
+.clouds .secondary.bg {
+  top: 50%;
 }
 @keyframes primary {
   from {
@@ -296,4 +298,12 @@
   to {
     left: 0%;
   }
+}
+.clouds.clouds-mobile-wrap {
+  width: 100vw;
+  height: 56px;
+}
+.clouds.clouds-mobile-wrap .scroll-parent {
+  width: 512px;
+  height: 56px;
 }
