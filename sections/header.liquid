@@ -1172,6 +1172,7 @@
     {
       "name": "Mobile Newsletter Signup",
       "type": "mobile_newsletter_signup",
+      "limit": 1,
       "settings": [
         {
           "type": "inline_richtext",
@@ -1180,22 +1181,14 @@
           "label": "t:sections.newsletter.blocks.heading.settings.heading.label"
         },
         {
-          "type": "paragraph",
-          "name": "t:sections.newsletter.blocks.paragraph.name",
-          "limit": 1,
-          "settings": [
-            {
-              "type": "richtext",
-              "id": "text",
-              "default": "<p>Be the first to know about new collections and exclusive offers.</p>",
-              "label": "t:sections.newsletter.blocks.paragraph.settings.paragraph.label"
-            }
-          ]
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Be the first to know about new collections and exclusive offers.</p>",
+          "label": "t:sections.newsletter.blocks.paragraph.settings.paragraph.label"
         },
         {
           "type": "email_form",
-          "name": "t:sections.newsletter.blocks.email_form.name",
-          "limit": 1
+          "label": "Email Form",
         },
         {
           "type": "@app"
