@@ -265,4 +265,7 @@ section.home-banner .home-audio-player {
   position: absolute;
   left: 0px;
   bottom: 15%;
+  background: #ffffff;
+  border: 2px solid #C8C8C8;
+  border-radius: 12px;
 }
