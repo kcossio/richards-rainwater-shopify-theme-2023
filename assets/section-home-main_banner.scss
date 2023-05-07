@@ -94,6 +94,10 @@ section.home-banner {
                     font-size:23%;
                     line-height:23%;
                 }
+
+                &:nth-child(2) {
+                    transform:translate(0, 15%);
+                }
             }
         }
     }
