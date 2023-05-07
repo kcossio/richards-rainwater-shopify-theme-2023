@@ -104,12 +104,22 @@ section.home-banner {
     }
 
     .home-audio-player {
-        display:block;
+        display:flex;
         position:absolute;
         left:0px;
         bottom:15%;
         background:$white;
         border:2px solid #C8C8C8;
         border-radius:12px;
+        padding:23px 36px 23px 50px;
+
+        p {
+            color:#C8C8C8;
+            font-weight:600;
+            font-size:15px;
+            line-height:1.2em;
+            margin:0px;
+            padding:0px;
+        }
     }
 }

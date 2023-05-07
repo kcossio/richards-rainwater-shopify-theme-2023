@@ -261,11 +261,20 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   transform: translate(0, 15%);
 }
 section.home-banner .home-audio-player {
-  display: block;
+  display: flex;
   position: absolute;
   left: 0px;
   bottom: 15%;
   background: #ffffff;
   border: 2px solid #C8C8C8;
   border-radius: 12px;
+  padding: 23px 36px 23px 50px;
+}
+section.home-banner .home-audio-player p {
+  color: #C8C8C8;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.2em;
+  margin: 0px;
+  padding: 0px;
 }
