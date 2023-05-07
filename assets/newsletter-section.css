@@ -189,6 +189,8 @@
 .newsletter__wrapper.mobile_nl_wrapper h2.newsletter-signup-heading {
   font-size: 35px;
   margin: 0px;
+  color: #000F44;
+  line-height: 1em;
 }
 .newsletter__wrapper.mobile_nl_wrapper .newsletter__subheading p {
   font-size: 20px;
