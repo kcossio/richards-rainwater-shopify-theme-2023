@@ -1,0 +1,107 @@
+{%- ########################################################################## 
+# Label: Background Image
+# Returns: an image object or nil(if no selection has been made)
+# Image Properties: https://shopify.dev/api/liquid/objects#image
+# Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
+########################################################################## -%}
+{%- assign background_image = section.settings.background_image -%}
+{{ background_image | image_url: width: background_image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+
+{%- ########################################################################## 
+# Label: Bottle 1 Image
+# Returns: an image object or nil(if no selection has been made)
+# Image Properties: https://shopify.dev/api/liquid/objects#image
+# Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
+########################################################################## -%}
+{%- assign bottle_1_image = section.settings.bottle_1_image -%}
+{{ bottle_1_image | image_url: width: bottle_1_image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+
+{%- ########################################################################## 
+# Label: Bottle 2 Image
+# Returns: an image object or nil(if no selection has been made)
+# Image Properties: https://shopify.dev/api/liquid/objects#image
+# Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
+########################################################################## -%}
+{%- assign bottle_2_image = section.settings.bottle_2_image -%}
+{{ bottle_2_image | image_url: width: bottle_2_image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+
+{%- ########################################################################## 
+# Label: Callout Text
+# Returns: a string or an empty object(if nothing has been entered)
+# Filters: https://shopify.dev/api/liquid/objects#string 
+########################################################################## -%}
+{{ section.settings.callout_text }} 
+
+{%- ########################################################################## 
+# Label: Enable Audio Player
+# Returns: a boolean. i.e. A binary value, either true or false.
+########################################################################## -%}
+{%- if section.settings.enable_audio_player -%}
+  {%- # Write your logic here -%} 
+{%- endif -%}
+
+{%- ########################################################################## 
+# Label: Audio Player Label
+# Returns: a string or an empty object(if nothing has been entered)
+# Filters: https://shopify.dev/api/liquid/objects#string 
+########################################################################## -%}
+{{ section.settings.audio_player_label }} 
+
+{% schema %}
+  {
+  "name": "Home - Main Banner",
+  "class": "home-banner",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image",
+      "info": "Upload a background image to use for the banner"
+    },
+    {
+      "type": "image_picker",
+      "id": "bottle_1_image",
+      "label": "Bottle 1 Image",
+      "info": "Upload one of two images for the banner"
+    },
+    {
+      "type": "image_picker",
+      "id": "bottle_2_image",
+      "label": "Bottle 2 Image",
+      "info": "Upload the second of two images for the banner"
+    },
+    {
+      "type": "text",
+      "id": "callout_text",
+      "label": "Callout Text",
+      "info": "Enter text that will appear in the callout bar at the bottom of the banner"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_audio_player",
+      "label": "Enable Audio Player",
+      "default": true,
+      "info": "Enable an audio player on this page"
+    },
+    {
+      "type": "text",
+      "id": "audio_player_label",
+      "label": "Audio Player Label",
+      "default": "Enhance with Audio",
+      "info": "Enter the label for the Audio Player button"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Home - Main Banner"
+    }
+  ]
+}  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

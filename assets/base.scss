@@ -2266,7 +2266,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 }
 
 .announcement-bar__message {
-  padding: 10px 0px;
+  padding: 8px 0px;
   margin: 0;
   font-size:14px;
   font-weight:800;
@@ -2274,6 +2274,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 
   @include breakpoint(tablet) {
     font-size:22.5px;
+    padding: 10px 0px;
   }
 }
 
