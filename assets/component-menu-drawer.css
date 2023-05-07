@@ -170,14 +170,14 @@
 .menu-drawer__menu.mobile-secondary {
   margin-top: 40px;
 }
-.menu-drawer__menu.mobile-secondary li:nth-child(even) a {
+.menu-drawer__menu.mobile-secondary li:nth-child(odd) a {
   color: #0094DA;
 }
-.menu-drawer__menu.mobile-secondary li:nth-child(odd) a {
+.menu-drawer__menu.mobile-secondary li:nth-child(even) a {
   color: #FFA500;
 }
-.menu-drawer__menu.mobile-secondary li:nth-child(3n+1) a {
-  color: #DE0000;
+.menu-drawer__menu.mobile-secondary li:nth-child(3n+3) a {
+  color: #FC4A6A;
 }
 
 .header__icon--menu {

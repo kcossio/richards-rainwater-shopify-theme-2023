@@ -10,19 +10,19 @@
     margin-top:40px;
 
     li {
-      &:nth-child(even) {
+      &:nth-child(odd) {
         a {
           color:$light_blue;
         }
       }
-      &:nth-child(odd) {
+      &:nth-child(even) {
         a {
           color:$orange;
         }
       }
-      &:nth-child(3n+1) {
+      &:nth-child(3n+3) {
         a {
-          color:$red;
+          color:$pink;
         }
       }
       
