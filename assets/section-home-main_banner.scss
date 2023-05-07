@@ -24,13 +24,17 @@ section.home-banner {
         width:100%;
         z-index:2;
         background:$dark_blue;
-        padding:20px;
+        padding:12px 20px 14px 20px;
         text-align:center;
+
+        @include breakpoint(tablet) {
+            padding:20px 20px 24px 20px;
+        }
 
         p {
             color:$white;
             margin:0px;
-            padding:20px;
+            padding:0px;
             line-height:1.2em;
             font-size:24px;
             font-weight:900;
