@@ -14,6 +14,17 @@
 
 // TT Commons Pro
 
+@font-face {
+  font-family: $tt_commons;
+  src: url('font_TTCommonsProExtraLight.woff2') format('woff2'), url('font_TTCommonsProExtraLight.woff') format('woff');
+  font-weight:200;
+}
+@font-face {
+  font-family: $tt_commons;
+  src: url('font_TTCommonsProExtraLightItalic.woff2') format('woff2'), url('font_TTCommonsProExtraLightItalic.woff') format('woff');
+  font-weight:200;
+  font-style:italic;
+}
 
 @font-face {
   font-family: $tt_commons;
@@ -91,14 +102,7 @@
   src: url('font_TTCommonsProThinItalic.woff2') format('woff2'), url('font_TTCommonsProThinItalic.woff') format('woff');
 }
 
-@font-face {
-  font-family: "TTCommonsProExtraLight";
-  src: url('font_TTCommonsProExtraLight.woff2') format('woff2'), url('font_TTCommonsProExtraLight.woff') format('woff');
-}
-@font-face {
-  font-family: "TTCommonsProExtraLightItalic";
-  src: url('font_TTCommonsProExtraLightItalic.woff2') format('woff2'), url('font_TTCommonsProExtraLightItalic.woff') format('woff');
-}
+
 
 @font-face {
   font-family: "TTCommonsProLight";

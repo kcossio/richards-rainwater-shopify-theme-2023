@@ -48,6 +48,17 @@
 }
 @font-face {
   font-family: "TT Commons";
+  src: url("font_TTCommonsProExtraLight.woff2") format("woff2"), url("font_TTCommonsProExtraLight.woff") format("woff");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("font_TTCommonsProExtraLightItalic.woff2") format("woff2"), url("font_TTCommonsProExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TT Commons";
   src: url("font_TTCommonsProMedium.woff2") format("woff2"), url("font_TTCommonsProMedium.woff") format("woff");
   font-weight: 400;
   font-style: normal;
@@ -115,14 +126,7 @@
   src: url('font_TTCommonsProThinItalic.woff2') format('woff2'), url('font_TTCommonsProThinItalic.woff') format('woff');
 }
 
-@font-face {
-  font-family: "TTCommonsProExtraLight";
-  src: url('font_TTCommonsProExtraLight.woff2') format('woff2'), url('font_TTCommonsProExtraLight.woff') format('woff');
-}
-@font-face {
-  font-family: "TTCommonsProExtraLightItalic";
-  src: url('font_TTCommonsProExtraLightItalic.woff2') format('woff2'), url('font_TTCommonsProExtraLightItalic.woff') format('woff');
-}
+
 
 @font-face {
   font-family: "TTCommonsProLight";
@@ -176,6 +180,9 @@ section.home-banner {
 }
 section.home-banner .home-banner-bar {
   display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
   position: absolute;
   bottom: 0px;
   left: 0px;
