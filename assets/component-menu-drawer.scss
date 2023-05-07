@@ -161,7 +161,7 @@
   
   
   .menu-drawer__menu-item {
-    padding: 10px 0px;
+    padding: 12px 0px;
     text-decoration: none;
     font-size: 28px;
     color:$white;
@@ -173,9 +173,9 @@
     &.secondary-mobile-menu__item {
         font-size:14px;
         font-weight:600;
-        letter-spacing:1px;
+        letter-spacing:.5px;
         text-transform: none;
-        padding:4px 0px;
+        padding:5px 0px;
 
         
     }
