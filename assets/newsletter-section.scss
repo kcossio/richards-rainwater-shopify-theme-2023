@@ -3,8 +3,6 @@
 @import "fonts";
 
 .newsletter__wrapper {
-    padding-right: calc(4rem / var(--font-body-scale));
-    padding-left: calc(4rem / var(--font-body-scale));
   
     .field__input {
         padding:2.5rem 25px;
@@ -26,6 +24,11 @@
                 padding:2.8rem 25px;
             }
         }
+    }
+
+    &.mobile_nl_wrapper {
+        text-align:center;
+        padding:69px 36px;
     }
   }
   
