@@ -12,6 +12,7 @@ section.home-banner {
     align-items:center;
     align-content:center;
     justify-content: center;
+    overflow:hidden;
 
     .home-banner-bar {
         display:flex;
@@ -54,16 +55,16 @@ section.home-banner {
         position:absolute;
         bottom:0px;
         width:auto;
-        max-height:90%;
-        translate:(0%, 20%);
+        max-height:120%;
+        transform:translate(0%, 11%);
         z-index:2;
 
         &.home-banner-bottle-left {
-            left:15vw;
+            left:13vw;
         }
 
         &.home-banner-bottle-right {
-            right:15vw;
+            right:8vw;
         }
     }
 }
