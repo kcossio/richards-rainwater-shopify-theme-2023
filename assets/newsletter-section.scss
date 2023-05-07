@@ -98,9 +98,14 @@
 
   // ---------------- Mobile Newsletter Image Animation ------------------ //
 
+.clouds-mobile-wrap {
+    width:100vw;
+    height:56px;
+    overflow:hidden;
+  
   .scroll-parent {
     position: relative;
-    width: 100vw;
+    width: 512px;
     height: 56px;
     overflow-x: hidden;
   }
@@ -111,15 +116,15 @@
     position: absolute;
     left: 0%;
     top: 0%;
-    animation: primary 3s linear infinite;
+    animation: primary 5s linear infinite;
   }
 
   .primary {
-    animation: primary 3s linear infinite;
+    animation: primary 5s linear infinite;
   }
   
   .secondary {
-    animation: secondary 3s linear infinite;
+    animation: secondary 5s linear infinite;
   }
   
   @keyframes primary {
@@ -139,3 +144,5 @@
       left: 0%;
     }
   }
+
+}

@@ -244,30 +244,31 @@
     margin: 0 0 0 1rem;
   }
 }
-.scroll-parent {
-  position: relative;
+.clouds-mobile-wrap {
   width: 100vw;
+  height: 56px;
+  overflow: hidden;
+}
+.clouds-mobile-wrap .scroll-parent {
+  position: relative;
+  width: 512px;
   height: 56px;
   overflow-x: hidden;
 }
-
-.scroll-element {
+.clouds-mobile-wrap .scroll-element {
   width: inherit;
   height: inherit;
   position: absolute;
   left: 0%;
   top: 0%;
-  animation: primary 3s linear infinite;
+  animation: primary 5s linear infinite;
 }
-
-.primary {
-  animation: primary 3s linear infinite;
+.clouds-mobile-wrap .primary {
+  animation: primary 5s linear infinite;
 }
-
-.secondary {
-  animation: secondary 3s linear infinite;
+.clouds-mobile-wrap .secondary {
+  animation: secondary 5s linear infinite;
 }
-
 @keyframes primary {
   from {
     left: 0%;
