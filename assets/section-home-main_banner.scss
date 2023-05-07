@@ -77,6 +77,21 @@ section.home-banner {
         line-height:1em;
         font-size:12vw;
         text-align:center;
-        width:100%;
+        width:auto;
+
+        div {
+            width:100%;
+
+            span {
+                display:inline-block;
+            }
+        }
+    }
+
+    .home-audio-player {
+        display:block;
+        position:absolute;
+        left:0px;
+        bottom:15%;
     }
 }

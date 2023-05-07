@@ -239,5 +239,17 @@ section.home-banner h2.home-banner-slogan-letters {
   line-height: 1em;
   font-size: 12vw;
   text-align: center;
+  width: auto;
+}
+section.home-banner h2.home-banner-slogan-letters div {
   width: 100%;
+}
+section.home-banner h2.home-banner-slogan-letters div span {
+  display: inline-block;
+}
+section.home-banner .home-audio-player {
+  display: block;
+  position: absolute;
+  left: 0px;
+  bottom: 15%;
 }

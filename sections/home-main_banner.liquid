@@ -33,14 +33,14 @@
 
 {%- if section.settings.enable_audio_player -%}
   {%- # Write your logic here -%} 
+
+  <div class="home-audio-player">
+    {{ section.settings.audio_player_label }} 
+  </div>
 {%- endif -%}
 
-{%- ########################################################################## 
-# Label: Audio Player Label
-# Returns: a string or an empty object(if nothing has been entered)
-# Filters: https://shopify.dev/api/liquid/objects#string 
-########################################################################## -%}
-{{ section.settings.audio_player_label }} 
+
+
 
 {% schema %}
   {
