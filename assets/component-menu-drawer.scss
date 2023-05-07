@@ -73,6 +73,7 @@
   details[open].menu-opening > .menu-drawer__submenu {
     transform: translateX(0);
     visibility: visible;
+    border:0px;
   }
   
   .js .menu-drawer__navigation .submenu-open {
