@@ -271,8 +271,14 @@
 .clouds-mobile-wrap .primary {
   animation: primary 10s linear infinite;
 }
+.clouds-mobile-wrap .primary.slow {
+  animation: primary 20s linear infinite;
+}
 .clouds-mobile-wrap .secondary {
   animation: secondary 10s linear infinite;
+}
+.clouds-mobile-wrap .secondary.slow {
+  animation: primary 20s linear infinite;
 }
 @keyframes primary {
   from {

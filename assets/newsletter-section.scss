@@ -128,10 +128,19 @@
 
   .primary {
     animation: primary 10s linear infinite;
+
+    &.slow {
+        animation: primary 20s linear infinite;
+    }
   }
   
   .secondary {
     animation: secondary 10s linear infinite;
+
+    &.slow {
+        animation: primary 20s linear infinite;
+    }
+    
   }
   
   @keyframes primary {
