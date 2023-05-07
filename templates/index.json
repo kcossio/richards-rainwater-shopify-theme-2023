@@ -3,6 +3,7 @@
     "76521080-48b1-42b7-8ffe-ccecb8390284": {
       "type": "home-main_banner",
       "settings": {
+        "background_image": "shopify:\/\/shop_images\/bg-home-banner-sky.jpg",
         "callout_text": "Yes, It's Really Rain!",
         "enable_audio_player": true,
         "audio_player_label": "Enhance with Audio"
