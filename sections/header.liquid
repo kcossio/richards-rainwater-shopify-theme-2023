@@ -55,6 +55,11 @@
     display: flex;
   }
 
+  .list-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 
   .list-menu--inline {
     display: inline-flex;
@@ -76,6 +81,12 @@
     padding-top: 1rem;
   }
 
+  @media screen and (min-width: 750px) {
+    .list-menu__item--link {
+      padding-bottom: 0.5rem;
+      padding-top: 0.5rem;
+    }
+  }
 </style>
 
 {%- style -%}
