@@ -2317,9 +2317,9 @@ a {
   width:100%;
 
   .header {
-    padding:20px 24px;
+    padding:20px 28px;
     @include breakpoint(tablet) {
-      padding:18px 36px;
+      padding:22px 36px;
 
     }
     @include breakpoint(laptop) {
@@ -2572,7 +2572,7 @@ a {
 
 .header__icon:hover .icon,
 .modal__close-button:hover .icon {
-  transform: scale(1.07);
+  transform: scale(1);
 }
 
 .header__icon .icon {
@@ -2583,14 +2583,16 @@ a {
 
   &.icon-hamburger {
     fill:$darkest_blue;
-    width:27px;
+    width:25px;
     height:21px;
+    left:50%;
   }
 
   &.icon-close {
     fill:$darkest_blue;
     width:17px;
     height:17px;
+    left:50%;
   }
 }
 

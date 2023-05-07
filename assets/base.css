@@ -2407,11 +2407,11 @@ a svg {
   width: 100%;
 }
 .section-header .header {
-  padding: 20px 24px;
+  padding: 20px 28px;
 }
 @media (min-width: 768px) {
   .section-header .header {
-    padding: 18px 36px;
+    padding: 22px 36px;
   }
 }
 @media (min-width: 1280px) {
@@ -2645,7 +2645,7 @@ a svg {
 
 .header__icon:hover .icon,
 .modal__close-button:hover .icon {
-  transform: scale(1.07);
+  transform: scale(1);
 }
 
 .header__icon .icon {
@@ -2656,13 +2656,15 @@ a svg {
 }
 .header__icon .icon.icon-hamburger {
   fill: #00142A;
-  width: 27px;
+  width: 25px;
   height: 21px;
+  left: 50%;
 }
 .header__icon .icon.icon-close {
   fill: #00142A;
   width: 17px;
   height: 17px;
+  left: 50%;
 }
 
 .header__icon,
