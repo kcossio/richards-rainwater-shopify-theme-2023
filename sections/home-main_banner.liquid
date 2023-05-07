@@ -38,6 +38,17 @@
     <p>{{ section.settings.audio_player_label }}<p>
     <audio class='player_audio' src='{{ 'Nature-sounds-birds-and-rain.mp3' | asset_url }}'></audio>
   </div>
+  <script>
+    jQuery('.home-audio-player').click(function() {
+      if (jQuery('.player_audio').paused == false) {
+        jQuery('.player_audio').pause();
+          alert('music paused');
+      } else {
+          jQuery('.player_audio').play();
+          alert('music playing');
+      }
+    });
+  </script>
 {%- endif -%}
 
 
