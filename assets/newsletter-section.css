@@ -261,8 +261,8 @@
 }
 .clouds-mobile-wrap .scroll-parent {
   position: relative;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   overflow-x: hidden;
 }
 .clouds-mobile-wrap .scroll-element {
