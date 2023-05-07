@@ -2491,10 +2491,10 @@ a svg {
          column-gap: 1rem;
   }
   .header--middle-left {
-    grid-template-areas: "heading navigation icons";
-    grid-template-columns: auto auto 1fr;
-    -moz-column-gap: 2rem;
-         column-gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
   }
   .header--middle-center:not(.drawer-menu) {
     grid-template-areas: "navigation heading icons";
