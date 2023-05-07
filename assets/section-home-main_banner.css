@@ -218,8 +218,9 @@ section.home-banner .home-banner-bottle {
   display: block;
   position: absolute;
   bottom: 0px;
-  width: 50%;
-  transform: 0%, 20%;
+  width: auto;
+  max-height: 90%;
+  translate: 0%, 20%;
   z-index: 2;
 }
 section.home-banner .home-banner-bottle.home-banner-bottle-left {
