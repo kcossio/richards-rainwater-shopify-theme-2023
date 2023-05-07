@@ -1,31 +1,19 @@
-{%- ########################################################################## 
-# Label: Background Image
-# Returns: an image object or nil(if no selection has been made)
-# Image Properties: https://shopify.dev/api/liquid/objects#image
-# Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
-########################################################################## -%}
+{{ 'section-home-main_banner.css' | asset_url | stylesheet_tag }}
+
 {%- assign background_image = section.settings.background_image -%}
 {%- if background_image != blank -%}
-{{ background_image | image_url: width: background_image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+  <div class="bg-img bg-hero fade-in">
+    {{ background_image | image_url: width: 1920 | image_tag: class: 'bg-parallax', loading: 'lazy' }}
+  </div>
 {%- endif -%}
 
-{%- ########################################################################## 
-# Label: Bottle 1 Image
-# Returns: an image object or nil(if no selection has been made)
-# Image Properties: https://shopify.dev/api/liquid/objects#image
-# Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
-########################################################################## -%}
+
 {%- assign bottle_1_image = section.settings.bottle_1_image -%}
 {%- if bottle_1_image != blank -%}
 {{ bottle_1_image | image_url: width: bottle_1_image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
 {%- endif -%}
 
-{%- ########################################################################## 
-# Label: Bottle 2 Image
-# Returns: an image object or nil(if no selection has been made)
-# Image Properties: https://shopify.dev/api/liquid/objects#image
-# Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
-########################################################################## -%}
+
 {%- assign bottle_2_image = section.settings.bottle_2_image -%}
 {%- if bottle_2_image != blank -%}
 {{ bottle_2_image | image_url: width: bottle_2_image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}

@@ -22,6 +22,44 @@
     width:100%;
 }
 
+
+//  --------------- Section Background Image --------------- //
+
+.bg-img {
+
+  display: flex;
+		width: 100%;
+		height: 100%;
+    position:absolute;
+    top:0px;
+    left:0px;
+		z-index:1;
+    overflow:hidden;
+
+    &.bg-hero {
+      z-index:0;
+    }
+
+    &.svg {
+      align-items:center;
+    }
+
+    img, picture, svg {
+      z-index:1;
+		  object-fit: cover; 
+		  height: auto;
+      min-height:100%;
+		  width:100%;
+      display:block;
+    }
+
+ 
+
+  &.cover {
+    object-fit:cover;
+  }
+}
+
 // ------ Font Definitions ------- //
 
 .imperial {
