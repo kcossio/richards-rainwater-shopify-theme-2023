@@ -261,13 +261,13 @@
   position: absolute;
   left: 0%;
   top: 0%;
-  animation: primary 5s linear infinite;
+  animation: primary 10s linear infinite;
 }
 .clouds-mobile-wrap .primary {
-  animation: primary 5s linear infinite;
+  animation: primary 10s linear infinite;
 }
 .clouds-mobile-wrap .secondary {
-  animation: secondary 5s linear infinite;
+  animation: secondary 10s linear infinite;
 }
 @keyframes primary {
   from {
