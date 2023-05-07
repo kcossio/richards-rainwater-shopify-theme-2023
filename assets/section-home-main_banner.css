@@ -187,7 +187,7 @@ section.home-banner .home-banner-bar {
   bottom: 0px;
   left: 0px;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
   background: #000F44;
   padding: 12px 20px 14px 20px;
   text-align: center;
@@ -213,4 +213,18 @@ section.home-banner .home-banner-bar p sup {
   section.home-banner .home-banner-bar p {
     font-size: 26.25;
   }
+}
+section.home-banner .home-banner-bottle {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  width: 50%;
+  transform: 0%, 20%;
+  z-index: 2;
+}
+section.home-banner .home-banner-bottle.home-banner-bottle-left {
+  left: 15vw;
+}
+section.home-banner .home-banner-bottle.home-banner-bottle-right {
+  right: 15vw;
 }
