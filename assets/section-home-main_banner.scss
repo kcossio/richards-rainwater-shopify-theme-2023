@@ -1,6 +1,32 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+
 section.home-banner {
-    display:block;
+    display:flex;
+    flex-wrap:wrap;
     position:relative;
     z-index:1;
     min-height:100vh;
+
+    .home-banner-bar {
+        display:flex;
+        background:$dark_blue;
+        padding:20px;
+        text-align:center;
+
+        p {
+            color:$white;
+            margin:0px;
+            padding:20px;
+            line-height:1.2em;
+            font-size:24px;
+            font-weight:900;
+            letter-spacing:.5px;
+            
+            @include breakpoint(tablet) {
+                font-size:26.25;
+            }
+        }
+    }
 }
