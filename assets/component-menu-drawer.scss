@@ -8,6 +8,21 @@
 
   &.mobile-secondary {
     margin-top:40px;
+
+    li {
+      a {
+        &:nth-child(even) {
+          color:$light_blue;
+        }
+        &:nth-child(odd) {
+          color:$orange;
+        }
+        &:nth-child(3n+1) {
+          color:$red;
+        }
+      }
+    }
+
   }
 }
 
@@ -157,15 +172,7 @@
         text-transform: none;
         padding:4px 0px;
 
-        &:nth-child(even) {
-          color:$light_blue;
-        }
-        &:nth-child(odd) {
-          color:$orange;
-        }
-        &:nth-child(3n+1) {
-          color:$red;
-        }
+        
     }
   }
   

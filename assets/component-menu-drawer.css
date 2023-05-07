@@ -170,6 +170,15 @@
 .menu-drawer__menu.mobile-secondary {
   margin-top: 40px;
 }
+.menu-drawer__menu.mobile-secondary li a:nth-child(even) {
+  color: #0094DA;
+}
+.menu-drawer__menu.mobile-secondary li a:nth-child(odd) {
+  color: #FFA500;
+}
+.menu-drawer__menu.mobile-secondary li a:nth-child(3n+1) {
+  color: #DE0000;
+}
 
 .header__icon--menu {
   position: initial;
@@ -301,15 +310,6 @@ details[open].menu-opening > .menu-drawer__submenu {
   letter-spacing: 1px;
   text-transform: none;
   padding: 4px 0px;
-}
-.menu-drawer__menu-item.secondary-mobile-menu__item:nth-child(even) {
-  color: #0094DA;
-}
-.menu-drawer__menu-item.secondary-mobile-menu__item:nth-child(odd) {
-  color: #FFA500;
-}
-.menu-drawer__menu-item.secondary-mobile-menu__item:nth-child(3n+1) {
-  color: #DE0000;
 }
 
 .no-js .menu-drawer__menu-item {
