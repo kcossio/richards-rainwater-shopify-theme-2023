@@ -250,7 +250,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer__navigation {
-  padding: 10px 0px 60px 0px;
+  padding: 10px 32px 60px 32px;
 }
 
 .menu-drawer__inner-submenu {
@@ -276,13 +276,14 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer__menu-item {
-  padding: 1.1rem 3.2rem;
+  padding: 0px 0px;
   text-decoration: none;
   font-size: 28px;
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 900;
+  line-height: 1em;
 }
 .menu-drawer__menu-item.secondary-mobile-menu__item {
   font-size: 14px;
