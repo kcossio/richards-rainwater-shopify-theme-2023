@@ -129,8 +129,11 @@
     margin-bottom: 0.2rem;
   }
   
+  .mobile-secondary {
+    margin-top:40px;
+  }
   .menu-drawer__menu-item {
-    padding: 0px 0px;
+    padding: 10px 0px;
     text-decoration: none;
     font-size: 28px;
     color:$white;
@@ -144,6 +147,7 @@
         font-weight:600;
         letter-spacing:1px;
         text-transform: none;
+        padding:4px 0px;
     }
   }
   
