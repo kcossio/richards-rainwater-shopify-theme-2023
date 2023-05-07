@@ -202,7 +202,7 @@ section.home-banner .home-banner-bar p {
   letter-spacing: 0.5px;
 }
 section.home-banner .home-banner-bar p sup {
-  font-weight: 500;
+  font-weight: 200;
 }
 @media (min-width: 768px) {
   section.home-banner .home-banner-bar p {
