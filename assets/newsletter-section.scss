@@ -96,10 +96,15 @@
   }
   
 
-  // ---------------- Mobile Newsletter Image Animation ------------------ //
+  // ---------------- Mobile Newsletter ------------------ //
 
-  /* --- Set wrap --- */
-  
+.mobile-menu-newsletter {
+    width:100vw;
+    overflow:hidden;
+}
+
+// Image Animation //
+
 .clouds-mobile-wrap {
     width:100vw;
     height:56px;

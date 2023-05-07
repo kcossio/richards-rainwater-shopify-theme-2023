@@ -182,6 +182,7 @@
   visibility: hidden;
   z-index: 2;
   transition: opacity 0s, visibility 0s;
+  border: 0px;
 }
 
 menu-drawer > details[open] > summary::before {

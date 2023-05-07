@@ -244,7 +244,11 @@
     margin: 0 0 0 1rem;
   }
 }
-/* --- Set wrap --- */
+.mobile-menu-newsletter {
+  width: 100vw;
+  overflow: hidden;
+}
+
 .clouds-mobile-wrap {
   width: 100vw;
   height: 56px;
