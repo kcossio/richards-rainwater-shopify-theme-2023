@@ -81,9 +81,19 @@ section.home-banner {
 
         div {
             width:100%;
+            display:flex;
+            justify-content:center;
+            align-content: flex-start;
+            align-items: flex-start;
 
             span {
                 display:inline-block;
+
+                small {
+                    display:block;
+                    font-size:23%;
+                    line-height:23%;
+                }
             }
         }
     }

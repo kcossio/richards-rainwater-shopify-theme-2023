@@ -243,9 +243,18 @@ section.home-banner h2.home-banner-slogan-letters {
 }
 section.home-banner h2.home-banner-slogan-letters div {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
 }
 section.home-banner h2.home-banner-slogan-letters div span {
   display: inline-block;
+}
+section.home-banner h2.home-banner-slogan-letters div span small {
+  display: block;
+  font-size: 23%;
+  line-height: 23%;
 }
 section.home-banner .home-audio-player {
   display: block;
