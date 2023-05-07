@@ -250,6 +250,7 @@ section.home-banner h2.home-banner-slogan-letters div {
 }
 section.home-banner h2.home-banner-slogan-letters div span {
   display: inline-block;
+  line-height: 0.9em;
 }
 section.home-banner h2.home-banner-slogan-letters div span small {
   display: block;
