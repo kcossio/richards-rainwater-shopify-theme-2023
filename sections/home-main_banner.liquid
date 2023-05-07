@@ -35,7 +35,8 @@
   {%- # Write your logic here -%} 
 
   <div class="home-audio-player">
-    {{ section.settings.audio_player_label }} 
+    <p>{{ section.settings.audio_player_label }}<p>
+    <audio class='player_audio' src='{{ 'Nature-sounds-birds-and-rain.mp3' | asset_url }}'></audio>
   </div>
 {%- endif -%}
 
