@@ -299,11 +299,11 @@
     left: 0%;
   }
 }
-.clouds.clouds-mobile-wrap {
+.clouds.clouds-mobile {
   width: 100vw;
   height: 56px;
 }
-.clouds.clouds-mobile-wrap .scroll-parent {
+.clouds.clouds-mobile .scroll-parent {
   width: 512px;
   height: 56px;
 }
