@@ -4,7 +4,7 @@
       "type": "home-main_banner",
       "settings": {
         "background_image": "shopify:\/\/shop_images\/bg-home-banner-sky.jpg",
-        "callout_text": "Yes, It's Really Rain!",
+        "callout_text": "Yes, It's Really Rain!<sup>®<\/sup>",
         "enable_audio_player": true,
         "audio_player_label": "Enhance with Audio"
       }
