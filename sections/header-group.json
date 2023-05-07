@@ -34,11 +34,19 @@
           "settings": {
             "mobile_menu_secondary": "mobile-menu-secondary"
           }
+        },
+        "7853d535-4d0b-4e4a-b9a6-a773eb7bd366": {
+          "type": "mobile_newsletter_signup",
+          "settings": {
+            "heading": "Thirsty 4 More?",
+            "text": "<p>Join the rainmaker movement.<\/p>"
+          }
         }
       },
       "block_order": [
         "a1d0016a-b486-476f-9e0e-dc635c02f815",
-        "9c3600e5-d44f-42eb-972c-65145ccc8474"
+        "9c3600e5-d44f-42eb-972c-65145ccc8474",
+        "7853d535-4d0b-4e4a-b9a6-a773eb7bd366"
       ],
       "settings": {
         "logo_position": "middle-left",
