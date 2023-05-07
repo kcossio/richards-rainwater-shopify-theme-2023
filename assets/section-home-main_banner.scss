@@ -67,4 +67,15 @@ section.home-banner {
             right:8vw;
         }
     }
+
+    h2.home-banner-slogan-letters {
+        display:block;
+        position:relative;
+        z-index:4;
+        font-weight:900;
+        color:$dark_blue;
+        line-height:1em;
+        font-size:10vw;
+        text-align:center;
+    }
 }
