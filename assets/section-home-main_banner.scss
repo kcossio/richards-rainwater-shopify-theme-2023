@@ -168,7 +168,7 @@ section.home-banner {
             top:0px;
             right:0px;
             transform:translate(-50%,50%);
-            pointer-events: auto;
+            cursor:pointer;
 
             @include breakpoint(tablet) {
                 width:13px;

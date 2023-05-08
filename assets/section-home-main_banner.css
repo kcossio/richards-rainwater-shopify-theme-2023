@@ -321,7 +321,7 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   top: 0px;
   right: 0px;
   transform: translate(-50%, 50%);
-  pointer-events: auto;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .home-audio-player button.close {
