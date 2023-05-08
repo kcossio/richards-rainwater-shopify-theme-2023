@@ -131,8 +131,9 @@ section.home-banner {
         font-size:15px;
         line-height:1.2em;
         margin:0px;
-        padding:0px;
+        padding:0px 0px 0px 12px;
         display:none;
+        flex-grow:1;
 
         @include breakpoint(tablet) {
             display:block;
