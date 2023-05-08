@@ -109,7 +109,8 @@ section.home-banner {
     display:flex;
     flex-wrap:wrap;
     position:absolute;
-    left:0px;
+    z-index:10;
+    right:100%;
     bottom:15%;
     height:69px;
     width:108px;
@@ -117,16 +118,20 @@ section.home-banner {
     border:2px solid #C8C8C8;
     border-radius:18px;
     padding:23px 36px 23px 50px;
-    transform:translate(-20px,0px);
+    transform:translate(88px,0px);
     transition:all .3s ease 0s;
 
     @include breakpoint(tablet) {
         height:80px;
         width:228px;
+        transform:translate(208px,0px);
     }
 
     &.closed{
-
+        transform:translate(30px 0px);
+        button#close-player {
+            transform:rotate(45deg);
+        }
     }
 
     p {
