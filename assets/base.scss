@@ -522,15 +522,19 @@ h5,
 
 h1,
 .h1 {
-  font-size: calc(var(--font-heading-scale) * 3rem);
-}
 
-@media only screen and (min-width: 750px) {
-  h1,
-  .h1 {
-    font-size: calc(var(--font-heading-scale) * 4rem);
+  color:$light_blue;
+  font-weight:900;
+  line-height:1.2em;
+  font-size:30px;
+  margin:0px 0px 40px 0px;
+
+  @include breakpoint(tablet) {
+    font-size:71.25px;
+    margin:0px 0px 70px 0px;
   }
 }
+
 
 h2,
 .h2 {
