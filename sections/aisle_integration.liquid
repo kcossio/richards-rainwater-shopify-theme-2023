@@ -1,0 +1,63 @@
+<div class="inner aisle-inner">
+  <!--Inject the div that this script will attach itself to-->
+  <!--This must exist in the dom when the script loads-->
+  <div id="aisle-form-submit"></div>
+  <!--Optional: Inject the default stylesheet-->
+  <link
+      rel="stylesheet"
+      href="https://storage.googleapis.com/gotoaisle-assets-store/aisle-form-submit-script/index.css"
+  />
+  <!--Configure the scripts properties-->
+  <script>
+      var aisleFormConfig = {
+          brandReference: '{{ section.settings.api_key }} ',
+          campaignPhoneNumber: '{{ section.settings.campaign_phone_number }} '
+      };
+  </script>
+  <!--Inject the main script-->
+  <script
+      type="module"
+      src="https://storage.googleapis.com/gotoaisle-assets-store/aisle-form-submit-script/index.js"
+      onload="window.aisleFormLoad(aisleFormConfig)"
+  ></script>
+</div><!--End inner aisle-inner-->
+
+
+{% schema %}
+  {
+  "name": "Aisle Integration",
+  "class": "aisle",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "This section adds an instance of the Aisle integration to this page."
+    },
+    {
+      "type": "text",
+      "id": "api_key",
+      "label": "API Key",
+      "default": "U2FsdGVkX1+G1iQuk+1fbDluy/LxlfYSeQSnuczV+kyY0wwvY8dzJ3sNoJHUv9Fo",
+      "info": "Add an API key for this Aisle instance"
+    },
+    {
+      "type": "text",
+      "id": "campaign_phone_number",
+      "label": "Campaign Phone Number",
+      "default": "2673884764",
+      "info": "Enter the campaign phone number for this Aisle instance"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Aisle Integration"
+    }
+  ]
+}  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
