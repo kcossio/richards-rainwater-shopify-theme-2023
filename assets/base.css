@@ -733,6 +733,18 @@ h6,
           margin-block-end: 1.67em;
 }
 
+p {
+  font-size: 16px;
+  color: #000F44;
+  line-height: 1.3em;
+  margin: 0px 0px 2em 0px;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 19.5px;
+  }
+}
+
 blockquote {
   font-style: italic;
   color: rgba(var(--color-foreground), 0.75);
