@@ -291,6 +291,7 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   padding: 0px 0px 0px 12px;
   display: none;
   flex-grow: 1;
+  width: 86px;
 }
 @media (min-width: 768px) {
   .home-audio-player p {

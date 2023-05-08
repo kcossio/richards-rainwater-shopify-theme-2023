@@ -134,6 +134,7 @@ section.home-banner {
         padding:0px 0px 0px 12px;
         display:none;
         flex-grow:1;
+        width:86px;
 
         @include breakpoint(tablet) {
             display:block;
