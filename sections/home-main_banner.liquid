@@ -36,13 +36,34 @@
 
   <div class="home-audio-player">
     <p>{{ section.settings.audio_player_label }}<p>
-    <audio class='player_audio' src='{{ 'Nature-sounds-birds-and-rain.mp3' | asset_url }}'></audio>
+      <audio id="rainAudio">
+        <source src="{{ 'Nature-sounds-birds-and-rain.mp3' | asset_url }}" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
   </div>
   <script type="text/javascript">
     
-    jQuery('.home-audio-player').click(function() {
-      console.log('Hello');
+    var myAudio = document.getElementById('rainAudio');
+
+    
+    jQuery( ".home-audio-player" ).on( "click", function( event ) {
+      event.stopPropagation();
+
+      if (myAudio.duration > 0 && !myAudio.paused) {
+
+        //Its playing...do your job
+        myAudio.pause(); 
+        console.log('We are now paused');
+
+        } else {
+
+          //Not playing...maybe paused, stopped or never played.
+          myAudio.play();
+          console.log('We are now playing');
+
+      }
     });
+
   </script>
 {%- endif -%}
 
