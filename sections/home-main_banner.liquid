@@ -57,14 +57,14 @@
 
         //Its playing...do your job
         myAudio.pause(); 
-        jQuery(this).removeClass('on');
+        jQuery(this).removeClass('on').addClass('off');
         console.log('We are now paused');
 
         } else {
 
           //Not playing...maybe paused, stopped or never played.
           myAudio.play();
-          jQuery(this).addClass('on');
+          jQuery(this).addClass('on').removeClass('off');
           console.log('We are now playing');
 
       }

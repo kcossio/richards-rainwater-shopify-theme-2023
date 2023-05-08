@@ -145,8 +145,21 @@ section.home-banner {
             height:100%;
             opacity:0;
 
+            
         }
 
+    }
+
+    &.off {
+
+        button {
+            img.on {
+                opacity:1;
+            }
+            img.off {
+                opacity:0;
+            }
+        }
     }
 
     &.on {
