@@ -683,6 +683,7 @@ h2,
 .h2 {
   font-size: 16px;
   font-weight: 900;
+  margin: 3em 0px 1.3em 0px;
 }
 @media (min-width: 768px) {
   h2,
