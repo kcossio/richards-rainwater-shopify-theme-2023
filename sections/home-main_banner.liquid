@@ -60,18 +60,18 @@
       if (myAudio.duration > 0 && !myAudio.paused) {
           //Its playing...do your job
           myAudio.pause(); 
-          jQuery(this).removeClass('on').addClass('off');
+          jQuery('.home-audio-player').removeClass('on').addClass('off');
           //console.log('We are now paused');
         } else {
           //Not playing...maybe paused, stopped or never played.
           myAudio.play();
-          jQuery(this).addClass('on').removeClass('off');
+          jQuery('.home-audio-player').addClass('on').removeClass('off');
           //console.log('We are now playing');
       }
     });
 
     jQuery( ".home-audio-player .close" ).on( "click", function( event ) {
-      event.preventDefault();
+      //event.preventDefault();
       jQuery('.home-audio-player').toggleClass('closed');
     });
 
