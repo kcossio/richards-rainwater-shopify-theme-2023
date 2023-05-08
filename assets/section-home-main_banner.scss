@@ -125,6 +125,10 @@ section.home-banner {
         width:228px;
     }
 
+    &.closed{
+
+    }
+
     p {
         color:#C8C8C8;
         font-weight:600;
@@ -149,9 +153,26 @@ section.home-banner {
         position:relative;
         border:0px;
         font-size:0px;
-        aspect-ratio: 49 / 46;
-        width:36.75px;
-        height:auto;
+
+        &.play-audio {
+            aspect-ratio: 49 / 46;
+            width:36.75px;
+            height:auto;
+        }
+
+        .close {
+            aspect-ratio:1 / 1;
+            width:8px;
+            height:auto;
+            position:absolute;
+            top:0px;
+            right:0px;
+            transform:translate(-50%,50%);
+
+            @include breakpoint(tablet) {
+                width:13px;
+            }
+        }
 
         img {
             display:block;

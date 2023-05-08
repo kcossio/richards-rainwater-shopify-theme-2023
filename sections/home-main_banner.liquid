@@ -40,6 +40,9 @@
       <img class="note on" src="{{ 'note-rainbow.svg' | asset_url }}" width="49" height="46" role="presentation" alt="note" />
     </button>
     <p>{{ section.settings.audio_player_label }}<p>
+      <button class="close">
+        <img class="note off" src="{{ 'icon-close-grey.svg' | asset_url }}" width="13" height="13" role="presentation" alt="x" />
+      </button>
       <audio id="rainAudio" loop>
         <source src="{{ 'audio-rain-temp.mp3' | asset_url }}" type="audio/mpeg">
         Your browser does not support the audio element.
@@ -50,24 +53,26 @@
     var myAudio = document.getElementById('rainAudio');
 
     
-    jQuery( ".home-audio-player" ).on( "click", function( event ) {
-      event.stopPropagation();
+    jQuery( ".home-audio-player .play-audio, .home-audio-player p" ).on( "click", function( event ) {
+      //event.stopPropagation();
+      event.preventDefault();
 
       if (myAudio.duration > 0 && !myAudio.paused) {
-
-        //Its playing...do your job
-        myAudio.pause(); 
-        jQuery(this).removeClass('on').addClass('off');
-        console.log('We are now paused');
-
+          //Its playing...do your job
+          myAudio.pause(); 
+          jQuery(this).removeClass('on').addClass('off');
+          //console.log('We are now paused');
         } else {
-
           //Not playing...maybe paused, stopped or never played.
           myAudio.play();
           jQuery(this).addClass('on').removeClass('off');
-          console.log('We are now playing');
-
+          //console.log('We are now playing');
       }
+    });
+
+    jQuery( ".home-audio-player .close" ).on( "click", function( event ) {
+      event.preventDefault();
+      jQuery('.home-audio-player').toggleClass('closed');
     });
 
   </script>
