@@ -288,7 +288,7 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   transform: translate(30px, 0px);
 }
 .home-audio-player.closed button#close-player {
-  transform: rotate(45deg), translate(-80%, 80%);
+  transform: rotate(45deg);
 }
 .home-audio-player p {
   color: #C8C8C8;
@@ -343,18 +343,17 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
 }
 .home-audio-player button#close-player {
   display: block;
-  width: 8px;
-  height: 8px;
+  width: 13px;
+  height: 13px;
   position: absolute;
   z-index: 4;
-  top: 0px;
-  right: 0px;
-  transform: translate(-80%, 80%);
+  top: 10px;
+  right: 10px;
   cursor: pointer;
 }
 @media (min-width: 768px) {
   .home-audio-player button#close-player {
-    width: 13px;
-    height: 13px;
+    width: 8px;
+    height: 8px;
   }
 }
