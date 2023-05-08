@@ -281,6 +281,9 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
 }
 .home-audio-player button {
   -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  background: transparent;
   display: block;
   position: relative;
   border: 0px;
