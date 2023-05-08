@@ -35,12 +35,12 @@
   {%- # Write your logic here -%} 
 
   <div class="home-audio-player off">
-    <button class="play-audio">
+    <button id="play-audio" class="play-audio">
       <img class="note off" src="{{ 'note-grey.svg' | asset_url }}" width="49" height="46" role="presentation" alt="note" />
       <img class="note on" src="{{ 'note-rainbow.svg' | asset_url }}" width="49" height="46" role="presentation" alt="note" />
     </button>
     <p>{{ section.settings.audio_player_label }}</p>
-      <a class="close-player">
+      <a id="close-player" class="close-player">
         <img class="x" src="{{ 'icon-close-grey.svg' | asset_url }}" width="13" height="13" role="presentation" alt="x" />
       </a>
       <audio id="rainAudio" loop>
@@ -53,8 +53,8 @@
     var myAudio = document.getElementById('rainAudio');
 
     //Audio Buttons
-    jQuery( ".home-audio-player .play-audio" ).on( "click", function( event ) {
-      event.stopPropagation();
+    jQuery( "#play-audio" ).on( "click", function( event ) {
+      //event.stopPropagation();
       //event.preventDefault();
 
       if (myAudio.duration > 0 && !myAudio.paused) {
@@ -70,7 +70,7 @@
       }
     });
 
-    jQuery( ".close-player" ).on( "click", function( event ) {
+    jQuery( "#close-player" ).on( "click", function( event ) {
       //event.preventDefault();
       jQuery('.home-audio-player').toggleClass('closed');
       console.log('clicked close');
