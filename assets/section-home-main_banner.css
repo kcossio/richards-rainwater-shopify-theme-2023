@@ -333,7 +333,7 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
 .home-audio-player.on button img.off {
   opacity: 0;
 }
-.home-audio-player a.close-player {
+.home-audio-player button#close-player {
   display: block;
   width: 8px;
   height: 8px;
@@ -345,7 +345,7 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   cursor: pointer;
 }
 @media (min-width: 768px) {
-  .home-audio-player a.close-player {
+  .home-audio-player button#close-player {
     width: 13px;
     height: 13px;
   }
