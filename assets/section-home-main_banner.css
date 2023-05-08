@@ -260,7 +260,8 @@ section.home-banner h2.home-banner-slogan-letters div span small {
 section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   transform: translate(0, 15%);
 }
-section.home-banner .home-audio-player {
+
+.home-audio-player {
   display: flex;
   position: absolute;
   left: 0px;
@@ -270,11 +271,36 @@ section.home-banner .home-audio-player {
   border-radius: 12px;
   padding: 23px 36px 23px 50px;
 }
-section.home-banner .home-audio-player p {
+.home-audio-player p {
   color: #C8C8C8;
   font-weight: 600;
   font-size: 15px;
   line-height: 1.2em;
   margin: 0px;
   padding: 0px;
+}
+.home-audio-player button {
+  -webkit-appearance: none;
+  display: block;
+  position: relative;
+  border: 0px;
+  font-size: 0px;
+  aspect-ratio: 49/46;
+  width: 36.75px;
+  height: auto;
+}
+.home-audio-player button img {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.home-audio-player.on button img.on {
+  opacity: 1;
+}
+.home-audio-player.on button img.off {
+  opacity: 0;
 }

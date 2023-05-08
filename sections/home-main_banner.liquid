@@ -35,6 +35,10 @@
   {%- # Write your logic here -%} 
 
   <div class="home-audio-player">
+    <button class="play-audio">
+      <img class="note off" src="{{ 'note-grey.svg' | asset_url }}" width="49" height="46" role="presentation" alt="note" />
+      <img class="note on" src="{{ 'note-rainbow.svg' | asset_url }}" width="49" height="46" role="presentation" alt="note" />
+    </button>
     <p>{{ section.settings.audio_player_label }}<p>
       <audio id="rainAudio" loop>
         <source src="{{ 'audio-rain-temp.mp3' | asset_url }}" type="audio/mpeg">
@@ -53,12 +57,14 @@
 
         //Its playing...do your job
         myAudio.pause(); 
+        jQuery.this().removeClass('on');
         console.log('We are now paused');
 
         } else {
 
           //Not playing...maybe paused, stopped or never played.
           myAudio.play();
+          jQuery.this().addClass('on');
           console.log('We are now playing');
 
       }
