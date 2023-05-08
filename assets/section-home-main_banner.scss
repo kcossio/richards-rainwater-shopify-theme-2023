@@ -160,20 +160,7 @@ section.home-banner {
             height:auto;
         }
 
-        &.close {
-            aspect-ratio:1 / 1;
-            width:8px;
-            height:auto;
-            position:absolute;
-            top:0px;
-            right:0px;
-            transform:translate(-50%,50%);
-            cursor:pointer;
-
-            @include breakpoint(tablet) {
-                width:13px;
-            }
-        }
+        
 
         img {
             display:block;
@@ -209,5 +196,22 @@ section.home-banner {
                 opacity:0;
             }
         }
+    }
+    a.close-player {
+        display:block; 
+        width:8px;
+        height:8px;
+        position:absolute;
+        z-index:4;
+        top:0px;
+        right:0px;
+        transform:translate(-50%,50%);
+        cursor:pointer;
+
+        @include breakpoint(tablet) {
+            width:13px;
+            height:13px;
+        }
+    
     }
 }

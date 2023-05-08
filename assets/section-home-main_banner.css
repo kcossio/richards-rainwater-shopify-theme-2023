@@ -313,21 +313,6 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   width: 36.75px;
   height: auto;
 }
-.home-audio-player button.close {
-  aspect-ratio: 1/1;
-  width: 8px;
-  height: auto;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  transform: translate(-50%, 50%);
-  cursor: pointer;
-}
-@media (min-width: 768px) {
-  .home-audio-player button.close {
-    width: 13px;
-  }
-}
 .home-audio-player button img {
   display: block;
   position: absolute;
@@ -347,4 +332,21 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
 }
 .home-audio-player.on button img.off {
   opacity: 0;
+}
+.home-audio-player a.close-player {
+  display: block;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  z-index: 4;
+  top: 0px;
+  right: 0px;
+  transform: translate(-50%, 50%);
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .home-audio-player a.close-player {
+    width: 13px;
+    height: 13px;
+  }
 }

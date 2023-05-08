@@ -40,9 +40,9 @@
       <img class="note on" src="{{ 'note-rainbow.svg' | asset_url }}" width="49" height="46" role="presentation" alt="note" />
     </button>
     <p>{{ section.settings.audio_player_label }}</p>
-      <button class="close">
+      <a class="close-player">
         <img class="x" src="{{ 'icon-close-grey.svg' | asset_url }}" width="13" height="13" role="presentation" alt="x" />
-      </button>
+      </a>
       <audio id="rainAudio" loop>
         <source src="{{ 'audio-rain-temp.mp3' | asset_url }}" type="audio/mpeg">
         Your browser does not support the audio element.
@@ -70,9 +70,10 @@
       }
     });
 
-    jQuery( ".home-audio-player .close" ).on( "click", function( event ) {
+    jQuery( ".close-player" ).on( "click", function( event ) {
       //event.preventDefault();
       jQuery('.home-audio-player').toggleClass('closed');
+      console.log('clicked close');
     });
 
   </script>
