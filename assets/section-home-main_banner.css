@@ -267,10 +267,20 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   position: absolute;
   left: 0px;
   bottom: 15%;
+  height: 69px;
+  width: 108px;
   background: #ffffff;
   border: 2px solid #C8C8C8;
-  border-radius: 12px;
+  border-radius: 18px;
   padding: 23px 36px 23px 50px;
+  transform: translate(-20px, 0px);
+  transition: all 0.3s ease 0s;
+}
+@media (min-width: 768px) {
+  .home-audio-player {
+    height: 80px;
+    width: 228px;
+  }
 }
 .home-audio-player p {
   color: #C8C8C8;
@@ -279,6 +289,12 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   line-height: 1.2em;
   margin: 0px;
   padding: 0px;
+  display: none;
+}
+@media (min-width: 768px) {
+  .home-audio-player p {
+    display: block;
+  }
 }
 .home-audio-player button {
   -webkit-appearance: none;
