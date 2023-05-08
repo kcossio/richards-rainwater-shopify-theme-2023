@@ -647,10 +647,6 @@ h5,
   word-break: break-word;
 }
 
-.hxl {
-  font-size: calc(var(--font-heading-scale) * 5rem);
-}
-
 @media only screen and (min-width: 750px) {
   .hxl {
     font-size: calc(var(--font-heading-scale) * 6.2rem);
