@@ -313,7 +313,7 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   width: 36.75px;
   height: auto;
 }
-.home-audio-player button .close {
+.home-audio-player button.close {
   aspect-ratio: 1/1;
   width: 8px;
   height: auto;
@@ -321,9 +321,10 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   top: 0px;
   right: 0px;
   transform: translate(-50%, 50%);
+  pointer-events: auto;
 }
 @media (min-width: 768px) {
-  .home-audio-player button .close {
+  .home-audio-player button.close {
     width: 13px;
   }
 }

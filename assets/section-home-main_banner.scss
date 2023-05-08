@@ -160,7 +160,7 @@ section.home-banner {
             height:auto;
         }
 
-        .close {
+        &.close {
             aspect-ratio:1 / 1;
             width:8px;
             height:auto;
@@ -168,6 +168,7 @@ section.home-banner {
             top:0px;
             right:0px;
             transform:translate(-50%,50%);
+            pointer-events: auto;
 
             @include breakpoint(tablet) {
                 width:13px;
