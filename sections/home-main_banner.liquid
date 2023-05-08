@@ -53,9 +53,9 @@
     var myAudio = document.getElementById('rainAudio');
 
     //Audio Buttons
-    jQuery( ".home-audio-player .play-audio, .home-audio-player p" ).on( "click", function( event ) {
-      //event.stopPropagation();
-      event.preventDefault();
+    jQuery( ".home-audio-player .play-audio" ).on( "click", function( event ) {
+      event.stopPropagation();
+      //event.preventDefault();
 
       if (myAudio.duration > 0 && !myAudio.paused) {
           //Its playing...do your job
