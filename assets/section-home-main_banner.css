@@ -299,13 +299,12 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   left: 0px;
   width: 100%;
   height: 100%;
-  opacity: 0;
 }
 .home-audio-player.off button img.on {
-  opacity: 1;
+  opacity: 0;
 }
 .home-audio-player.off button img.off {
-  opacity: 0;
+  opacity: 1;
 }
 .home-audio-player.on button img.on {
   opacity: 1;
