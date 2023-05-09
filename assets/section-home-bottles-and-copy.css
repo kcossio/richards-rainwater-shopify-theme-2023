@@ -219,8 +219,8 @@ section.home-bottles-copy {
 }
 .home-bottles-intro .home-intro-right h2 {
   font-size: 50px;
-  line-height: 1.1em;
-  margin: 0px 0px 0.1em 0px;
+  line-height: 1.08em;
+  margin: 0px 0px 20px 0px;
   color: #000F44;
 }
 @media (min-width: 768px) {
@@ -231,5 +231,5 @@ section.home-bottles-copy {
 .home-bottles-intro .home-intro-right span.subhead {
   color: #FFA500;
   font-weight: 900;
-  font-size: 37.5;
+  font-size: 37.5px;
 }
