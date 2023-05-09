@@ -207,3 +207,14 @@
     width: 50%;
   }
 }
+.home-bottles-intro .home-intro-right h2 {
+  font-size: 50px;
+  line-height: 1em;
+  margin: 0px;
+  color: #000F44;
+}
+@media (min-width: 768px) {
+  .home-bottles-intro .home-intro-right h2 {
+    font-size: 75px;
+  }
+}
