@@ -11,19 +11,34 @@
 
     overflow:hidden;
     position:relative;
+    width:100vw;
+    height:auto;
 
     .scroll-parent {
-        position: relative;
+        position: absolute;
         overflow-x: hidden;
+        top:0px;
+        left:0px;
+        min-width:100%;
+        height:auto;
+        aspect-ratio: 512 / 56;
      }
 
      .scroll-element {
-        width: inherit;
-        height: inherit;
+        width: 100%;
+        height: 100%;
         position: absolute;
         left: 0%;
         top: 0%;
         animation: primary 10s linear infinite;
+
+        img {
+            position:absolute;
+            width:100%;
+            height:100%;
+            left:0px;
+            top:0px;
+        }
       }
     
       .primary {
@@ -68,13 +83,17 @@
       }
 
     &.clouds-mobile {
-        width:100vw;
-        height:56px;
+        aspect-ratio: 512 / 56;
 
         .scroll-parent {
-            width: 512px;
-            height: 56px;
+            aspect-ratio: 512 / 56;
         }
+    }
+
+    &.bottom {
+        position:absolute;
+        left:0px;
+        bottom:0px;
     }
 
 }
@@ -203,13 +222,6 @@
     display:block;
     pointer-events:none;
   
-    &.masked {
-      -webkit-mask-image: url("{{'mask-splat.svg' | asset_url}}");  
-      -webkit-mask-repeat: no-repeat;
-      mask-image: url("{{'mask-splat.svg' | asset_url}}");  
-      mask-repeat: no-repeat;
-      aspect-ratio: 473 / 452.4;
-    }
   
     img {
       z-index:1;
@@ -220,47 +232,7 @@
       display:block;
     }
   
-    &.licorice {
   
-      width:43px;
-      height:auto;
-  
-      @include breakpoint(tablet) {
-        width:60px;
-      }
-      @include breakpoint(laptop) {
-        width:94px;
-      }
-      @include breakpoint(desktop) {
-        width:110px;
-      }
-    }
-  
-    &.fish {
-  
-      width:135px;
-      height:auto;
-  
-      @include breakpoint(tablet) {
-        width:220px;
-      }
-      @include breakpoint(laptop) {
-        width:396px;
-      }
-      @include breakpoint(desktop) {
-        width:396px;
-      }
-    }
-  
-    &.pinwheel {
-  
-      width:62px;
-      height:auto;
-  
-      @include breakpoint(tablet) {
-        width:115px;
-      }
-    }
   
   }
   

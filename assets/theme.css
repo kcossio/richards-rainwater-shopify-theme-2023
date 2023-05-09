@@ -171,18 +171,32 @@
 .clouds {
   overflow: hidden;
   position: relative;
+  width: 100vw;
+  height: auto;
 }
 .clouds .scroll-parent {
-  position: relative;
+  position: absolute;
   overflow-x: hidden;
+  top: 0px;
+  left: 0px;
+  min-width: 100%;
+  height: auto;
+  aspect-ratio: 512/56;
 }
 .clouds .scroll-element {
-  width: inherit;
-  height: inherit;
+  width: 100%;
+  height: 100%;
   position: absolute;
   left: 0%;
   top: 0%;
   animation: primary 10s linear infinite;
+}
+.clouds .scroll-element img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
 }
 .clouds .primary {
   animation: primary 10s linear infinite;
@@ -219,12 +233,15 @@
   }
 }
 .clouds.clouds-mobile {
-  width: 100vw;
-  height: 56px;
+  aspect-ratio: 512/56;
 }
 .clouds.clouds-mobile .scroll-parent {
-  width: 512px;
-  height: 56px;
+  aspect-ratio: 512/56;
+}
+.clouds.bottom {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
 }
 
 /* -------- GSAP Animate Elements ------- */
@@ -336,13 +353,6 @@
   display: block;
   pointer-events: none;
 }
-.float.masked {
-  -webkit-mask-image: url("{{'mask-splat.svg' | asset_url}}");
-  -webkit-mask-repeat: no-repeat;
-  mask-image: url("{{'mask-splat.svg' | asset_url}}");
-  mask-repeat: no-repeat;
-  aspect-ratio: 473/452.4;
-}
 .float img {
   z-index: 1;
   -o-object-fit: cover;
@@ -351,53 +361,6 @@
   min-height: 100%;
   width: 100%;
   display: block;
-}
-.float.licorice {
-  width: 43px;
-  height: auto;
-}
-@media (min-width: 768px) {
-  .float.licorice {
-    width: 60px;
-  }
-}
-@media (min-width: 1280px) {
-  .float.licorice {
-    width: 94px;
-  }
-}
-@media (min-width: 1440px) {
-  .float.licorice {
-    width: 110px;
-  }
-}
-.float.fish {
-  width: 135px;
-  height: auto;
-}
-@media (min-width: 768px) {
-  .float.fish {
-    width: 220px;
-  }
-}
-@media (min-width: 1280px) {
-  .float.fish {
-    width: 396px;
-  }
-}
-@media (min-width: 1440px) {
-  .float.fish {
-    width: 396px;
-  }
-}
-.float.pinwheel {
-  width: 62px;
-  height: auto;
-}
-@media (min-width: 768px) {
-  .float.pinwheel {
-    width: 115px;
-  }
 }
 
 @keyframes hover-up {
