@@ -169,10 +169,10 @@
 */
 section.aisle {
   padding: 60px 0px;
-  background: #0040A8;
 }
 section.aisle h2 {
-  color: #ffffff;
+  color: #0094DA;
+  margin: 0px;
 }
 section.aisle p {
   color: #ffffff;
