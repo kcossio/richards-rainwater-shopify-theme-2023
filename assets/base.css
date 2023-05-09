@@ -1528,7 +1528,7 @@ button.shopify-payment-button__button--unbranded {
   font: inherit;
   text-decoration: none;
   color: #ffffff;
-  background: #0094DA;
+  background: #0040A8;
   transition: all 0.3s ease 0s;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1540,6 +1540,16 @@ button.shopify-payment-button__button--unbranded {
 .button:hover,
 .shopify-challenge__button:hover,
 .customer button:hover {
+  background: #0094DA;
+}
+.button.light-to-dark,
+.shopify-challenge__button.light-to-dark,
+.customer button.light-to-dark {
+  background: #0094DA;
+}
+.button.light-to-dark:hover,
+.shopify-challenge__button.light-to-dark:hover,
+.customer button.light-to-dark:hover {
   background: #0040A8;
 }
 

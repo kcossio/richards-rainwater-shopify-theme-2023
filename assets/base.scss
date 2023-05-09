@@ -1431,7 +1431,7 @@ button.shopify-payment-button__button--unbranded {
   font: inherit;
   text-decoration: none;
   color: $white;
-  background:$light_blue;
+  background:$medium_blue;
   transition: all .3s ease 0s;
   -webkit-appearance: none;
   appearance: none;
@@ -1441,7 +1441,14 @@ button.shopify-payment-button__button--unbranded {
   letter-spacing:.1em;
 
   &:hover {
-    background:$medium_blue;
+    background:$light_blue;
+  }
+
+  &.light-to-dark {
+    background:$light_blue;
+    &:hover {
+      background:$medium_blue;
+    }
   }
 
 }
