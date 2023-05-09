@@ -1,4 +1,10 @@
 <div class="inner aisle-inner">
+
+  <div class="aisle-intro">
+  <h2>{{ section.settings.aisle_heading }}</h2>
+  <div class="aisle-intro-text">{{ section.settings.aisle_intro_text }}</div>
+  </div><!-- End aisle-intro-->
+
   <!--Inject the div that this script will attach itself to-->
   <!--This must exist in the dom when the script loads-->
   <div id="aisle-form-submit"></div>
@@ -46,6 +52,18 @@
       "label": "Campaign Phone Number",
       "default": "2673884764",
       "info": "Enter the campaign phone number for this Aisle instance"
+    },
+    {
+      "type": "text",
+      "id": "aisle_heading",
+      "label": "Heading",
+      "info": "Add a heading to the Aisle section"
+    },
+    {
+      "type": "richtext",
+      "id": "aisle_intro_text",
+      "label": "Intro Text",
+      "info": "Add content that will appear before the Aisle widget."
     }
   ],
   "presets": [
