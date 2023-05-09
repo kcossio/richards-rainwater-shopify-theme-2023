@@ -1,0 +1,103 @@
+{%- ########################################################################## 
+# Label: Bottle Image 1
+# Returns: an image object or nil(if no selection has been made)
+# Image Properties: https://shopify.dev/api/liquid/objects#image
+# Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
+########################################################################## -%}
+{%- assign bottle_image_1 = section.settings.bottle_image_1 -%}
+{{ bottle_image_1 | image_url: width: bottle_image_1.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+
+{%- ########################################################################## 
+# Label: Bottle Image 2
+# Returns: an image object or nil(if no selection has been made)
+# Image Properties: https://shopify.dev/api/liquid/objects#image
+# Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
+########################################################################## -%}
+{%- assign bottle_image_2 = section.settings.bottle_image_2 -%}
+{{ bottle_image_2 | image_url: width: bottle_image_2.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+
+{%- ########################################################################## 
+# Label: Subheading
+# Returns: a string or an empty object(if nothing has been entered)
+# Filters: https://shopify.dev/api/liquid/objects#string 
+########################################################################## -%}
+{{ section.settings.subheading }} 
+
+{%- ########################################################################## 
+# Label: Heading
+# Returns: a string or an empty object(if nothing has been entered)
+# Filters: https://shopify.dev/api/liquid/objects#string 
+########################################################################## -%}
+{{ section.settings.heading }} 
+
+{%- ########################################################################## 
+# Label: Call to Action Button Label
+# Returns: a string or an empty object(if nothing has been entered)
+# Filters: https://shopify.dev/api/liquid/objects#string 
+########################################################################## -%}
+{{ section.settings.call_to_action_button_label }} 
+
+{%- ########################################################################## 
+# Label: Call to Action Button Link
+# Returns: a string(the entered URL) or nil / false(if nothing has been entered)
+########################################################################## -%}
+{{ section.settings.call_to_action_button_link }} 
+
+{% schema %}
+  {
+  "name": "Home - Bottles + Copy",
+  "class": "home-bottles-copy",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bottle_image_1",
+      "label": "Bottle Image 1",
+      "info": "Upload the first of two bottle images"
+    },
+    {
+      "type": "image_picker",
+      "id": "bottle_image_2",
+      "label": "Bottle Image 2",
+      "info": "Upload the second of two bottle images"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "info": "Add a subheading for this section"
+    },
+    {
+      "type": "html",
+      "id": "heading",
+      "label": "Heading",
+      "default": "<span>RENEWABLE.</span>\n<span>REFRESHING. </span>\n<span>RAINWATER.</span>",
+      "info": "Add heading text for this section. Note: Use HTML here to create animated effects."
+    },
+    {
+      "type": "text",
+      "id": "call_to_action_button_label",
+      "label": "Call to Action Button Label",
+      "default": "Learn More",
+      "info": "Enter a label for the Call to Action button"
+    },
+    {
+      "type": "url",
+      "id": "call_to_action_button_link",
+      "label": "Call to Action Button Link",
+      "info": "Enter the link the call to action button should go to"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Home - Bottles + Copy"
+    }
+  ]
+}  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

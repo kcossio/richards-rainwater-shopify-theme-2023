@@ -240,6 +240,7 @@ section.home-banner h2.home-banner-slogan-letters {
   font-size: 12vw;
   text-align: center;
   width: auto;
+  margin: 0px auto;
 }
 section.home-banner h2.home-banner-slogan-letters div {
   width: 100%;

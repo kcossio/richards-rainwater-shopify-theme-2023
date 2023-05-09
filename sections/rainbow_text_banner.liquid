@@ -1,0 +1,37 @@
+{%- ########################################################################## 
+# Label: Text
+# Returns: a string or an empty object(if nothing has been entered)
+# Filters: https://shopify.dev/api/liquid/objects#string 
+########################################################################## -%}
+{{ section.settings.text }} 
+
+{% schema %}
+  {
+  "name": "Rainbow Text Banner",
+  "class": "rainbow-banner",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Add a text banner, with white text on a rainbow background with clouds"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Text",
+      "info": "Add text to this banner"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Rainbow Text Banner"
+    }
+  ]
+}  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
