@@ -1536,6 +1536,7 @@ button.shopify-payment-button__button--unbranded {
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  font-weight: 900;
 }
 .button:hover,
 .shopify-challenge__button:hover,
