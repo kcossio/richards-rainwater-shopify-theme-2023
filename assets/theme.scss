@@ -3,6 +3,82 @@
 @import "fonts";
 
 
+/* ------ Cloud Scrolling ----- */
+
+
+// Image Animation //
+.clouds {
+
+    overflow:hidden;
+    position:relative;
+
+    .scroll-parent {
+        position: relative;
+        overflow-x: hidden;
+     }
+
+     .scroll-element {
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        animation: primary 10s linear infinite;
+      }
+    
+      .primary {
+        animation: primary 10s linear infinite;
+    
+        &.slow {
+            animation: primary 20s linear infinite;
+        }
+        &.bg {
+            top:50%;
+        }
+      }
+      
+      .secondary {
+        animation: secondary 10s linear infinite;
+    
+        &.slow {
+            animation: primary 20s linear infinite;
+        }
+        &.bg {
+            top:50%;
+        }
+    
+      }
+      
+      @keyframes primary {
+        from {
+          left: 0%;
+        }
+        to {
+          left: -100%;
+        }
+      }
+      
+      @keyframes secondary {
+        from {
+          left: 100%;
+        }
+        to {
+          left: 0%;
+        }
+      }
+
+    &.clouds-mobile {
+        width:100vw;
+        height:56px;
+
+        .scroll-parent {
+            width: 512px;
+            height: 56px;
+        }
+    }
+
+}
+
 
 /* -------- GSAP Animate Elements ------- */
 
@@ -186,82 +262,6 @@
       }
     }
   
-    &.claim {
-      width:80px;
-      height:80px;
-      display:flex;
-      flex-wrap:wrap;
-      align-items:center;
-      align-content:center;
-      justify-content:center;
-  
-      span {
-        position:absolute;
-        top:0px;
-        left:0px;
-        width:100%;
-        height:100%;
-        display:flex;
-        flex-wrap:wrap;
-        align-items:center;
-        align-content:center;
-        justify-content:center;
-        text-align:center;
-        z-index:2;
-        color:$white;
-        @include font-omnes;
-        font-size:13px;
-        line-height:1em;
-        padding:16px 16px 18px 16px;
-      }
-  
-      svg {
-        position:relative;
-        z-index:1;
-        
-        path {
-          fill:$purple2;
-        }
-      }
-  
-      &.pink {
-        svg {
-          path {
-            fill:$pink1;
-          }
-        }
-      }
-  
-      &.orange {
-        svg {
-          path {
-            fill:$orange1;
-          }
-        }
-      }
-  
-  
-      @include breakpoint(tablet) {
-        width:120px;
-        height:120px;
-        font-size:16px;
-  
-        span {
-          padding:16px 16px 18px 16px;
-        }
-      }
-  
-      @include breakpoint(laptop) {
-        width:160px;
-        height:160px;
-        font-size:18px;
-  
-        span {
-          padding:20px 20px 22px 20px;
-        }
-      }
-  
-    }
   }
   
   @keyframes hover-up {
