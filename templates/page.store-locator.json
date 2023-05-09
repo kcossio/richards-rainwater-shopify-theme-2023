@@ -23,7 +23,7 @@
   },
   "order": [
     "main",
-    "aisle",
-    "destini"
+    "destini",
+    "aisle"
   ]
 }
