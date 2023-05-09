@@ -2,8 +2,8 @@
 
 <h2>{{ section.settings.text }}</h2> 
 
-<div class="bg-img bg-hero fade-in">
-  {{ 'bg-rainbow.svg' | asset_url: width: 1920 | image_tag: class: 'bg-parallax', loading: 'lazy' }}
+<div class="bg-img bg-hero">
+  <img class="bg-parallax" src="{{ 'bg-rainbow.svg' | asset_url }}>" width="1923" height="2042" role="presentation" alt="rainbow" />
 </div>
 
 <div class="newsletter mobile-menu-newsletter">
@@ -23,7 +23,7 @@
 {% schema %}
   {
   "name": "Rainbow Text Banner",
-  "class": "rainbow-banner",
+  "class": "rainbow-banner fade-in",
   "tag": "section",
   "settings": [
     {
