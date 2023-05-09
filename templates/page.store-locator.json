@@ -1,0 +1,24 @@
+{
+    "sections": {
+        "main": {
+            "type": "main-page",
+            "settings": {
+            }
+        },
+        "aisle": {
+            "type": "aisle_integration",
+            "settings": {
+            }
+        },
+        "destini": {
+            "type": "destini_integration",
+            "settings": {
+            }
+        }
+    },
+    "order": [
+        "main",
+        "aisle_integration",
+        "destini_integration"
+    ]
+}
