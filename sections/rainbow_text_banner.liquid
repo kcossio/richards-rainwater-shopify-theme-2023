@@ -1,9 +1,24 @@
-{%- ########################################################################## 
-# Label: Text
-# Returns: a string or an empty object(if nothing has been entered)
-# Filters: https://shopify.dev/api/liquid/objects#string 
-########################################################################## -%}
-{{ section.settings.text }} 
+{{ 'section-rainbow-text-banner.css' | asset_url | stylesheet_tag }}
+
+<h2>{{ section.settings.text }}</h2> 
+
+<div class="bg-img bg-hero fade-in">
+  {{ 'bg-rainbow.svg' | asset_url: width: 1920 | image_tag: class: 'bg-parallax', loading: 'lazy' }}
+</div>
+
+<div class="newsletter mobile-menu-newsletter">
+
+  <div class="clouds clouds-mobile">
+    <div class="scroll-parent">
+      <div class="scroll-element primary">
+        <img class="cloud cloud-mobile-scroll" src="{{ 'cloud-mobile.svg' | asset_url }}>" width="512" height="56" role="presentation" alt="cloud" />
+      </div>
+      <div class="scroll-element secondary">
+        <img class="cloud cloud-mobile-scroll" src="{{ 'cloud-mobile.svg' | asset_url }}>" width="512" height="56" role="presentation" alt="cloud" />
+      </div>
+    </div>
+
+  </div><!--End clouds-mobile-wrap-->
 
 {% schema %}
   {

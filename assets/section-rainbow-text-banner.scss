@@ -1,0 +1,15 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+section.rainbow-banner {
+    width:100vw;
+    min-height:50vh;
+    position:relative;
+    overflow:hidden;
+
+    h2 {
+        color:$white;
+        text-align:left;
+    }
+}
