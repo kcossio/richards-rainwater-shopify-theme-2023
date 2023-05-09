@@ -56,8 +56,8 @@ section.home-bottles-copy {
 
         h2 {
             font-size:50px;
-            line-height:1em;
-            margin:0px;
+            line-height:1.1em;
+            margin:0px 0px .1em 0px;
             color:$dark_blue;
 
             @include breakpoint(tablet) {
