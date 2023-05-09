@@ -1,16 +1,18 @@
+{{ 'section-home-bottles-and-copy.css' | asset_url | stylesheet_tag }}
+
 <div class="home-bottles-intro inner">
 
     <div class="home-intro-left">
 
       {%- assign bottle_image_1 = section.settings.bottle_image_1 -%}
       {%- if bottle_image_1 != blank %}
-      {{ bottle_image_1 | image_url: width: bottle_image_1.width | image_tag: class: 'float-md', loading: 'lazy' }}
+      {{ bottle_image_1 | image_url: width: bottle_image_1.width | image_tag: class: 'float float-1 float-md', loading: 'lazy' }}
       {%- endif -%}
 
 
       {%- assign bottle_image_2 = section.settings.bottle_image_2 -%}
       {%- if bottle_image_2 != blank %}
-      {{ bottle_image_2 | image_url: width: bottle_image_2.width | image_tag: class: 'float-sm', loading: 'lazy' }}
+      {{ bottle_image_2 | image_url: width: bottle_image_2.width | image_tag: class: 'float float-2 float-sm', loading: 'lazy' }}
       {%- endif -%}
 
     </div><!-- End home-intro-left-->

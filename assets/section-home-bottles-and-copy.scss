@@ -1,0 +1,41 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+.home-bottles-intro {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+
+    .home-intro-left {
+        width:100%;
+        order:2;
+
+        @include breakpoint(tablet) {
+            order:1;
+            width:50%;
+        }
+
+        img.float {
+            max-height:100%;
+
+            &.float-1 {
+
+            }
+
+            &.float-2 {
+                
+            }
+        }
+    }
+
+    .home-intro-right {
+        width:100%;
+        order:1;
+
+        @include breakpoint(tablet) {
+            order:2;
+            width:50%;
+        }
+    }
+}
