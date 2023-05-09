@@ -167,10 +167,20 @@
 }
 
 */
+section.home-bottles-copy {
+  padding: 64px 0px 0px 87.5vw;
+}
+@media (min-width: 768px) {
+  section.home-bottles-copy {
+    padding: 190px 0px 164px 0px;
+  }
+}
+
 .home-bottles-intro {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  position: relative;
 }
 .home-bottles-intro .home-intro-left {
   width: 100%;
