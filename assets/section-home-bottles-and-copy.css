@@ -184,6 +184,18 @@
 }
 .home-bottles-intro .home-intro-left img.float {
   max-height: 100%;
+  height: auto;
+  width: auto;
+}
+@media (min-width: 768px) {
+  .home-bottles-intro .home-intro-left img.float.float-1 {
+    width: 228px;
+  }
+}
+@media (min-width: 768px) {
+  .home-bottles-intro .home-intro-left img.float.float-2 {
+    width: 328px;
+  }
 }
 .home-bottles-intro .home-intro-right {
   width: 100%;

@@ -18,13 +18,19 @@
 
         img.float {
             max-height:100%;
+            height:auto;
+            width:auto;
 
             &.float-1 {
-
+                @include breakpoint(tablet) {
+                    width:228px;
+                }
             }
 
             &.float-2 {
-                
+                @include breakpoint(tablet) {
+                    width:328px;
+                }
             }
         }
     }
