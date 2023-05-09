@@ -228,3 +228,8 @@ section.home-bottles-copy {
     font-size: 75px;
   }
 }
+.home-bottles-intro .home-intro-right span.subhead {
+  color: #FFA500;
+  font-weight: 900;
+  font-size: 37.5;
+}

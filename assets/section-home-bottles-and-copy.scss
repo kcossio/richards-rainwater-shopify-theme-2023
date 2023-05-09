@@ -63,6 +63,13 @@ section.home-bottles-copy {
             @include breakpoint(tablet) {
                 font-size:75px;
             }
+
+        }
+
+        span.subhead {
+            color:$orange;
+            font-weight:900;
+            font-size:37.5;
         }
     }
 }
