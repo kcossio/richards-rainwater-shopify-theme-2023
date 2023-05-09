@@ -1,0 +1,19 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+section.aisle {
+    padding:60px 0px;
+    background:$medium_blue;
+
+    h2 {
+        color:$white;
+    }
+    p {
+        color:$white;
+    }
+
+    .aisle-intro {
+        text-align:center;
+    }
+}
