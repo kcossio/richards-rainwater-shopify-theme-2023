@@ -109,7 +109,7 @@ section.home-banner {
 .home-audio-player {
     display:flex;
     flex-wrap:wrap;
-    position:absolute;
+    position:fixed;
     z-index:10;
     right:100%;
     bottom:15%;

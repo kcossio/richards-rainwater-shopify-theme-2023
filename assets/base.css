@@ -1526,14 +1526,21 @@ button.shopify-payment-button__button--unbranded {
   padding: 0 3rem;
   cursor: pointer;
   font: inherit;
-  font-size: 1.5rem;
   text-decoration: none;
-  color: rgb(var(--color-button-text));
-  transition: box-shadow var(--duration-short) ease;
+  color: #ffffff;
+  background: #0094DA;
+  transition: all 0.3s ease 0s;
   -webkit-appearance: none;
   -moz-appearance: none;
        appearance: none;
-  background-color: rgba(var(--color-button), var(--alpha-button-background));
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.button:hover,
+.shopify-challenge__button:hover,
+.customer button:hover {
+  background: #0040A8;
 }
 
 .button:before,

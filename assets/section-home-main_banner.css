@@ -265,7 +265,7 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
 .home-audio-player {
   display: flex;
   flex-wrap: wrap;
-  position: absolute;
+  position: fixed;
   z-index: 10;
   right: 100%;
   bottom: 15%;

@@ -1429,13 +1429,21 @@ button.shopify-payment-button__button--unbranded {
   padding: 0 3rem;
   cursor: pointer;
   font: inherit;
-  font-size: 1.5rem;
   text-decoration: none;
-  color: rgb(var(--color-button-text));
-  transition: box-shadow var(--duration-short) ease;
+  color: $white;
+  background:$light_blue;
+  transition: all .3s ease 0s;
   -webkit-appearance: none;
   appearance: none;
-  background-color: rgba(var(--color-button), var(--alpha-button-background));
+
+  font-size:15px;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+
+  &:hover {
+    background:$medium_blue;
+  }
+
 }
 
 .button:before,
