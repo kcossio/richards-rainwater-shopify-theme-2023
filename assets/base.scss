@@ -1428,6 +1428,7 @@ button.shopify-payment-button__button--unbranded {
   border: 0;
   padding: 0 3rem;
   cursor: pointer;
+  font: inherit;
   text-decoration: none;
   color: $white;
   background:$light_blue;
@@ -1438,7 +1439,6 @@ button.shopify-payment-button__button--unbranded {
   font-size:15px;
   text-transform:uppercase;
   letter-spacing:.1em;
-  font-weight:900;
 
   &:hover {
     background:$medium_blue;
