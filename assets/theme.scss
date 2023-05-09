@@ -1,0 +1,330 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+
+
+/* -------- GSAP Animate Elements ------- */
+
+.slide-title {
+    opacity:0;
+    transform:translateX(-50px);
+    transition:all 1s ease 0s;
+    
+    @include animationfix();
+    
+    &.onscreen {
+        opacity:1;
+        transform:translateX(0px);
+    }
+  }
+  .fade-in {
+    opacity:0;
+    transition:opacity 1s ease 0s;
+    
+    @include animationfix();
+    
+     &.onscreen {
+        opacity:1;
+    }
+  }
+  
+  .fade-in-left {
+    opacity:0;
+    transform:translateX(-50px);
+    transition:opacity 1s ease 0s, transform 1s ease 0s;
+    
+    @include animationfix();
+    
+     &.onscreen {
+        opacity:1;
+        transform:translateX(0px);
+    } 
+  }
+  
+  .fade-in-right {
+    opacity:0;
+    transform:translateX(50px);
+    transition:opacity 1s ease 0s, transform 1s ease 0s;
+    
+    @include animationfix();
+    
+     &.onscreen {
+        opacity:1;
+        transform:translateX(0px);
+    } 
+  }
+  
+  
+  .fade-in-up,
+  .big-title {
+    opacity:0;
+    transform:translateY(50px);
+    transition:opacity 1s ease 0s, transform 1s ease 0s;
+    
+    @include animationfix();
+    
+     &.onscreen {
+        opacity:1;
+        transform:translateY(0px);
+    } 
+  }
+  /*svg * { 
+    transform-box: fill-box;
+  }*/
+  .bounce-in-top {
+    opacity:0;
+    transform:scale(0);
+  }
+  
+  .bounce-in {
+    transform-origin: center center;
+    opacity:0;
+    
+    &.onscreen {
+      opacity:1;
+      animation: bounce-in 1s ease forwards;
+    }
+  }
+  @keyframes bounce-in {
+    0% {
+      scale: .3;
+    }
+    50% {
+      scale: 1.05;
+    }
+    70% { scale: .9; }
+    100% { scale: 1; }
+  }
+  
+  
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .rotating {
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+  }
+  
+  .float {
+    position:absolute;
+    display:block;
+    pointer-events:none;
+  
+    &.masked {
+      -webkit-mask-image: url("{{'mask-splat.svg' | asset_url}}");  
+      -webkit-mask-repeat: no-repeat;
+      mask-image: url("{{'mask-splat.svg' | asset_url}}");  
+      mask-repeat: no-repeat;
+      aspect-ratio: 473 / 452.4;
+    }
+  
+    img {
+      z-index:1;
+      object-fit: cover; 
+      height: auto;
+      min-height:100%;
+      width:100%;
+      display:block;
+    }
+  
+    &.licorice {
+  
+      width:43px;
+      height:auto;
+  
+      @include breakpoint(tablet) {
+        width:60px;
+      }
+      @include breakpoint(laptop) {
+        width:94px;
+      }
+      @include breakpoint(desktop) {
+        width:110px;
+      }
+    }
+  
+    &.fish {
+  
+      width:135px;
+      height:auto;
+  
+      @include breakpoint(tablet) {
+        width:220px;
+      }
+      @include breakpoint(laptop) {
+        width:396px;
+      }
+      @include breakpoint(desktop) {
+        width:396px;
+      }
+    }
+  
+    &.pinwheel {
+  
+      width:62px;
+      height:auto;
+  
+      @include breakpoint(tablet) {
+        width:115px;
+      }
+    }
+  
+    &.claim {
+      width:80px;
+      height:80px;
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      align-content:center;
+      justify-content:center;
+  
+      span {
+        position:absolute;
+        top:0px;
+        left:0px;
+        width:100%;
+        height:100%;
+        display:flex;
+        flex-wrap:wrap;
+        align-items:center;
+        align-content:center;
+        justify-content:center;
+        text-align:center;
+        z-index:2;
+        color:$white;
+        @include font-omnes;
+        font-size:13px;
+        line-height:1em;
+        padding:16px 16px 18px 16px;
+      }
+  
+      svg {
+        position:relative;
+        z-index:1;
+        
+        path {
+          fill:$purple2;
+        }
+      }
+  
+      &.pink {
+        svg {
+          path {
+            fill:$pink1;
+          }
+        }
+      }
+  
+      &.orange {
+        svg {
+          path {
+            fill:$orange1;
+          }
+        }
+      }
+  
+  
+      @include breakpoint(tablet) {
+        width:120px;
+        height:120px;
+        font-size:16px;
+  
+        span {
+          padding:16px 16px 18px 16px;
+        }
+      }
+  
+      @include breakpoint(laptop) {
+        width:160px;
+        height:160px;
+        font-size:18px;
+  
+        span {
+          padding:20px 20px 22px 20px;
+        }
+      }
+  
+    }
+  }
+  
+  @keyframes hover-up {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  .hover-up {
+    animation: hover-up 4s ease-in-out infinite;
+  }
+  @keyframes hover-side {
+    0% {
+      transform: translateX(0px);
+    }
+    50% {
+      transform: translateX(30px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  
+  .hover-side {
+    animation: hover-side 4s ease-in-out infinite;
+  }
+  
+  @keyframes hover-rotate {
+    0% {
+      transform: rotate(0px);
+    }
+    25% {
+      transform: rotate(15deg);
+    }
+    75% {
+      transform: rotate(-15deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .hover-rotate {
+    animation: hover-rotate 4s ease-in-out infinite;
+  }
+  
+  @keyframes hover-scale {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .hover-scale {
+    animation: hover-scale 4s ease-in-out infinite;
+  }
