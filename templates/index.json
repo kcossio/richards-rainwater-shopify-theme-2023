@@ -11,6 +11,17 @@
         "audio_player_label": "Enhance with Audio"
       }
     },
+    "9116c0a2-b6dd-4ac0-bfa7-345ba053c3a0": {
+      "type": "home-bottles-and-copy",
+      "settings": {
+        "bottle_image_1": "shopify:\/\/shop_images\/RR-Can-Mockup.png",
+        "bottle_image_2": "shopify:\/\/shop_images\/RICHARDS-Bottle-laydown.png",
+        "subheading": "New Look",
+        "heading": "<span>RENEWABLE.<\/span>\n<span>REFRESHING. <\/span>\n<span>RAINWATER.<\/span>",
+        "call_to_action_button_label": "Shop Richard's",
+        "call_to_action_button_link": "shopify:\/\/collections\/all"
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -37,22 +48,11 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
-    },
-    "9116c0a2-b6dd-4ac0-bfa7-345ba053c3a0": {
-      "type": "home-bottles-and-copy",
-      "settings": {
-        "bottle_image_1": "shopify:\/\/shop_images\/RR-Can-Mockup.png",
-        "bottle_image_2": "shopify:\/\/shop_images\/RICHARDS-Bottle-laydown.png",
-        "subheading": "New Look",
-        "heading": "<span>RENEWABLE.<\/span>\n<span>REFRESHING. <\/span>\n<span>RAINWATER.<\/span>",
-        "call_to_action_button_label": "Shop Richard's",
-        "call_to_action_button_link": "shopify:\/\/collections\/all"
-      }
     }
   },
   "order": [
     "76521080-48b1-42b7-8ffe-ccecb8390284",
-    "featured_collection",
-    "9116c0a2-b6dd-4ac0-bfa7-345ba053c3a0"
+    "9116c0a2-b6dd-4ac0-bfa7-345ba053c3a0",
+    "featured_collection"
   ]
 }
