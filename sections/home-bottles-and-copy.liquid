@@ -1,48 +1,31 @@
-{%- ########################################################################## 
-# Label: Bottle Image 1
-# Returns: an image object or nil(if no selection has been made)
-# Image Properties: https://shopify.dev/api/liquid/objects#image
-# Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
-########################################################################## -%}
-{%- assign bottle_image_1 = section.settings.bottle_image_1 -%}
-{{ bottle_image_1 | image_url: width: bottle_image_1.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+<div class="home-bottles-intro inner">
 
-{%- ########################################################################## 
-# Label: Bottle Image 2
-# Returns: an image object or nil(if no selection has been made)
-# Image Properties: https://shopify.dev/api/liquid/objects#image
-# Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
-########################################################################## -%}
-{%- assign bottle_image_2 = section.settings.bottle_image_2 -%}
-{{ bottle_image_2 | image_url: width: bottle_image_2.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+    <div class="home-intro-left">
 
-{%- ########################################################################## 
-# Label: Subheading
-# Returns: a string or an empty object(if nothing has been entered)
-# Filters: https://shopify.dev/api/liquid/objects#string 
-########################################################################## -%}
-{{ section.settings.subheading }} 
+      {%- assign bottle_image_1 = section.settings.bottle_image_1 -%}
+      {%- if bottle_image_1 != blank %}
+      {{ bottle_image_1 | image_url: width: bottle_image_1.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+      {%- endif -%}
 
-{%- ########################################################################## 
-# Label: Heading
-# Returns: a string or an empty object(if nothing has been entered)
-# Filters: https://shopify.dev/api/liquid/objects#string 
-########################################################################## -%}
-{{ section.settings.heading }} 
 
-{%- ########################################################################## 
-# Label: Call to Action Button Label
-# Returns: a string or an empty object(if nothing has been entered)
-# Filters: https://shopify.dev/api/liquid/objects#string 
-########################################################################## -%}
-{{ section.settings.call_to_action_button_label }} 
+      {%- assign bottle_image_2 = section.settings.bottle_image_2 -%}
+      {%- if bottle_image_2 != blank %}
+      {{ bottle_image_2 | image_url: width: bottle_image_2.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+      {%- endif -%}
 
-{%- ########################################################################## 
-# Label: Call to Action Button Link
-# Returns: a string(the entered URL) or nil / false(if nothing has been entered)
-########################################################################## -%}
-{{ section.settings.call_to_action_button_link }} 
+    </div><!-- End home-intro-left-->
 
+    <div class="home-intro-right">
+      <span>{{ section.settings.subheading }}</span>
+      <h2>
+        {{ section.settings.heading }} 
+      </h2>
+      <a class="button" href="{{ section.settings.call_to_action_button_link }} " role="button">{{ section.settings.call_to_action_button_label }} </a>
+    </div><!--End home_intro-right-->
+
+
+
+</div><!--End home-bottles-info inner-->
 {% schema %}
   {
   "name": "Home - Bottles + Copy",

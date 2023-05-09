@@ -238,7 +238,7 @@
 
     {%
       ###############################
-      # Include jQuery and GSAP plugins
+      # Include jQuery, GSAP, and other plugins
       ###############################
     %}
     <script
@@ -246,6 +246,7 @@
     <script src="{{ 'gsap.min.js' | asset_url }}" defer></script>
     <script src="{{ 'ScrollTrigger.min.js' | asset_url }}" defer></script>
     <script src="{{ 'MotionPathPlugin.min.js' | asset_url }}" defer></script>
+    <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'animation.js' | asset_url }}" defer></script>
 
   </head>
