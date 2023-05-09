@@ -7,17 +7,19 @@
         "padding_bottom": 36
       }
     },
-    "aisle": {
-      "type": "aisle_integration",
-      "settings": {
-        "api_key": "U2FsdGVkX1+G1iQuk+1fbDluy\/LxlfYSeQSnuczV+kyY0wwvY8dzJ3sNoJHUv9Fo",
-        "campaign_phone_number": "2673884764"
-      }
-    },
     "destini": {
       "type": "destini_integration",
       "settings": {
         "destini_intro_text": "<p><em>Enter your zip code to find Richard’s Rainwater in <\/em><em><strong>over 2,000 grocery stores<\/strong><\/em><em>!<br\/><br\/><\/em><em><strong>Prefer Grocery Delivery? <\/strong><\/em><em>Click the “Buy Online” button.<\/em><\/p>"
+      }
+    },
+    "aisle": {
+      "type": "aisle_integration",
+      "settings": {
+        "api_key": "U2FsdGVkX1+G1iQuk+1fbDluy\/LxlfYSeQSnuczV+kyY0wwvY8dzJ3sNoJHUv9Fo",
+        "campaign_phone_number": "2673884764",
+        "aisle_heading": "Want a bottle of Richard's for free?",
+        "aisle_intro_text": "<p>Join our loyalty program today!<\/p>"
       }
     }
   },
