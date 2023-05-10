@@ -172,6 +172,15 @@
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
+  margin: 56px 0px;
+}
+@media (min-width: 768px) {
+  .icon-grid {
+    margin: 84px 0px;
+  }
+}
+.icon-grid .inner {
+  width: 1100px;
 }
 .icon-grid .icon-item {
   width: 33%;
@@ -180,13 +189,19 @@
 .icon-grid .icon-item img {
   height: 72px;
   width: auto;
-  display: inline-block;
+  display: block;
   margin: 0px auto;
+}
+@media (min-width: 768px) {
+  .icon-grid .icon-item img {
+    height: 86px;
+  }
 }
 .icon-grid .icon-item p {
   margin: 24px 0px 0px 0px;
   font-weight: 900;
   font-size: 12px;
+  line-height: 1em;
 }
 @media (min-width: 768px) {
   .icon-grid .icon-item p {
