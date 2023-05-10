@@ -13,6 +13,10 @@
     margin:0px auto;
     position:relative;
     z-index:1;
+
+    &.narrow {
+      width:780px;
+    }
 }
 .wide {
     width:1320px;

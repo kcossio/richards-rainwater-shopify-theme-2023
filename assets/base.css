@@ -176,6 +176,9 @@
   position: relative;
   z-index: 1;
 }
+.inner.narrow {
+  width: 780px;
+}
 
 .wide {
   width: 1320px;
