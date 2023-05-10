@@ -238,6 +238,12 @@
 .clouds.clouds-mobile .scroll-parent {
   aspect-ratio: 512/56;
 }
+.clouds.clouds-wide {
+  aspect-ratio: 1876/188;
+}
+.clouds.clouds-wide .scroll-parent {
+  aspect-ratio: 1876/188;
+}
 .clouds.bottom {
   position: absolute;
   left: 0px;

@@ -7,9 +7,19 @@ section.rainbow-banner {
     min-height:50vh;
     position:relative;
     overflow:hidden;
+    padding:5vw 0px 10vw 0px;
 
     h2 {
         color:$white;
         text-align:left;
+        font-size:35px;
+        line-height:1.1em;
+
+        @include breakpoint(tablet) {
+            font-size:6.2vw;
+        }
+        @include breakpoint(desktopwide) {
+            font-size:89px;
+        }
     }
 }

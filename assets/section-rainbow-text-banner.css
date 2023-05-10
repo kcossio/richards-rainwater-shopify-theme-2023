@@ -172,8 +172,21 @@ section.rainbow-banner {
   min-height: 50vh;
   position: relative;
   overflow: hidden;
+  padding: 5vw 0px 10vw 0px;
 }
 section.rainbow-banner h2 {
   color: #ffffff;
   text-align: left;
+  font-size: 35px;
+  line-height: 1.1em;
+}
+@media (min-width: 768px) {
+  section.rainbow-banner h2 {
+    font-size: 6.2vw;
+  }
+}
+@media (min-width: 1680px) {
+  section.rainbow-banner h2 {
+    font-size: 89px;
+  }
 }
