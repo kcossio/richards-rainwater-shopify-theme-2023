@@ -3,11 +3,11 @@
 
     {%- when 'text' -%}
       {%- ########################################################################## 
-      # Label: Text 
+      # Label: Text
       # Returns: a string or an empty object(if nothing has been entered)
       # Filters: https://shopify.dev/api/liquid/objects#string 
       ########################################################################## -%}
-      {{ block.settings.text_ }} 
+      {{ block.settings.text }} 
 
   {%- endcase -%}
 {%- endfor -%}
@@ -29,10 +29,10 @@
       "type": "text",
       "settings": [
         {
-          "type": "textarea",
-          "id": "text_",
-          "label": "Text ",
-          "info": "Add text to this section"
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "info": "Add text content to this section"
         }
       ]
     }
