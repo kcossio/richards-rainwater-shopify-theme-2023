@@ -179,6 +179,7 @@ section.rainbow-banner h2 {
   text-align: left;
   font-size: 35px;
   line-height: 1.1em;
+  margin: 0px;
 }
 @media (min-width: 768px) {
   section.rainbow-banner h2 {

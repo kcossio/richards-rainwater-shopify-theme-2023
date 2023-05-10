@@ -14,6 +14,7 @@ section.rainbow-banner {
         text-align:left;
         font-size:35px;
         line-height:1.1em;
+        margin:0px;
 
         @include breakpoint(tablet) {
             font-size:6.2vw;
