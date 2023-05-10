@@ -1,0 +1,32 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+.icon-grid {
+    display:flex;
+    flex-wrap:wrap;
+    align-items:flex-start;
+    justify-content:space-between;
+
+    .icon-item {
+
+        width:33%;
+        text-align:center;
+
+        img {
+            height:72px;
+            width:auto;
+            display:inline-block;
+            margin:0px auto;
+        }
+        p {
+            margin:24px 0px 0px 0px;
+            font-weight:900;
+            font-size:12px;
+
+            @include breakpoint(tablet) {
+                font-size:30px;
+            }
+        }
+    }
+}
