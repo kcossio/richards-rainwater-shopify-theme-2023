@@ -211,7 +211,7 @@
   animation: secondary 10s linear infinite;
 }
 .clouds .secondary.slow {
-  animation: primary 20s linear infinite;
+  animation: secondary 20s linear infinite;
 }
 .clouds .secondary.bg {
   top: 50%;
