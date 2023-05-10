@@ -1,0 +1,67 @@
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+
+    {%- when 'icon_item' -%}
+      {%- ########################################################################## 
+      # Label: Icon
+      # Returns: an image object or nil(if no selection has been made)
+      # Image Properties: https://shopify.dev/api/liquid/objects#image
+      # Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
+      ########################################################################## -%}
+      {%- assign icon = block.settings.icon -%}
+      {{ icon | image_url: width: icon.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+
+      {%- ########################################################################## 
+      # Label: Label
+      # Returns: a string or an empty object(if nothing has been entered)
+      # Filters: https://shopify.dev/api/liquid/objects#string 
+      ########################################################################## -%}
+      {{ block.settings.label }} 
+
+  {%- endcase -%}
+{%- endfor -%}
+
+{% schema %}
+  {
+  "name": "Icon Grid",
+  "class": "icon-grid",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Add a grid of icons with labels to a page"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Icon Item",
+      "type": "icon_item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon",
+          "info": "Upload an icon (PNG, GIF, or JPEG format)"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "info": "Add a label for this icon"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Icon Grid"
+    }
+  ]
+}  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
