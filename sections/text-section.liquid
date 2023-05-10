@@ -1,0 +1,52 @@
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+
+    {%- when 'text' -%}
+      {%- ########################################################################## 
+      # Label: Text 
+      # Returns: a string or an empty object(if nothing has been entered)
+      # Filters: https://shopify.dev/api/liquid/objects#string 
+      ########################################################################## -%}
+      {{ block.settings.text_ }} 
+
+  {%- endcase -%}
+{%- endfor -%}
+
+{% schema %}
+  {
+  "name": "Text Section",
+  "class": "text-section",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Add content to a narrow, straight column of text"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Text",
+      "type": "text",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "text_",
+          "label": "Text ",
+          "info": "Add text to this section"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Text Section"
+    }
+  ]
+}  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
