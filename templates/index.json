@@ -70,6 +70,39 @@
       ],
       "settings": {
       }
+    },
+    "6df38f0a-259a-412a-9fe1-3325f2fc3b85": {
+      "type": "icon-grid",
+      "blocks": {
+        "0f31b490-408a-46fe-9484-dcf17b99c5c4": {
+          "type": "icon_item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon-flask.png",
+            "label": "PFAs FREE"
+          }
+        },
+        "02ac6bbc-117d-4867-ba15-4f12833269f9": {
+          "type": "icon_item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon-recycle.png",
+            "label": "LESS WASTE"
+          }
+        },
+        "89c28a19-1756-478a-bcad-99c892bef4e5": {
+          "type": "icon_item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon-globe.png",
+            "label": "RENEWABLE"
+          }
+        }
+      },
+      "block_order": [
+        "0f31b490-408a-46fe-9484-dcf17b99c5c4",
+        "02ac6bbc-117d-4867-ba15-4f12833269f9",
+        "89c28a19-1756-478a-bcad-99c892bef4e5"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -77,6 +110,7 @@
     "9116c0a2-b6dd-4ac0-bfa7-345ba053c3a0",
     "ca796682-1492-45e1-8073-6b6b626ce353",
     "featured_collection",
-    "2489de8d-7bd0-4aec-b948-96164c90c4b4"
+    "2489de8d-7bd0-4aec-b948-96164c90c4b4",
+    "6df38f0a-259a-412a-9fe1-3325f2fc3b85"
   ]
 }
