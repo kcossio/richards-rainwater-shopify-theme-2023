@@ -1,30 +1,28 @@
-{%- for block in section.blocks -%}
-  {%- case block.type -%}
+<div class="inner">
+  <div class="icon-grid">
+  {%- for block in section.blocks -%}
+    {%- case block.type -%}
 
-    {%- when 'icon_item' -%}
-      {%- ########################################################################## 
-      # Label: Icon
-      # Returns: an image object or nil(if no selection has been made)
-      # Image Properties: https://shopify.dev/api/liquid/objects#image
-      # Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
-      ########################################################################## -%}
-      {%- assign icon = block.settings.icon -%}
-      {{ icon | image_url: width: icon.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+      {%- when 'icon_item' -%}
+        <div class="icon-item fade-in-up">
+        {%- assign icon = block.settings.icon -%}
+        {%- if icon != blank %}
+        {{ icon | image_url: width: icon.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+        {%- endif -%}
 
-      {%- ########################################################################## 
-      # Label: Label
-      # Returns: a string or an empty object(if nothing has been entered)
-      # Filters: https://shopify.dev/api/liquid/objects#string 
-      ########################################################################## -%}
-      {{ block.settings.label }} 
+        {%- if block.settings.label != blank -%}
+        <p>{{ block.settings.label }}</p>
+        {%- endif -%}
+        </div><!--End icon-item>
 
-  {%- endcase -%}
-{%- endfor -%}
-
+    {%- endcase -%}
+  {%- endfor -%}
+  </div><!--End icon-grid-->
+</div><!-- End inner-->
 {% schema %}
   {
   "name": "Icon Grid",
-  "class": "icon-grid",
+  "class": "section-icon-grid",
   "tag": "section",
   "settings": [
     {
