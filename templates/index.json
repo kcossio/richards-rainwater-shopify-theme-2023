@@ -22,6 +22,12 @@
         "call_to_action_button_link": "shopify:\/\/collections\/all"
       }
     },
+    "ca796682-1492-45e1-8073-6b6b626ce353": {
+      "type": "rainbow_text_banner",
+      "settings": {
+        "text": "What do you see when\nyou look up at the clouds?"
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -48,18 +54,12 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
-    },
-    "ca796682-1492-45e1-8073-6b6b626ce353": {
-      "type": "rainbow_text_banner",
-      "settings": {
-        "text": "What do you see when\nyou look up at the clouds?"
-      }
     }
   },
   "order": [
     "76521080-48b1-42b7-8ffe-ccecb8390284",
     "9116c0a2-b6dd-4ac0-bfa7-345ba053c3a0",
-    "featured_collection",
-    "ca796682-1492-45e1-8073-6b6b626ce353"
+    "ca796682-1492-45e1-8073-6b6b626ce353",
+    "featured_collection"
   ]
 }
