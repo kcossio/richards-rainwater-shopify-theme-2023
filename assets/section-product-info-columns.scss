@@ -10,13 +10,39 @@ section.section-product-info-box-drops {
     header {
         width:100%;
         text-align:center;
+        color:$white;
+
+        h2 {
+            color:$white;
+            margin:0px;
+        }
+        p {
+            color:$light_blue;
+            font-weight:900;
+            text-transform: uppercase;
+            font-size:14px;
+            margin:0px auto;
+
+            @include breakpoint(tablet) {
+                font-size:18.75px;
+            }
+        }
     }
     .product-info-col {
         width:100%;
         text-align:center;
+        background:$dark_blue;
+        position:relative;
 
         @include breakpoint(tablet) {
             width:50%;
+        }
+
+        &.product-info-col-1 {
+            background:$dark_blue;
+        }
+        &.product-info-col-1 {
+            background:$medium_blue;
         }
     }
 }
