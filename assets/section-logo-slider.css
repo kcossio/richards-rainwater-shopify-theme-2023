@@ -172,8 +172,36 @@ EASING
 */
 .section-logo-slider {
   text-align: center;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  padding: 66px 0px;
+  margin: 0px;
+}
+@media (min-width: 768px) {
+  .section-logo-slider {
+    padding: 160px 0px 80px 0px;
+  }
+}
+.section-logo-slider header h2 {
+  color: #0094DA;
+  font-weight: 900;
+  margin: 0px auto;
+  font-size: 40px;
+}
+@media (min-width: 768px) {
+  .section-logo-slider header h2 {
+    font-size: 75px;
+  }
+}
+.section-logo-slider header p {
+  margin: 0px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.3em;
+}
+@media (min-width: 768px) {
+  .section-logo-slider header p {
+    font-size: 30px;
+  }
 }
 .section-logo-slider a {
   cursor: pointer;
