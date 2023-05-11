@@ -99,9 +99,9 @@
             "product_name_line_2": "rainwater",
             "call_to_action_button_link": "",
             "call_to_action_button_label": "Learn more",
-            "drop_message_1_of_3": "",
-            "drop_message_2_of_3": "",
-            "drop_message_3_of_3": ""
+            "drop_message_1_of_3": "Aenean condimentum tortor facilisis",
+            "drop_message_2_of_3": "Lorem ipsum dolor sit amet",
+            "drop_message_3_of_3": "Donec eu tincidunt nisl"
           }
         }
       },
