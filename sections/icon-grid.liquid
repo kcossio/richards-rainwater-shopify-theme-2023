@@ -9,7 +9,7 @@
         <div class="icon-item fade-in-up">
         {%- assign icon = block.settings.icon -%}
         {%- if icon != blank %}
-        {{ icon | image_url: width: icon.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+        {{ icon | image_url: width: icon.width | image_tag: class: 'icon-image', loading: 'lazy' }}
         {%- endif -%}
 
         {%- if block.settings.label != blank -%}

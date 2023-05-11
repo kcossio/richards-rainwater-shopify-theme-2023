@@ -13,6 +13,8 @@
             {% for image in shop.metafields.global.retail_logos.value %}
             
             <div class="carousel-cell">
+
+                {{ image | image_url: width: image.width | image_tag: class: 'logo-slider-image', loading: 'lazy' }}
             
             <img
             
