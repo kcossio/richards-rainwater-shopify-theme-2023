@@ -10,7 +10,6 @@
     a {
         cursor:pointer;
     }
-
     
     @include breakpoint(tablet) {
         margin-top:100px;
@@ -20,8 +19,6 @@
 .logo-slider {
     padding:45px 0px 55px 0px;
     width:100%;
-    
-
     
 
     img {
