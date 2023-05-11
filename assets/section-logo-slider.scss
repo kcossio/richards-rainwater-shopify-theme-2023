@@ -44,7 +44,7 @@
         cursor:pointer;
     }
 
-    button.button {
+    a.button {
         margin:30px auto;
 
         @include breakpoint(tablet) {
