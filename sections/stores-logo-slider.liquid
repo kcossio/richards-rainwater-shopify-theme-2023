@@ -1,16 +1,21 @@
 {{ 'section-logo-slider.css' | asset_url | stylesheet_tag }}
 
-<header class="logo-slider-header fade-in-up">
+<div class="inner">
 
-  <h2>{{ section.settings.heading }}</h2>
+  <header class="logo-slider-header fade-in-up">
 
-  {%- if section.settings.subheading != blank -%}
-  <p>{{ section.settings.subheading }}</p>
-  {%- endif -%}
+    <h2>{{ section.settings.heading }}</h2>
 
-</header>
+    {%- if section.settings.subheading != blank -%}
+    <p>{{ section.settings.subheading }}</p>
+    {%- endif -%}
 
-{% render 'global-metafields-retail-logos' %}
+  </header>
+
+
+  {% render 'global-metafields-retail-logos' %}
+
+</div>
 
 {% schema %}
   {
