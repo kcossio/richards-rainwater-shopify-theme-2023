@@ -183,20 +183,23 @@ EASING
 .section-logo-slider header h2 {
   color: #0094DA;
   font-weight: 900;
-  margin: 0px auto;
+  margin: 0px auto 18px auto;
   font-size: 40px;
 }
 @media (min-width: 768px) {
   .section-logo-slider header h2 {
     font-size: 75px;
+    margin: 0px auto 36px auto;
   }
 }
 .section-logo-slider header p {
-  margin: 0px;
   text-align: center;
   font-size: 22px;
   font-weight: bold;
   line-height: 1.3em;
+  width: 624px;
+  max-width: 100%;
+  margin: 0px auto;
 }
 @media (min-width: 768px) {
   .section-logo-slider header p {
