@@ -77,6 +77,43 @@
       "settings": {
       }
     },
+    "5c6beead-2c09-4454-8448-ab25c9f9b543": {
+      "type": "product_comparison-columns",
+      "blocks": {
+        "11442644-2050-40b5-82e9-93a87dd05248": {
+          "type": "left_product_column",
+          "settings": {
+            "product_name_line_1": "",
+            "product_name_line_2": "",
+            "call_to_action_button_link": "",
+            "call_to_action_button_label": "",
+            "drop_message_1_of_3": "",
+            "drop_message_2_of_3": "",
+            "drop_message_3_of_3": ""
+          }
+        },
+        "a26a5064-f84d-4436-8697-fd700f0052e8": {
+          "type": "right_product_column",
+          "settings": {
+            "product_name_line_1": "",
+            "product_name_line_2": "",
+            "call_to_action_button_link": "",
+            "call_to_action_button_label": "",
+            "drop_message_1_of_3": "",
+            "drop_message_2_of_3": "",
+            "drop_message_3_of_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "11442644-2050-40b5-82e9-93a87dd05248",
+        "a26a5064-f84d-4436-8697-fd700f0052e8"
+      ],
+      "settings": {
+        "heading": "Learn What Rainwater Can Do",
+        "subheading": "CLICK THE DROPS TO DISCOVER THE BENEFITS OF RAINWATER"
+      }
+    },
     "3ac0a344-f3ad-461f-a83d-eba9a539692f": {
       "type": "stores-logo-slider",
       "settings": {
@@ -93,6 +130,7 @@
     "ca796682-1492-45e1-8073-6b6b626ce353",
     "2489de8d-7bd0-4aec-b948-96164c90c4b4",
     "6df38f0a-259a-412a-9fe1-3325f2fc3b85",
+    "5c6beead-2c09-4454-8448-ab25c9f9b543",
     "3ac0a344-f3ad-461f-a83d-eba9a539692f"
   ]
 }
