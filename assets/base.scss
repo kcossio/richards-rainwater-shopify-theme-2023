@@ -1459,10 +1459,21 @@ button.shopify-payment-button__button--unbranded {
     background:$light_blue;
   }
 
-  &.light-to-dark {
+  &.light {
     background:$light_blue;
     &:hover {
       background:$medium_blue;
+    }
+  }
+  &.dark {
+    background:$dark_blue;
+    &:hover {
+      background:$medium_blue;
+    }
+  }
+  .lg {
+    @include breakpoint(tablet) {
+      font-size:22.5px;
     }
   }
 

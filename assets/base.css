@@ -1563,15 +1563,32 @@ button.shopify-payment-button__button--unbranded {
 .customer button:hover {
   background: #0094DA;
 }
-.button.light-to-dark,
-.shopify-challenge__button.light-to-dark,
-.customer button.light-to-dark {
+.button.light,
+.shopify-challenge__button.light,
+.customer button.light {
   background: #0094DA;
 }
-.button.light-to-dark:hover,
-.shopify-challenge__button.light-to-dark:hover,
-.customer button.light-to-dark:hover {
+.button.light:hover,
+.shopify-challenge__button.light:hover,
+.customer button.light:hover {
   background: #0040A8;
+}
+.button.dark,
+.shopify-challenge__button.dark,
+.customer button.dark {
+  background: #000F44;
+}
+.button.dark:hover,
+.shopify-challenge__button.dark:hover,
+.customer button.dark:hover {
+  background: #0040A8;
+}
+@media (min-width: 768px) {
+  .button .lg,
+  .shopify-challenge__button .lg,
+  .customer button .lg {
+    font-size: 22.5px;
+  }
 }
 
 .button:focus-visible,
