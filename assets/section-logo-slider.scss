@@ -44,6 +44,15 @@
         cursor:pointer;
     }
 
+    button {
+        margin:30px auto;
+
+        @include breakpoint(tablet) {
+            margin:60px auto 30px auto;
+        }
+    }
+
+
     @include breakpoint(tablet) {
         margin-top:100px;
         margin-bottom:100px;
@@ -81,6 +90,7 @@
         background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
 
     }
+    
     
 
     img {

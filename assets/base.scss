@@ -1414,7 +1414,7 @@ button.shopify-payment-button__button--unbranded,
   --shadow-visible: var(--buttons-shadow-visible);
   --border-offset: var(--buttons-border-offset); /* reduce radius edge artifacts */
   --border-opacity: calc(1 - var(--buttons-border-opacity));
-  border-radius: var(--buttons-radius-outset);
+  border-radius: 50px;
   position: relative;
 }
 
@@ -1474,6 +1474,7 @@ button.shopify-payment-button__button--unbranded {
   &.lg {
     @include breakpoint(tablet) {
       font-size:22.5px;
+      padding:.5em 3.5em;
     }
   }
 

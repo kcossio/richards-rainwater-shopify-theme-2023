@@ -210,6 +210,14 @@ EASING
 .section-logo-slider a {
   cursor: pointer;
 }
+.section-logo-slider button {
+  margin: 30px auto;
+}
+@media (min-width: 768px) {
+  .section-logo-slider button {
+    margin: 60px auto 30px auto;
+  }
+}
 @media (min-width: 768px) {
   .section-logo-slider {
     margin-top: 100px;
