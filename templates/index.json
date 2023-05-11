@@ -76,6 +76,43 @@
       ],
       "settings": {
       }
+    },
+    "ac708b3b-92c8-449e-a38e-79d0c3b3f5eb": {
+      "type": "product-info-columns-comparison",
+      "blocks": {
+        "516fec40-9da4-471b-a7bc-a00d9b571e0f": {
+          "type": "left_product_column",
+          "settings": {
+            "product_name_line_1": "Still",
+            "product_name_line_2": "rainwater",
+            "call_to_action_button_link": "",
+            "call_to_action_button_label": "Shop Now",
+            "drop_message_1_of_3": "Lorem ipsum dolor sit amet",
+            "drop_message_2_of_3": "Amet dolor sit emnetum",
+            "drop_message_3_of_3": "Lorem mundus sit et tablum"
+          }
+        },
+        "837d04ce-00f8-4c8d-94fe-9f544ba2c29f": {
+          "type": "right_product_column",
+          "settings": {
+            "product_name_line_1": "Sparkling",
+            "product_name_line_2": "rainwater",
+            "call_to_action_button_link": "",
+            "call_to_action_button_label": "Learn More",
+            "drop_message_1_of_3": "Dolor sit amet dei",
+            "drop_message_2_of_3": "Amet valorum signis",
+            "drop_message_3_of_3": "Signis amet lorem dei mundus"
+          }
+        }
+      },
+      "block_order": [
+        "516fec40-9da4-471b-a7bc-a00d9b571e0f",
+        "837d04ce-00f8-4c8d-94fe-9f544ba2c29f"
+      ],
+      "settings": {
+        "heading": "Learn What Rainwater Can Do",
+        "subheading": "CLICK THE DROPS TO DISCOVER THE BENEFITS OF RAINWATER"
+      }
     }
   },
   "order": [
@@ -83,6 +120,7 @@
     "9116c0a2-b6dd-4ac0-bfa7-345ba053c3a0",
     "ca796682-1492-45e1-8073-6b6b626ce353",
     "2489de8d-7bd0-4aec-b948-96164c90c4b4",
-    "6df38f0a-259a-412a-9fe1-3325f2fc3b85"
+    "6df38f0a-259a-412a-9fe1-3325f2fc3b85",
+    "ac708b3b-92c8-449e-a38e-79d0c3b3f5eb"
   ]
 }
