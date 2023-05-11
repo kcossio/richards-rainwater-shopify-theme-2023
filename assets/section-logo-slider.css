@@ -185,6 +185,7 @@ EASING
   font-weight: 900;
   margin: 0px auto 18px auto;
   font-size: 40px;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .section-logo-slider header h2 {
@@ -219,10 +220,36 @@ EASING
 .logo-slider {
   padding: 45px 0px 55px 0px;
   width: 100%;
+  position: relative;
+  color: #ffffff;
+}
+.logo-slider::before {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 10vw;
+  height: 100%;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff0000+0,ff0000+100&1+0,0+100 */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#00ffffff",GradientType=0 ); /* IE6-9 */
+}
+.logo-slider::after {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 10vw;
+  height: 100%;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff0000+0,ff0000+100&1+0,0+100 */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#00ffffff",GradientType=0 ); /* IE6-9 */
 }
 .logo-slider img {
   max-height: 104px;
   max-width: 256px;
-  margin: 0px 20px;
+  margin: 0px 30px;
   height: auto;
 }
