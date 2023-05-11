@@ -1,36 +1,61 @@
 {% ## Grab Data from Global Metafields, as set up via Metafields Guru ## %}
 
-<div class="retail-logos-list">
+<div class="logo-slider">
 
         
 
         {%- if shop.metafields.global.retail_logos != blank -%}
 
-            <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "initialIndex": 2, "cellAlign": "center"}'>
             
             {% assign file = shop.metafields.global.retail_logos.value %}
             
             {% for image in shop.metafields.global.retail_logos.value %}
-            
-            <div class="carousel-cell">
 
                 {{ image | image_url: width: image.width | image_tag: class: 'logo-slider-image', loading: 'lazy' }}
-            
-            <img
-            
-            class="lazyload"
-            
-            src=" {{ image | image_url: width: image.width }}"
-            
-            data-widths="[475, 880, 1200, 1620]"
-            
-            data-aspectratio="{{ image.aspect_ratio }}"
-            
-            data-sizes="auto"
-            
-            />
 
-        {% endfor %}
+            {% endfor %}
+        
+
+        <script type="text/javascript">
+
+            jQuery('.logo-slider').slick({
+                speed: 8000,
+                autoplay: true,
+                autoplaySpeed: 0,
+                centerMode: true,
+                cssEase: 'linear',
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                variableWidth: true,
+                infinite: true,
+                initialSlide: 1,
+                arrows: false,
+                buttons: false,
+                pauseOnFocus: false,
+                pauseOnHover: false,
+                responsive: [
+                        {
+                        breakpoint: 1024,
+                        settings: {
+                        }
+                        },
+                        {
+                        breakpoint: 768,
+                        settings: {
+                    speed: 8000,
+                        }
+                        },
+                        {
+                        breakpoint: 500,
+                        settings: {
+                        }
+                        }
+                        // You can unslick at a given breakpoint now by adding:
+                        // settings: "unslick"
+                        // instead of a settings object
+                    ]
+            });
+        </script>
 
     {%- endif -%}
         
