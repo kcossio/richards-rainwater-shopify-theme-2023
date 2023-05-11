@@ -12,6 +12,10 @@
 
   </header>
 
+  {%- if block.settings.call_to_action_button_link != blank %}
+  <a class="button" href="{{ block.settings.call_to_action_button_link }}">{{ block.settings.call_to_action_button_label }} </a>
+  {%- endif -%}
+
 
   {% render 'global-metafields-retail-logos' %}
 
@@ -40,6 +44,18 @@
       "label": "Subheading",
       "default": "Find Richard’s near you.",
       "info": "Add text for an optional subheading here"
+    },
+    {
+      "type": "url",
+      "id": "call_to_action_button_link",
+      "label": "Call to Action Button Link",
+      "info": "Choose a link for the Call to Action Button"
+    },
+    {
+      "type": "text",
+      "id": "call_to_action_button_label",
+      "label": "Call to Action Button Label",
+      "info": "Add a label for the Call to Action Button"
     }
   ],
   "presets": [

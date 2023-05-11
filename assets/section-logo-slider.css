@@ -219,6 +219,7 @@ EASING
 
 .logo-slider {
   padding: 45px 0px 55px 0px;
+  overflow: hidden;
   width: 100%;
   position: relative;
   color: #ffffff;
