@@ -1567,6 +1567,7 @@ button.shopify-payment-button__button--unbranded {
 .shopify-challenge__button.light,
 .customer button.light {
   background: #0094DA;
+  opacity: 1;
 }
 .button.light:hover,
 .shopify-challenge__button.light:hover,

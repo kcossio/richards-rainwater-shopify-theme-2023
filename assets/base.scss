@@ -1461,6 +1461,7 @@ button.shopify-payment-button__button--unbranded {
 
   &.light {
     background:$light_blue;
+    opacity:1;
     &:hover {
       background:$medium_blue;
     }
