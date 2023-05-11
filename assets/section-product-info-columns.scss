@@ -58,20 +58,40 @@ section.section-product-info-box-drops {
             color:$white;
             font-size:50px;
             line-height:1em;
+            margin:0px auto;
 
             span {
                 font-size:39px;
                 font-weight:normal;
                 display:block;
-                line-height:1em;
+                line-height:.9em;
+
+                &.rainwater {
+                    font-size:45px;
+                }
             }
 
             @include breakpoint(tablet) {
-                font-size:80px;
 
                 span {
                     font-size:106px;
+
+                    &.rainwater {
+                        font-size:8.5vw;
+                    }
                 }
+                
+            }
+            @include breakpoint(desktopwide) {
+
+                span {
+                    font-size:106px;
+
+                    &.rainwater {
+                        font-size:122px;
+                    }
+                }
+                
             }
         }
 
