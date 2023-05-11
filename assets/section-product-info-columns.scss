@@ -1,0 +1,22 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+section.section-product-info-box-drops {
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+
+    header {
+        width:100%;
+        text-align:center;
+    }
+    .product-info-col {
+        width:100%;
+        text-align:center;
+
+        @include breakpoint(tablet) {
+            width:50%;
+        }
+    }
+}

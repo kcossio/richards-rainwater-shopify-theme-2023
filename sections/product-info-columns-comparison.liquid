@@ -1,3 +1,4 @@
+{{ 'section-product-info-columns.css' | asset_url | stylesheet_tag }}
 
 <header class="product-info-col-header">
 <h2 class="product-info-col-heading">{{ section.settings.heading }}</h2>
@@ -10,7 +11,7 @@
   {%- case block.type -%}
 
     {%- when 'left_product_column' -%}
-      <div class="product-info-col-1">
+      <div class="product-info-col product-info-col-1">
 
         {%- assign product_image = block.settings.product_image -%}
         {%- if product_image != blank -%}
@@ -47,7 +48,7 @@
       </div><!--End product-info-col-1-->
 
     {%- when 'right_product_column' -%}
-      <div class="product-info-col-2">
+      <div class="product-info-col product-info-col-2">
 
         {%- assign product_image = block.settings.product_image -%}
         {%- if product_image != blank -%}
@@ -89,7 +90,7 @@
 
 {% schema %}
   {
-  "name": "Product Info Box (2up)",
+  "name": "Product Info Drops (2up)",
   "class": "section-product-info-box-drops product-info-box-two-up",
   "max_blocks": 2,
   "tag": "section",
