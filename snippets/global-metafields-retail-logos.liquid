@@ -1,0 +1,25 @@
+{% ## Grab Data from Global Metafields, as set up via Metafields Guru ## %}
+
+<div class="retail-logos-list">
+
+        
+        {% assign logos = shop.metafields.global.retail_logos %}
+
+        {%- if logos > 0 -%}  
+
+        {% assign file = logos.value %}
+
+            {% for image in shop.metafields.global.retail_logos.value %}
+
+                {{ image | image_url: width: image.width | image_tag: class: 'retail-logo', loading: 'lazy'}}
+                
+            {% endfor %}
+
+        {%- endif -%}
+        
+       
+        
+        
+        
+        
+     </div>
