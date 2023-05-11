@@ -83,22 +83,22 @@
         "11442644-2050-40b5-82e9-93a87dd05248": {
           "type": "left_product_column",
           "settings": {
-            "product_name_line_1": "",
-            "product_name_line_2": "",
+            "product_name_line_1": "Still",
+            "product_name_line_2": "rainwater",
             "call_to_action_button_link": "",
-            "call_to_action_button_label": "",
-            "drop_message_1_of_3": "",
-            "drop_message_2_of_3": "",
-            "drop_message_3_of_3": ""
+            "call_to_action_button_label": "Shop Now",
+            "drop_message_1_of_3": "Lorem ipsum dolor sit amet",
+            "drop_message_2_of_3": "Proin sit amet pretium leo",
+            "drop_message_3_of_3": "Dolor sit amet sit menum"
           }
         },
         "a26a5064-f84d-4436-8697-fd700f0052e8": {
           "type": "right_product_column",
           "settings": {
-            "product_name_line_1": "",
-            "product_name_line_2": "",
+            "product_name_line_1": "Sparkling",
+            "product_name_line_2": "rainwater",
             "call_to_action_button_link": "",
-            "call_to_action_button_label": "",
+            "call_to_action_button_label": "Learn more",
             "drop_message_1_of_3": "",
             "drop_message_2_of_3": "",
             "drop_message_3_of_3": ""
