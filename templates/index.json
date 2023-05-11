@@ -81,7 +81,9 @@
       "type": "stores-logo-slider",
       "settings": {
         "heading": "Find Richard’s near you.",
-        "subheading": "Rest assured copy including “rainwater” will appear here."
+        "subheading": "Rest assured copy including “rainwater” will appear here.",
+        "call_to_action_button_link": "shopify:\/\/pages\/store-locator",
+        "call_to_action_button_label": "FIND YOUR NEAREST CLOUD"
       }
     }
   },
