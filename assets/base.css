@@ -234,6 +234,11 @@ section {
   font-weight: 800;
 }
 
+.vadelma {
+  font-family: "VadelmaLight", serif;
+  font-weight: 800;
+}
+
 /* Color custom properties */
 :root,
 .color-background-1 {
