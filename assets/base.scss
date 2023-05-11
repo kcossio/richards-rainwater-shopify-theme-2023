@@ -1471,7 +1471,7 @@ button.shopify-payment-button__button--unbranded {
       background:$medium_blue;
     }
   }
-  .lg {
+  &.lg {
     @include breakpoint(tablet) {
       font-size:22.5px;
     }

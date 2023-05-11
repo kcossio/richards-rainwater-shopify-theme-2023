@@ -1584,9 +1584,9 @@ button.shopify-payment-button__button--unbranded {
   background: #0040A8;
 }
 @media (min-width: 768px) {
-  .button .lg,
-  .shopify-challenge__button .lg,
-  .customer button .lg {
+  .button.lg,
+  .shopify-challenge__button.lg,
+  .customer button.lg {
     font-size: 22.5px;
   }
 }
