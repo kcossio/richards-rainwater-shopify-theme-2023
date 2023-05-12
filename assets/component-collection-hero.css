@@ -184,7 +184,8 @@ EASING
   top: 0px;
   z-index: 1;
   width: 100%;
-  min-height: 30vh;
+  height: 662px;
+  max-height: 50vh;
 }
 
 .collection-hero__inner {
