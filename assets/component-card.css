@@ -276,7 +276,7 @@ EASING
 
 .card__inner {
   width: 100%;
-  margin-top: auto;
+  margin-bottom: auto;
 }
 .card__inner.card-hero-wrapper {
   aspect-ratio: 337/533;
@@ -371,9 +371,13 @@ EASING
 
 .card__heading {
   font-size: 22px;
-  margin: 0px;
+  margin: 0px 0px 24px 0px;
   font-weight: 900;
   letter-spacing: 0.8px;
+}
+.card__heading span {
+  color: #0094DA;
+  font-size: 0.8em;
 }
 
 .card__heading:last-child {
