@@ -302,6 +302,7 @@ EASING
   max-height: 100%;
   left: 50%;
   transform: translateX(-50%);
+  transform-origin: 0% 50%;
 }
 
 .card--media .card__inner .card__content {
