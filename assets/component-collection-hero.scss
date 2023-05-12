@@ -33,12 +33,13 @@
       li {
         display:inline-flex;
         font-size:28px;
-        font-weight:900;
+        font-weight:800;
+        line-height:1em;
   
         &:after {
           content:"/";
           display:inline-flex;
-          margin:0px 6px;
+          margin:0px 10px;
           color:$white;
         }
   
@@ -53,10 +54,10 @@
           position:relative;
           color:$white;
           text-decoration: none;
-          font-weight: 900;
+          font-weight: 800;
           font-size:28px;
           text-transform: uppercase;
-          letter-spacing:.8em;
+          letter-spacing:2px;
   
           &:after {
             content:"";
@@ -68,6 +69,10 @@
             left:0px;
             bottom:-2px;
             transition:all .3s ease 0s;
+
+            @include breakpoint(tablet) {
+                height:4px;
+            }
           }
   
           &:hover {

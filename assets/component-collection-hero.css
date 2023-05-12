@@ -197,12 +197,13 @@ EASING
 #collection-nav ul li {
   display: inline-flex;
   font-size: 28px;
-  font-weight: 900;
+  font-weight: 800;
+  line-height: 1em;
 }
 #collection-nav ul li:after {
   content: "/";
   display: inline-flex;
-  margin: 0px 6px;
+  margin: 0px 10px;
   color: #ffffff;
 }
 #collection-nav ul li:last-child:after {
@@ -213,10 +214,10 @@ EASING
   position: relative;
   color: #ffffff;
   text-decoration: none;
-  font-weight: 900;
+  font-weight: 800;
   font-size: 28px;
   text-transform: uppercase;
-  letter-spacing: 0.8em;
+  letter-spacing: 2px;
 }
 #collection-nav ul li a:after {
   content: "";
@@ -228,6 +229,11 @@ EASING
   left: 0px;
   bottom: -2px;
   transition: all 0.3s ease 0s;
+}
+@media (min-width: 768px) {
+  #collection-nav ul li a:after {
+    height: 4px;
+  }
 }
 #collection-nav ul li a:hover:after {
   width: 100%;
