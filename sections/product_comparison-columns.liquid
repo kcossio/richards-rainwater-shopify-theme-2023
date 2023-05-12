@@ -31,18 +31,21 @@
    
         {%- if block.settings.drop_message_1_of_3 != blank -%}
           <div class="info-drop info-drop-1">
+            <a class="drop-clickme">{% render 'drop-plus', class: 'medium' %}</a>
             <p class="info-drop-message">{{ block.settings.drop_message_1_of_3 }} </p>
           </div>
         {%- endif -%}
 
         {%- if block.settings.drop_message_2_of_3 != blank -%}
           <div class="info-drop info-drop-2">
+            <a class="drop-clickme">{% render 'drop-plus', class: 'medium' %}</a>
             <p class="info-drop-message">{{ block.settings.drop_message_2_of_3 }} </p>
           </div>
         {%- endif -%}
         
         {%- if block.settings.drop_message_3_of_3 != blank -%}
           <div class="info-drop info-drop-3">
+            <a class="drop-clickme">{% render 'drop-plus', class: 'medium' %}</a>
             <p class="info-drop-message">{{ block.settings.drop_message_3_of_3 }} </p>
           </div>
         {%- endif -%}
@@ -70,21 +73,21 @@
    
         {%- if block.settings.drop_message_1_of_3 != blank -%}
           <div class="info-drop info-drop-1">
-            <a class="drop-clickme">{% render 'drop-plus', class: 'medium' %}</a>
+            <a class="drop-clickme">{% render 'drop-plus', class: 'light' %}</a>
             <p class="info-drop-message">{{ block.settings.drop_message_1_of_3 }} </p>
           </div>
         {%- endif -%}
 
         {%- if block.settings.drop_message_2_of_3 != blank -%}
           <div class="info-drop info-drop-2">
-            <a class="drop-clickme">{% render 'drop-plus', class: 'medium' %}</a>
+            <a class="drop-clickme">{% render 'drop-plus', class: 'light' %}</a>
             <p class="info-drop-message">{{ block.settings.drop_message_2_of_3 }} </p>
           </div>
         {%- endif -%}
         
         {%- if block.settings.drop_message_3_of_3 != blank -%}
           <div class="info-drop info-drop-3">
-            <a class="drop-clickme">{% render 'drop-plus', class: 'medium' %}</a>
+            <a class="drop-clickme">{% render 'drop-plus', class: 'light' %}</a>
             <p class="info-drop-message">{{ block.settings.drop_message_3_of_3 }} </p>
           </div>
         {%- endif -%}
