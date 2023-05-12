@@ -24,10 +24,20 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "c4bdf2ed-8820-45ee-a609-9447147ec989": {
+      "type": "stores-logo-slider",
+      "settings": {
+        "heading": "Find Richard’s near you.",
+        "subheading": "Rest assured copy including “rainwater” will appear here.",
+        "call_to_action_button_link": "shopify:\/\/pages\/store-locator",
+        "call_to_action_button_label": "Find your nearest cloud"
+      }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "c4bdf2ed-8820-45ee-a609-9447147ec989"
   ]
 }
