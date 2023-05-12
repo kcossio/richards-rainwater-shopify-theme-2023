@@ -196,7 +196,8 @@ EASING
 }
 #collection-nav ul li {
   display: inline-flex;
-  font-size: 21px;
+  font-size: 28px;
+  font-weight: 900;
 }
 #collection-nav ul li:after {
   content: "/";
@@ -215,13 +216,14 @@ EASING
   font-weight: 900;
   font-size: 28px;
   text-transform: uppercase;
+  letter-spacing: 0.8em;
 }
 #collection-nav ul li a:after {
   content: "";
   display: block;
   height: 3px;
   width: 0%;
-  background-color: currentColor;
+  background-color: #000F44;
   position: absolute;
   left: 0px;
   bottom: -2px;

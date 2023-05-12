@@ -32,7 +32,8 @@
   
       li {
         display:inline-flex;
-        font-size:21px;
+        font-size:28px;
+        font-weight:900;
   
         &:after {
           content:"/";
@@ -55,13 +56,14 @@
           font-weight: 900;
           font-size:28px;
           text-transform: uppercase;
+          letter-spacing:.8em;
   
           &:after {
             content:"";
             display:block;
             height:3px;
             width:0%;
-            background-color:currentColor;
+            background-color:$dark_blue;
             position:absolute;
             left:0px;
             bottom:-2px;
