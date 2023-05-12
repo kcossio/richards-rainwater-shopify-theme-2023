@@ -15,7 +15,9 @@
 
         {%- assign product_image = block.settings.product_image -%}
         {%- if product_image != blank -%}
-        {{ product_image | image_url: width: product_image.width | image_tag: class: 'product-info-col-img product-info-col-img-1', loading: 'lazy' }}
+          <div class="produt-col-img">
+            {{ product_image | image_url: width: product_image.width | image_tag: class: 'product-info-col-img product-info-col-img-2', loading: 'lazy' }}
+          </div>
         {%- endif -%}
 
 
@@ -52,7 +54,9 @@
 
         {%- assign product_image = block.settings.product_image -%}
         {%- if product_image != blank -%}
+        <div class="produt-col-img">
         {{ product_image | image_url: width: product_image.width | image_tag: class: 'product-info-col-img product-info-col-img-2', loading: 'lazy' }}
+        </div>
         {%- endif -%}
 
 

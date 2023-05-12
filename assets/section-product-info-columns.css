@@ -290,6 +290,7 @@ section.section-product-info-box-drops .info-drop {
 section.section-product-info-box-drops .info-drop a.drop-clickme {
   display: block;
   width: 40%;
+  cursor: pointer;
   transition: all 0.4s ease 0s;
 }
 @media (min-width: 768px) {
