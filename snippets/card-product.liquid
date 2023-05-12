@@ -97,8 +97,8 @@
               aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}"
             >
               {{ card_product.title | escape }}
-              {%- if product.metafields.product_meta.card_subheading.value != blank %}
-              <span>{{ product.metafields.product_meta.card_subheading.value }}></span>
+              {%- if card_product.metafields.product_extra.card_subheading.value != blank %}
+              <span>{{ card_product.metafields.product_extra.card_subheading.value }}></span>
               {%- endif -%}
             </a>
           </h3>
