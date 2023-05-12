@@ -121,7 +121,7 @@ section.section-product-info-box-drops {
         width:100px;
         position:relative;
         transform:scale(.8);
-        transition:all .3s ease 0s;
+        transition:all .3s $easeInOutCirc 0s;
         cursor:pointer;
         
         @include breakpoint(tablet) {
@@ -155,13 +155,15 @@ section.section-product-info-box-drops {
             position:absolute;
             top:100%;
             left:0px;
-            transition: opacity .3s ease 0s;
+            transform:translateY(-5px);
+            transition: all .3s $easeInOutBack 0s;
         }
 
         &.open {
             transform:scale(1);
 
             p {
+                transform:translateY(0px);
                 opacity:1;
             }
             
