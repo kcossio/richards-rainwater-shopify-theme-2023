@@ -116,8 +116,10 @@ section.section-product-info-box-drops {
     .info-drop {
 
         display:inline-flex;
+        justify-content: center;
         flex-wrap:wrap;
         width:60px;
+        position:relative;
         
         @include breakpoint(tablet) {
             width:80px;
@@ -146,7 +148,10 @@ section.section-product-info-box-drops {
             font-weight:bold;
             width:100%;
             opacity:0;
-            display:none;
+            display:block;
+            position:absolute;
+            top:100%;
+            left:0px;
             transition: opacity .3s ease 0s;
         }
 
@@ -154,7 +159,6 @@ section.section-product-info-box-drops {
 
             p {
                 opacity:1;
-                display:block;
             }
 
             
