@@ -10,7 +10,10 @@
     margin-bottom: 1.5rem;
   }
 }
-
+.main-collection-product-grid {
+  position:relative;
+  z-index:3;
+}
 .collection .loading-overlay {
   top: 0;
   right: 0;

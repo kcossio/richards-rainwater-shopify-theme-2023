@@ -9,13 +9,30 @@
   }
 {%- endstyle -%}
 
-<div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %} color-{{ section.settings.color_scheme }} gradient">
+<div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %} gradient">
   <div class="collection-hero__inner page-width">
     <div class="collection-hero__text-wrapper">
       <h1 class="collection-hero__title">
         <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
         {{- collection.title | escape -}}
       </h1>
+
+      {%- assign collections_menu = section.settings.collections_menu.links -%}
+      <nav id="collection-nav">
+        <ul>
+          {%- for link in collections_menu -%}
+                <li class="collection-li {% if link.active %}active{% endif %}">
+                  <a
+                    href="{{ link.url }}"
+                    class="collection-link" 
+                    {% if link.active %}aria-current="page"{% endif %}>
+                      {{ link.title | escape }}
+                  </a>
+                </li>
+          {%- endfor %}
+        </ul>
+      </nav>
+
 
       {%- if section.settings.show_collection_description -%}
         <div class="collection-hero__description rte">{{ collection.description }}</div>
@@ -46,10 +63,29 @@
 
 </div>
 
+<section class="rainbow-banner">
+  
+  <div class="bg-img bg-hero">
+    <img class="bg-parallax" src="{{ 'bg-rainbow.svg' | asset_url }}>" width="1923" height="2042" role="presentation" alt="rainbow" />
+  </div>
+  
+  
+  <div class="clouds clouds-wide bottom">
+    <div class="scroll-parent">
+      <div class="scroll-element slow primary">
+        <img class="cloud" src="{{ 'cloud-wide.svg' | asset_url }}>" width="1877" height="188" role="presentation" alt="cloud" />
+      </div>
+      <div class="scroll-element slow secondary">
+        <img class="cloud" src="{{ 'cloud-wide.svg' | asset_url }}>" width="1877" height="188" role="presentation" alt="cloud" />
+      </div>
+    </div>
+
+</section><!-- End rainbow-banner-->
+
 {% schema %}
 {
   "name": "t:sections.main-collection-banner.name",
-  "class": "section",
+  "class": "collection-banner section",
   "settings": [
     {
       "type": "paragraph",
@@ -69,32 +105,10 @@
       "info": "t:sections.main-collection-banner.settings.show_collection_image.info"
     },
     {
-      "type": "select",
-      "id": "color_scheme",
-      "options": [
-        {
-          "value": "accent-1",
-          "label": "t:sections.all.colors.accent_1.label"
-        },
-        {
-          "value": "accent-2",
-          "label": "t:sections.all.colors.accent_2.label"
-        },
-        {
-          "value": "background-1",
-          "label": "t:sections.all.colors.background_1.label"
-        },
-        {
-          "value": "background-2",
-          "label": "t:sections.all.colors.background_2.label"
-        },
-        {
-          "value": "inverse",
-          "label": "t:sections.all.colors.inverse.label"
-        }
-      ],
-      "default": "background-1",
-      "label": "t:sections.all.colors.label"
+      "type": "link_list",
+      "id": "collections_menu",
+      "label": "Collections Menu",
+      "info": "Choose a menu to appear at the top of the collections template"
     }
   ]
 }
