@@ -227,7 +227,7 @@ EASING
   background-color: #000F44;
   position: absolute;
   left: 0px;
-  bottom: -2px;
+  bottom: -10px;
   transition: all 0.3s ease 0s;
 }
 @media (min-width: 768px) {
