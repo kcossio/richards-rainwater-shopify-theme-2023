@@ -4,7 +4,6 @@
       "type": "main-collection-banner",
       "settings": {
         "show_collection_description": true,
-        "show_collection_image": false,
         "collections_menu": "collection-menu"
       }
     },
@@ -13,7 +12,7 @@
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 3,
-        "image_ratio": "adapt",
+        "image_ratio": "portrait",
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
