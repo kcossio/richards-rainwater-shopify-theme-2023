@@ -210,6 +210,8 @@
     letter-spacing:.8px;
 
     span {
+        display:block;
+        line-height:.8em;
         color:$light_blue;
         font-size:.8em;
     }

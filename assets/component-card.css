@@ -376,6 +376,8 @@ EASING
   letter-spacing: 0.8px;
 }
 .card__heading span {
+  display: block;
+  line-height: 0.8em;
   color: #0094DA;
   font-size: 0.8em;
 }
