@@ -45,8 +45,8 @@
       style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
     >
       <div
-        class="card__inner {% if card_product.featured_media or settings.card_style == 'standard' %} ratio{% endif %}"
-        style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
+        class="card__inner card-hero-wrapper {% if card_product.featured_media or settings.card_style == 'standard' %} ratio{% endif %}"
+        style=""
       >
         {%- if card_product.featured_media -%}
           <div class="card__media">
@@ -364,8 +364,8 @@
       style="--ratio-percent: 100%;"
     >
       <div
-        class="card__inner {% if settings.card_style == 'standard' %} ratio{% endif %}"
-        style="--ratio-percent: 100%;"
+        class="card__inner card-hero-wrapper {% if settings.card_style == 'standard' %} ratio{% endif %}"
+        style=""
       >
         <div class="card__content">
           <div class="card__information">
