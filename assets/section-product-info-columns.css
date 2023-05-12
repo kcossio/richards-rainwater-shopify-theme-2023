@@ -175,6 +175,12 @@ section.section-product-info-box-drops {
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
+  padding: 60px 0px 60px 0px;
+}
+@media (min-width: 768px) {
+  section.section-product-info-box-drops {
+    padding: 123px 0px 123px 0px;
+  }
 }
 section.section-product-info-box-drops header {
   width: 100%;
@@ -182,12 +188,6 @@ section.section-product-info-box-drops header {
   color: #ffffff;
   position: relative;
   z-index: 4;
-  padding: 123px 0px 0px 0px;
-}
-@media (min-width: 768px) {
-  section.section-product-info-box-drops header {
-    padding: 60px 0px 0px 0px;
-  }
 }
 section.section-product-info-box-drops header h2 {
   color: #ffffff;
@@ -225,7 +225,7 @@ section.section-product-info-box-drops .product-info-col::before {
   bottom: 100%;
   left: 0px;
   width: 100%;
-  height: 50%;
+  height: 100%;
   background-color: inherit;
   z-index: 1;
 }
