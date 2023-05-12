@@ -298,6 +298,7 @@ EASING
 .card__information {
   grid-row-start: 2;
   padding: 1.3rem 1rem;
+  text-align: center;
 }
 
 .card:not(.ratio) > .card__content {

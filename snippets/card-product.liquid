@@ -114,6 +114,15 @@
                 {{ card_product.title | escape }}
               </a>
             </h3>
+
+            <a
+              href="{{ card_product.url }}"
+              id="card-button-{{ section_id }}-{{ card_product.id }}"
+              class="button"
+              aria-labelledby="card-button-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
+            >
+              Shop Now
+            </a>
           </div>
           <div class="card__badge {{ settings.badge_position }}">
             {%- if card_product.available == false -%}
@@ -151,6 +160,15 @@
               {{ card_product.title | escape }}
             </a>
           </h3>
+
+          <a
+            href="{{ card_product.url }}"
+            id="card-button-{{ section_id }}-{{ card_product.id }}"
+            class="button"
+            aria-labelledby="card-button-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
+          >
+            Shop Now
+          </a>
           <div class="card-information">
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>

@@ -95,6 +95,16 @@
               {%- endif %}
             </a>
           </h3>
+
+          <a
+            href="{{ card_product.url }}"
+            id="card-button-{{ section_id }}-{{ card_product.id }}"
+            class="button"
+            aria-labelledby="card-button-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
+          >
+            Shop Now
+          </a>
+
           {%- if card_collection.description != blank -%}
             <p class="card__caption">
               {{- card_collection.description | strip_html | truncatewords: 12 -}}
@@ -126,6 +136,16 @@
               {%- endif %}
             </a>
           </h3>
+
+          <a
+            href="{{ card_product.url }}"
+            id="card-button-{{ section_id }}-{{ card_product.id }}"
+            class="button"
+            aria-labelledby="card-button-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
+          >
+            Shop Now
+          </a>
+          
           {%- if card_collection.featured_image == null and card_collection.description != blank -%}
             <p class="card__caption">
               {{- card_collection.description | strip_html | truncatewords: 12 -}}
