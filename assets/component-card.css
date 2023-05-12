@@ -291,10 +291,11 @@ EASING
   display: flex;
   align-items: flex-end;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .card__inner.card-hero-wrapper .card__media .media img {
-  -o-object-fit: none;
-     object-fit: none;
+  -o-object-fit: unset;
+     object-fit: unset;
   width: auto;
   height: auto;
   max-width: 100%;
