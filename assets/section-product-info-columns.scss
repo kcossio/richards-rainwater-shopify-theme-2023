@@ -172,16 +172,18 @@ section.section-product-info-box-drops {
         }
 
         a.drop-clickme {
-            display:block;
-            width:40%;
+            display:block;            
             cursor:pointer;
 
-            @include breakpoint(tablet) {
-                width:50%;
-            }
+            
 
             svg {
-                width:100%;
+                width:40%;
+                display:block;
+
+                @include breakpoint(tablet) {
+                    width:50%;
+                }
             }
 
             transition: all .4s ease 0s;
