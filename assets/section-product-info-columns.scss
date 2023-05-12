@@ -118,19 +118,21 @@ section.section-product-info-box-drops {
         display:inline-flex;
         justify-content: center;
         flex-wrap:wrap;
-        width:60px;
+        width:100px;
         position:relative;
+        transform:scale(.8);
+        transition:all .3s ease 0s;
         
         @include breakpoint(tablet) {
-            width:80px;
+            width:120px;
         }
 
         a.drop-clickme {
             display:block;
-            width:40px;
+            width:40%;
 
             @include breakpoint(tablet) {
-                width:50px;
+                width:50%;
             }
 
             svg {
@@ -143,7 +145,7 @@ section.section-product-info-box-drops {
         p {
             color:$white;
             text-align:center;
-            margin:10px 0px 0px 0px;
+            margin:0px 0px 0px 0px;
             font-size:15px;
             font-weight:bold;
             width:100%;

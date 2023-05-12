@@ -275,22 +275,24 @@ section.section-product-info-box-drops .info-drop {
   display: inline-flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 60px;
+  width: 100px;
   position: relative;
+  transform: scale(0.8);
+  transition: all 0.3s ease 0s;
 }
 @media (min-width: 768px) {
   section.section-product-info-box-drops .info-drop {
-    width: 80px;
+    width: 120px;
   }
 }
 section.section-product-info-box-drops .info-drop a.drop-clickme {
   display: block;
-  width: 40px;
+  width: 40%;
   transition: all 0.4s ease 0s;
 }
 @media (min-width: 768px) {
   section.section-product-info-box-drops .info-drop a.drop-clickme {
-    width: 50px;
+    width: 50%;
   }
 }
 section.section-product-info-box-drops .info-drop a.drop-clickme svg {
@@ -299,7 +301,7 @@ section.section-product-info-box-drops .info-drop a.drop-clickme svg {
 section.section-product-info-box-drops .info-drop p {
   color: #ffffff;
   text-align: center;
-  margin: 10px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
   font-size: 15px;
   font-weight: bold;
   width: 100%;
