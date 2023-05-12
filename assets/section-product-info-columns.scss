@@ -134,6 +134,8 @@ section.section-product-info-box-drops {
             svg {
                 width:100%;
             }
+
+            transition: all .4s ease 0s;
         }
 
         p {
@@ -143,6 +145,19 @@ section.section-product-info-box-drops {
             font-size:15px;
             font-weight:bold;
             width:100%;
+            opacity:0;
+            display:none;
+            transition: opacity .3s ease 0s;
+        }
+
+        &.open {
+
+            p {
+                opacity:1;
+                display:block;
+            }
+
+            
         }
     }
 }

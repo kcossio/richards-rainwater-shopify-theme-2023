@@ -284,6 +284,7 @@ section.section-product-info-box-drops .info-drop {
 section.section-product-info-box-drops .info-drop a.drop-clickme {
   display: block;
   width: 40px;
+  transition: all 0.4s ease 0s;
 }
 @media (min-width: 768px) {
   section.section-product-info-box-drops .info-drop a.drop-clickme {
@@ -300,4 +301,11 @@ section.section-product-info-box-drops .info-drop p {
   font-size: 15px;
   font-weight: bold;
   width: 100%;
+  opacity: 0;
+  display: none;
+  transition: opacity 0.3s ease 0s;
+}
+section.section-product-info-box-drops .info-drop.open p {
+  opacity: 1;
+  display: block;
 }
