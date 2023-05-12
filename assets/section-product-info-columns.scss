@@ -219,3 +219,15 @@ section.section-product-info-box-drops {
         }
     }
 }
+
+.drop {
+
+    &.light {
+        .icon-drop {
+            fill:$light_blue;
+        }
+        .plus {
+            fill:$medium_blue;
+        }
+    }
+}
