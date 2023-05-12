@@ -279,6 +279,7 @@ section.section-product-info-box-drops .info-drop {
   position: relative;
   transform: scale(0.8);
   transition: all 0.3s ease 0s;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   section.section-product-info-box-drops .info-drop {

@@ -122,6 +122,7 @@ section.section-product-info-box-drops {
         position:relative;
         transform:scale(.8);
         transition:all .3s ease 0s;
+        cursor:pointer;
         
         @include breakpoint(tablet) {
             width:120px;
