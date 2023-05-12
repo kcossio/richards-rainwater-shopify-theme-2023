@@ -70,6 +70,15 @@ section.section-product-info-box-drops {
         .produt-col-img {
             margin-top:auto;
             max-width:240px;
+            display:flex;
+            align-items:flex-end;
+            align-content:flex-end;
+
+            img {
+                max-width:33%;
+                width:auto;
+                height:auto;
+            }
         }
 
         @include breakpoint(tablet) {
