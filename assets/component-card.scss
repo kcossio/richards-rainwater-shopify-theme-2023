@@ -1,3 +1,7 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+
 .card-wrapper {
     color: inherit;
     height: 100%;
@@ -170,8 +174,10 @@
   }
   
   .card__heading {
-    margin-top: 0;
-    margin-bottom: 0;
+    font-size:22px;
+    margin:0px;
+    font-weight:900;
+    letter-spacing:.8px;
   }
   
   .card__heading:last-child {
