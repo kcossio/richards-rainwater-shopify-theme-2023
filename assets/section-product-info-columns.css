@@ -246,6 +246,10 @@ section.section-product-info-box-drops .product-info-col::before {
   background-color: inherit;
   z-index: 1;
 }
+section.section-product-info-box-drops .product-info-col .button {
+  padding: 0px 6em;
+  letter-spacing: 2px;
+}
 section.section-product-info-box-drops .product-info-col .produt-col-img {
   margin-top: auto;
   width: 100%;
