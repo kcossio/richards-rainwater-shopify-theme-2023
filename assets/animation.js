@@ -157,7 +157,7 @@
             ease: "Strong.easeInOut",
             scrollTrigger: {
             trigger: box,
-            start: "top bottom",
+            start: "top 90%",
             end: "bottom top",        
             toggleClass: "onscreen",
                 toggleActions: "play none none none"
