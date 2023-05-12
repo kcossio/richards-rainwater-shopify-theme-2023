@@ -219,19 +219,18 @@
     aspect-ratio: 20.32 / 28.57;
     width:20px;
     height:auto;
-    background:url(icon-drop-grey.svg) center center no-repeat;
-    background-size:100%;
+    background-image:url(icon-drop-grey.svg);
+    background-size:cover;
     /*icon*/
   }
   
   .product-form__input input[type='radio'] + label:hover {
-    background:url(icon-drop-light-blue.svg) center center no-repeat;
-    background-size:100%;
+    background-image:url(icon-drop-light-blue.svg);
+    background-size:cover;
   }
   
   .product-form__input input[type='radio']:checked + label {
-    background:url(icon-drop-light-blue.svg) center center no-repeat;
-    background-size:100%;
+  
   }
   
   .product-form__input input[type='radio']:not(.disabled) + label > .visually-hidden {
