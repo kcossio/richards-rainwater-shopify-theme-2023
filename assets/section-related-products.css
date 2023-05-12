@@ -172,10 +172,11 @@ EASING
 */
 .related-products {
   display: block;
+  margin: 60px 0px;
 }
 
 .related-products__heading {
   text-align: center;
   color: #0094DA;
-  margin: 0px 0px 3em 0px;
+  margin: 0px 0px 2em 0px;
 }
