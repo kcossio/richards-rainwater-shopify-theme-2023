@@ -285,6 +285,9 @@ section.section-product-info-box-drops .info-drop {
     width: 120px;
   }
 }
+section.section-product-info-box-drops .info-drop.open p {
+  opacity: 1;
+}
 section.section-product-info-box-drops .info-drop a.drop-clickme {
   display: block;
   width: 40%;
@@ -311,7 +314,4 @@ section.section-product-info-box-drops .info-drop p {
   top: 100%;
   left: 0px;
   transition: opacity 0.3s ease 0s;
-}
-section.section-product-info-box-drops .info-drop.open p {
-  opacity: 1;
 }

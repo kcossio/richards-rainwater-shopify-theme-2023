@@ -127,6 +127,14 @@ section.section-product-info-box-drops {
             width:120px;
         }
 
+        &.open {
+
+            p {
+                opacity:1;
+            }
+            
+        }
+
         a.drop-clickme {
             display:block;
             width:40%;
@@ -157,13 +165,6 @@ section.section-product-info-box-drops {
             transition: opacity .3s ease 0s;
         }
 
-        &.open {
-
-            p {
-                opacity:1;
-            }
-
-            
-        }
+        
     }
 }
