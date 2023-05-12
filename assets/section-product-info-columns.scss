@@ -14,10 +14,20 @@ section.section-product-info-box-drops {
         color:$white;
         position:relative;
         z-index:4;
+        padding:123px 0px 0px 0px;
+
+        @include breakpoint(tablet) {
+            padding:60px 0px 0px 0px;
+        }
 
         h2 {
             color:$white;
             margin:0px;
+            font-size:37px;
+
+            @include breakpoint(tablet) {
+                font-size:75px;
+            }
         }
         p {
             color:$light_blue;
@@ -100,6 +110,28 @@ section.section-product-info-box-drops {
         }
         &.product-info-col-2 {
             background:$medium_blue;
+        }
+    }
+
+    .info-drop {
+
+        display:inline-flex;
+
+        a.drop-clickme {
+            display:block;
+            width:40px;
+
+            @include breakpoint(tablet) {
+                width:50px;
+            }
+        }
+
+        p {
+            color:$white;
+            text-align:center;
+            margin:0px;
+            font-size:15px;
+            font-weight:bold;
         }
     }
 }

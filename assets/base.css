@@ -709,7 +709,7 @@ h2,
 @media (min-width: 768px) {
   h2,
   .h2 {
-    font-size: 22.5px;
+    font-size: 22px;
   }
 }
 
@@ -1588,7 +1588,7 @@ button.shopify-payment-button__button--unbranded {
   .button.lg,
   .shopify-challenge__button.lg,
   .customer button.lg {
-    font-size: 22.5px;
+    font-size: 22px;
     padding: 0.5em 3.5em;
   }
 }
@@ -2031,7 +2031,7 @@ details[open] > .share-button__fallback {
 @media (min-width: 768px) {
   .field__label,
   .customer .field label {
-    font-size: 22.5px;
+    font-size: 22px;
   }
 }
 
@@ -2412,7 +2412,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 .announcement-bar {
   color: #ffffff;
   background: #FFA500;
-  font-size: 22.5px;
+  font-size: 22px;
   font-weight: 900;
   letter-spacing: 1px;
   box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.3);
@@ -2428,7 +2428,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 }
 @media (min-width: 768px) {
   .announcement-bar__message {
-    font-size: 22.5px;
+    font-size: 22px;
     padding: 7px 0px;
   }
 }

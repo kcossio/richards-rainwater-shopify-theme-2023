@@ -182,7 +182,7 @@ EASING
 @media (min-width: 768px) {
   .newsletter__wrapper .field__input {
     padding: 2.8rem 25px;
-    font-size: 22.5px;
+    font-size: 22px;
   }
   .newsletter__wrapper .field__input:focus, .newsletter__wrapper .field__input:active {
     padding: 2.8rem 25px;

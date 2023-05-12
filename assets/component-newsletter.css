@@ -264,6 +264,6 @@ EASING
 @media (min-width: 768px) {
   .newsletter-form__button {
     padding: 0px 32px;
-    font-size: 22.5px;
+    font-size: 22px;
   }
 }
