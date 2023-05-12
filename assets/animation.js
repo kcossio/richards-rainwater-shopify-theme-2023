@@ -150,6 +150,21 @@
         })
         });
 
+        // ----- Fade in Down
+        const boxesFadeInDown = gsap.utils.toArray('.fade-in-down');
+        boxesFadeInDown.forEach(box => {
+        gsap.to(box, { 
+            ease: "Strong.easeInOut",
+            scrollTrigger: {
+            trigger: box,
+            start: "top bottom",
+            end: "bottom top",        
+            toggleClass: "onscreen",
+                toggleActions: "play none none none"
+            }
+        })
+        });
+
         // Bounce In
         
         const bounceIn = gsap.utils.toArray('.bounce-in');

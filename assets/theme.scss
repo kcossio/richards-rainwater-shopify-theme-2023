@@ -176,6 +176,20 @@
         transform:translateY(0px);
     } 
   }
+
+  .fade-in-down {
+    opacity:0;
+    transform:translateY(-100%);
+    transition:opacity 1s ease 0s, transform 1s ease 0s;
+    
+    @include animationfix();
+    
+     &.onscreen {
+        opacity:1;
+        transform:translateY(0px);
+    } 
+  }
+
   /*svg * { 
     transform-box: fill-box;
   }*/
