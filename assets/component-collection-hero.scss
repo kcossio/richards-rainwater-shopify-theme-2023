@@ -6,6 +6,10 @@
     position:relative;
     z-index:1;
 
+    .inner {
+        z-index:3;
+    }
+
     nav {
         position:relative;
         z-index:2;
