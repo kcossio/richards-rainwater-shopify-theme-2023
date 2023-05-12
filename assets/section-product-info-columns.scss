@@ -11,7 +11,7 @@ section.section-product-info-box-drops {
     padding:60px 0px 0px 0px;
 
     @include breakpoint(tablet) {
-        padding:123px 0px 0px 0px;
+        padding:98px 0px 0px 0px;
     }
 
     header {
@@ -38,6 +38,7 @@ section.section-product-info-box-drops {
             text-transform: uppercase;
             font-size:14px;
             margin:0px auto;
+            letter-spacing:.8px;
 
             @include breakpoint(tablet) {
                 font-size:18.75px;
@@ -84,7 +85,7 @@ section.section-product-info-box-drops {
             pointer-events:none;
 
             img {
-                max-width:33%;
+                max-width:41%;
                 width:auto;
                 height:auto;
             }
@@ -155,7 +156,7 @@ section.section-product-info-box-drops {
         z-index:10;
 
         &.info-drop-1 {
-            left:18%;
+            left:13%;
             top:6.7%;
         }
         &.info-drop-2 {
@@ -163,7 +164,7 @@ section.section-product-info-box-drops {
             top:30%;
         }
         &.info-drop-3 {
-            left:16.5%;
+            left:9.2%;
             top:50%;
         }
         
