@@ -189,7 +189,12 @@ section.section-product-info-box-drops header {
   color: #ffffff;
   position: relative;
   z-index: 4;
-  margin: 0px 0px 50px 0px;
+  margin: 0px 0px 40px 0px;
+}
+@media (min-width: 768px) {
+  section.section-product-info-box-drops header {
+    margin: 0px 0px 50px 0px;
+  }
 }
 section.section-product-info-box-drops header h2 {
   color: #ffffff;
