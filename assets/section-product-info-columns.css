@@ -326,7 +326,8 @@ section.section-product-info-box-drops .info-drop.info-drop-3 {
   }
 }
 section.section-product-info-box-drops .info-drop a.drop-clickme {
-  display: block;
+  display: flex;
+  justify-content: center;
   cursor: pointer;
   transition: all 0.4s ease 0s;
 }
@@ -342,7 +343,7 @@ section.section-product-info-box-drops .info-drop a.drop-clickme svg {
 section.section-product-info-box-drops .info-drop p {
   color: #ffffff;
   text-align: center;
-  margin: 0px 0px 0px 0px;
+  margin: 8px 0px 0px 0px;
   font-size: 15px;
   font-weight: bold;
   width: 100%;

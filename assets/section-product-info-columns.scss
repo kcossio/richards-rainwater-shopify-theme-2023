@@ -172,10 +172,9 @@ section.section-product-info-box-drops {
         }
 
         a.drop-clickme {
-            display:block;            
-            cursor:pointer;
-
-            
+            display:flex;  
+            justify-content:center;          
+            cursor:pointer;            
 
             svg {
                 width:40%;
@@ -192,7 +191,7 @@ section.section-product-info-box-drops {
         p {
             color:$white;
             text-align:center;
-            margin:0px 0px 0px 0px;
+            margin:8px 0px 0px 0px;
             font-size:15px;
             font-weight:bold;
             width:100%;
