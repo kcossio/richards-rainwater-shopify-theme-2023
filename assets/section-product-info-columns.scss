@@ -116,6 +116,12 @@ section.section-product-info-box-drops {
     .info-drop {
 
         display:inline-flex;
+        flex-wrap:wrap;
+        width:60px;
+        
+        @include breakpoint(tablet) {
+            width:80px;
+        }
 
         a.drop-clickme {
             display:block;
@@ -124,14 +130,19 @@ section.section-product-info-box-drops {
             @include breakpoint(tablet) {
                 width:50px;
             }
+
+            svg {
+                width:100%;
+            }
         }
 
         p {
             color:$white;
             text-align:center;
-            margin:0px;
+            margin:10px 0px 0px 0px;
             font-size:15px;
             font-weight:bold;
+            width:100%;
         }
     }
 }

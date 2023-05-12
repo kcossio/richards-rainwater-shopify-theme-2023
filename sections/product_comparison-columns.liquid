@@ -92,6 +92,23 @@
   {%- endcase -%}
 {%- endfor -%}
 
+<script>
+  window.addEventListener("load", (event) => {
+
+    jQuery('.drop-clickme').click(function () { // Enable the toggle view list for ul.toggle-view for toggle-able lists
+      var parent_drop = jQuery(this).closest('.info-drop');
+     
+     //If the text (i.e. the panel div) is hidden, then open it up. Otherwise hide the open text.
+     if (parent_drop.hasClass('open')) {
+      parent_drop.removeClass('open');
+     } else {
+      parent_drop.addClass('open');
+     }
+ 
+   });
+  });
+</script>
+
 {% schema %}
   {
   "name": "Product Info Drops (2up)",
