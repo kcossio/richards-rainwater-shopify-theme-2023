@@ -275,13 +275,13 @@ section.section-product-info-box-drops .product-info-col h2 {
   color: #ffffff;
   font-size: 50px;
   line-height: 1em;
-  margin: 0px auto;
+  margin: 38px auto 38px auto;
 }
 section.section-product-info-box-drops .product-info-col h2 span {
   font-size: 39px;
   font-weight: normal;
   display: block;
-  line-height: 0.9em;
+  line-height: 0.8em;
 }
 section.section-product-info-box-drops .product-info-col h2 span.rainwater {
   font-size: 45px;
