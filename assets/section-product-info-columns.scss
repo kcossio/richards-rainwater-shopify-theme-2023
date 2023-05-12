@@ -53,6 +53,7 @@ section.section-product-info-box-drops {
         padding:0px 50px 60px 50px;
         display:flex;
         flex-direction: column;
+        align-items:center;
 
         @include breakpoint(tablet) {
             padding:0px 4vw 60px 4vw;
@@ -148,6 +149,19 @@ section.section-product-info-box-drops {
         transform:scale(.8);
         transition:all .3s $easeInOutCirc 0s;
         cursor:pointer;
+
+        &.info-drop-1 {
+            left:18%;
+            top:6.7%;
+        }
+        &.info-drop-2 {
+            right:13.8%;
+            top:30%;
+        }
+        &.info-drop-3 {
+            left:16.5%;
+            top:50%;
+        }
         
         @include breakpoint(tablet) {
             width:120px;
