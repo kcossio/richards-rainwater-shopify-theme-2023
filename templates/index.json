@@ -83,6 +83,7 @@
         "11442644-2050-40b5-82e9-93a87dd05248": {
           "type": "left_product_column",
           "settings": {
+            "product_image": "shopify:\/\/shop_images\/RichardsRainwater-Still-16oz-RenderingFront-230127-FlatSharpened.png",
             "product_name_line_1": "Still",
             "product_name_line_2": "rainwater",
             "call_to_action_button_link": "",
@@ -95,6 +96,7 @@
         "a26a5064-f84d-4436-8697-fd700f0052e8": {
           "type": "right_product_column",
           "settings": {
+            "product_image": "shopify:\/\/shop_images\/RichardsRainwater-Sparkling-12oz-230130-flatsharpened.png",
             "product_name_line_1": "Sparkling",
             "product_name_line_2": "rainwater",
             "call_to_action_button_link": "",
