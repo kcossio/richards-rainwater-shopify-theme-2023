@@ -111,6 +111,14 @@
 
     &.card-hero-wrapper {
         aspect-ratio: 337 / 533;
+
+        .card__media {
+            aspect-ratio: inherit;
+
+            .media {
+                aspect-ratio: inherit;
+            }
+        }
     }
   }
   

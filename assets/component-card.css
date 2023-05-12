@@ -281,6 +281,12 @@ EASING
 .card__inner.card-hero-wrapper {
   aspect-ratio: 337/533;
 }
+.card__inner.card-hero-wrapper .card__media {
+  aspect-ratio: inherit;
+}
+.card__inner.card-hero-wrapper .card__media .media {
+  aspect-ratio: inherit;
+}
 
 .card--media .card__inner .card__content {
   position: relative;
