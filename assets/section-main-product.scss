@@ -199,7 +199,9 @@
     color: rgba(var(--color-foreground));
     border-radius: var(--variant-pills-radius);
     color: rgb(var(--color-foreground));
-    display: inline-block;
+    display: inline-flex;
+    align-items:center;
+    justify-content: space-between;
     margin: 0.7rem 0.5rem 0.2rem 0;
     padding: 1rem 2rem;
     font-size: 1.4rem;
@@ -213,11 +215,10 @@
   .product-form__input input[type='radio'] + label:before {
     content:"";
     display:block;
-    position:absolute;
-    left:0px;
-    top:0px;
+    position:relative;
+    margin-right:4px;
     aspect-ratio: 20.32 / 28.57;
-    width:20px;
+    width:15px;
     height:auto;
     background-image:url(icon-drop-grey.svg);
     background-size:cover;
@@ -230,6 +231,10 @@
   
   .product-form__input input[type='radio']:checked + label {
     background-color:$white;
+
+    &::before {
+      background-image:url(icon-drop-light-blue.svg);
+    }
   }
   
   .product-form__input input[type='radio']:not(.disabled) + label > .visually-hidden {
