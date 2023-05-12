@@ -79,6 +79,9 @@ section.section-product-info-box-drops {
             align-items:flex-end;
             align-content:flex-end;
             justify-content:center;
+            position:relative;
+            z-index:1;
+            pointer-events:none;
 
             img {
                 max-width:33%;
@@ -149,6 +152,7 @@ section.section-product-info-box-drops {
         transform:scale(.8);
         transition:all .3s $easeInOutCirc 0s;
         cursor:pointer;
+        z-index:10;
 
         &.info-drop-1 {
             left:18%;

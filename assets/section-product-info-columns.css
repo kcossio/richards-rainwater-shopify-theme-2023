@@ -246,6 +246,9 @@ section.section-product-info-box-drops .product-info-col .produt-col-img {
   align-items: flex-end;
   align-content: flex-end;
   justify-content: center;
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
 }
 section.section-product-info-box-drops .product-info-col .produt-col-img img {
   max-width: 33%;
@@ -303,6 +306,7 @@ section.section-product-info-box-drops .info-drop {
   transform: scale(0.8);
   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
   cursor: pointer;
+  z-index: 10;
 }
 section.section-product-info-box-drops .info-drop.info-drop-1 {
   left: 18%;
