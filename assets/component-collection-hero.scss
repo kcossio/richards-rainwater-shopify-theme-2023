@@ -51,6 +51,10 @@
           display:inline-flex;
           position:relative;
           color:$white;
+          text-decoration: none;
+          font-weight: 900;
+          font-size:28px;
+          text-transform: uppercase;
   
           &:after {
             content:"";
