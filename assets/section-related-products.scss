@@ -1,0 +1,14 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+.related-products {
+    display: block;
+  }
+  
+  .related-products__heading {
+    text-align:center;
+    color:$light_blue;
+    margin:0px 0px 3em 0px;
+  }
+  
