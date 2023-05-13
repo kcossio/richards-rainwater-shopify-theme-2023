@@ -1,6 +1,6 @@
 {
     "sections": {
-        "banner": {
+        "page-top-banner": {
             "type": "page-top-banner",
             "settings": {}
         },
@@ -16,11 +16,11 @@
             "type": "pullquote",
             "settings": {}
         },
-        "impact": {
+        "our-impact": {
             "type": "our-impact",
             "settings": {}
         },
-        "timeline": {
+        "timeline-slider": {
             "type": "timeline-slider",
             "settings": {}
         },
@@ -37,6 +37,8 @@
         "versus",
         "the-rainwater-model",
         "pullquote",
+        "our-impact",
+        "timeline-slider",
         "main"
     ]
 }
