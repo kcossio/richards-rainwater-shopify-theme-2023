@@ -195,11 +195,29 @@
             "title": "Richard builds Tank Town",
             "content": "Right outside of Austin, Texas, Tank Town is the birthplace of Richard’s Rainwater."
           }
+        },
+        "4e3ec816-d10d-4772-a646-b46122fc1609": {
+          "type": "timeline_slide",
+          "settings": {
+            "year": "2002",
+            "title": "Pioneering Bottled",
+            "content": "In 2002, Richard’s Rainwater becomes the first company in the nation to receive licensing to bottle and distribute rainwater."
+          }
+        },
+        "19253d1c-d2e8-4ed1-bf1c-577ee4eed61b": {
+          "type": "timeline_slide",
+          "settings": {
+            "year": "2008",
+            "title": "Developing Sparkling Rainwater",
+            "content": "Since rainwater is free of minerals and additives, carbonation was a challenge. Richard developed his own recipe using time, ice-cold temps, and pressure."
+          }
         }
       },
       "block_order": [
         "cd30d0b7-51fc-4673-b4bd-90836e19f9ba",
-        "dd57e9a5-1532-4efd-bbc5-fb6b8ace02cf"
+        "dd57e9a5-1532-4efd-bbc5-fb6b8ace02cf",
+        "4e3ec816-d10d-4772-a646-b46122fc1609",
+        "19253d1c-d2e8-4ed1-bf1c-577ee4eed61b"
       ],
       "settings": {
         "heading": "Born in the Texas Sky"
