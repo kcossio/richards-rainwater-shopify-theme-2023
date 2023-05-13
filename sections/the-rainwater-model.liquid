@@ -23,7 +23,9 @@
       # Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
       ########################################################################## -%}
       {%- assign image = block.settings.image -%}
+      {%- if image != blank -%}
       {{ image | image_url: width: image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+      {%- endif -%}
 
       {%- ########################################################################## 
       # Label: Heading
@@ -64,7 +66,7 @@
   ],
   "blocks": [
     {
-      "name": "Model Blocks",
+      "name": "Model Block",
       "type": "model_blocks",
       "settings": [
         {
