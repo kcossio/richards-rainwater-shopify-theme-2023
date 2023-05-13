@@ -348,6 +348,11 @@
   .product__title {
     word-break: break-word;
     margin-bottom: 1.5rem;
+    text-align:left;
+
+    h1 {
+      text-align:left;
+    }
   }
   
   .product__title > * {
