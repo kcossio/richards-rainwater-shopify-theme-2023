@@ -132,6 +132,12 @@
         "quote_text": "Lorem ipsum dolor sit amet, consec tetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
       }
     },
+    "85f7042e-640c-4f3b-af6d-ecd56d2faa9e": {
+      "type": "rainbow_text_banner",
+      "settings": {
+        "text": ""
+      }
+    },
     "our-impact": {
       "type": "our-impact",
       "settings": {
@@ -159,6 +165,7 @@
     "versus",
     "the-rainwater-model",
     "pullquote",
+    "85f7042e-640c-4f3b-af6d-ecd56d2faa9e",
     "our-impact",
     "timeline-slider",
     "main"
