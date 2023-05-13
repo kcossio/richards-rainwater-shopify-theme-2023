@@ -96,6 +96,20 @@
             "heading": "Bottle",
             "description": "<p>We pour the <strong>pure, refreshing<\/strong> rainwater into glass bottles and aluminum cans, packaging as <strong>inﬁnitely renewable<\/strong> as the water itself.<\/p>"
           }
+        },
+        "bb5d5776-b14f-4309-837e-c1bbe6da19a3": {
+          "type": "model_blocks",
+          "settings": {
+            "heading": "Distribute Locally",
+            "description": "<p>Richard’s is building a <strong>network of  collection systems<\/strong> across the country to ensure our rainwater is <strong>local everywhere.<\/strong><\/p>"
+          }
+        },
+        "6f5800a2-ad8b-4418-80d4-b0d34afc3e22": {
+          "type": "model_blocks",
+          "settings": {
+            "heading": "End Result",
+            "description": "<p>The purest, <strong>best-tasting water<\/strong> comes from the sky. Richard’s — Sip the Sky™.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -103,7 +117,9 @@
         "e7eb975b-d346-4fbf-94cf-da6fc87fc2e7",
         "378937ef-79a4-4d1b-a7be-29994910244e",
         "b281c460-36c7-4aae-a05d-7b81af897ab7",
-        "b8ef9699-9e69-4fad-93ed-e0a8a91de167"
+        "b8ef9699-9e69-4fad-93ed-e0a8a91de167",
+        "bb5d5776-b14f-4309-837e-c1bbe6da19a3",
+        "6f5800a2-ad8b-4418-80d4-b0d34afc3e22"
       ],
       "settings": {
         "heading": "The Rainwater Model",
