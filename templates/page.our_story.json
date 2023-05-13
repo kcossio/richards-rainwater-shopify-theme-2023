@@ -219,6 +219,22 @@
             "title": "Expanding with Lazy Magnolia",
             "content": "Rainwater can be collected almost anywhere, making it the most sustainable water source. Richard’s partners with Lazy Magnolia Brewing in Mississippi to expand rain-catching operations."
           }
+        },
+        "600711d2-f740-42e6-82d4-a6d63ebcdc77": {
+          "type": "timeline_slide",
+          "settings": {
+            "year": "",
+            "title": "",
+            "content": ""
+          }
+        },
+        "d3bb3bef-6b9d-4d83-8895-ce69842a63c5": {
+          "type": "timeline_slide",
+          "settings": {
+            "year": "2022",
+            "title": "Growing with Faubourg",
+            "content": "Our newest partner, located in New Orleans, one of the top 3 Rainiest cities in the US. The World’s largest potable rainwater collection site."
+          }
         }
       },
       "block_order": [
@@ -226,7 +242,9 @@
         "dd57e9a5-1532-4efd-bbc5-fb6b8ace02cf",
         "4e3ec816-d10d-4772-a646-b46122fc1609",
         "19253d1c-d2e8-4ed1-bf1c-577ee4eed61b",
-        "904fbffc-be82-44ab-865b-5062e4745d07"
+        "904fbffc-be82-44ab-865b-5062e4745d07",
+        "600711d2-f740-42e6-82d4-a6d63ebcdc77",
+        "d3bb3bef-6b9d-4d83-8895-ce69842a63c5"
       ],
       "settings": {
         "heading": "Born in the Texas Sky"
