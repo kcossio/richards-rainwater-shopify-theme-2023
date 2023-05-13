@@ -61,9 +61,29 @@
     },
     "the-rainwater-model": {
       "type": "the-rainwater-model",
+      "blocks": {
+        "d7fdd667-e48a-4322-84d2-a80b18aefac3": {
+          "type": "model_blocks",
+          "settings": {
+            "heading": "Rains",
+            "description": "<p>Our process begins with the <strong>rain<\/strong>. When clouds become saturated, droplets fall from the sky.<\/p>"
+          }
+        },
+        "e7eb975b-d346-4fbf-94cf-da6fc87fc2e7": {
+          "type": "model_blocks",
+          "settings": {
+            "heading": "First Flush",
+            "description": "<p>Rainfall is a <strong>naturally cleansing<\/strong> event. During the ﬁrst few minutes, the raindrops <strong>clean the atmosphere<\/strong> and wash away any dirt or debris from surface areas. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "d7fdd667-e48a-4322-84d2-a80b18aefac3",
+        "e7eb975b-d346-4fbf-94cf-da6fc87fc2e7"
+      ],
       "settings": {
         "heading": "The Rainwater Model",
-        "introduction": ""
+        "introduction": "What do you see when you look up at the clouds? At Richard’s Rainwater we see the greatest source of pure, delicious water looking right back down at us.  We’ve invented a simple,  powerful technology to collect and bottle rainwater."
       }
     },
     "pullquote": {
