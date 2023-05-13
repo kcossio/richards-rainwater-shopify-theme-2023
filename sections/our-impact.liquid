@@ -1,0 +1,129 @@
+{%- ########################################################################## 
+# Label: Heading
+# Returns: a string or an empty object(if nothing has been entered)
+# Filters: https://shopify.dev/api/liquid/objects#string 
+########################################################################## -%}
+{{ section.settings.heading }} 
+
+{%- ########################################################################## 
+# Label: Call to Action Button Link
+# Returns: a string(the entered URL) or nil / false(if nothing has been entered)
+########################################################################## -%}
+{{ section.settings.call_to_action_button_link }} 
+
+{%- ########################################################################## 
+# Label: Call to Action Button Label
+# Returns: a string or an empty object(if nothing has been entered)
+# Filters: https://shopify.dev/api/liquid/objects#string 
+########################################################################## -%}
+{{ section.settings.call_to_action_button_label }} 
+
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+
+    {%- when 'impact_item' -%}
+      {%- ########################################################################## 
+      # Label: Image
+      # Returns: an image object or nil(if no selection has been made)
+      # Image Properties: https://shopify.dev/api/liquid/objects#image
+      # Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
+      ########################################################################## -%}
+      {%- assign image = block.settings.image -%}
+      {{ image | image_url: width: image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+
+      {%- ########################################################################## 
+      # Label: Image custom code
+      # Returns: a string or an empty object(if nothing has been entered)
+      # Filters: https://shopify.dev/api/liquid/objects#string 
+      ########################################################################## -%}
+      {{ block.settings.image_custom_code }} 
+
+      {%- ########################################################################## 
+      # Label: Title
+      # Returns: a string or an empty object(if nothing has been entered)
+      # Filters: https://shopify.dev/api/liquid/objects#string 
+      ########################################################################## -%}
+      {{ block.settings.title }} 
+
+      {%- ########################################################################## 
+      # Label: Content
+      # Returns: a string or an empty object(if nothing has been entered)
+      # Filters: https://shopify.dev/api/liquid/objects#string 
+      ########################################################################## -%}
+      {{ block.settings.content }} 
+
+  {%- endcase -%}
+{%- endfor -%}
+
+{% schema %}
+  {
+  "name": "Our Impact",
+  "class": "our-impact",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Our impact",
+      "info": "Add a heading to this section"
+    },
+    {
+      "type": "url",
+      "id": "call_to_action_button_link",
+      "label": "Call to Action Button Link",
+      "info": "Choose a link to add a call to action button to this section"
+    },
+    {
+      "type": "text",
+      "id": "call_to_action_button_label",
+      "label": "Call to Action Button Label",
+      "default": "Learn more",
+      "info": "Add a label for the Call to Action button"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Impact Item",
+      "type": "impact_item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "If using, add a static image for this item"
+        },
+        {
+          "type": "liquid",
+          "id": "image_custom_code",
+          "label": "Image custom code",
+          "info": "If using a custom code instead of a static image (e.g. an SVG that should be animated), add the code for that here"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "info": "Enter a title for this Impact Item"
+        },
+        {
+          "type": "textarea",
+          "id": "content",
+          "label": "Content",
+          "info": "Add content/text for this impact item"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Our Impact"
+    }
+  ]
+}  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

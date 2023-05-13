@@ -4,8 +4,24 @@
             "type": "page-top-banner",
             "settings": {}
         },
+        "versus": {
+            "type": "richards-vs-competition",
+            "settings": {}
+        },
         "the-rainwater-model": {
             "type": "the-rainwater-model",
+            "settings": {}
+        },
+        "pullquote": {
+            "type": "pullquote",
+            "settings": {}
+        },
+        "impact": {
+            "type": "our-impact",
+            "settings": {}
+        },
+        "timeline": {
+            "type": "timeline-slider",
             "settings": {}
         },
         "main": {
@@ -18,7 +34,9 @@
     },
     "order": [
         "page-top-banner",
+        "versus",
         "the-rainwater-model",
+        "pullquote",
         "main"
     ]
 }
