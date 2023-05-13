@@ -390,6 +390,7 @@ fieldset.product-form__input .form__label {
 
 .product-form__input input[type=radio]:checked + label {
   background-color: #ffffff;
+  color: #00142A;
 }
 .product-form__input input[type=radio]:checked + label::before {
   background-image: url(icon-drop-light-blue.svg);
