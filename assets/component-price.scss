@@ -27,6 +27,7 @@
     font-weight:900;
     font-size:14px;
     letter-spacing:.8px;
+    /*fix*/
 
     @include breakpoint(tablet) {
         font-size:30px;
