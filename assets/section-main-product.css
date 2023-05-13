@@ -1493,6 +1493,7 @@ a.product__text {
   width: 100%;
   max-width: calc(100% - var(--media-border-width) * 2);
   border: 0px;
+  /*asd*/
 }
 
 .product-media-container.constrain-height {
