@@ -179,8 +179,21 @@
     },
     "timeline-slider": {
       "type": "timeline-slider",
+      "blocks": {
+        "cd30d0b7-51fc-4673-b4bd-90836e19f9ba": {
+          "type": "timeline_slide",
+          "settings": {
+            "year": "1994",
+            "title": "Richard catches his first drop",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "cd30d0b7-51fc-4673-b4bd-90836e19f9ba"
+      ],
       "settings": {
-        "heading": ""
+        "heading": "Born in the Texas Sky"
       }
     },
     "main": {
