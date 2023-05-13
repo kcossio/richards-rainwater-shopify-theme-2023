@@ -140,9 +140,40 @@
     },
     "our-impact": {
       "type": "our-impact",
+      "blocks": {
+        "e6794eba-2234-498b-9329-ff6a2a58e0af": {
+          "type": "impact_item",
+          "settings": {
+            "image_custom_code": "",
+            "title": "Saved",
+            "content": "Most importantly, our collection process saved over 400k gallons of water.  That’s enough water to hydrate 2000 people for an entire year!"
+          }
+        },
+        "5ad10781-badd-40c4-baf4-fefa253b681d": {
+          "type": "impact_item",
+          "settings": {
+            "image_custom_code": "",
+            "title": "Optimized",
+            "content": "We optimized our packaging and are on track to save almost 50k pounds of cardboard in 2023.  That’s equal to saving 586 trees!"
+          }
+        },
+        "aa067ea9-dfc4-4c81-8857-cb6800a3df48": {
+          "type": "impact_item",
+          "settings": {
+            "image_custom_code": "",
+            "title": "Diverted",
+            "content": "Diverted 7,725,224 plastic bottles from use, but we didn’t stop there!"
+          }
+        }
+      },
+      "block_order": [
+        "e6794eba-2234-498b-9329-ff6a2a58e0af",
+        "5ad10781-badd-40c4-baf4-fefa253b681d",
+        "aa067ea9-dfc4-4c81-8857-cb6800a3df48"
+      ],
       "settings": {
-        "heading": "Our impact",
-        "call_to_action_button_link": "",
+        "heading": "Learn more about our impact",
+        "call_to_action_button_link": "#",
         "call_to_action_button_label": "Learn more"
       }
     },
