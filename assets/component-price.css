@@ -194,7 +194,7 @@ EASING
   margin: 0 1rem 0 0;
   font-weight: 900;
   font-size: 14px;
-  letter-spacing: 0.8em;
+  letter-spacing: 0.8px;
 }
 @media (min-width: 768px) {
   .price .price-item {
