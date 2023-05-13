@@ -3,7 +3,7 @@
     "page-top-banner": {
       "type": "page-top-banner",
       "custom_css": [
-        ".filbert {display:block;}"
+
       ],
       "settings": {
         "text": "We’re changing how the world drinks water."
