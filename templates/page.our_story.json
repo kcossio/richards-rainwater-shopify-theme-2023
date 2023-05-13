@@ -82,12 +82,20 @@
             "heading": "Collect",
             "description": "<p>At this <strong>cleanest point<\/strong> in the rain cycle, we collect the <strong>pure<\/strong> raindrops into large storage vessels. <\/p>"
           }
+        },
+        "b281c460-36c7-4aae-a05d-7b81af897ab7": {
+          "type": "model_blocks",
+          "settings": {
+            "heading": "Filter",
+            "description": "<p>Then use a simple, yet eﬀective  combination of <strong>ozone<\/strong> and <strong>microﬁltration<\/strong> to ensure our rainwater surpasses the <strong>highest drinking water standards.<\/strong><\/p>"
+          }
         }
       },
       "block_order": [
         "d7fdd667-e48a-4322-84d2-a80b18aefac3",
         "e7eb975b-d346-4fbf-94cf-da6fc87fc2e7",
-        "378937ef-79a4-4d1b-a7be-29994910244e"
+        "378937ef-79a4-4d1b-a7be-29994910244e",
+        "b281c460-36c7-4aae-a05d-7b81af897ab7"
       ],
       "settings": {
         "heading": "The Rainwater Model",
