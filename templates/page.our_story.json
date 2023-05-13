@@ -75,11 +75,19 @@
             "heading": "First Flush",
             "description": "<p>Rainfall is a <strong>naturally cleansing<\/strong> event. During the ﬁrst few minutes, the raindrops <strong>clean the atmosphere<\/strong> and wash away any dirt or debris from surface areas. <\/p>"
           }
+        },
+        "378937ef-79a4-4d1b-a7be-29994910244e": {
+          "type": "model_blocks",
+          "settings": {
+            "heading": "Collect",
+            "description": "<p>At this <strong>cleanest point<\/strong> in the rain cycle, we collect the <strong>pure<\/strong> raindrops into large storage vessels. <\/p>"
+          }
         }
       },
       "block_order": [
         "d7fdd667-e48a-4322-84d2-a80b18aefac3",
-        "e7eb975b-d346-4fbf-94cf-da6fc87fc2e7"
+        "e7eb975b-d346-4fbf-94cf-da6fc87fc2e7",
+        "378937ef-79a4-4d1b-a7be-29994910244e"
       ],
       "settings": {
         "heading": "The Rainwater Model",
