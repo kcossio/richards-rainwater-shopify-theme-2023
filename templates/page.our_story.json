@@ -1,44 +1,82 @@
 {
-    "sections": {
-        "page-top-banner": {
-            "type": "page-top-banner",
-            "settings": {}
-        },
-        "versus": {
-            "type": "richards-vs-competition",
-            "settings": {}
-        },
-        "the-rainwater-model": {
-            "type": "the-rainwater-model",
-            "settings": {}
-        },
-        "pullquote": {
-            "type": "pullquote",
-            "settings": {}
-        },
-        "our-impact": {
-            "type": "our-impact",
-            "settings": {}
-        },
-        "timeline-slider": {
-            "type": "timeline-slider",
-            "settings": {}
-        },
-        "main": {
-            "type": "main-page",
-            "settings": {
-                "padding_top": 28,
-                "padding_bottom": 28
-            }
-        }
+  "sections": {
+    "page-top-banner": {
+      "type": "page-top-banner",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "text": "We’re changing how the world drinks water."
+      }
     },
-    "order": [
-        "page-top-banner",
-        "versus",
-        "the-rainwater-model",
-        "pullquote",
-        "our-impact",
-        "timeline-slider",
-        "main"
-    ]
+    "versus": {
+      "type": "richards-vs-competition",
+      "blocks": {
+        "2a802754-fcb0-477a-9da4-72522935c0ba": {
+          "type": "richards_product",
+          "settings": {
+            "title": "Richard’s® Still Rainwater",
+            "product_information": "<p>Lorem ipsum dolor sit amet, consec tetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.<\/p>"
+          }
+        },
+        "12c0558e-289d-4a74-8f54-9a6b43cb4abc": {
+          "type": "richards_product",
+          "settings": {
+            "title": "Richard’s® Sparkling Rainwater",
+            "product_information": "<p>Lorem ipsum dolor sit amet, consec tetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Ipsum lipsum.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "2a802754-fcb0-477a-9da4-72522935c0ba",
+        "12c0558e-289d-4a74-8f54-9a6b43cb4abc"
+      ],
+      "settings": {
+        "heading": "How Richard’s Compares"
+      }
+    },
+    "the-rainwater-model": {
+      "type": "the-rainwater-model",
+      "settings": {
+        "heading": "The Rainwater Model",
+        "introduction": ""
+      }
+    },
+    "pullquote": {
+      "type": "pullquote",
+      "settings": {
+        "quote_text": ""
+      }
+    },
+    "our-impact": {
+      "type": "our-impact",
+      "settings": {
+        "heading": "Our impact",
+        "call_to_action_button_link": "",
+        "call_to_action_button_label": "Learn more"
+      }
+    },
+    "timeline-slider": {
+      "type": "timeline-slider",
+      "settings": {
+        "heading": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "page-top-banner",
+    "versus",
+    "the-rainwater-model",
+    "pullquote",
+    "our-impact",
+    "timeline-slider",
+    "main"
+  ]
 }
