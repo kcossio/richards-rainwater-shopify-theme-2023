@@ -508,6 +508,7 @@ a.product__text {
 }
 .product__title h1 {
   text-align: left;
+  color: #000F44;
 }
 
 .product__title > * {
