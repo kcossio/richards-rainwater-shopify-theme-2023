@@ -23,7 +23,9 @@
       # Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
       ########################################################################## -%}
       {%- assign product_image = block.settings.product_image -%}
-      {{ product_image | image_url: width: product_image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+      {%- if product_image != blank %}
+        {{ product_image | image_url: width: product_image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+      {%- endif -%}
 
       {%- ########################################################################## 
       # Label: Product Information
@@ -47,7 +49,9 @@
       # Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
       ########################################################################## -%}
       {%- assign product_image = block.settings.product_image -%}
-      {{ product_image | image_url: width: product_image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+      {%- if product_image != blank %}
+        {{ product_image | image_url: width: product_image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+      {%- endif -%}
 
       {%- ########################################################################## 
       # Label: Product Information
