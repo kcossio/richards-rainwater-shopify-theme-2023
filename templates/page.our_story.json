@@ -1,0 +1,24 @@
+{
+    "sections": {
+        "banner": {
+            "type": "page-top-banner",
+            "settings": {}
+        },
+        "the-rainwater-model": {
+            "type": "the-rainwater-model",
+            "settings": {}
+        },
+        "main": {
+            "type": "main-page",
+            "settings": {
+                "padding_top": 28,
+                "padding_bottom": 28
+            }
+        }
+    },
+    "order": [
+        "page-top-banner",
+        "the-rainwater-model",
+        "main"
+    ]
+}
