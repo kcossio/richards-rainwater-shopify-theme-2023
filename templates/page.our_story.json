@@ -89,13 +89,21 @@
             "heading": "Filter",
             "description": "<p>Then use a simple, yet eﬀective  combination of <strong>ozone<\/strong> and <strong>microﬁltration<\/strong> to ensure our rainwater surpasses the <strong>highest drinking water standards.<\/strong><\/p>"
           }
+        },
+        "b8ef9699-9e69-4fad-93ed-e0a8a91de167": {
+          "type": "model_blocks",
+          "settings": {
+            "heading": "Bottle",
+            "description": "<p>We pour the <strong>pure, refreshing<\/strong> rainwater into glass bottles and aluminum cans, packaging as <strong>inﬁnitely renewable<\/strong> as the water itself.<\/p>"
+          }
         }
       },
       "block_order": [
         "d7fdd667-e48a-4322-84d2-a80b18aefac3",
         "e7eb975b-d346-4fbf-94cf-da6fc87fc2e7",
         "378937ef-79a4-4d1b-a7be-29994910244e",
-        "b281c460-36c7-4aae-a05d-7b81af897ab7"
+        "b281c460-36c7-4aae-a05d-7b81af897ab7",
+        "b8ef9699-9e69-4fad-93ed-e0a8a91de167"
       ],
       "settings": {
         "heading": "The Rainwater Model",
