@@ -185,12 +185,21 @@
           "settings": {
             "year": "1994",
             "title": "Richard catches his first drop",
-            "content": ""
+            "content": "Tired of well water that produced dirty dishes, dry hair, and cardboard-stiff jeans, Richard installed a rain collection system. He creates Tank Town to provide rainwater to his neighbors."
+          }
+        },
+        "dd57e9a5-1532-4efd-bbc5-fb6b8ace02cf": {
+          "type": "timeline_slide",
+          "settings": {
+            "year": "1998",
+            "title": "Richard builds Tank Town",
+            "content": "Right outside of Austin, Texas, Tank Town is the birthplace of Richard’s Rainwater."
           }
         }
       },
       "block_order": [
-        "cd30d0b7-51fc-4673-b4bd-90836e19f9ba"
+        "cd30d0b7-51fc-4673-b4bd-90836e19f9ba",
+        "dd57e9a5-1532-4efd-bbc5-fb6b8ace02cf"
       ],
       "settings": {
         "heading": "Born in the Texas Sky"
