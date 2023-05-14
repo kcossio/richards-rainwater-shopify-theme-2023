@@ -61,7 +61,7 @@
 
   window.addEventListener("load", (event) => {
 
-    let sections = gsap.utils.toArray(".horiz-scroll .section"),
+    let sections = gsap.utils.toArray(".section"),
       nav = gsap.utils.toArray("nav.hor div"),
       getMaxWidth = () => sections.reduce((val, section) => val + section.offsetWidth, 0),
       maxWidth = getMaxWidth(),
