@@ -16,9 +16,19 @@
 {%- endstyle -%}
 
 <div class="newsletter footer-newsletter wide">
- 
-
+    <div class="nl-cloud">
     <img class="cloud cloud-rainbow cloud-footer fade-in-left" src="{{ 'cloud-rainbow.svg' | asset_url }}" width="808" height="328" role="presentation" alt="colorful cloud" />
+    
+    <div class="stars" id="stars-nl-footer">
+      <img class="star" src="{{ 'icon-drop-light-blue.svg' | asset_url }}>" width="50" height="69" role="presentation" alt="star" />
+      <img class="star" src="{{ 'icon-drop-med-blue.svg' | asset_url }}>" width="50" height="69" role="presentation" alt="star" />
+    </div>
+    
+    <script type="text/javascript">      
+      twinkle('#stars-nl-footer', 4);    
+    </script>
+    
+  </div><!--End nl-cloud-->
 
     <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate section-{{ section.id }}-padding">
       {%- for block in section.blocks -%}

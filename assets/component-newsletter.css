@@ -174,9 +174,18 @@ EASING
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  position: relative;
 }
-.footer-newsletter img {
-  width: 41%;
+.footer-newsletter .nl-cloud {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .footer-newsletter .nl-cloud {
+    width: 41%;
+  }
+}
+.footer-newsletter .nl-cloud .stars {
+  top: 100%;
 }
 .footer-newsletter .newsletter__wrapper {
   width: 50%;
