@@ -3006,6 +3006,8 @@ details[open] > .header__submenu {
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 1.5px;
+  text-decoration: none;
+  border: 0px;
   background-image: linear-gradient(to right, #0094DA, #0094DA 50%, #00142A 50%);
   background-size: 200% 100%;
   background-position: -100%;
@@ -3017,6 +3019,7 @@ details[open] > .header__submenu {
 .header__menu-item:hover {
   background-position: 0;
   text-decoration: none;
+  border: 0px;
 }
 
 .header__menu-item span {
@@ -3026,12 +3029,11 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item:hover span {
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
+  text-decoration: none;
 }
 
 details[open] > .header__menu-item {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 details[open]:hover > .header__menu-item {
