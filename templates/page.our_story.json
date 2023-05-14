@@ -201,6 +201,7 @@
         "4e3ec816-d10d-4772-a646-b46122fc1609": {
           "type": "timeline_slide",
           "settings": {
+            "hero_image": "shopify:\/\/shop_images\/timeline-hero-3.jpg",
             "year": "2002",
             "title": "Pioneering Bottled",
             "content": "In 2002, Richard’s Rainwater becomes the first company in the nation to receive licensing to bottle and distribute rainwater."
