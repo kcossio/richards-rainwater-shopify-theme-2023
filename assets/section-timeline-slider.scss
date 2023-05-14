@@ -10,6 +10,9 @@
 }
 
 .horiz-wrap {
+  position: relative;
+}
+.hor-wrapper {
     display:flex !important;
     flex-wrap:nowrap !important;
     position:relative;

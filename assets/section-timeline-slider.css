@@ -177,11 +177,15 @@ EASING
 }
 
 .horiz-wrap {
+  position: relative;
+}
+
+.hor-wrapper {
   display: flex !important;
   flex-wrap: nowrap !important;
   position: relative;
 }
-.horiz-wrap .section {
+.hor-wrapper .section {
   display: flex !important;
   flex-shrink: 0 !important;
   justify-content: center !important;
@@ -189,28 +193,28 @@ EASING
   height: 100vh;
   max-width: none !important;
 }
-.horiz-wrap .section--large {
+.hor-wrapper .section--large {
   width: 100vw;
   background-color: #e4002b;
   color: white;
 }
-.horiz-wrap .section--small {
+.hor-wrapper .section--small {
   width: 46rem;
 }
-.horiz-wrap .section--dark {
+.hor-wrapper .section--dark {
   color: white;
   background-color: black;
 }
-.horiz-wrap .section.one {
+.hor-wrapper .section.one {
   background: #0094DA;
 }
-.horiz-wrap .section.two {
+.hor-wrapper .section.two {
   background: #FFA500;
 }
-.horiz-wrap .section.three {
+.hor-wrapper .section.three {
   background: #000F44;
 }
-.horiz-wrap .section.four {
+.hor-wrapper .section.four {
   background: #DE0000;
 }
 
