@@ -23,19 +23,28 @@
 
         display:flex !important;
         flex-shrink:0 !important;
-        justify-content:flex-end !important;
-        align-items:center !important;
+        justify-content:flex-end;
+        align-items:flex-end;
         height:100vh;
         max-width:none !important;
-        padding-right:50px;
         width:100vw;
+
+        @include breakpoint(tablet) {
+          align-items:center;
+        }
 
         .timeline-block-content {
           background:$dark-blue;
           color:$white;
-          width:400px;
-          max-width:100%;
+          width:236px;
+          max-width:70%;
           padding:40px;
+          position:relative;
+          z-index:5;
+
+          @include breakpoint(tablet) {
+            width:560px;
+          }
 
           h3 {
             color:$white;
@@ -46,6 +55,10 @@
         &.one {
           background:$light_blue;
         }
+      }
+
+      .bg-img {
+        width:95%;
       }
 
 

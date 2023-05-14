@@ -190,25 +190,39 @@ EASING
 .timeline-wrap .section {
   display: flex !important;
   flex-shrink: 0 !important;
-  justify-content: flex-end !important;
-  align-items: center !important;
+  justify-content: flex-end;
+  align-items: flex-end;
   height: 100vh;
   max-width: none !important;
-  padding-right: 50px;
   width: 100vw;
+}
+@media (min-width: 768px) {
+  .timeline-wrap .section {
+    align-items: center;
+  }
 }
 .timeline-wrap .section .timeline-block-content {
   background: #000F44;
   color: #ffffff;
-  width: 400px;
-  max-width: 100%;
+  width: 236px;
+  max-width: 70%;
   padding: 40px;
+  position: relative;
+  z-index: 5;
+}
+@media (min-width: 768px) {
+  .timeline-wrap .section .timeline-block-content {
+    width: 560px;
+  }
 }
 .timeline-wrap .section .timeline-block-content h3 {
   color: #ffffff;
 }
 .timeline-wrap .section.one {
   background: #0094DA;
+}
+.timeline-wrap .bg-img {
+  width: 95%;
 }
 
 nav.hor {
