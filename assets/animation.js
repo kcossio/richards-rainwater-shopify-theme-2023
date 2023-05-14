@@ -441,13 +441,13 @@ var slickSliders = function(){
         window.dispatchEvent(new Event('resize'));
     });
 
-    // Twinkle Stars function
+     // Twinkle Stars function
 
-    window.twinkle =function(container, amount) {
+     window.twinkle =function(container, amount) {
         var vw = window.innerWidth;
         var vh = window.innerHeight;
 
-        var textures = document.querySelectorAll(container + " .drop");
+        var textures = document.querySelectorAll(container + " .star");
         var main = document.querySelector(container);
         var frag = document.createDocumentFragment();
 
@@ -541,7 +541,6 @@ var slickSliders = function(){
             return min + (max - min) * Math.random();
         }
     }
-
 
 
 

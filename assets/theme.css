@@ -921,8 +921,8 @@ EASING
   animation: hover-scale 4s ease-in-out infinite;
 }
 
-/* -------- Drops Randomizer ------- */
-.drops {
+/* -------- Star Randomizer ------- */
+.stars {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -933,15 +933,14 @@ EASING
   overflow: visible;
 }
 
-.drop {
+.star {
   position: absolute;
   visibility: hidden;
   opacity: 0;
   width: 30px;
-  aspect-ratio: 68/95;
 }
 @media (min-width: 768px) {
-  .drop {
+  .star {
     width: 50px;
   }
 }

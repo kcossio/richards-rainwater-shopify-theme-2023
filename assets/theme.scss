@@ -327,9 +327,9 @@
     animation: hover-scale 4s ease-in-out infinite;
   }
 
-  /* -------- Drops Randomizer ------- */
+/* -------- Star Randomizer ------- */
 
-.drops {
+.stars {
   position:absolute;
   top:0px;
   left:0px;
@@ -339,12 +339,11 @@
   pointer-events: none;
   overflow:visible;
 }
-.drop {
+.star {
   position: absolute;
   visibility: hidden;
   opacity: 0;
   width:30px;
-  aspect-ratio: 68 / 95;
 
   @include breakpoint(tablet) {
     width:50px;
