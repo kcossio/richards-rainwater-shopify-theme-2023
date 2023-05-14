@@ -2408,6 +2408,10 @@ a {
         );
       }
 
+      .header__icon.link {
+        color:$white;
+      }
+
     }
   
     // When Scrolling, do things
@@ -2429,6 +2433,9 @@ a {
           $light_blue 50%,
           $darkest_blue 50%
         );
+      }
+      .header__icon.link {
+        color:$dark_blue;
       }
 
     }
