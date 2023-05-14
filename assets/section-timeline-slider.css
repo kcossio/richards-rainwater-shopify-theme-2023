@@ -200,6 +200,7 @@ EASING
 @media (min-width: 768px) {
   .timeline-wrap .section {
     align-items: center;
+    /* switch each */
   }
   .timeline-wrap .section:nth-child(even) {
     justify-content: flex-start;

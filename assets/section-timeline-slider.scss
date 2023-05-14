@@ -33,6 +33,7 @@
         @include breakpoint(tablet) {
           align-items:center;
 
+          /* switch each */
           &:nth-child(even) {
             justify-content:flex-start;
           }
