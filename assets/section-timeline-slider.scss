@@ -73,8 +73,13 @@ nav.hor {
     font-weight: 900;
     z-index: 10;
     user-select: none;
+    transform:all .3s ease 0s;
 
     @include breakpoint(tablet) {
       font-size:30px;
+    }
+
+    &.active {
+      color:$darkest_blue;
     }
   }

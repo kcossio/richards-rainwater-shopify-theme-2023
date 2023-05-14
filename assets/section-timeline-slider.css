@@ -234,9 +234,13 @@ nav.hor div {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  transform: all 0.3s ease 0s;
 }
 @media (min-width: 768px) {
   nav.hor div {
     font-size: 30px;
   }
+}
+nav.hor div.active {
+  color: #00142A;
 }
