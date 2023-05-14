@@ -460,7 +460,7 @@ var slickSliders = function(){
         var delayMax = 6;
         
         var durationMin = 0.5;
-        var durationMax = 2;
+        var durationMax = 1.5;
 
         var numAnimations = 50;
         var numStars = amount;
@@ -504,7 +504,7 @@ var slickSliders = function(){
             var ease2 = eases[random(numAnimations)|0];
             
             var alpha = random(0.7, 1);
-            var scale = random(0.15, 1);
+            var scale = random(0.5, 1);
 
             var yPercentStart = random(-50, 0);
             var yPercentEnd = random(100, 200);
