@@ -3,20 +3,16 @@
 <div class="inner">
   <div class="testimonial">
     <blockquote>
+      {{ section.settings.quote_text }} 
     </blockquote>
   </div><!--End testimonial-->
 </div>
-{%- ########################################################################## 
-# Label: Quote Text
-# Returns: a string or an empty object(if nothing has been entered)
-# Filters: https://shopify.dev/api/liquid/objects#string 
-########################################################################## -%}
-{{ section.settings.quote_text }} 
+
 
 {% schema %}
   {
   "name": "Pullquote",
-  "class": "pull quote quote-lg",
+  "class": "pullquote quote-lg",
   "tag": "section",
   "settings": [
     {

@@ -214,6 +214,6 @@ section.pullquote .testimonial blockquote::after {
   position: absolute;
   bottom: 0px;
   right: 0px;
-  rotate: 180deg;
-  transform: translate(100%, 0);
+  transform-origin: center center;
+  transform: translate(100%, 0%) rotate(180deg);
 }
