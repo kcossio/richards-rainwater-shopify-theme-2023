@@ -200,6 +200,7 @@ img {
 
 section {
   max-width: 100%;
+  position: relative;
 }
 
 .bg-img {
