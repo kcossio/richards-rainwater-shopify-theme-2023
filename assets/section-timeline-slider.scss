@@ -1,8 +1,3 @@
-@import "variables";
-@import "mixins";
-@import "fonts";
-
-
 .section-timeline {
     display:block;
     width:100%;
@@ -10,20 +5,31 @@
 }
 
 .horiz-wrap {
-    position:relative;
-    display:flex;
-    flex-wrap:nowrap;
+    display:flex !important;
+    flex-wrap:nowrap !important;
 
     .section {
 
-        display:flex;
-        flex-shrink:0;
-        justify-content:center;
-        align-items:center;
-        width:100vw;
+        display:flex !important;
+        flex-shrink:0 !important;
+        justify-content:center !important;
+        align-items:center !important;
         height:100vh;
-        color:$white;
 
+        &--large {
+          width: 100vw;
+          background-color: #e4002b;
+          color: white;
+        }
+      
+        &--small {
+          width: 46rem;
+        }
+      
+        &--dark {
+          color: white;
+          background-color: black;
+        }
         &.one {
           background:$light_blue;
 
