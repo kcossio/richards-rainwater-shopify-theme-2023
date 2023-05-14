@@ -490,8 +490,8 @@ var slickSliders = function(){
             frag.appendChild(star);
             
             gsap.set(star, {
-            xPercent: -50,
-            yPercent: -50,
+            //xPercent: -50,
+            //yPercent: -50,
             scale: 0,
             x: random(vw),
             y: random(vh),
