@@ -32,7 +32,6 @@
 {%- endfor -%}
 
 <div class="horiz-wrap">
-  <div id="hor-main-content">
   <div class="wrapper hor-wrapper d-flex horiz-scroll flex-nowrap">
     <section id="one" class="section h-sec section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center one">
       Part One
@@ -47,7 +46,6 @@
       Part Four
     </section>
   </div>
-</div><!--End main-content-->
   <nav class="hor">
     <div class="hash" data-link="#one">one</div>
     <div class="hash" data-link="#two">two</div>
@@ -63,7 +61,7 @@
   window.addEventListener("load", (event) => {
 
     let container = document.querySelector(".hor-wrapper")
-    let scrollContainer = document.querySelector("#hor-main-content");
+    let scrollContainer = document.querySelector(".horiz-wrap");
     let sections = gsap.utils.toArray(".h-sec");
     let maxWidth = 0;
 

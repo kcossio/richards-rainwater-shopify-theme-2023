@@ -220,7 +220,7 @@ EASING
 
 nav.hor {
   position: fixed;
-  top: 0;
+  bottom: 0px;
   left: 50%;
   display: flex;
   transform: translateX(-50%);
