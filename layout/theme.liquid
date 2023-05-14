@@ -265,7 +265,7 @@
     {% sections 'header-group' %}
     {% ## Header Group %}
 
-    <main id="MainContent" class="content-for-layout focus-none blerf {%- if request.page_type == 'index' -%} main-home{% endif %}" role="main" tabindex="-1">
+    <main id="MainContent" class="content-for-layout focus-none   {%- if request.page_type == 'index' -%} main-home {% endif %}" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
 
