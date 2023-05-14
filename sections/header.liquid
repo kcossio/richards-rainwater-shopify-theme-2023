@@ -825,7 +825,7 @@ jQuery(window).scroll(function() // Do stuff on scroll
     }).progress(1);
 
     ScrollTrigger.create({
-    start: "top 1px",
+    start: "top 1%",
     end: 99999,
     onUpdate: (self) => {
     self.direction === -1 ? showAnim.play() : showAnim.reverse()
