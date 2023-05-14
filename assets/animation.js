@@ -37,20 +37,20 @@
 
         });
 
-        /*const showAnim = gsap.from('.site-header', { 
+        const showAnim = gsap.from('.site-header', { 
         yPercent: -100,
         paused: true,
         duration: 0.25
         }).progress(1);
 
         ScrollTrigger.create({
-        start: "top top",
+        start: "top -80px",
         end: 99999,
         onUpdate: (self) => {
         self.direction === -1 ? showAnim.play() : showAnim.reverse()
         }
         });
-        */
+        
     });
 
 
