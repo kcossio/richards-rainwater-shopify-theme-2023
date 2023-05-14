@@ -460,7 +460,7 @@ var slickSliders = function(){
         var delayMax = 6;
         
         var durationMin = 0.5;
-        var durationMax = 1.5;
+        var durationMax = 2;
 
         var numAnimations = 50;
         var numStars = amount;
@@ -515,8 +515,8 @@ var slickSliders = function(){
             var duration2 = random(durationMin, durationMax);   
             
             tl.set(star, {yPercent: -50})
-            .to(star, 1, { autoAlpha: alpha, scale: scale, yPercent: 25, ease: 'none' })
-            .to(star, 1, { autoAlpha: 0, scale: 0, yPercent: 100, ease: 'none' }).
+            .to(star, duration1, { autoAlpha: alpha, scale: scale, yPercent: 25, ease: 'none' })
+            .to(star, duration1, { autoAlpha: 0, scale: 0, yPercent: 100, ease: 'none' }).
             set(star, {yPercent: -50})
             }
             
