@@ -2483,6 +2483,9 @@ a svg {
 
 .section-header.shopify-section-group-header-group {
   z-index: 3;
+  position: fixed;
+  top: 0px;
+  left: 0px;
 }
 
 .shopify-section-header-sticky {
