@@ -34,7 +34,8 @@
       <li class="model-block model-block-{{ count }}">
       {%- assign image = block.settings.image -%}
       {%- if image != blank -%}
-      {{ image | image_url: width: image.width | image_tag: class: 'block-hero block-hero-' | append: count, loading: 'lazy' }}
+        {%- assign img_class = 'block-hero block-hero-' | append: count -%}
+      {{ image | image_url: width: image.width | image_tag: class: img_class, loading: 'lazy' }}
       {%- endif -%}
 
       <div class="model-block-content">
