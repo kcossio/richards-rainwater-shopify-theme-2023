@@ -25,13 +25,14 @@
         flex-shrink:0 !important;
         justify-content:flex-end;
         align-items:flex-end;
-        height:100vh;
+        height:78vh;
         max-width:none !important;
         width:100vw;
         background:#f4f4f4;
 
         @include breakpoint(tablet) {
           align-items:center;
+          height:100vh;
 
           /* switch each */
           &:nth-child(even) {
