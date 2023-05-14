@@ -2361,6 +2361,7 @@ a {
 
   .header {
     padding:20px 28px;
+    position:fixed;
     @include breakpoint(tablet) {
       padding:22px 36px;
 
