@@ -15,6 +15,11 @@ ul.model-blocks{
         width:100%;
         flex-wrap:wrap;
         justify-content:space-between;
+        margin:0px 0px 32px 0px;
+
+        @include breakpoint(tablet) {
+            margin-bottom:120px;
+        }
 
         img {
             width:100%;
@@ -27,6 +32,11 @@ ul.model-blocks{
 
         .model-block-content {
             width:100%;
+            display:flex;
+            flex-wrap:wrap;
+            align-items:center;
+            justify-content:center;
+            padding:20px 5vw;
 
             @include breakpoint(tablet) {
                 width:50%;
@@ -51,23 +61,29 @@ ul.model-blocks{
                     padding-bottom:14px;
                     line-height:1em;
                     background:url('icon-drop-med-blue.svg');
-                    background-size:cover;
+                    background-size:100% 100%;
                     width:62px;
                     font-size:39px;
+
+                    @include breakpoint(tablet) {
+                        width:62px;
+                    }
                 }
             }
             p {
-                font-size:30px;
+                font-size:28px;
             }
         }
 
         &:nth-child(even) {
+            
             @include breakpoint(tablet) {
                 img {
                     order:2;
                 }
                 .model-block-content {
                     order:1;
+                    padding:20px 5vw;
                 }
             }
         }
