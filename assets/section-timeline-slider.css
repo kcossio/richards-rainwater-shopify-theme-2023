@@ -175,7 +175,7 @@ EASING
   width: 100%;
   min-height: 80vh;
   padding: 40px 0px;
-  backround: #f4f4f4;
+  background: #f4f4f4;
 }
 
 .timeline-scroller {
@@ -195,6 +195,7 @@ EASING
   height: 100vh;
   max-width: none !important;
   width: 100vw;
+  background: #f4f4f4;
 }
 @media (min-width: 768px) {
   .timeline-wrap .section {
@@ -217,9 +218,6 @@ EASING
 }
 .timeline-wrap .section .timeline-block-content h3 {
   color: #ffffff;
-}
-.timeline-wrap .section.one {
-  background: #0094DA;
 }
 .timeline-wrap .bg-img {
   width: 95%;
