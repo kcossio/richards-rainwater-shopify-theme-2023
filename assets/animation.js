@@ -447,7 +447,7 @@ var slickSliders = function(){
         var vw = window.innerWidth;
         var vh = window.innerHeight;
 
-        var textures = document.querySelectorAll(container + " .star");
+        var textures = document.querySelectorAll(container + " .drop");
         var main = document.querySelector(container);
         var frag = document.createDocumentFragment();
 
