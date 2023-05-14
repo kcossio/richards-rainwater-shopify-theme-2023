@@ -444,14 +444,12 @@ var slickSliders = function(){
      // Twinkle Stars function
 
      window.twinkle =function(container, amount) {
-        
+        var vw = window.innerWidth;
+        var vh = window.innerHeight;
 
         var textures = document.querySelectorAll(container + " .star");
         var main = document.querySelector(container);
         var frag = document.createDocumentFragment();
-
-        var vw = main.innerWidth;
-        var vh = main.innerHeight;
 
         var appearMin = 0.3;
         var appearMax = 0.8;
