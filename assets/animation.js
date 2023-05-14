@@ -17,7 +17,7 @@
 
     });
 
-    const showAnim = gsap.from('.shopify-section-group-header-group', { 
+    /*const showAnim = gsap.from('.shopify-section-group-header-group', { 
     yPercent: -100,
     paused: true,
     duration: 0.25
@@ -30,6 +30,7 @@
     self.direction === -1 ? showAnim.play() : showAnim.reverse()
     }
     });
+    */
 
     // --------------------------------- GSAP/ScrollTrigger - scrolling and tweens ----------------------------- //
 
