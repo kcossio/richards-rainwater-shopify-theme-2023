@@ -204,6 +204,20 @@ ul.model-blocks li .model-block-content h3 {
   font-size: 45px;
   font-weight: 900;
   margin: 0px 0px 0.8em 0px;
+  position: relative;
+}
+ul.model-blocks li .model-block-content h3 span {
+  display: flex;
+  position: absolute;
+  aspect-ratio: 62/86;
+  color: #ffffff;
+  font-weight: 900;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 14px;
+  line-height: 1em;
+  background: url("icon-drop-med-blue.svg");
+  background-size: cover;
 }
 ul.model-blocks li .model-block-content p {
   font-size: 30px;

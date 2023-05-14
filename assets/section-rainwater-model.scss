@@ -36,6 +36,24 @@ ul.model-blocks{
                 font-size:45px;
                 font-weight:900;
                 margin:0px 0px .8em 0px;
+                position:relative;
+
+                span {
+                    display:flex;
+                    position:absolute;
+                    top:0px;
+                    left:-62px;
+                    aspect-ratio: 62 / 86;
+                    color:$white;
+                    font-weight:900;
+                    align-items:flex-end;
+                    justify-content:center;
+                    padding-bottom:14px;
+                    line-height:1em;
+                    background:url('icon-drop-med-blue.svg');
+                    background-size:cover;
+                    width:62px;l
+                }
             }
             p {
                 font-size:30px;
