@@ -201,6 +201,9 @@ EASING
   .timeline-wrap .section {
     align-items: center;
   }
+  .timeline-wrap .section:nth-child(odd) {
+    justify-content: flex-start;
+  }
 }
 .timeline-wrap .section .timeline-block-content {
   background: #000F44;
