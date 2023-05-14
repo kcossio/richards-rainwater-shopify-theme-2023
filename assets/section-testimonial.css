@@ -213,7 +213,7 @@ section.pullquote .testimonial blockquote::before {
   display: inline-flex;
   top: 0px;
   left: 0px;
-  transform: translate(0%, -5%);
+  transform: translate(0%, -20%);
 }
 section.pullquote .testimonial blockquote::after {
   content: "“";
@@ -226,5 +226,5 @@ section.pullquote .testimonial blockquote::after {
   bottom: 0px;
   right: 0px;
   transform-origin: center center;
-  transform: translate(0%, 5%) rotate(180deg);
+  transform: translate(0%, 20%) rotate(180deg);
 }
