@@ -443,6 +443,7 @@ var slickSliders = function(){
 
     // Twinkle Stars function
 
+    window.addEventListener("load", (event) => {
     window.twinkle =function(container, amount) {
         var vw = window.innerWidth;
         var vh = window.innerHeight;
@@ -541,6 +542,7 @@ var slickSliders = function(){
             return min + (max - min) * Math.random();
         }
     }
+});
 
 
 
