@@ -1,3 +1,8 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+
 .section-timeline {
     display:block;
     width:100%;
@@ -15,6 +20,7 @@
         justify-content:center !important;
         align-items:center !important;
         height:100vh;
+        max-width:none !important;
 
         &--large {
           width: 100vw;
