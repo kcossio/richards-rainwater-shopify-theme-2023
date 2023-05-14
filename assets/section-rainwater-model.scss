@@ -18,10 +18,10 @@ ul.model-blocks{
 
         img {
             width:100%;
+            height:auto;
 
             @include breakpoint(tablet) {
                 width:50%;
-                order:1;
             }
         }
 
@@ -30,7 +30,15 @@ ul.model-blocks{
 
             @include breakpoint(tablet) {
                 width:50%;
-                order:2;
+            }
+
+            h3 {
+                font-size:45px;
+                font-weight:900;
+                margin:0px 0px .8em 0px;
+            }
+            p {
+                font-size:30px;
             }
         }
 
