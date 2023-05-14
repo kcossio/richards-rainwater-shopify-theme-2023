@@ -32,8 +32,8 @@
 
         @include breakpoint(tablet) {
           align-items:center;
-          
-          &:nth-child(odd) {
+
+          &:nth-child(even) {
             justify-content:flex-start;
           }
         }

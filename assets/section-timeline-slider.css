@@ -201,7 +201,7 @@ EASING
   .timeline-wrap .section {
     align-items: center;
   }
-  .timeline-wrap .section:nth-child(odd) {
+  .timeline-wrap .section:nth-child(even) {
     justify-content: flex-start;
   }
 }
