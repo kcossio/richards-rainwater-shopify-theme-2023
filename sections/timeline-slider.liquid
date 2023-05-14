@@ -1,11 +1,12 @@
 {{ 'section-timeline-slider.css' | asset_url | stylesheet_tag }}
 
-<h2 class="timeline-heading">{{ section.settings.heading }}</h2>
+
 
 
 
 <div class="timeline-scroller">
   
+  <h2 class="timeline-heading">{{ section.settings.heading }}</h2>
         
   <div class="wrapper timeline-wrap d-flex horiz-scroll flex-nowrap">
     {% assign count = 0 %}
