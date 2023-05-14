@@ -444,12 +444,14 @@ var slickSliders = function(){
      // Twinkle Stars function
 
      window.twinkle =function(container, amount) {
-        var vw = window.innerWidth;
-        var vh = window.innerHeight;
+        
 
         var textures = document.querySelectorAll(container + " .star");
         var main = document.querySelector(container);
         var frag = document.createDocumentFragment();
+
+        var vw = main.innerWidth;
+        var vh = main.innerHeight;
 
         var appearMin = 0.3;
         var appearMax = 0.8;
@@ -466,21 +468,7 @@ var slickSliders = function(){
         var stars = [];
         var eases = [];
 
-        /*
-        for (var i = 0; i < numAnimations; i++) {
-            
-            var ease = new RoughEase({ 
-            template:  Linear.easeNone, 
-            strength: random(1, 3), 
-            points: random(50, 200)|0, 
-            taper: "both", 
-            randomize: true, 
-            clamp: true
-            });
-            
-            eases.push(ease);
-        }
-        */
+        
 
         // Wait for images to load
         window.addEventListener("load", onLoad);
