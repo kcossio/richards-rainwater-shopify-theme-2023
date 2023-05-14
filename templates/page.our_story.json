@@ -65,7 +65,7 @@
         "d7fdd667-e48a-4322-84d2-a80b18aefac3": {
           "type": "model_blocks",
           "settings": {
-            "image": "shopify:\/\/shop_images\/white-T-Shirt-Mock-Up-Front-V3.png",
+            "image": "shopify:\/\/shop_images\/rw-model-image-1.png",
             "heading": "Rains",
             "description": "<p>Our process begins with the <strong>rain<\/strong>. When clouds become saturated, droplets fall from the sky.<\/p>"
           }
@@ -73,6 +73,7 @@
         "e7eb975b-d346-4fbf-94cf-da6fc87fc2e7": {
           "type": "model_blocks",
           "settings": {
+            "image": "shopify:\/\/shop_images\/rw-model-image-2.png",
             "heading": "First Flush",
             "description": "<p>Rainfall is a <strong>naturally cleansing<\/strong> event. During the ﬁrst few minutes, the raindrops <strong>clean the atmosphere<\/strong> and wash away any dirt or debris from surface areas. <\/p>"
           }
