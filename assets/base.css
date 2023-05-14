@@ -2480,6 +2480,9 @@ a svg {
   width: 100vw;
   z-index: 7;
 }
+.section-header .header:not(.home-header) {
+  background-color: #ffffff;
+}
 @media (min-width: 768px) {
   .section-header .header {
     top: 40px;

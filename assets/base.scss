@@ -2374,6 +2374,10 @@ a {
     top: 30px;
     width: 100vw;
     z-index: 7;
+
+    &:not(.home-header) {
+      background-color:$white;
+    }
     @include breakpoint(tablet) {
       top:40px;
       padding:22px 36px;
