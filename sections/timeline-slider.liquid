@@ -49,10 +49,10 @@
   </div>
 
   <nav class="hor">
-    <div>one</div>
-    <div>two</div>
-    <div>three</div>
-    <div>four</div>
+    <div class="hash">one</div>
+    <div class="hash">two</div>
+    <div class="hash">three</div>
+    <div class="hash">four</div>
   </nav>
 </div><!--End horiz-wrap-->
 
@@ -62,7 +62,7 @@
   window.addEventListener("load", (event) => {
 
     let sections = gsap.utils.toArray(".section"),
-      nav = gsap.utils.toArray("nav.hor div"),
+      nav = gsap.utils.toArray("div.hash"),
       getMaxWidth = () => sections.reduce((val, section) => val + section.offsetWidth, 0),
       maxWidth = getMaxWidth(),
       scrollSpeed = 4,
