@@ -32,7 +32,7 @@
         <h3>{{ block.settings.title }} </h3>
         {{ block.settings.content }} 
         </div><!-- End timeline-block-content-->
-        
+
         <div class="bg-img bg-hero">
           {%- assign hero_image = block.settings.hero_image -%}
           {%- if hero_image != blank -%}
@@ -94,7 +94,7 @@ let getPosition = getScrollLookup(".timeline-block", {start: "center center", co
 gsap.utils.toArray("nav.hor div").forEach(el => {
   el.addEventListener("click", e => {
     e.preventDefault();
-    jQuery('.nav.hor div').removeClass('active');
+    jQuery('nav.hor div').removeClass('active');
     jQuery(el).addClass('active');
     gsap.to(window, {
       scrollTo: getPosition(el.getAttribute("data-link")),
