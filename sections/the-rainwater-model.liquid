@@ -59,6 +59,17 @@
 {%- endfor -%}
 </ul><!--End model blocks-->
 
+<div class="drops" id="stars-{{ section.id }}">
+  <img class="drop" src="{{ 'icon-drop-med-blue.svg' | asset_url }}>" width="68" height="95" role="presentation" alt="drop" />
+</div>
+
+
+<script type="text/javascript">
+  
+  twinkle('#drops-{{ section.id }}', 30);
+
+</script>
+
 {% schema %}
   {
   "name": "The Rainwater Model",
