@@ -6,20 +6,20 @@ window.addEventListener("load", (event) => {
     console.log('page is loaded. Now run scroll stuff please.');
     jQuery(window).scroll(function() // Do stuff on scroll
     {   
-        var bannerHeight = jQuery('.shopify-section-group-header-group').height();
+        var bannerHeight = jQuery('.section-top-header').height();
         if (jQuery(window).scrollTop()>= bannerHeight )    // If we've scrolled past the height of the top banner image
             {
 
-            jQuery('.shopify-section-group-header-group').addClass('scrolling'); // Add the class "floater" to the header	
+            jQuery('.section-top-header').addClass('scrolling'); // Add the class "floater" to the header	
             }
             else
             {
-            jQuery('.shopify-section-group-header-group').removeClass('scrolling'); // Remove the class when we're back at the top
+            jQuery('.section-top-header').removeClass('scrolling'); // Remove the class when we're back at the top
             }
 
     });
 
-    const showAnim = gsap.from('.shopify-section-group-header-group', { 
+    const showAnim = gsap.from('.section-top-header', { 
     yPercent: -100,
     paused: true,
     duration: 0.25

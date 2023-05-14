@@ -2372,7 +2372,7 @@ a {
     }
   }
 }
-.section-header.shopify-section-group-header-group {
+.section-top-header {
   z-index: 3;
   bottom: auto;
   position: fixed;
@@ -2382,10 +2382,7 @@ a {
   width: 100vw;
 }
 
-.shopify-section-header-sticky {
-  position: sticky;
-  top: 0;
-}
+
 
 .shopify-section-header-hidden {
   top: calc(-1 * var(--header-height));
@@ -2395,17 +2392,8 @@ a {
   top: 0;
 }
 
-.section-header.animate {
-  transition: top 0.15s ease-out;
-}
 
-.shopify-section-group-header-group {
-  z-index: 4;
-}
 
-.section-header ~ .shopify-section-group-header-group {
-  z-index: initial;
-}
 
 /* Main Header Layout */
 .header-wrapper {
