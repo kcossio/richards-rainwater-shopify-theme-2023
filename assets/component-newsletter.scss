@@ -14,14 +14,20 @@
     .nl-cloud {
       position:relative;
       width:100%;
-      display:flex;
+      display:block;
+
+      img {
+        display:block;
+        z-index:2;
+      }
 
       @include breakpoint(tablet) {
         width:50%;
       }
       .stars {
-        top:100%;
+        top:80%;
         height:50%;
+        z-index:1;
       }
     }
 
