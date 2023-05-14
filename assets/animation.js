@@ -490,8 +490,9 @@ var slickSliders = function(){
             
             gsap.set(star, {
             //xPercent: -50,
-            yPercent: -50,
-            scale: 0,
+            yPercent: -100,
+            scale: .5,
+            autoAlpha: 0,
             x: random(vw),
             y: random(vh),
             });
@@ -514,10 +515,10 @@ var slickSliders = function(){
             var duration1 = random(durationMin, durationMax);
             var duration2 = random(durationMin, durationMax);   
             
-            tl.set(star, {yPercent: -50}, delay)
-            .to(star, duration1, { autoAlpha: alpha, scale: scale, yPercent: 25, ease: 'none' })
+            tl.set(star, {yPercent: -100}, delay)
+            .to(star, duration1, { autoAlpha: alpha, scale: scale, yPercent: 0, ease: 'none' })
             .to(star, duration1, { autoAlpha: 0, scale: 0, yPercent: 100, ease: 'none' }).
-            set(star, {yPercent: -50}, appear)
+            set(star, {yPercent: -100}, appear)
             }
             
             tl.progress(random(1));
