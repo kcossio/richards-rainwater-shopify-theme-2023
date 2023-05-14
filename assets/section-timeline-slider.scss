@@ -40,7 +40,7 @@
           h3 {
             color:$white;
           }
-          
+
         }
 
         &.one {
@@ -56,9 +56,10 @@
 nav.hor {
     position: fixed;
     bottom:0px;
-    left: 50%;
+    left: 0%;
+    width:100%;
     display: flex;
-    transform: translateX(-50%);
+    background:#f4f4f4
   }
   nav.hor div {
     flex-basis: 25%;
@@ -68,8 +69,9 @@ nav.hor {
     font-size: 21px;
     line-height: 50px;
     cursor: pointer;
-    color: white;
+    color: #BFBFBF;
+    font-weight: 900;;
     z-index: 10;
     user-select: none;
-    background-color: rgba(0,0,0,0.6);
+    background-color: #BFBFBF;
   }
