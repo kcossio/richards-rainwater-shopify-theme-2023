@@ -37,14 +37,14 @@
 
         });
 
-        const showAnim = gsap.from('.site-header', { 
+        const showAnim = gsap.from('.shopify-section-group-header-group', { 
         yPercent: -100,
         paused: true,
         duration: 0.25
         }).progress(1);
 
         ScrollTrigger.create({
-        start: "top 40vh",
+        start: "top top",
         end: 99999,
         onUpdate: (self) => {
         self.direction === -1 ? showAnim.play() : showAnim.reverse()
