@@ -1,29 +1,42 @@
+<section class="rainbow-banner">
+<div class="inner">
+  <h2 class="fade-in-left">{{ section.settings.heading }}</h2> 
+   
+    {{ section.settings.introduction }} 
+</div><!--End inner-->
 
-{{ section.settings.heading }} 
+  <div class="bg-img bg-hero">
+    <img class="bg-parallax" src="{{ 'bg-rainbow.svg' | asset_url }}>" width="1923" height="2042" role="presentation" alt="rainbow" />
+  </div>
 
 
-{{ section.settings.introduction }} 
+    <div class="clouds clouds-wide bottom">
+      <div class="scroll-parent">
+        <div class="scroll-element slow primary">
+          <img class="cloud" src="{{ 'cloud-wide.svg' | asset_url }}>" width="1877" height="188" role="presentation" alt="cloud" />
+        </div>
+        <div class="scroll-element slow secondary">
+          <img class="cloud" src="{{ 'cloud-wide.svg' | asset_url }}>" width="1877" height="188" role="presentation" alt="cloud" />
+        </div>
+      </div>
+    </section><!--End rainbowbanner-->
+      
 
-{%- for block in section.blocks -%}
+<ul class="model-blocks">
+  {% assign count = 0 %}
+  {%- for block in section.blocks -%}
+      {% assign count = count | plus: 1 %}
   {%- case block.type -%}
 
     {%- when 'model_blocks' -%}
-      {%- ########################################################################## 
-      # Label: Image
-      # Returns: an image object or nil(if no selection has been made)
-      # Image Properties: https://shopify.dev/api/liquid/objects#image
-      # Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
-      ########################################################################## -%}
+      <li class="model-block model-block-{{ count }}">
       {%- assign image = block.settings.image -%}
       {%- if image != blank -%}
-      {{ image | image_url: width: image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+      {{ image | image_url: width: image.width | image_tag: class: 'block-hero block-hero-' | append: count, loading: 'lazy' }}
       {%- endif -%}
 
-      {%- ########################################################################## 
-      # Label: Heading
-      # Returns: a string or an empty object(if nothing has been entered)
-      # Filters: https://shopify.dev/api/liquid/objects#string 
-      ########################################################################## -%}
+      <div class="model-block-content">
+      </div><!--End model-block-content-->
       {{ block.settings.heading }} 
 
       {%- ########################################################################## 
@@ -32,9 +45,10 @@
       # Filters: https://shopify.dev/api/liquid/objects#string 
       ########################################################################## -%}
       {{ block.settings.description }} 
-
+      </li><!--End model-block-->
   {%- endcase -%}
 {%- endfor -%}
+</ul><!--End model blocks-->
 
 {% schema %}
   {
