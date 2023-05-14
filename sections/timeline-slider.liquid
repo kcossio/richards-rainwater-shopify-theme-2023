@@ -34,25 +34,25 @@
 <div class="horiz-wrap">
   <div id="hor-main-content">
   <div class="wrapper hor-wrapper d-flex horiz-scroll flex-nowrap">
-    <section class="section h-sec section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center one">
+    <section id="one" class="section h-sec section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center one">
       Part One
     </section>
-    <section class="section h-sec section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center two">
+    <section id="two" class="section h-sec section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center two">
       Part Two
     </section>
-    <section class="section h-sec section--small vh-100 flex-shrink-0 d-flex justify-content-center align-items-center three">
+    <section id="three" class="section h-sec section--small vh-100 flex-shrink-0 d-flex justify-content-center align-items-center three">
       Part Three
     </section>
-    <section class="section h-sec section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center four">
+    <section id="four" class="section h-sec section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center four">
       Part Four
     </section>
   </div>
 </div><!--End main-content-->
   <nav class="hor">
-    <div class="hash">one</div>
-    <div class="hash">two</div>
-    <div class="hash">three</div>
-    <div class="hash">four</div>
+    <div class="hash" data-link="one">one</div>
+    <div class="hash" data-link="two">two</div>
+    <div class="hash" data-link="three">three</div>
+    <div class="hash" data-link="four">four</div>
   </nav>
   
 </div><!--End horiz-wrap-->
@@ -91,11 +91,11 @@ let horizontalScroll = gsap.to(sections, {
 
 let getPosition = getScrollLookup(".h-sec", {start: "center center", containerAnimation: horizontalScroll});
 
-gsap.utils.toArray("nav.hor div").forEach(el => {
+gsap.utils.toArray(".navigation div").forEach(el => {
   el.addEventListener("click", e => {
     e.preventDefault();
     gsap.to(window, {
-      scrollTo: getPosition(el.getAttribute("href")),
+      scrollTo: getPosition(el.getAttribute("data-link")),
       overwrite: "auto",
       duration: 1
     });
