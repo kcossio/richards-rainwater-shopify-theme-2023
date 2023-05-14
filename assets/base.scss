@@ -2375,6 +2375,7 @@ a {
     top: 30px;
     width: 100vw;
     z-index: 7;
+    transition: all 0.25s ease;
 
     &:not(.home-header) {
       background-color:$white;
@@ -2392,21 +2393,22 @@ a {
     &.home-header {
       color:$white;
 
-      .logo path.,
-      .logo rect {
-        fill:$white;
+      .header__heading, 
+      .header__heading-link {
+        color:$white;
       }
 
     }
   
     // When Scrolling, do things
     &.scrolling {
+      top:0px;
       background:$white;
       color:$dark_blue;
 
-      .logo path.,
-      .logo rect {
-        fill:$dark_blue;
+      .header__heading, 
+      .header__heading-link {
+        color:$dark_blue;
       }
 
     }

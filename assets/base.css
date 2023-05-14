@@ -2480,6 +2480,7 @@ a svg {
   top: 30px;
   width: 100vw;
   z-index: 7;
+  transition: all 0.25s ease;
 }
 .section-header .header:not(.home-header) {
   background-color: #ffffff;
@@ -2498,8 +2499,17 @@ a svg {
 .section-header .header.home-header {
   color: #ffffff;
 }
+.section-header .header.home-header .header__heading,
+.section-header .header.home-header .header__heading-link {
+  color: #ffffff;
+}
 .section-header .header.scrolling {
+  top: 0px;
   background: #ffffff;
+  color: #000F44;
+}
+.section-header .header.scrolling .header__heading,
+.section-header .header.scrolling .header__heading-link {
   color: #000F44;
 }
 
