@@ -172,10 +172,11 @@ EASING
 */
 .section-timeline {
   display: block;
-  width: 100%;
+  width: 100vw;
   min-height: 80vh;
   padding: 40px 0px;
   background: #f4f4f4;
+  overflow: hidden;
 }
 
 .timeline-scroller {
