@@ -81,6 +81,7 @@
         "378937ef-79a4-4d1b-a7be-29994910244e": {
           "type": "model_blocks",
           "settings": {
+            "image": "shopify:\/\/shop_images\/rw-model-image-3.png",
             "heading": "Collect",
             "description": "<p>At this <strong>cleanest point<\/strong> in the rain cycle, we collect the <strong>pure<\/strong> raindrops into large storage vessels. <\/p>"
           }
@@ -88,6 +89,7 @@
         "b281c460-36c7-4aae-a05d-7b81af897ab7": {
           "type": "model_blocks",
           "settings": {
+            "image": "shopify:\/\/shop_images\/rw-model-image-4.png",
             "heading": "Filter",
             "description": "<p>Then use a simple, yet eﬀective  combination of <strong>ozone<\/strong> and <strong>microﬁltration<\/strong> to ensure our rainwater surpasses the <strong>highest drinking water standards.<\/strong><\/p>"
           }
@@ -95,6 +97,7 @@
         "b8ef9699-9e69-4fad-93ed-e0a8a91de167": {
           "type": "model_blocks",
           "settings": {
+            "image": "shopify:\/\/shop_images\/rw-model-image-5.png",
             "heading": "Bottle",
             "description": "<p>We pour the <strong>pure, refreshing<\/strong> rainwater into glass bottles and aluminum cans, packaging as <strong>inﬁnitely renewable<\/strong> as the water itself.<\/p>"
           }
@@ -102,6 +105,7 @@
         "bb5d5776-b14f-4309-837e-c1bbe6da19a3": {
           "type": "model_blocks",
           "settings": {
+            "image": "shopify:\/\/shop_images\/rw-model-image-6.png",
             "heading": "Distribute Locally",
             "description": "<p>Richard’s is building a <strong>network of  collection systems<\/strong> across the country to ensure our rainwater is <strong>local everywhere.<\/strong><\/p>"
           }
@@ -109,6 +113,7 @@
         "6f5800a2-ad8b-4418-80d4-b0d34afc3e22": {
           "type": "model_blocks",
           "settings": {
+            "image": "shopify:\/\/shop_images\/rw-model-image-7.png",
             "heading": "End Result",
             "description": "<p>The purest, <strong>best-tasting water<\/strong> comes from the sky. Richard’s — Sip the Sky™.<\/p>"
           }
