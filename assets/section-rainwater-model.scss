@@ -35,6 +35,7 @@ ul.model-blocks{
             display:flex;
             flex-wrap:wrap;
             align-items:center;
+            align-content:center;
             justify-content:center;
             padding:20px 5vw;
 
@@ -47,26 +48,30 @@ ul.model-blocks{
                 font-weight:900;
                 margin:0px 0px .8em 0px;
                 position:relative;
+                width:100%;
 
                 span {
                     display:flex;
                     position:absolute;
                     top:0px;
-                    left:-62px;
+                    left:-30px;
                     aspect-ratio: 62 / 87;
                     color:$white;
                     font-weight:900;
                     align-items:flex-end;
                     justify-content:center;
-                    padding-bottom:14px;
+                    padding-bottom:4px;
                     line-height:1em;
                     background:url('icon-drop-med-blue.svg');
                     background-size:100% 100%;
-                    width:62px;
-                    font-size:39px;
+                    width:11px;
+                    font-size:11px;
 
                     @include breakpoint(tablet) {
                         width:62px;
+                        left:-80px;
+                        font-size:39px;
+                        padding-bottom:14px;
                     }
                 }
             }
