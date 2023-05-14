@@ -181,6 +181,7 @@ ul.model-blocks li {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 ul.model-blocks li img {
   width: 100%;
