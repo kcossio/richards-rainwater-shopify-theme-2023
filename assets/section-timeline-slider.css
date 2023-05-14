@@ -225,7 +225,7 @@ nav.hor div {
   width: 80px;
   text-align: center;
   height: 50px;
-  font-size: 21px;
+  font-size: 16px;
   line-height: 50px;
   cursor: pointer;
   color: #BFBFBF;
@@ -234,5 +234,9 @@ nav.hor div {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  background-color: #BFBFBF;
+}
+@media (min-width: 768px) {
+  nav.hor div {
+    font-size: 30px;
+  }
 }

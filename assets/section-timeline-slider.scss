@@ -66,12 +66,15 @@ nav.hor {
     width: 80px;
     text-align: center;
     height: 50px;
-    font-size: 21px;
+    font-size: 16px;
     line-height: 50px;
     cursor: pointer;
     color: #BFBFBF;
-    font-weight: 900;;
+    font-weight: 900;
     z-index: 10;
     user-select: none;
-    background-color: #BFBFBF;
+
+    @include breakpoint(tablet) {
+      font-size:30px;
+    }
   }
