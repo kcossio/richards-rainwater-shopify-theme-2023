@@ -1,3 +1,8 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+
 .section-timeline {
     display:block;
     width:100%;
@@ -17,19 +22,20 @@
         align-items:center;
         width:100vw;
         height:100vh;
-        &--large {
-          width: 100vw;
-          background-color: #e4002b;
-          color: white;
+        color:$white;
+
+        &.one {
+          background:$light_blue;
+
         }
-      
-        &--small {
-          width: 46rem;
+        &.two {
+          background:$orange;
         }
-      
-        &--dark {
-          color: white;
-          background-color: black;
+        &.three {
+          background:$dark_blue;
+        }
+        &.four {
+          background:$red;
         }
       }
 
