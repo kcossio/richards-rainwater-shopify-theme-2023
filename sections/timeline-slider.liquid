@@ -92,7 +92,7 @@ gsap.utils.toArray("nav.hor div").forEach(el => {
   el.addEventListener("click", e => {
     e.preventDefault();
     jQuery('.nav.hor div').removeClass('active');
-    el.addClass('active');
+    jQuery(el).addClass('active');
     gsap.to(window, {
       scrollTo: getPosition(el.getAttribute("data-link")),
       overwrite: "auto",
