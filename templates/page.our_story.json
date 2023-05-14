@@ -65,6 +65,7 @@
         "d7fdd667-e48a-4322-84d2-a80b18aefac3": {
           "type": "model_blocks",
           "settings": {
+            "image": "shopify:\/\/shop_images\/white-T-Shirt-Mock-Up-Front-V3.png",
             "heading": "Rains",
             "description": "<p>Our process begins with the <strong>rain<\/strong>. When clouds become saturated, droplets fall from the sky.<\/p>"
           }
