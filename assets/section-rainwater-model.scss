@@ -23,6 +23,25 @@ ul.model-blocks{
                 order:1;
             }
         }
-        
+
+        .model-block-content {
+            width:100%;
+
+            @include breakpoint(tablet) {
+                width:50%;
+                order:2;
+            }
+        }
+
+        &:nth-child(even) {
+            @include breakpoint(tablet) {
+                img {
+                    order:2;
+                }
+                .model-block-content {
+                    order:1;
+                }
+            }
+        }
     }
 }

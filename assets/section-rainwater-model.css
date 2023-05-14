@@ -191,3 +191,20 @@ ul.model-blocks li img {
     order: 1;
   }
 }
+ul.model-blocks li .model-block-content {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  ul.model-blocks li .model-block-content {
+    width: 50%;
+    order: 2;
+  }
+}
+@media (min-width: 768px) {
+  ul.model-blocks li:nth-child(even) img {
+    order: 2;
+  }
+  ul.model-blocks li:nth-child(even) .model-block-content {
+    order: 1;
+  }
+}
