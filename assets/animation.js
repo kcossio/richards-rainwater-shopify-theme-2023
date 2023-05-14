@@ -515,7 +515,7 @@ var slickSliders = function(){
             var duration1 = random(durationMin, durationMax);
             var duration2 = random(durationMin, durationMax);   
             
-            tl.set(star, {yPercent: 0}).to(star, duration1, { autoAlpha: alpha, scale: scale })
+            tl.set(star, {yPercent: -50}).to(star, duration1, { autoAlpha: alpha, scale: scale })
                 .to(star, duration1, { autoAlpha: 0, scale: 0, yPercent: 200 })
             }
             
