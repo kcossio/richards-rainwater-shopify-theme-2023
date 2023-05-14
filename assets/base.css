@@ -2465,9 +2465,7 @@ a svg {
 }
 .section-header .header {
   padding: 20px 28px;
-  position: fixed;
-  top: 0px;
-  left: 0px;
+  position: relative;
   width: 100%;
 }
 @media (min-width: 768px) {

@@ -4,20 +4,20 @@
 // ------ Header Scroll Behavior ------//
     jQuery(window).scroll(function() // Do stuff on scroll
     {   
-        var bannerHeight = jQuery('.site-header').height();
+        var bannerHeight = jQuery('.shopify-section-group-header-group').height();
         if (jQuery(window).scrollTop()>= bannerHeight )    // If we've scrolled past the height of the top banner image
             {
 
-            jQuery('.site-header').addClass('scrolling'); // Add the class "floater" to the header	
+            jQuery('.shopify-section-group-header-group').addClass('scrolling'); // Add the class "floater" to the header	
             }
             else
             {
-            jQuery('.site-header').removeClass('scrolling'); // Remove the class when we're back at the top
+            jQuery('.shopify-section-group-header-group').removeClass('scrolling'); // Remove the class when we're back at the top
             }
 
     });
 
-    const showAnim = gsap.from('.site-header', { 
+    const showAnim = gsap.from('.shopify-section-group-header-group', { 
     yPercent: -100,
     paused: true,
     duration: 0.25
