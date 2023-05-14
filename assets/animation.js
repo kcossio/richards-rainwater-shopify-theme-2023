@@ -2,6 +2,8 @@
 
     
 // ------ Header Scroll Behavior ------//
+window.addEventListener("load", (event) => {
+    console.log('page is loaded. Now run scroll stuff please.');
     jQuery(window).scroll(function() // Do stuff on scroll
     {   
         var bannerHeight = jQuery('.shopify-section-group-header-group').height();
@@ -17,7 +19,7 @@
 
     });
 
-    /*const showAnim = gsap.from('.shopify-section-group-header-group', { 
+    const showAnim = gsap.from('.shopify-section-group-header-group', { 
     yPercent: -100,
     paused: true,
     duration: 0.25
@@ -30,7 +32,8 @@
     self.direction === -1 ? showAnim.play() : showAnim.reverse()
     }
     });
-    */
+});
+    
 
     // --------------------------------- GSAP/ScrollTrigger - scrolling and tweens ----------------------------- //
 
