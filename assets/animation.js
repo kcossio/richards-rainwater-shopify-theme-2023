@@ -459,6 +459,7 @@ var slickSliders = function(){
         var delayMin = 2;
         var delayMax = 6;
 
+
         var durationMin = 0.3;
         var durationMax = 1;
 
@@ -505,14 +506,17 @@ var slickSliders = function(){
             
             var alpha = random(0.7, 1);
             var scale = random(0.15, 1);
+
+            var yPercentStart = random(-50, 0);
+            var yPercentEnd = random(100, 200);
             
             var appear = "+=" + random(appearMin, appearMax);
             var delay = "+=" + random(delayMin, delayMax);  
             var duration1 = random(durationMin, durationMax);
             var duration2 = random(durationMin, durationMax);   
             
-            tl.to(star, duration1, { autoAlpha: alpha, scale: scale, ease: ease1 }, delay)
-                .to(star, duration2, { autoAlpha: 0, scale: 0, ease: ease2 }, appear)
+            tl.to(star, duration1, { autoAlpha: alpha, scale: scale, yPercent: yPercentStart, ease: ease1 }, delay)
+                .to(star, duration2, { autoAlpha: 0, scale: 0, yPercent: yPercentEnd, ease: ease2 }, appear)
             }
             
             tl.progress(random(1));
