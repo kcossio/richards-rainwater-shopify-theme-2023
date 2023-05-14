@@ -179,6 +179,7 @@ EASING
 .horiz-wrap {
   display: flex !important;
   flex-wrap: nowrap !important;
+  position: relative;
 }
 .horiz-wrap .section {
   display: flex !important;
