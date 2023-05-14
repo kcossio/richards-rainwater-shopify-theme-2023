@@ -491,7 +491,7 @@ var slickSliders = function(){
             
             gsap.set(star, {
             //xPercent: -50,
-            //yPercent: -50,
+            yPercent: 0,
             scale: 0,
             x: random(vw),
             y: random(vh),
@@ -515,7 +515,7 @@ var slickSliders = function(){
             var duration1 = random(durationMin, durationMax);
             var duration2 = random(durationMin, durationMax);   
             
-            tl.set(star, 0, {yPercent: 0}).to(star, duration1, { autoAlpha: alpha, scale: scale, ease: ease1 }, delay)
+            tl.set(star, {yPercent: 0}).to(star, duration1, { autoAlpha: alpha, scale: scale, ease: ease1 }, delay)
                 .to(star, duration2, { autoAlpha: 0, scale: 0, yPercent: 200, ease: ease2 }, appear)
             }
             
