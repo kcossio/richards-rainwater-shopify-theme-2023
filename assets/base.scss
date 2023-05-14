@@ -2361,8 +2361,13 @@ a {
 
   .header {
     padding:20px 28px;
-    position:relative;
-    width:100%;
+    bottom: auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    z-index: 7;
     @include breakpoint(tablet) {
       padding:22px 36px;
 
@@ -2372,17 +2377,14 @@ a {
     }
   }
 }
-.section-top-header {
+.section-header.shopify-section-group-header-group {
   z-index: 3;
-  bottom: auto;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  width: 100vw;
 }
 
-
+.shopify-section-header-sticky {
+  position: sticky;
+  top: 0;
+}
 
 .shopify-section-header-hidden {
   top: calc(-1 * var(--header-height));
@@ -2392,8 +2394,17 @@ a {
   top: 0;
 }
 
+.section-header.animate {
+  transition: top 0.15s ease-out;
+}
 
+.shopify-section-group-header-group {
+  z-index: 4;
+}
 
+.section-header ~ .shopify-section-group-header-group {
+  z-index: initial;
+}
 
 /* Main Header Layout */
 .header-wrapper {

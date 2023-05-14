@@ -1,38 +1,7 @@
 (function( $ ) {
 
     
-// ------ Header Scroll Behavior ------//
-window.addEventListener("load", (event) => {
-    console.log('page is loaded. Now run scroll stuff please.');
-    jQuery(window).scroll(function() // Do stuff on scroll
-    {   
-        var bannerHeight = jQuery('.section-top-header').height();
-        if (jQuery(window).scrollTop()>= bannerHeight )    // If we've scrolled past the height of the top banner image
-            {
 
-            jQuery('.section-top-header').addClass('scrolling'); // Add the class "floater" to the header	
-            }
-            else
-            {
-            jQuery('.section-top-header').removeClass('scrolling'); // Remove the class when we're back at the top
-            }
-
-    });
-
-    const showAnim = gsap.from('.section-top-header', { 
-    yPercent: -100,
-    paused: true,
-    duration: 0.25
-    }).progress(1);
-
-    ScrollTrigger.create({
-    start: "top top",
-    end: 99999,
-    onUpdate: (self) => {
-    self.direction === -1 ? showAnim.play() : showAnim.reverse()
-    }
-    });
-});
     
 
     // --------------------------------- GSAP/ScrollTrigger - scrolling and tweens ----------------------------- //
@@ -49,6 +18,39 @@ window.addEventListener("load", (event) => {
         markers:true
     });
 
+
+    // ------ Header Scroll Behavior ------//
+    window.addEventListener("load", (event) => {
+        console.log('page is loaded. Now run scroll stuff please.');
+        jQuery(window).scroll(function() // Do stuff on scroll
+        {   
+            var bannerHeight = jQuery('.site-header').height();
+            if (jQuery(window).scrollTop()>= bannerHeight )    // If we've scrolled past the height of the top banner image
+                {
+
+                jQuery('.site-header').addClass('scrolling'); // Add the class "floater" to the header	
+                }
+                else
+                {
+                jQuery('.site-header').removeClass('scrolling'); // Remove the class when we're back at the top
+                }
+
+        });
+
+        const showAnim = gsap.from('.site-header', { 
+        yPercent: -100,
+        paused: true,
+        duration: 0.25
+        }).progress(1);
+
+        ScrollTrigger.create({
+        start: "top top",
+        end: 99999,
+        onUpdate: (self) => {
+        self.direction === -1 ? showAnim.play() : showAnim.reverse()
+        }
+        });
+    });
 
 
     
