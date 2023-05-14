@@ -2374,9 +2374,12 @@ a {
 }
 .section-header.shopify-section-group-header-group {
   z-index: 3;
-  position:fixed;
-  top:0px;
-  left:0px;
+  bottom: auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100vw;
 }
 
 .shopify-section-header-sticky {
