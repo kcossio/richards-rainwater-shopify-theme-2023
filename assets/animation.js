@@ -505,7 +505,7 @@ var slickSliders = function(){
             var ease2 = eases[random(numAnimations)|0];
             
             var alpha = random(0.7, 1);
-            var scale = random(0.5, 1);
+            var scale = random(0.25, 1);
 
             var yPercentStart = random(-50, 0);
             var yPercentEnd = random(100, 200);
