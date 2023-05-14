@@ -175,17 +175,22 @@ EASING
   flex-wrap: wrap;
   justify-content: space-between;
   position: relative;
+  align-items: center;
+  align-content: center;
 }
 .footer-newsletter .nl-cloud {
+  position: relative;
   width: 100%;
+  display: flex;
 }
 @media (min-width: 768px) {
   .footer-newsletter .nl-cloud {
-    width: 41%;
+    width: 50%;
   }
 }
 .footer-newsletter .nl-cloud .stars {
   top: 100%;
+  height: 50%;
 }
 .footer-newsletter .newsletter__wrapper {
   width: 50%;

@@ -8,17 +8,20 @@
     flex-wrap:wrap;
     justify-content:space-between;
     position:relative;
+    align-items:center;
+    align-content:center;
 
     .nl-cloud {
-
+      position:relative;
       width:100%;
+      display:flex;
 
       @include breakpoint(tablet) {
-        width:41%;
+        width:50%;
       }
-
       .stars {
         top:100%;
+        height:50%;
       }
     }
 
