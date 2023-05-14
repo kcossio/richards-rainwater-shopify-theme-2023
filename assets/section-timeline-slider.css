@@ -176,16 +176,16 @@ EASING
   min-height: 80vh;
 }
 
-.horiz-wrap {
+.timeline-scroller {
   position: relative;
 }
 
-.hor-wrapper {
+.timeline-wrap {
   display: flex !important;
   flex-wrap: nowrap !important;
   position: relative;
 }
-.hor-wrapper .section {
+.timeline-wrap .section {
   display: flex !important;
   flex-shrink: 0 !important;
   justify-content: center !important;
@@ -193,28 +193,28 @@ EASING
   height: 100vh;
   max-width: none !important;
 }
-.hor-wrapper .section--large {
+.timeline-wrap .section--large {
   width: 100vw;
   background-color: #e4002b;
   color: white;
 }
-.hor-wrapper .section--small {
+.timeline-wrap .section--small {
   width: 46rem;
 }
-.hor-wrapper .section--dark {
+.timeline-wrap .section--dark {
   color: white;
   background-color: black;
 }
-.hor-wrapper .section.one {
+.timeline-wrap .section.one {
   background: #0094DA;
 }
-.hor-wrapper .section.two {
+.timeline-wrap .section.two {
   background: #FFA500;
 }
-.hor-wrapper .section.three {
+.timeline-wrap .section.three {
   background: #000F44;
 }
-.hor-wrapper .section.four {
+.timeline-wrap .section.four {
   background: #DE0000;
 }
 

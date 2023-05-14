@@ -3,12 +3,14 @@
 <h2 class="timeline-heading">{{ section.settings.heading }}</h2>
 
 <div class="slider timeline-slider">
+  {% assign count = 0 %}
 {%- for block in section.blocks -%}
+  {% assign count = count | plus: 1 %}
   {%- case block.type -%}
 
     {%- when 'timeline_slide' -%}
       
-      <div class="slide">
+      <div class="timeline-section">
 
         <span class="year">{{ block.settings.year }} </span>
 
@@ -31,21 +33,23 @@
   {%- endcase -%}
 {%- endfor -%}
 
-<div class="horiz-wrap">
-  <div class="wrapper hor-wrapper d-flex horiz-scroll flex-nowrap">
-    <section id="one" class="section h-sec section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center one">
+<div class="timeline-scroller">
+
+  <div class="wrapper timeline-wrap d-flex horiz-scroll flex-nowrap">
+    <section id="one" class="section timeline-block section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center one">
       Part One
     </section>
-    <section id="two" class="section h-sec section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center two">
+    <section id="two" class="section timeline-block section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center two">
       Part Two
     </section>
-    <section id="three" class="section h-sec section--small vh-100 flex-shrink-0 d-flex justify-content-center align-items-center three">
+    <section id="three" class="section timeline-block section--small vh-100 flex-shrink-0 d-flex justify-content-center align-items-center three">
       Part Three
     </section>
-    <section id="four" class="section h-sec section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center four">
+    <section id="four" class="section timeline-block section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center four">
       Part Four
     </section>
   </div>
+
   <nav class="hor">
     <div class="hash" data-link="#one">one</div>
     <div class="hash" data-link="#two">two</div>
@@ -53,16 +57,16 @@
     <div class="hash" data-link="#four">four</div>
   </nav>
   
-</div><!--End horiz-wrap-->
+</div><!--End timeline-scroller-->
 
 
 <script>
 
   window.addEventListener("load", (event) => {
 
-    let container = document.querySelector(".hor-wrapper")
-    let scrollContainer = document.querySelector(".horiz-wrap");
-    let sections = gsap.utils.toArray(".h-sec");
+    let container = document.querySelector(".timeline-wrap")
+    let scrollContainer = document.querySelector(".timeline-scroller");
+    let sections = gsap.utils.toArray(".timeline-block");
     let maxWidth = 0;
 
     const getMaxWidth = () => {
@@ -87,7 +91,7 @@ let horizontalScroll = gsap.to(sections, {
   }
 });
 
-let getPosition = getScrollLookup(".h-sec", {start: "center center", containerAnimation: horizontalScroll});
+let getPosition = getScrollLookup(".timeline-block", {start: "center center", containerAnimation: horizontalScroll});
 
 gsap.utils.toArray("nav.hor div").forEach(el => {
   el.addEventListener("click", e => {
@@ -128,7 +132,7 @@ function getScrollLookup(targets, {start, pinnedContainer, containerAnimation}) 
   };
 }
 
-    /*let sections = gsap.utils.toArray("section.h-sec"),
+    /*let sections = gsap.utils.toArray("section.timeline-block"),
       nav = gsap.utils.toArray("nav div"),
       getMaxWidth = () => sections.reduce((val, section) => val + section.offsetWidth, 0),
       maxWidth = getMaxWidth(),
@@ -146,7 +150,7 @@ function getScrollLookup(targets, {start, pinnedContainer, containerAnimation}) 
     //Create the scrolltrigger
     ScrollTrigger.create({
     animation: tl,
-    trigger: ".hor-wrapper",
+    trigger: ".timeline-wrap",
     pin: true,
     scrub: 1,
     snap: {snapTo: directionalSnap(tl), duration: 0.5},
