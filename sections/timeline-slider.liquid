@@ -1,46 +1,163 @@
-{%- ########################################################################## 
-# Label: Heading
-# Returns: a string or an empty object(if nothing has been entered)
-# Filters: https://shopify.dev/api/liquid/objects#string 
-########################################################################## -%}
-{{ section.settings.heading }} 
+{{ 'section-timeline-slider.css' | asset_url | stylesheet_tag }}
 
+<h2 class="timeline-heading">{{ section.settings.heading }}</h2>
+
+<div class="slider timeline-slider">
 {%- for block in section.blocks -%}
   {%- case block.type -%}
 
     {%- when 'timeline_slide' -%}
-      {%- ########################################################################## 
-      # Label: Hero Image
-      # Returns: an image object or nil(if no selection has been made)
-      # Image Properties: https://shopify.dev/api/liquid/objects#image
-      # Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
-      ########################################################################## -%}
-      {%- assign hero_image = block.settings.hero_image -%}
-      {{ hero_image | image_url: width: hero_image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+      
+      <div class="slide">
 
-      {%- ########################################################################## 
-      # Label: Year
-      # Returns: a string or an empty object(if nothing has been entered)
-      # Filters: https://shopify.dev/api/liquid/objects#string 
-      ########################################################################## -%}
-      {{ block.settings.year }} 
+        <span class="year">{{ block.settings.year }} </span>
 
-      {%- ########################################################################## 
-      # Label: Title
-      # Returns: a string or an empty object(if nothing has been entered)
-      # Filters: https://shopify.dev/api/liquid/objects#string 
-      ########################################################################## -%}
-      {{ block.settings.title }} 
+        <div class="timeline-slide-content">
+          <h3>{{ block.settings.title }} </h3>
+          {{ block.settings.content }} 
+        </div><!--End timeline-slide-content-->
 
-      {%- ########################################################################## 
-      # Label: Content
-      # Returns: a string or an empty object(if nothing has been entered)
-      # Filters: https://shopify.dev/api/liquid/objects#string 
-      ########################################################################## -%}
-      {{ block.settings.content }} 
+        <div class="bg-img bg-hero">
+          {%- assign hero_image = block.settings.hero_image -%}
+          {%- if hero_image != blank -%}
+          {{ hero_image | image_url: width: hero_image.width | image_tag: class: 'bg', loading: 'lazy' }}
+          {%- endif -%}
+        </div>
+
+      </div><!--End slide-->
+
+      
 
   {%- endcase -%}
 {%- endfor -%}
+
+<div class="horiz-wrap">
+
+  <div class="wrapper hor-wrapper d-flex horiz-scroll flex-nowrap">
+    <section class="section section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center">
+      Part One
+    </section>
+    <section class="section section--dark section--small vh-100 flex-shrink-0 d-flex justify-content-center align-items-center">
+      Part Two
+    </section>
+    <section class="section section--small vh-100 flex-shrink-0 d-flex justify-content-center align-items-center">
+      Part Three
+    </section>
+    <section class="section section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center four">
+      Part Four
+    </section>
+  </div>
+
+  <nav class="hor">
+    <div>one</div>
+    <div>two</div>
+    <div>three</div>
+    <div>four</div>
+  </nav>
+</div><!--End horiz-wrap-->
+
+
+<script>
+
+  window.addEventListener("load", (event) => {
+
+    let sections = gsap.utils.toArray(".horiz-scroll .section"),
+      nav = gsap.utils.toArray("nav.hor div"),
+      getMaxWidth = () => sections.reduce((val, section) => val + section.offsetWidth, 0),
+      maxWidth = getMaxWidth(),
+      scrollSpeed = 4,
+      snapProgress,
+      lastScrollTween = Date.now(),
+      tl = gsap.timeline();
+
+    tl.to(sections, {
+    x: () => window.innerWidth - maxWidth,
+    duration: 1,
+    ease: "none"
+    });
+
+    ScrollTrigger.create({
+    animation: tl,
+    trigger: ".hor-wrapper,
+    pin: true,
+    scrub: 1,
+    snap: {snapTo: directionalSnap(tl), duration: 0.5},
+    end: () => "+=" + maxWidth / scrollSpeed,
+    invalidateOnRefresh: true
+    });
+
+
+    function init() {
+    gsap.set(sections, {x: 0});
+    maxWidth = getMaxWidth();
+    let position = 0,
+        distance = maxWidth - window.innerWidth;
+    // add a label for each section to the timeline (for "labelsDirectional" functionality):
+    tl.add("label0", 0);
+    sections.forEach((section, i) => {
+      let progress = position;
+      position += section.offsetWidth / distance;
+      tl.add("label" + (i+1), position);
+      nav[i].onclick = () => { // link clicks should trigger a scroll tween to the appropriate spot
+        snapProgress = progress; // save the current progress so that if we can return it in the directionalSnap() when called right after the scrollTo tween is done (because ScrollTrigger would normally look at the velocity and snap, causing it to overshoot to the next section)
+        lastScrollTween = Date.now(); // for checking in the directionalSnap() if there was a recent scrollTo that finished, in which case we'd skip the snapping (well, return the current snapProgress)
+        gsap.to(window, {scrollTo: maxWidth / scrollSpeed * progress, duration: 1, overwrite: "auto"});
+      };
+    });
+    }
+
+    init();
+    ScrollTrigger.addEventListener("refreshInit", init); // on resize, things must be recalculated
+
+    // a helper function for doing "labelsDirectional" snapping, but we can't use that directly since we're doing some special things with scrollTo tweens, and we need a way to skip the snap if a scrollTo recently finished (otherwise it'll overshoot to the next section)
+    function directionalSnap(timeline) {
+      return (value, st) => {
+        if (Date.now() - lastScrollTween < 1650) { // recently finished doing a tweened scroll (clicked link), so don't do any snapping.
+          return snapProgress;
+        }
+        let a = [],
+          labels = timeline.labels,
+          duration = timeline.duration(),
+          p, i;
+        for (p in labels) {
+          a.push(labels[p] / duration);
+        }
+        a.sort((a, b) => a - b);
+        if (st.direction > 0) {
+          for (i = 0; i < a.length; i++) {
+            if (a[i] >= value) {
+              return a[i];
+            }
+          }
+          return a.pop();
+        } else {
+          i = a.length;
+          while (i--) {
+            if (a[i] <= value) {
+              return a[i];
+            }
+          }
+        }
+        return a[0];
+      };
+    }
+
+
+  });
+
+  
+
+
+
+
+
+
+
+
+
+</script>
+
+</div><!--End slider timeline-slider-->
 
 {% schema %}
   {

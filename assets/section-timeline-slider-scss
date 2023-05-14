@@ -1,0 +1,60 @@
+.section-timeline {
+    display:block;
+    width:100%;
+    min-height:80vh;
+}
+
+.horiz-wrap {
+    position:relative;
+    display:flex;
+    flex-wrap:nowrap;
+
+    .section {
+
+        display:flex;
+        flex-shrink:0;
+        justify-content:center;
+        align-items:center;
+        width:100vw;
+        height:100vh;
+        &--large {
+          width: 100vw;
+          background-color: #e4002b;
+          color: white;
+        }
+      
+        &--small {
+          width: 46rem;
+        }
+      
+        &--dark {
+          color: white;
+          background-color: black;
+        }
+      }
+
+
+
+}
+
+
+nav.hor {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    display: flex;
+    transform: translateX(-50%);
+  }
+  nav.hor div {
+    flex-basis: 25%;
+    width: 80px;
+    text-align: center;
+    height: 50px;
+    font-size: 21px;
+    line-height: 50px;
+    cursor: pointer;
+    color: white;
+    z-index: 10;
+    user-select: none;
+    background-color: rgba(0,0,0,0.6);
+  }
