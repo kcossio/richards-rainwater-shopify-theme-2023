@@ -2387,7 +2387,32 @@ a {
     @include breakpoint(laptop) {
       padding:22px 58px;
     }
+
+    // On the Home page, do things
+    &.home-header {
+      color:$white;
+
+      .logo path.,
+      .logo rect {
+        fill:$white;
+      }
+
+    }
+  
+    // When Scrolling, do things
+    &.scrolling {
+      background:$white;
+      color:$dark_blue;
+
+      .logo path.,
+      .logo rect {
+        fill:$dark_blue;
+      }
+
+    }
   }
+
+  
 }
 .section-header.shopify-section-group-header-group {
   z-index: 3;
