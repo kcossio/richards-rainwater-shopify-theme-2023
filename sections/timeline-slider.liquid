@@ -91,7 +91,7 @@ let horizontalScroll = gsap.to(sections, {
 
 let getPosition = getScrollLookup(".h-sec", {start: "center center", containerAnimation: horizontalScroll});
 
-gsap.utils.toArray(".navigation div").forEach(el => {
+gsap.utils.toArray("nav.hor div").forEach(el => {
   el.addEventListener("click", e => {
     e.preventDefault();
     gsap.to(window, {
