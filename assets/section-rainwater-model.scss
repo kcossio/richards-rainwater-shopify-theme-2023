@@ -53,7 +53,7 @@ ul.model-blocks{
                 span {
                     display:flex;
                     position:absolute;
-                    top:0px;
+                    top:-6px;
                     left:-30px;
                     aspect-ratio: 62 / 87;
                     color:$white;
@@ -70,6 +70,7 @@ ul.model-blocks{
                     @include breakpoint(tablet) {
                         width:62px;
                         left:-80px;
+                        top:-20px;
                         font-size:39px;
                         padding-bottom:14px;
                     }

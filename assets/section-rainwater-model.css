@@ -222,7 +222,7 @@ ul.model-blocks li .model-block-content h3 {
 ul.model-blocks li .model-block-content h3 span {
   display: flex;
   position: absolute;
-  top: 0px;
+  top: -6px;
   left: -30px;
   aspect-ratio: 62/87;
   color: #ffffff;
@@ -240,6 +240,7 @@ ul.model-blocks li .model-block-content h3 span {
   ul.model-blocks li .model-block-content h3 span {
     width: 62px;
     left: -80px;
+    top: -20px;
     font-size: 39px;
     padding-bottom: 14px;
   }

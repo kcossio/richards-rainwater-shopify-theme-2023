@@ -28,17 +28,27 @@
   {% assign count = 0 %}
   {%- for block in section.blocks -%}
       {% assign count = count | plus: 1 %}
+      {% cycle 'odd', 'even' %}
+      {% if thecycle == 'odd' %}
+        {% assign img_animate = ' fade-in-left' %}
+        {% assign content_animate = 'fade-in-right' %}
+      {% else %}
+        {% assign img_animate = ' fade-in-right' %}
+        {% assign content_animate = ' fade-in-left' %}
+      {% endif %}
   {%- case block.type -%}
 
     {%- when 'model_blocks' -%}
       <li class="model-block model-block-{{ count }}">
       {%- assign image = block.settings.image -%}
+      
       {%- if image != blank -%}
         {%- assign img_class = 'block-hero block-hero-' | append: count -%}
+        {% assign img_class = img_class | append: img_animate %}
       {{ image | image_url: width: image.width | image_tag: class: img_class, loading: 'lazy' }}
       {%- endif -%}
 
-      <div class="model-block-content">
+      <div class="model-block-content {{ content_animate }}">
         <h3><span>{{ count }}</span>{{ block.settings.heading }}</h3>
         {{ block.settings.description }} 
       </div><!--End model-block-content-->
