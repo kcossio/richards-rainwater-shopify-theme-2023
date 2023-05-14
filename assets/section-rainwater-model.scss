@@ -1,0 +1,28 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+
+ul.model-blocks{
+    margin:0px;
+    padding:0px;
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+
+    li {
+        display:flex;
+        width:100%;
+        flex-wrap:wrap;
+
+        img {
+            width:100%;
+
+            @include breakpoint(tablet) {
+                width:50%;
+                order:1;
+            }
+        }
+        
+    }
+}

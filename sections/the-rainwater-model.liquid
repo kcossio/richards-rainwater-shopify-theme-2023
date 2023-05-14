@@ -1,13 +1,15 @@
-<section class="rainbow-banner">
-<div class="inner">
-  <h2 class="fade-in-left">{{ section.settings.heading }}</h2> 
-   
-    {{ section.settings.introduction }} 
-</div><!--End inner-->
+{{ 'section-rainwater-model.css' | asset_url | stylesheet_tag }}
 
-  <div class="bg-img bg-hero">
-    <img class="bg-parallax" src="{{ 'bg-rainbow.svg' | asset_url }}>" width="1923" height="2042" role="presentation" alt="rainbow" />
-  </div>
+<section class="rainbow-banner">
+  <div class="inner">
+    <h2 class="fade-in-left">{{ section.settings.heading }}</h2> 
+    
+      {{ section.settings.introduction }} 
+  </div><!--End inner-->
+
+    <div class="bg-img bg-hero">
+      <img class="bg-parallax" src="{{ 'bg-rainbow.svg' | asset_url }}>" width="1923" height="2042" role="presentation" alt="rainbow" />
+    </div>
 
 
     <div class="clouds clouds-wide bottom">
@@ -19,7 +21,7 @@
           <img class="cloud" src="{{ 'cloud-wide.svg' | asset_url }}>" width="1877" height="188" role="presentation" alt="cloud" />
         </div>
       </div>
-    </section><!--End rainbowbanner-->
+</section><!--End rainbowbanner-->
       
 
 <ul class="model-blocks">
@@ -36,15 +38,11 @@
       {%- endif -%}
 
       <div class="model-block-content">
+        <h3><span>{{ count }}</span>{{ block.settings.heading }}</h3>
+        {{ block.settings.description }} 
       </div><!--End model-block-content-->
-      {{ block.settings.heading }} 
 
-      {%- ########################################################################## 
-      # Label: Description
-      # Returns: a string or an empty object(if nothing has been entered)
-      # Filters: https://shopify.dev/api/liquid/objects#string 
-      ########################################################################## -%}
-      {{ block.settings.description }} 
+      
       </li><!--End model-block-->
   {%- endcase -%}
 {%- endfor -%}
