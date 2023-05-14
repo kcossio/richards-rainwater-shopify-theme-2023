@@ -25,9 +25,11 @@ section.pullquote {
             line-height:1.3em;
             border:0px;
             font-style:normal;
+            padding:0px 20px;
 
             @include breakpoint(tablet) {
                 font-size:52px;
+                padding:0px 40px;
             }
 
             &::before {

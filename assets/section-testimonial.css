@@ -195,10 +195,12 @@ section.pullquote .testimonial blockquote {
   line-height: 1.3em;
   border: 0px;
   font-style: normal;
+  padding: 0px 20px;
 }
 @media (min-width: 768px) {
   section.pullquote .testimonial blockquote {
     font-size: 52px;
+    padding: 0px 40px;
   }
 }
 section.pullquote .testimonial blockquote::before {
