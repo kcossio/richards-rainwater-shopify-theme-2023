@@ -4,57 +4,52 @@
 
 <div class="slider timeline-slider">
   {% assign count = 0 %}
-{%- for block in section.blocks -%}
-  {% assign count = count | plus: 1 %}
-  {%- case block.type -%}
+  {%- for block in section.blocks -%}
+    {% assign count = count | plus: 1 %}
+    {%- case block.type -%}
 
-    {%- when 'timeline_slide' -%}
-      
-      <div class="timeline-section">
+      {%- when 'timeline_slide' -%}
+        
+        
 
-        <span class="year">{{ block.settings.year }} </span>
+        
 
-        <div class="timeline-slide-content">
-          <h3>{{ block.settings.title }} </h3>
-          {{ block.settings.content }} 
-        </div><!--End timeline-slide-content-->
+    {%- endcase -%}
+  {%- endfor -%}
 
+<div class="timeline-scroller">
+  
+        
+  <div class="wrapper timeline-wrap d-flex horiz-scroll flex-nowrap">
+    {% assign count = 0 %}
+  {%- for block in section.blocks -%}
+      {% assign count = count | plus: 1 %}
+      {%- case block.type -%}
+    
+        {%- when 'timeline_slide' -%}
+      <section id="tl-section-{{ count }}" class="section timeline-block section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center one" data-year="{{ block.settings.year }}">
+        <h3>{{ block.settings.title }} </h3>
+        {{ block.settings.content }} 
         <div class="bg-img bg-hero">
           {%- assign hero_image = block.settings.hero_image -%}
           {%- if hero_image != blank -%}
           {{ hero_image | image_url: width: hero_image.width | image_tag: class: 'bg', loading: 'lazy' }}
           {%- endif -%}
         </div>
-
-      </div><!--End slide-->
-
-      
-
-  {%- endcase -%}
-{%- endfor -%}
-
-<div class="timeline-scroller">
-
-  <div class="wrapper timeline-wrap d-flex horiz-scroll flex-nowrap">
-    <section id="one" class="section timeline-block section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center one">
-      Part One
-    </section>
-    <section id="two" class="section timeline-block section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center two">
-      Part Two
-    </section>
-    <section id="three" class="section timeline-block section--large vh-100 flex-shrink-0 d-flex justify-content-center align-items-center three">
-      Part Three
-    </section>
-    <section id="four" class="section timeline-block section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center four">
-      Part Four
-    </section>
+      </section>
+    {%- endcase -%}
+  {%- endfor -%}
   </div>
 
   <nav class="hor">
-    <div class="hash" data-link="#one">one</div>
-    <div class="hash" data-link="#two">two</div>
-    <div class="hash" data-link="#three">three</div>
-    <div class="hash" data-link="#four">four</div>
+    {% assign count = 0 %}
+    {%- for block in section.blocks -%}
+      {% assign count = count | plus: 1 %}
+      {%- case block.type -%}
+        {%- when 'timeline_slide' -%}
+          <div class="hash" data-link="#tl-section-{{ count }}">{{ block.settings.year }}</div>
+      {%- endcase -%}
+    {%- endfor -%}
   </nav>
   
 </div><!--End timeline-scroller-->
