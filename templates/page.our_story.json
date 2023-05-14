@@ -177,15 +177,6 @@
         "call_to_action_button_label": "Learn more"
       }
     },
-    "42b4b5e7-aeba-47d4-a360-f05fa48d17e0": {
-      "type": "stores-logo-slider",
-      "settings": {
-        "heading": "Find Richard’s near you.",
-        "subheading": "Insert subheading for the slider here",
-        "call_to_action_button_link": "shopify:\/\/pages\/store-locator",
-        "call_to_action_button_label": "FIND YOUR NEAREST CLOUD"
-      }
-    },
     "timeline-slider": {
       "type": "timeline-slider",
       "blocks": {
@@ -259,6 +250,15 @@
         "heading": "Born in the Texas Sky"
       }
     },
+    "42b4b5e7-aeba-47d4-a360-f05fa48d17e0": {
+      "type": "stores-logo-slider",
+      "settings": {
+        "heading": "Find Richard’s near you.",
+        "subheading": "Insert subheading for the slider here",
+        "call_to_action_button_link": "shopify:\/\/pages\/store-locator",
+        "call_to_action_button_label": "FIND YOUR NEAREST CLOUD"
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -275,8 +275,8 @@
     "pullquote",
     "85f7042e-640c-4f3b-af6d-ecd56d2faa9e",
     "our-impact",
-    "42b4b5e7-aeba-47d4-a360-f05fa48d17e0",
     "timeline-slider",
+    "42b4b5e7-aeba-47d4-a360-f05fa48d17e0",
     "main"
   ]
 }
