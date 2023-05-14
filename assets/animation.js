@@ -458,8 +458,7 @@ var slickSliders = function(){
 
         var delayMin = 2;
         var delayMax = 6;
-
-
+        
         var durationMin = 0.5;
         var durationMax = 1.5;
 
@@ -491,7 +490,7 @@ var slickSliders = function(){
             
             gsap.set(star, {
             //xPercent: -50,
-            yPercent: 0,
+            yPercent: -50,
             scale: 0,
             x: random(vw),
             y: random(vh),
