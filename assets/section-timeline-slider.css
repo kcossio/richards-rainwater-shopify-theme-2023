@@ -174,6 +174,8 @@ EASING
   display: block;
   width: 100%;
   min-height: 80vh;
+  padding: 40px 0px;
+  backround: #f4f4f4;
 }
 
 .timeline-scroller {
@@ -188,34 +190,25 @@ EASING
 .timeline-wrap .section {
   display: flex !important;
   flex-shrink: 0 !important;
-  justify-content: center !important;
+  justify-content: flex-end !important;
   align-items: center !important;
   height: 100vh;
   max-width: none !important;
-}
-.timeline-wrap .section--large {
+  padding-right: 50px;
   width: 100vw;
-  background-color: #e4002b;
-  color: white;
 }
-.timeline-wrap .section--small {
-  width: 46rem;
+.timeline-wrap .section .timeline-block-content {
+  background: #000F44;
+  color: #ffffff;
+  width: 400px;
+  max-width: 100%;
+  padding: 40px;
 }
-.timeline-wrap .section--dark {
-  color: white;
-  background-color: black;
+.timeline-wrap .section .timeline-block-content h3 {
+  color: #ffffff;
 }
 .timeline-wrap .section.one {
   background: #0094DA;
-}
-.timeline-wrap .section.two {
-  background: #FFA500;
-}
-.timeline-wrap .section.three {
-  background: #000F44;
-}
-.timeline-wrap .section.four {
-  background: #DE0000;
 }
 
 nav.hor {

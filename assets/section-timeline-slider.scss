@@ -7,6 +7,8 @@
     display:block;
     width:100%;
     min-height:80vh;
+    padding:40px 0px;
+    backround:#f4f4f4;
 }
 
 .timeline-scroller {
@@ -21,37 +23,28 @@
 
         display:flex !important;
         flex-shrink:0 !important;
-        justify-content:center !important;
+        justify-content:flex-end !important;
         align-items:center !important;
         height:100vh;
         max-width:none !important;
+        padding-right:50px;
+        width:100vw;
 
-        &--large {
-          width: 100vw;
-          background-color: #e4002b;
-          color: white;
+        .timeline-block-content {
+          background:$dark-blue;
+          color:$white;
+          width:400px;
+          max-width:100%;
+          padding:40px;
+
+          h3 {
+            color:$white;
+          }
+          
         }
-      
-        &--small {
-          width: 46rem;
-        }
-      
-        &--dark {
-          color: white;
-          background-color: black;
-        }
+
         &.one {
           background:$light_blue;
-
-        }
-        &.two {
-          background:$orange;
-        }
-        &.three {
-          background:$dark_blue;
-        }
-        &.four {
-          background:$red;
         }
       }
 
