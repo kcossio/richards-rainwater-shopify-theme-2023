@@ -28,7 +28,7 @@
   {% assign count = 0 %}
   {%- for block in section.blocks -%}
       {% assign count = count | plus: 1 %}
-      {% cycle 'odd', 'even' %}
+      {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
       {% if thecycle == 'odd' %}
         {% assign img_animate = ' fade-in-left' %}
         {% assign content_animate = 'fade-in-right' %}
