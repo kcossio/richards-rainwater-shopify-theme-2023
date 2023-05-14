@@ -209,7 +209,7 @@ ul.model-blocks li .model-block-content {
 }
 @media (min-width: 768px) {
   ul.model-blocks li .model-block-content {
-    width: 50%;
+    width: 45%;
   }
 }
 ul.model-blocks li .model-block-content h3 {
@@ -251,9 +251,11 @@ ul.model-blocks li .model-block-content p {
 @media (min-width: 768px) {
   ul.model-blocks li:nth-child(even) img {
     order: 2;
+    width: 43.6%;
   }
   ul.model-blocks li:nth-child(even) .model-block-content {
     order: 1;
-    padding: 20px 5vw;
+    width: 48%;
+    padding: 20px 5vw 20px 15vw;
   }
 }

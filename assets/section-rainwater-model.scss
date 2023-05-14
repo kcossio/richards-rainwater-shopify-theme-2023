@@ -40,7 +40,7 @@ ul.model-blocks{
             padding:20px 5vw;
 
             @include breakpoint(tablet) {
-                width:50%;
+                width:45%;
             }
 
             h3 {
@@ -86,10 +86,12 @@ ul.model-blocks{
             @include breakpoint(tablet) {
                 img {
                     order:2;
+                    width:43.6%;
                 }
                 .model-block-content {
                     order:1;
-                    padding:20px 5vw;
+                    width:48%;
+                    padding:20px 5vw 20px 15vw;
                 }
             }
         }
