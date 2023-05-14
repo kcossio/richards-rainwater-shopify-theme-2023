@@ -20,6 +20,11 @@ section.pullquote {
             font-weight:bold;
             text-align:center;
             margin:0px;
+            color:$dark_blue;
+            padding:0px;
+            line-height:1.3em;
+            border:0px;
+            font-style:normal;
 
             @include breakpoint(tablet) {
                 font-size:52px;
@@ -30,16 +35,18 @@ section.pullquote {
                 color:$light_blue;
                 font-weight:900;
                 font-size:2.5em;
+                line-height:1em;
                 position:absolute;
                 top:0px;
                 left:0px;
-                transform:translate(-100%, 0);
+                transform:translate(-100%, 0%);
             }
 
             &::after {
                 content:"“";
                 color:$light_blue;
-                font-size:2.54em;
+                font-size:2.5em;
+                line-height:1em;
                 font-weight:900;
                 position:absolute;
                 bottom:0px;

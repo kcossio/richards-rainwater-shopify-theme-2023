@@ -190,6 +190,11 @@ section.pullquote .testimonial blockquote {
   font-weight: bold;
   text-align: center;
   margin: 0px;
+  color: #000F44;
+  padding: 0px;
+  line-height: 1.3em;
+  border: 0px;
+  font-style: normal;
 }
 @media (min-width: 768px) {
   section.pullquote .testimonial blockquote {
@@ -201,15 +206,17 @@ section.pullquote .testimonial blockquote::before {
   color: #0094DA;
   font-weight: 900;
   font-size: 2.5em;
+  line-height: 1em;
   position: absolute;
   top: 0px;
   left: 0px;
-  transform: translate(-100%, 0);
+  transform: translate(-100%, 0%);
 }
 section.pullquote .testimonial blockquote::after {
   content: "“";
   color: #0094DA;
-  font-size: 2.54em;
+  font-size: 2.5em;
+  line-height: 1em;
   font-weight: 900;
   position: absolute;
   bottom: 0px;
