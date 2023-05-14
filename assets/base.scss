@@ -2400,6 +2400,12 @@ a {
 
       .header__menu-item {
         color:$white;
+        background-image: linear-gradient(
+          to right,
+          $light_blue,
+          $light_blue 50%,
+          $white 50%
+        );
       }
 
     }
@@ -2417,6 +2423,12 @@ a {
 
       .header__menu-item {
         color:$dark_blue;
+        background-image: linear-gradient(
+          to right,
+          $light_blue,
+          $light_blue 50%,
+          $darkest_blue 50%
+        );
       }
 
     }

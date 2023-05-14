@@ -2505,6 +2505,7 @@ a svg {
 }
 .section-header .site-header.home-header .header__menu-item {
   color: #ffffff;
+  background-image: linear-gradient(to right, #0094DA, #0094DA 50%, #ffffff 50%);
 }
 .section-header .site-header.scrolling {
   top: 0px;
@@ -2517,6 +2518,7 @@ a svg {
 }
 .section-header .site-header.scrolling .header__menu-item {
   color: #000F44;
+  background-image: linear-gradient(to right, #0094DA, #0094DA 50%, #00142A 50%);
 }
 
 .section-header.shopify-section-group-header-group {
