@@ -218,6 +218,7 @@ EASING
 @media (min-width: 768px) {
   .timeline-wrap .section .timeline-block-content {
     width: 560px;
+    height: 486px;
   }
 }
 .timeline-wrap .section .timeline-block-content h3 {
