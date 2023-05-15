@@ -1701,5 +1701,6 @@ nav.water-product-buttons a.active {
   border-color: #0094DA;
 }
 nav.water-product-buttons a img {
+  height: auto;
   width: 25%;
 }

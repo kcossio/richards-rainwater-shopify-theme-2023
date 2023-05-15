@@ -1623,6 +1623,7 @@
     width:100%;
     display:flex;
 
+
     a {
       display:inline-flex;
       width:40%;
@@ -1630,11 +1631,13 @@
       border:1px solid #E3E3E3;
       border-radius:6px;
 
+  
       &.active {
         border-color:$light_blue;
       }
 
       img {
+        height:auto;
         width:25%;
       }
     }
