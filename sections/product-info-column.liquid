@@ -14,7 +14,7 @@
 
         {%- assign product_image = product.featured_image -%}
         {%- if product_image != blank -%}
-          <div class="produt-col-img fade-in">
+          <div class="produt-col-img single fade-in">
             {{ product_image | image_url: width: product_image.width | image_tag: class: 'product-info-col-img', loading: 'lazy' }}
           </div>
         {%- endif -%}
