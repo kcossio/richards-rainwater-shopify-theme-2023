@@ -53,7 +53,7 @@ section.home-bottles-copy {
 
         @include breakpoint(tablet) {
             order:2;
-            width:40%;
+            width:44%;
         }
 
         h2 {
@@ -61,6 +61,7 @@ section.home-bottles-copy {
             line-height:1.08em;
             margin:0px 0px 20px 0px;
             color:$dark_blue;
+            white-space: nowrap;
 
             @include breakpoint(tablet) {
                 font-size:75px;

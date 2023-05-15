@@ -219,7 +219,7 @@ section.home-bottles-copy {
 @media (min-width: 768px) {
   .home-bottles-intro .home-intro-right {
     order: 2;
-    width: 40%;
+    width: 44%;
   }
 }
 .home-bottles-intro .home-intro-right h2 {
@@ -227,6 +227,7 @@ section.home-bottles-copy {
   line-height: 1.08em;
   margin: 0px 0px 20px 0px;
   color: #000F44;
+  white-space: nowrap;
 }
 @media (min-width: 768px) {
   .home-bottles-intro .home-intro-right h2 {
