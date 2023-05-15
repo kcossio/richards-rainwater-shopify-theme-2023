@@ -8,7 +8,7 @@
 <div class="timeline-scroller">
   
         
-  <div class="wrapper timeline-wrap d-flex horiz-scroll flex-nowrap">
+  <div id="timeline-slider" class="wrapper timeline-wrap d-flex horiz-scroll flex-nowrap">
     {% assign count = 0 %}
   {%- for block in section.blocks -%}
       {% assign count = count | plus: 1 %}
@@ -53,7 +53,39 @@
 
   window.addEventListener("load", (event) => {
 
- 
+    jQuery('#timeline-slider').slick({
+      autoplay: false,
+      autoplaySpeed: 7000,        
+      pauseOnFocus: false,
+      pauseOnHover: false,
+    centerMode: true,
+    centerPadding: '0px',
+    slidesToShow: 1,
+    variableWidth: true,
+    arrows: true,
+    dots: true
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 1,
+          variableWidth: true 
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
 
   });
   
