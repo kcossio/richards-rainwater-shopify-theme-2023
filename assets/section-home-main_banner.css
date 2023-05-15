@@ -256,11 +256,6 @@ section.home-banner h2.home-banner-slogan-letters div span {
   display: inline-block;
   line-height: 0.9em;
   opacity: 0;
-  transform: translateY(-50%);
-  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
-}
-section.home-banner h2.home-banner-slogan-letters div span.onscreen {
-  transform: translate(0%, 0%);
 }
 section.home-banner h2.home-banner-slogan-letters div span small {
   display: block;
