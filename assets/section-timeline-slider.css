@@ -306,6 +306,12 @@ nav.hor a {
     font-size: 30px;
   }
 }
+nav.hor a:hover {
+  color: #0040A8;
+}
+nav.hor a:hover .timeline-drop .icon-drop {
+  fill: #0040A8;
+}
 nav.hor a.active:nth-child(1n) {
   color: #0040A8;
 }

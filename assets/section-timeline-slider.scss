@@ -142,6 +142,16 @@ nav.hor {
       font-size:30px;
     }
 
+    &:hover {
+      color:$medium_blue;
+
+        .timeline-drop {
+          .icon-drop {
+              fill:$medium_blue;
+          }
+        }
+    }
+
     &.active {
 
       &:nth-child(1n) {
