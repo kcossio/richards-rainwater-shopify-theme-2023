@@ -3442,6 +3442,6 @@ main:not(.main-home) {
 }
 @media (min-width: 768px) {
   main:not(.main-home) {
-    padding-top: 138px;
+    padding-top: 98px;
   }
 }
