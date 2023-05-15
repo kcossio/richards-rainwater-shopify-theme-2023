@@ -145,23 +145,23 @@
             "product_name_line_1": "Sparkling",
             "product_name_line_2": "rainwater",
             "call_to_action_button_link": "#",
-            "call_to_action_button_label": "",
+            "call_to_action_button_label": "Shop Now",
             "drop_message_1_of_3": "Lorem ipsum dolor. sit amet",
-            "drop_message_2_of_3": "",
-            "drop_message_3_of_3": ""
+            "drop_message_2_of_3": "Lorem ipsum dolor sit amet consequm",
+            "drop_message_3_of_3": "Liber null. Lorem ipsum dolor sit amet"
           }
         },
         "3989c2be-7c50-4665-a031-be79d3e972d2": {
           "type": "left_product_column",
           "settings": {
             "product_name": "richards-still-rainwater-16oz-24-pack",
-            "product_name_line_1": "heloooooo",
-            "product_name_line_2": "Work",
-            "call_to_action_button_link": "",
-            "call_to_action_button_label": "",
-            "drop_message_1_of_3": "",
-            "drop_message_2_of_3": "",
-            "drop_message_3_of_3": ""
+            "product_name_line_1": "Still",
+            "product_name_line_2": "rainwater",
+            "call_to_action_button_link": "#",
+            "call_to_action_button_label": "Shop Now",
+            "drop_message_1_of_3": "Liner null, lorem ipsum",
+            "drop_message_2_of_3": "Ipsum doilor sit amet",
+            "drop_message_3_of_3": "Sit amet, liber null"
           }
         }
       },
