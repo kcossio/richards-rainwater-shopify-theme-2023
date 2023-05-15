@@ -374,7 +374,7 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
 }
 .modal-nl-form::after {
   content: "";
-  display: block;
+  display: none;
   position: fixed;
   z-index: 1;
   width: 100vw;
