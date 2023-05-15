@@ -41,8 +41,8 @@
   position: relative;
 }
 .timeline-wrap {
-    display:flex !important;
-    flex-wrap:nowrap !important;
+    display:flex;
+    flex-wrap:wrap;
     position:relative;
     align-items:flex-end;
 
