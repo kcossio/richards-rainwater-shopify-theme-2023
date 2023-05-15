@@ -193,7 +193,7 @@
             "hero_image": "shopify:\/\/shop_images\/timeline-hero-1.jpg",
             "year": "1994",
             "title": "Richard catches his first drop",
-            "content": "Tired of well water that produced dirty dishes, dry hair, and cardboard-stiff jeans, Richard installed a rain collection system. He creates Tank Town to provide rainwater to his neighbors."
+            "content": "<p>Tired of well water that produced dirty dishes, dry hair, and cardboard-stiff jeans, Richard installed a rain collection system. He creates Tank Town to provide rainwater to his neighbors. <\/p>"
           }
         },
         "dd57e9a5-1532-4efd-bbc5-fb6b8ace02cf": {
@@ -202,7 +202,7 @@
             "hero_image": "shopify:\/\/shop_images\/timeline-hero-2.jpg",
             "year": "1998",
             "title": "Richard builds Tank Town",
-            "content": "Right outside of Austin, Texas, Tank Town is the birthplace of Richard’s Rainwater."
+            "content": "<p>Right outside of Austin, Texas, Tank Town is the birthplace of Richard’s Rainwater.<\/p>"
           }
         },
         "4e3ec816-d10d-4772-a646-b46122fc1609": {
@@ -211,7 +211,7 @@
             "hero_image": "shopify:\/\/shop_images\/timeline-hero-3.jpg",
             "year": "2002",
             "title": "Pioneering Bottled",
-            "content": "In 2002, Richard’s Rainwater becomes the first company in the nation to receive licensing to bottle and distribute rainwater."
+            "content": "<p>In 2002, Richard’s Rainwater becomes the first company in the nation to receive licensing to bottle and distribute rainwater.<\/p>"
           }
         },
         "19253d1c-d2e8-4ed1-bf1c-577ee4eed61b": {
@@ -219,7 +219,7 @@
           "settings": {
             "year": "2008",
             "title": "Developing Sparkling Rainwater",
-            "content": "Since rainwater is free of minerals and additives, carbonation was a challenge. Richard developed his own recipe using time, ice-cold temps, and pressure."
+            "content": "<p>Since rainwater is free of minerals and additives, carbonation was a challenge. Richard developed his own recipe using time, ice-cold temps, and pressure.<\/p>"
           }
         },
         "904fbffc-be82-44ab-865b-5062e4745d07": {
@@ -227,7 +227,7 @@
           "settings": {
             "year": "2019",
             "title": "Expanding with Lazy Magnolia",
-            "content": "Rainwater can be collected almost anywhere, making it the most sustainable water source. Richard’s partners with Lazy Magnolia Brewing in Mississippi to expand rain-catching operations."
+            "content": "<p>Rainwater can be collected almost anywhere, making it the most sustainable water source. Richard’s partners with Lazy Magnolia Brewing in Mississippi to expand rain-catching operations.<\/p>"
           }
         },
         "d3bb3bef-6b9d-4d83-8895-ce69842a63c5": {
@@ -235,7 +235,7 @@
           "settings": {
             "year": "2022",
             "title": "Growing with Faubourg",
-            "content": "Our newest partner, located in New Orleans, one of the top 3 Rainiest cities in the US. The World’s largest potable rainwater collection site."
+            "content": "<p>Our newest partner, located in New Orleans, one of the top 3 Rainiest cities in the US. The World’s largest potable rainwater collection site.<\/p>"
           }
         }
       },

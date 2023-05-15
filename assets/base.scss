@@ -2369,7 +2369,7 @@ a {
     padding:20px 28px;
     bottom: auto;
     height:98px;
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
     top: 30px;
@@ -2416,6 +2416,7 @@ a {
   
     // When Scrolling, do things
     &.scrolling {
+      position:fixed;
       top:0px;
       background:$white;
       color:$dark_blue;
