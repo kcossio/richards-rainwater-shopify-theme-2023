@@ -187,6 +187,7 @@ EASING
   display: flex !important;
   flex-wrap: nowrap !important;
   position: relative;
+  align-items: flex-end;
 }
 .timeline-wrap .section {
   display: flex !important;
@@ -202,6 +203,7 @@ EASING
   .timeline-wrap .section {
     align-items: center;
     height: 80vh;
+    margin-top: 10vh;
     /* switch each */
   }
   .timeline-wrap .section:nth-child(even) {
