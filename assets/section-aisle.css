@@ -170,6 +170,11 @@ EASING
 }
 
 */
+#aisle {
+  display: block;
+  width: 100%;
+}
+
 section.aisle {
   padding: 60px 0px;
 }

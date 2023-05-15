@@ -241,6 +241,7 @@ EASING
 .jump-to-aisle {
   display: flex;
   position: absolute;
+  z-index: 10;
   aspect-ratio: 372/223;
   width: 277px;
   height: auto;
