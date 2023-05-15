@@ -400,7 +400,7 @@
           ScrollTrigger.batch(".letters-row span", {
             toggleClass: "onscreen",
             onEnter: (elements, triggers) => {
-              gsap.to(elements, {opacity: 1, stagger: {amount: 0.15, from: "random" }, overwrite: true});
+              gsap.to(elements, {opacity: 1, stagger: {each: 0.15, from: "random" }, overwrite: true});
               //console.log(elements.length, "elements entered");
             }
           });
