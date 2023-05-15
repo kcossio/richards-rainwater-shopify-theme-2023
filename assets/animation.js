@@ -396,6 +396,14 @@
             onEnterBack: batch => gsap.to(batch, {opacity: 1, y: 0, stagger: 0.15, overwrite: true}),
             onLeaveBack: batch => gsap.set(batch, {opacity: 0, y: 25, overwrite: true})
           });
+
+          ScrollTrigger.batch(".letters-row span", {
+            toggleClass: "onscreen",
+            onEnter: (elements, triggers) => {
+              gsap.to(elements, {opacity: 1, stagger: {amount: 0.15, from: "random" }, overwrite: true});
+              //console.log(elements.length, "elements entered");
+            }
+          });
         
     }; // --------------------------------------------------------------- End Animation Setup Function -------------------------------------------------------------- //
 
