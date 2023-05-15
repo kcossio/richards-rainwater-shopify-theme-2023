@@ -234,7 +234,6 @@ section.home-banner {
     z-index:10;
     aspect-ratio: 876 / 360;
     width:315px;
-    pointer-events: none;
 
     &::after {
         content:"";
