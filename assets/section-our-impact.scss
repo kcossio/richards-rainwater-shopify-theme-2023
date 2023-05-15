@@ -62,6 +62,7 @@ section.our-impact {
 
                 @include breakpoint(tablet) {
                     font-size:45px;
+                    margin:28px 0px 40px 0px;
                 }
             }
             p {
@@ -69,10 +70,11 @@ section.our-impact {
                 margin:0px auto;
                 font-size:15px;
                 font-weight:500;
-                line-height:1.3em;
+                line-height:1.35em;
 
                 @include breakpoint(tablet) {
                     font-size:22px;
+                    width:90%;
                 }
             }
 

@@ -229,6 +229,7 @@ section.our-impact .impact-items .impact-item h3 {
 @media (min-width: 768px) {
   section.our-impact .impact-items .impact-item h3 {
     font-size: 45px;
+    margin: 28px 0px 40px 0px;
   }
 }
 section.our-impact .impact-items .impact-item p {
@@ -236,11 +237,12 @@ section.our-impact .impact-items .impact-item p {
   margin: 0px auto;
   font-size: 15px;
   font-weight: 500;
-  line-height: 1.3em;
+  line-height: 1.35em;
 }
 @media (min-width: 768px) {
   section.our-impact .impact-items .impact-item p {
     font-size: 22px;
+    width: 90%;
   }
 }
 section.our-impact .impact-items .impact-item img {
