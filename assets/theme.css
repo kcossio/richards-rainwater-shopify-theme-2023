@@ -983,8 +983,8 @@ EASING
 }
 
 .toggle-view {
-  padding: 14px 0px 14px 0px;
-  border-top: 1px solid #cbcdce;
+  padding: 14px 10px 14px 10px;
+  border-bottom: 2px solid #dddddd;
   margin: 0px;
 }
 .toggle-view:nth-child(odd) .toggle-header h3::before {
