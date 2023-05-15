@@ -144,9 +144,19 @@ section.aisle {
         margin:0px;
         font-family:$font_body;
 
-        ::placeholder {
+        &::-webkit-input-placeholder {
             color:#BDBDBD;
         }
+        &::-moz-placeholder {
+            color:#BDBDBD;
+        }
+        &::-ms-input-placeholder {
+            color:#BDBDBD;
+        }
+        &::placeholder {
+            color:#BDBDBD;
+        }
+        
     }
     .aisle-form-input-text-error {
         order:3;

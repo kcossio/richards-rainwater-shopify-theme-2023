@@ -300,10 +300,10 @@ section.aisle .aisle-terms p {
   margin: 0px;
   font-family: "TT Commons", sans-serif;
 }
-.aisle-form-container input ::-moz-placeholder {
+.aisle-form-container input::-moz-placeholder {
   color: #BDBDBD;
 }
-.aisle-form-container input ::placeholder {
+.aisle-form-container input::placeholder {
   color: #BDBDBD;
 }
 .aisle-form-container .aisle-form-input-text-error {
