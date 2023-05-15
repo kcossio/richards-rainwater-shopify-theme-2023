@@ -93,10 +93,10 @@
       jQuery('#timeline-slider').slick('slickGoTo', slideno - 1);
     });
 
-    jQuery('#timeline-slider').on('init', function(event, slick, currentSlide, nextSlide) {
-      console.log('slider initiated');
-      jQuery('a[data-slide]:first-child').addClass('active');
+    jQuery('.#timeline-slider').on('init', function(event, slick){
+        console.log("initialized")
     });
+    
     jQuery('#timeline-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
 
       var $slides = $('#timeline-slider').slick("getSlick").$slides;
