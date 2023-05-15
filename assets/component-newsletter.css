@@ -186,6 +186,7 @@ EASING
 .footer-newsletter .nl-cloud img {
   display: block;
   z-index: 2;
+  position: relative;
 }
 @media (min-width: 768px) {
   .footer-newsletter .nl-cloud {
