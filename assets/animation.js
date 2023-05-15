@@ -536,6 +536,28 @@ var slickSliders = function(){
         }
     }
 
+    // -------- Toggle List (FAQs) ----------------- //
+    
+    jQuery('.toggle-header').click(function () { // Enable the toggle view list for ul.toggle-view for toggle-able lists
+            
+        //ScrollTrigger.refresh();info-drop
+        
+        var container = jQuery(this).closest('.toggle-view');
+        var text = jQuery(this).closest('.toggle-view').children('div.panel');
+        
+        //If the text (i.e. the panel div) is hidden, then open it up. Otherwise hide the open text.
+        if (text.is(':hidden')) {
+            text.slideDown('200');
+            container.addClass('open');
+        } else {
+            text.slideUp('200');
+            container.removeClass('open');
+        }
+        
+        //ScrollTrigger.refresh();
+
+    });
+
 
 
 })( jQuery );
