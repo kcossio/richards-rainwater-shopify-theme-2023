@@ -94,8 +94,8 @@
     });
 
     jQuery('#timeline-slider').on('init', function(event, slick, currentSlide, nextSlide) {
+      console.log('slider initiated');
       jQuery('a[data-slide]:first-child').addClass('active');
-      console.log('slidser initiated');
     });
     jQuery('#timeline-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
 
