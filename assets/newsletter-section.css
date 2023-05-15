@@ -170,15 +170,20 @@ EASING
 }
 
 */
-.newsletter__wrapper .field__input {
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 0.6px;
-}
-@media (min-width: 768px) {
-  .newsletter__wrapper .field__input {
-    font-size: 22px;
+.newsletter__wrapper {
+  /*.field__input {
+      font-size:18px;
+      font-weight:600;
+      letter-spacing:.6px;
+
+
+      @include breakpoint(tablet) {
+          font-size:22px;
+
+
+      }
   }
+  */
 }
 .newsletter__wrapper.mobile_nl_wrapper {
   text-align: center;

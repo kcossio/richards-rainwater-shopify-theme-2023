@@ -226,3 +226,11 @@ section.home-banner {
     
     }
 }
+.modal-nl-form {
+    display:block;
+    position:absolute;
+    right:0px;
+    bottom:10%;
+    z-index:10;
+    aspect-ratio: 876 / 360;
+}
