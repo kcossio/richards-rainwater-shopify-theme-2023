@@ -83,13 +83,27 @@ section.section-versus {
     display:flex;
     flex-wrap:wrap;
     justify-content:space-between;
+    margin-top:30px;
+
+    @include breakpoint(tablet){
+        margin-top:80px;
+    }
 
     .versus-choice-column {
         width:45%;
         
         .vs-info-box {
             width:100%;
-            display:block;
+            display:none;
+            opacity:0;
+            transform:translate(0%, -50%);
+            transition:all .3s ease 0s;
+
+            &.active {
+                transform:translate(0%, 0%);
+                display:block;
+                opacity:1;
+            }
 
             img {
                 width:28%;
@@ -97,6 +111,10 @@ section.section-versus {
                 margin:0px auto;
             }
             @include breakpoint(tablet) {
+
+                &.active {
+                    display:flex;
+                }
 
                 display:flex;
                 flex-wrap:wrap;
