@@ -88,6 +88,7 @@
   window.addEventListener("load", (event) => {
 
     jQuery('select.vs-select').on('change', function() {
+      console.log('select has been changed');
       var show = '#' + jQuery(this).attr('data-href-open');
       var hide = '.' + jQuery(this).attr('data-href-close');
       jQuery(hide).removeClass('active');
