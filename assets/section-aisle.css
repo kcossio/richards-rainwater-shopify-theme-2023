@@ -173,27 +173,29 @@ EASING
 section.aisle {
   padding: 60px 0px;
 }
-section.aisle h2 {
+section.aisle .aisle-intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+section.aisle .aisle-intro h2 {
   color: #0094DA;
   text-align: center;
   font-size: 32px;
   font-weight: 900;
   line-height: 1em;
-  margin: 0px auto 12px 0px;
+  margin: 0px auto 18px 0px;
 }
 @media (min-width: 768px) {
-  section.aisle h2 {
+  section.aisle .aisle-intro h2 {
     font-size: 60px;
   }
 }
-section.aisle p {
+section.aisle .aisle-intro p {
   font-size: 24px;
   margin: 0px auto;
+  font-weight: 600;
   width: 872px;
   max-width: 100%;
-}
-section.aisle .aisle-intro {
-  text-align: center;
 }
 section.aisle .aisle-steps {
   display: flex;

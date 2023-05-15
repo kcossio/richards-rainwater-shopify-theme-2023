@@ -5,27 +5,32 @@
 section.aisle {
     padding:60px 0px;
 
-    h2 {
-        color:$light_blue;
-        text-align:center;
-        font-size:32px;
-        font-weight:900;
-        line-height:1em;
-        margin:0px auto 12px 0px;
+    
 
-        @include breakpoint(tablet) {
-            font-size:60px;
-        }
-    }
-    p {
-        font-size:24px;
-        margin:0px auto;
-        width:872px;
-        max-width:100%;
-    }
+    
 
     .aisle-intro {
         text-align:center;
+        margin-bottom:40px;
+        h2 {
+            color:$light_blue;
+            text-align:center;
+            font-size:32px;
+            font-weight:900;
+            line-height:1em;
+            margin:0px auto 18px 0px;
+    
+            @include breakpoint(tablet) {
+                font-size:60px;
+            }
+        }
+        p {
+            font-size:24px;
+            margin:0px auto;
+            font-weight:600;
+            width:872px;
+            max-width:100%;
+        }
     }
 
     .aisle-steps {
