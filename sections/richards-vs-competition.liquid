@@ -9,10 +9,12 @@
 
       <select name="vs-select" id="vs-rr">
         <option value="">Richard's® Drink</option>
+        {% assign count = 0 %}
         {%- for block in section.blocks -%}
+          {% assign count = count | plus: 1 %}
           {%- case block.type -%}
           {%- when 'richards_product' -%}
-            <option value="{{ block.settings.title }}">{{ block.settings.title }} </option>
+            <option value="{{ block.settings.title }}" data-href-open="vs-box-rr-{{ count }}">{{ block.settings.title }}</option>
           {%- endcase -%}
         {%- endfor -%}
       </select>
@@ -21,10 +23,12 @@
 
       <select name="vs-select" id="vs-rr">
         <option value="">Competitors</option>
+        {% assign count = 0 %}
         {%- for block in section.blocks -%}
+          {% assign count = count | plus: 1 %}
           {%- case block.type -%}
           {%- when 'competitors_product' -%}
-            <option value="{{ block.settings.title }}">{{ block.settings.title }} </option>
+            <option value="{{ block.settings.title }}" data-href-open="vs-box-c-{{ count }}">{{ block.settings.title }}</option>
           {%- endcase -%}
         {%- endfor -%}
       </select>
@@ -35,10 +39,12 @@
     <div class="versus-choices-blocks">
 
       <div class="versus-choice-column">
+        {% assign count = 0 %}
         {%- for block in section.blocks -%}
+          {% assign count = count | plus: 1 %}
           {%- case block.type -%}
           {%- when 'richards_product' -%}
-            <div class="vs-info-box" id="">
+            <div class="vs-info-box" id="vs-box-rr-{{ count }}">
               {%- assign product_image = block.settings.product_image -%}
               {%- if product_image != blank %}
                 {{ product_image | image_url: width: product_image.width | image_tag: class: 'vs-img', loading: 'lazy' }}
@@ -53,10 +59,12 @@
       </div>
 
       <div class="versus-choice-column">
+        {% assign count = 0 %}
         {%- for block in section.blocks -%}
+          {% assign count = count | plus: 1 %}
           {%- case block.type -%}
           {%- when 'competitors_product' -%}
-            <div class="vs-info-box" id="">
+            <div class="vs-info-box" id="vs-box-c-{{ count }}">
               {%- assign product_image = block.settings.product_image -%}
               {%- if product_image != blank %}
                 {{ product_image | image_url: width: product_image.width | image_tag: class: 'vs-img', loading: 'lazy' }}
