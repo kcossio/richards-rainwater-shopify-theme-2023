@@ -176,12 +176,19 @@
       "settings": {
         "title": "Frequently Asked Questions"
       }
+    },
+    "c8b0a5d8-fdc6-482d-bde3-65ecc91bcfc4": {
+      "type": "banner-hero-image",
+      "settings": {
+        "hero_image": "shopify:\/\/shop_images\/bg-hero-banner-water-product.jpg"
+      }
     }
   },
   "order": [
     "main",
     "related-products",
     "fc5233ff-444f-4aa3-8a40-95cec2ee3d1c",
-    "ae63e3f8-db42-4d58-a2ee-0e23d8124c18"
+    "ae63e3f8-db42-4d58-a2ee-0e23d8124c18",
+    "c8b0a5d8-fdc6-482d-bde3-65ecc91bcfc4"
   ]
 }
