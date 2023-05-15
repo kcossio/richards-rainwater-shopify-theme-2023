@@ -38,7 +38,7 @@
       {% assign count = count | plus: 1 %}
       {%- case block.type -%}
         {%- when 'timeline_slide' -%}
-          <a class="hash" data-slide="{{ count }}">
+          <a class="hash" data-year="{{ block.settings.year }}" data-slide="{{ count }}">
             <span>{% render 'drop', class: 'timeline-drop' %}</span>
             {{ block.settings.year }}
           </a>
@@ -58,39 +58,49 @@
       autoplaySpeed: 7000,        
       pauseOnFocus: false,
       pauseOnHover: false,
-    centerMode: true,
-    centerPadding: '0px',
-    slidesToShow: 1,
-    variableWidth: true,
-    arrows: true,
-    dots: true,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: true,
-          centerMode: true,
-          centerPadding: '0px',
-          slidesToShow: 1,
-          variableWidth: true 
+      centerMode: true,
+      centerPadding: '0px',
+      slidesToShow: 1,
+      variableWidth: true,
+      arrows: true,
+      dots: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: true,
+            centerMode: true,
+            centerPadding: '0px',
+            slidesToShow: 1,
+            variableWidth: true 
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: true,
+            centerMode: true,
+            centerPadding: '0px',
+            slidesToShow: 1
+          }
         }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: true,
-          centerMode: true,
-          centerPadding: '0px',
-          slidesToShow: 1
-        }
-      }
-    ]
-  });
+      ]
+    });
 
-  jQuery('a[data-slide]').click(function(e) {
-    e.preventDefault();
-    var slideno = jQuery(this).data('slide');
-    jQuery('#timeline-slider').slick('slickGoTo', slideno - 1);
+    jQuery('a[data-slide]').click(function(e) {
+      e.preventDefault();
+      var slideno = jQuery(this).data('slide');
+      jQuery('#timeline-slider').slick('slickGoTo', slideno - 1);
+    });
+
+    jQuery('#timeline-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+
+      var $slides = $('#timeline-slider').slick("getSlick").$slides;
+      var year = $slides.eq( currentSlide ).data("year");
+      console.log('We have entered year:' + year);
+      jQuery('a[data-slide]').removeClass('active');
+      jQuery('a[data-year=' + year +']').addClass('active');
+  
   });
 
   });

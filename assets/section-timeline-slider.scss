@@ -135,6 +135,7 @@ nav.hor {
     transform:all .3s ease 0s;
     height:100%;
     text-decoration:none;
+    pointer-events:all;
 
     @include breakpoint(tablet) {
       font-size:30px;
