@@ -98,6 +98,12 @@ section.section-versus {
             opacity:0;
             transform:translate(0%, -50%);
             transition:all .3s ease 0s;
+            
+            &:first-child {
+                opacity:1;
+                transform:translate(0%, 0%);
+
+            }
 
             &.active {
                 transform:translate(0%, 0%);
