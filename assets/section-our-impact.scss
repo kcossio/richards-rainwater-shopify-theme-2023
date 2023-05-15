@@ -27,13 +27,14 @@ section.our-impact {
         background:url('bg-rainbow-divider.svg') left center no-repeat;
         background-size:100% auto;
 
-        @include breakpoint(tablet) {
-            height:25px;
-        }
+            @include breakpoint(tablet) {
+                height:25px;
+            }
         }
 
         @include breakpoint(tablet) {
         margin-bottom:20px;
+        font-size:82px;
         }
     }
 

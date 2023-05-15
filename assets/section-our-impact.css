@@ -200,6 +200,7 @@ section.our-impact h2::after {
 @media (min-width: 768px) {
   section.our-impact h2 {
     margin-bottom: 20px;
+    font-size: 82px;
   }
 }
 section.our-impact .impact-items {
