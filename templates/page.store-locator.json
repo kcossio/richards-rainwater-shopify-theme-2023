@@ -14,6 +14,15 @@
         "destini_intro_text": "<p><em>Enter your zip code to find Richard’s Rainwater in <\/em><em><strong>over 2,000 grocery stores<\/strong><\/em><em>!<br\/><br\/><\/em><em><strong>Prefer Grocery Delivery? <\/strong><\/em><em>Click the “Buy Online” button.<\/em><\/p>"
       }
     },
+    "96963313-bc83-4314-b735-f8516c3d951f": {
+      "type": "stores-logo-slider",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "call_to_action_button_link": "",
+        "call_to_action_button_label": ""
+      }
+    },
     "aisle": {
       "type": "aisle_integration",
       "blocks": {
@@ -48,21 +57,12 @@
         "aisle_intro_text": "<p>Enter your phone number, purchase a single bottle or can of Richard’s at your local retailer and we’ll Venmo or Paypal you back for the cost of one.<\/p>",
         "fine_print": "<p>I agree to receive recurring automated marketing text messages (e.g. cart reminders) at the phone number provided. Consent is not a condition to purchase. Msg & data rates may apply. Msg frequency varies. Reply HELP for help and STOP to cancel. View our <a href=\"\/policies\/terms-of-service\" target=\"_blank\" title=\"Terms of Service\">Terms of Service<\/a> and <a href=\"\/policies\/privacy-policy\" target=\"_blank\" title=\"Privacy Policy\">Privacy Policy<\/a>.<\/p>"
       }
-    },
-    "96963313-bc83-4314-b735-f8516c3d951f": {
-      "type": "stores-logo-slider",
-      "settings": {
-        "heading": "",
-        "subheading": "",
-        "call_to_action_button_link": "",
-        "call_to_action_button_label": ""
-      }
     }
   },
   "order": [
     "main",
     "destini",
-    "aisle",
-    "96963313-bc83-4314-b735-f8516c3d951f"
+    "96963313-bc83-4314-b735-f8516c3d951f",
+    "aisle"
   ]
 }
