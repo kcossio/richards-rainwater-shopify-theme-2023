@@ -35,7 +35,7 @@
       {% assign count = count | plus: 1 %}
       {%- case block.type -%}
         {%- when 'step' -%}
-          <div class="aisle-step">
+          <div class="aisle-step fade-in">
             <span class="step-number">{{ count }}</span>
           {{ block.settings.text }} 
           </div><!-- End aisle-step-->  
