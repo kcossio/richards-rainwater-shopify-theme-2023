@@ -39,15 +39,27 @@ section.aisle {
             text-align:center;
             margin:0px 0px 30px 0px;
 
+            &:nth-child(2) {
+                span{
+                    background:$orange;
+                }
+            }
+            &:nth-child(3) {
+                span{
+                    background:$red;
+                }
+            }
+
 
             span {
                 background:$pink;
 
-                display:inline-flex;
+                display:flex;
                 flex-wrap: wrap;
                 align-items:center;
                 justify-content:center;
                 aspect-ratio:1 / 1;
+                border-radius:50%;
                 width:50px;
                 font-size:30px;
                 color:$white;
@@ -58,12 +70,7 @@ section.aisle {
                 @include breakpoint(tablet) {
                     font-size:30px;
                 }
-                &:nth-child(2) {
-                    background:$orange;
-                }
-                &:nth-child(2) {
-                    background:$red;
-                }
+                
             }
             p {
                 width:100%;
@@ -72,6 +79,7 @@ section.aisle {
                 font-size:15px;
                 font-weight:600;
                 line-height:1.6em;
+                color:$dark_blue;
 
                 @include breakpoint(tablet) {
                     font-size:22px;
