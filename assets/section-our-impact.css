@@ -170,6 +170,14 @@ EASING
 }
 
 */
+section.our-impact {
+  margin: 60px 0px;
+}
+@media (min-width: 768px) {
+  section.our-impact {
+    margin: 134px 0px 110px 0px;
+  }
+}
 section.our-impact .inner {
   text-align: center;
 }
