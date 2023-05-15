@@ -1,0 +1,15 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+.narrow-text-section {
+    margin:64px 0px;
+    font-size:24px;
+
+    p {
+        font-weight:700;
+        @include breakpoint(tablet) {
+            font-size:30px;
+        }
+    }
+}

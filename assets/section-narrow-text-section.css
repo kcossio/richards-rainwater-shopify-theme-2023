@@ -170,73 +170,15 @@ EASING
 }
 
 */
-section.home-bottles-copy {
-  padding: 64px 0px 87.5vw 0px;
+.narrow-text-section {
+  margin: 64px 0px;
+  font-size: 24px;
+}
+.narrow-text-section p {
+  font-weight: 700;
 }
 @media (min-width: 768px) {
-  section.home-bottles-copy {
-    padding: 140px 0px 184px 0px;
+  .narrow-text-section p {
+    font-size: 30px;
   }
-}
-
-.home-bottles-intro {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  position: relative;
-}
-.home-bottles-intro .home-intro-left {
-  width: 100%;
-  order: 2;
-  position: relative;
-}
-@media (min-width: 768px) {
-  .home-bottles-intro .home-intro-left {
-    order: 1;
-    width: 50%;
-  }
-}
-.home-bottles-intro .home-intro-left img.float {
-  height: auto;
-  width: auto;
-}
-@media (min-width: 768px) {
-  .home-bottles-intro .home-intro-left img.float.float-1 {
-    width: 37%;
-    left: 0%;
-  }
-}
-@media (min-width: 768px) {
-  .home-bottles-intro .home-intro-left img.float.float-2 {
-    width: 53.25%;
-    right: 0%;
-  }
-}
-.home-bottles-intro .home-intro-right {
-  width: 100%;
-  order: 1;
-}
-@media (min-width: 768px) {
-  .home-bottles-intro .home-intro-right {
-    order: 2;
-    width: 44%;
-  }
-}
-.home-bottles-intro .home-intro-right h2 {
-  font-size: 50px;
-  line-height: 1.08em;
-  margin: 0px 0px 20px 0px;
-  color: #000F44;
-  white-space: nowrap;
-  letter-spacing: 2px;
-}
-@media (min-width: 768px) {
-  .home-bottles-intro .home-intro-right h2 {
-    font-size: 75px;
-  }
-}
-.home-bottles-intro .home-intro-right span.subhead {
-  color: #FFA500;
-  font-weight: 900;
-  font-size: 37.5px;
 }
