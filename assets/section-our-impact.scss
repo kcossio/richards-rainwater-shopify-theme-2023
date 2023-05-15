@@ -36,10 +36,20 @@ section.our-impact {
         display:flex;
         flex-wrap:wrap;
         justify-content:space-between;
+        margin:40px 0px 40px 0px;
+
+        @include breakpoint(tablet) {
+            margin:80px 0px 100px 0px;
+        }
 
         .impact-item {
             width:100%;
             text-align:center;
+            margin:0px 0px 30px 0px;
+
+            img {
+                height:auto;
+            }
 
             @include breakpoint(tablet) {
                 width:30%;

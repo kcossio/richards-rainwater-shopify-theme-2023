@@ -202,10 +202,20 @@ section.our-impact .impact-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 40px 0px 40px 0px;
+}
+@media (min-width: 768px) {
+  section.our-impact .impact-items {
+    margin: 80px 0px 100px 0px;
+  }
 }
 section.our-impact .impact-items .impact-item {
   width: 100%;
   text-align: center;
+  margin: 0px 0px 30px 0px;
+}
+section.our-impact .impact-items .impact-item img {
+  height: auto;
 }
 @media (min-width: 768px) {
   section.our-impact .impact-items .impact-item {
