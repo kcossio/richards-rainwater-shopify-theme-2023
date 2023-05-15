@@ -194,10 +194,11 @@ section.section-versus span.vs-drop {
   aspect-ratio: 62/87;
   color: #ffffff;
   font-weight: 900;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
-  padding-bottom: 4px;
+  padding-top: 4px;
   line-height: 1em;
+  letter-spacing: 2px;
   background: url("icon-drop-med-blue.svg");
   background-size: 100% 100%;
   width: 11px;
@@ -206,7 +207,8 @@ section.section-versus span.vs-drop {
 @media (min-width: 768px) {
   section.section-versus span.vs-drop {
     width: 62px;
-    font-size: 39px;
+    font-size: 30px;
+    padding-top: 18px;
   }
 }
 section.section-versus select {
