@@ -3416,3 +3416,16 @@ details-disclosure > details {
   padding:0px 40px;
   max-width:100%;
 }
+
+// -------- Main page  wrapper ------- //
+
+.main {
+
+  &:not(.main-home) {
+    padding-top:40px;
+
+    @include breakpoint(tablet) {
+      padding-top:138px;
+    }
+  }
+}
