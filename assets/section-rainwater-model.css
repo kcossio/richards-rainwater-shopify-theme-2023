@@ -372,7 +372,8 @@ section.rainwater-model-banner h2:after {
   width: 0px;
   height: 3px;
   transform: translateX(-50%);
-  transition: all 0.3s ease 0.3s;
+  transition: all 0.3s ease 0.4s;
+  position: absolute;
 }
 @media (min-width: 768px) {
   section.rainwater-model-banner h2:after {
