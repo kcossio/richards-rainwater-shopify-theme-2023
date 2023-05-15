@@ -248,7 +248,8 @@ nav.hor.onscreen {
   pointer-events: auto;
   transform: translate(0%, 0%);
 }
-nav.hor nav.hor div {
+
+nav.hor div {
   flex-basis: 25%;
   width: 80px;
   text-align: center;
@@ -265,10 +266,10 @@ nav.hor nav.hor div {
   transform: all 0.3s ease 0s;
 }
 @media (min-width: 768px) {
-  nav.hor nav.hor div {
+  nav.hor div {
     font-size: 30px;
   }
 }
-nav.hor nav.hor div.active {
+nav.hor div.active {
   color: #00142A;
 }
