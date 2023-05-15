@@ -952,10 +952,10 @@ EASING
 .drop.light .plus {
   fill: #0040A8;
 }
-.drop.light .icon-drop {
+.drop.medium .icon-drop {
   fill: #0040A8;
 }
-.drop.light .plus {
+.drop.medium .plus {
   fill: #0094DA;
 }
 .drop.timeline-drop .icon-drop {
