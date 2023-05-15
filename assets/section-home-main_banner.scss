@@ -90,6 +90,8 @@ section.home-banner {
             span {
                 display:inline-block;
                 line-height:.9em;
+                opacity:0;
+                transform:translateY(-50%);
 
                 small {
                     display:block;
