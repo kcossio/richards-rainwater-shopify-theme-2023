@@ -170,6 +170,15 @@ EASING
 }
 
 */
+.timeline-h2-wrap {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.timeline-h2-wrap.onscreen {
+  position: fixed;
+}
+
 .section-timeline {
   display: block;
   width: 100vw;
@@ -177,11 +186,13 @@ EASING
   padding: 40px 0px;
   background: #f4f4f4;
   overflow: hidden;
+  position: relative;
 }
 .section-timeline h2.timeline-heading {
   margin: 0px;
   line-height: 1em;
   font-size: 35px;
+  position: absolute;
 }
 @media (min-width: 768px) {
   .section-timeline h2.timeline-heading {
@@ -198,6 +209,12 @@ EASING
   flex-wrap: nowrap !important;
   position: relative;
   align-items: flex-end;
+  padding-top: 10vh;
+}
+@media (min-width: 768px) {
+  .timeline-wrap {
+    padding-top: 10vh;
+  }
 }
 .timeline-wrap .section {
   display: flex !important;

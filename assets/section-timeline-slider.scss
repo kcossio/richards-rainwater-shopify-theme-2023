@@ -2,7 +2,15 @@
 @import "mixins";
 @import "fonts";
 
+.timeline-h2-wrap {
+  position:absolute;
+  left:0px;
+  top:0px;
 
+  &.onscreen {
+    position:fixed;
+  }
+}
 .section-timeline {
     display:block;
     width:100vw;
@@ -10,17 +18,21 @@
     padding:40px 0px;
     background:#f4f4f4;
     overflow:hidden;
+    position:relative;
 
     h2.timeline-heading {
       margin:0px;
       line-height:1em;
       font-size:35px;
+      position:absolute;
+
+      
       
       @include breakpoint(tablet) {
         font-size:82px;
       }
     }
-    
+
 }
 
 .timeline-scroller {
@@ -32,7 +44,11 @@
     position:relative;
     align-items:flex-end;
 
-    
+    padding-top:10vh;
+
+    @include breakpoint(tablet) {
+      padding-top:10vh;
+    }
 
     .section {
 

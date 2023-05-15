@@ -85,9 +85,11 @@ let horizontalScroll = gsap.to(sections, {
 });
 function enterTimeline() {
   jQuery('nav.hor').addClass('onscreen');
+  jQuery('.timeline-h2-wrap').addClass('onscreen');
 }
 function exitTimeline() {
   jQuery('nav.hor').removeClass('onscreen');
+  jQuery('.timeline-h2-wrap').removeClass('onscreen');
 }
 
 let getPosition = getScrollLookup(".timeline-block", {start: "center center", containerAnimation: horizontalScroll});
