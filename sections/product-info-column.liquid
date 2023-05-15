@@ -8,6 +8,7 @@
 
 
 {%- for block in section.blocks -%}
+  {%- if block.settings.product_name == product.handle -%}
   {%- case block.type -%}
 
     {%- when 'left_product_column' -%}
@@ -56,6 +57,7 @@
 
 
   {%- endcase -%}
+{%- endif -%}
 {%- endfor -%}
 
 <script>
@@ -84,6 +86,12 @@
   "max_blocks": 2,
   "tag": "section",
   "settings": [
+    {
+      "type": "product",
+      "id": "product_name",
+      "label": "Product",
+      "info": "Choose a product to add these related products to."
+    },
     {
       "type": "text",
       "id": "heading",
