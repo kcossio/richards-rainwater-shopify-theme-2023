@@ -1,0 +1,55 @@
+{{ 'section-rainbow-text-banner.css' | asset_url | stylesheet_tag }}
+
+<div class="inner">
+<h2 class="fade-in-left">{{ section.settings.text }}</h2> 
+</div><!--End inner-->
+
+<div class="bg-img bg-hero">
+    {%- assign hero_image = section.settings.hero_image -%}
+    {%- if hero_image != blank -%}
+    {{ hero_image | image_url: width: hero_image.width | image_tag: class: 'bg bg-parallax', loading: 'lazy' }}
+    {%- endif -%}
+</div>
+
+
+  <div class="clouds clouds-wide bottom">
+    <div class="scroll-parent">
+      <div class="scroll-element slow primary">
+        <img class="cloud" src="{{ 'cloud-wide-reversed.svg' | asset_url }}>" width="1877" height="188" role="presentation" alt="cloud" />
+      </div>
+      <div class="scroll-element slow secondary">
+        <img class="cloud" src="{{ 'cloud-wide-reversed.svg' | asset_url }}>" width="1877" height="188" role="presentation" alt="cloud" />
+      </div>
+    </div>
+
+
+{% schema %}
+  {
+  "name": "Hero Image Banner",
+  "class": "rainbow-banner hero-banner fade-in",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Add a hero banner to the page"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero Image",
+      "info": "Upload a large background image for this section"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Rainbow Text Banner"
+    }
+  ]
+}  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
