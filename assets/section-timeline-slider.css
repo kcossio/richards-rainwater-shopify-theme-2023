@@ -189,6 +189,16 @@ EASING
   position: relative;
   align-items: flex-end;
 }
+.timeline-wrap h2.timeline-heading {
+  margin: 0px;
+  line-height: 1em;
+  font-size: 35px;
+}
+@media (min-width: 768px) {
+  .timeline-wrap h2.timeline-heading {
+    font-size: 82px;
+  }
+}
 .timeline-wrap .section {
   display: flex !important;
   flex-shrink: 0 !important;
@@ -203,7 +213,6 @@ EASING
   .timeline-wrap .section {
     align-items: center;
     height: 75vh;
-    margin-top: 10vh;
     /* switch each */
   }
   .timeline-wrap .section:nth-child(even) {

@@ -21,6 +21,16 @@
     position:relative;
     align-items:flex-end;
 
+    h2.timeline-heading {
+      margin:0px;
+      line-height:1em;
+      font-size:35px;
+      
+      @include breakpoint(tablet) {
+        font-size:82px;
+      }
+    }
+
     .section {
 
         display:flex !important;
@@ -35,7 +45,7 @@
         @include breakpoint(tablet) {
           align-items:center;
           height:75vh;
-          margin-top:10vh;
+          //margin-top:10vh;
 
           /* switch each */
           &:nth-child(even) {
