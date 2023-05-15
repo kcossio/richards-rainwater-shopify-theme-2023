@@ -319,6 +319,7 @@ nav.hor div {
      -moz-user-select: none;
           user-select: none;
   transform: all 0.3s ease 0s;
+  height: 100%;
 }
 @media (min-width: 768px) {
   nav.hor div {
