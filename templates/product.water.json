@@ -84,10 +84,61 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "ae63e3f8-db42-4d58-a2ee-0e23d8124c18": {
+      "type": "product-faqs",
+      "blocks": {
+        "95b2714b-e927-4bf6-bde9-11dae3976cb5": {
+          "type": "questionanswer",
+          "settings": {
+            "question": "How do you clean and filter your  rainwater?",
+            "answer": "<p>By collecting & bottling the rain before it even hits the ground, we eliminate exposure to pollutants usually found in groundwater.<\/p><p>After the rain is collected, the water flows through a no waste and no chemical proprietary filtration process.<\/p><p>This means we don't need to add chlorine or chemicals used by other water companies. <strong>Our water has only one ingredient: Rain.<\/strong><\/p>"
+          }
+        },
+        "9fa445dc-4fc9-4b6e-a592-71f4eda170e5": {
+          "type": "questionanswer",
+          "settings": {
+            "question": "How do you renew\/recycle?",
+            "answer": "<p>The way the world consumes bottled water isn’t sustainable. At Richard's Rainwater we know that our work doesn't stop at eliminating single-use plastic, there’s a greater problem.<\/p><p>The most sustainable solution isn’t the package the water comes in, it’s the water itself. Water is one of the scarcest resources on the planet. If we’re not focused on building a global ecosystem for renewable water sources, it won’t matter what container it comes in.<\/p><p>We care so deeply about rainwater because it’s the only way <strong>we see a path forward to clean, renewable water for generations to come.<\/strong><\/p>"
+          }
+        },
+        "ac208ee4-2f36-442f-a0b3-81685985d5fe": {
+          "type": "questionanswer",
+          "settings": {
+            "question": "What about PFAs and chemicals?",
+            "answer": "<p>Richard's Rainwater is naturally chemical-free. No chlorine, PFAS, BPA or other compounds.<br\/><br\/><strong>What are PFAS?<\/strong>Man made chemicals found in other water sources that don't break down in your body over time, hence the nickname \"forever chemicals\".<\/p>"
+          }
+        },
+        "81aa3f35-b52d-4009-8a48-fd0bea782ffc": {
+          "type": "questionanswer",
+          "settings": {
+            "question": "How do you ship?",
+            "answer": "<ul><li>We try our best to get orders out within 48 hours.<\/li><li>Delivery speed depends on your zip code. You will see the options available to you during checkout.<\/li><li>You will receive tracking information and shipment updates via SMS and\/or e-mail.<\/li><li>Larger order sizes might arrive in multiple deliveries.<\/li><\/ul>"
+          }
+        },
+        "5d83b5ff-8f90-4f6b-9b5a-0f0a76d84ca6": {
+          "type": "questionanswer",
+          "settings": {
+            "question": "What is still rainwater?",
+            "answer": "<p>This is our still, non-carbonated pure rainwater. We do also have carbonated rainwater.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "95b2714b-e927-4bf6-bde9-11dae3976cb5",
+        "9fa445dc-4fc9-4b6e-a592-71f4eda170e5",
+        "ac208ee4-2f36-442f-a0b3-81685985d5fe",
+        "81aa3f35-b52d-4009-8a48-fd0bea782ffc",
+        "5d83b5ff-8f90-4f6b-9b5a-0f0a76d84ca6"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions"
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "ae63e3f8-db42-4d58-a2ee-0e23d8124c18"
   ]
 }
