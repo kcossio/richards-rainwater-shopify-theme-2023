@@ -85,6 +85,45 @@
         "padding_bottom": 28
       }
     },
+    "fc5233ff-444f-4aa3-8a40-95cec2ee3d1c": {
+      "type": "product-info-column",
+      "blocks": {
+        "0f5a9a14-0cbf-42da-8563-912c79d94bc7": {
+          "type": "left_product_column",
+          "settings": {
+            "product_name": "richards-sparkling-rainwater-24-pk-bottles",
+            "product_name_line_1": "Sparkling",
+            "product_name_line_2": "rainwater",
+            "call_to_action_button_link": "#",
+            "call_to_action_button_label": "Shop Now",
+            "drop_message_1_of_3": "Lorem ipsum dolor. sit amet",
+            "drop_message_2_of_3": "Lorem ipsum dolor sit amet consequm",
+            "drop_message_3_of_3": "Liber null. Lorem ipsum dolor sit amet"
+          }
+        },
+        "3989c2be-7c50-4665-a031-be79d3e972d2": {
+          "type": "left_product_column",
+          "settings": {
+            "product_name": "richards-still-rainwater-16oz-24-pack",
+            "product_name_line_1": "Still",
+            "product_name_line_2": "rainwater",
+            "call_to_action_button_link": "#",
+            "call_to_action_button_label": "Shop Now",
+            "drop_message_1_of_3": "Liner null, lorem ipsum",
+            "drop_message_2_of_3": "Ipsum doilor sit amet",
+            "drop_message_3_of_3": "Sit amet, liber null"
+          }
+        }
+      },
+      "block_order": [
+        "0f5a9a14-0cbf-42da-8563-912c79d94bc7",
+        "3989c2be-7c50-4665-a031-be79d3e972d2"
+      ],
+      "settings": {
+        "heading": "Learn What Rainwater Can Do",
+        "subheading": "CLICK THE DROPS TO DISCOVER THE BENEFITS OF RAINWATER"
+      }
+    },
     "ae63e3f8-db42-4d58-a2ee-0e23d8124c18": {
       "type": "product-faqs",
       "blocks": {
@@ -134,51 +173,12 @@
       "settings": {
         "title": "Frequently Asked Questions"
       }
-    },
-    "fc5233ff-444f-4aa3-8a40-95cec2ee3d1c": {
-      "type": "product-info-column",
-      "blocks": {
-        "0f5a9a14-0cbf-42da-8563-912c79d94bc7": {
-          "type": "left_product_column",
-          "settings": {
-            "product_name": "richards-sparkling-rainwater-24-pk-bottles",
-            "product_name_line_1": "Sparkling",
-            "product_name_line_2": "rainwater",
-            "call_to_action_button_link": "#",
-            "call_to_action_button_label": "Shop Now",
-            "drop_message_1_of_3": "Lorem ipsum dolor. sit amet",
-            "drop_message_2_of_3": "Lorem ipsum dolor sit amet consequm",
-            "drop_message_3_of_3": "Liber null. Lorem ipsum dolor sit amet"
-          }
-        },
-        "3989c2be-7c50-4665-a031-be79d3e972d2": {
-          "type": "left_product_column",
-          "settings": {
-            "product_name": "richards-still-rainwater-16oz-24-pack",
-            "product_name_line_1": "Still",
-            "product_name_line_2": "rainwater",
-            "call_to_action_button_link": "#",
-            "call_to_action_button_label": "Shop Now",
-            "drop_message_1_of_3": "Liner null, lorem ipsum",
-            "drop_message_2_of_3": "Ipsum doilor sit amet",
-            "drop_message_3_of_3": "Sit amet, liber null"
-          }
-        }
-      },
-      "block_order": [
-        "0f5a9a14-0cbf-42da-8563-912c79d94bc7",
-        "3989c2be-7c50-4665-a031-be79d3e972d2"
-      ],
-      "settings": {
-        "heading": "Learn What Rainwater Can Do",
-        "subheading": "CLICK THE DROPS TO DISCOVER THE BENEFITS OF RAINWATER"
-      }
     }
   },
   "order": [
     "main",
     "related-products",
-    "ae63e3f8-db42-4d58-a2ee-0e23d8124c18",
-    "fc5233ff-444f-4aa3-8a40-95cec2ee3d1c"
+    "fc5233ff-444f-4aa3-8a40-95cec2ee3d1c",
+    "ae63e3f8-db42-4d58-a2ee-0e23d8124c18"
   ]
 }
