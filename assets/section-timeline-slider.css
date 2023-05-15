@@ -219,26 +219,6 @@ EASING
     padding-top: 10vh;
   }
 }
-.timeline-wrap .timeline-slide {
-  display: flex !important;
-  flex-shrink: 0 !important;
-  justify-content: flex-end;
-  align-items: flex-end;
-  height: 75vh;
-  max-width: none !important;
-  width: 100vw;
-  background: #f4f4f4;
-}
-@media (min-width: 768px) {
-  .timeline-wrap .timeline-slide {
-    align-items: center;
-    height: 75vh;
-    /* switch each */
-  }
-  .timeline-wrap .timeline-slide:nth-child(even) {
-    justify-content: flex-start;
-  }
-}
 .timeline-wrap .timeline-slide .timeline-block-content {
   background: #000F44;
   color: #ffffff;
