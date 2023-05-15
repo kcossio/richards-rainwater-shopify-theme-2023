@@ -14,13 +14,30 @@
     display:flex;
     flex-wrap:wrap;
     align-items:center;
-    background:$medium_blue;
+    background:$dark_blue;
     color:$white;
+    padding:34px 40px;
+
+    img {
+        width:112px;
+        height:auto;
+        display:block;
+
+        @include breakpoint(tablet) {
+            width:100%;
+        }
+    }
 
     h1 {
         width:100%;
         color:$white;
+        font-size:32px;
+        font-weight:900;
         margin:20px 0px 40px 0px;
+
+        @include breakpoint(tablet) {
+            font-size:60px;
+        }
     }
 
     h2 {
@@ -33,6 +50,7 @@
 
     @include breakpoint(tablet) {
         width:36%;
+        padding:100px 50px;
     }
 }
 .storeDiv {

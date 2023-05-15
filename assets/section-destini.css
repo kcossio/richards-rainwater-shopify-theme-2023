@@ -182,13 +182,31 @@ EASING
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background: #0040A8;
+  background: #000F44;
   color: #ffffff;
+  padding: 34px 40px;
+}
+.destini-intro img {
+  width: 112px;
+  height: auto;
+  display: block;
+}
+@media (min-width: 768px) {
+  .destini-intro img {
+    width: 100%;
+  }
 }
 .destini-intro h1 {
   width: 100%;
   color: #ffffff;
+  font-size: 32px;
+  font-weight: 900;
   margin: 20px 0px 40px 0px;
+}
+@media (min-width: 768px) {
+  .destini-intro h1 {
+    font-size: 60px;
+  }
 }
 .destini-intro h2 {
   width: 100%;
@@ -200,6 +218,7 @@ EASING
 @media (min-width: 768px) {
   .destini-intro {
     width: 36%;
+    padding: 100px 50px;
   }
 }
 
