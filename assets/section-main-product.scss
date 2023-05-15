@@ -355,6 +355,11 @@
       text-align:left;
       color:$dark_blue;
     }
+
+    img {
+      width:auto;
+      height:auto;
+    }
   }
   
   .product__title > * {
@@ -1635,10 +1640,15 @@
       border-radius:12px;
       text-decoration:none;
       cursor:pointer;
+      transition:all .3s ease 0s;
 
       @include breakpoint(tablet) {
         padding:16px 18px;
         margin:0px 20px 0px 0px;
+      }
+
+      &:hover {
+        border-color:$light_blue;
       }
 
   
@@ -1662,6 +1672,7 @@
         width:25%;
         display:none;
         order:1;
+        
 
         @include breakpoint(tablet) {
           display:block;
