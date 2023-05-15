@@ -6,11 +6,16 @@
 
     <div class="versus-buttons">
 
-      <select class="vs-select">
-        <option value="Testing">
-          <option value="Testing2">
-            <option value="Testing3">
+      <select name="vs-select" id="vs-rr">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+          {%- when 'richards_product' -%}
+            <option value="{{ block.settings.title }}">{{ block.settings.title }} </option>
+          {%- endcase -%}
+    {%- endfor -%}
       </select>
+
+      
     </div>
 
   </div><!--End versus-wrap-->
