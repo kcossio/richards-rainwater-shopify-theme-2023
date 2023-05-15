@@ -84,6 +84,7 @@ nav.hor {
     transition:.3s ease 0s;
     transform: translate(100%, 0%);
 
+    /*When we've got to the timeline, show the nav */
     &.onscreen {
       opacity:1;
       pointer-events:auto;
