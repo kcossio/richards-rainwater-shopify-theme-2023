@@ -112,11 +112,6 @@ section.section-versus {
                 display:block;
                 opacity:1;
             }
-            &:first-child:not(.active){
-                transform:translate(0%, 0%);
-                display:block;
-                opacity:1;
-            }
 
             img {
                 width:28%;

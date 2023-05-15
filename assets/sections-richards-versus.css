@@ -275,11 +275,6 @@ section.section-versus select:active, section.section-versus select:focus {
   display: block;
   opacity: 1;
 }
-.versus-choices-blocks .versus-choice-column .vs-info-box:first-child:not(.active) {
-  transform: translate(0%, 0%);
-  display: block;
-  opacity: 1;
-}
 .versus-choices-blocks .versus-choice-column .vs-info-box img {
   width: 28%;
   height: auto;
