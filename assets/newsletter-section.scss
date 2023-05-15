@@ -5,24 +5,15 @@
 .newsletter__wrapper {
   
     .field__input {
-        padding:2.5rem 25px;
         font-size:18px;
         font-weight:600;
         letter-spacing:.6px;
 
-        &:focus,
-        &:active {
-            padding:2.5rem 25px;
-        }
 
         @include breakpoint(tablet) {
-            padding:2.8rem 25px;
             font-size:22px;
 
-            &:focus,
-            &:active {
-                padding:2.8rem 25px;
-            }
+           
         }
     }
 

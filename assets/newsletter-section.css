@@ -171,21 +171,13 @@ EASING
 
 */
 .newsletter__wrapper .field__input {
-  padding: 2.5rem 25px;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 0.6px;
 }
-.newsletter__wrapper .field__input:focus, .newsletter__wrapper .field__input:active {
-  padding: 2.5rem 25px;
-}
 @media (min-width: 768px) {
   .newsletter__wrapper .field__input {
-    padding: 2.8rem 25px;
     font-size: 22px;
-  }
-  .newsletter__wrapper .field__input:focus, .newsletter__wrapper .field__input:active {
-    padding: 2.8rem 25px;
   }
 }
 .newsletter__wrapper.mobile_nl_wrapper {
