@@ -1,0 +1,54 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+section.section-versus {
+
+    .versus-selects {
+        width:100%;
+        display:flex;
+        justify-content:space-between;
+    }
+
+    span.vs-drop {
+        display:flex;
+        aspect-ratio: 62 / 87;
+        color:$white;
+        font-weight:900;
+        align-items:flex-end;
+        justify-content:center;
+        padding-bottom:4px;
+        line-height:1em;
+        background:url('icon-drop-med-blue.svg');
+        background-size:100% 100%;
+        width:11px;
+        font-size:11px;
+
+        @include breakpoint(tablet) {
+            width:62px;
+            font-size:39px;
+        }
+    }
+
+    select {
+        
+        font-weight:900;
+        background:#E3E3E3;
+        border:0px;
+        font-size:11px;
+        color:$dark_blue;
+        text-transform:uppercase;
+        border-radius:50px;
+        padding:15px;
+        line-height:1em;
+        width:45%;
+    
+        &:active,
+        &:focus {
+            background:$light_blue;
+            color:$white;
+        }
+
+    }
+    
+}

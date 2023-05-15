@@ -1,18 +1,32 @@
+{{ 'sections-richards-versus.css' | asset_url | stylesheet_tag }}
 <div class="inner">
 
   <div class="versus-wrap">
 
     <h2>{{ section.settings.heading }} </h2>
 
-    <div class="versus-buttons">
+    <div class="versus-selects">
 
       <select name="vs-select" id="vs-rr">
+        <option value="">Richard's® Drink</option>
         {%- for block in section.blocks -%}
           {%- case block.type -%}
           {%- when 'richards_product' -%}
             <option value="{{ block.settings.title }}">{{ block.settings.title }} </option>
           {%- endcase -%}
-    {%- endfor -%}
+        {%- endfor -%}
+      </select>
+
+      <span class="vs-drop">vs</span>
+
+      <select name="vs-select" id="vs-rr">
+        <option value="">Competitors</option>
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+          {%- when 'competitors_product' -%}
+            <option value="{{ block.settings.title }}">{{ block.settings.title }} </option>
+          {%- endcase -%}
+        {%- endfor -%}
       </select>
 
       
@@ -89,7 +103,7 @@
 {% schema %}
   {
   "name": "Richard's vs Competition",
-  "class": "comparison rr-comparison",
+  "class": "comparison section-versus",
   "tag": "section",
   "settings": [
     {
