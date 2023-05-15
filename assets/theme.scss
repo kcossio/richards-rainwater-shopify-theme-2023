@@ -400,7 +400,7 @@
 }
 .toggle-view {
     
-  padding:14px 0px 14px 0px;
+  padding:16px 10px 16px 10px;
   border-bottom:2px solid #dddddd;
   margin:0px;
 
@@ -439,7 +439,7 @@
             content:"";
             display:block;
             position:relative;
-            margin-right:6px;
+            margin-right:10px;
             aspect-ratio: 20.32 / 28.57;
             width:16px;
             height:auto;
@@ -464,6 +464,7 @@
           content:"+";
           color:#6D6D6D;
           font-size:28px;
+          line-height:1em;
           position:relative;
           right:0px;
           top:0px;
