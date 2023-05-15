@@ -277,7 +277,7 @@ nav.hor {
   transition: 0.3s ease 0s;
 }
 
-nav.hor div {
+nav.hor a {
   flex-basis: 25%;
   display: flex;
   flex-direction: column;
@@ -297,25 +297,26 @@ nav.hor div {
           user-select: none;
   transform: all 0.3s ease 0s;
   height: 100%;
+  text-decoration: none;
 }
 @media (min-width: 768px) {
-  nav.hor div {
+  nav.hor a {
     font-size: 30px;
   }
 }
-nav.hor div.active {
+nav.hor a.active {
   color: #000F44;
 }
-nav.hor div.active.timeline-drop .icon-drop {
+nav.hor a.active.timeline-drop .icon-drop {
   fill: #000F44;
 }
-nav.hor div span {
+nav.hor a span {
   margin: 0px auto;
   line-height: 1em;
   width: 7px;
 }
 @media (min-width: 768px) {
-  nav.hor div span {
+  nav.hor a span {
     width: 22px;
   }
 }

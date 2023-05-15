@@ -38,10 +38,10 @@
       {% assign count = count | plus: 1 %}
       {%- case block.type -%}
         {%- when 'timeline_slide' -%}
-          <div class="hash" data-link="#tl-section-{{ count }}">
+          <a class="hash" data-slide="{{ count }}">
             <span>{% render 'drop', class: 'timeline-drop' %}</span>
             {{ block.settings.year }}
-          </div>
+          </a>
       {%- endcase -%}
     {%- endfor -%}
   </nav>
@@ -85,6 +85,12 @@
         }
       }
     ]
+  });
+
+  jQuery('a[data-slide]').click(function(e) {
+    e.preventDefault();
+    var slideno = jQuery(this).data('slide');
+    jQuery('#timeline-slider').slick('slickGoTo', slideno - 1);
   });
 
   });
