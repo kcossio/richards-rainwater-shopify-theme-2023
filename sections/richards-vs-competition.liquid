@@ -1,9 +1,27 @@
+<div class="inner">
+
+  <div class="versus-wrap">
+
+    <h2>{{ section.settings.heading }} </h2>
+
+    <div class="versus-buttons">
+
+      <select class="vs-select">
+        <option value="Testing">
+          <option value="Testing2">
+            <option value="Testing3">
+      </select>
+    </div>
+
+  </div><!--End versus-wrap-->
+</div><!--End inner-->
+
 {%- ########################################################################## 
 # Label: Heading
 # Returns: a string or an empty object(if nothing has been entered)
 # Filters: https://shopify.dev/api/liquid/objects#string 
 ########################################################################## -%}
-{{ section.settings.heading }} 
+
 
 {%- for block in section.blocks -%}
   {%- case block.type -%}
