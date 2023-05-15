@@ -1,0 +1,23 @@
+{%- ########################################################################## 
+    # Label: Product 1
+    # Returns: A product object or blank(if no selection has been made)
+    # Product Properties: https://shopify.dev/api/liquid/objects#product
+    ########################################################################## -%}
+    {%- assign product_1 = block.settings.product_1 -%}
+    {{ product_1.title }}
+    {{ product_1.description }}
+    {%- assign product_1_image = block.settings.product_1.featured_image -%}
+        {%- if product_1_image != blank -%}
+        <div class="water-product-img-button">
+        {{ product_1_image | image_url: width: product_1_image.width | image_tag: class: 'water-btn-img', loading: 'lazy' }}
+        </div>
+        {%- endif -%}
+
+    {%- ########################################################################## 
+    # Label: Product 2
+    # Returns: A product object or blank(if no selection has been made)
+    # Product Properties: https://shopify.dev/api/liquid/objects#product
+    ########################################################################## -%}
+    {%- assign product_2 = block.settings.product_2 -%}
+    {{ product_2.title }}
+    {{ product_2.description }}

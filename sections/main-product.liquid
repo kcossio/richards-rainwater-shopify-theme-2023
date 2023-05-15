@@ -432,6 +432,10 @@
               {% render 'icon-with-text',
                 block: block
               %}
+            {%- when 'water_product_image_links' %}
+              {% render 'water-product-image-links',
+                block: block
+              %}
           {%- endcase -%}
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
