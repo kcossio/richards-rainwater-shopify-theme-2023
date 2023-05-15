@@ -57,6 +57,18 @@
 
           h3 {
             color:$white;
+            font-size:20px;
+            @include breakpoint(tablet) {
+              font-size:37px;
+            }
+          }
+
+          p {
+            margin:0px;
+            font-size:12px;
+            @include breakpoint(tablet) {
+              font-size:21px;
+            }
           }
 
         }

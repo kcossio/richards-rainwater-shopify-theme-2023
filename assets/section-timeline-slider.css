@@ -225,6 +225,21 @@ EASING
 }
 .timeline-wrap .section .timeline-block-content h3 {
   color: #ffffff;
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  .timeline-wrap .section .timeline-block-content h3 {
+    font-size: 37px;
+  }
+}
+.timeline-wrap .section .timeline-block-content p {
+  margin: 0px;
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  .timeline-wrap .section .timeline-block-content p {
+    font-size: 21px;
+  }
 }
 .timeline-wrap .bg-img {
   width: 95%;
