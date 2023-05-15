@@ -403,6 +403,12 @@
   padding:14px 0px 14px 0px;
   border-top:1px solid #cbcdce;
   margin:0px;
+
+  &:nth-child(odd) {
+    .toggle-header h3::before {
+      background-image:url(icon-drop-med-blue.svg);
+    }
+  }
   
   .toggle-header {
       position:relative;
@@ -410,11 +416,7 @@
       display:block;
       cursor:pointer;
 
-      &:nth-child(odd) {
-        h3::before {
-          background-image:url(icon-drop-med-blue.svg);
-        }
-      }
+     
       
       h3 {
           color:$dark_blue;

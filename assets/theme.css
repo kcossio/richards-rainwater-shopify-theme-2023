@@ -987,14 +987,14 @@ EASING
   border-top: 1px solid #cbcdce;
   margin: 0px;
 }
+.toggle-view:nth-child(odd) .toggle-header h3::before {
+  background-image: url(icon-drop-med-blue.svg);
+}
 .toggle-view .toggle-header {
   position: relative;
   width: 100%;
   display: block;
   cursor: pointer;
-}
-.toggle-view .toggle-header:nth-child(odd) h3::before {
-  background-image: url(icon-drop-med-blue.svg);
 }
 .toggle-view .toggle-header h3 {
   color: #000F44;
