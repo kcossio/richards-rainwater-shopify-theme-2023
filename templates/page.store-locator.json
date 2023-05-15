@@ -11,7 +11,7 @@
     "destini": {
       "type": "destini_integration",
       "settings": {
-        "destini_intro_text": "<p><em>Enter your zip code to find Richard’s Rainwater in <\/em><em><strong>over 2,000 grocery stores<\/strong><\/em><em>!<br\/><br\/><\/em><em><strong>Prefer Grocery Delivery? <\/strong><\/em><em>Click the “Buy Online” button.<\/em><\/p>"
+        "destini_intro_text": "<p>Enter your zip code to find Richard’s Rainwater in <strong>over 2,000 grocery stores<\/strong>!<br\/><br\/><strong>Prefer Grocery Delivery? <\/strong>Click the “Buy Online” button.<\/p>"
       }
     },
     "96963313-bc83-4314-b735-f8516c3d951f": {
