@@ -93,8 +93,13 @@
       jQuery('#timeline-slider').slick('slickGoTo', slideno - 1);
     });
 
+    jQuery('#timeline-slider').on('init', function(event, slick) {
+      setTimeout(function() {
+        console.log("initialized now please");
+      }, 0);
+    });
     jQuery('#timeline-slider').on('init', function(event, slick){
-        console.log("initialized")
+        console.log("initialized");
     });
     
     jQuery('#timeline-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
