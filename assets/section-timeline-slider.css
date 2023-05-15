@@ -298,7 +298,10 @@ nav.hor div {
   }
 }
 nav.hor div.active {
-  color: #00142A;
+  color: #000F44;
+}
+nav.hor div.active.timeline-drop .icon-drop {
+  fill: #000F44;
 }
 nav.hor div span {
   margin: 0px auto;

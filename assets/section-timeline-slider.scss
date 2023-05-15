@@ -134,7 +134,13 @@ nav.hor {
     }
 
     &.active {
-      color:$darkest_blue;
+      color:$dark_blue;
+
+      &.timeline-drop {
+        .icon-drop {
+            fill:$dark_blue;
+        }
+      }
     }
 
     span {
