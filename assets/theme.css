@@ -996,7 +996,7 @@ EASING
 .toggle-view .toggle-header h3 {
   color: #616161;
   font-size: 12px;
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   width: 95%;
   margin: 0px;
