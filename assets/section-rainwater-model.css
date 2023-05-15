@@ -362,6 +362,7 @@ section.rainwater-model-banner h2 {
   line-height: 1.1em;
   margin: 0px 0px 18px 0px;
   position: relative;
+  padding-bottom: 22px;
 }
 section.rainwater-model-banner h2:after {
   content: "";
@@ -392,6 +393,7 @@ section.rainwater-model-banner h2.onscreen::after {
   section.rainwater-model-banner h2 {
     font-size: 6.2vw;
     margin-bottom: 40px;
+    padding-bottom: 42px;
   }
 }
 @media (min-width: 1680px) {
