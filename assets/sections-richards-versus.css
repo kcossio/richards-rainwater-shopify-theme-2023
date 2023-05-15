@@ -267,6 +267,11 @@ section.section-versus select:active, section.section-versus select:focus {
   display: block;
   opacity: 1;
 }
+.versus-choices-blocks .versus-choice-column .vs-info-box:first-child:not(.active) {
+  transform: translate(0%, 0%);
+  display: block;
+  opacity: 1;
+}
 .versus-choices-blocks .versus-choice-column .vs-info-box img {
   width: 28%;
   height: auto;
@@ -274,16 +279,16 @@ section.section-versus select:active, section.section-versus select:focus {
 }
 @media (min-width: 768px) {
   .versus-choices-blocks .versus-choice-column .vs-info-box {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     align-items: center;
     text-align: left;
   }
-  .versus-choices-blocks .versus-choice-column .vs-info-box.active {
-    display: flex;
-  }
   .versus-choices-blocks .versus-choice-column .vs-info-box img {
     width: 28%;
     height: auto;
+  }
+  .versus-choices-blocks .versus-choice-column .vs-info-box.active {
+    display: flex;
   }
 }
