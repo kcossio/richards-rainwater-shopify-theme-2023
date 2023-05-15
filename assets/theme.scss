@@ -413,7 +413,8 @@
   .toggle-header {
       position:relative;
       width:100%;
-      display:block;
+      display:flex;
+      justify-content:space-between;
       cursor:pointer;
 
      
@@ -462,11 +463,11 @@
       &::after {
           content:"+";
           color:#6D6D6D;
-          font-size:26px;
-          position:absolute;
+          font-size:28px;
+          position:relative;
           right:0px;
           top:0px;
-          font-weight:900;
+          font-weight:400;
           transition:all .4s ease 0s;
           //display:none;
       }

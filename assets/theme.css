@@ -993,7 +993,8 @@ EASING
 .toggle-view .toggle-header {
   position: relative;
   width: 100%;
-  display: block;
+  display: flex;
+  justify-content: space-between;
   cursor: pointer;
 }
 .toggle-view .toggle-header h3 {
@@ -1036,11 +1037,11 @@ EASING
 .toggle-view .toggle-header::after {
   content: "+";
   color: #6D6D6D;
-  font-size: 26px;
-  position: absolute;
+  font-size: 28px;
+  position: relative;
   right: 0px;
   top: 0px;
-  font-weight: 900;
+  font-weight: 400;
   transition: all 0.4s ease 0s;
 }
 .faq-list .toggle-view .toggle-header h3::after {
