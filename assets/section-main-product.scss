@@ -1626,10 +1626,17 @@
 
     a {
       display:inline-flex;
+      flex-wrap:wrap;
+      align-items:center;
+      padding:10px;
       width:40%;
       margin:0px 4px 0px 0px;
       border:1px solid #E3E3E3;
       border-radius:6px;
+
+      @include breakpoint(tablet) {
+        padding:16px 18px;
+      }
 
   
       &.active {
@@ -1639,6 +1646,11 @@
       img {
         height:auto;
         width:25%;
+        display:none;
+
+        @include breakpoint(tablet) {
+          display:block;
+        }
       }
     }
   }
