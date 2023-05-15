@@ -278,6 +278,11 @@ section.aisle .aisle-terms p {
   width: 100%;
 }
 
+#aisle-form-container {
+  width: 580px;
+  max-width: 100%;
+}
+
 .aisle-form-container {
   display: flex;
   flex-wrap: wrap;
@@ -285,9 +290,12 @@ section.aisle .aisle-terms p {
 .aisle-form-container input {
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
   border: 1px solid #707070;
   width: 60%;
   margin: 0px;
+  font-family: "TT Commons", sans-serif;
 }
 .aisle-form-container .aisle-form-input-text-error {
   order: 3;
@@ -297,6 +305,9 @@ section.aisle .aisle-terms p {
 button.aisle-form-button {
   background: #0040A8;
   font-weight: 900;
+  font-family: "TT Commons", sans-serif;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   margin: 0px;
