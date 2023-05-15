@@ -9,12 +9,12 @@
             {%- if product_1_image != blank -%}
                 {{ product_1_image | image_url: width: product_1_image.width | image_tag: class: 'water-btn-img', loading: 'lazy' }}
             {%- endif -%}
-        </div>
+        </a>
 
 
     {%- assign product_2 = block.settings.product_2 -%}    
     
-        <a class="water-product-img-button doit {{ product_2.id }}" href="{{ product_2.url }}">
+        <a class="water-product-img-button {{ product_2.id }}" href="{{ product_2.url }}">
             <h3>{{ product_2.title }}</h3>
             {%- assign product_2_image = block.settings.product_2.featured_image -%}
             {%- if product_2_image != blank -%}
