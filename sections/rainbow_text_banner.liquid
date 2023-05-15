@@ -1,7 +1,19 @@
 {{ 'section-rainbow-text-banner.css' | asset_url | stylesheet_tag }}
 
-<div class="inner">
-<h2 class="fade-in-left">{{ section.settings.text }}</h2> 
+{%- if section.settings.call_to_action_button_link != blank %}
+  {% assign class = 'center w-button fade-in' -%}
+  {% assign h2_class = 'center w-button fade-in' -%}
+{%- else -%}
+  {% assign class = '' -%}
+  {% assign h2_class = 'center w-button fade-in-left' -%}
+{%- endif -%}
+
+<div class="inner {{ class }}">
+<h2 class="{{ h2_class }}">{{ section.settings.text }}</h2> 
+
+{%- if section.settings.call_to_action_button_link != blank %}
+<a class="button button-lg lg" href="{{ section.settings.call_to_action_button_link }}">{{ section.settings.call_to_action_button_label }}</a>
+{%- endif -%}
 </div><!--End inner-->
 
 <div class="bg-img bg-hero">
@@ -35,6 +47,19 @@
       "id": "text",
       "label": "Text",
       "info": "Add text to this banner"
+    },
+        {
+      "type": "url",
+      "id": "call_to_action_button_link",
+      "label": "Call to Action Button Link",
+      "info": "Choose a link to add a call to action button to this section"
+    },
+    {
+      "type": "text",
+      "id": "call_to_action_button_label",
+      "label": "Call to Action Button Label",
+      "default": "Learn more",
+      "info": "Add a label for the Call to Action button"
     }
   ],
   "presets": [
