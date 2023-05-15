@@ -170,12 +170,16 @@ EASING
 }
 
 */
+section.our-impact .inner {
+  text-align: center;
+}
 section.our-impact h2 {
   margin-bottom: 10px;
   position: relative;
   font-size: 36px;
   line-height: 1em;
   padding-bottom: 40px;
+  text-align: left;
 }
 section.our-impact h2::after {
   content: "";
@@ -213,6 +217,30 @@ section.our-impact .impact-items .impact-item {
   width: 100%;
   text-align: center;
   margin: 0px 0px 30px 0px;
+}
+section.our-impact .impact-items .impact-item h3 {
+  margin: 10px 0px 15px 0px;
+  line-height: 1em;
+  font-weight: 900;
+  color: #000F44;
+  font-size: 25px;
+}
+@media (min-width: 768px) {
+  section.our-impact .impact-items .impact-item h3 {
+    font-size: 45px;
+  }
+}
+section.our-impact .impact-items .impact-item p {
+  width: 80%;
+  margin: 0px auto;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.3em;
+}
+@media (min-width: 768px) {
+  section.our-impact .impact-items .impact-item p {
+    font-size: 22px;
+  }
 }
 section.our-impact .impact-items .impact-item img {
   height: auto;
