@@ -19,19 +19,19 @@
         "64a1a635-e6bc-4cb0-a051-7d7d9b7176cc": {
           "type": "step",
           "settings": {
-            "text": "Purchase a bottle or can of Richard’s at your local retailer."
+            "text": "<p>Purchase a bottle or can of Richard’s at your local retailer.<\/p>"
           }
         },
         "8ec0e08e-2b51-4a85-97c1-19a44b0894e0": {
           "type": "step",
           "settings": {
-            "text": "Text us a picture of your receipt."
+            "text": "<p>Text us a picture of your receipt.<\/p>"
           }
         },
         "b72a5bcc-4eac-4ecf-a608-778491033ff1": {
           "type": "step",
           "settings": {
-            "text": "We’ll Venmo or PayPal you cash back within 24 hours."
+            "text": "<p>We’ll Venmo or PayPal you cash back within 24 hours.<\/p>"
           }
         }
       },
