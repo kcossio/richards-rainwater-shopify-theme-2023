@@ -4,13 +4,15 @@
 {%- for block in section.blocks -%}
   {%- if block.settings.product_name == product.handle -%}
 
+    {% assign class = class %}
+
     <header class="product-info-col-header single">
        
       <h2 class="product-info-col-heading">{{ section.settings.heading }}</h2>
       <p class="product-info-col-subheading">{{ section.settings.subheading }}</p>
       </header>
 
-      <div class="product-info-col product-info-col-1 single">
+      <div class="product-info-col product-info-col-1 single {{ class }}">
 
         {%- assign product_image = product.featured_image -%}
         {%- if product_image != blank -%}
@@ -114,6 +116,12 @@
           "id": "product_name",
           "label": "Product",
           "info": "Choose a product to add these related products to."
+        },
+        {
+          "type": "text",
+          "id": "class",
+          "label": "Class/Type",
+          "info": "Add a name of sparkling or still for this section in order to control some styling"
         },
         {
           "type": "text",
