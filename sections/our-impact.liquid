@@ -2,25 +2,10 @@
 
 <div class="inner">
 
-{%- ########################################################################## 
-# Label: Heading
-# Returns: a string or an empty object(if nothing has been entered)
-# Filters: https://shopify.dev/api/liquid/objects#string 
-########################################################################## -%}
+
 <h2>{{ section.settings.heading }}</h2>
 
-{%- ########################################################################## 
-# Label: Call to Action Button Link
-# Returns: a string(the entered URL) or nil / false(if nothing has been entered)
-########################################################################## -%}
-{{ section.settings.call_to_action_button_link }} 
 
-{%- ########################################################################## 
-# Label: Call to Action Button Label
-# Returns: a string or an empty object(if nothing has been entered)
-# Filters: https://shopify.dev/api/liquid/objects#string 
-########################################################################## -%}
-{{ section.settings.call_to_action_button_label }} 
 
 <div class="impact-items">
 {%- for block in section.blocks -%}
@@ -45,6 +30,12 @@
   {%- endcase -%}
 {%- endfor -%}
 </div><!-- End impact-items-->
+
+<a class="button button-lg" href="{{ section.settings.call_to_action_button_link }}">{{ section.settings.call_to_action_button_label }}</a>
+
+
+
+
 
 </div><!--End inner-->
 
