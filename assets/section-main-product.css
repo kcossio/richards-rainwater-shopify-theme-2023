@@ -1694,6 +1694,11 @@ nav.water-product-buttons a {
   display: inline-flex;
   width: 40%;
   margin: 0px 4px 0px 0px;
+  border: 1px solid #E3E3E3;
+  border-radius: 6px;
+}
+nav.water-product-buttons a.active {
+  border-color: #0094DA;
 }
 nav.water-product-buttons a img {
   width: 25%;
