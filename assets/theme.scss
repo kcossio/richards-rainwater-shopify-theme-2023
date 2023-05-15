@@ -424,12 +424,15 @@
             content:"";
             display:block;
             position:relative;
-            margin-right:4px;
+            margin-right:6px;
             aspect-ratio: 20.32 / 28.57;
-            width:15px;
+            width:16px;
             height:auto;
-            background-image:url(icon-drop-grey.svg);
-            background-size:cover;
+            background-image:url(icon-drop-light-blue.svg);
+            background-size:100% 100%;
+          }
+          &:nth-child(odd) {
+            background-image:url(icon-drop-med-blue.svg);
           }
           
           .faq-list & {
