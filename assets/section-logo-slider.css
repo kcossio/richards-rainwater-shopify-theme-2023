@@ -175,9 +175,15 @@ EASING
   padding: 66px 0px;
   margin: 0px;
 }
+.section-logo-slider.notitle {
+  padding: 40px 0px;
+}
 @media (min-width: 768px) {
   .section-logo-slider {
-    padding: 160px 0px 80px 0px;
+    padding: 160px 0px 40px 0px;
+  }
+  .section-logo-slider.notitle {
+    padding: 40px 0px;
   }
 }
 .section-logo-slider header h2 {
