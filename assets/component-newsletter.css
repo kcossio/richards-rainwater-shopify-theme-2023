@@ -177,6 +177,12 @@ EASING
   position: relative;
   align-items: center;
   align-content: center;
+  padding: 56px 0px;
+}
+@media (min-width: 768px) {
+  .footer-newsletter {
+    padding: 140px 0px;
+  }
 }
 .footer-newsletter .nl-cloud {
   position: relative;
@@ -200,8 +206,13 @@ EASING
   z-index: 1;
 }
 .footer-newsletter .newsletter__wrapper {
-  width: 50%;
+  width: 100%;
   text-align: left;
+}
+@media (min-width: 768px) {
+  .footer-newsletter .newsletter__wrapper {
+    width: 50%;
+  }
 }
 .footer-newsletter h2.newsletter-signup-heading {
   margin-bottom: 0px;

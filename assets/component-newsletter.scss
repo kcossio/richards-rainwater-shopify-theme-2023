@@ -10,6 +10,11 @@
     position:relative;
     align-items:center;
     align-content:center;
+    padding:56px 0px;
+
+    @include breakpoint(tablet) {
+      padding:140px 0px;
+    }
 
     .nl-cloud {
       position:relative;
@@ -34,8 +39,12 @@
     }
 
     .newsletter__wrapper {
-        width:50%;
+        width:100%;
         text-align:left;
+
+        @include breakpoint(tablet) {
+          width:50%;
+        }
     }
     h2.newsletter-signup-heading {
         margin-bottom:0px;
