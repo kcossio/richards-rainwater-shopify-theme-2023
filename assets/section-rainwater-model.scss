@@ -35,7 +35,7 @@ section.rainwater-model-banner {
             width:0px;
             height:3px;
             transform:translateX(-50%);
-            transition:all .3s ease .4s;
+            transition:all .3s ease .4s; /*moo*/
             position:absolute;
 
             @include breakpoint(tablet) {
