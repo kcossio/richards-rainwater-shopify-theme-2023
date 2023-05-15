@@ -125,9 +125,17 @@ section.aisle {
 
 .aisle-form-container {
     display:flex;
+    input {
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border:1px solid #707070;
+    }
 }
 button.aisle-form-button {
     background:$medium_blue;
     font-weight:900;
-    border-radius:12px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin:0px;
+    text-transform:uppercase;
 }
