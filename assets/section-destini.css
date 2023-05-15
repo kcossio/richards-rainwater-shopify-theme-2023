@@ -252,13 +252,20 @@ EASING
   align-items: center;
   align-content: center;
   justify-content: center;
-  padding: 20px 60px;
+  padding: 20px 36px;
   right: -20px;
   bottom: 20%;
   color: #000F44;
-  line-height: 0.9em;
+  line-height: 1em;
   text-transform: uppercase;
   text-decoration: none;
+  transform-origin: right;
+  transform: scale(0.7);
+}
+@media (min-width: 768px) {
+  .jump-to-aisle {
+    transform: scale(1);
+  }
 }
 .jump-to-aisle span {
   position: relative;

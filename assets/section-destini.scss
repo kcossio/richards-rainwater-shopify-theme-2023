@@ -81,13 +81,19 @@
     align-items:center;
     align-content:center;
     justify-content:center;
-    padding:20px 60px;;
+    padding:20px 36px;
     right:-20px;
     bottom:20%;
     color:$dark_blue;
-    line-height:.9em;
+    line-height:1em;
     text-transform: uppercase;
     text-decoration:none;
+    transform-origin:right;
+    transform:scale(.7);
+
+    @include breakpoint(tablet) {
+        transform:scale(1);
+    }
 
 
     span {
