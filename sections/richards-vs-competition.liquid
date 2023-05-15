@@ -3,11 +3,11 @@
 
   <div class="versus-wrap">
 
-    <h2>{{ section.settings.heading }} </h2>
+    <h2 class="fade-in">{{ section.settings.heading }} </h2>
 
     <div class="versus-selects">
 
-      <select class="vs-select" name="vs-select" id="vs-rr">
+      <select class="vs-select fade-in-left" name="vs-select" id="vs-rr">
         <option value="">Richard's® Drink</option>
         {% assign count = 0 %}
         {%- for block in section.blocks -%}
@@ -19,9 +19,9 @@
         {%- endfor -%}
       </select>
 
-      <span class="vs-drop">vs</span>
+      <span class="vs-drop fade-in">vs</span>
 
-      <select class="vs-select" name="vs-select" id="vs-rr">
+      <select class="vs-select fade-in-right" name="vs-select" id="vs-rr">
         <option value="">Competitors</option>
         {% assign count = 0 %}
         {%- for block in section.blocks -%}
