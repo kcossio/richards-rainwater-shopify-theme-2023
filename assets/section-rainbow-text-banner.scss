@@ -27,4 +27,17 @@ section.rainbow-banner {
             font-size:89px;
         }
     }
+
+    .inner {
+        &.center {
+            h2 {
+                text-align:center;
+                margin-bottom:18px;
+
+                @include breakpoint(tablet) {
+                    margin-bottom:40px;
+                }
+            }
+        }
+    }
 }
