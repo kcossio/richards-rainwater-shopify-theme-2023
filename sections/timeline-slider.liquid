@@ -75,7 +75,9 @@ let horizontalScroll = gsap.to(sections, {
     end: () => `+=${maxWidth}`,
     invalidateOnRefresh: true,
     onEnter: enterTimeline,
-    onLeave: exitTimeline
+    onLeave: exitTimeline,
+    onEnterBack: enterTimeline,
+    onLeaveBack: exitTimeline
   }
 });
 function enterTimeline() {
