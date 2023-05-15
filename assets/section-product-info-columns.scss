@@ -14,6 +14,14 @@ section.section-product-info-box-drops {
         padding:98px 0px 0px 0px;
     }
 
+    &.w-clouds {
+        padding:10vw 0px 0px 0px;
+
+        @include breakpoint(tablet) {
+            padding:15vw 0px 0px 0px;
+        }
+    }
+
     .clouds {
         z-index:5;
     }
@@ -105,9 +113,10 @@ section.section-product-info-box-drops {
                 width:37%;
                 img {
                     width:100%;
+                    max-width:100%;
                 }
                 @include breakpoint(tablet) {
-                    width:14%;
+                    width:22%;
                 }
             }
         }
