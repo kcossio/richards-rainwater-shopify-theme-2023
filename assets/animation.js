@@ -18,6 +18,21 @@
         markers:true
     });
 
+    // Reset Product scrolltriggers when the top has been passed
+    // Body Image with Parallax
+    gsap.to(".section-product-main", {
+        scrollTrigger: {
+            trigger: ".section-product-main", // start the animation when ".box" enters the viewport (once),
+            start: "bottom bottom",
+            scrub: true,
+            invalidateOnRefresh: true,
+            onEnter: ScrollTrigger.refresh(),
+            onLeave: ScrollTrigger.refresh(),
+            onEnterBack: ScrollTrigger.refresh(),
+            onLeaveBack: ScrollTrigger.refresh()
+        },        
+      });
+
 
     // ------ Header Scroll Behavior ------//
     window.addEventListener("load", (event) => {
