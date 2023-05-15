@@ -19,7 +19,7 @@
   {%- if heading == blank -%}
     <script>
       window.addEventListener("load", (event) => {
-        jQuery('{{ section.id }}').addClass('notitle');
+        jQuery('#shopify-section-{{ section.id }}').addClass('notitle');
       });
     </script>
   {%- endif -%}
