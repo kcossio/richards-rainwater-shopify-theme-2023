@@ -15,11 +15,37 @@
     },
     "aisle": {
       "type": "aisle_integration",
+      "blocks": {
+        "64a1a635-e6bc-4cb0-a051-7d7d9b7176cc": {
+          "type": "step",
+          "settings": {
+            "text": "Purchase a bottle or can of Richard’s at your local retailer."
+          }
+        },
+        "8ec0e08e-2b51-4a85-97c1-19a44b0894e0": {
+          "type": "step",
+          "settings": {
+            "text": "Text us a picture of"
+          }
+        },
+        "b72a5bcc-4eac-4ecf-a608-778491033ff1": {
+          "type": "step",
+          "settings": {
+            "text": "We’ll Venmo or PayPal you cash back within 24 hours."
+          }
+        }
+      },
+      "block_order": [
+        "64a1a635-e6bc-4cb0-a051-7d7d9b7176cc",
+        "8ec0e08e-2b51-4a85-97c1-19a44b0894e0",
+        "b72a5bcc-4eac-4ecf-a608-778491033ff1"
+      ],
       "settings": {
         "api_key": "U2FsdGVkX1+G1iQuk+1fbDluy\/LxlfYSeQSnuczV+kyY0wwvY8dzJ3sNoJHUv9Fo",
         "campaign_phone_number": "2673884764",
         "aisle_heading": "Can we buy you a drink?",
-        "aisle_intro_text": "<p>Enter your phone number, purchase a single bottle or can of Richard’s at your local retailer and we’ll Venmo or Paypal you back for the cost of one.<\/p>"
+        "aisle_intro_text": "<p>Enter your phone number, purchase a single bottle or can of Richard’s at your local retailer and we’ll Venmo or Paypal you back for the cost of one.<\/p>",
+        "fine_print": "<p>I agree to receive recurring automated marketing text messages (e.g. cart reminders) at the phone number provided. Consent is not a condition to purchase. Msg & data rates may apply. Msg frequency varies. Reply HELP for help and STOP to cancel. View our <a href=\"\/policies\/terms-of-service\" target=\"_blank\" title=\"Terms of Service\">Terms of Service<\/a> and <a href=\"\/policies\/privacy-policy\" target=\"_blank\" title=\"Privacy Policy\">Privacy Policy<\/a>.<\/p>"
       }
     }
   },
