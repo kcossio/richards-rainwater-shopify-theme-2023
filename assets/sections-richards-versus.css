@@ -170,6 +170,14 @@ EASING
 }
 
 */
+section.section-versus {
+  margin: 50px 0px;
+}
+@media (min-width: 768px) {
+  section.section-versus {
+    margin: 95px 0px;
+  }
+}
 section.section-versus h2 {
   font-size: 24px;
   margin: 0px 0px 40px 0px;

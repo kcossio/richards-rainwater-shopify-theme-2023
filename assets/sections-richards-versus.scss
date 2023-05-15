@@ -3,6 +3,12 @@
 @import "fonts";
 
 section.section-versus {
+    margin:50px 0px;
+
+    @include breakpoint(tablet) {
+        margin:95px 0px;
+    }
+
 
     h2 {
         font-size:24px;
