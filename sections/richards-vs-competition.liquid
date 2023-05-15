@@ -90,6 +90,7 @@
     jQuery('select.vs-select').on('change', function() {
       console.log('select has been changed');
       var show = '#' + jQuery(this).attr('data-href-open');
+      console.log('Show this one please:' + show);
       var hide = '.' + jQuery(this).attr('data-href-close');
       jQuery(hide).removeClass('active');
       jQuery(show).addClass('active');
