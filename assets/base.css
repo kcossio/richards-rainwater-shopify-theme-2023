@@ -182,6 +182,9 @@ EASING
 .inner.narrow {
   width: 780px;
 }
+.inner.center {
+  text-align: center;
+}
 
 .wide {
   width: 1320px;
