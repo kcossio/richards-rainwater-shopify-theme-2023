@@ -4,7 +4,8 @@
 {%- for block in section.blocks -%}
   {%- if block.settings.product_name == product.handle -%}
 
-    <header class="product-info-col-header">
+    <header class="product-info-col-header single">
+       
       <h2 class="product-info-col-heading">{{ section.settings.heading }}</h2>
       <p class="product-info-col-subheading">{{ section.settings.subheading }}</p>
       </header>
@@ -20,8 +21,14 @@
 
 
         <h2 class="product-col-name  fade-in-down">
-          <span class="vadelma">{{ block.settings.product_name_line_1 }}</span>
-          <span class="rainwater imperial">{{ block.settings.product_name_line_2 }}</span> 
+          {%- if product.metafields.product_extra.water_product_custom_title.value != blank %}
+            {% assign title_img = product.metafields.product_extra.water_product_custom_title %}
+            {{ title_img | image_url: width: title_img.width | image_tag: class: 'custom-title-img', loading: 'lazy' }}
+              <span class="hidden">{{ block.settings.product_name_line_1 }} {{ block.settings.product_name_line_2 }}</span>
+            {% else %}
+              <span class="vadelma">{{ block.settings.product_name_line_1 }}</span>
+              <span class="rainwater imperial">{{ block.settings.product_name_line_2 }}</span> 
+            {%- endif -%}
         </h2>
       
         <a class="button" href="{{ block.settings.call_to_action_button_link }}">{{ block.settings.call_to_action_button_label }} </a>
