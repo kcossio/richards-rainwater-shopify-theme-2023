@@ -251,10 +251,13 @@ EASING
   align-items: center;
   align-content: center;
   justify-content: center;
-  padding: 20px;
+  padding: 20px 60px;
   right: -20px;
   bottom: 20%;
   color: #000F44;
+  line-height: 0.9em;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 .jump-to-aisle span {
   position: relative;

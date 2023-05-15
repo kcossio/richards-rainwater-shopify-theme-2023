@@ -80,10 +80,13 @@
     align-items:center;
     align-content:center;
     justify-content:center;
-    padding:20px;
+    padding:20px 60px;;
     right:-20px;
     bottom:20%;
     color:$dark_blue;
+    line-height:.9em;
+    text-transform: uppercase;
+    text-decoration:none;
 
 
     span {
