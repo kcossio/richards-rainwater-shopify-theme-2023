@@ -1616,3 +1616,20 @@
     }
   }
   
+
+  /* ----- Water Product Buttons ---- */
+
+  nav.water-product-buttons {
+    width:100%;
+    display:flex;
+
+    a {
+      display:inline-flex;
+      width:40%;
+      margin:0px 4px 0px 0px;
+
+      img {
+        width:25%;
+      }
+    }
+  }

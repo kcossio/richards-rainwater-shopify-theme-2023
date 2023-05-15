@@ -1,14 +1,9 @@
-<nav class="water-product-buttons">
+<nav class="water-product-buttons" data-current-page="{{ product.url }}"">
 
-{%- ########################################################################## 
-    # Label: Product 1
-    # Returns: A product object or blank(if no selection has been made)
-    # Product Properties: https://shopify.dev/api/liquid/objects#product
-    ########################################################################## -%}
-    {%- assign product_1 = block.settings.product_1 -%}
+
+    {%- assign product_1 = block.settings.product_1 -%}    
     
-    
-        <div class="water-product-img-button">
+        <div class="water-product-img-button {{ product_1.id }}" href="{{ product_1.url }}"">
             <h3>{{ product_1.title }}</h3>
             {%- assign product_1_image = block.settings.product_1.featured_image -%}
             {%- if product_1_image != blank -%}
@@ -16,12 +11,15 @@
             {%- endif -%}
         </div>
 
-    {%- ########################################################################## 
-    # Label: Product 2
-    # Returns: A product object or blank(if no selection has been made)
-    # Product Properties: https://shopify.dev/api/liquid/objects#product
-    ########################################################################## -%}
-    {%- assign product_2 = block.settings.product_2 -%}
-    {{ product_2.title }}
+
+    {%- assign product_2 = block.settings.product_1 -%}    
+    
+        <div class="water-product-img-button {{ product_2.id }}" href="{{ product_2.url }}"">
+            <h3>{{ product_2.title }}</h3>
+            {%- assign product_2_image = block.settings.product_2.featured_image -%}
+            {%- if product_2_image != blank -%}
+                {{ product_2_image | image_url: width: product_2_image.width | image_tag: class: 'water-btn-img', loading: 'lazy' }}
+            {%- endif -%}
+        </div>
 
 </nav>

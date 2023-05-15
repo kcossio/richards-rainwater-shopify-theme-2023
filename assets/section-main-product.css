@@ -1685,3 +1685,16 @@ a.product__text {
     border: none;
   }
 }
+/* ----- Water Product Buttons ---- */
+nav.water-product-buttons {
+  width: 100%;
+  display: flex;
+}
+nav.water-product-buttons a {
+  display: inline-flex;
+  width: 40%;
+  margin: 0px 4px 0px 0px;
+}
+nav.water-product-buttons a img {
+  width: 25%;
+}
