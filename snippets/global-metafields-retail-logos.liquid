@@ -11,7 +11,7 @@
             
             {% for image in shop.metafields.global.retail_logos.value %}
 
-                {{ image | image_url: width: image.width | image_tag: class: 'logo-slider-image', loading: 'lazy' }}
+                {{ image | image_url: width: image.width | image_tag: class: 'logo-slider-image', loading: 'lazy', tabindex: '-1' }}
 
             {% endfor %}
         
