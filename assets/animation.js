@@ -23,15 +23,21 @@
     gsap.to(".section-product-main", {
         scrollTrigger: {
             trigger: ".section-product-main", // start the animation when ".box" enters the viewport (once),
-            start: "bottom bottom",
+            start: "top top",
+            end: "bottom bottom",
             scrub: true,
             invalidateOnRefresh: true,
-            onEnter: ScrollTrigger.refresh(),
-            onLeave: ScrollTrigger.refresh(),
-            onEnterBack: ScrollTrigger.refresh(),
-            onLeaveBack: ScrollTrigger.refresh()
+            //onEnter: refreshProductPage,
+            onLeave: refreshProductPage,
+            onEnterBack: refreshProductPage,
+            onLeaveBack: refreshProductPage
         },        
       });
+      function refreshProductPage() {
+        ScrollTrigger.refresh();
+        window.dispatchEvent(new Event('resize'));
+        console.log('we have exited the product main section');
+      }
 
 
     // ------ Header Scroll Behavior ------//
