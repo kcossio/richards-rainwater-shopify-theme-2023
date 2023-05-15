@@ -201,12 +201,12 @@ section.aisle .aisle-steps {
   justify-content: space-between;
   margin: 40px 0px 40px 0px;
 }
-section.aisle .aisle-steps .aisle-item {
+section.aisle .aisle-steps .aisle-step {
   width: 100%;
   text-align: center;
   margin: 0px 0px 30px 0px;
 }
-section.aisle .aisle-steps .aisle-item span {
+section.aisle .aisle-steps .aisle-step span {
   background: #FC4A6A;
   display: inline-flex;
   flex-wrap: wrap;
@@ -221,17 +221,17 @@ section.aisle .aisle-steps .aisle-item span {
   margin: 0px auto 12px auto;
 }
 @media (min-width: 768px) {
-  section.aisle .aisle-steps .aisle-item span {
+  section.aisle .aisle-steps .aisle-step span {
     font-size: 30px;
   }
 }
-section.aisle .aisle-steps .aisle-item span:nth-child(2) {
+section.aisle .aisle-steps .aisle-step span:nth-child(2) {
   background: #FFA500;
 }
-section.aisle .aisle-steps .aisle-item span:nth-child(2) {
+section.aisle .aisle-steps .aisle-step span:nth-child(2) {
   background: #DE0000;
 }
-section.aisle .aisle-steps .aisle-item p {
+section.aisle .aisle-steps .aisle-step p {
   width: 100%;
   padding: 0px 10%;
   margin: 0px auto;
@@ -240,16 +240,28 @@ section.aisle .aisle-steps .aisle-item p {
   line-height: 1.6em;
 }
 @media (min-width: 768px) {
-  section.aisle .aisle-steps .aisle-item p {
+  section.aisle .aisle-steps .aisle-step p {
     font-size: 22px;
     width: 90%;
   }
 }
-section.aisle .aisle-steps .aisle-item img {
+section.aisle .aisle-steps .aisle-step img {
   height: auto;
 }
 @media (min-width: 768px) {
-  section.aisle .aisle-steps .aisle-item {
+  section.aisle .aisle-steps .aisle-step {
     width: 30%;
   }
+}
+section.aisle .aisle-terms {
+  width: 525px;
+  max-width: 100%;
+  margin: 40px auto 0px auto;
+}
+section.aisle .aisle-terms p {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0px;
+  width: 100%;
 }
