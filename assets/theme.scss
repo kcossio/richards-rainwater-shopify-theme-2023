@@ -418,6 +418,19 @@
           font-weight:400;
           letter-spacing:2px;
           text-transform:uppercase;
+          position:relative;
+
+          &::before {
+            content:"";
+            display:block;
+            position:relative;
+            margin-right:4px;
+            aspect-ratio: 20.32 / 28.57;
+            width:15px;
+            height:auto;
+            background-image:url(icon-drop-grey.svg);
+            background-size:cover;
+          }
           
           .faq-list & {
             color:$dark_blue;

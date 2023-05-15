@@ -1001,6 +1001,18 @@ EASING
   font-weight: 400;
   letter-spacing: 2px;
   text-transform: uppercase;
+  position: relative;
+}
+.toggle-view .toggle-header h3::before {
+  content: "";
+  display: block;
+  position: relative;
+  margin-right: 4px;
+  aspect-ratio: 20.32/28.57;
+  width: 15px;
+  height: auto;
+  background-image: url(icon-drop-grey.svg);
+  background-size: cover;
 }
 .faq-list .toggle-view .toggle-header h3 {
   color: #000F44;
