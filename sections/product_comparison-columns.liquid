@@ -15,7 +15,7 @@
 
         {%- assign product_image = block.settings.product_image -%}
         {%- if product_image != blank -%}
-          <div class="produt-col-img">
+          <div class="produt-col-img fade-in">
             {{ product_image | image_url: width: product_image.width | image_tag: class: 'product-info-col-img product-info-col-img-2', loading: 'lazy' }}
           </div>
         {%- endif -%}
@@ -57,7 +57,7 @@
 
         {%- assign product_image = block.settings.product_image -%}
         {%- if product_image != blank -%}
-        <div class="produt-col-img">
+        <div class="produt-col-img fade-in">
         {{ product_image | image_url: width: product_image.width | image_tag: class: 'product-info-col-img product-info-col-img-2', loading: 'lazy' }}
         </div>
         {%- endif -%}
@@ -72,21 +72,21 @@
 
    
         {%- if block.settings.drop_message_1_of_3 != blank -%}
-          <div class="info-drop info-drop-1">
+          <div class="info-drop info-drop-1 fade-in-left float-md">
             <a class="drop-clickme">{% render 'drop-plus', class: 'light' %}</a>
             <p class="info-drop-message">{{ block.settings.drop_message_1_of_3 }} </p>
           </div>
         {%- endif -%}
 
         {%- if block.settings.drop_message_2_of_3 != blank -%}
-          <div class="info-drop info-drop-2">
+          <div class="info-drop info-drop-2 fade-in-right float-lg">
             <a class="drop-clickme">{% render 'drop-plus', class: 'light' %}</a>
             <p class="info-drop-message">{{ block.settings.drop_message_2_of_3 }} </p>
           </div>
         {%- endif -%}
         
         {%- if block.settings.drop_message_3_of_3 != blank -%}
-          <div class="info-drop info-drop-3">
+          <div class="info-drop info-drop-3 fade-in float-sm">
             <a class="drop-clickme">{% render 'drop-plus', class: 'light' %}</a>
             <p class="info-drop-message">{{ block.settings.drop_message_3_of_3 }} </p>
           </div>
