@@ -1,5 +1,5 @@
 {{ 'section-aisle.css' | asset_url | stylesheet_tag }}
-
+<div id="aisle"></div>
 <div class="inner aisle-inner">
 
   <div class="aisle-intro">
@@ -28,6 +28,23 @@
       src="https://storage.googleapis.com/gotoaisle-assets-store/aisle-form-submit-script/index.js"
       onload="window.aisleFormLoad(aisleFormConfig)"
   ></script>
+
+  <div class="aisle-steps">
+    {% assign count = 0 %}
+    {%- for block in section.blocks -%}
+      {% assign count = count | plus: 1 %}
+      {%- case block.type -%}
+        {%- when 'step' -%}
+          <div class="aisle-step">
+            <span class="step-number">{{ count }}</span>
+          {{ block.settings.text }} 
+          </div><!-- End aisle-step-->  
+      {%- endcase -%}
+    {%- endfor -%}
+  </div><!--End aisle-steps-->
+    
+  <div class="aisle-terms">{{ section.settings.fine_print }}</div>
+
 </div><!--End inner aisle-inner-->
 
 
@@ -66,6 +83,26 @@
       "id": "aisle_intro_text",
       "label": "Intro Text",
       "info": "Add content that will appear before the Aisle widget."
+    },
+    {
+      "type": "richtext",
+      "id": "fine_print",
+      "label": "Fine Print",
+      "info": "Add fine print/terms to the bottom of this section"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Step",
+      "type": "step",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "info": "Add text for this step"
+        }
+      ]
     }
   ],
   "presets": [
