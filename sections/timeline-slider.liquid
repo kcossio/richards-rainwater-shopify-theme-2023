@@ -15,7 +15,7 @@
       {%- case block.type -%}
     
         {%- when 'timeline_slide' -%}
-      <section id="tl-section-{{ count }}" class="section timeline-block section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center one" data-year="{{ block.settings.year }}">
+      <div id="tl-section-{{ count }}" class="section timeline-block timeline-slide" data-year="{{ block.settings.year }}">
         <div class="timeline-block-content">
         <h3>{{ block.settings.title }} </h3>
         {{ block.settings.content }} 
@@ -27,7 +27,7 @@
           {{ hero_image | image_url: width: hero_image.width | image_tag: class: 'bg', loading: 'lazy' }}
           {%- endif -%}
         </div>
-      </section>
+      </div>
     {%- endcase -%}
   {%- endfor -%}
   </div>
