@@ -274,6 +274,9 @@ nav.hor.onscreen {
 
 nav.hor div {
   flex-basis: 25%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 80px;
   text-align: center;
   height: 50px;
@@ -297,8 +300,8 @@ nav.hor div.active {
   color: #00142A;
 }
 nav.hor div span {
-  display: block;
   margin: 0px auto;
+  line-height: 1em;
   width: 7px;
 }
 @media (min-width: 768px) {
