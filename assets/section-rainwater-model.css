@@ -379,11 +379,11 @@ section.rainwater-model-banner h2:after {
     height: 6px;
   }
 }
-section.rainwater-model-banner h2.onscreen::after {
+section.rainwater-model-banner h2.onscreen {
   width: 67px;
 }
 @media (min-width: 768px) {
-  section.rainwater-model-banner h2.onscreen::after {
+  section.rainwater-model-banner h2.onscreen {
     width: 225px;
   }
 }

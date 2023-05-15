@@ -42,16 +42,10 @@ section.rainwater-model-banner {
             }
         }
        &.onscreen {
-
-            &::after {
-
-                width:67px;
-                @include breakpoint(tablet) {
-                    width:225px;
-                }
-
+            width:67px;
+            @include breakpoint(tablet) {
+                width:225px;
             }
-            
        }
 
         @include breakpoint(tablet) {
