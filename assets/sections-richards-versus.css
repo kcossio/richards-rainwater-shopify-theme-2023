@@ -262,10 +262,6 @@ section.section-versus select:active, section.section-versus select:focus {
   transform: translate(0%, -50%);
   transition: all 0.3s ease 0s;
 }
-.versus-choices-blocks .versus-choice-column .vs-info-box:first-child {
-  opacity: 1;
-  transform: translate(0%, 0%);
-}
 .versus-choices-blocks .versus-choice-column .vs-info-box.active {
   transform: translate(0%, 0%);
   display: block;
