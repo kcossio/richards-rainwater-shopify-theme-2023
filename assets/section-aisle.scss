@@ -144,6 +144,15 @@ section.aisle {
         margin:0px;
         font-family:$font_body;
 
+        &:focus {
+            border-width: 1px;
+            border-color:$light_blue;
+        }
+        &:active {
+            border-width: 1px;
+            border-color:$light_blue;
+        }
+
         &::-webkit-input-placeholder {
             color:#BDBDBD;
         }

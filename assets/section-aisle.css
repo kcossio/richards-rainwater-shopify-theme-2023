@@ -300,6 +300,14 @@ section.aisle .aisle-terms p {
   margin: 0px;
   font-family: "TT Commons", sans-serif;
 }
+.aisle-form-container input:focus {
+  border-width: 1px;
+  border-color: #0094DA;
+}
+.aisle-form-container input:active {
+  border-width: 1px;
+  border-color: #0094DA;
+}
 .aisle-form-container input::-moz-placeholder {
   color: #BDBDBD;
 }
