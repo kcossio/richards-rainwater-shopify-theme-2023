@@ -93,24 +93,18 @@
       jQuery('#timeline-slider').slick('slickGoTo', slideno - 1);
     });
 
-    jQuery('#timeline-slider').on('init', function(event, slick) {
-      setTimeout(function() {
-        console.log("initialized now please");
-      }, 0);
-    });
-    jQuery('#timeline-slider').on('init', function(event, slick){
-        console.log("initialized");
-    });
-    
+
     jQuery('#timeline-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
 
-      var $slides = $('#timeline-slider').slick("getSlick").$slides;
-      var year = $slides.eq( currentSlide ).data("year");
-      console.log('We have entered year:' + year);
-      jQuery('a[data-slide]').removeClass('active');
-      jQuery('a[data-year=' + year +']').addClass('active');
-  
-  });
+        var $slides = $('#timeline-slider').slick("getSlick").$slides;
+        var year = $slides.eq( currentSlide ).data("year");
+        console.log('We have entered year:' + year);
+        jQuery('a[data-slide]').removeClass('active');
+        jQuery('a[data-year=' + year +']').addClass('active');
+    
+    });
+
+    jQuery('a[data-slide]:first-child').addClass('active');
 
   });
   
