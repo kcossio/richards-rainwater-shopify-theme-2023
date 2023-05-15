@@ -409,6 +409,12 @@
       width:100%;
       display:block;
       cursor:pointer;
+
+      &:nth-child(odd) {
+        h3::before {
+          background-image:url(icon-drop-med-blue.svg);
+        }
+      }
       
       h3 {
           color:$dark_blue;
@@ -437,11 +443,7 @@
             background-image:url(icon-drop-light-blue.svg);
             background-size:100% 100%;
           }
-          &:nth-child(odd) {
-            &::before {
-              background-image:url(icon-drop-med-blue.svg);
-            }
-          }
+          
           
           .faq-list & {
             color:$dark_blue;
