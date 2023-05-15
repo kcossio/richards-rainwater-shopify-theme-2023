@@ -201,7 +201,7 @@ EASING
 @media (min-width: 768px) {
   .timeline-wrap .section {
     align-items: center;
-    height: 100vh;
+    height: 80vh;
     /* switch each */
   }
   .timeline-wrap .section:nth-child(even) {
