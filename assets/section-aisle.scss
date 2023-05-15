@@ -32,7 +32,7 @@ section.aisle {
         p {
             font-size:24px;
             margin:0px auto;
-            font-weight:600;
+            font-weight:700;
             width:872px;
             max-width:100%;
         }
@@ -121,4 +121,13 @@ section.aisle {
             width:100%;
         }
     }
+}
+
+.aisle-form-container {
+    display:flex;
+}
+button.aisle-form-button {
+    background:$medium_blue;
+    font-weight:900;
+    border-radius:12px;
 }

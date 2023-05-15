@@ -198,7 +198,7 @@ section.aisle .aisle-intro h2 {
 section.aisle .aisle-intro p {
   font-size: 24px;
   margin: 0px auto;
-  font-weight: 600;
+  font-weight: 700;
   width: 872px;
   max-width: 100%;
 }
@@ -275,4 +275,14 @@ section.aisle .aisle-terms p {
   font-weight: 500;
   margin: 0px;
   width: 100%;
+}
+
+.aisle-form-container {
+  display: flex;
+}
+
+button.aisle-form-button {
+  background: #0040A8;
+  font-weight: 900;
+  border-radius: 12px;
 }
