@@ -1699,14 +1699,23 @@ nav.water-product-buttons a {
   margin: 0px 4px 0px 0px;
   border: 1px solid #E3E3E3;
   border-radius: 6px;
+  text-decoration: none;
 }
 @media (min-width: 768px) {
   nav.water-product-buttons a {
     padding: 16px 18px;
   }
 }
-nav.water-product-buttons a.active {
+nav.water-product-buttons a.current {
   border-color: #0094DA;
+}
+nav.water-product-buttons a h3 {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  nav.water-product-buttons a h3 {
+    width: 75%;
+  }
 }
 nav.water-product-buttons a img {
   height: auto;
