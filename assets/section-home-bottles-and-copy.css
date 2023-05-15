@@ -202,14 +202,14 @@ section.home-bottles-copy {
 }
 @media (min-width: 768px) {
   .home-bottles-intro .home-intro-left img.float.float-1 {
-    width: 228px;
-    left: 10%;
+    width: 37%;
+    left: 0%;
   }
 }
 @media (min-width: 768px) {
   .home-bottles-intro .home-intro-left img.float.float-2 {
-    width: 328px;
-    right: 20%;
+    width: 53.25%;
+    right: 0%;
   }
 }
 .home-bottles-intro .home-intro-right {
@@ -219,7 +219,7 @@ section.home-bottles-copy {
 @media (min-width: 768px) {
   .home-bottles-intro .home-intro-right {
     order: 2;
-    width: 50%;
+    width: 40%;
   }
 }
 .home-bottles-intro .home-intro-right h2 {
