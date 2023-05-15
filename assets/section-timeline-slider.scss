@@ -132,4 +132,14 @@ nav.hor {
     &.active {
       color:$darkest_blue;
     }
+
+    span {
+      display:block;
+      margin:0px auto;
+      width:7px;
+
+      @include breakpoint(tablet) {
+        width:22px;
+      }
+    }
   }

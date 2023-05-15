@@ -296,3 +296,13 @@ nav.hor div {
 nav.hor div.active {
   color: #00142A;
 }
+nav.hor div span {
+  display: block;
+  margin: 0px auto;
+  width: 7px;
+}
+@media (min-width: 768px) {
+  nav.hor div span {
+    width: 22px;
+  }
+}

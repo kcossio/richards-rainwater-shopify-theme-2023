@@ -380,3 +380,15 @@ section.section-product-info-box-drops .info-drop.open p {
 .drop.light .plus {
   fill: #0040A8;
 }
+.drop.light .icon-drop {
+  fill: #0040A8;
+}
+.drop.light .plus {
+  fill: #0094DA;
+}
+.drop.timeline-drop .icon-drop {
+  fill: #bfbfbf;
+}
+.drop.timeline-drop .plus {
+  fill: #ffffff;
+}
