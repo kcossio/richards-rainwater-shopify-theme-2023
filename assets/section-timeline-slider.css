@@ -299,16 +299,17 @@ nav.hor a {
   height: 100%;
   text-decoration: none;
   pointer-events: all;
+  transition: all 0.3s ease 0s;
 }
 @media (min-width: 768px) {
   nav.hor a {
     font-size: 30px;
   }
 }
-nav.hor a.active {
+nav.hor a.active:nth-child(3n+0) {
   color: #000F44;
 }
-nav.hor a.active.timeline-drop .icon-drop {
+nav.hor a.active:nth-child(3n+0) .timeline-drop .icon-drop {
   fill: #000F44;
 }
 nav.hor a span {

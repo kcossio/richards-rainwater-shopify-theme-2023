@@ -136,19 +136,42 @@ nav.hor {
     height:100%;
     text-decoration:none;
     pointer-events:all;
+    transition:all .3s ease 0s;
 
     @include breakpoint(tablet) {
       font-size:30px;
     }
 
     &.active {
-      color:$dark_blue;
 
-      &.timeline-drop {
-        .icon-drop {
-            fill:$dark_blue;
+      &:nth-child(3n+0) {
+        color:$med_blue;
+
+        .timeline-drop {
+          .icon-drop {
+              fill:$med_blue;
+          }
         }
       }
+      &:nth-child(3n+1) {
+        color:$red;
+
+        .timeline-drop {
+          .icon-drop {
+              fill:$red;
+          }
+        }
+      }
+      &:nth-child(3n+2) {
+        color:$orange;
+
+        .timeline-drop {
+          .icon-drop {
+              fill:$orange;
+          }
+        }
+      }
+      
     }
 
     span {
