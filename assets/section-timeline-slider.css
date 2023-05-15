@@ -215,7 +215,7 @@ EASING
   color: #ffffff;
   width: 236px;
   max-width: 70%;
-  padding: 40px;
+  padding: 20px 7.6vw;
   position: relative;
   z-index: 5;
 }
@@ -223,6 +223,7 @@ EASING
   .timeline-wrap .section .timeline-block-content {
     width: 560px;
     height: 486px;
+    padding: 40px 5.7vw;
   }
 }
 .timeline-wrap .section .timeline-block-content h3 {
