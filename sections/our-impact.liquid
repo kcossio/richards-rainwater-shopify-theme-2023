@@ -1,9 +1,13 @@
+{{ 'section-our-impact.css' | asset_url | stylesheet_tag }}
+
+<div class="inner">
+
 {%- ########################################################################## 
 # Label: Heading
 # Returns: a string or an empty object(if nothing has been entered)
 # Filters: https://shopify.dev/api/liquid/objects#string 
 ########################################################################## -%}
-{{ section.settings.heading }} 
+<h2>{{ section.settings.heading }}</h2>
 
 {%- ########################################################################## 
 # Label: Call to Action Button Link
@@ -18,42 +22,31 @@
 ########################################################################## -%}
 {{ section.settings.call_to_action_button_label }} 
 
+<div class="impact-items">
 {%- for block in section.blocks -%}
   {%- case block.type -%}
 
     {%- when 'impact_item' -%}
-      {%- ########################################################################## 
-      # Label: Image
-      # Returns: an image object or nil(if no selection has been made)
-      # Image Properties: https://shopify.dev/api/liquid/objects#image
-      # Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
-      ########################################################################## -%}
-      {%- assign image = block.settings.image -%}
-      {{ image | image_url: width: image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+      <div class="impact-item">
 
-      {%- ########################################################################## 
-      # Label: Image custom code
-      # Returns: a string or an empty object(if nothing has been entered)
-      # Filters: https://shopify.dev/api/liquid/objects#string 
-      ########################################################################## -%}
-      {{ block.settings.image_custom_code }} 
+        {%- assign image = block.settings.image -%}
+        {%- if image != blank -%}
+        {{ image | image_url: width: image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+        {%- endif -%}
 
-      {%- ########################################################################## 
-      # Label: Title
-      # Returns: a string or an empty object(if nothing has been entered)
-      # Filters: https://shopify.dev/api/liquid/objects#string 
-      ########################################################################## -%}
-      {{ block.settings.title }} 
+        
+        {{ block.settings.image_custom_code }} 
 
-      {%- ########################################################################## 
-      # Label: Content
-      # Returns: a string or an empty object(if nothing has been entered)
-      # Filters: https://shopify.dev/api/liquid/objects#string 
-      ########################################################################## -%}
-      {{ block.settings.content }} 
+        <h3>{{ block.settings.title }}</h3> 
+
+        {{ block.settings.content }} 
+      </div><!--End impact-item-->
 
   {%- endcase -%}
 {%- endfor -%}
+</div><!-- End impact-items-->
+
+</div><!--End inner-->
 
 {% schema %}
   {

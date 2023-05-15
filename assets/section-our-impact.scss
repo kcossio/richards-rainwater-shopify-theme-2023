@@ -1,0 +1,49 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+section.our-impact {
+
+    h2 {
+        margin-bottom:10px;
+        position:relative;
+        font-size:36px;
+        line-height:1em;
+        padding-bottom:40px;
+
+        &::after {
+        content:"";
+        display:block;
+        position:absolute;
+        bottom:0px;
+        left:0px;
+        width:100%;
+        height:15px;
+        background:url('bg-rainbow-divider.svg') left center no-repeat;
+        background-size:100% auto;
+
+        @include breakpoint(tablet) {
+            height:25px;
+        }
+        }
+
+        @include breakpoint(tablet) {
+        margin-bottom:20px;
+        }
+    }
+
+    .impact-items {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+
+        .impact-item {
+            width:100%;
+            text-align:center;
+
+            @include breakpoint(tablet) {
+                width:30%;
+            }
+        }
+    }
+}
