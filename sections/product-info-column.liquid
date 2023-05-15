@@ -13,7 +13,7 @@
     {%- when 'left_product_column' -%}
       <div class="product-info-col product-info-col-1 single">
 
-        {%- assign product_image = block.settings.product_image -%}
+        {%- assign product_image = product.featured_image -%}
         {%- if product_image != blank -%}
           <div class="produt-col-img fade-in">
             {{ product_image | image_url: width: product_image.width | image_tag: class: 'product-info-col-img product-info-col-img-2', loading: 'lazy' }}
@@ -99,15 +99,9 @@
   ],
   "blocks": [
     {
-      "name": "Left Product Column",
+      "name": "Product Column",
       "type": "left_product_column",
       "settings": [
-        {
-          "type": "image_picker",
-          "id": "product_image",
-          "label": "Product Image",
-          "info": "Add a product image for this column"
-        },
         {
           "type": "text",
           "id": "product_name_line_1",
