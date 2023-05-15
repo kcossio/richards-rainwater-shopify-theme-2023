@@ -178,6 +178,16 @@ EASING
   background: #f4f4f4;
   overflow: hidden;
 }
+.section-timeline h2.timeline-heading {
+  margin: 0px;
+  line-height: 1em;
+  font-size: 35px;
+}
+@media (min-width: 768px) {
+  .section-timeline h2.timeline-heading {
+    font-size: 82px;
+  }
+}
 
 .timeline-scroller {
   position: relative;
@@ -188,16 +198,6 @@ EASING
   flex-wrap: nowrap !important;
   position: relative;
   align-items: flex-end;
-}
-.timeline-wrap h2.timeline-heading {
-  margin: 0px;
-  line-height: 1em;
-  font-size: 35px;
-}
-@media (min-width: 768px) {
-  .timeline-wrap h2.timeline-heading {
-    font-size: 82px;
-  }
 }
 .timeline-wrap .section {
   display: flex !important;

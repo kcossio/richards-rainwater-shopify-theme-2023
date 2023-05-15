@@ -10,6 +10,17 @@
     padding:40px 0px;
     background:#f4f4f4;
     overflow:hidden;
+
+    h2.timeline-heading {
+      margin:0px;
+      line-height:1em;
+      font-size:35px;
+      
+      @include breakpoint(tablet) {
+        font-size:82px;
+      }
+    }
+    
 }
 
 .timeline-scroller {
@@ -21,15 +32,7 @@
     position:relative;
     align-items:flex-end;
 
-    h2.timeline-heading {
-      margin:0px;
-      line-height:1em;
-      font-size:35px;
-      
-      @include breakpoint(tablet) {
-        font-size:82px;
-      }
-    }
+    
 
     .section {
 
