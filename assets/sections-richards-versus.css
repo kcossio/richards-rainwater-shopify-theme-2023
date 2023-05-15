@@ -207,6 +207,8 @@ section.section-versus select {
   text-transform: uppercase;
   border-radius: 50px;
   padding: 15px;
+  text-align: center;
+  letter-spacing: 1px;
   line-height: 1em;
   width: 45%;
   font-family: "TT Commons", sans-serif;
@@ -218,6 +220,7 @@ section.section-versus select:active, section.section-versus select:focus {
 @media (min-width: 768px) {
   section.section-versus select {
     font-size: 22px;
+    letter-spacing: 2px;
   }
 }
 
@@ -244,7 +247,7 @@ section.section-versus select:active, section.section-versus select:focus {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    text-align: center;
+    text-align: left;
   }
   .versus-choices-blocks .versus-choice-column .vs-info-box img {
     width: 28%;

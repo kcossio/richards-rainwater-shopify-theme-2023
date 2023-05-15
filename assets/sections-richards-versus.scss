@@ -41,6 +41,8 @@ section.section-versus {
         text-transform:uppercase;
         border-radius:50px;
         padding:15px;
+        text-align:center;
+        letter-spacing:1px;
         line-height:1em;
         width:45%;
         font-family:$font_body;
@@ -53,6 +55,7 @@ section.section-versus {
 
         @include breakpoint(tablet) {
             font-size:22px;
+            letter-spacing:2px;
         }
 
     }
@@ -82,7 +85,7 @@ section.section-versus {
                 display:flex;
                 flex-wrap:wrap;
                 align-items:center;
-                text-align:center;
+                text-align:left;
                 img {
                     width:28%;
                     height:auto;
