@@ -96,6 +96,16 @@ section.section-product-info-box-drops {
                 width:auto;
                 height:auto;
             }
+
+            .single & {
+                width:37%;
+                img {
+                    width:100%;
+                }
+                @include breakpoint(tablet) {
+                    width:14%;
+                }
+            }
         }
 
         @include breakpoint(tablet) {

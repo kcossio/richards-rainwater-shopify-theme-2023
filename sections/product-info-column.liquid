@@ -15,20 +15,14 @@
         {%- assign product_image = product.featured_image -%}
         {%- if product_image != blank -%}
           <div class="produt-col-img fade-in">
-            {{ product_image | image_url: width: product_image.width | image_tag: class: 'product-info-col-img product-info-col-img-2', loading: 'lazy' }}
+            {{ product_image | image_url: width: product_image.width | image_tag: class: 'product-info-col-img', loading: 'lazy' }}
           </div>
         {%- endif -%}
 
 
-        <h2 class="product-col-name  fade-in-down">
-          {%- if product.metafields.product_extra.water_product_custom_title.value != blank %}
-            {% assign title_img = product.metafields.product_extra.water_product_custom_title %}
-            {{ title_img | image_url: width: title_img.width | image_tag: class: 'custom-title-img', loading: 'lazy' }}
-              <span class="hidden">{{ block.settings.product_name_line_1 }} {{ block.settings.product_name_line_2 }}</span>
-            {% else %}
-              <span class="vadelma">{{ block.settings.product_name_line_1 }}</span>
-              <span class="rainwater imperial">{{ block.settings.product_name_line_2 }}</span> 
-            {%- endif -%}
+        <h2 class="product-col-name fade-in-down">
+          <span class="vadelma">{{ block.settings.product_name_line_1 }}</span>
+          <span class="rainwater imperial">{{ block.settings.product_name_line_2 }}</span> 
         </h2>
       
         <a class="button" href="{{ block.settings.call_to_action_button_link }}">{{ block.settings.call_to_action_button_label }} </a>
@@ -56,6 +50,16 @@
         {%- endif -%}
 
       </div><!--End product-info-col-1-->
+
+      <div class="clouds clouds-wide top">
+        <div class="scroll-parent">
+          <div class="scroll-element slow primary">
+            <img class="cloud" src="{{ 'cloud-wide-top.svg' | asset_url }}>" width="1877" height="188" role="presentation" alt="cloud" />
+          </div>
+          <div class="scroll-element slow secondary">
+            <img class="cloud" src="{{ 'cloud-wide-top.svg' | asset_url }}>" width="1877" height="188" role="presentation" alt="cloud" />
+          </div>
+        </div>
 
     
 {%- endif -%}

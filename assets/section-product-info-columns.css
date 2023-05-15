@@ -266,6 +266,17 @@ section.section-product-info-box-drops .product-info-col .produt-col-img img {
   width: auto;
   height: auto;
 }
+.single section.section-product-info-box-drops .product-info-col .produt-col-img {
+  width: 37%;
+}
+.single section.section-product-info-box-drops .product-info-col .produt-col-img img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .single section.section-product-info-box-drops .product-info-col .produt-col-img {
+    width: 14%;
+  }
+}
 @media (min-width: 768px) {
   section.section-product-info-box-drops .product-info-col {
     width: 50%;
