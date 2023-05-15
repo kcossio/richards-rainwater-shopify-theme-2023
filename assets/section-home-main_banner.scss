@@ -250,7 +250,9 @@ section.home-banner {
     }
 
     @include breakpoint(tablet) {
-        display:block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     h2 {
@@ -276,7 +278,7 @@ section.home-banner {
         left:0px;
         top:0px;
         width:100%;
-        height:100%;
+        height:auto;
     }
 
     &.active {
