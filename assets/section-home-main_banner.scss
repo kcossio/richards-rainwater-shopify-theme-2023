@@ -91,7 +91,11 @@ section.home-banner {
                 display:inline-block;
                 line-height:.9em;
                 opacity:0;
-                //transform:translateY(-50%);
+                transform:translateY(-50%);
+                transition:transform .3s ease 0s;
+                &.onscreen {
+                    transform:translate(0%, 0%);
+                }
 
                 small {
                     display:block;
@@ -99,7 +103,7 @@ section.home-banner {
                     line-height:23%;
                 }
 
-                &:nth-child(2) {
+                &:nth-child(2) {                    
                     transform:translate(0, 15%);
                 }
             }
