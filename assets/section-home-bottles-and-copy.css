@@ -188,6 +188,7 @@ section.home-bottles-copy {
 .home-bottles-intro .home-intro-left {
   width: 100%;
   order: 2;
+  position: relative;
 }
 @media (min-width: 768px) {
   .home-bottles-intro .home-intro-left {
@@ -202,11 +203,13 @@ section.home-bottles-copy {
 @media (min-width: 768px) {
   .home-bottles-intro .home-intro-left img.float.float-1 {
     width: 228px;
+    left: 10%;
   }
 }
 @media (min-width: 768px) {
   .home-bottles-intro .home-intro-left img.float.float-2 {
     width: 328px;
+    right: 20%;
   }
 }
 .home-bottles-intro .home-intro-right {

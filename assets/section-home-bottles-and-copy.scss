@@ -20,6 +20,7 @@ section.home-bottles-copy {
     .home-intro-left {
         width:100%;
         order:2;
+        position:relative;
 
         @include breakpoint(tablet) {
             order:1;
@@ -33,12 +34,14 @@ section.home-bottles-copy {
             &.float-1 {
                 @include breakpoint(tablet) {
                     width:228px;
+                    left:10%;
                 }
             }
 
             &.float-2 {
                 @include breakpoint(tablet) {
                     width:328px;
+                    right:20%;
                 }
             }
         }
