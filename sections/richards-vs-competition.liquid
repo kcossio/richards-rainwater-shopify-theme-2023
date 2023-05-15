@@ -30,75 +30,53 @@
       </select>
 
       
-    </div>
+    </div><!---End versus-selects ---->
+
+    <div class="versus-choices-blocks">
+
+      <div class="versus-choice-column">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+          {%- when 'richards_product' -%}
+            <div class="vs-info-box" id="">
+              {%- assign product_image = block.settings.product_image -%}
+              {%- if product_image != blank %}
+                {{ product_image | image_url: width: product_image.width | image_tag: class: 'vs-img', loading: 'lazy' }}
+              {%- endif -%}
+              <div class="vs-info-box-content">
+                <h3>{{ block.settings.title }}</h3>
+                {{ block.settings.product_information }} 
+              </div><!--End  vs-info-box-content-->
+            </div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+
+      <div class="versus-choice-column">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+          {%- when 'competitors_product' -%}
+            <div class="vs-info-box" id="">
+              {%- assign product_image = block.settings.product_image -%}
+              {%- if product_image != blank %}
+                {{ product_image | image_url: width: product_image.width | image_tag: class: 'vs-img', loading: 'lazy' }}
+              {%- endif -%}
+              <div class="vs-info-box-content">
+                <h3>{{ block.settings.title }}</h3>
+                {{ block.settings.product_information }} 
+              </div><!--End  vs-info-box-content-->
+            </div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+
+    </div><!--End versus-choices-info--->
 
   </div><!--End versus-wrap-->
 </div><!--End inner-->
 
-{%- ########################################################################## 
-# Label: Heading
-# Returns: a string or an empty object(if nothing has been entered)
-# Filters: https://shopify.dev/api/liquid/objects#string 
-########################################################################## -%}
 
 
-{%- for block in section.blocks -%}
-  {%- case block.type -%}
-
-    {%- when 'richards_product' -%}
-      {%- ########################################################################## 
-      # Label: Title
-      # Returns: a string or an empty object(if nothing has been entered)
-      # Filters: https://shopify.dev/api/liquid/objects#string 
-      ########################################################################## -%}
-      {{ block.settings.title }} 
-
-      {%- ########################################################################## 
-      # Label: Product Image
-      # Returns: an image object or nil(if no selection has been made)
-      # Image Properties: https://shopify.dev/api/liquid/objects#image
-      # Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
-      ########################################################################## -%}
-      {%- assign product_image = block.settings.product_image -%}
-      {%- if product_image != blank %}
-        {{ product_image | image_url: width: product_image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
-      {%- endif -%}
-
-      {%- ########################################################################## 
-      # Label: Product Information
-      # Returns: a string or an empty object(if nothing has been entered)
-      # Filters: https://shopify.dev/api/liquid/objects#string 
-      ########################################################################## -%}
-      {{ block.settings.product_information }} 
-
-    {%- when 'competitors_product' -%}
-      {%- ########################################################################## 
-      # Label: Title
-      # Returns: a string or an empty object(if nothing has been entered)
-      # Filters: https://shopify.dev/api/liquid/objects#string 
-      ########################################################################## -%}
-      {{ block.settings.title }} 
-
-      {%- ########################################################################## 
-      # Label: Product Image
-      # Returns: an image object or nil(if no selection has been made)
-      # Image Properties: https://shopify.dev/api/liquid/objects#image
-      # Image Filters: https://shopify.dev/api/liquid/filters#image_tag, https://shopify.dev/api/liquid/filters#image_url
-      ########################################################################## -%}
-      {%- assign product_image = block.settings.product_image -%}
-      {%- if product_image != blank %}
-        {{ product_image | image_url: width: product_image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
-      {%- endif -%}
-
-      {%- ########################################################################## 
-      # Label: Product Information
-      # Returns: a string or an empty object(if nothing has been entered)
-      # Filters: https://shopify.dev/api/liquid/objects#string 
-      ########################################################################## -%}
-      {{ block.settings.product_information }} 
-
-  {%- endcase -%}
-{%- endfor -%}
 
 {% schema %}
   {

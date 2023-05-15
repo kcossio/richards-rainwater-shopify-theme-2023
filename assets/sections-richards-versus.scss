@@ -31,17 +31,19 @@ section.section-versus {
     }
 
     select {
-        
+        appearance: none;
+        -webkit-appearance:none;
         font-weight:900;
         background:#E3E3E3;
         border:0px;
-        font-size:11px;
+        font-size:px;
         color:$dark_blue;
         text-transform:uppercase;
         border-radius:50px;
         padding:15px;
         line-height:1em;
         width:45%;
+        font-family:$font_body;
     
         &:active,
         &:focus {
@@ -49,6 +51,43 @@ section.section-versus {
             color:$white;
         }
 
+        @include breakpoint(tablet) {
+            font-size:22px;
+        }
+
     }
     
+}
+
+.versus-choices-blocks {
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+
+    .versus-choice-column {
+        width:45%;
+        
+        .vs-info-box {
+            width:100%;
+            display:block;
+
+            img {
+                width:28%;
+                height:auto;
+                margin:0px auto;
+            }
+            @include breakpoint(tablet) {
+
+                display:flex;
+                flex-wrap:wrap;
+                align-items:center;
+                text-align:center;
+                img {
+                    width:28%;
+                    height:auto;
+                }
+            }
+        }
+    }
 }

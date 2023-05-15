@@ -196,18 +196,58 @@ section.section-versus span.vs-drop {
   }
 }
 section.section-versus select {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
   font-weight: 900;
   background: #E3E3E3;
   border: 0px;
-  font-size: 11px;
+  font-size: px;
   color: #000F44;
   text-transform: uppercase;
   border-radius: 50px;
   padding: 15px;
   line-height: 1em;
   width: 45%;
+  font-family: "TT Commons", sans-serif;
 }
 section.section-versus select:active, section.section-versus select:focus {
   background: #0094DA;
   color: #ffffff;
+}
+@media (min-width: 768px) {
+  section.section-versus select {
+    font-size: 22px;
+  }
+}
+
+.versus-choices-blocks {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.versus-choices-blocks .versus-choice-column {
+  width: 45%;
+}
+.versus-choices-blocks .versus-choice-column .vs-info-box {
+  width: 100%;
+  display: block;
+}
+.versus-choices-blocks .versus-choice-column .vs-info-box img {
+  width: 28%;
+  height: auto;
+  margin: 0px auto;
+}
+@media (min-width: 768px) {
+  .versus-choices-blocks .versus-choice-column .vs-info-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+  }
+  .versus-choices-blocks .versus-choice-column .vs-info-box img {
+    width: 28%;
+    height: auto;
+  }
 }
