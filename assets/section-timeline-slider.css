@@ -237,8 +237,8 @@ nav.hor {
   width: 100%;
   display: flex;
   background: #f4f4f4;
+  opacity: 0;
 }
-
 nav.hor div {
   flex-basis: 25%;
   width: 80px;

@@ -74,11 +74,15 @@ let horizontalScroll = gsap.to(sections, {
     scrub: true,
     end: () => `+=${maxWidth}`,
     invalidateOnRefresh: true,
-    onEnter: enterTimeline
+    onEnter: enterTimeline,
+    onLeave: exitTimeline
   }
 });
 function enterTimeline() {
-  console.log('The timeline has been entered');
+  jQuery('nav.hor').addClass('onscreen');
+}
+function exitTimeline() {
+  jQuery('nav.hor').removeClass('onscreen');
 }
 
 let getPosition = getScrollLookup(".timeline-block", {start: "center center", containerAnimation: horizontalScroll});

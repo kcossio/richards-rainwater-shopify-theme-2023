@@ -78,8 +78,17 @@ nav.hor {
     left: 0%;
     width:100%;
     display: flex;
-    background:#f4f4f4
-  }
+    background:#f4f4f4;
+    opacity:0;
+    pointer-events:none;
+    transition:.3s ease 0s;
+    transform: translate(100%, 0%);
+
+    &.onscreen {
+      opacity:1;
+      pointer-events:auto;
+      transform: translate(0%, 0%);
+    }
   nav.hor div {
     flex-basis: 25%;
     width: 80px;
