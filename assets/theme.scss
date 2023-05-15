@@ -349,3 +349,33 @@
     width:50px;
   }
 }
+
+/* ------ Drops ----- */
+
+.drop {
+
+  &.light {
+      .icon-drop {
+          fill:$light_blue;
+      }
+      .plus {
+          fill:$medium_blue;
+      }
+  }
+  &.light {
+      .icon-drop {
+          fill:$medium_blue;
+      }
+      .plus {
+          fill:$light_blue;
+      }
+  }
+  &.timeline-drop {
+      .icon-drop {
+          fill:#bfbfbf;
+      }
+      .plus {
+          fill:$white;
+      }
+  }
+}

@@ -944,3 +944,23 @@ EASING
     width: 50px;
   }
 }
+
+/* ------ Drops ----- */
+.drop.light .icon-drop {
+  fill: #0094DA;
+}
+.drop.light .plus {
+  fill: #0040A8;
+}
+.drop.light .icon-drop {
+  fill: #0040A8;
+}
+.drop.light .plus {
+  fill: #0094DA;
+}
+.drop.timeline-drop .icon-drop {
+  fill: #bfbfbf;
+}
+.drop.timeline-drop .plus {
+  fill: #ffffff;
+}

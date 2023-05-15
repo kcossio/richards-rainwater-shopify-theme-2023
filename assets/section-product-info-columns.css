@@ -373,22 +373,3 @@ section.section-product-info-box-drops .info-drop.open p {
   transform: translateY(0px);
   opacity: 1;
 }
-
-.drop.light .icon-drop {
-  fill: #0094DA;
-}
-.drop.light .plus {
-  fill: #0040A8;
-}
-.drop.light .icon-drop {
-  fill: #0040A8;
-}
-.drop.light .plus {
-  fill: #0094DA;
-}
-.drop.timeline-drop .icon-drop {
-  fill: #bfbfbf;
-}
-.drop.timeline-drop .plus {
-  fill: #ffffff;
-}
