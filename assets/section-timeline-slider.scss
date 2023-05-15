@@ -144,7 +144,7 @@ nav.hor {
 
     &.active {
 
-      &:nth-child(3n+0) {
+      &:nth-child(1n) {
         color:$med_blue;
 
         .timeline-drop {
@@ -153,7 +153,7 @@ nav.hor {
           }
         }
       }
-      &:nth-child(3n+1) {
+      &:nth-child(2n) {
         color:$red;
 
         .timeline-drop {
@@ -162,7 +162,7 @@ nav.hor {
           }
         }
       }
-      &:nth-child(3n+2) {
+      &:nth-child(3n) {
         color:$orange;
 
         .timeline-drop {
