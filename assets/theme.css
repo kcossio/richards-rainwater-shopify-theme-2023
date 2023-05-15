@@ -726,6 +726,11 @@ EASING
   left: 0px;
   bottom: 0px;
 }
+.clouds.top {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
 
 /* -------- GSAP Animate Elements ------- */
 .slide-title {
