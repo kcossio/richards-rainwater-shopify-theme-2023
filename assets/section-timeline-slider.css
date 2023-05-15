@@ -177,9 +177,11 @@ EASING
   height: 10vh;
   display: flex;
   width: 100%;
+  padding-top: 10vh;
 }
 .timeline-h2-wrap.onscreen {
   position: fixed;
+  padding-top: 0px;
 }
 
 .section-timeline {
