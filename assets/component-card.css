@@ -259,6 +259,7 @@ EASING
   bottom: 0;
   position: absolute;
   top: 0;
+  overflow: visible;
 }
 
 .card .media {
@@ -277,11 +278,13 @@ EASING
 .card__inner {
   width: 85%;
   margin: 0px auto;
+  display: block;
 }
 @media (min-width: 768px) {
   .card__inner {
     width: 85%;
     margin: 0px auto;
+    display: block;
   }
 }
 .card__inner.card-hero-wrapper {

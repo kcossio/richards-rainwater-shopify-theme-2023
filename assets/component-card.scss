@@ -90,6 +90,7 @@
     bottom: 0;
     position: absolute;
     top: 0;
+    overflow:visible;
   }
   
   .card .media {
@@ -108,10 +109,12 @@
   .card__inner {
     width: 85%;
     margin:0px auto;
+    display:block;
 
     @include breakpoint(tablet) {
       width:85%;
       margin:0px auto;
+      display:block;
     }
 
     &.card-hero-wrapper {
