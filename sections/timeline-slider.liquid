@@ -38,7 +38,10 @@
       {% assign count = count | plus: 1 %}
       {%- case block.type -%}
         {%- when 'timeline_slide' -%}
-          <div class="hash" data-link="#tl-section-{{ count }}">{{ block.settings.year }}</div>
+          <div class="hash" data-link="#tl-section-{{ count }}">
+            <span>{% render 'drop', class: 'timeline-drop' %}</span>
+            {{ block.settings.year }}
+          </div>
       {%- endcase -%}
     {%- endfor -%}
   </nav>
