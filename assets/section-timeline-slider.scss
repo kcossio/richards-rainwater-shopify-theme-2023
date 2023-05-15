@@ -18,7 +18,7 @@
     display:block;
     width:100vw;
     min-height:80vh;
-    padding:40px 0px;
+    padding-top:10vh;
     background:#f4f4f4;
     overflow:hidden;
     position:relative;
@@ -44,7 +44,7 @@
     position:relative;
     align-items:flex-end;
 
-    padding-top:10vh;
+    
 
     @include breakpoint(tablet) {
       padding-top:10vh;
