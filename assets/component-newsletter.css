@@ -195,7 +195,8 @@ EASING
 }
 .footer-newsletter .nl-cloud .stars {
   top: 80%;
-  height: 50%;
+  height: 60%;
+  overflow: hidden;
   z-index: 1;
 }
 .footer-newsletter .newsletter__wrapper {
