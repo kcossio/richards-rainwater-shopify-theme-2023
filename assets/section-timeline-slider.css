@@ -273,16 +273,8 @@ nav.hor {
   display: flex;
   align-content: stretch;
   background: #f4f4f4;
-  opacity: 0;
   pointer-events: none;
   transition: 0.3s ease 0s;
-  transform: translateY(100%);
-  /*When we've got to the timeline, show the nav */
-}
-nav.hor.onscreen {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0%);
 }
 
 nav.hor div {
