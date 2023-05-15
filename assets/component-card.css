@@ -275,8 +275,14 @@ EASING
 }
 
 .card__inner {
-  width: 100%;
-  margin-bottom: auto;
+  width: 85%;
+  margin: 0px auto;
+}
+@media (min-width: 768px) {
+  .card__inner {
+    width: 85%;
+    margin: 0px auto;
+  }
 }
 .card__inner.card-hero-wrapper {
   aspect-ratio: 337/533;

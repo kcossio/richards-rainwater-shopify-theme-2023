@@ -106,8 +106,13 @@
   }
   
   .card__inner {
-    width: 100%;
-    margin-bottom:auto;
+    width: 85%;
+    margin:0px auto;
+
+    @include breakpoint(tablet) {
+      width:85%;
+      margin:0px auto;
+    }
 
     &.card-hero-wrapper {
         aspect-ratio: 337 / 533;
