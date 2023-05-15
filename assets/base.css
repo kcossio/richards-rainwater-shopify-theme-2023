@@ -1881,7 +1881,7 @@ details[open] > .share-button__fallback {
   box-sizing: border-box;
   transition: box-shadow var(--duration-short) ease;
   border-radius: var(--inputs-radius);
-  height: 4.5rem;
+  height: auto;
   min-height: calc(var(--inputs-border-width) * 2);
   min-width: calc(7rem + var(--inputs-border-width) * 2);
   position: relative;
@@ -2865,7 +2865,7 @@ menu-drawer + .header__search {
 details[open] > .search-modal {
   opacity: 1;
   animation: animateMenuOpen var(--duration-default) ease;
-  top: 40px;
+  top: 0px;
   position: fixed;
   width: 100%;
   min-height: 0px;
