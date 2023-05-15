@@ -1,8 +1,8 @@
 {{ 'section-rainwater-model.css' | asset_url | stylesheet_tag }}
 
-<section class="rainbow-banner">
-  <div class="inner">
-    <h2 class="fade-in-left">{{ section.settings.heading }}</h2> 
+<section class="rainwater-model-banner">
+  <div class="inner center">
+    <h2 class="fade-in">{{ section.settings.heading }}</h2> 
     
       {{ section.settings.introduction }} 
   </div><!--End inner-->
@@ -86,7 +86,7 @@
       "info": "Enter a heading for the section"
     },
     {
-      "type": "textarea",
+      "type": "richtext",
       "id": "introduction",
       "label": "Introduction",
       "info": "Add a block of introductory text to the section"
