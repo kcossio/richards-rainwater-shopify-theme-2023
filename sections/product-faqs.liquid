@@ -1,5 +1,5 @@
 
-<div class="wrapper">
+<div class="inner">
     <h2 class="section-title w-subtitle faq-title">{{ section.settings.title }}</h2>
 
     <div class="toggle-list faq-list">
@@ -21,6 +21,32 @@
     </div><!--End toggle-list-->
 
 </div><!--End wrapper-->
+
+<script>
+    window.addEventListener("load", (event) => {
+     // -------- Toggle List (FAQs) ----------------- //
+    
+     jQuery('.toggle-header').click(function () { // Enable the toggle view list for ul.toggle-view for toggle-able lists
+                
+        //ScrollTrigger.refresh();info-drop
+        
+        var container = jQuery(this).closest('.toggle-view');
+        var text = jQuery(this).closest('.toggle-view').children('div.panel');
+        
+        //If the text (i.e. the panel div) is hidden, then open it up. Otherwise hide the open text.
+        if (text.is(':hidden')) {
+            text.slideDown('200');
+            container.addClass('open');
+        } else {
+            text.slideUp('200');
+            container.removeClass('open');
+        }
+        
+        //ScrollTrigger.refresh();
+
+    });
+});
+</script>
 
 {% schema %}
   {
@@ -69,25 +95,4 @@
 {% endstylesheet %}
 
 {% javascript %}
- // -------- Toggle List (FAQs) ----------------- //
-    
- jQuery('.toggle-header').click(function () { // Enable the toggle view list for ul.toggle-view for toggle-able lists
-                
-                //ScrollTrigger.refresh();info-drop
-                
-                var container = jQuery(this).closest('.toggle-view');
-                var text = jQuery(this).closest('.toggle-view').children('div.panel');
-                
-                //If the text (i.e. the panel div) is hidden, then open it up. Otherwise hide the open text.
-                if (text.is(':hidden')) {
-                    text.slideDown('200');
-                    container.addClass('open');
-                } else {
-                    text.slideUp('200');
-                    container.removeClass('open');
-                }
-                
-                //ScrollTrigger.refresh();
-    
-            });
 {% endjavascript %}
