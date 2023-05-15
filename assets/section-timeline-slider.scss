@@ -82,13 +82,13 @@ nav.hor {
     opacity:0;
     pointer-events:none;
     transition:.3s ease 0s;
-    transform: translate(100%, 0%);
+    transform: translateY(100%);
 
     /*When we've got to the timeline, show the nav */
     &.onscreen {
       opacity:1;
       pointer-events:auto;
-      transform: translate(0%, 0%);
+      transform: translateY(0%);
     }
   }
    
