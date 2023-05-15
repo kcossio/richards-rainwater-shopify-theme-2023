@@ -1713,10 +1713,12 @@ nav.water-product-buttons a.current {
 nav.water-product-buttons a h3 {
   width: 100%;
   order: 2;
+  line-height: 1em;
 }
 @media (min-width: 768px) {
   nav.water-product-buttons a h3 {
     width: 75%;
+    padding-left: 12px;
   }
 }
 nav.water-product-buttons a img {

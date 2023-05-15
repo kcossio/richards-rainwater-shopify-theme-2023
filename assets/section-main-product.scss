@@ -1648,9 +1648,11 @@
       h3 {
         width:100%;
         order:2;
+        line-height:1em;
 
         @include breakpoint(tablet) {
           width:75%;
+          padding-left:12px;
         }
       }
 
