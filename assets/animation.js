@@ -18,27 +18,7 @@
         markers:true
     });
 
-    // Reset Product scrolltriggers when the top has been passed
-    // Body Image with Parallax
-    gsap.to(".section-product-main", {
-        scrollTrigger: {
-            trigger: ".section-product-main", // start the animation when ".box" enters the viewport (once),
-            start: "top top",
-            end: "bottom bottom",
-            scrub: true,
-            invalidateOnRefresh: true,
-            //onEnter: refreshProductPage,
-            onLeave: refreshProductPage,
-            onEnterBack: refreshProductPage,
-            onLeaveBack: refreshProductPage
-        },        
-      });
-      function refreshProductPage() {
-        ScrollTrigger.refresh();
-        window.dispatchEvent(new Event('resize'));
-        console.log('we have exited the product main section');
-      }
-
+    
 
     // ------ Header Scroll Behavior ------//
     window.addEventListener("load", (event) => {
@@ -130,6 +110,27 @@
             
             })
         });
+
+        // Reset Product scrolltriggers when the top has been passed
+    // Body Image with Parallax
+    gsap.to(".section-product-main", {
+        scrollTrigger: {
+            trigger: ".section-product-main", // start the animation when ".box" enters the viewport (once),
+            start: "top top",
+            end: "bottom bottom",
+            scrub: true,
+            invalidateOnRefresh: true,
+            //onEnter: refreshProductPage,
+            onLeave: refreshProductPage,
+            onEnterBack: refreshProductPage,
+            onLeaveBack: refreshProductPage
+        },        
+      });
+      function refreshProductPage() {
+        ScrollTrigger.refresh();
+        window.dispatchEvent(new Event('resize'));
+        console.log('we have exited the product main section');
+      }
 
 
             // Slide title
