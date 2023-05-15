@@ -56,6 +56,7 @@
         align-items:flex-end;
         height:75vh;
         width:100vw;
+        position:relative;
         background:#f4f4f4;
 
         @include breakpoint(tablet) {
