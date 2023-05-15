@@ -230,6 +230,10 @@ section.home-bottles-copy {
   white-space: nowrap;
   letter-spacing: 2px;
 }
+.home-bottles-intro .home-intro-right h2 span {
+  disply: block;
+  line-height: 1em;
+}
 @media (min-width: 768px) {
   .home-bottles-intro .home-intro-right h2 {
     font-size: 75px;

@@ -64,6 +64,11 @@ section.home-bottles-copy {
             white-space: nowrap;
             letter-spacing:2px;
 
+            span {
+                disply:block;
+                line-height:1em;
+            }
+
             @include breakpoint(tablet) {
                 font-size:75px;
             }
