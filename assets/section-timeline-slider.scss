@@ -145,11 +145,11 @@ nav.hor {
     &.active {
 
       &:nth-child(1n) {
-        color:$med_blue;
+        color:$medium_blue;
 
         .timeline-drop {
           .icon-drop {
-              fill:$med_blue;
+              fill:$medium_blue;
           }
         }
       }

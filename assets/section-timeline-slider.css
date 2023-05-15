@@ -306,11 +306,23 @@ nav.hor a {
     font-size: 30px;
   }
 }
-nav.hor a.active:nth-child(3n+0) {
-  color: #000F44;
+nav.hor a.active:nth-child(1n) {
+  color: #0040A8;
 }
-nav.hor a.active:nth-child(3n+0) .timeline-drop .icon-drop {
-  fill: #000F44;
+nav.hor a.active:nth-child(1n) .timeline-drop .icon-drop {
+  fill: #0040A8;
+}
+nav.hor a.active:nth-child(2n) {
+  color: #DE0000;
+}
+nav.hor a.active:nth-child(2n) .timeline-drop .icon-drop {
+  fill: #DE0000;
+}
+nav.hor a.active:nth-child(3n) {
+  color: #FFA500;
+}
+nav.hor a.active:nth-child(3n) .timeline-drop .icon-drop {
+  fill: #FFA500;
 }
 nav.hor a span {
   margin: 0px auto;
