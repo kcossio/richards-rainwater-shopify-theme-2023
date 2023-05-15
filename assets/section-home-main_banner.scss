@@ -92,7 +92,7 @@ section.home-banner {
                 line-height:.9em;
                 opacity:0;
                 transform:translateY(-50%);
-                transition:transform .3s ease 0s;
+                transition:transform .5s $easeInOutBack 0s;
                 &.onscreen {
                     transform:translate(0%, 0%);
                 }
