@@ -134,11 +134,36 @@
       "settings": {
         "title": "Frequently Asked Questions"
       }
+    },
+    "fc5233ff-444f-4aa3-8a40-95cec2ee3d1c": {
+      "type": "product-info-column",
+      "blocks": {
+        "0f5a9a14-0cbf-42da-8563-912c79d94bc7": {
+          "type": "left_product_column",
+          "settings": {
+            "product_name_line_1": "Sparkling",
+            "product_name_line_2": "rainwater",
+            "call_to_action_button_link": "#",
+            "call_to_action_button_label": "",
+            "drop_message_1_of_3": "Lorem ipsum dolor. sit amet",
+            "drop_message_2_of_3": "",
+            "drop_message_3_of_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "0f5a9a14-0cbf-42da-8563-912c79d94bc7"
+      ],
+      "settings": {
+        "heading": "Learn What Rainwater Can Do",
+        "subheading": "CLICK THE DROPS TO DISCOVER THE BENEFITS OF RAINWATER"
+      }
     }
   },
   "order": [
     "main",
     "related-products",
-    "ae63e3f8-db42-4d58-a2ee-0e23d8124c18"
+    "ae63e3f8-db42-4d58-a2ee-0e23d8124c18",
+    "fc5233ff-444f-4aa3-8a40-95cec2ee3d1c"
   ]
 }
