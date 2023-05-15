@@ -1,14 +1,17 @@
 {{ 'section-product-info-columns.css' | asset_url | stylesheet_tag }}
 
-<header class="product-info-col-header">
-<h2 class="product-info-col-heading">{{ section.settings.heading }}</h2>
-<p class="product-info-col-subheading">{{ section.settings.subheading }}</p>
-</header>
+
 
 
 
 {%- for block in section.blocks -%}
-  {%- if block.settings.product_name == product.handle -%}
+  {%- if section.settings.product_name == product.handle -%}
+
+    <header class="product-info-col-header">
+      <h2 class="product-info-col-heading">{{ section.settings.heading }}</h2>
+      <p class="product-info-col-subheading">{{ section.settings.subheading }}</p>
+      </header>
+      
   {%- case block.type -%}
 
     {%- when 'left_product_column' -%}
