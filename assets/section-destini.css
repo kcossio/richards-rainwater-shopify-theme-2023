@@ -237,3 +237,34 @@ EASING
     width: 64%;
   }
 }
+
+.jump-to-aisle {
+  display: flex;
+  position: absolute;
+  aspect-ratio: 372/223;
+  width: 277px;
+  height: auto;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 24px;
+  text-align: center;
+  right: -20px;
+  bottom: 20%;
+}
+.jump-to-aisle span {
+  position: relative;
+  z-index: 2;
+}
+.jump-to-aisle span span {
+  color: #0094DA;
+}
+.jump-to-aisle svg {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.4));
+}
