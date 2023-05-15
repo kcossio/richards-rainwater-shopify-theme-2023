@@ -170,6 +170,11 @@ EASING
 }
 
 */
+.product-grid-animate {
+  opacity: 0;
+  transform: translateY(25%);
+}
+
 .card-wrapper {
   color: inherit;
   height: 100%;
