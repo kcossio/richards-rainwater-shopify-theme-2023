@@ -63,7 +63,7 @@
       slidesToShow: 1,
       variableWidth: true,
       arrows: true,
-      dots: true,
+      dots: false,
       responsive: [
         {
           breakpoint: 768,
@@ -93,6 +93,9 @@
       jQuery('#timeline-slider').slick('slickGoTo', slideno - 1);
     });
 
+    jQuery('#timeline-slider').on('init', function(event, slick, currentSlide, nextSlide) {
+      jQuery('a[data-slide]:first-child').addClass('active')
+    });
     jQuery('#timeline-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
 
       var $slides = $('#timeline-slider').slick("getSlick").$slides;
