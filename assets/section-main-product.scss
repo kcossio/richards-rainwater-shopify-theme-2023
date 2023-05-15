@@ -1632,7 +1632,7 @@
       width:40%;
       margin:0px 6px 0px 0px;
       border:1px solid #E3E3E3;
-      border-radius:6px;
+      border-radius:12px;
       text-decoration:none;
 
       @include breakpoint(tablet) {
@@ -1647,6 +1647,7 @@
 
       h3 {
         width:100%;
+        order:2;
 
         @include breakpoint(tablet) {
           width:75%;
@@ -1657,6 +1658,7 @@
         height:auto;
         width:25%;
         display:none;
+        order:1;
 
         @include breakpoint(tablet) {
           display:block;

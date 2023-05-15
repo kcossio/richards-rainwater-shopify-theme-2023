@@ -1698,7 +1698,7 @@ nav.water-product-buttons a {
   width: 40%;
   margin: 0px 6px 0px 0px;
   border: 1px solid #E3E3E3;
-  border-radius: 6px;
+  border-radius: 12px;
   text-decoration: none;
 }
 @media (min-width: 768px) {
@@ -1712,6 +1712,7 @@ nav.water-product-buttons a.current {
 }
 nav.water-product-buttons a h3 {
   width: 100%;
+  order: 2;
 }
 @media (min-width: 768px) {
   nav.water-product-buttons a h3 {
@@ -1722,6 +1723,7 @@ nav.water-product-buttons a img {
   height: auto;
   width: 25%;
   display: none;
+  order: 1;
 }
 @media (min-width: 768px) {
   nav.water-product-buttons a img {
