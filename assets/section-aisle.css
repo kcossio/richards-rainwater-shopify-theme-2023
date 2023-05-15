@@ -296,15 +296,15 @@ section.aisle .aisle-terms p {
   color: #707070;
   font-weight: 800;
   padding: 14px 35px;
-  width: 60%;
+  width: 65%;
   margin: 0px;
   font-family: "TT Commons", sans-serif;
 }
 .aisle-form-container input ::-moz-placeholder {
-  color: #707070;
+  color: #BDBDBD;
 }
 .aisle-form-container input ::placeholder {
-  color: #707070;
+  color: #BDBDBD;
 }
 .aisle-form-container .aisle-form-input-text-error {
   order: 3;
@@ -312,7 +312,7 @@ section.aisle .aisle-terms p {
 }
 
 .aisle-form-button-container {
-  width: 40%;
+  width: 35%;
 }
 .aisle-form-button-container button.aisle-form-button {
   background: #0040A8;
@@ -325,4 +325,5 @@ section.aisle .aisle-terms p {
   margin: 0px;
   text-transform: uppercase;
   width: 100%;
+  letter-spacing: 3px;
 }

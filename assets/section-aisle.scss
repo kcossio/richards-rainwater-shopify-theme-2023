@@ -140,12 +140,12 @@ section.aisle {
         color:#707070;
         font-weight:800;
         padding:14px 35px;
-        width:60%;
+        width:65%;
         margin:0px;
         font-family:$font_body;
 
         ::placeholder {
-            color:#707070;
+            color:#BDBDBD;
         }
     }
     .aisle-form-input-text-error {
@@ -154,7 +154,7 @@ section.aisle {
     }
 }
 .aisle-form-button-container {
-    width:40%;
+    width:35%;
     button.aisle-form-button {
         background:$medium_blue;
         font-weight:900;
@@ -166,5 +166,6 @@ section.aisle {
         margin:0px;
         text-transform:uppercase;
         width:100%;
+        letter-spacing:3px;
     }
 }
