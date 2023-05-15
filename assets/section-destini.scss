@@ -1,0 +1,49 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+.destini-inner {
+    display:flex;
+    flex-wrap:wrap;
+    align-items:stretch;
+    min-height:90vh;
+}
+
+.destini-intro {
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    background:$medium_blue;
+    color:$white;
+
+    h1 {
+        width:100%;
+        color:$white;
+        margin:20px 0px 40px 0px;
+    }
+
+    h2 {
+        width:100%;
+    }
+    p {
+        width:100%;
+        color:$white;
+    }
+
+    @include breakpoint(tablet) {
+        width:36%;
+    }
+}
+.storeDiv {
+    display: block;
+    margin: 0px auto;
+    border-radius: 0px;
+    overflow: hidden;
+    width:100%;
+    height:100%;
+
+    @include breakpoint(tablet) {
+        width:64%;
+    }
+}
