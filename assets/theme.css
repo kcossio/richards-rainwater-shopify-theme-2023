@@ -1014,7 +1014,7 @@ EASING
   background-image: url(icon-drop-light-blue.svg);
   background-size: 100% 100%;
 }
-.toggle-view .toggle-header h3:nth-child(odd) {
+.toggle-view .toggle-header h3:nth-child(odd)::before {
   background-image: url(icon-drop-med-blue.svg);
 }
 .faq-list .toggle-view .toggle-header h3 {
