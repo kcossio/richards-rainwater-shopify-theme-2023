@@ -231,7 +231,7 @@ section.home-bottles-copy {
   letter-spacing: 2px;
 }
 .home-bottles-intro .home-intro-right h2 span {
-  disply: block;
+  display: block;
   line-height: 1em;
 }
 @media (min-width: 768px) {
@@ -243,4 +243,5 @@ section.home-bottles-copy {
   color: #FFA500;
   font-weight: 900;
   font-size: 37.5px;
+  line-height: 1em;
 }
