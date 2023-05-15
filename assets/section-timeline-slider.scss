@@ -89,6 +89,8 @@ nav.hor {
       pointer-events:auto;
       transform: translate(0%, 0%);
     }
+
+   
   nav.hor div {
     flex-basis: 25%;
     width: 80px;
@@ -111,3 +113,4 @@ nav.hor {
       color:$darkest_blue;
     }
   }
+}

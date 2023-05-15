@@ -238,8 +238,16 @@ nav.hor {
   display: flex;
   background: #f4f4f4;
   opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease 0s;
+  transform: translate(100%, 0%);
 }
-nav.hor div {
+nav.hor.onscreen {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(0%, 0%);
+}
+nav.hor nav.hor div {
   flex-basis: 25%;
   width: 80px;
   text-align: center;
@@ -256,10 +264,10 @@ nav.hor div {
   transform: all 0.3s ease 0s;
 }
 @media (min-width: 768px) {
-  nav.hor div {
+  nav.hor nav.hor div {
     font-size: 30px;
   }
 }
-nav.hor div.active {
+nav.hor nav.hor div.active {
   color: #00142A;
 }
