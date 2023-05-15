@@ -93,6 +93,7 @@
           "type": "left_product_column",
           "settings": {
             "product_name": "richards-sparkling-rainwater-24-pk-bottles",
+            "class": "sparkling",
             "product_name_line_1": "Sparkling",
             "product_name_line_2": "rainwater",
             "call_to_action_button_link": "#",
@@ -106,6 +107,7 @@
           "type": "left_product_column",
           "settings": {
             "product_name": "richards-still-rainwater-16oz-24-pack",
+            "class": "still",
             "product_name_line_1": "Still",
             "product_name_line_2": "rainwater",
             "call_to_action_button_link": "#",
