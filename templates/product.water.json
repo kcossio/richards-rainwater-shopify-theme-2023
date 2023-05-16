@@ -86,6 +86,12 @@
         "padding_bottom": 28
       }
     },
+    "9da798e3-47aa-4f43-a328-e837a3ace8e5": {
+      "type": "store-locator-w-slider",
+      "settings": {
+        "heading": "Find Richard’s near you."
+      }
+    },
     "fc5233ff-444f-4aa3-8a40-95cec2ee3d1c": {
       "type": "product-info-column",
       "blocks": {
@@ -187,6 +193,7 @@
   "order": [
     "main",
     "related-products",
+    "9da798e3-47aa-4f43-a328-e837a3ace8e5",
     "fc5233ff-444f-4aa3-8a40-95cec2ee3d1c",
     "ae63e3f8-db42-4d58-a2ee-0e23d8124c18",
     "c8b0a5d8-fdc6-482d-bde3-65ecc91bcfc4"
