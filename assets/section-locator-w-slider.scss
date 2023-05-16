@@ -1,0 +1,17 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+.locator-slider-wrap {
+    background:#ebebeb;
+    padding:40px;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.section-locator-w-slider {
+    .inner {
+        
+    }
+}

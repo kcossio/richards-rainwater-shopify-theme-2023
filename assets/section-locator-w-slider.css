@@ -170,57 +170,10 @@ EASING
 }
 
 */
-.section-logo-slider {
-  text-align: center;
-  padding: 66px 0px;
-  margin: 0px;
-}
-.section-logo-slider.notitle {
-  padding: 40px 0px;
-}
-@media (min-width: 768px) {
-  .section-logo-slider {
-    padding: 160px 0px 40px 0px;
-  }
-  .section-logo-slider.notitle {
-    padding: 40px 0px;
-  }
-}
-.section-logo-slider header h2 {
-  color: #0094DA;
-  font-weight: 900;
-  margin: 0px auto 18px auto;
-  font-size: 40px;
+.locator-slider-wrap {
+  background: #ebebeb;
+  padding: 40px;
   width: 100%;
-}
-@media (min-width: 768px) {
-  .section-logo-slider header h2 {
-    font-size: 75px;
-    margin: 0px auto 36px auto;
-  }
-}
-.section-logo-slider header p {
-  text-align: center;
-  font-size: 22px;
-  font-weight: bold;
-  line-height: 1.3em;
-  width: 624px;
-  max-width: 100%;
-  margin: 0px auto;
-}
-@media (min-width: 768px) {
-  .section-logo-slider header p {
-    font-size: 30px;
-  }
-}
-.section-logo-slider a {
-  cursor: pointer;
-}
-.section-logo-slider a.button {
-  margin: 30px auto;
-}
-@media (min-width: 768px) {
-  .section-logo-slider a.button {
-    margin: 60px auto 30px auto;
-  }
+  display: flex;
+  flex-wrap: wrap;
 }
