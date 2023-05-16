@@ -247,8 +247,8 @@
       }
     },
     "404": {
-      "title": "Page not found",
-      "subtext": "404"
+      "title": "Nothing to see here.",
+      "subtext": "Looks like this page doesn't exist. Click the button below to continue shopping!"
     }
   },
   "sections": {
