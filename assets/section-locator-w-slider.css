@@ -177,3 +177,11 @@ EASING
   display: flex;
   flex-wrap: wrap;
 }
+
+.section-locator-w-slider {
+  width: 1312px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}

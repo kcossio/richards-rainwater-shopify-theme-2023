@@ -11,7 +11,13 @@
 }
 
 .section-locator-w-slider {
-    .inner {
-        
+    width: 1312px;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+
+    @include breakpoint(tablet) {
+
     }
 }
