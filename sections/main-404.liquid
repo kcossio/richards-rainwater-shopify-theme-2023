@@ -2,7 +2,26 @@
   .template-404 .title + * {
     margin-top: 1rem;
   }
+  .nyan {
+    display:block;
+    margin:0px auto;
+    position:relative;
+    z-index:1;
+  }
+  .nyan::before {
+    content:"";
+    position:absolute;
+    width:20%;
+    height:100%;
+    top:0px;
+    left:0px;
+    display:block;
+    background: -moz-linear-gradient(left,  rgba(255,255,255,1) 39%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 39%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right,  rgba(255,255,255,1) 39%,rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
 
+  }
   @media screen and (min-width: 750px) {
     .template-404 .title + * {
       margin-top: 2rem;
@@ -13,12 +32,13 @@
 <div class="template-404 page-width page-margin center">
 
   <img class="nyan" src="{{ '404-rainbow-can.gif' | asset_url }}" role="presentation" alt="richard's rainwater nyan" loading="lazy" />
-  <p>
-    {{ 'templates.404.subtext' | t }}
-  </p>
+ 
   <h1 class="title">
     {{ 'templates.404.title' | t }}
   </h1>
+  <p>
+    {{ 'templates.404.subtext' | t }}
+  </p>
   <a href="{{ routes.all_products_collection_url }}" class="button">
     {{ 'general.continue_shopping' | t }}
   </a>
