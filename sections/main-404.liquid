@@ -2,13 +2,12 @@
   .template-404 .title + * {
     margin-top: 1rem;
   }
-  .nyan {
-    display:block;
+  .nyan-wrap {
+    display:inline-block;
     margin:0px auto;
     position:relative;
-    z-index:1;
   }
-  .nyan::before {
+  .nyan-wrap::before {
     content:"";
     position:absolute;
     width:20%;
@@ -22,6 +21,12 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
 
   }
+  .nyan {
+    display:block;
+    position:relative;
+    z-index:1;
+  }
+  
   @media screen and (min-width: 750px) {
     .template-404 .title + * {
       margin-top: 2rem;
@@ -31,7 +36,7 @@
 
 <div class="template-404 page-width page-margin center">
 
-  <img class="nyan" src="{{ '404-rainbow-can.gif' | asset_url }}" role="presentation" alt="richard's rainwater nyan" loading="lazy" />
+  <div class="nyan-wrap"><img class="nyan" src="{{ '404-rainbow-can.gif' | asset_url }}" role="presentation" alt="richard's rainwater nyan" loading="lazy" /></div>
  
   <h1 class="title">
     {{ 'templates.404.title' | t }}
