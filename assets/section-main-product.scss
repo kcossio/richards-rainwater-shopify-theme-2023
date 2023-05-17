@@ -526,6 +526,11 @@
         }
       }
 
+      .quantity__button {
+        font-weight:900;
+        width:33%;
+      }
+
       label {
         color:$dark_blue;
         display:none;
@@ -534,6 +539,8 @@
         text-transform: uppercase;
         font-size:15px;
         padding-left:15px;
+        margin:0px;
+        
 
         @include breakpoint(tablet) {
           display:block;

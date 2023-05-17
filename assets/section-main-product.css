@@ -675,6 +675,10 @@ a.product__text {
     width: 50%;
   }
 }
+.quantity-and-buttons .product-form__quantity .quantity__button {
+  font-weight: 900;
+  width: 33%;
+}
 .quantity-and-buttons .product-form__quantity label {
   color: #000F44;
   display: none;
@@ -683,6 +687,7 @@ a.product__text {
   text-transform: uppercase;
   font-size: 15px;
   padding-left: 15px;
+  margin: 0px;
 }
 @media (min-width: 768px) {
   .quantity-and-buttons .product-form__quantity label {
