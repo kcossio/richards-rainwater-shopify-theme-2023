@@ -90,19 +90,20 @@
         
         span {
             position: relative;
-            z-index:1;
+            z-index:2;
         }
 
         &::after {
             content:"";
             display:block;
-            width:100%;
+            width:120%;
             height:100%;
             position:absolute;
             z-index:1;
             background:$medium_blue;
             top:0px;
             left:100%;
+            transform:skewX(30deg);
             transition:all .3s $easeInOutBack 0s;
             
         }
@@ -110,6 +111,7 @@
         &:hover {
             &::after {
                 left:0px;
+                transform:skewX(0);
             }
         }
 
