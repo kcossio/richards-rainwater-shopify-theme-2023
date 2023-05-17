@@ -170,6 +170,7 @@
                 {%- endif -%}
               </p>
             {%- when 'description' -%}
+              {% ## Hide Description on certain products %}
               {%- assign this_product = product.handle -%}
                 {%- assign hide_on_these_products = block.settings.hide_on_these_products -%}
                 {%- for product in hide_these_products -%}
