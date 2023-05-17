@@ -662,6 +662,21 @@ a.product__text {
   min-height: none;
   display: flex;
   justify-content: space-between;
+  align-content: center;
+  padding: 0px 15px;
+}
+.quantity-and-buttons .product-form__quantity label {
+  color: #000F44;
+  display: none;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+@media (min-width: 768px) {
+  .quantity-and-buttons .product-form__quantity label {
+    display: block;
+  }
 }
 .quantity-and-buttons .buy-buttons-wrap {
   width: 50%;
@@ -675,6 +690,7 @@ a.product__text {
 }
 .quantity-and-buttons .buy-buttons-wrap .button--full-width {
   border-radius: 0px;
+  margin: 0px;
 }
 
 /* ------ End quantity + buttons --- */
