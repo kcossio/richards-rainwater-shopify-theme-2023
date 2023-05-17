@@ -230,6 +230,14 @@ EASING
 .store-locator-form {
   width: 100%;
 }
+.store-locator-form .field {
+  z-index: 0;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.store-locator-form .field::after {
+  border: 0px;
+}
 @media (min-width: 768px) {
   .store-locator-form {
     width: 50%;

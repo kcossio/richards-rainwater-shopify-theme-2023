@@ -64,6 +64,16 @@
 .store-locator-form {
     width:100%;
 
+    .field {
+        z-index: 0;
+        border-radius: 50px;
+        overflow: hidden;
+
+        &::after {
+            border:0px;
+        }
+    }
+
     @include breakpoint(tablet) {
         width:50%;
     }
