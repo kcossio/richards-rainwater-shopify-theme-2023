@@ -26,11 +26,6 @@
             "picker_type": "button"
           }
         },
-        "74274d65-fd74-47e4-9ec8-73fdef4d99cf": {
-          "type": "quantity_and_buttons",
-          "settings": {
-          }
-        },
         "quantity_selector": {
           "type": "quantity_selector",
           "disabled": true,
@@ -66,7 +61,6 @@
         "price",
         "62399502-8414-4318-80a3-021b2666ce89",
         "variant_picker",
-        "74274d65-fd74-47e4-9ec8-73fdef4d99cf",
         "quantity_selector",
         "buy_buttons",
         "ff628bee-bf3e-4e7d-8aa4-fefdf2dd3e99",
