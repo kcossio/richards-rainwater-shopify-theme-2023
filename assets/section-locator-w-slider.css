@@ -203,6 +203,7 @@ EASING
 .section-locator-w-slider .logo-slider {
   color: #ebebeb;
   padding: 0px;
+  margin: 20px 0px 0px 0px;
 }
 .section-locator-w-slider .logo-slider::before {
   background: rgb(235, 235, 235);
