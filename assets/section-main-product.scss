@@ -491,24 +491,18 @@
     margin-bottom: 1.2rem;
   }
   
-  /* Quantity + buttons block */
+  /* Quantity + buttons blocks */
 
-  .quantity-and-buttons {
-    display:flex;
-    flex-wrap:wrap;
+  .product-form__quantity {
+    width:50%;
+    max-width:50%;
 
-    .product-form__quantity {
-      width:50%;
-      max-width:50%;
-  
-      label {
-        display:none;
-      }
+    label {
+      display:none;
     }
-    .buy-buttons-wrap {
-      width:50%;
-    }
-
+  }
+  .buy-buttons-wrap {
+    width:50%;
   }
   
 
