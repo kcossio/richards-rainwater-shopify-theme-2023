@@ -26,18 +26,6 @@
             "picker_type": "button"
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": false,
-            "show_gift_card_recipient": false
-          }
-        },
         "ff628bee-bf3e-4e7d-8aa4-fefdf2dd3e99": {
           "type": "store_locator_form",
           "settings": {
@@ -59,8 +47,6 @@
         "price",
         "62399502-8414-4318-80a3-021b2666ce89",
         "variant_picker",
-        "quantity_selector",
-        "buy_buttons",
         "ff628bee-bf3e-4e7d-8aa4-fefdf2dd3e99",
         "description"
       ],
