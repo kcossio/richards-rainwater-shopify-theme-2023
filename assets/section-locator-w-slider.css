@@ -254,12 +254,18 @@ EASING
   width: 25%;
   transition: all 0.3s ease 0s;
 }
+.newsletter-form.store-locator-form .button span {
+  position: relative;
+  z-index: 1;
+}
 .newsletter-form.store-locator-form .button::after {
   content: "";
   display: block;
   width: 100%;
   height: 100%;
   position: absolute;
+  z-index: 1;
+  background: #0040A8;
   top: 0px;
   left: 100%;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
