@@ -8,6 +8,13 @@
     width:100%;
     display:flex;
     flex-wrap:wrap;
+
+    @include breakpoint(tablet) {
+        padding:40px 60px;
+    }
+    @include breakpoint(laptop) {
+        padding:40px 100px;
+    }
 }
 
 .section-locator-w-slider {
@@ -17,6 +24,10 @@
     margin: 0 auto;
     position: relative;
     z-index: 1;
+
+    @include breakpoint(tablet) {
+        padding:40px;
+    }
 
     h2 {
         width:100%;
@@ -35,7 +46,7 @@
     .logo-slider {
         color:#ebebeb;
         padding:0px;
-        margin:20px 0px 0px 0px;
+        margin:30px 0px 0px 0px;
 
         &::before {
             background: rgb(235,235,235);
@@ -47,9 +58,9 @@
         }
 
         img {
-            max-height:32px;
+            max-height:26px;
             @include breakpoint(tablet) {
-                max-height:40px;
+                max-height:34px;
                 margin:0px 20px;
             }
         }
@@ -57,9 +68,7 @@
     }
     
 
-    @include breakpoint(tablet) {
-        padding:40px;
-    }
+    
 }
 
 .newsletter-form.store-locator-form {
