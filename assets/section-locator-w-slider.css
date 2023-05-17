@@ -226,3 +226,12 @@ EASING
     padding: 40px;
   }
 }
+
+.store-locator-form {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .store-locator-form {
+    width: 50%;
+  }
+}

@@ -60,3 +60,11 @@
         padding:40px;
     }
 }
+
+.store-locator-form {
+    width:100%;
+
+    @include breakpoint(tablet) {
+        width:50%;
+    }
+}
