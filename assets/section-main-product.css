@@ -641,19 +641,7 @@ a.product__text {
   margin-bottom: 1.2rem;
 }
 
-/* Quantity + buttons blocks */
-.product-form__quantity {
-  width: 50%;
-  max-width: 50%;
-}
-.product-form__quantity label {
-  display: none;
-}
-
-.buy-buttons-wrap {
-  width: 50%;
-}
-
+/* Quantity + buttons block */
 /* ------ End quantity + buttons --- */
 .product--no-media fieldset.product-form__input {
   flex-wrap: wrap;
