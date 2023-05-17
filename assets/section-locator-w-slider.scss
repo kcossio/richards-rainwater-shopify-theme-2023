@@ -73,6 +73,21 @@
             border:0px;
         }
     }
+    .button {
+        position:absolute;
+        top:0px;
+        right:0px;
+        border-radius:0px;
+        background:url('bg-rainbow-divider.svg') center left no-repeat;
+        background-size:auto 100%;
+        width:40px;
+        transition:all .3s ease 0s;
+
+        &:hover {
+            background-position: center left -40px;
+        }
+
+    }
 
     @include breakpoint(tablet) {
         width:50%;

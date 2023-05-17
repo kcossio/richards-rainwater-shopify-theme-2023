@@ -238,6 +238,19 @@ EASING
 .store-locator-form .field::after {
   border: 0px;
 }
+.store-locator-form .button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-radius: 0px;
+  background: url("bg-rainbow-divider.svg") center left no-repeat;
+  background-size: auto 100%;
+  width: 40px;
+  transition: all 0.3s ease 0s;
+}
+.store-locator-form .button:hover {
+  background-position: center left -40px;
+}
 @media (min-width: 768px) {
   .store-locator-form {
     width: 50%;
