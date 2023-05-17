@@ -501,6 +501,10 @@
     border-radius:50px;
     overflow:hidden;
 
+    .product-form {
+      margin:0px !important;
+    }
+
     .product-form__quantity {
       width:50%;
       max-width:50%;
@@ -511,9 +515,7 @@
       display:flex;
       justify-content:space-between;
 
-      .product-form {
-        margin:0px;
-      }
+      
     }
     .buy-buttons-wrap {
       width:50%;

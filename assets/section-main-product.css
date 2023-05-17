@@ -650,6 +650,9 @@ a.product__text {
   border-radius: 50px;
   overflow: hidden;
 }
+.quantity-and-buttons .product-form {
+  margin: 0px !important;
+}
 .quantity-and-buttons .product-form__quantity {
   width: 50%;
   max-width: 50%;
@@ -659,9 +662,6 @@ a.product__text {
   min-height: none;
   display: flex;
   justify-content: space-between;
-}
-.quantity-and-buttons .product-form__quantity .product-form {
-  margin: 0px;
 }
 .quantity-and-buttons .buy-buttons-wrap {
   width: 50%;
