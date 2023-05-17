@@ -170,22 +170,12 @@
                 {%- endif -%}
               </p>
             {%- when 'description' -%}
-              {% ## Hide Description on certain products %}
-              {%- assign this_product = product.handle -%}
-              {%- assign main_product = product -%}
-                {%- assign hide_on_these_products = block.settings.hide_on_these_products -%}
-                {%- for product in hide_these_products -%}
-                  {%- if this_product == product.handle -%}
-                    {%- assign class=" hidden" -%}}
-                    {%- else -%}
-                    {%- assign class=" show" -%}
-                  {%- endif -%}
-                  {%- if main_product.description != blank -%}
-                    <div class="product__description rte quick-add-hidden test {{ class }}"  {{ block.shopify_attributes }}>
-                      {{ main_product.description }}
-                    </div>
-                  {%- endif -%}
-                {%- endfor -%}
+              {%- if product.description != blank -%}
+                <div class="product__description rte quick-add-hidden hidden"  {{ block.shopify_attributes }}>
+                  {{ product.description }}
+                </div>
+              {%- endif -%}
+
               
             {%- when 'sku' -%}
               <p
@@ -780,14 +770,7 @@
       "type": "description",
       "name": "t:sections.main-product.blocks.description.name",
       "limit": 1,
-      "settings": [
-        {
-          "type": "product_list",
-          "id": "hide_on_these_products",
-          "label": "Hide on these products",
-          "info": "Choose which products this block should appear on."
-        }
-      ]
+      "settings": []
     },
     {
       "type": "share",
