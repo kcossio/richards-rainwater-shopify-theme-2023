@@ -52,7 +52,8 @@
           "type": "description",
           "settings": {
             "hide_on_these_products": [
-              "richards-sparkling-rainwater-24-pk-bottles"
+              "richards-sparkling-rainwater-24-pk-bottles",
+              "richards-still-rainwater-16oz-24-pack"
             ]
           }
         }
