@@ -26,6 +26,11 @@
             "picker_type": "button"
           }
         },
+        "6b3a7561-9f99-48f1-a848-969a618af235": {
+          "type": "quantity_and_button",
+          "settings": {
+          }
+        },
         "ff628bee-bf3e-4e7d-8aa4-fefdf2dd3e99": {
           "type": "store_locator_form",
           "settings": {
@@ -47,6 +52,7 @@
         "price",
         "62399502-8414-4318-80a3-021b2666ce89",
         "variant_picker",
+        "6b3a7561-9f99-48f1-a848-969a618af235",
         "ff628bee-bf3e-4e7d-8aa4-fefdf2dd3e99",
         "description"
       ],
