@@ -444,6 +444,19 @@
               {% render 'water-product-image-links',
                 block: block
               %}
+              {%- when 'store_locator_form' %}
+                {%- assign this_product = product.handle -%}
+                {%- assign show_on_these_products = block.settings.show_on_these_products -%}
+                {%- for product in show_on_these_products -%}
+                  {%- if this_product == product.handle -%}
+                    <div class="store-locator-product">              
+                      <h2>{{ block.settings.heading }}</h2>
+                      {{ block.settings.heading }}
+                      {% render 'store-locator-form', block: block %}
+                     </div><!--End store-locator-product-->
+                  {%- endif -%}
+                {%- endfor -%}
+                
           {%- endcase -%}
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -1926,6 +1939,34 @@
           "id": "product_2",
           "label": "Product 2",
           "info": "Choose a Product to link to. The image for the product will be automatically used for this button."
+        }
+      ]
+    },
+    {
+      "name": "Store Locator Form",
+      "type": "store_locator_form",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Add a Store Locator Lookup form to a product. Choose the product that this should apply "
+        },
+        {
+          "type": "product_list",
+          "id": "show_on_these_products",
+          "label": "Show on these products",
+          "info": "Choose which products this block should appear on."
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "info": "Add a heading for the form"
+        },
+        {
+          "type": "richtext",
+          "id": "subheading",
+          "label": "Subheading",
+          "info": "Add a subheading for this form block"
         }
       ]
     }
