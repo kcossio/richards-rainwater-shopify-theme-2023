@@ -172,19 +172,21 @@
             {%- when 'description' -%}
               {% ## Hide Description on certain products %}
               {%- assign this_product = product.handle -%}
+              {%- assign main_product = product -%}
                 {%- assign hide_on_these_products = block.settings.hide_on_these_products -%}
                 {%- for product in hide_these_products -%}
                   {%- if this_product == product.handle -%}
                     {%- assign class=" hidden" -%}}
                     {%- else -%}
-                    {%- assign class=" show" -%}}
+                    {%- assign class=" show" -%}
+                  {%- endif -%}
+                  {%- if main_product.description != blank -%}
+                    <div class="product__description rte quick-add-hidden test {{ class }}"  {{ block.shopify_attributes }}>
+                      {{ main_product.description }}
+                    </div>
                   {%- endif -%}
                 {%- endfor -%}
-              {%- if product.description != blank -%}
-                <div class="product__description rte quick-add-hidden {{ class }}"  {{ block.shopify_attributes }}>
-                  {{ product.description }}
-                </div>
-              {%- endif -%}
+              
             {%- when 'sku' -%}
               <p
                 class="product__sku no-js-hidden{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.sku.size == 0 %} visibility-hidden{% endif %}"
