@@ -251,7 +251,7 @@ EASING
   border-radius: 0px;
   background: url("bg-rainbow-button.svg") top left no-repeat;
   background-size: cover;
-  width: 25%;
+  width: 30%;
   transition: all 0.3s ease 0s;
 }
 .newsletter-form.store-locator-form .button span {
