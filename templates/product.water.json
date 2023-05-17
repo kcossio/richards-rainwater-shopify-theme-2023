@@ -38,6 +38,16 @@
             "show_gift_card_recipient": false
           }
         },
+        "ff628bee-bf3e-4e7d-8aa4-fefdf2dd3e99": {
+          "type": "store_locator_form",
+          "settings": {
+            "show_on_these_products": [
+              "richards-sparkling-rainwater-24-pk-bottles"
+            ],
+            "heading": "Find Richard's Near You!",
+            "subheading": "<p>Find sparkling rainwater at your nearest participating store.<\/p>"
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -51,6 +61,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "ff628bee-bf3e-4e7d-8aa4-fefdf2dd3e99",
         "description"
       ],
       "settings": {
