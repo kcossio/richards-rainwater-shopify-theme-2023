@@ -508,6 +508,12 @@
       margin:0px;
       padding:0px;
       min-height:none;
+      display:flex;
+      justify-content:space-between;
+
+      .product-form {
+        margin:0px;
+      }
     }
     .buy-buttons-wrap {
       width:50%;
@@ -518,6 +524,10 @@
       form {
         margin:0px;
         padding:0px;
+      }
+
+      .button--full-width {
+        border-radius:0px;
       }
     }
   }
