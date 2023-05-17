@@ -227,18 +227,23 @@ EASING
   }
 }
 
-.store-locator-form {
+.newsletter-form.store-locator-form {
   width: 100%;
 }
-.store-locator-form .field {
+@media (min-width: 768px) {
+  .newsletter-form.store-locator-form {
+    width: 50%;
+  }
+}
+.newsletter-form.store-locator-form .field {
   z-index: 0;
   border-radius: 50px;
   overflow: hidden;
 }
-.store-locator-form .field::after {
+.newsletter-form.store-locator-form .field::after {
   border: 0px;
 }
-.store-locator-form .button {
+.newsletter-form.store-locator-form .button {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -248,11 +253,6 @@ EASING
   width: 40px;
   transition: all 0.3s ease 0s;
 }
-.store-locator-form .button:hover {
+.newsletter-form.store-locator-form .button:hover {
   background-position: center left -40px;
-}
-@media (min-width: 768px) {
-  .store-locator-form {
-    width: 50%;
-  }
 }

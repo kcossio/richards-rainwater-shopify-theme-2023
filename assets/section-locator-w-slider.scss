@@ -61,8 +61,12 @@
     }
 }
 
-.store-locator-form {
+.newsletter-form.store-locator-form {
     width:100%;
+
+    @include breakpoint(tablet) {
+        width:50%;
+    }
 
     .field {
         z-index: 0;
@@ -89,7 +93,5 @@
 
     }
 
-    @include breakpoint(tablet) {
-        width:50%;
-    }
+   
 }
