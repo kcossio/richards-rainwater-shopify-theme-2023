@@ -187,9 +187,15 @@ EASING
   padding-left: 0;
 }
 
+.product__column-sticky {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @media screen and (min-width: 750px) {
   .product__column-sticky {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     position: sticky;
     top: 3rem;
     z-index: 2;
