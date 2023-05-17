@@ -181,12 +181,24 @@ EASING
 .section-locator-w-slider {
   width: 1312px;
   max-width: 100%;
+  padding: 20px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
 }
+.section-locator-w-slider h2 {
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .section-locator-w-slider h2 {
+    width: 50%;
+    text-align: left;
+  }
+}
 .section-locator-w-slider .logo-slider {
   color: #ebebeb;
+  padding: 0px;
 }
 .section-locator-w-slider .logo-slider::before {
   background: rgb(235, 235, 235);
@@ -195,4 +207,18 @@ EASING
 .section-locator-w-slider .logo-slider::after {
   background: rgb(235, 235, 235);
   background: linear-gradient(90deg, rgba(235, 235, 235, 0) 0%, rgb(235, 235, 235) 100%);
+}
+.section-locator-w-slider .logo-slider img {
+  max-height: 32px;
+}
+@media (min-width: 768px) {
+  .section-locator-w-slider .logo-slider img {
+    max-height: 40px;
+    margin: 0px 20px;
+  }
+}
+@media (min-width: 768px) {
+  .section-locator-w-slider {
+    padding: 40px;
+  }
 }

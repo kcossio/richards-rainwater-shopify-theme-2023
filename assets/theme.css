@@ -1136,7 +1136,7 @@ EASING
 @media (min-width: 768px) {
   .logo-slider img {
     max-height: 104px;
-    max-width: 104px;
+    max-width: 256px;
     margin: 0px 30px;
   }
 }
