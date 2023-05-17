@@ -1741,3 +1741,60 @@ nav.water-product-buttons a img {
     display: block;
   }
 }
+
+/* ------- Store Locator ---------- */
+.store-locator-product h2 {
+  margin: 0px 0px 8px 0px;
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.store-locator-product p {
+  font-size: 15px;
+  color: #6D6D6D;
+  font-weight: bold;
+}
+.store-locator-product .newsletter-form.store-locator-form {
+  width: 100%;
+}
+.store-locator-product .newsletter-form.store-locator-form .field {
+  z-index: 0;
+  border-radius: 50px;
+  border: 1px solid #E3E3E3;
+  overflow: hidden;
+}
+.store-locator-product .newsletter-form.store-locator-form .field::after {
+  border: 0px;
+}
+.store-locator-product .newsletter-form.store-locator-form .button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  border-radius: 0px;
+  background: url("bg-rainbow-button.svg") top left no-repeat;
+  background-size: cover;
+  width: 30%;
+  transition: all 0.3s ease 0s;
+}
+.store-locator-product .newsletter-form.store-locator-form .button span {
+  position: relative;
+  z-index: 2;
+}
+.store-locator-product .newsletter-form.store-locator-form .button::after {
+  content: "";
+  display: block;
+  width: 120%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  background: #0040A8;
+  top: 0px;
+  left: 100%;
+  transform: skewX(30deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+}
+.store-locator-product .newsletter-form.store-locator-form .button:hover::after {
+  left: 0px;
+  transform: skewX(0);
+}
