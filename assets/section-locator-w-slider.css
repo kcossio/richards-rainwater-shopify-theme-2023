@@ -185,3 +185,14 @@ EASING
   position: relative;
   z-index: 1;
 }
+.section-locator-w-slider .logo-slider {
+  color: #ebebeb;
+}
+.section-locator-w-slider .logo-slider::before {
+  background: rgb(235, 235, 235);
+  background: linear-gradient(90deg, rgb(235, 235, 235) 0%, rgba(235, 235, 235, 0) 100%);
+}
+.section-locator-w-slider .logo-slider::after {
+  background: rgb(235, 235, 235);
+  background: linear-gradient(90deg, rgba(235, 235, 235, 0) 0%, rgb(235, 235, 235) 100%);
+}

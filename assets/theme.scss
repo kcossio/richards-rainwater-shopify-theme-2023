@@ -578,9 +578,16 @@
   
 
   img {
-      max-height:104px;
+      max-height:32px;
       max-width:256px;
-      margin:0px 30px;
+      margin:0px 10px;
       height:auto;
+      width:auto;
+
+      @include breakpoint(tablet) {
+        max-height:104px;
+        max-width:104px;
+        margin:0px 30px;
+      }
   }
 }
