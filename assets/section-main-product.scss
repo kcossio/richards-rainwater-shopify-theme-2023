@@ -494,7 +494,31 @@
   /* Quantity + buttons block */
 
   .quantity-and-buttons {
-    
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+    margin:2em 0px;
+    border-radius:50px;
+    overflow:hidden;
+
+    .product-form__quantity {
+      width:50%;
+      background:#E3E3E3;
+      margin:0px;
+      padding:0px;
+      min-height:none;
+    }
+    .buy-buttons-wrap {
+      width:50%;
+      margin:0px;
+      padding:0px;
+      min-height:none;
+
+      form {
+        margin:0px;
+        padding:0px;
+      }
+    }
   }
   
 

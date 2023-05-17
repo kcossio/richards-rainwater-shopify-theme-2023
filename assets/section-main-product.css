@@ -642,6 +642,32 @@ a.product__text {
 }
 
 /* Quantity + buttons block */
+.quantity-and-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 2em 0px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.quantity-and-buttons .product-form__quantity {
+  width: 50%;
+  background: #E3E3E3;
+  margin: 0px;
+  padding: 0px;
+  min-height: none;
+}
+.quantity-and-buttons .buy-buttons-wrap {
+  width: 50%;
+  margin: 0px;
+  padding: 0px;
+  min-height: none;
+}
+.quantity-and-buttons .buy-buttons-wrap form {
+  margin: 0px;
+  padding: 0px;
+}
+
 /* ------ End quantity + buttons --- */
 .product--no-media fieldset.product-form__input {
   flex-wrap: wrap;
