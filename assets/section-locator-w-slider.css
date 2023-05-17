@@ -278,7 +278,7 @@ EASING
   z-index: 1;
   background: #0040A8;
   top: 0px;
-  left: 100%;
+  left: 105%;
   transform: skewX(30deg);
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
 }
