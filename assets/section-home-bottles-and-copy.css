@@ -179,6 +179,9 @@ section.home-bottles-copy {
     padding: 140px 0px 184px 0px;
   }
 }
+section.home-bottles-copy + section {
+  z-index: 2;
+}
 
 .home-bottles-intro {
   display: flex;
