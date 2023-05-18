@@ -654,8 +654,8 @@ a.product__text {
   margin: 0px !important;
 }
 .quantity-and-buttons .product-form__quantity {
-  width: 50%;
-  max-width: 50%;
+  width: 40%;
+  max-width: 40%;
   background: #E3E3E3;
   margin: 0px;
   padding: 0px;
@@ -666,6 +666,12 @@ a.product__text {
   align-content: center;
   align-items: center;
   padding: 0px 15px;
+}
+@media (min-width: 768px) {
+  .quantity-and-buttons .product-form__quantity {
+    width: 50%;
+    max-width: 50%;
+  }
 }
 .quantity-and-buttons .product-form__quantity .quantity {
   width: 100%;
@@ -698,10 +704,15 @@ a.product__text {
   }
 }
 .quantity-and-buttons .buy-buttons-wrap {
-  width: 50%;
+  width: 60%;
   margin: 0px;
   padding: 0px;
   min-height: none;
+}
+@media (min-width: 768px) {
+  .quantity-and-buttons .buy-buttons-wrap {
+    width: 50%;
+  }
 }
 .quantity-and-buttons .buy-buttons-wrap form {
   margin: 0px;
