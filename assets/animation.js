@@ -159,7 +159,7 @@
                 ease: "Strong.easeInOut",
                 scrollTrigger: {
                 trigger: box,
-                start: "top 102%",
+                start: "top 110%",
             end: "bottom top",        
             toggleClass: "onscreen",
             toggleActions: "play reverse play reverse"
