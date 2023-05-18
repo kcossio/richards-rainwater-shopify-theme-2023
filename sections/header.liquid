@@ -782,6 +782,44 @@
 
 {% javascript %}
 
+  
+    // ---------------- Mobile Menu Functions ---------- //
+    window.openNavMobile = function() {
+        // GSAP tween to stretch the loading screen across the whole screen
+        
+        var nav_tl = gsap.timeline();
+        
+        return nav_tl
+            .to("ul.menu-drawer__menu > li", {
+              opacity: 1,
+              y: 0,
+              duration: 0.75,
+              delay: 0.75,
+              stagger: {
+                    each: 0.2, 
+                    from: 'start',
+                    ease: 'ease'
+                  }  
+            });
+    }
+   
+   window.closeNavMobile = function() {
+        // GSAP tween to stretch the loading screen across the whole screen
+        
+        var tl = gsap.timeline();
+        
+        return tl
+            .to('ul.menu-drawer__menu > li', 
+            {
+                y: -20,
+                opacity:0,
+                duration: 0.4,
+                ease: 'ease', 
+            });
+    }
+    
+    
+
 // ------------- Mobile Menu--------------- //
 	
 jQuery('#menu-toggle').click(function(){
