@@ -178,15 +178,19 @@ EASING
   overflow: hidden;
   position: relative;
 }
+@media (min-width: 768px) {
+  .section-timeline {
+    padding-top: 40px;
+  }
+}
 .section-timeline h2.timeline-heading {
-  margin: 0px;
+  margin: 0px 0px 20px 0px;
   line-height: 1em;
   font-size: 35px;
 }
 @media (min-width: 768px) {
   .section-timeline h2.timeline-heading {
     font-size: 82px;
-    padding-top: 40px;
   }
 }
 
@@ -206,7 +210,7 @@ EASING
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  height: 75vh;
+  height: 60vh;
   width: 100vw;
   position: relative;
   background: #f4f4f4;

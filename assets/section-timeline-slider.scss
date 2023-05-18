@@ -14,14 +14,17 @@
     overflow:hidden;
     position:relative;
 
+    @include breakpoint(tablet) {
+      padding-top:40px;
+    }
+
     h2.timeline-heading {
-      margin:0px;
+      margin:0px 0px 20px 0px;
       line-height:1em;
       font-size:35px;      
       
       @include breakpoint(tablet) {
         font-size:82px;
-        padding-top:40px;
       }
     }
 
@@ -41,7 +44,7 @@
         display:flex;
         justify-content:flex-end;
         align-items:flex-end;
-        height:75vh;
+        height:60vh;
         width:100vw;
         position:relative;
         background:#f4f4f4;
