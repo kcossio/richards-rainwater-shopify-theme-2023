@@ -213,10 +213,13 @@ section.section-product-info-box-drops header h2 {
   color: #ffffff;
   margin: 0px;
   font-size: 37px;
+  line-height: 1.2em;
+  text-transform: uppercase;
 }
 @media (min-width: 768px) {
   section.section-product-info-box-drops header h2 {
     font-size: 75px;
+    text-transform: none;
   }
 }
 section.section-product-info-box-drops header p {
