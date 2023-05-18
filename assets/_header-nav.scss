@@ -1,5 +1,5 @@
 
-  /* --------- New Header ------- */
+  /* --------- Mobile Menu Toggle ------- */
 
 #menu-toggle {
     width: 30px;
@@ -32,6 +32,106 @@
     }
 }
 
+/* ----- General Header Icons ------ */
+
+
+/* Header icons */
+.header__icons {
+    display: flex;
+    grid-area: icons;
+    justify-self: end;
+    position:relative;
+    z-index: 5;
+  }
+  
+  .header__icons .shopify-app-block {
+    max-width: 4.4rem;
+    max-height: 4.4rem;
+    overflow: hidden;
+  }
+  
+  .header__icon:not(.header__icon--summary),
+  .header__icon span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header__icon {
+    color: rgb(var(--color-foreground));
+  }
+  
+  .header__icon span {
+    height: 100%;
+    position:relative;
+    z-index:5;
+  }
+  
+  .header__icon::after {
+    content: none;
+  }
+  
+  .header__icon:hover .icon,
+  .modal__close-button:hover .icon {
+    transform: scale(1);
+  }
+  
+  .header__icon .icon {
+    height: 30px;
+    width: 30px;
+    fill: none;
+    vertical-align: middle;
+  
+    &.icon-hamburger {
+      fill:$darkest_blue;
+      width:25px;
+      height:21px;
+    }
+  
+    &.icon-close {
+      fill:$darkest_blue;
+      width:17px;
+      height:17px;
+    }
+  }
+  
+  .header__icon,
+  .header__icon--cart .icon {
+    width: 25px;
+    height: 23px;
+    padding: 0;
+  
+    @include breakpoint(tablet) {
+      width: 38px;
+      height:34px;
+    }
+  }
+  .header__icon {
+    &.link {
+      //margin-left:12px;
+  
+      @include breakpoint(tablet) {
+        margin-left:24px;
+      }
+    }
+  }
+  
+  .header__icon--cart {
+    position: relative;
+  }
+  
+  .header__icon--menu[aria-expanded="true"]::before {
+    content: "";
+    top: 100%;
+    left: 0;
+    height: calc(var(--viewport-height, 100vh) - (var(--header-bottom-position, 100%)));
+    width: 100%;
+    display: block;
+    position: absolute;
+    background: rgba(var(--color-foreground), 0.5);
+  }
+
+/* ------ General Section Header -------- */
 .section-header {
     padding:0px;
     width:100%;
