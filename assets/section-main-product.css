@@ -679,6 +679,9 @@ a.product__text {
   font-weight: 900;
   width: 33%;
 }
+.quantity-and-buttons .product-form__quantity .quantity__input {
+  font-weight: 900;
+}
 .quantity-and-buttons .product-form__quantity label {
   color: #000F44;
   display: none;
