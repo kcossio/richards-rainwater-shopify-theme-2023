@@ -137,14 +137,12 @@
     width:100%;
   
     .site-header {
-      padding:20px 28px;
-      bottom: auto;
-      height:98px;
+      padding:20px 28px 20px 28px;
+      height:auto;
       position: fixed;
       display:flex;
       left: 0;
-      right: 0;
-      top: 30px;
+      top:30px;
       width: 100vw;
       z-index: 7;
       transition: all 0.25s ease;
@@ -153,8 +151,8 @@
         background-color:$white;
       }
       @include breakpoint(tablet) {
-        top:40px;
         padding:22px 36px;
+        top:40px;
   
       }
       @include breakpoint(laptop) {
