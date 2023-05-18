@@ -2469,7 +2469,7 @@ a svg {
 }
 
 .section-header.shopify-section-group-header-group {
-  z-index: 3;
+  z-index: 6;
 }
 
 .shopify-section-header-sticky {
