@@ -126,14 +126,15 @@
       order:2;
       top:0px;
       left:0px;
-      width:100%;
+      width:100vw;
       height:100vh;
-      opacity:0;	
+      opacity:1;	
       pointer-events:none;
         z-index:5;
       overflow-y:scroll;
       transform:translateY(-100%);
       -webkit-overflow-scrolling: touch;
+      background-color:$medium_blue;
   
       display:flex;
       flex-wrap:wrap;
@@ -149,6 +150,7 @@
           height:100vh;
           transform:translateY(0%);
           transition-delay:0s;
+          background-color:$dark_blue;
   
           form.search-form {
               opacity:1;
