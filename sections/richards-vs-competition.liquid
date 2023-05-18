@@ -85,9 +85,7 @@
 </div><!--End inner-->
 
 {% javascript %}// In your Javascript (external .js resource or <script> tag)
-  jQuery(document).ready(function() {
-    jQuery('select').select2();
-  });
+  
 {% endjavascript %}
 
 <script>
@@ -104,6 +102,11 @@
       jQuery(hide).removeClass('active');
       jQuery(show).addClass('active');
     });
+
+    jQuery(document).ready(function() {
+      jQuery('select').select2();
+    });
+    
   });
 
 </script>
