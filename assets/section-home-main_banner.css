@@ -181,10 +181,12 @@ section.home-banner {
   align-content: center;
   justify-content: center;
   overflow: hidden;
+  padding-bottom: 15vh;
 }
 @media (min-width: 768px) {
   section.home-banner {
     min-height: calc(100vh - 40px);
+    padding-bottom: 0px;
   }
 }
 section.home-banner .home-banner-bar {
@@ -243,11 +245,37 @@ section.home-banner .home-banner-bottle.onscreen {
   }
 }
 section.home-banner .home-banner-bottle.home-banner-bottle-left {
-  left: 13vw;
+  left: 5vw;
   transition-delay: 0.25s;
+  max-height: 91%;
+}
+@media (min-width: 768px) {
+  section.home-banner .home-banner-bottle.home-banner-bottle-left {
+    left: 13vw;
+    max-height: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  section.home-banner .home-banner-bottle.home-banner-bottle-left {
+    left: 13vw;
+    max-height: 120%;
+  }
 }
 section.home-banner .home-banner-bottle.home-banner-bottle-right {
   right: 8vw;
+  max-height: 81%;
+}
+@media (min-width: 768px) {
+  section.home-banner .home-banner-bottle.home-banner-bottle-right {
+    right: 8vw;
+    max-height: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  section.home-banner .home-banner-bottle.home-banner-bottle-right {
+    right: 8vw;
+    max-height: 120%;
+  }
 }
 section.home-banner h2.home-banner-slogan-letters {
   display: block;
@@ -256,10 +284,20 @@ section.home-banner h2.home-banner-slogan-letters {
   font-weight: 900;
   color: #000F44;
   line-height: 1em;
-  font-size: 12vw;
+  font-size: 38vw;
   text-align: center;
   width: auto;
   margin: 0px auto;
+}
+@media (min-width: 768px) {
+  section.home-banner h2.home-banner-slogan-letters {
+    font-size: 30vw;
+  }
+}
+@media (min-width: 1280px) {
+  section.home-banner h2.home-banner-slogan-letters {
+    font-size: 12vw;
+  }
 }
 section.home-banner h2.home-banner-slogan-letters div {
   width: 100%;

@@ -13,9 +13,11 @@ section.home-banner {
     align-content:center;
     justify-content: center;
     overflow:hidden;
+    padding-bottom:15vh;
 
     @include breakpoint(tablet) {
         min-height:calc(100vh - 40px);
+        padding-bottom:0px;
     }
 
     .home-banner-bar {
@@ -75,12 +77,32 @@ section.home-banner {
         }
 
         &.home-banner-bottle-left {
-            left:13vw;
+            left:5vw;
             transition-delay: .25s;
+            max-height: 91%;
+
+            @include breakpoint(tablet) {
+                left:13vw;
+                max-height: 100%;
+            }
+            @include breakpoint(desktop) {
+                left:13vw;
+                max-height: 120%;
+            }
         }
 
         &.home-banner-bottle-right {
             right:8vw;
+            max-height: 81%;
+
+            @include breakpoint(tablet) {
+                right:8vw;
+                max-height: 100%;
+            }
+            @include breakpoint(desktop) {
+                right:8vw;
+                max-height: 120%;
+            }
         }
     }
 
@@ -91,10 +113,18 @@ section.home-banner {
         font-weight:900;
         color:$dark_blue;
         line-height:1em;
-        font-size:12vw;
+        font-size:38vw;
         text-align:center;
         width:auto;
         margin:0px auto;
+
+        @include breakpoint(tablet) {
+            font-size:30vw;
+        }
+
+        @include breakpoint(laptop) {
+            font-size:12vw;
+        }
 
         div {
             width:100%;
