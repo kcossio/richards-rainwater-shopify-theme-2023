@@ -3291,6 +3291,9 @@ details-disclosure > details {
   max-width: 100%;
 }
 
+main {
+  overflow-x: clip;
+}
 main:not(.main-home) {
   padding-top: 40px;
 }

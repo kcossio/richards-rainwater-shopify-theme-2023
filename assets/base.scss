@@ -3248,6 +3248,8 @@ details-disclosure > details {
 
 main {
 
+  overflow-x:clip;
+  
   &:not(.main-home) {
     padding-top:40px;
 
