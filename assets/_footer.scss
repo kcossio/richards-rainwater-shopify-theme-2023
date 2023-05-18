@@ -1,0 +1,167 @@
+
+.footer {
+
+    background:$dark_blue;
+    color:#ffffff;
+    padding:68px 0px 32px 0px;
+
+    @include breakpoint(tablet){
+      padding:87px 0px 54px 0px;
+    }
+
+    .footer-top {
+      display:flex;
+      flex-wrap:wrap;
+      align-items:flex-start;
+      align-content:flex-start;
+      justify-content: space-between;
+      width:100%;
+
+      h2.footer-messaging {
+        text-transform:uppercase;
+        font-weight:900;
+        margin-top:0px;
+
+        span {
+          display:block;
+        }
+
+        @include breakpoint(tablet) {
+          font-size:36px;
+        }
+      }
+      
+
+      ul.footer-menu {
+        margin:0px;
+        list-style:none;
+
+        li {
+          display:block;
+          list-style:none;
+          a {
+            color:#ffffff;
+            font-weight:900;
+            font-size:22px;
+            line-height:1em;
+            margin-bottom:22px;
+            text-decoration:none;
+            position:relative;
+
+            background-image: linear-gradient(
+              to right,
+              $light_blue,
+              $light_blue 50%,
+              $white 50%
+            );
+            background-size: 200% 100%;
+            background-position: -100%;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all 0.2s 0s ease-in-out;
+
+            &:hover {
+              background-position:0;
+            }
+
+          }
+
+          @include breakpoint(tablet) {
+            margin-bottom:28px;
+          }
+        }
+      }
+
+    }
+    .footer-bottom {
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:space-between;
+      width:100%;
+      border-top:1px solid $light_blue;
+      padding:34px 0px 0px 0px;
+      margin-top:34px;
+
+      @include breakpoint(tablet) {
+        padding-top:42px;
+        margin-top:42px;
+      }
+    }
+
+    .footer-logo {
+      display:block;
+      width:250px;
+      color:$white;
+
+      svg {
+        width:100%;
+        pointer-events: none;
+      }
+
+      @include breakpoint(tablet) {
+        width:230px;
+      }
+    }
+}
+
+  
+.terms-policies {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: flex-end;
+
+  a {
+    color:$white;
+    text-decoration:none;
+
+    &:hover {
+      text-decoration:underline;
+    }
+  }
+
+  p {
+    display:inline-block;
+    margin:0px;
+    font-size:11px;
+    color:$white;
+    line-height:1em;
+  }
+  ul {
+    display:inline-flex;
+    margin:0px;
+
+    li {
+      margin:12px;
+      display:inline-block;
+      font-size:11px;
+      line-height:1em;
+
+      @include breakpoint(tablet) {
+        margin:0px 0px 0px 22px;
+      }
+
+      a {
+        color:currentColor;
+      }
+    }
+  }
+}
+  
+  
+  
+  @media screen and (max-width: 749px) {
+    /*
+      On a small screen we want all the items to be centered
+      because they will be stacked.
+     */
+    
+    .footer__list-social.list-social {
+      display: flex;
+      justify-content: center;
+    }
+  
+   
+  }
+  
+ 
+  

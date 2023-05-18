@@ -1,11 +1,13 @@
 @import "variables";
 @import "mixins";
 @import "fonts";
+
 @import "slick";
+@import "animation";
 
 @import "header-nav";
+@import "footer";
 
-@import "animation";
 @import "drops";
 @import "toggle-faqs";
 
