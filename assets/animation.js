@@ -168,7 +168,7 @@
         });
 
         const animateBottles = gsap.utils.toArray('.bottle-in-up');
-        animateBottlese.forEach(box => {
+        animateBottles.forEach(box => {
             gsap.to(box, { 
                 ease: "Strong.easeInOut",
                 scrollTrigger: {
