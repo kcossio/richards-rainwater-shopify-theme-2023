@@ -646,8 +646,8 @@ EASING
 
 /* --------- New Header ------- */
 #menu-toggle {
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   margin: 0px;
   z-index: 50;
   position: relative;
@@ -655,8 +655,22 @@ EASING
   border: 0px;
   background: transparent;
   -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   padding: 0px;
   cursor: pointer;
+}
+#menu-toggle .icon-hamburger {
+  display: block;
+}
+#menu-toggle .icon-close {
+  display: none;
+}
+#menu-toggle.open .icon-hamburger {
+  display: none;
+}
+#menu-toggle.open .icon-close {
+  display: block;
 }
 
 .section-header {

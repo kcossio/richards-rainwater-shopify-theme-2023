@@ -2,8 +2,8 @@
   /* --------- New Header ------- */
 
 #menu-toggle {
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
     margin: 0px;
     z-index: 50;
     position: relative;
@@ -11,8 +11,25 @@
     border: 0px;
     background: transparent;
     -webkit-appearance: none;
+    appearance:none;
     padding: 0px;
     cursor: pointer;
+
+    .icon-hamburger {
+        display:block;
+    }
+    .icon-close {
+        display:none;
+    }
+
+    &.open {
+        .icon-hamburger {
+            display:none;
+        }
+        .icon-close {
+            display:block;
+        }
+    }
 }
 
 .section-header {
