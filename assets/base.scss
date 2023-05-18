@@ -1151,6 +1151,7 @@ summary::-webkit-details-marker {
   max-width: calc(50% - var(--grid-mobile-horizontal-spacing) / 2);
   flex-grow: 1;
   flex-shrink: 0;
+  margin-bottom:70px;
 }
 
 @media screen and (min-width: 750px) {
@@ -3249,7 +3250,7 @@ details-disclosure > details {
 main {
 
   overflow-x:clip;
-  
+
   &:not(.main-home) {
     padding-top:40px;
 
