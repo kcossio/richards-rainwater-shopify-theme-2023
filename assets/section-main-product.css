@@ -1828,6 +1828,9 @@ nav.water-product-buttons a img {
   display: none;
   order: 1;
 }
+nav.water-product-buttons a img.custom-title-img {
+  display: block;
+}
 @media (min-width: 768px) {
   nav.water-product-buttons a img {
     display: block;

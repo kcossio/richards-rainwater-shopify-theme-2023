@@ -1771,6 +1771,10 @@
         width:25%;
         display:none;
         order:1;
+
+        &.custom-title-img {
+          display:block;
+        }
         
 
         @include breakpoint(tablet) {
