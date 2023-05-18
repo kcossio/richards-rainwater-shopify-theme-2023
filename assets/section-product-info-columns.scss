@@ -64,6 +64,22 @@ section.section-product-info-box-drops {
                 font-size:18.75px;
             }
         }
+
+        &.desktop {
+            display:none;
+
+            @include breakpoint(tablet) {
+                display:block;
+            }
+        }
+
+        &.mobile {
+            display:block;
+
+            @include breakpoint(tablet) {
+                display:none;
+            }
+        }
     }
     .product-info-col {
         width:100%;

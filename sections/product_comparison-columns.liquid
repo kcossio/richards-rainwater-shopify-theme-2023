@@ -11,12 +11,13 @@
   {%- case block.type -%}
 
     {%- when 'left_product_column' -%}
-      <div class="product-info-col product-info-col-1">
 
-        <header class="product-info-col-header mobile">
-          <h2 class="product-info-col-heading">{{ section.settings.heading_short }}</h2>
-          <p class="product-info-col-subheading">{{ section.settings.subheading_short }}</p>
-        </header>
+      <header class="product-info-col-header mobile col-1>
+        <h2 class="product-info-col-heading">{{ section.settings.heading_short }}</h2>
+        <p class="product-info-col-subheading">{{ section.settings.subheading_short }}</p>
+      </header>
+
+      <div class="product-info-col product-info-col-1">
 
         {%- assign product_image = block.settings.product_image -%}
         {%- if product_image != blank -%}
@@ -58,12 +59,13 @@
       </div><!--End product-info-col-1-->
 
     {%- when 'right_product_column' -%}
-      <div class="product-info-col product-info-col-2">
 
-        <header class="product-info-col-header mobile">
-          <h2 class="product-info-col-heading">{{ section.settings.heading_short }}</h2>
-          <p class="product-info-col-subheading">{{ section.settings.subheading_short }}</p>
-        </header>
+      <header class="product-info-col-header mobile col-2">
+        <h2 class="product-info-col-heading">{{ section.settings.heading_short }}</h2>
+        <p class="product-info-col-subheading">{{ section.settings.subheading_short }}</p>
+      </header>
+
+      <div class="product-info-col product-info-col-2">        
 
         {%- assign product_image = block.settings.product_image -%}
         {%- if product_image != blank -%}
