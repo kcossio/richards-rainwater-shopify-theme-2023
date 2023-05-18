@@ -175,7 +175,8 @@ section.section-versus {
     border-radius:30px;
     border-color:#E3E3E3;
 }
-.select2-container--default .select2-results__option--highlighted {
+.select2-container--default .select2-results__option--highlighted,
+.select2-container--default .select2-results__option--selectable {
     background:$white;
     color:$medium_blue;
 }
