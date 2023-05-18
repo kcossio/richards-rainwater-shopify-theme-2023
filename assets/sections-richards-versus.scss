@@ -77,11 +77,12 @@ section.section-versus {
         font-weight:900;
         background:#E3E3E3;
         border:0px;
+        height:auto;
         font-size:11px;
         color:$dark_blue;
         text-transform:uppercase;
         border-radius:50px !important;
-        padding:15px 15px;
+        padding:15px 15px !important;
         text-align:left;
         letter-spacing:.5px;
         line-height:1em;
@@ -97,7 +98,7 @@ section.section-versus {
         @include breakpoint(tablet) {
             font-size:22px;
             letter-spacing:2px;
-            padding:15px;
+            padding:15px !important;
             text-align:center;
         }
 

@@ -245,11 +245,12 @@ section.section-versus .select2-container--default .select2-selection--single {
   font-weight: 900;
   background: #E3E3E3;
   border: 0px;
+  height: auto;
   font-size: 11px;
   color: #000F44;
   text-transform: uppercase;
   border-radius: 50px !important;
-  padding: 15px 15px;
+  padding: 15px 15px !important;
   text-align: left;
   letter-spacing: 0.5px;
   line-height: 1em;
@@ -267,7 +268,7 @@ section.section-versus .select2-container--default .select2-selection--single:fo
   section.section-versus .select2-container--default .select2-selection--single {
     font-size: 22px;
     letter-spacing: 2px;
-    padding: 15px;
+    padding: 15px !important;
     text-align: center;
   }
 }
