@@ -177,7 +177,6 @@ EASING
 .section-timeline {
   display: block;
   width: 100vw;
-  min-height: 80vh;
   padding-top: 10vh;
   background: #f4f4f4;
   overflow: hidden;
