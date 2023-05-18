@@ -270,6 +270,7 @@ section.section-versus .select2-container--default .select2-selection--single[ar
   left: 0px;
   width: 1px;
   height: 40px;
+  z-index: -1;
   background: #e3e3e3;
 }
 section.section-versus select[aria-expanded=true]::after,
@@ -281,6 +282,7 @@ section.section-versus .select2-container--default .select2-selection--single[ar
   right: 0px;
   width: 1px;
   height: 40px;
+  z-index: -1;
   background: #e3e3e3;
 }
 section.section-versus select:active, section.section-versus select:focus,

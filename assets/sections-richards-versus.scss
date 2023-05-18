@@ -99,6 +99,7 @@ section.section-versus {
                 left:0px;
                 width:1px;
                 height:40px;
+                z-index:-1;
                 background:#e3e3e3;
             }
             &::after {
@@ -109,6 +110,7 @@ section.section-versus {
                 right:0px;
                 width:1px;
                 height:40px;
+                z-index:-1;
                 background:#e3e3e3;
             }
         }
