@@ -95,20 +95,20 @@ section.section-versus {
                 content:"";
                 display:block;
                 position:absolute;
-                top:50%;
+                top:51%;
                 left:0px;
                 width:1px;
-                height:20px;
+                height:40px;
                 background:#e3e3e3;
             }
             &::after {
                 content:"";
                 display:block;
                 position:absolute;
-                top:50%;
+                top:51%;
                 right:0px;
                 width:1px;
-                height:20px;
+                height:40px;
                 background:#e3e3e3;
             }
         }
@@ -144,6 +144,7 @@ section.section-versus {
     color:$dark_blue;
     font-family: $font_body;
     font-weight:600;
+    padding-top:20px;
 
     li {
         border-top:1px solid #e3e3e3;

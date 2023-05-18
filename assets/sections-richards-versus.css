@@ -266,10 +266,10 @@ section.section-versus .select2-container--default .select2-selection--single[ar
   content: "";
   display: block;
   position: absolute;
-  top: 50%;
+  top: 51%;
   left: 0px;
   width: 1px;
-  height: 20px;
+  height: 40px;
   background: #e3e3e3;
 }
 section.section-versus select[aria-expanded=true]::after,
@@ -277,10 +277,10 @@ section.section-versus .select2-container--default .select2-selection--single[ar
   content: "";
   display: block;
   position: absolute;
-  top: 50%;
+  top: 51%;
   right: 0px;
   width: 1px;
-  height: 20px;
+  height: 40px;
   background: #e3e3e3;
 }
 section.section-versus select:active, section.section-versus select:focus,
@@ -312,6 +312,7 @@ section.section-versus .select2-container--default .select2-selection--single:fo
   color: #000F44;
   font-family: "TT Commons", sans-serif;
   font-weight: 600;
+  padding-top: 20px;
 }
 .select2-results__options li {
   border-top: 1px solid #e3e3e3;
