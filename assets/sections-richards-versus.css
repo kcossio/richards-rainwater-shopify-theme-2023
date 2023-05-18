@@ -317,11 +317,21 @@ section.section-versus .select2-container--default .select2-selection--single:fo
   padding-top: 20px;
 }
 .select2-results__options li {
-  border-top: 1px solid #e3e3e3;
+  position: relative;
   padding: 6px 20px;
 }
-.select2-results__options li:first-child {
-  border-top: 0px;
+.select2-results__options li::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  width: 80%;
+  left: 10%;
+  display: block;
+  height: 1px;
+  background: #e3e3e3;
+}
+.select2-results__options li:first-child::before {
+  display: none;
 }
 
 .select2-dropdown {
