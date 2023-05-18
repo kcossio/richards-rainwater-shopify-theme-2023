@@ -171,17 +171,18 @@
   }
   ul {
     display:inline-flex;
-    margin:0px;
+    margin:20px 0px;
     flex-wrap:wrap;
     justify-content:center;
 
     @include breakpoint(tablet) {
       flex-wrap:nowrap;
       justify-content:flex-start;
+      margin:0px;
     }
 
     li {
-      margin:12px;
+      margin:6px 10px;
       display:inline-block;
       font-size:11px;
       line-height:1em;
