@@ -206,12 +206,10 @@
   .menu-drawer__close-button:focus,
   .menu-drawer__menu-item:hover,
   .menu-drawer__close-button:hover {
-    color: rgb(var(--color-foreground));
-    background-color: rgba(var(--color-foreground), 0.04);
+    color: $light_blue;
   }
   
   .menu-drawer__menu-item--active:hover {
-    background-color: rgba(var(--color-foreground), 0.08);
   }
   
   .js .menu-drawer__menu-item .icon-caret,
