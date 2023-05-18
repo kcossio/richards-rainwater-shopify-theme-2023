@@ -21,10 +21,12 @@
     h2.timeline-heading {
       margin:0px 0px 20px 0px;
       line-height:1em;
-      font-size:35px;      
+      font-size:35px;   
+      width:80%;   
       
       @include breakpoint(tablet) {
         font-size:82px;
+        width:100%;
       }
     }
 

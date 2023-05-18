@@ -187,10 +187,12 @@ EASING
   margin: 0px 0px 20px 0px;
   line-height: 1em;
   font-size: 35px;
+  width: 80%;
 }
 @media (min-width: 768px) {
   .section-timeline h2.timeline-heading {
     font-size: 82px;
+    width: 100%;
   }
 }
 
