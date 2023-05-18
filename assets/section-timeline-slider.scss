@@ -95,6 +95,7 @@
             margin:0px;
             font-size:12px;
             color:$white;
+            line-height:1.3em;
             @include breakpoint(tablet) {
               font-size:21px;
             }
@@ -108,7 +109,7 @@
         width:93%;
 
         img {
-          object-position:32% bottom;
+          object-position:38% bottom;
         }
 
         @include breakpoint(tablet) {
