@@ -174,7 +174,7 @@ section.section-versus {
   margin: 50px 0px;
 }
 section.section-versus .inner {
-  padding: 0px 25px;
+  padding: 0px 20px;
 }
 @media (min-width: 768px) {
   section.section-versus {
@@ -335,12 +335,22 @@ section.section-versus .select2-container--default .select2-selection--single:fo
   display: none;
 }
 
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding: 0px;
+}
+
 .select2-container--default .select2-selection--single .select2-selection__arrow {
   top: 50%;
   right: 20px;
-  width: 13px;
-  height: 12px;
+  width: 7px;
+  height: 7px;
   transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+  .select2-container--default .select2-selection--single .select2-selection__arrow {
+    width: 13px;
+    height: 12px;
+  }
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
