@@ -1,6 +1,6 @@
 {{ 'section-product-info-columns.css' | asset_url | stylesheet_tag }}
 
-<header class="product-info-col-header">
+<header class="product-info-col-header desktop">
 <h2 class="product-info-col-heading">{{ section.settings.heading }}</h2>
 <p class="product-info-col-subheading">{{ section.settings.subheading }}</p>
 </header>
@@ -12,6 +12,11 @@
 
     {%- when 'left_product_column' -%}
       <div class="product-info-col product-info-col-1">
+
+        <header class="product-info-col-header mobile">
+          <h2 class="product-info-col-heading">{{ section.settings.heading_short }}</h2>
+          <p class="product-info-col-subheading">{{ section.settings.subheading_short }}</p>
+        </header>
 
         {%- assign product_image = block.settings.product_image -%}
         {%- if product_image != blank -%}
@@ -54,6 +59,11 @@
 
     {%- when 'right_product_column' -%}
       <div class="product-info-col product-info-col-2">
+
+        <header class="product-info-col-header mobile">
+          <h2 class="product-info-col-heading">{{ section.settings.heading_short }}</h2>
+          <p class="product-info-col-subheading">{{ section.settings.subheading_short }}</p>
+        </header>
 
         {%- assign product_image = block.settings.product_image -%}
         {%- if product_image != blank -%}
@@ -139,16 +149,16 @@
     },
     {
       "type": "text",
-      "id": "subheading_short",
-      "label": "Subheading (Short)",
-      "info": "Add a subheading for this section"
-    },
-    {
-      "type": "text",
       "id": "heading_short",
       "label": "Heading (Short)",
       "info": "Add a heading for this section"
-    }    
+    },  
+    {
+      "type": "text",
+      "id": "subheading_short",
+      "label": "Subheading (Short)",
+      "info": "Add a subheading for this section"
+    }  
   ],
   "blocks": [
     {
