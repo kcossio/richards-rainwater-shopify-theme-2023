@@ -120,7 +120,7 @@ ul.model-blocks{
             align-items:center;
             align-content:center;
             justify-content:center;
-            padding:60px 20vw 20px 28vw;
+            padding:40px 20vw 20px 28vw;
 
             @include breakpoint(tablet) {
                 width:45%;
@@ -184,7 +184,7 @@ ul.model-blocks{
             .model-block-content {
                 order:1;
                 width:100%;
-                padding:60px 20vw 20px 28vw;
+                padding:40px 26vw 20px 14vw;
             }
             
             @include breakpoint(tablet) {

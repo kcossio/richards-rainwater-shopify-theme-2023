@@ -458,7 +458,7 @@ ul.model-blocks li .model-block-content {
   align-items: center;
   align-content: center;
   justify-content: center;
-  padding: 60px 20vw 20px 28vw;
+  padding: 40px 20vw 20px 28vw;
 }
 @media (min-width: 768px) {
   ul.model-blocks li .model-block-content {
@@ -520,7 +520,7 @@ ul.model-blocks li:nth-child(even) img {
 ul.model-blocks li:nth-child(even) .model-block-content {
   order: 1;
   width: 100%;
-  padding: 60px 20vw 20px 28vw;
+  padding: 40px 26vw 20px 14vw;
 }
 @media (min-width: 768px) {
   ul.model-blocks li:nth-child(even) img {
