@@ -105,7 +105,7 @@ ul.model-blocks{
         }
 
         img {
-            width:100%;
+            width:75%;
             height:auto;
 
             @include breakpoint(tablet) {
@@ -120,7 +120,7 @@ ul.model-blocks{
             align-items:center;
             align-content:center;
             justify-content:center;
-            padding:20px 5vw;
+            padding:60px 20vw 20px 28vw;
 
             @include breakpoint(tablet) {
                 width:45%;
@@ -177,10 +177,14 @@ ul.model-blocks{
 
         &:nth-child(even) {
 
+            img {
+                margin-left:auto;
+            }
+
             .model-block-content {
                 order:1;
                 width:100%;
-                padding:20px 5vw 20px 15vw;
+                padding:60px 20vw 20px 28vw;
             }
             
             @include breakpoint(tablet) {
