@@ -245,6 +245,8 @@ section.section-product-info-box-drops header.desktop {
 }
 section.section-product-info-box-drops header.mobile {
   display: block;
+  margin: 0px;
+  padding: 40px;
 }
 @media (min-width: 768px) {
   section.section-product-info-box-drops header.mobile {

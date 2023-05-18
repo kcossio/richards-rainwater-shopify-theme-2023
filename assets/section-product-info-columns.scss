@@ -75,6 +75,8 @@ section.section-product-info-box-drops {
 
         &.mobile {
             display:block;
+            margin:0px;
+            padding:40px;
 
             @include breakpoint(tablet) {
                 display:none;
