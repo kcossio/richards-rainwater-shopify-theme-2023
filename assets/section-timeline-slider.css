@@ -171,13 +171,9 @@ EASING
 
 */
 .section-timeline {
-  padding: 40px 0px 0px 0px;
-}
-
-.section-timeline {
   display: block;
   width: 100vw;
-  padding-top: 10vh;
+  padding-top: 20px;
   background: #f4f4f4;
   overflow: hidden;
   position: relative;
@@ -190,6 +186,7 @@ EASING
 @media (min-width: 768px) {
   .section-timeline h2.timeline-heading {
     font-size: 82px;
+    padding-top: 40px;
   }
 }
 

@@ -2,16 +2,14 @@
 @import "mixins";
 @import "fonts";
 
-.section-timeline {
-  padding:40px 0px 0px 0px;
-}
+
 .timeline-h2-wrap {
   
 }
 .section-timeline {
     display:block;
     width:100vw;
-    padding-top:10vh;
+    padding-top:20px;
     background:#f4f4f4;
     overflow:hidden;
     position:relative;
@@ -23,6 +21,7 @@
       
       @include breakpoint(tablet) {
         font-size:82px;
+        padding-top:40px;
       }
     }
 
@@ -79,7 +78,7 @@
             line-height:1.2em;
             margin:0px 0px 1em 0px;
             text-transform:capitalize;
-            
+
             @include breakpoint(tablet) {
               font-size:37px;
             }
