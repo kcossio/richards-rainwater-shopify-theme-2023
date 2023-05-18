@@ -152,6 +152,20 @@
             }
             })
         });
+
+        const animateMe = gsap.utils.toArray('.animate');
+        animateMe.forEach(box => {
+            gsap.to(box, { 
+                ease: "Strong.easeInOut",
+                scrollTrigger: {
+                trigger: box,
+                start: "top bottom",
+            end: "bottom top",        
+            toggleClass: "onscreen",
+            toggleActions: "play reverse play reverse"
+            }
+            })
+        });
         
         // Fade in
         const fadeIn = gsap.utils.toArray('.fade-in');

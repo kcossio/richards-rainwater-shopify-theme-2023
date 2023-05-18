@@ -10,13 +10,13 @@
 
 {%- assign bottle_1_image = section.settings.bottle_1_image -%}
 {%- if bottle_1_image != blank -%}
-{{ bottle_1_image | image_url: width: bottle_1_image.width | image_tag: class: 'home-banner-bottle home-banner-bottle-left fade-in-left', loading: 'lazy' }}
+{{ bottle_1_image | image_url: width: bottle_1_image.width | image_tag: class: 'home-banner-bottle home-banner-bottle-left animate slide-in-up', loading: 'lazy' }}
 {%- endif -%}
 
 
 {%- assign bottle_2_image = section.settings.bottle_2_image -%}
 {%- if bottle_2_image != blank -%}
-{{ bottle_2_image | image_url: width: bottle_2_image.width | image_tag: class: 'home-banner-bottle home-banner-bottle-right fade-in-right', loading: 'lazy' }}
+{{ bottle_2_image | image_url: width: bottle_2_image.width | image_tag: class: 'home-banner-bottle home-banner-bottle-right animate slide-in-up', loading: 'lazy' }}
 {%- endif -%}
 
 <h2 class="home-banner-slogan-letters">

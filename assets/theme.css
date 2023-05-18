@@ -989,6 +989,11 @@ EASING
 }
 
 /* -------- GSAP Animate Elements ------- */
+.animate {
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+}
+
 .slide-title {
   opacity: 0;
   transform: translateX(-50px);
@@ -999,6 +1004,15 @@ EASING
 .slide-title.onscreen {
   opacity: 1;
   transform: translateX(0px);
+}
+
+.slide-in-up {
+  transform: translateY(100%);
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+}
+.slide-in-up.onscreen {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 .fade-in {

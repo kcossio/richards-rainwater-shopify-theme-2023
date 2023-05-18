@@ -113,6 +113,10 @@
 
 /* -------- GSAP Animate Elements ------- */
 
+.animate {
+  @include animationfix();
+}
+
 .slide-title {
     opacity:0;
     transform:translateX(-50px);
@@ -123,6 +127,15 @@
     &.onscreen {
         opacity:1;
         transform:translateX(0px);
+    }
+  }
+  .slide-in-up {
+    transform:translateY(100%);
+    transition:all 1s $easeInOutCirc 0s;
+
+    &.onscreen {
+      opacity:1;
+      transform:translateY(0px);
     }
   }
   .fade-in {

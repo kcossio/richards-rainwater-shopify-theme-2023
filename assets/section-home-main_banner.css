@@ -228,9 +228,14 @@ section.home-banner .home-banner-bottle {
   position: absolute;
   bottom: 0px;
   width: auto;
-  max-height: 120%;
+  max-height: 100%;
   transform: translate(0%, 11%);
   z-index: 2;
+}
+@media (min-width: 768px) {
+  section.home-banner .home-banner-bottle {
+    max-height: 120%;
+  }
 }
 section.home-banner .home-banner-bottle.home-banner-bottle-left {
   left: 13vw;
