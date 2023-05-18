@@ -338,8 +338,8 @@ section.section-versus .select2-container--default .select2-selection--single:fo
 .select2-container--default .select2-selection--single .select2-selection__arrow {
   top: 50%;
   right: 20px;
-  width: 17px;
-  height: 16px;
+  width: 13px;
+  height: 12px;
   transform: translateY(-50%);
 }
 
@@ -359,7 +359,6 @@ section.section-versus .select2-container--default .select2-selection--single:fo
 
 .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
   border: 0px;
-  transform: rotate(-180deg);
   background: url(select-arrow-up.svg) center no-repeat;
   background-size: cover;
 }
