@@ -63,7 +63,7 @@ section.home-banner {
         z-index:2;
 
         transform:translateY(100%);
-        transition:all 1s $easeInOutBack 0s;
+        transition:all 1s $easeOutBack 0s;
 
         &.onscreen {
         opacity:1;

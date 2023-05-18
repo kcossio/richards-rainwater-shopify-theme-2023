@@ -231,7 +231,7 @@ section.home-banner .home-banner-bottle {
   max-height: 100%;
   z-index: 2;
   transform: translateY(100%);
-  transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
 }
 section.home-banner .home-banner-bottle.onscreen {
   opacity: 1;
