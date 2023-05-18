@@ -89,7 +89,9 @@
 
 {% javascript %}// In your Javascript (external .js resource or <script> tag)
    
-    jQuery( "select.vs-select" ).select2();
+    jQuery( "select.vs-select" ).select2({
+      minimumResultsForSearch: Infinity
+    });
   
     
 {% endjavascript %}
