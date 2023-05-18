@@ -91,9 +91,8 @@ section.section-versus {
     
         &:active,
         &:focus,
-        .select2-selection__rendered,
-        .select2-selection__rendered:focus,
-        .select2-selection__rendered:active {
+        .select2-selection__rendered
+        {
             background:$light_blue;
             color:$white !important;
         }
