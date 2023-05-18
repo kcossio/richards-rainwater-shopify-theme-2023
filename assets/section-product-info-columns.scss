@@ -80,6 +80,9 @@ section.section-product-info-box-drops {
                 display:none;
             }
         }
+        &.col-2 {
+            background:$medium_blue;
+        }
     }
     .product-info-col {
         width:100%;

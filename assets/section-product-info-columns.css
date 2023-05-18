@@ -251,6 +251,9 @@ section.section-product-info-box-drops header.mobile {
     display: none;
   }
 }
+section.section-product-info-box-drops header.col-2 {
+  background: #0040A8;
+}
 section.section-product-info-box-drops .product-info-col {
   width: 100%;
   text-align: center;
