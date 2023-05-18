@@ -1250,17 +1250,24 @@ EASING
 .footer .footer-top ul.footer-menu {
   margin: 0px;
   list-style: none;
+  padding: 0px;
+}
+@media (min-width: 768px) {
+  .footer .footer-top ul.footer-menu {
+    padding: 0px 0px 0px 30px;
+  }
 }
 .footer .footer-top ul.footer-menu li {
   display: block;
   list-style: none;
+  line-height: 1.25em;
+  margin-bottom: 1.1em;
 }
 .footer .footer-top ul.footer-menu li a {
   color: #ffffff;
   font-weight: 900;
-  font-size: 22px;
+  font-size: 13px;
   line-height: 1em;
-  margin-bottom: 22px;
   text-decoration: none;
   position: relative;
   background-image: linear-gradient(to right, #0094DA, #0094DA 50%, #ffffff 50%);
@@ -1270,6 +1277,11 @@ EASING
           background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.2s 0s ease-in-out;
+}
+@media (min-width: 768px) {
+  .footer .footer-top ul.footer-menu li a {
+    font-size: 22px;
+  }
 }
 .footer .footer-top ul.footer-menu li a:hover {
   background-position: 0;
@@ -1361,7 +1373,7 @@ EASING
 .list-social__link {
   align-items: center;
   display: flex;
-  padding: 1.7rem;
+  padding: 0.7rem;
   border-radius: 50%;
   color: #000F44;
   aspect-ratio: 1/1;
