@@ -245,6 +245,7 @@ EASING
   font-size: 20px;
   line-height: 1.2em;
   margin: 0px 0px 1em 0px;
+  text-transform: capitalize;
 }
 @media (min-width: 768px) {
   .timeline-wrap .timeline-slide .timeline-block-content h3 {

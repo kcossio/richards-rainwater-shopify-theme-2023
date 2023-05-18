@@ -78,6 +78,8 @@
             font-size:20px;
             line-height:1.2em;
             margin:0px 0px 1em 0px;
+            text-transform:capitalize;
+            
             @include breakpoint(tablet) {
               font-size:37px;
             }
