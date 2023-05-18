@@ -262,7 +262,7 @@ section.home-banner .home-banner-bottle.home-banner-bottle-left {
   }
 }
 section.home-banner .home-banner-bottle.home-banner-bottle-right {
-  right: 8vw;
+  right: 0vw;
   max-height: 81%;
 }
 @media (min-width: 768px) {

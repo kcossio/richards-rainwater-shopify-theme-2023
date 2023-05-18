@@ -92,7 +92,7 @@ section.home-banner {
         }
 
         &.home-banner-bottle-right {
-            right:8vw;
+            right:0vw;
             max-height: 81%;
 
             @include breakpoint(tablet) {
