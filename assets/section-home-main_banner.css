@@ -229,7 +229,6 @@ section.home-banner .home-banner-bottle {
   bottom: 0px;
   width: auto;
   max-height: 100%;
-  transform: translate(0%, 11%);
   z-index: 2;
 }
 section.home-banner .home-banner-bottle.onscreen {
