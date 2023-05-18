@@ -337,17 +337,19 @@ section.section-versus .select2-container--default .select2-selection--single:fo
 
 .select2-container .select2-selection--single .select2-selection__rendered {
   padding: 0px;
+  line-height: 1em;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
   top: 50%;
-  right: 20px;
+  right: 13px;
   width: 7px;
   height: 7px;
   transform: translateY(-50%);
 }
 @media (min-width: 768px) {
   .select2-container--default .select2-selection--single .select2-selection__arrow {
+    right: 20px;
     width: 13px;
     height: 12px;
   }
