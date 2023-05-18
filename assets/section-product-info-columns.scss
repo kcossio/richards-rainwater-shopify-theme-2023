@@ -8,7 +8,7 @@ section.section-product-info-box-drops {
     flex-wrap:wrap;
     overflow:hidden;
     align-items:stretch;
-    padding:60px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
     background:$dark_blue;
 
     @include breakpoint(tablet) {
