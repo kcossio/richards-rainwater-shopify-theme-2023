@@ -9,7 +9,7 @@
 
 
     &.notitle {
-        padding:60px 0px;
+        padding:60px 0px 0px 0px;
     }
     @include breakpoint(tablet) {
         padding:160px 0px 40px 0px;
