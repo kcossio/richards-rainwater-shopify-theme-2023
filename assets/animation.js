@@ -24,6 +24,7 @@
 	
 	jQuery('#menu-toggle').click(function(){
 		
+        console.log('menu toggle clicked');
 		// Determine if open class is added
         
         //Get the Body element
