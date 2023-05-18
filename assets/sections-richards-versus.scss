@@ -5,22 +5,31 @@
 section.section-versus {
     margin:50px 0px;
 
+    .inner {
+        padding:0px 25px;
+    }
+
     @include breakpoint(tablet) {
         margin:95px 0px;
+        .inner {
+            padding: 0px 40px;
+        }
     }
 
 
     h2 {
-        font-size:24px;
-        margin:0px 0px 40px 0px;
+        font-size:34px;
+        margin:0px 0px 30px 0px;
         font-weight:900;
         color:$light_blue;
         text-align:center;
-        line-height:1.2em;
+        line-height:1.1em;
         width:100%;
+        letter-spacing:.8px;
 
         @include breakpoint(tablet) {
             font-size:71px;
+            margin:0px 0px 40px 0px;
         }
     }
 
@@ -58,12 +67,12 @@ section.section-versus {
         font-weight:900;
         background:#E3E3E3;
         border:0px;
-        font-size:px;
+        font-size:11px;
         color:$dark_blue;
         text-transform:uppercase;
         border-radius:50px;
-        padding:15px;
-        text-align:center;
+        padding:15px 15px;
+        text-align:left;
         letter-spacing:1px;
         line-height:1em;
         width:45%;
@@ -78,6 +87,8 @@ section.section-versus {
         @include breakpoint(tablet) {
             font-size:22px;
             letter-spacing:2px;
+            padding:15px;
+            text-align:center;
         }
 
     }
