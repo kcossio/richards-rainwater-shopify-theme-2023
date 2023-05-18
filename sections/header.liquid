@@ -125,7 +125,7 @@
   endfor
 -%}
 
-  <header class="header site-header header-inner">
+  <header class="header site-header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} {% if section.settings.menu != blank %} header--has-menu{% endif %} {%- if request.page_type == 'index' -%} home-header{% endif %}">
     {% ### Mobile Navigation ### %}
     {%- if section.settings.menu != blank -%}
 
@@ -393,7 +393,7 @@
         </span>
       </summary>
       {% ### End Menu Toggle Button ### %}
-
+      
       {% ### Search Bar ### %}
       {%- if section.settings.logo_position == 'top-center' or section.settings.menu == blank -%}
         <details-modal class="header__search">
