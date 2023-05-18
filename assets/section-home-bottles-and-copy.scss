@@ -3,7 +3,7 @@
 @import "fonts";
 
 section.home-bottles-copy {
-
+    z-index:1;
     padding:64px 0px 87.5vw 0px;
 
     @include breakpoint(tablet) {
