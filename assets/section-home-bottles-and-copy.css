@@ -215,6 +215,7 @@ section.home-bottles-copy {
 .home-bottles-intro .home-intro-right {
   width: 100%;
   order: 1;
+  overflow-x: hidden;
 }
 @media (min-width: 768px) {
   .home-bottles-intro .home-intro-right {
@@ -223,7 +224,7 @@ section.home-bottles-copy {
   }
 }
 .home-bottles-intro .home-intro-right h2 {
-  font-size: 50px;
+  font-size: 44px;
   line-height: 1.08em;
   margin: 0px 0px 20px 0px;
   color: #000F44;
