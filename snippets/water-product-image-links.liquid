@@ -6,7 +6,15 @@
     {%- assign product_1 = block.settings.product_1 -%}    
     
         <a class="water-product-img-button {%- if product.id == product_1.id %} current{% endif %}" data-product-id="{{ product_1.id }}" href="{{ product_1.url }}">
-            <h3>{{ product_1.title }}</h3>
+            <h3>
+                {%- if product_1.metafields.product_extra.water_product_custom_title.value != blank %}
+                {% assign title_img = product_1.metafields.product_extra.water_product_custom_title %}
+                {{ title_img | image_url: width: title_img.width | image_tag: class: 'custom-title-img', loading: 'lazy' }}
+                <span class="hidden">{{ product_1.title }}</span>
+                {% else %}
+                {{ product_1.title }}
+                {%- endif -%}
+            </h3>
             {%- assign product_1_image = block.settings.product_1.featured_image -%}
             {%- if product_1_image != blank -%}
                 {{ product_1_image | image_url: width: product_1_image.width | image_tag: class: 'water-btn-img', loading: 'lazy' }}
@@ -17,7 +25,15 @@
     {%- assign product_2 = block.settings.product_2 -%}    
     
         <a class="water-product-img-button {%- if product.id == product_2.id %} current{% endif %}" data-product-id="{{ product_2.id }}" href="{{ product_2.url }}">
-            <h3>{{ product_2.title }}</h3>
+            <h3>
+            {%- if product_2.metafields.product_extra.water_product_custom_title.value != blank %}
+                {% assign title_img = product_2.metafields.product_extra.water_product_custom_title %}
+                {{ title_img | image_url: width: title_img.width | image_tag: class: 'custom-title-img', loading: 'lazy' }}
+                <span class="hidden">{{ product_1.title }}</span>
+                {% else %}
+                {{ product_1.title }}
+                {%- endif -%}
+            </h3>
             {%- assign product_2_image = block.settings.product_2.featured_image -%}
             {%- if product_2_image != blank -%}
                 {{ product_2_image | image_url: width: product_2_image.width | image_tag: class: 'water-btn-img', loading: 'lazy' }}
