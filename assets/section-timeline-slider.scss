@@ -46,7 +46,7 @@
         display:flex;
         justify-content:flex-end;
         align-items:flex-end;
-        height:60vh;
+        height:65vh;
         width:100vw;
         position:relative;
         background:#f4f4f4;
@@ -68,6 +68,7 @@
           width:236px;
           max-width:70%;
           padding:20px 7.6vw;
+          margin-right:10px;
           position:relative;
           z-index:5;
 
@@ -75,6 +76,7 @@
             width:560px;
             height:486px;
             padding:6.9vw 5.7vw;
+            margin-right:10px;
           }
 
           h3 {
@@ -103,7 +105,18 @@
       }
 
       .bg-img {
-        width:95%;
+        width:93%;
+
+        img {
+          object-position:32% bottom;
+        }
+
+        @include breakpoint(tablet) {
+          width:95%;
+          img {
+            object-position:center;
+          }
+        }
       }
 
 

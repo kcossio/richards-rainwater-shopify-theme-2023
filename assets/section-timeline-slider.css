@@ -212,7 +212,7 @@ EASING
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  height: 60vh;
+  height: 65vh;
   width: 100vw;
   position: relative;
   background: #f4f4f4;
@@ -233,6 +233,7 @@ EASING
   width: 236px;
   max-width: 70%;
   padding: 20px 7.6vw;
+  margin-right: 10px;
   position: relative;
   z-index: 5;
 }
@@ -241,6 +242,7 @@ EASING
     width: 560px;
     height: 486px;
     padding: 6.9vw 5.7vw;
+    margin-right: 10px;
   }
 }
 .timeline-wrap .timeline-slide .timeline-block-content h3 {
@@ -266,7 +268,20 @@ EASING
   }
 }
 .timeline-wrap .bg-img {
-  width: 95%;
+  width: 93%;
+}
+.timeline-wrap .bg-img img {
+  -o-object-position: 32% bottom;
+     object-position: 32% bottom;
+}
+@media (min-width: 768px) {
+  .timeline-wrap .bg-img {
+    width: 95%;
+  }
+  .timeline-wrap .bg-img img {
+    -o-object-position: center;
+       object-position: center;
+  }
 }
 
 nav.hor {
