@@ -31,7 +31,7 @@
                 {{ title_img | image_url: width: title_img.width | image_tag: class: 'custom-title-img', loading: 'lazy' }}
                 <span class="hidden">{{ product_1.title }}</span>
                 {% else %}
-                {{ product_1.title }}
+                {{ product_2.title }}
                 {%- endif -%}
             </h3>
             {%- assign product_2_image = block.settings.product_2.featured_image -%}
