@@ -1548,7 +1548,7 @@ button.shopify-payment-button__button--unbranded {
   justify-content: center;
   align-items: center;
   border: 0;
-  padding: 0 3rem;
+  padding: 2.8rem 3rem;
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;
@@ -1557,9 +1557,10 @@ button.shopify-payment-button__button--unbranded {
   -webkit-appearance: none;
   -moz-appearance: none;
        appearance: none;
-  font-size: 15px;
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  line-height: 1.1em;
   font-weight: 900;
 }
 .button:hover,
@@ -1593,7 +1594,7 @@ button.shopify-payment-button__button--unbranded {
   .shopify-challenge__button.lg,
   .customer button.lg {
     font-size: 22px;
-    padding: 0.5em 3.5em;
+    padding: 1.2rem 4rem;
   }
 }
 
