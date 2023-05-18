@@ -832,7 +832,7 @@ EASING
   position: fixed;
   top: 0px;
   background: transparent;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .section-header .site-header.open .header__heading,
 .section-header .site-header.open .header__heading-link {
