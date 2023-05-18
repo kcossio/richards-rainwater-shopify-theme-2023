@@ -466,7 +466,7 @@ ul.model-blocks li .model-block-content {
   }
 }
 ul.model-blocks li .model-block-content h3 {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 900;
   margin: 0px 0px 0.6em 0px;
   position: relative;
@@ -481,7 +481,7 @@ ul.model-blocks li .model-block-content h3 {
 ul.model-blocks li .model-block-content h3 span {
   display: flex;
   position: absolute;
-  top: -6px;
+  top: 2px;
   left: -30px;
   aspect-ratio: 62/87;
   color: #ffffff;
@@ -492,7 +492,7 @@ ul.model-blocks li .model-block-content h3 span {
   line-height: 1em;
   background: url("icon-drop-med-blue.svg");
   background-size: 100% 100%;
-  width: 11px;
+  width: 18px;
   font-size: 11px;
 }
 @media (min-width: 768px) {
@@ -505,7 +505,7 @@ ul.model-blocks li .model-block-content h3 span {
   }
 }
 ul.model-blocks li .model-block-content p {
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.4em;
 }
 @media (min-width: 768px) {
@@ -513,6 +513,11 @@ ul.model-blocks li .model-block-content p {
     font-size: 28px;
     line-height: 1.6em;
   }
+}
+ul.model-blocks li:nth-child(even) .model-block-content {
+  order: 1;
+  width: 100%;
+  padding: 20px 5vw 20px 15vw;
 }
 @media (min-width: 768px) {
   ul.model-blocks li:nth-child(even) img {
