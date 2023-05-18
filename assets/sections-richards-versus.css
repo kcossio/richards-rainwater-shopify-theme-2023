@@ -258,10 +258,12 @@ section.section-versus .select2-container--default .select2-selection--single {
   font-family: "TT Commons", sans-serif;
 }
 section.section-versus select:active, section.section-versus select:focus,
+section.section-versus select .select2-selection__rendered,
 section.section-versus select .select2-selection__rendered:focus,
 section.section-versus select .select2-selection__rendered:active,
 section.section-versus .select2-container--default .select2-selection--single:active,
 section.section-versus .select2-container--default .select2-selection--single:focus,
+section.section-versus .select2-container--default .select2-selection--single .select2-selection__rendered,
 section.section-versus .select2-container--default .select2-selection--single .select2-selection__rendered:focus,
 section.section-versus .select2-container--default .select2-selection--single .select2-selection__rendered:active {
   background: #0094DA;
