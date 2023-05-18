@@ -799,7 +799,8 @@
 
 {% javascript %}
 
-  
+gsap.set("ul.menu-drawer__menu > li", { y:-20, opacity:0 });
+
     // ---------------- Mobile Menu Functions ---------- //
     window.openNavMobile = function() {
         // GSAP tween to stretch the loading screen across the whole screen
