@@ -76,7 +76,7 @@ section.section-versus {
         -webkit-appearance:none;
         font-weight:900;
         background:#E3E3E3;
-        border:0px;
+        border:0px !important;
         height:auto;
         font-size:11px;
         color:$dark_blue;
@@ -90,9 +90,11 @@ section.section-versus {
         font-family:$font_body;
     
         &:active,
-        &:focus {
+        &:focus,
+        .select2-selection__rendered:focus,
+        .select2-selection__rendered:active {
             background:$light_blue;
-            color:$white;
+            color:$white !important;
         }
 
         @include breakpoint(tablet) {

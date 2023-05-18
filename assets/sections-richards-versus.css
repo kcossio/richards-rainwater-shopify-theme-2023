@@ -244,7 +244,7 @@ section.section-versus .select2-container--default .select2-selection--single {
   -webkit-appearance: none;
   font-weight: 900;
   background: #E3E3E3;
-  border: 0px;
+  border: 0px !important;
   height: auto;
   font-size: 11px;
   color: #000F44;
@@ -258,10 +258,14 @@ section.section-versus .select2-container--default .select2-selection--single {
   font-family: "TT Commons", sans-serif;
 }
 section.section-versus select:active, section.section-versus select:focus,
+section.section-versus select .select2-selection__rendered:focus,
+section.section-versus select .select2-selection__rendered:active,
 section.section-versus .select2-container--default .select2-selection--single:active,
-section.section-versus .select2-container--default .select2-selection--single:focus {
+section.section-versus .select2-container--default .select2-selection--single:focus,
+section.section-versus .select2-container--default .select2-selection--single .select2-selection__rendered:focus,
+section.section-versus .select2-container--default .select2-selection--single .select2-selection__rendered:active {
   background: #0094DA;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 @media (min-width: 768px) {
   section.section-versus select,
