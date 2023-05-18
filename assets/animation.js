@@ -166,6 +166,20 @@
             }
             })
         });
+
+        const animateBottles = gsap.utils.toArray('.bottle-in-up');
+        animateBottlese.forEach(box => {
+            gsap.to(box, { 
+                ease: "Strong.easeInOut",
+                scrollTrigger: {
+                trigger: box,
+                start: "top 120%",
+            end: "bottom top",        
+            toggleClass: "onscreen",
+            toggleActions: "play reverse play reverse"
+            }
+            })
+        });
         
         // Fade in
         const fadeIn = gsap.utils.toArray('.fade-in');
