@@ -200,25 +200,26 @@ section.home-banner .home-banner-bar {
   width: 100%;
   z-index: 3;
   background: #000F44;
-  padding: 12px 20px 14px 20px;
+  padding: 26px 20px;
   text-align: center;
 }
 @media (min-width: 768px) {
   section.home-banner .home-banner-bar {
-    padding: 20px 20px 24px 20px;
+    padding: 26px 20px;
   }
 }
 section.home-banner .home-banner-bar p {
   color: #ffffff;
   margin: 0px;
   padding: 0px;
-  line-height: 1.2em;
-  font-size: 24px;
-  font-weight: 900;
-  letter-spacing: 0.5px;
+  line-height: 1em;
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: 3px;
 }
 section.home-banner .home-banner-bar p sup {
   font-weight: 200;
+  vertical-align: top;
 }
 @media (min-width: 768px) {
   section.home-banner .home-banner-bar p {
@@ -258,7 +259,7 @@ section.home-banner .home-banner-bottle.home-banner-bottle-left {
 @media (min-width: 1440px) {
   section.home-banner .home-banner-bottle.home-banner-bottle-left {
     left: 13vw;
-    max-height: 120%;
+    max-height: 100%;
   }
 }
 section.home-banner .home-banner-bottle.home-banner-bottle-right {
@@ -268,13 +269,13 @@ section.home-banner .home-banner-bottle.home-banner-bottle-right {
 @media (min-width: 768px) {
   section.home-banner .home-banner-bottle.home-banner-bottle-right {
     right: 8vw;
-    max-height: 100%;
+    max-height: 91%;
   }
 }
 @media (min-width: 1440px) {
   section.home-banner .home-banner-bottle.home-banner-bottle-right {
     right: 8vw;
-    max-height: 120%;
+    max-height: 91%;
   }
 }
 section.home-banner h2.home-banner-slogan-letters {
@@ -291,7 +292,7 @@ section.home-banner h2.home-banner-slogan-letters {
 }
 @media (min-width: 768px) {
   section.home-banner h2.home-banner-slogan-letters {
-    font-size: 30vw;
+    font-size: 20vw;
   }
 }
 @media (min-width: 1280px) {

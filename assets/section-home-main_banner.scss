@@ -31,23 +31,25 @@ section.home-banner {
         width:100%;
         z-index:3;
         background:$dark_blue;
-        padding:12px 20px 14px 20px;
+        padding:26px 20px;
         text-align:center;
 
         @include breakpoint(tablet) {
-            padding:20px 20px 24px 20px;
+            padding:26px 20px;
         }
 
         p {
             color:$white;
             margin:0px;
             padding:0px;
-            line-height:1.2em;
-            font-size:24px;
-            font-weight:900;
-            letter-spacing:.5px;
+            line-height:1em;
+            font-size:23px;
+            font-weight:800;
+            letter-spacing:3px;
+
             sup {
                 font-weight:200;
+                vertical-align:top;
             }
             
             @include breakpoint(tablet) {
@@ -87,7 +89,7 @@ section.home-banner {
             }
             @include breakpoint(desktop) {
                 left:13vw;
-                max-height: 120%;
+                max-height: 100%;
             }
         }
 
@@ -97,11 +99,11 @@ section.home-banner {
 
             @include breakpoint(tablet) {
                 right:8vw;
-                max-height: 100%;
+                max-height: 91%;
             }
             @include breakpoint(desktop) {
                 right:8vw;
-                max-height: 120%;
+                max-height: 91%;
             }
         }
     }
@@ -119,7 +121,7 @@ section.home-banner {
         margin:0px auto;
 
         @include breakpoint(tablet) {
-            font-size:30vw;
+            font-size:20vw;
         }
 
         @include breakpoint(laptop) {
