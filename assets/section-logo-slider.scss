@@ -9,7 +9,7 @@
 
 
     &.notitle {
-        padding:40px 0px;
+        padding:60px 0px;
     }
     @include breakpoint(tablet) {
         padding:160px 0px 40px 0px;
@@ -26,6 +26,7 @@
             margin:0px auto 18px auto;
             font-size:40px;
             width:100%;
+            line-height:1em;
 
             @include breakpoint(tablet) {
                 font-size:75px;
@@ -37,12 +38,13 @@
             font-size:22px;
             font-weight:bold;
             line-height:1.3em;
-            width:624px;
+            width:80%;
             max-width:100%;
             margin:0px auto;
 
             @include breakpoint(tablet) {
                 font-size:30px;
+                width:624px;
             }
         }
     }
