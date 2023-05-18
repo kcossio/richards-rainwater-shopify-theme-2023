@@ -828,6 +828,23 @@ EASING
 .section-header .site-header.scrolling .header__icon.link {
   color: #000F44;
 }
+.section-header .site-header.open {
+  position: fixed;
+  top: 0px;
+  background: transparent;
+  color: #ffffff;
+}
+.section-header .site-header.open .header__heading,
+.section-header .site-header.open .header__heading-link {
+  color: #ffffff;
+}
+.section-header .site-header.open .header__menu-item {
+  color: #ffffff;
+  background-image: linear-gradient(to right, #0094DA, #0094DA 50%, #00142A 50%);
+}
+.section-header .site-header.open .header__icon.link {
+  color: #ffffff;
+}
 
 .header-inner {
   order: 1;

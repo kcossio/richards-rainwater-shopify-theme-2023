@@ -181,6 +181,8 @@
         .header__icon.link {
           color:$white;
         }
+
+      
   
       }
     
@@ -207,6 +209,32 @@
         }
         .header__icon.link {
           color:$dark_blue;
+        }
+  
+      }
+
+      &.open {
+        position:fixed;
+        top:0px;
+        background:transparent;
+        color:$white;
+  
+        .header__heading, 
+        .header__heading-link {
+          color:$white;
+        }
+  
+        .header__menu-item {
+          color:$white;
+          background-image: linear-gradient(
+            to right,
+            $light_blue,
+            $light_blue 50%,
+            $darkest_blue 50%
+          );
+        }
+        .header__icon.link {
+          color:$white;
         }
   
       }
