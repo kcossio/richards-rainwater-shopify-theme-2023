@@ -319,6 +319,7 @@ section.section-versus .select2-container--default .select2-selection--single:fo
 .select2-results__options li {
   position: relative;
   padding: 6px 20px;
+  background: transparent !important;
 }
 .select2-results__options li::before {
   content: "";
@@ -339,14 +340,19 @@ section.section-versus .select2-container--default .select2-selection--single:fo
   border-color: #E3E3E3;
 }
 
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  background: transparent !important;
+  color: #0040A8;
+}
+
 .select2-container--default .select2-results__option--highlighted,
 .select2-container--default .select2-results__option--selectable {
-  background: #ffffff;
+  background: transparent !important;
   color: #0040A8;
 }
 
 .select2-container--default .select2-results__option--selected {
-  background: #ffffff;
+  background: transparent !important;
   color: #0040A8;
 }
 

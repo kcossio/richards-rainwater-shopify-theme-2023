@@ -151,6 +151,7 @@ section.section-versus {
     li {
         position:relative;
         padding:6px 20px;
+        background:transparent !important;
 
         &::before {
             content:"";
@@ -175,13 +176,17 @@ section.section-versus {
     border-radius:30px;
     border-color:#E3E3E3;
 }
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background:transparent !important;
+    color:$medium_blue;
+}
 .select2-container--default .select2-results__option--highlighted,
 .select2-container--default .select2-results__option--selectable {
-    background:$white;
+    background:transparent !important;
     color:$medium_blue;
 }
 .select2-container--default .select2-results__option--selected {
-    background:$white;
+    background:transparent !important;
     color:$medium_blue;
 }
 
