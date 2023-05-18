@@ -257,6 +257,10 @@ section.section-versus .select2-container--default .select2-selection--single {
   width: 100%;
   font-family: "TT Commons", sans-serif;
 }
+section.section-versus select[aria-expanded=true],
+section.section-versus .select2-container--default .select2-selection--single[aria-expanded=true] {
+  color: #ffffff;
+}
 section.section-versus select:active, section.section-versus select:focus,
 section.section-versus .select2-container--default .select2-selection--single:active,
 section.section-versus .select2-container--default .select2-selection--single:focus {
