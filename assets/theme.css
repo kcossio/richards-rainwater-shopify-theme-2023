@@ -722,12 +722,12 @@ EASING
   vertical-align: middle;
 }
 .header__icon .icon.icon-hamburger {
-  fill: #00142A;
+  fill: currentColor;
   width: 25px;
   height: 21px;
 }
 .header__icon .icon.icon-close {
-  fill: #00142A;
+  fill: currentColor;
   width: 17px;
   height: 17px;
 }
