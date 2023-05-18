@@ -466,11 +466,17 @@ ul.model-blocks li .model-block-content {
   }
 }
 ul.model-blocks li .model-block-content h3 {
-  font-size: 45px;
+  font-size: 28px;
   font-weight: 900;
-  margin: 0px 0px 0.8em 0px;
+  margin: 0px 0px 0.6em 0px;
   position: relative;
   width: 100%;
+  line-height: 1em;
+}
+@media (min-width: 768px) {
+  ul.model-blocks li .model-block-content h3 {
+    font-size: 45px;
+  }
 }
 ul.model-blocks li .model-block-content h3 span {
   display: flex;
@@ -499,7 +505,14 @@ ul.model-blocks li .model-block-content h3 span {
   }
 }
 ul.model-blocks li .model-block-content p {
-  font-size: 28px;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+@media (min-width: 768px) {
+  ul.model-blocks li .model-block-content p {
+    font-size: 28px;
+    line-height: 1.6em;
+  }
 }
 @media (min-width: 768px) {
   ul.model-blocks li:nth-child(even) img {
