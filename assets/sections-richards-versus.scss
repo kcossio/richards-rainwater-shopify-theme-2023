@@ -90,11 +90,15 @@ section.section-versus {
         font-family:$font_body;
     
         &:active,
-        &:focus,
-        .select2-selection__rendered
+        &:focus
         {
             background:$light_blue;
             color:$white !important;
+
+            .select2-selection__rendered {
+                background:$light_blue;
+                color:$white !important;
+            }
         }
 
         @include breakpoint(tablet) {
