@@ -129,12 +129,7 @@
     {% ### Mobile Navigation ### %}
     {%- if section.settings.menu != blank -%}
 
-      <summary id="menu-toggle" class="header__icon header__icon--menu header__icon--summary link focus-inset" aria-label="{{ 'sections.header.menu' | t }}">
-        <span>
-          {% render 'icon-hamburger' %}
-          {% render 'icon-close' %}
-        </span>
-      </summary>
+      
 
       <div id="nav-wrapper" class="" tabindex="-1">
         <div class="menu-drawer__inner-container">
@@ -389,6 +384,16 @@
     {% ### End Mobile Navigation ### %}
 
     <div class="header-main">
+
+      {% ### Menu Toggle Button ### %}
+      <summary id="menu-toggle" class="header__icon header__icon--menu header__icon--summary link focus-inset" aria-label="{{ 'sections.header.menu' | t }}">
+        <span>
+          {% render 'icon-hamburger' %}
+          {% render 'icon-close' %}
+        </span>
+      </summary>
+      {% ### End Menu Toggle Button ### %}
+      
       {% ### Search Bar ### %}
       {%- if section.settings.logo_position == 'top-center' or section.settings.menu == blank -%}
         <details-modal class="header__search">
