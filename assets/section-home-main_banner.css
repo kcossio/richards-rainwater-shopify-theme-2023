@@ -175,12 +175,17 @@ section.home-banner {
   flex-wrap: wrap;
   position: relative;
   z-index: 1;
-  min-height: 100vh;
+  min-height: calc(100vh - 30px);
   width: 100vw;
   align-items: center;
   align-content: center;
   justify-content: center;
   overflow: hidden;
+}
+@media (min-width: 768px) {
+  section.home-banner {
+    min-height: calc(100vh - 40px);
+  }
 }
 section.home-banner .home-banner-bar {
   display: flex;
