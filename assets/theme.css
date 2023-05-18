@@ -1294,7 +1294,7 @@ EASING
 .footer .footer-bottom {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   border-top: 1px solid #0094DA;
   padding: 34px 0px 0px 0px;
@@ -1304,6 +1304,7 @@ EASING
   .footer .footer-bottom {
     padding-top: 42px;
     margin-top: 42px;
+    justify-content: space-between;
   }
 }
 .footer .footer-logo {
@@ -1324,7 +1325,12 @@ EASING
 .terms-policies {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .terms-policies {
+    justify-content: flex-end;
+  }
 }
 .terms-policies a {
   color: #ffffff;
@@ -1335,14 +1341,32 @@ EASING
 }
 .terms-policies p {
   display: inline-block;
+  text-align: center;
+  width: 100%;
   margin: 0px;
   font-size: 11px;
   color: #ffffff;
   line-height: 1em;
+  order: 2;
+}
+@media (min-width: 768px) {
+  .terms-policies p {
+    text-align: left;
+    width: auto;
+    order: 1;
+  }
 }
 .terms-policies ul {
   display: inline-flex;
   margin: 0px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .terms-policies ul {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
 }
 .terms-policies ul li {
   margin: 12px;
