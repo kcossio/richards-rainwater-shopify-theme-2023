@@ -1,0 +1,53 @@
+/* -------- Star Randomizer ------- */
+
+.stars {
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index:5;
+    width:100%;
+    height:100%;
+    pointer-events: none;
+    overflow:visible;
+  }
+  .star {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    width:30px;
+  
+    @include breakpoint(tablet) {
+      width:50px;
+    }
+  }
+  
+  /* ------ Drops ----- */
+  
+  .drop {
+  
+    &.light {
+        .icon-drop {
+            fill:$light_blue;
+        }
+        .plus {
+            fill:$medium_blue;
+        }
+    }
+    &.medium {
+        .icon-drop {
+            fill:$medium_blue;
+        }
+        .plus {
+            fill:$light_blue;
+        }
+    }
+    &.timeline-drop {
+        .icon-drop {
+            fill:#bfbfbf;
+        }
+        .plus {
+            fill:$white;
+        }
+    }
+  }
+  

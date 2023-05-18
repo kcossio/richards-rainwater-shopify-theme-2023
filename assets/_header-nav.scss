@@ -1,0 +1,152 @@
+
+  /* --------- New Header ------- */
+
+
+
+/* section-header */
+
+.section-header {
+    padding:0px;
+    width:100%;
+  
+    .site-header {
+      padding:20px 28px;
+      bottom: auto;
+      height:98px;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 30px;
+      width: 100vw;
+      z-index: 7;
+      transition: all 0.25s ease;
+  
+      &:not(.home-header) {
+        background-color:$white;
+      }
+      @include breakpoint(tablet) {
+        top:40px;
+        padding:22px 36px;
+  
+      }
+      @include breakpoint(laptop) {
+        padding:22px 58px;
+      }
+  
+      // On the Home page, do things
+      &.home-header {
+        color:$white;
+  
+        .header__heading, 
+        .header__heading-link {
+          color:$white;
+        }
+  
+        .header__menu-item {
+          color:$white;
+          background-image: linear-gradient(
+            to right,
+            $dark_blue,
+            $dark_blue 50%,
+            $white 50%
+          );
+        }
+  
+        .header__icon.link {
+          color:$white;
+        }
+  
+      }
+    
+      // When Scrolling, do things
+      &.scrolling {
+        position:fixed;
+        top:0px;
+        background:$white;
+        color:$dark_blue;
+  
+        .header__heading, 
+        .header__heading-link {
+          color:$dark_blue;
+        }
+  
+        .header__menu-item {
+          color:$dark_blue;
+          background-image: linear-gradient(
+            to right,
+            $light_blue,
+            $light_blue 50%,
+            $darkest_blue 50%
+          );
+        }
+        .header__icon.link {
+          color:$dark_blue;
+        }
+  
+      }
+    }
+  
+    
+  }
+  
+    .header-inner {
+      order:1;
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      align-content:center;
+      justify-content:space-between;
+      height:auto;
+      padding:0px 20px 0px 20px;
+      height:66px;
+      position:relative;
+      z-index:1000;
+      transition:background-color .3s ease 0s;
+      border-bottom:1px solid rgba(255,255,255,.13);
+  
+      @include breakpoint(tablet) {
+      }
+      @include breakpoint(laptop) {
+          border-bottom:0px;
+          height:121px;
+          
+      }
+      
+  }
+    #nav-wrapper {
+      position:fixed;
+      order:2;
+      top:0px;
+      left:0px;
+      width:100%;
+      height:100vh;
+      opacity:0;	
+      pointer-events:none;
+        z-index:5;
+      overflow-y:scroll;
+      transform:translateY(-100%);
+      -webkit-overflow-scrolling: touch;
+  
+      display:flex;
+      flex-wrap:wrap;
+      align-items:stretch;
+      align-content:stretch;
+  
+      transition:all .6s ease 0s;
+      
+      
+      &.open {
+        pointer-events:auto;
+          opacity:1;
+          height:100vh;
+          transform:translateY(0%);
+          transition-delay:0s;
+  
+          form.search-form {
+              opacity:1;
+              transition:opacity .5s ease .25s;
+              
+          }
+          
+      }
+    }
