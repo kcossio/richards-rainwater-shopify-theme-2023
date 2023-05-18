@@ -20,46 +20,7 @@
 
 
 
-    // ------------- Mobile Menu--------------- //
-	
-	jQuery('#menu-toggle').click(function(){
-		
-        console.log('menu toggle clicked');
-		// Determine if open class is added
-        
-        //Get the Body element
-        const body = document.querySelector("body");
-		
-		if (jQuery(this).hasClass('open')) { // The menu is already open
-            
-            //Allow the body element to scroll again
-            body.style.overflow = "auto";
-                
-            jQuery("#nav-wrapper").removeClass('open');
-            closeNavMobile();
-            jQuery(".site-header").removeClass('open');
-            jQuery(".header-title").removeClass('open');
-            
-			
-		} else {
-            
-            //Prevent the body element from scrolling
-            body.style.overflow = "hidden";
-            
-			//Show Mobile Menu
-			jQuery(".site-header").addClass('open');
-			jQuery("#nav-wrapper").addClass('open');
-            openNavMobile();
-            jQuery(".header-title").addClass('open');
-            
-				
-		}
-		
-	  jQuery(this).toggleClass('open');
-		
-		
-		
-	})
+    
     
 
     // ------ Header Scroll Behavior ------//
@@ -621,6 +582,46 @@ var slickSliders = function(){
             ScrollTrigger.refresh();
             return false;
         });
+
+        // ------------- Mobile Menu--------------- //
+	
+        jQuery('#menu-toggle').click(function(){
+            
+            console.log('menu toggle clicked');
+            // Determine if open class is added
+            
+            //Get the Body element
+            const body = document.querySelector("body");
+            
+            if (jQuery(this).hasClass('open')) { // The menu is already open
+                
+                //Allow the body element to scroll again
+                body.style.overflow = "auto";
+                    
+                jQuery("#nav-wrapper").removeClass('open');
+                closeNavMobile();
+                jQuery(".site-header").removeClass('open');
+                jQuery(".header-title").removeClass('open');
+                
+                
+            } else {
+                
+                //Prevent the body element from scrolling
+                body.style.overflow = "hidden";
+                
+                //Show Mobile Menu
+                jQuery(".site-header").addClass('open');
+                jQuery("#nav-wrapper").addClass('open');
+                openNavMobile();
+                jQuery(".header-title").addClass('open');
+                
+                    
+            }
+            
+        jQuery(this).toggleClass('open');
+            
+        });
+
     });
 
    
