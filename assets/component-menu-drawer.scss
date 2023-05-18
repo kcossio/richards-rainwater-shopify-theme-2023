@@ -354,6 +354,7 @@
     pointer-events:none;
 	  z-index:5;
     overflow-y:scroll;
+    transform:translateY(-100%);
     -webkit-overflow-scrolling: touch;
 
     display:flex;
@@ -368,6 +369,7 @@
       pointer-events:auto;
         opacity:1;
         height:100vh;
+        transform:translateY(0%);
         transition-delay:0s;
 
         form.search-form {
