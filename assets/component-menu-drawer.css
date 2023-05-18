@@ -474,6 +474,29 @@ details[open].menu-opening > .menu-drawer__submenu {
   color: #ffffff;
 }
 
+/* --------- New Header ------- */
+.header-inner {
+  order: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  height: auto;
+  padding: 0px 20px 0px 20px;
+  height: 66px;
+  position: relative;
+  z-index: 1000;
+  transition: background-color 0.3s ease 0s;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+}
+@media (min-width: 1280px) {
+  .header-inner {
+    border-bottom: 0px;
+    height: 121px;
+  }
+}
+
 #nav-wrapper {
   position: fixed;
   order: 2;
