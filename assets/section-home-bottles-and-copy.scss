@@ -35,6 +35,7 @@ section.home-bottles-copy {
             width:auto;
 
             &.float-1 {
+                width:90%;
                 @include breakpoint(tablet) {
                     width:37%;
                     left:0%;
@@ -42,6 +43,7 @@ section.home-bottles-copy {
             }
 
             &.float-2 {
+                width:75%;
                 @include breakpoint(tablet) {
                     width:53.25%;
                     right:0%;

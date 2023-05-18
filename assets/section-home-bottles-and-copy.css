@@ -204,11 +204,17 @@ section.home-bottles-copy + section {
   height: auto;
   width: auto;
 }
+.home-bottles-intro .home-intro-left img.float.float-1 {
+  width: 90%;
+}
 @media (min-width: 768px) {
   .home-bottles-intro .home-intro-left img.float.float-1 {
     width: 37%;
     left: 0%;
   }
+}
+.home-bottles-intro .home-intro-left img.float.float-2 {
+  width: 75%;
 }
 @media (min-width: 768px) {
   .home-bottles-intro .home-intro-left img.float.float-2 {
