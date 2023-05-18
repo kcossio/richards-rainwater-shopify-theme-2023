@@ -1237,6 +1237,7 @@ EASING
   font-size: 27px;
   line-height: 1.3em;
   letter-spacing: 1px;
+  white-space: nowrap;
 }
 .footer .footer-top h2.footer-messaging span {
   display: block;
@@ -1360,16 +1361,17 @@ EASING
 .list-social__link {
   align-items: center;
   display: flex;
-  padding: 1.3rem;
+  padding: 1.7rem;
   border-radius: 50%;
   color: #000F44;
   aspect-ratio: 1/1;
-  margin: 0px 6px;
+  margin: 0px 4px;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
 }
 @media (min-width: 768px) {
   .list-social__link {
     margin: 0px 8px 0px 0px;
+    padding: 1.3rem;
   }
 }
 .list-social__link.facebook {
