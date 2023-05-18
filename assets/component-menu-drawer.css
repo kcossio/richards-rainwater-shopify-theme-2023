@@ -491,7 +491,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   flex-wrap: wrap;
   align-items: stretch;
   align-content: stretch;
-  transition: all 0.6s ease 0.5s;
+  transition: all 0.6s ease 0s;
 }
 #nav-wrapper.open {
   pointer-events: auto;
