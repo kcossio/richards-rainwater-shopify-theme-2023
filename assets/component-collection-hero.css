@@ -173,7 +173,7 @@ EASING
 .collection-banner {
   position: relative;
   z-index: 1;
-  padding: 56px 0px;
+  padding: 80px 0px 42px 0px;
 }
 @media (min-width: 768px) {
   .collection-banner {
@@ -207,7 +207,12 @@ EASING
   display: inline-flex;
   font-size: 28px;
   font-weight: 800;
-  line-height: 1em;
+  line-height: 1.5em;
+}
+@media (min-width: tabklet) {
+  #collection-nav ul li {
+    line-height: 1em;
+  }
 }
 #collection-nav ul li:after {
   content: "/";
@@ -236,12 +241,13 @@ EASING
   background-color: #000F44;
   position: absolute;
   left: 0px;
-  bottom: -10px;
+  bottom: 0px;
   transition: all 0.3s ease 0s;
 }
 @media (min-width: 768px) {
   #collection-nav ul li a:after {
     height: 4px;
+    bottom: -10px;
   }
 }
 #collection-nav ul li a:hover:after {
