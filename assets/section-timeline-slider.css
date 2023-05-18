@@ -287,12 +287,17 @@ EASING
 nav.hor {
   position: relative;
   width: 100%;
-  height: 15vh;
+  height: 70px;
   display: flex;
   align-content: stretch;
   background: #f4f4f4;
   pointer-events: none;
   transition: 0.3s ease 0s;
+}
+@media (min-width: 768px) {
+  nav.hor {
+    height: 15vh;
+  }
 }
 
 nav.hor a {
@@ -303,12 +308,11 @@ nav.hor a {
   width: 80px;
   height: 100%;
   text-align: center;
-  height: 50px;
-  font-size: 16px;
-  line-height: 50px;
+  font-size: 11px;
   cursor: pointer;
   color: #BFBFBF;
   font-weight: 900;
+  line-height: 1em;
   z-index: 10;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -349,12 +353,13 @@ nav.hor a.active:nth-child(3n) .timeline-drop .icon-drop {
   fill: #FFA500;
 }
 nav.hor a span {
-  margin: 0px auto;
+  margin: 0px auto 4px auto;
   line-height: 1em;
   width: 7px;
 }
 @media (min-width: 768px) {
   nav.hor a span {
     width: 22px;
+    margin: 0px auto 10px auto;
   }
 }
