@@ -38,6 +38,7 @@
 
         });
 
+        /*
         const showAnim = gsap.from('.site-header', { 
         yPercent: -100,
         paused: true,
@@ -51,6 +52,7 @@
         self.direction === -1 ? showAnim.play() : showAnim.reverse()
         }
         });
+        */
         
     });
 
