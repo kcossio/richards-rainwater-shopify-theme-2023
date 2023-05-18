@@ -25,7 +25,9 @@
     "ca796682-1492-45e1-8073-6b6b626ce353": {
       "type": "rainbow_text_banner",
       "settings": {
-        "text": "What do you see when\nyou look up at the clouds?"
+        "text": "What do you see when\nyou look up at the clouds?",
+        "call_to_action_button_link": "",
+        "call_to_action_button_label": "Learn more"
       }
     },
     "2489de8d-7bd0-4aec-b948-96164c90c4b4": {
@@ -113,7 +115,9 @@
       ],
       "settings": {
         "heading": "Learn What Rainwater Can Do",
-        "subheading": "CLICK THE DROPS TO DISCOVER THE BENEFITS OF RAINWATER"
+        "subheading": "CLICK THE DROPS TO DISCOVER THE BENEFITS OF RAINWATER",
+        "subheading_short": "What Drops Can Do",
+        "heading_short": "Click the raindrops to learn more."
       }
     },
     "3ac0a344-f3ad-461f-a83d-eba9a539692f": {
