@@ -62,7 +62,8 @@ section.section-versus {
         }
     }
 
-    select {
+    select,
+    .select2-container--default .select2-selection--single {
         appearance: none;
         -webkit-appearance:none;
         font-weight:900;

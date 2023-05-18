@@ -228,7 +228,8 @@ section.section-versus span.vs-drop {
     letter-spacing: 2px;
   }
 }
-section.section-versus select {
+section.section-versus select,
+section.section-versus .select2-container--default .select2-selection--single {
   -moz-appearance: none;
        appearance: none;
   -webkit-appearance: none;
@@ -246,12 +247,15 @@ section.section-versus select {
   width: 44.5%;
   font-family: "TT Commons", sans-serif;
 }
-section.section-versus select:active, section.section-versus select:focus {
+section.section-versus select:active, section.section-versus select:focus,
+section.section-versus .select2-container--default .select2-selection--single:active,
+section.section-versus .select2-container--default .select2-selection--single:focus {
   background: #0094DA;
   color: #ffffff;
 }
 @media (min-width: 768px) {
-  section.section-versus select {
+  section.section-versus select,
+  section.section-versus .select2-container--default .select2-selection--single {
     width: 45%;
     font-size: 22px;
     letter-spacing: 2px;
