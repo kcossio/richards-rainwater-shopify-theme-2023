@@ -232,6 +232,9 @@ section.home-banner .home-banner-bottle {
   transform: translate(0%, 11%);
   z-index: 2;
 }
+section.home-banner .home-banner-bottle.onscreen {
+  transform: translateY(11%);
+}
 @media (min-width: 768px) {
   section.home-banner .home-banner-bottle {
     max-height: 120%;
@@ -239,6 +242,7 @@ section.home-banner .home-banner-bottle {
 }
 section.home-banner .home-banner-bottle.home-banner-bottle-left {
   left: 13vw;
+  transition-delay: 0.25s;
 }
 section.home-banner .home-banner-bottle.home-banner-bottle-right {
   right: 8vw;

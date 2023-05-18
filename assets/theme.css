@@ -1008,7 +1008,7 @@ EASING
 
 .slide-in-up {
   transform: translateY(100%);
-  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+  transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
 }
 .slide-in-up.onscreen {
   opacity: 1;

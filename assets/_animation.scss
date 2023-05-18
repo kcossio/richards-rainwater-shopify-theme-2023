@@ -129,9 +129,10 @@
         transform:translateX(0px);
     }
   }
+
   .slide-in-up {
     transform:translateY(100%);
-    transition:all 1s $easeInOutCirc 0s;
+    transition:all 1s $easeInOutBack 0s;
 
     &.onscreen {
       opacity:1;
