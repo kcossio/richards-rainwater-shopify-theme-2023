@@ -1214,6 +1214,22 @@ EASING
   justify-content: space-between;
   width: 100%;
 }
+.footer .footer-top .footer-top-left {
+  width: 60%;
+}
+@media (min-width: 768px) {
+  .footer .footer-top .footer-top-left {
+    width: auto;
+  }
+}
+.footer .footer-top .footer-top-right {
+  width: 40%;
+}
+@media (min-width: 768px) {
+  .footer .footer-top .footer-top-right {
+    width: auto;
+  }
+}
 .footer .footer-top h2.footer-messaging {
   text-transform: uppercase;
   font-weight: 900;

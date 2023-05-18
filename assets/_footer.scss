@@ -17,6 +17,21 @@
       justify-content: space-between;
       width:100%;
 
+      .footer-top-left {
+        width:60%;
+
+        @include breakpoint(tablet) {
+          width:auto;
+        }
+      }
+      .footer-top-right {
+        width:40%;
+
+        @include breakpoint(tablet) {
+          width:auto;
+        }
+      }
+
       h2.footer-messaging {
         text-transform:uppercase;
         font-weight:900;
