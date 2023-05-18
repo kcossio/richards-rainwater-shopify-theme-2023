@@ -172,10 +172,10 @@ EASING
 */
 .locator-slider-wrap {
   background: #ebebeb;
-  padding: 40px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 @media (min-width: 768px) {
   .locator-slider-wrap {

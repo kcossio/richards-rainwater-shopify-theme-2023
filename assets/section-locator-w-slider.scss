@@ -4,10 +4,10 @@
 
 .locator-slider-wrap {
     background:#ebebeb;
-    padding:40px;
     width:100%;
     display:flex;
     flex-wrap:wrap;
+    margin-bottom:40px;
 
     @include breakpoint(tablet) {
         padding:40px 60px;
