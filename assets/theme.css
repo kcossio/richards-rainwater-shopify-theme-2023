@@ -1250,7 +1250,7 @@ EASING
 .footer .footer-top ul.footer-menu {
   margin: 0px;
   list-style: none;
-  padding: 0px;
+  padding: 0px 0px 0px 30px;
 }
 @media (min-width: 768px) {
   .footer .footer-top ul.footer-menu {

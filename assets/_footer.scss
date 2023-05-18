@@ -54,7 +54,7 @@
       ul.footer-menu {
         margin:0px;
         list-style:none;
-        padding:0px;
+        padding:0px 0px 0px 30px;
 
         @include breakpoint(tablet) {
           padding:0px 0px 0px 30px;
