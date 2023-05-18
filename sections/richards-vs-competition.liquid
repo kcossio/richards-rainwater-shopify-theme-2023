@@ -85,7 +85,9 @@
 </div><!--End inner-->
 
 {% javascript %}// In your Javascript (external .js resource or <script> tag)
-  
+   jQuery(document).ready(function() {
+      jQuery('#vs-rr').select2();
+    });
 {% endjavascript %}
 
 <script>
@@ -103,10 +105,8 @@
       jQuery(show).addClass('active');
     });
 
-    jQuery(document).ready(function() {
-      jQuery('select').select2();
-    });
-    
+   
+
   });
 
 </script>
