@@ -84,7 +84,15 @@
   </div><!--End versus-wrap-->
 </div><!--End inner-->
 
+{% javascript %}// In your Javascript (external .js resource or <script> tag)
+  jQuery(document).ready(function() {
+    jQuery('.vs-select').select2();
+  });
+{% endjavascript %}
+
 <script>
+
+  
 
   window.addEventListener("load", (event) => {
 
