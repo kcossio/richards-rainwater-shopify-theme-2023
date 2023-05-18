@@ -7,32 +7,35 @@
 
     <div class="versus-selects">
 
-      
-      <select class="vs-select fade-in-left" name="vs-select" id="vs-rr">
-        <option value="">Richard's® Drink</option>
-        {% assign count = 0 %}
-        {%- for block in section.blocks -%}
-          {% assign count = count | plus: 1 %}
-          {%- case block.type -%}
-          {%- when 'richards_product' -%}
-            <option value="{{ block.settings.title }}" data-href-open="vs-box-rr-{{ count }}" data-href-close="vs-rr">{{ block.settings.title }}</option>
-          {%- endcase -%}
-        {%- endfor -%}
-      </select>
+      <div class="select-wrap">
+        <select class="vs-select fade-in-left" name="vs-select" id="vs-rr">
+          <option value="">Richard's® Drink</option>
+          {% assign count = 0 %}
+          {%- for block in section.blocks -%}
+            {% assign count = count | plus: 1 %}
+            {%- case block.type -%}
+            {%- when 'richards_product' -%}
+              <option value="{{ block.settings.title }}" data-href-open="vs-box-rr-{{ count }}" data-href-close="vs-rr">{{ block.settings.title }}</option>
+            {%- endcase -%}
+          {%- endfor -%}
+        </select>
+      </div><!--End select-wrap-->
 
       <span class="vs-drop fade-in">vs</span>
 
-      <select class="vs-select fade-in-right" name="vs-select" id="vs-cc">
-        <option value="">Competitors</option>
-        {% assign count = 0 %}
-        {%- for block in section.blocks -%}
-          {% assign count = count | plus: 1 %}
-          {%- case block.type -%}
-          {%- when 'competitors_product' -%}
-            <option value="{{ block.settings.title }}" data-href-open="vs-box-c-{{ count }}" data-href-close="vs-c">{{ block.settings.title }}</option>
-          {%- endcase -%}
-        {%- endfor -%}
-      </select>
+      <div class="select-wrap">
+        <select class="vs-select fade-in-right" name="vs-select" id="vs-cc">
+          <option value="">Competitors</option>
+          {% assign count = 0 %}
+          {%- for block in section.blocks -%}
+            {% assign count = count | plus: 1 %}
+            {%- case block.type -%}
+            {%- when 'competitors_product' -%}
+              <option value="{{ block.settings.title }}" data-href-open="vs-box-c-{{ count }}" data-href-close="vs-c">{{ block.settings.title }}</option>
+            {%- endcase -%}
+          {%- endfor -%}
+        </select>
+      </div>
 
       
     </div><!---End versus-selects ---->

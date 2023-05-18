@@ -228,6 +228,15 @@ section.section-versus span.vs-drop {
     letter-spacing: 2px;
   }
 }
+section.section-versus .select-wrap {
+  position: relative;
+  width: 44.5%;
+}
+@media (min-width: 768px) {
+  section.section-versus .select-wrap {
+    width: 45%;
+  }
+}
 section.section-versus select,
 section.section-versus .select2-container--default .select2-selection--single {
   -moz-appearance: none;
@@ -239,7 +248,7 @@ section.section-versus .select2-container--default .select2-selection--single {
   font-size: 11px;
   color: #000F44;
   text-transform: uppercase;
-  border-radius: 50px;
+  border-radius: 50px !important;
   padding: 15px 15px;
   text-align: left;
   letter-spacing: 0.5px;
@@ -256,7 +265,6 @@ section.section-versus .select2-container--default .select2-selection--single:fo
 @media (min-width: 768px) {
   section.section-versus select,
   section.section-versus .select2-container--default .select2-selection--single {
-    width: 45%;
     font-size: 22px;
     letter-spacing: 2px;
     padding: 15px;
