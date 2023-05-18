@@ -340,13 +340,17 @@ section.section-versus .select2-container--default .select2-selection--single:fo
   border-color: #E3E3E3;
 }
 
+.select2-container--default .select2-results__option--selectable {
+  background: transparent !important;
+  color: #000F44;
+}
+
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
   background: transparent !important;
   color: #0040A8;
 }
 
-.select2-container--default .select2-results__option--highlighted,
-.select2-container--default .select2-results__option--selectable {
+.select2-container--default .select2-results__option--highlighted {
   background: transparent !important;
   color: #0040A8;
 }

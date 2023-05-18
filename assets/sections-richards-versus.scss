@@ -176,12 +176,16 @@ section.section-versus {
     border-radius:30px;
     border-color:#E3E3E3;
 }
+
+.select2-container--default .select2-results__option--selectable {
+    background:transparent !important;
+    color:$dark_blue;
+}
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
     background:transparent !important;
     color:$medium_blue;
 }
-.select2-container--default .select2-results__option--highlighted,
-.select2-container--default .select2-results__option--selectable {
+.select2-container--default .select2-results__option--highlighted {
     background:transparent !important;
     color:$medium_blue;
 }
