@@ -346,7 +346,6 @@ section.section-versus .select2-container--default .select2-selection--single:fo
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
   border: 0px;
   transform-origin: center;
-  transition: all 0.3s ease 0s;
   background: url(select-arrow-down.svg) center no-repeat;
   background-size: cover;
   position: absolute;
@@ -361,6 +360,11 @@ section.section-versus .select2-container--default .select2-selection--single:fo
   border: 0px;
   background: url(select-arrow-up.svg) center no-repeat;
   background-size: cover;
+}
+
+section.section-versus .select2-container--default .select2-selection--single:active .select2-selection__arrow b,
+section.section-versus .select2-container--default .select2-selection--single:focus .select2-selection__arrow b {
+  background: url(select-arrow-up.svg) center no-repeat;
 }
 
 .select2-dropdown {
