@@ -241,7 +241,7 @@ section.section-product-info-box-drops .product-info-col {
   background: #000F44;
   position: relative;
   z-index: 1;
-  padding: 0px 50px 60px 50px;
+  padding: 0px 20px 60px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
