@@ -1,9 +1,19 @@
 
   /* --------- New Header ------- */
 
-
-
-/* section-header */
+#menu-toggle {
+    width: 28px;
+    height: 28px;
+    margin: 0px;
+    z-index: 50;
+    position: relative;
+    display: block;
+    border: 0px;
+    background: transparent;
+    -webkit-appearance: none;
+    padding: 0px;
+    cursor: pointer;
+}
 
 .section-header {
     padding:0px;
@@ -98,17 +108,15 @@
       justify-content:space-between;
       height:auto;
       padding:0px 20px 0px 20px;
-      height:66px;
+      width:100%;
       position:relative;
       z-index:1000;
       transition:background-color .3s ease 0s;
-      border-bottom:1px solid rgba(255,255,255,.13);
   
       @include breakpoint(tablet) {
       }
       @include breakpoint(laptop) {
-          border-bottom:0px;
-          height:121px;
+          height:auto;
           
       }
       
