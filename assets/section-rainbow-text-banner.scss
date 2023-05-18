@@ -4,13 +4,13 @@
 
 section.rainbow-banner {
     width:100vw;
-    min-height:50vh;
     position:relative;
     overflow:hidden;
     padding:23vw 0px 30vw 0px;
 
     @include breakpoint(tablet) {
         padding:9vw 0px 16vw 0px;
+        min-height:40vh;
     }
 
     h2 {

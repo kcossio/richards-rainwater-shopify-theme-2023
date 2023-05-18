@@ -648,8 +648,13 @@ EASING
 .clouds {
   overflow: hidden;
   position: relative;
-  width: 100vw;
+  width: 200vw;
   height: auto;
+}
+@media (min-width: 768px) {
+  .clouds {
+    width: 100vw;
+  }
 }
 .clouds .scroll-parent {
   position: absolute;
@@ -710,6 +715,7 @@ EASING
   }
 }
 .clouds.clouds-mobile {
+  width: 100vw;
   aspect-ratio: 512/56;
 }
 .clouds.clouds-mobile .scroll-parent {

@@ -389,7 +389,9 @@ html.no-js .no-js-hidden {
   position: relative;
   z-index: 0;
 }
-
+section.shopify-section {
+  max-width:100vw;
+}
 .section + .section {
   margin-top: var(--spacing-sections-mobile);
 }
