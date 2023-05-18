@@ -1829,8 +1829,12 @@
         border-radius:0px;
         background:url('bg-rainbow-button.svg') top left no-repeat;
         background-size:cover;
-        width:30%;
+        width:40%;
         transition:all .3s ease 0s;
+
+        @include breakpoint(tablet) {
+          width:30%;
+        }
         
         span {
             position: relative;

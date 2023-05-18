@@ -1878,8 +1878,13 @@ nav.water-product-buttons a img {
   border-radius: 0px;
   background: url("bg-rainbow-button.svg") top left no-repeat;
   background-size: cover;
-  width: 30%;
+  width: 40%;
   transition: all 0.3s ease 0s;
+}
+@media (min-width: 768px) {
+  .store-locator-product .newsletter-form.store-locator-form .button {
+    width: 30%;
+  }
 }
 .store-locator-product .newsletter-form.store-locator-form .button span {
   position: relative;
