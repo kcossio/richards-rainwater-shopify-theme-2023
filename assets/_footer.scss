@@ -36,6 +36,9 @@
         text-transform:uppercase;
         font-weight:900;
         margin-top:0px;
+        font-size:27px;
+        line-height:1.3em;
+        letter-spacing:1px;
 
         span {
           display:block;
@@ -161,22 +164,55 @@
     }
   }
 }
+
+// --------- Social List
   
+.list-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.list-social__item .icon {
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+.list-social__link {
+  align-items: center;
+  display: flex;
+  padding: 1.3rem;
+  border-radius:50%;
+  color: $dark_blue;
+  aspect-ratio:1 / 1;
+  margin:0px 6px;
+  transition:all .3s $easeInOutBack 0s;
+
   
-  
-  @media screen and (max-width: 749px) {
-    /*
-      On a small screen we want all the items to be centered
-      because they will be stacked.
-     */
-    
-    .footer__list-social.list-social {
-      display: flex;
-      justify-content: center;
-    }
-  
-   
+
+  @include breakpoint(tablet) {
+    margin:0px 8px 0px 0px;
   }
   
+  &.facebook {
+      background:$red;
+  }
+  &.instagram {
+      background:$pink;
+  }
+  &.twitter {
+      background:$light_blue;
+  }
+  &.tiktok {
+      background:$orange;
+  }
+
+}
+
+.list-social__link:hover .icon {
+  transform: scale(1.07);
+}
+
+
  
   

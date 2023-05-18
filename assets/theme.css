@@ -1234,6 +1234,9 @@ EASING
   text-transform: uppercase;
   font-weight: 900;
   margin-top: 0px;
+  font-size: 27px;
+  line-height: 1.3em;
+  letter-spacing: 1px;
 }
 .footer .footer-top h2.footer-messaging span {
   display: block;
@@ -1343,16 +1346,49 @@ EASING
   color: currentColor;
 }
 
-@media screen and (max-width: 749px) {
-  /*
-    On a small screen we want all the items to be centered
-    because they will be stacked.
-   */
-  .footer__list-social.list-social {
-    display: flex;
-    justify-content: center;
+.list-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.list-social__item .icon {
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+.list-social__link {
+  align-items: center;
+  display: flex;
+  padding: 1.3rem;
+  border-radius: 50%;
+  color: #000F44;
+  aspect-ratio: 1/1;
+  margin: 0px 6px;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+}
+@media (min-width: 768px) {
+  .list-social__link {
+    margin: 0px 8px 0px 0px;
   }
 }
+.list-social__link.facebook {
+  background: #DE0000;
+}
+.list-social__link.instagram {
+  background: #FC4A6A;
+}
+.list-social__link.twitter {
+  background: #0094DA;
+}
+.list-social__link.tiktok {
+  background: #FFA500;
+}
+
+.list-social__link:hover .icon {
+  transform: scale(1.07);
+}
+
 /* -------- Star Randomizer ------- */
 .stars {
   position: absolute;
