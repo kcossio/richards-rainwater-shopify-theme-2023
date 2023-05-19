@@ -1579,7 +1579,7 @@ button.shopify-payment-button__button--unbranded {
   .button,
   .shopify-challenge__button,
   .customer button {
-    padding: 2.8rem 4rem;
+    padding: 1.8rem 4rem;
   }
 }
 .button:hover,
