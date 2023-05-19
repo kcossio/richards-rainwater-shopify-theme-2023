@@ -1,0 +1,368 @@
+{% assign MagicToolboxShowMessage = 'No' %}
+{% assign MagicToolbox360IconURL = 'icon.spin.12.png' %}
+{% assign MagicToolboxDefaultView = 'Spin' %}
+{% assign MagicToolboxMessage = 'Drag image to spin' %}
+{% assign MagicToolboxBigImageSize = 'master' %}
+{% assign MagicToolboxThumbnailImageSize = 'grande' %}
+{% assign MagicToolboxSelectorImageSize = 'small' %}
+{% assign MagicToolboxUseCustomWidth = 'No' %}
+{% assign MagicToolboxThumbnailImageWidth = '480' %}
+{% assign MagicToolboxSortImages = 'No' %}
+{% assign Magic360ImageCount = 36 %}
+
+{% assign MagicToolboxSelectorImageSize_Text = MagicToolboxSelectorImageSize %}
+
+{% if MagicToolbox360IconURL contains 'magictoolbox.sirv.com' %} 
+  {% assign MagicToolbox360IconURLFull = MagicToolbox360IconURL %}
+{% else %}
+  {% assign MagicToolbox360IconURLFull = MagicToolbox360IconURL %}
+  {% assign MagicToolbox360IconSize = MagicToolboxSelectorImageSize %}
+{% endif %}
+
+{% if MagicToolboxBigImageSize == 'pico' %}{% assign MagicToolboxBigImageSize = 16 %}{% endif %}
+{% if MagicToolboxBigImageSize == 'icon' %}{% assign MagicToolboxBigImageSize =  32 %}{% endif %}
+{% if MagicToolboxBigImageSize == 'thumb' %}{% assign MagicToolboxBigImageSize =  50 %}{% endif %}
+{% if MagicToolboxBigImageSize == 'small' %}{% assign MagicToolboxBigImageSize =  100 %}{% endif %}
+{% if MagicToolboxBigImageSize == 'compact' %}{% assign MagicToolboxBigImageSize = 160 %}{% endif %}
+{% if MagicToolboxBigImageSize == 'medium' %}{% assign MagicToolboxBigImageSize = 240 %}{% endif %}
+{% if MagicToolboxBigImageSize == 'large' %}{% assign MagicToolboxBigImageSize = 480 %}{% endif %}
+{% if MagicToolboxBigImageSize == 'grande' %}{% assign MagicToolboxBigImageSize = 600 %}{% endif %}
+{% if MagicToolboxBigImageSize == '1024x1024' %}{% assign MagicToolboxBigImageSize = 1024 %}{% endif %}
+{% if MagicToolboxBigImageSize == 'original' %}{% assign MagicToolboxBigImageSize = 1024 %}{% endif %}
+{% if MagicToolboxBigImageSize == '2048x2048' %}{% assign MagicToolboxBigImageSize = 2048 %}{% endif %}
+{% if MagicToolboxBigImageSize == 'master' %}{% assign MagicToolboxBigImageSize = 2048 %}{% endif %}
+
+{% if MagicToolboxThumbnailImageSize == 'pico' %}{% assign MagicToolboxThumbnailImageSize = 16 %}{% endif %}
+{% if MagicToolboxThumbnailImageSize == 'icon' %}{% assign MagicToolboxThumbnailImageSize =  32 %}{% endif %}
+{% if MagicToolboxThumbnailImageSize == 'thumb' %}{% assign MagicToolboxThumbnailImageSize =  50 %}{% endif %}
+{% if MagicToolboxThumbnailImageSize == 'small' %}{% assign MagicToolboxThumbnailImageSize =  100 %}{% endif %}
+{% if MagicToolboxThumbnailImageSize == 'compact' %}{% assign MagicToolboxThumbnailImageSize = 160 %}{% endif %}
+{% if MagicToolboxThumbnailImageSize == 'medium' %}{% assign MagicToolboxThumbnailImageSize = 240 %}{% endif %}
+{% if MagicToolboxThumbnailImageSize == 'large' %}{% assign MagicToolboxThumbnailImageSize = 480 %}{% endif %}
+{% if MagicToolboxThumbnailImageSize == 'grande' %}{% assign MagicToolboxThumbnailImageSize = 600 %}{% endif %}
+{% if MagicToolboxThumbnailImageSize == '1024x1024' %}{% assign MagicToolboxThumbnailImageSize = 1024 %}{% endif %}
+{% if MagicToolboxThumbnailImageSize == 'original' %}{% assign MagicToolboxThumbnailImageSize = 1024 %}{% endif %}
+{% if MagicToolboxThumbnailImageSize == '2048x2048' %}{% assign MagicToolboxThumbnailImageSize = 2048 %}{% endif %}
+{% if MagicToolboxThumbnailImageSize == 'master' %}{% assign MagicToolboxThumbnailImageSize = 2048 %}{% endif %}
+
+{% if MagicToolboxSelectorImageSize == 'pico' %}{% assign MagicToolboxSelectorImageSize = 16 %}{% endif %}
+{% if MagicToolboxSelectorImageSize == 'icon' %}{% assign MagicToolboxSelectorImageSize =  32 %}{% endif %}
+{% if MagicToolboxSelectorImageSize == 'thumb' %}{% assign MagicToolboxSelectorImageSize =  50 %}{% endif %}
+{% if MagicToolboxSelectorImageSize == 'small' %}{% assign MagicToolboxSelectorImageSize =  100 %}{% endif %}
+{% if MagicToolboxSelectorImageSize == 'compact' %}{% assign MagicToolboxSelectorImageSize = 160 %}{% endif %}
+{% if MagicToolboxSelectorImageSize == 'medium' %}{% assign MagicToolboxSelectorImageSize = 240 %}{% endif %}
+{% if MagicToolboxSelectorImageSize == 'large' %}{% assign MagicToolboxSelectorImageSize = 480 %}{% endif %}
+{% if MagicToolboxSelectorImageSize == 'grande' %}{% assign MagicToolboxSelectorImageSize = 600 %}{% endif %}
+{% if MagicToolboxSelectorImageSize == '1024x1024' %}{% assign MagicToolboxSelectorImageSize = 1024 %}{% endif %}
+{% if MagicToolboxSelectorImageSize == 'original' %}{% assign MagicToolboxSelectorImageSize = 1024 %}{% endif %}
+{% if MagicToolboxSelectorImageSize == '2048x2048' %}{% assign MagicToolboxSelectorImageSize = 2048 %}{% endif %}
+{% if MagicToolboxSelectorImageSize == 'master' %}{% assign MagicToolboxSelectorImageSize = 2048 %}{% endif %}
+
+{% for tag in product.tags %}
+{% assign tag_ = tag | replace: 'spinimages=', '' %}
+{% if tag_ != tag %}
+{% assign Magic360ImageCount = tag_  | times: 1 %}
+{% endif %}
+{% endfor %}
+
+{% for tag in product.tags %}
+{% assign tag_ = tag | replace: 'spinrows=', '' %}
+{% if tag_ != tag %}
+{% assign rows = tag_  | times: 1 %}
+<script>Magic360.options.rows = {{ rows }}; Magic360.options.columns = {{ Magic360ImageCount | divided_by: rows }} </script>
+{% endif %}
+{% endfor %}
+
+{% if MagicToolboxUseCustomWidth == 'Yes' %}
+<style type="text/css">.MagicToolboxContainer .Magic360 > img { max-width: {{ MagicToolboxThumbnailImageWidth }}px !important; }</style>
+{% endif %}
+
+<div class="MagicToolboxContainer thumbnail-size-{{ MagicToolboxSelectorImageSize_Text }}">
+{% if product.media.size > 0 %}
+
+    {% assign still_images_count = product.media.size | minus: Magic360ImageCount %}
+    {% if still_images_count < 0 %}
+    {% assign still_images_count = 0 %}
+    {% endif %}
+  
+  
+
+    {% assign m360ImagesSmall = '' %}
+    {% assign m360ImagesLarge = '' %}
+    {% assign m360Images0 = '' %}
+    {% for image in product.media %}
+        {% if forloop.index > still_images_count %}
+            {% if m360Images0 == '' %}
+                {% assign m360Images0 = image %}
+            {% endif %}
+            {% assign url = image | image_url: width: MagicToolboxThumbnailImageSize%}
+            {% assign m360ImagesSmall = m360ImagesSmall | append: url | append: ';' %}
+            {% assign url = image | image_url: width: MagicToolboxBigImageSize %}
+            {% assign m360ImagesLarge = m360ImagesLarge | append: url | append: ';' %}
+        {% endif %}
+    {% endfor %}
+
+    {% if MagicToolboxSortImages == 'Yes' %}
+        {% assign m360ImagesSmall = m360ImagesSmall | split: ';' | sort %}
+        {% assign m360ImagesLarge = m360ImagesLarge | split: ';' | sort %}
+    {% else %}
+        {% assign m360ImagesSmall = m360ImagesSmall | split: ';' %}
+        {% assign m360ImagesLarge = m360ImagesLarge | split: ';' %}
+    {% endif %}
+
+    {% if MagicToolbox360IconURL contains 'magictoolbox.sirv.com' %} 
+      {% assign MagicToolbox360IconURLFull = MagicToolbox360IconURL %}
+    {% else %}
+      {% if MagicToolbox360IconURL == 'overlay' %}
+        {% assign MagicToolbox360IconURLFull = m360Images0 | image_url: width: MagicToolboxSelectorImageSize %}
+      {% else %}
+        {% assign MagicToolbox360IconURLFull = MagicToolbox360IconURL | asset_img_url: MagicToolbox360IconSize %}
+        
+      {% endif %}
+    {% endif %}
+  
+    {% assign m360ImagesOption = '' %}
+    {% assign m360LargeImagesOption = '' %}
+    {% for m360Image in m360ImagesSmall %}
+        {% assign m360ImagesOption = m360ImagesOption | append: ' ' | append: m360Image  %}
+    {% endfor %}
+    {% for m360Image in m360ImagesLarge %}
+        {% assign m360LargeImagesOption = m360LargeImagesOption | append: ' ' | append: m360Image  %}
+    {% endfor %}
+
+    <div class="MagicToolboxSlides">
+
+    <div data-slide-id="spin" class="MagicToolboxSlide {% if MagicToolboxDefaultView == 'Spin' or still_images_count == 0 %} active-magic-slide{% endif %}">
+        <a class="js-no-transition Magic360" href="#" data-magic360-options="columns: {{ Magic360ImageCount }}; images:{{ m360ImagesOption }}; large-images:{{ m360LargeImagesOption }};">
+            <img alt="{% if m360Images0.alt != blank %}{{ m360Images0.alt  | escape }}{% else %}{{ product.title  | escape }}{% endif %}" src="{{ m360Images0 | image_url: width: MagicToolboxThumbnailImageSize }}" />
+        </a>
+        {% if MagicToolboxShowMessage == 'Yes' %}
+        <div class="MagicToolboxMessage">{{ MagicToolboxMessage }}</div>
+        {% endif %}
+    </div>
+
+    {% if still_images_count > 0 %}
+
+        <a href="#" class="MagicToolboxSlides-arrow magic-prev"></a>
+        <a href="#" class="MagicToolboxSlides-arrow magic-next"></a>
+
+        {% for image in product.media %}
+            {% if forloop.index0 < still_images_count %}
+            <div data-slide-id="image-{{ forloop.index0 }}" class="MagicToolboxSlide{% if MagicToolboxDefaultView != 'Spin' and forloop.index0 == 0%} active-magic-slide{% endif %}">
+              
+              {% if image.media_type == 'video' %}
+                <div class="magic-video-container" style="padding-bottom:{{ 1 | divided_by: image.aspect_ratio | times: 100 }}%">
+                    {{ image | video_tag: controls: true, image_size: MagicToolboxThumbnailImageSize }}
+                </div>
+              {% elsif image.media_type == 'external_video' %}
+                <div class="magic-video-container">
+                {{ image | external_video_tag }}
+                </div>
+              {% else %}
+                  <img alt="{{ image.alt  | escape }}" src="{{ image | image_url: width: MagicToolboxThumbnailImageSize }}" />
+              {% endif %}
+              
+            </div>
+            {% endif %}
+        {% endfor %}
+
+        </div>
+
+        <div class="MagicToolboxSelectorsContainer">
+            {% if MagicToolboxDefaultView == 'Spin' %}
+            <a data-slide-id="spin" href="#" class="js-no-transition {% if MagicToolbox360IconURL == 'overlay' %}magic360-overlay-icon{% endif %} active-magic-selector">
+                <img alt="360 view" src="{{ MagicToolbox360IconURLFull }}" />
+            </a>
+            {% endif %}
+            {% for image in product.media %}
+                {% if forloop.index0 < still_images_count %}
+          
+                {% assign product_variants = ',' %}            
+
+                {% for v in product.variants %}
+                  {% if image.id == v.featured_media.id %}
+                    {% assign product_variants = product_variants | append: ',' | append: v.id %}
+                  {% endif %}
+                {% endfor %}
+          
+              {% if image.media_type == 'video' or image.media_type == 'external_video' %}
+                <a data-variant-id="{{ product_variants }}" class="js-no-transition video-selector {% if MagicToolboxDefaultView != 'Spin' and forloop.index0 == 0%}active-magic-selector{% endif %}" data-slide-id="image-{{ forloop.index0 }}" href="#">
+                    <img alt="{{ image.alt  | escape }}" src="{{ image.preview_image | image_url: width: MagicToolboxSelectorImageSize }}" />
+                </a>
+              {% else %}
+                <a data-variant-id="{{ product_variants }}" class="js-no-transition{% if MagicToolboxDefaultView != 'Spin' and forloop.index0 == 0%} active-magic-selector{% endif %}" data-slide-id="image-{{ forloop.index0 }}" href="#">
+                    <img alt="{{ image.alt  | escape }}" src="{{ image | image_url: width: MagicToolboxSelectorImageSize }}" />
+                </a>
+              {% endif %}
+          
+          
+                {% endif %}
+            {% endfor %}
+            {% if MagicToolboxDefaultView != 'Spin' %}
+            <a data-slide-id="spin" class="js-no-transition {% if MagicToolbox360IconURL == 'overlay' %}magic360-overlay-icon{% endif %}" href="#">
+                <img alt="360 view" src="{{ MagicToolbox360IconURLFull }}" />
+            </a>
+            {% endif %}
+        </div>
+
+  <script type="text/javascript">
+
+    function mtGetParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, '\\$&');
+      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+      var results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+
+    function mtGetVariantId() {
+      // Try to get variant from URL
+      var variantId = mtGetParameterByName('variant');
+      // If not get variants on product object
+      if (!variantId && mt_product.variants && mt_product.variants.length > 0) {
+          for (var i = 0; i < mt_product.variants.length; i++) {
+              if (mt_product.variants[i].available) {
+                  variantId = mt_product.variants[i].id;
+                  break;
+              }
+          }
+      }
+      return variantId;
+    }
+    
+    {% assign mt_current_variant = product.selected_variant | default: product.selected_or_first_available_variant %}
+
+    var currentVariantID = {{ mt_current_variant.id | default: 0 }};
+    var mt_product = {{ product | json }};
+    
+    
+    function mtInitVariants() {
+      jQuery('form[action="/cart/add"]').on('change', function() {
+          setTimeout(function(){
+            var $id = mtGetVariantId();
+            //if ($id == currentVariantID) return;
+            currentVariantID = $id;
+            var $s = jQuery('a[data-variant-id*="' + $id + '"]');
+            $s.trigger('click')
+          },200)
+      })    
+    }    
+    
+    function mtInitArrows() {
+        jQuery('.MagicToolboxSlides .MagicToolboxSlides-arrow').on('click', function(e) {
+            var $selectorsContainer = jQuery(this).closest('.MagicToolboxContainer').find('.MagicToolboxSelectorsContainer'),
+                $currentSelector = $selectorsContainer.find('a.active-magic-selector'),
+                $newSelector = false,
+                $forward = jQuery(this).hasClass('magic-next');
+
+                $newSelector = $forward ? $currentSelector.next('a') : $currentSelector.prev('a');
+                if (!$newSelector.length) {
+                    $newSelector = $forward ? $selectorsContainer.find('a:first') : $selectorsContainer.find('a:last');
+                }
+
+            if ($newSelector.length) {
+                $newSelector.trigger('click');
+            }
+            e.preventDefault();
+        });
+    }    
+    
+    window['MagicjQueryTries'] = 0;
+
+    function mtOnDomReady(fnc) {
+        if (typeof(jQuery) == 'undefined') {
+            window['MagicjQueryTries']++;
+            if (window['MagicjQueryTries'] == 10) {
+              var mt_jq = document.createElement('script');
+              mt_jq.type = 'text/javascript';
+              mt_jq.async = false;
+              mt_jq.src = 'https://code.jquery.com/jquery-2.2.4.min.js';
+              document.getElementsByTagName('script')[0].parentNode.appendChild(mt_jq);
+            }
+            setTimeout(function() {
+                mtOnDomReady(fnc);
+            }, 250);
+            return;
+        }
+        jQuery(document).ready(fnc);
+    }
+    mtOnDomReady(function() {
+      jQuery('.MagicToolboxSelectorsContainer a[data-slide-id]').on('click',function(e) {
+        jQuery('.MagicToolboxContainer .MagicToolboxSlide').removeClass('active-magic-slide');
+        jQuery('.MagicToolboxContainer .MagicToolboxSlide[data-slide-id="' + jQuery(this).attr('data-slide-id') + '"]').addClass('active-magic-slide');
+        jQuery('.MagicToolboxContainer .MagicToolboxSelectorsContainer a').removeClass('active-magic-selector');
+        jQuery(this).addClass('active-magic-selector');
+        e.preventDefault();
+      });
+      
+      mtInitVariants();
+
+      mtInitArrows();
+
+        jQuery('.MagicToolboxSlide img').each(function(){
+            var regex_youtube_short = /https?:\/\/youtu\.be\/([^\/]{1,})\/?/gm,
+                regex_youtube_full = /https?:\/\/www\.youtube\.com\/watch\?v=(.{1,})/gm,
+                regex_youtube_embed = /https?:\/\/www\.youtube\.com\/embed\/(.{1,})/gm,
+                regex_vimeo = /https?:\/\/vimeo\.com\/(.{1,})/gm,
+                video_id, video_type;
+            var m = regex_youtube_short.exec(jQuery(this).attr('alt'));
+            if (m) {
+                video_id = m[1];
+                video_type = 'youtube';
+            } else {
+                var m = regex_youtube_full.exec(jQuery(this).attr('alt'));
+                if (m) {
+                    video_id = m[1];
+                    video_type = 'youtube';
+                } else {
+                    var m = regex_youtube_embed.exec(jQuery(this).attr('alt'));
+                    if (m) {
+                        video_id = m[1];
+                        video_type = 'youtube';
+                    } else {
+                        var m = regex_vimeo.exec(jQuery(this).attr('alt'));
+                        if (m) {
+                            video_id = m[1];
+                            video_type = 'vimeo';
+                        }
+                    }  
+                }
+            }
+          
+            if (video_type) {
+                jQuery('a[data-slide-id="'+jQuery(this).closest('div').attr('data-slide-id')+'"]').addClass('video-selector');
+            }
+          
+            if (video_type=='youtube') {
+                jQuery(this).replaceWith('<div class="magic-video-container"><iframe src="https://www.youtube.com/embed/'+video_id+'" frameborder="0" allowfullscreen></iframe></div>');
+            } else if (video_type=='vimeo') {
+                jQuery(this).replaceWith('<div class="magic-video-container"><iframe src="https://player.vimeo.com/video/'+video_id+'" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>');
+            } else {
+                //jQuery('div[data-slide-id="'+jQuery(this).attr('data-slide-id')+'"],a[data-slide-id="'+jQuery(this).attr('data-slide-id')+'"]').remove();
+            }       
+            
+        })           
+    });
+  </script>
+
+{% else %}
+
+</div>
+
+{% endif %}
+
+
+{% endif %}
+</div>
+
+<script>
+  if (Magic360.options.rows>1) {
+    var $elm = document.querySelector('.Magic360');
+    if ($elm) {
+      var $attr = $elm.getAttribute('data-magic360-options');
+      $elm.setAttribute('data-magic360-options', $attr.replace(/columns *: *[0-9]{1,};/gmi,'') )
+    }
+  }
+</script>
