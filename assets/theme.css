@@ -1529,6 +1529,7 @@ EASING
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+  flex-wrap: wrap;
 }
 .toggle-view .toggle-header h3 {
   color: #000F44;
