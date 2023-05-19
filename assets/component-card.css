@@ -283,13 +283,13 @@ EASING
 .card__inner {
   width: 65%;
   margin: 0px auto;
-  display: block;
+  display: flex;
 }
 @media (min-width: 768px) {
   .card__inner {
     width: 85%;
     margin: 0px auto;
-    display: block;
+    display: flex;
   }
 }
 .card__inner.card-hero-wrapper {
