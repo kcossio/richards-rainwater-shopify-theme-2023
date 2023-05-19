@@ -182,9 +182,12 @@ EASING
   width: 100%;
 }
 
+.article-card-wrapper .article-card {
+  padding: 20px;
+}
 .article-card-wrapper .article-card .card__inner {
   width: 100%;
-  padding: 20px;
+  padding: 0px;
 }
 .article-card-wrapper .article-card .card__information {
   text-align: left;
