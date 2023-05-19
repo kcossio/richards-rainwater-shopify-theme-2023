@@ -16,7 +16,7 @@
   <a class="button dark lg fade-in" href="{{ section.settings.call_to_action_button_link }}">{{ section.settings.call_to_action_button_label }} </a>
   {%- endif -%}
 
-  {%- if heading == blank -%}
+  {%- if section.settings.heading == blank -%}
     <script>
       window.addEventListener("load", (event) => {
         jQuery('#shopify-section-{{ section.id }}').addClass('notitle');
