@@ -282,6 +282,12 @@ section.aisle .aisle-terms p {
   width: 580px;
   max-width: 100%;
 }
+#aisle-form-container .aisle-form-container-subscribed {
+  width: 100%;
+  order: 3;
+  font-weight: bold;
+  margin-top: 1em;
+}
 
 .aisle-form-container {
   display: flex;
