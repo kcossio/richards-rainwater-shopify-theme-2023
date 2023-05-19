@@ -37,9 +37,13 @@
   }
   .toggle-view {
       
-    padding:16px 10px 16px 10px;
+    padding:16px 2px 16px 2px;
     border-bottom:2px solid #dddddd;
     margin:0px;
+
+    @include breakpoint(tablet) {
+      padding:16px 10px 16px 10px;
+    }
   
     &:nth-child(odd) {
       .toggle-header h3::before {
@@ -64,8 +68,8 @@
             flex-wrap:wrap;
             width:92%;
             margin:0px;
-            font-weight:900;
-            letter-spacing:2px;
+            font-weight:800;
+            letter-spacing:1px;
             text-transform:uppercase;
             position:relative;
             align-items:flex-start;
@@ -95,9 +99,8 @@
             .faq-list & {
               color:$dark_blue;
               font-size:20px;
-              width:95%;
+              width:92%;
               margin:0px;
-              font-weight:600;
               letter-spacing:0px;
               text-transform:none;
             }
