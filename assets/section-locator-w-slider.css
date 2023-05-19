@@ -191,7 +191,7 @@ EASING
 .section-locator-w-slider {
   width: 1312px;
   max-width: 100%;
-  padding: 20px;
+  padding: 20px 0px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
@@ -217,8 +217,8 @@ EASING
 }
 .section-locator-w-slider .logo-slider {
   color: #ebebeb;
-  padding: 0px;
-  margin: 30px 0px 0px 0px;
+  padding: 20px;
+  margin: 0px 0px 0px 0px;
 }
 .section-locator-w-slider .logo-slider::before {
   background: rgb(235, 235, 235);
@@ -236,6 +236,9 @@ EASING
     max-height: 34px;
     margin: 0px 20px;
   }
+}
+.section-locator-w-slider form + .logo-slider {
+  margin-top: 20px;
 }
 
 .newsletter-form.store-locator-form {
