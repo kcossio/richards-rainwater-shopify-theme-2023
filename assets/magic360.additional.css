@@ -45,11 +45,12 @@ div.MagicToolboxSelectorsContainer { margin: 10px 0; }
 
 .MagicToolboxMessage {
     position:absolute;
+    z-index:3;
     bottom:0px;
     left:0px;
     width:100%;
     color:#B0B0B0;
-    font-weight:900;
+    font-weight:800;
     text-align:center;
     display: block;
 }
