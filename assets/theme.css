@@ -962,6 +962,11 @@ EASING
   padding: 0px;
   cursor: pointer;
 }
+@media (min-width: 1024px) {
+  #menu-toggle {
+    display: none;
+  }
+}
 #menu-toggle .icon-hamburger {
   display: block;
 }
