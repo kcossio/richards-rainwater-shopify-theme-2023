@@ -6,6 +6,7 @@ div.MagicToolboxContainer {
 
 div.MagicToolboxContainer img {
     max-width:100%;
+    max-height:520px;
 }
 
 /* Main image styles */
