@@ -260,6 +260,10 @@ EASING
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 1px;
+  transition: all 0.3s ease 0s;
+}
+.article-template__link:hover {
+  color: #0040A8;
 }
 .article-template__link.arrow-right .icon-wrap {
   transform: rotate(0deg);
