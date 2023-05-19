@@ -71,6 +71,7 @@
   
             @include breakpoint(tablet) {
               font-size:22px;
+              width:95%;
             }
   
             &::before {
@@ -83,6 +84,10 @@
               height:auto;
               background-image:url(icon-drop-light-blue.svg);
               background-size:100% 100%;
+            }
+
+            span {
+              width:calc(100% - 24px);
             }
             
             

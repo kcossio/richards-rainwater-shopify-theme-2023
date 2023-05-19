@@ -1546,6 +1546,7 @@ EASING
 @media (min-width: 768px) {
   .toggle-view .toggle-header h3 {
     font-size: 22px;
+    width: 95%;
   }
 }
 .toggle-view .toggle-header h3::before {
@@ -1558,6 +1559,9 @@ EASING
   height: auto;
   background-image: url(icon-drop-light-blue.svg);
   background-size: 100% 100%;
+}
+.toggle-view .toggle-header h3 span {
+  width: calc(100% - 24px);
 }
 .faq-list .toggle-view .toggle-header h3 {
   color: #000F44;
