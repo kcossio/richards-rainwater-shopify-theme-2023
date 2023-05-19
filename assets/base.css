@@ -2619,7 +2619,7 @@ a svg {
 .header__heading-link:hover {
   color: #0094DA;
 }
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   .header__heading,
   .header__heading-link {
     width: 228px;

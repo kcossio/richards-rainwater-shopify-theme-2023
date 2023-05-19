@@ -2514,15 +2514,13 @@ a {
   color:$darkest_blue;
   transition:all .3s ease 0s;
   position:relative;
-  z-index:5;
-
-  
+  z-index:5;  
 
   &:hover {
     color:$light_blue;
   }
 
-  @include breakpoint(tablet) {
+  @include breakpoint(laptop) {
     width:228px;
   }
 }
