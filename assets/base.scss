@@ -2808,7 +2808,7 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item {
-  padding: 10px 40px;
+  padding: 10px 20px;
   text-decoration: none;
   color: $darkest_blue;
   font-size:18.75px;
@@ -2817,6 +2817,10 @@ details[open] > .header__submenu {
   letter-spacing:1.5px;
   text-decoration:none;
   border:0px;
+
+  @include breakpoint(laptop) {
+    padding: 10px 40px;
+  }
 
   background-image: linear-gradient(
       to right,

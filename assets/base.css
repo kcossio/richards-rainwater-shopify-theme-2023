@@ -2887,7 +2887,7 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item {
-  padding: 10px 40px;
+  padding: 10px 20px;
   text-decoration: none;
   color: #00142A;
   font-size: 18.75px;
@@ -2903,6 +2903,11 @@ details[open] > .header__submenu {
           background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.2s 0s ease-in-out;
+}
+@media (min-width: 1280px) {
+  .header__menu-item {
+    padding: 10px 40px;
+  }
 }
 .header__menu-item:hover {
   background-position: 0;
