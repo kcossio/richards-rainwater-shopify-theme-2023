@@ -40,9 +40,19 @@ div.MagicToolboxSlides .Magic360-container::after {
 
 div.MagicToolboxSelectorsContainer { margin: 10px 0; }
 
-.MagicToolboxSlide { display: none; }
+.MagicToolboxSlide { display: none; position:relative; }
 .MagicToolboxSlide.active-magic-slide { display: block; }
 
+#MagicToolboxMessage {
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    color:#e3e3e3;
+    text-transform:uppercase;
+    font-weight:900;
+    text-align:center;
+}
 div.MagicToolboxSelectorsContainer a {
     display: inline-block;
     margin: 4px;
