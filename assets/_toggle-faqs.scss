@@ -63,13 +63,14 @@
         
         h3 {
             color:$dark_blue;
-            font-size:20px;
+            font-size:17px;
             display:flex;
             flex-wrap:wrap;
             width:92%;
             margin:0px;
             font-weight:800;
             letter-spacing:1px;
+            line-height:1.2em;
             text-transform:uppercase;
             position:relative;
             align-items:flex-start;
@@ -83,7 +84,7 @@
               content:"";
               display:block;
               position:relative;
-              margin-right:10px;
+              margin-right:12px;
               aspect-ratio: 20.32 / 28.57;
               width:16px;
               height:auto;
@@ -98,7 +99,7 @@
             
             .faq-list & {
               color:$dark_blue;
-              font-size:20px;
+              font-size:17px;
               width:92%;
               margin:0px;
               letter-spacing:0px;

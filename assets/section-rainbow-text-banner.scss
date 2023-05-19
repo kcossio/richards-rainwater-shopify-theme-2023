@@ -13,6 +13,13 @@ section.rainbow-banner {
         min-height:40vh;
     }
 
+    &.hero-banner {
+        min-height: 70vh;
+        @include breakpoint(tablet) {
+            min-height:40vh;
+        }
+    }
+
     h2 {
         color:$white;
         text-align:left;
