@@ -57,32 +57,7 @@
 
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
-      
-
-                        {% comment %}magictoolbox code begins{% endcomment %}
-                        {% assign Magic360ImageCount = 36 %}
-                        {% assign disable360 = false %}
-                        {% for tag in product.tags %}
-                            {% if tag == 'no360' %}
-                                {% assign disable360 = true %}
-                            {% endif %}
-                            {% assign tag_ = tag | replace: 'spinimages=', '' %}
-                            {% if tag_ != tag %}
-                                {% assign Magic360ImageCount = tag_  | times: 1 %}
-                            {% endif %}
-                        {% endfor %}
-                        {% capture m360 %}{% render 'magic360' %}{% endcapture %}
-                        {% if m360 contains 'Liquid error' or product.images.size < Magic360ImageCount or disable360 %}
-                            {% comment %}magictoolbox replace code begins{% endcomment %}
-                            {% render 'product-media-gallery', variant_images: variant_images %}
-                            {% comment %}magictoolbox replace code ends{% endcomment %}
-                        {% else %}
-                            <div  style="display:none">{% render 'product-media-gallery', variant_images: variant_images %}</div>
-                            {{ m360 }}
-                        {% endif %}
-                        {% comment %}magictoolbox code ends{% endcomment %}
-
-                    
+      {% render 'product-media-gallery', variant_images: variant_images %}
     </div>
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
       <product-info
@@ -586,32 +561,7 @@
     {%- if section.settings.media_position == 'right' -%}
       {% comment %} Duplicate gallery to display after product content on tablet/desktop breakpoint {% endcomment %}
       <div class="grid__item product__media-wrapper small-hide">
-        
-
-                        {% comment %}magictoolbox code begins{% endcomment %}
-                        {% assign Magic360ImageCount = 36 %}
-                        {% assign disable360 = false %}
-                        {% for tag in product.tags %}
-                            {% if tag == 'no360' %}
-                                {% assign disable360 = true %}
-                            {% endif %}
-                            {% assign tag_ = tag | replace: 'spinimages=', '' %}
-                            {% if tag_ != tag %}
-                                {% assign Magic360ImageCount = tag_  | times: 1 %}
-                            {% endif %}
-                        {% endfor %}
-                        {% capture m360 %}{% render 'magic360' %}{% endcapture %}
-                        {% if m360 contains 'Liquid error' or product.images.size < Magic360ImageCount or disable360 %}
-                            {% comment %}magictoolbox replace code begins{% endcomment %}
-                            {% render 'product-media-gallery', variant_images: variant_images, is_duplicate: true %}
-                            {% comment %}magictoolbox replace code ends{% endcomment %}
-                        {% else %}
-                            <div  style="display:none">{% render 'product-media-gallery', variant_images: variant_images, is_duplicate: true %}</div>
-                            {{ m360 }}
-                        {% endif %}
-                        {% comment %}magictoolbox code ends{% endcomment %}
-
-                    
+        {% render 'product-media-gallery', variant_images: variant_images, is_duplicate: true %}
       </div>
     {%- endif -%}
   </div>
