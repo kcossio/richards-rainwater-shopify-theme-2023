@@ -91,6 +91,17 @@
     },
     "9da798e3-47aa-4f43-a328-e837a3ace8e5": {
       "type": "store-locator-w-slider",
+      "blocks": {
+        "bb1c7d6b-0b3c-4728-b0b5-cc595e292de7": {
+          "type": "hide_title_on_product",
+          "settings": {
+            "product_hide": "richards-sparkling-rainwater-24-pk-bottles"
+          }
+        }
+      },
+      "block_order": [
+        "bb1c7d6b-0b3c-4728-b0b5-cc595e292de7"
+      ],
       "settings": {
         "heading": "Find Richard’s near you."
       }
