@@ -254,6 +254,16 @@ EASING
   text-decoration: none;
 }
 
+.article-template__link {
+  color: #000F44;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.article-template__link.arrow-right .icon-wrap {
+  transform: rotate(0deg);
+}
 .article-template__link .icon-wrap {
   display: flex;
   margin-right: 1rem;
