@@ -4,7 +4,7 @@
 
     <div class="locator-slider-wrap on-{{ product.id }}">
       {%- for block in section.blocks -%}
-        {%- if block.settings.product_name == product.handle -%}
+        {%- if block.settings.product_hide != product.handle -%}
 
           <h2>{{ section.settings.heading }}</h2>
 
