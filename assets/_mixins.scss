@@ -16,6 +16,9 @@
     @else if $point == tabletwide {
       @media (min-width: 1024px)  { @content ; }
     }
+    @else if $point == shopify {
+      @media (min-width: 990px) { @content ; }
+    }
     @else if $point == tablet {
       @media (min-width: 768px) { @content ; }
     }

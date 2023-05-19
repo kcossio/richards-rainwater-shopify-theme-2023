@@ -15,7 +15,7 @@
     padding: 0px;
     cursor: pointer;
 
-    @include breakpoint(tabletwide) {
+    @include breakpoint(shopify) {
         display: none;
     }
 
