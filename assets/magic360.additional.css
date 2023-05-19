@@ -43,7 +43,7 @@ div.MagicToolboxSelectorsContainer { margin: 10px 0; }
 .MagicToolboxSlide { display: none; position:relative; }
 .MagicToolboxSlide.active-magic-slide { display: block; }
 
-#MagicToolboxMessage {
+.MagicToolboxMessage {
     position:absolute;
     bottom:0px;
     left:0px;
