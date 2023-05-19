@@ -1536,12 +1536,13 @@ EASING
   font-size: 20px;
   display: flex;
   flex-wrap: wrap;
-  width: 95%;
+  width: 92%;
   margin: 0px;
   font-weight: 900;
   letter-spacing: 2px;
   text-transform: uppercase;
   position: relative;
+  align-items: flex-start;
 }
 @media (min-width: 768px) {
   .toggle-view .toggle-header h3 {
@@ -1561,7 +1562,7 @@ EASING
   background-size: 100% 100%;
 }
 .toggle-view .toggle-header h3 span {
-  width: calc(100% - 24px);
+  width: calc(100% - 34px);
 }
 .faq-list .toggle-view .toggle-header h3 {
   color: #000F44;

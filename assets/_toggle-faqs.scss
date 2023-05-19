@@ -62,12 +62,13 @@
             font-size:20px;
             display:flex;
             flex-wrap:wrap;
-            width:95%;
+            width:92%;
             margin:0px;
             font-weight:900;
             letter-spacing:2px;
             text-transform:uppercase;
             position:relative;
+            align-items:flex-start;
   
             @include breakpoint(tablet) {
               font-size:22px;
@@ -87,7 +88,7 @@
             }
 
             span {
-              width:calc(100% - 24px);
+              width:calc(100% - 34px);
             }
             
             
