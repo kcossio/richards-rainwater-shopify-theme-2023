@@ -52,6 +52,7 @@ div.MagicToolboxSelectorsContainer { margin: 10px 0; }
     text-transform:uppercase;
     font-weight:900;
     text-align:center;
+    display: block;
 }
 div.MagicToolboxSelectorsContainer a {
     display: inline-block;
