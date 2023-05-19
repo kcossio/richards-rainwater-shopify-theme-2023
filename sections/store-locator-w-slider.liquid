@@ -3,10 +3,15 @@
 
 
     <div class="locator-slider-wrap on-{{ product.id }}">
+      {%- for block in section.blocks -%}
+        {%- if block.settings.product_name == product.handle -%}
 
-    <h2>{{ section.settings.heading }}</h2>
+          <h2>{{ section.settings.heading }}</h2>
 
-    {% render 'store-locator-form' %}
+          {% render 'store-locator-form' %}
+
+        {%- endif -%}
+      {%- endfor -%}
 
     {% render 'global-metafields-retail-logos' %}
 
@@ -30,6 +35,20 @@
       "label": "Heading",
       "default": "Find Richard’s near you.",
       "info": "Enter text for the heading here"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Hide Title/Form",
+      "type": "hide_title_on_product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product_hide",
+          "label": "Product",
+          "info": "Choose a product where you'd like to hide the title and form in this section (and just show the slider)"
+        }
+      ]
     }
   ],
   "presets": [
