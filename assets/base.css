@@ -1287,6 +1287,14 @@ summary::-webkit-details-marker {
   flex-shrink: 0;
   margin-bottom: 70px;
 }
+.grid__item.product__info-wrapper {
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .grid__item.product__info-wrapper {
+    margin-bottom: 70px;
+  }
+}
 
 @media screen and (min-width: 750px) {
   .grid__item {

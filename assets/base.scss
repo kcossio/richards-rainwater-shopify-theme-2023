@@ -1152,6 +1152,14 @@ summary::-webkit-details-marker {
   flex-grow: 1;
   flex-shrink: 0;
   margin-bottom:70px;
+
+  &.product__info-wrapper {
+    margin-bottom:40px;
+
+    @include breakpoint(tablet) {
+      margin-bottom:70px;
+    }
+  }
 }
 
 @media screen and (min-width: 750px) {
