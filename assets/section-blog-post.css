@@ -1,3 +1,184 @@
+.red {
+  color: #DE0000;
+}
+
+.orange {
+  color: #FFA500;
+}
+
+.pink {
+  color: #FC4A6A;
+}
+
+.light-blue {
+  color: #0094DA;
+}
+
+.medium-blue {
+  color: #0040A8;
+}
+
+.dark-blue {
+  color: #000F44;
+}
+
+.black,
+.darkest-blue {
+  color: #00142A;
+}
+
+.white {
+  color: #ffffff;
+}
+
+:root {
+  --font-body-family: "TT Commons", sans-serif;
+  --font-heading-family: "TT Commons", sans-serif;
+}
+
+/*-----------------------
+EASING 
+---------------------- */
+/* ------ Font Includes ------ */
+@font-face {
+  font-family: "VadelmaLight";
+  src: url("font_VadelmaLight.woff2") format("woff2"), url("font_VadelmaLight.woff2") format("woff");
+}
+@font-face {
+  font-family: "ImperialURW";
+  src: url("font_ImperialURWUltraBold.woff2") format("woff2"), url("font_ImperialURWUltraBold.woff2") format("woff");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("font_TTCommonsProExtraLight.woff2") format("woff2"), url("font_TTCommonsProExtraLight.woff") format("woff");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("font_TTCommonsProExtraLightItalic.woff2") format("woff2"), url("font_TTCommonsProExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("font_TTCommonsProMedium.woff2") format("woff2"), url("font_TTCommonsProMedium.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("font_TTCommonsProMediumItalic.woff2") format("woff2"), url("font_TTCommonsProMediumItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("font_TTCommonsProDemiBold.woff2") format("woff2"), url("font_TTCommonsProDemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("font_TTCommonsProDemiBoldItalic.woff2") format("woff2"), url("font_TTCommonsProDemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("font_TTCommonsProBold.woff2") format("woff2"), url("font_TTCommonsProBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("font_TTCommonsProBoldItalic.woff2") format("woff2"), url("font_TTCommonsProBoldItalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("font_TTCommonsProExtraBold.woff2") format("woff2"), url("font_TTCommonsProExtraBold.woff") format("woff");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("font_TTCommonsProExtraBoldItalic.woff2") format("woff2"), url("font_TTCommonsProExtraBoldItalic.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("font_TTCommonsProBlack.woff2") format("woff2"), url("font_TTCommonsProBlack.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("font_TTCommonsProBlackItalic.woff2") format("woff2"), url("font_TTCommonsProBlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+}
+/*
+@font-face {
+  font-family: "TTCommonsProThin";
+  src: url('font_TTCommonsProThin.woff2') format('woff2'), url('font_TTCommonsProThin.woff') format('woff');
+}
+@font-face {
+  font-family: "TTCommonsProThinItalic";
+  src: url('font_TTCommonsProThinItalic.woff2') format('woff2'), url('font_TTCommonsProThinItalic.woff') format('woff');
+}
+
+
+
+@font-face {
+  font-family: "TTCommonsProLight";
+  src: url('font_TTCommonsProLight.woff2') format('woff2'), url('font_TTCommonsProLight.woff') format('woff');
+} 
+@font-face {
+  font-family: "TTCommonsProLightItalic";
+  src: url('font_TTCommonsProLightItalic.woff2') format('woff2'), url('font_TTCommonsProLightItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: "TTCommonsProRegular";
+  src: url('font_TTCommonsProRegular.woff2') format('woff2'), url('font_TTCommonsProRegular.woff') format('woff');
+}
+@font-face {
+  font-family: "TTCommonsProItalic";
+  src: url('font_TTCommonsProItalic.woff2') format('woff2'), url('font_TTCommonsProItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: "TTCommonsProNormal";
+  src: url('font_TTCommonsProNormal.woff2') format('woff2'), url('font_TTCommonsProNormal.woff') format('woff');
+}
+@font-face {
+  font-family: "TTCommonsProNormalItalic";
+  src: url('font_TTCommonsProNormalItalic.woff2') format('woff2'), url('font_TTCommonsProNormalItalic.woff') format('woff');
+}
+
+
+
+@font-face {
+  font-family: "TTCommonsProExtraBlack";
+  src: url('font_TTCommonsProExtraBlack.woff2') format('woff2'), url('font_TTCommonsProExtraBlack.woff') format('woff');
+}
+@font-face {
+  font-family: "TTCommonsProExtraBlackItalic";
+  src: url('font_TTCommonsProExtraBlackItalic.woff2') format('woff2'), url('font_TTCommonsProExtraBlackItalic.woff') format('woff');
+}
+
+*/
+.blog-nav {
+  width: 100%;
+}
+.blog-nav nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .article-template > *:first-child:not(.article-template__hero-container) {
   margin-top: 5rem;
 }
@@ -7,7 +188,6 @@
     margin-top: calc(5rem + var(--page-width-margin));
   }
 }
-
 .article-template__hero-container {
   max-width: 130rem;
   margin: 0 auto;
@@ -29,30 +209,24 @@
   .article-template__hero-small {
     height: 22rem;
   }
-
   .article-template__hero-medium {
     height: 44rem;
   }
-
   .article-template__hero-large {
     height: 66rem;
   }
 }
-
 @media screen and (min-width: 990px) {
   .article-template__hero-small {
     height: 27.5rem;
   }
-
   .article-template__hero-medium {
     height: 55rem;
   }
-
   .article-template__hero-large {
     height: 82.5rem;
   }
 }
-
 .article-template header {
   margin-top: 4.4rem;
   margin-bottom: 2rem;
@@ -64,7 +238,6 @@
     margin-top: 5rem;
   }
 }
-
 .article-template__title {
   margin: 0;
 }
@@ -112,7 +285,6 @@
     padding: 3.6rem 0;
   }
 }
-
 .article-template__comment-wrapper h2 {
   margin-top: 0;
 }
@@ -126,7 +298,6 @@
     margin-bottom: 7rem;
   }
 }
-
 .article-template__comments-fields {
   margin-bottom: 4rem;
 }
@@ -143,7 +314,6 @@
     padding: 2rem 2.5rem;
   }
 }
-
 .article-template__comments-comment p {
   margin: 0 0 1rem;
 }
@@ -159,7 +329,6 @@
     grid-column-gap: 4rem;
   }
 }
-
 .article-template__comment-warning {
   margin: 2rem 0 2.5rem;
 }
@@ -169,7 +338,6 @@
     margin: 5rem 0 8rem;
   }
 }
-
 .article-template__back:last-child {
   margin-bottom: 3.2rem;
 }
