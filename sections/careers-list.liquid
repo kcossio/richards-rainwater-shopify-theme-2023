@@ -1,26 +1,19 @@
+
 {%- for block in section.blocks -%}
   {%- case block.type -%}
 
     {%- when 'career_box' -%}
-      {%- ########################################################################## 
-      # Label: Title
-      # Returns: a string or an empty object(if nothing has been entered)
-      # Filters: https://shopify.dev/api/liquid/objects#string 
-      ########################################################################## -%}
-      {{ block.settings.title }} 
 
-      {%- ########################################################################## 
-      # Label: Location
-      # Returns: a string or an empty object(if nothing has been entered)
-      # Filters: https://shopify.dev/api/liquid/objects#string 
-      ########################################################################## -%}
-      {{ block.settings.location }} 
+      <div class="career-block">
 
-      {%- ########################################################################## 
-      # Label: Link
-      # Returns: a string(the entered URL) or nil / false(if nothing has been entered)
-      ########################################################################## -%}
-      {{ block.settings.link }} 
+        <h2>{{ block.settings.title }}</h2>
+
+        <span class="location">{{ block.settings.location }}</span>
+
+        <a class="button career-link-button" href="{{ block.settings.link }} ">Learn More</a>
+      
+
+      </div><!--End career-block-->
 
   {%- endcase -%}
 {%- endfor -%}
@@ -33,7 +26,7 @@
   "settings": [],
   "blocks": [
     {
-      "name": "Career Box",
+      "name": "Career Block",
       "type": "career_box",
       "settings": [
         {
