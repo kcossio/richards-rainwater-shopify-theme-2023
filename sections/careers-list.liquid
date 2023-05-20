@@ -1,0 +1,72 @@
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+
+    {%- when 'career_box' -%}
+      {%- ########################################################################## 
+      # Label: Title
+      # Returns: a string or an empty object(if nothing has been entered)
+      # Filters: https://shopify.dev/api/liquid/objects#string 
+      ########################################################################## -%}
+      {{ block.settings.title }} 
+
+      {%- ########################################################################## 
+      # Label: Location
+      # Returns: a string or an empty object(if nothing has been entered)
+      # Filters: https://shopify.dev/api/liquid/objects#string 
+      ########################################################################## -%}
+      {{ block.settings.location }} 
+
+      {%- ########################################################################## 
+      # Label: Link
+      # Returns: a string(the entered URL) or nil / false(if nothing has been entered)
+      ########################################################################## -%}
+      {{ block.settings.link }} 
+
+  {%- endcase -%}
+{%- endfor -%}
+
+{% schema %}
+  {
+  "name": "Careers List",
+  "class": "careers-list",
+  "tag": "section",
+  "settings": [],
+  "blocks": [
+    {
+      "name": "Career Box",
+      "type": "career_box",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "info": "Enter the title of the career opportunity"
+        },
+        {
+          "type": "text",
+          "id": "location",
+          "label": "Location",
+          "info": "Enter the location of the opportunity"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link",
+          "info": "Choose the link to the career opportunity page"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Careers List"
+    }
+  ]
+}  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

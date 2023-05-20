@@ -1724,7 +1724,7 @@ EASING
   height: 50%;
   width: 100%;
   overflow: visible;
-  z-index: 1;
+  z-index: -1;
 }
 .footer-newsletter .newsletter__wrapper {
   width: 100%;
