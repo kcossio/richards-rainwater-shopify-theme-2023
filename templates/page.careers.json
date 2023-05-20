@@ -1,19 +1,42 @@
 {
-    "sections": {
-        "main": {
-            "type": "main-page",
-            "settings": {
-                "padding_top": 28,
-                "padding_bottom": 28
-            }
-        },
-        "careers": {
-            "type": "careers-list",
-            "settings": {}
-        }
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
     },
-    "order": [
-        "main",
-        "careers"
-    ]
+    "careers": {
+      "type": "careers-list",
+      "blocks": {
+        "34a8b19b-e8f9-4d49-82eb-452344f0f74f": {
+          "type": "career_box",
+          "settings": {
+            "title": "Market Manager",
+            "location": "Houston",
+            "link": "#"
+          }
+        },
+        "b92591c9-795a-434c-aada-468a5c87620f": {
+          "type": "career_box",
+          "settings": {
+            "title": "Market Manager",
+            "location": "Nashville",
+            "link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "34a8b19b-e8f9-4d49-82eb-452344f0f74f",
+        "b92591c9-795a-434c-aada-468a5c87620f"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "careers"
+  ]
 }
