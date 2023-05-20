@@ -1,0 +1,19 @@
+{
+    "sections": {
+        "main": {
+            "type": "main-page",
+            "settings": {
+                "padding_top": 28,
+                "padding_bottom": 28
+            }
+        },
+        "careers": {
+            "type": "careers-list",
+            "settings": {}
+        }
+    },
+    "order": [
+        "main",
+        "careers"
+    ]
+}
