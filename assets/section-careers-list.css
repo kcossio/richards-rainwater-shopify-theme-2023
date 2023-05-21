@@ -182,7 +182,7 @@ ul.careers-list li {
   margin: 0px;
   padding: 0px;
 }
-ul.careers-list li:nth-child(even) a {
+ul.careers-list li:nth-child(odd) a {
   background: #f4f4f4;
 }
 ul.careers-list li a {
@@ -190,5 +190,25 @@ ul.careers-list li a {
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
+  align-content: center;
   padding: 22px;
+  text-decoration: none;
+  color: #000F44;
+  font-size: 16px;
+}
+ul.careers-list li a h2 {
+  margin: 0px;
+  font-size: 16px;
+}
+ul.careers-list li a span.button {
+  display: none;
+}
+@media (min-width: 768px) {
+  ul.careers-list li a h2 {
+    font-size: 22px;
+  }
+  ul.careers-list li a span.button {
+    display: inline-block;
+  }
 }
