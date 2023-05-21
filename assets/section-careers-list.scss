@@ -1,0 +1,32 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+
+ul.careers-list {
+    display:block;
+    margin:0px;
+    padding:0px;
+
+    li {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        margin:0px;
+        padding:0px;
+
+        &:nth-child(even) {
+            a {
+                background:#f4f4f4;
+            }
+        }
+
+        a {
+            display:flex;
+            flex-wrap:wrap;
+            width:100%;
+            justify-content:space-between;
+            padding:22px;
+        }
+    }
+}

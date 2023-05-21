@@ -1,22 +1,27 @@
+{{ 'section-careers-list.css' | asset_url | stylesheet_tag }}
 
-{%- for block in section.blocks -%}
-  {%- case block.type -%}
+<div class="inner">
+  <ul class="careers-list">
+  {%- for block in section.blocks -%}
+    {%- case block.type -%}
 
-    {%- when 'career_box' -%}
+      {%- when 'career_box' -%}
 
-      <div class="career-block">
+        <li class="career-block">
 
-        <h2>{{ block.settings.title }}</h2>
+          <h2>{{ block.settings.title }}</h2>
 
-        <span class="location">{{ block.settings.location }}</span>
+          <span class="location">{{ block.settings.location }}</span>
 
-        <a class="button career-link-button" href="{{ block.settings.link }} ">Learn More</a>
-      
+          <a class="button career-link-button" href="{{ block.settings.link }} ">Learn More</a>
+        
 
-      </div><!--End career-block-->
+        </li><!--End career-block-->
 
-  {%- endcase -%}
-{%- endfor -%}
+    {%- endcase -%}
+  {%- endfor -%}
+  </ul><!--End careers-list-->
+</div>
 
 {% schema %}
   {
