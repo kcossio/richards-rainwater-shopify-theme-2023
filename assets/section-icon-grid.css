@@ -226,13 +226,13 @@ EASING
   margin: 0px;
   font-size: 22px;
   font-weight: 800;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   color: #0040A8;
   text-align: center;
 }
 .product-desc-icons .product-desc p {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 22px;
   text-align: center;
 }
@@ -253,7 +253,15 @@ EASING
     font-size: 16.5px;
   }
   .product-desc-icons .icon-grid {
-    width: 31%;
-    border-left: 2px solid #000F44;
+    width: 39%;
+    border-left: 3px solid #000F44;
+    padding: 10px 40px;
+  }
+  .product-desc-icons .icon-grid .icon-item img {
+    height: 56px;
+  }
+  .product-desc-icons .icon-grid .icon-item p {
+    font-size: 15px;
+    margin-top: 14px;
   }
 }
