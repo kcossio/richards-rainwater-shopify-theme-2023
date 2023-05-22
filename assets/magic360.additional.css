@@ -63,7 +63,7 @@ div.MagicToolboxSelectorsContainer {
     position:absolute;
     bottom:100%;
     width:345px;
-    aspect-ratio: 200 / 23px;
+    aspect-ratio: 200 / 23;
     height:auto;
     left:50%;
     transform:translate(-50%, 0%);
