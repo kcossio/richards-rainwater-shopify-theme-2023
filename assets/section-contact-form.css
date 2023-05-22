@@ -173,8 +173,7 @@ EASING
 form.form-contact-form {
   border: 1px solid #FFA500;
 }
-
-.field__input::after {
+form.form-contact-form .field::after {
   display: none !important;
   border-bottom: 1px solid #000F44;
 }
