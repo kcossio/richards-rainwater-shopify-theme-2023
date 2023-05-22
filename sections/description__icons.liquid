@@ -1,39 +1,40 @@
 {{ 'section-icon-grid.css' | asset_url | stylesheet_tag }}
 
 
+<div class="inner">
+    <div class="product-desc-icons">
 
-<div class="product-desc-icons">
-
-  <div class="product-desc">
-    <h2>{{ section.settings.heading }} </h2>
-    {%- if product.description != blank -%}
-      <div class="product__description rte"  {{ block.shopify_attributes }}>
-        {{ product.description }}
+      <div class="product-desc">
+        <h2 class="fade-in-left">{{ section.settings.heading }} </h2>
+        {%- if product.description != blank -%}
+          <div class="product__description fade-in-left rte"  {{ block.shopify_attributes }}>
+            {{ product.description }}
+          </div>
+        {%- endif -%}
       </div>
-    {%- endif -%}
-  </div>
 
-  <div class="icon-grid">
-  {%- for block in section.blocks -%}
-    {%- case block.type -%}
+      <div class="icon-grid">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
 
-      {%- when 'icon_item' -%}
-        <div class="icon-item">
-        {%- assign icon = block.settings.icon -%}
-        {%- if icon != blank %}
-        {{ icon | image_url: width: icon.width | image_tag: class: 'icon-image', loading: 'lazy' }}
-        {%- endif -%}
+          {%- when 'icon_item' -%}
+            <div class="icon-item">
+            {%- assign icon = block.settings.icon -%}
+            {%- if icon != blank %}
+            {{ icon | image_url: width: icon.width | image_tag: class: 'icon-image', loading: 'lazy' }}
+            {%- endif -%}
 
-        {%- if block.settings.label != blank -%}
-        <p>{{ block.settings.label }}</p>
-        {%- endif -%}
-        </div><!--End icon-item-->
+            {%- if block.settings.label != blank -%}
+            <p>{{ block.settings.label }}</p>
+            {%- endif -%}
+            </div><!--End icon-item-->
 
-    {%- endcase -%}
-  {%- endfor -%}
-  </div><!--End icon-grid-->
+        {%- endcase -%}
+      {%- endfor -%}
+      </div><!--End icon-grid-->
 
-</div>
+    </div>
+</div><!--End inner-->
 
 
 {% schema %}
