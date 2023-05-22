@@ -24,8 +24,28 @@
       <h2 class="visually-hidden">{{ 'templates.contact.form.title' | t }}</h2>
     {%- endif -%}
 
-    <section class="section-form-contact">
+    {% ## Form Selector ## %}
+    <div class="select-wrap">
+      <label class="contact-form-label" for="contact-form-select">General Inquiry</label>
+      <select class="select" name="contact-form-select" id="contact-form-select">
+        <option value="">What would you like to contact us about?</option>
+        <option value="General" data-href-open="contact-general">General Inquiries</option>
+        <option value="General" data-href-open="contact-wholesale">Wholesale Application</option>
+        <option value="General" data-href-open="contact-donate">Donation Request</option>
+      </select>
+    </div><!--End select-wrap-->
+    {% ## End Form Selector ## %}
+
+    <section class="section-form-contact" id="contact-general">
     {% render 'form-contact-general' %}
+    </section><!--End section-form-contact-->
+
+    <section class="section-form-contact" id="contact-wholesale">
+      {% render 'form-contact-wholesale' %}
+    </section><!--End section-form-contact-->
+
+    <section class="section-form-contact" id="contact-donate">
+      {% render 'form-contact-donate' %}
     </section><!--End section-form-contact-->
 
     
@@ -33,6 +53,19 @@
 
   </div>
 </div>
+
+{% javascript %}// In your Javascript (external .js resource or <script> tag)
+   
+   jQuery('select#contact-form-select').on('change', function() {
+      //console.log('select has been changed');
+      var show = '#' + jQuery(this).find(':selected').attr('data-href-open');
+      //console.log('Show this one please:' + show);
+      jQuery('.section-foirm-contact').removeClass('active');
+      jQuery(show).addClass('active');
+    });
+  
+    
+{% endjavascript %}
 
 {% schema %}
 {
