@@ -56,7 +56,7 @@
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
 
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
-    <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
+    <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %} fade-in-up">
       
 
                         {% comment %}magictoolbox code begins{% endcomment %}
@@ -105,7 +105,7 @@
                 {{- block.settings.text -}}
               </p>
             {%- when 'title' -%}
-              <div class="product__title" {{ block.shopify_attributes }}>
+              <div class="product__title fade-in-right" {{ block.shopify_attributes }}>
                 <h1>
                 {%- if product.metafields.product_extra.water_product_custom_title.value != blank %}
                   {% assign title_img = product.metafields.product_extra.water_product_custom_title %}
@@ -122,7 +122,7 @@
                 </a>
               </div>
             {%- when 'price' -%}
-              <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+              <div class="no-js-hidden fade-in-right" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                 {%- render 'price',
                   product: product,
                   use_variant: true,
@@ -232,7 +232,7 @@
                 </details>
               </div>
             {%- when 'quantity_and_button' -%}
-              <div class="quantity-and-buttons">
+              <div class="quantity-and-buttons fade-in-right">
 
                 <div
                   id="Quantity-Form-{{ section.id }}"
@@ -325,7 +325,7 @@
             {%- when 'quantity_selector' -%}
               <div
                 id="Quantity-Form-{{ section.id }}"
-                class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
+                class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %} fade-in-right"
                 {{ block.shopify_attributes }}
               >
                 {% comment %} TODO: enable theme-check once `item_count_for_variant` is accepted as valid filter {% endcomment %}
