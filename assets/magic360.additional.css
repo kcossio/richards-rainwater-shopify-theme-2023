@@ -38,7 +38,10 @@ div.MagicToolboxSlides .Magic360-container::after {
 .MagicToolboxContainer.thumbnail-size-compact .MagicToolboxSelectorsContainer a img { height: 160px;width: 160px; }
 .MagicToolboxContainer.thumbnail-size-medium .MagicToolboxSelectorsContainer a img { height: 240px;width: 240px; }
 
-div.MagicToolboxSelectorsContainer { margin: 10px 0; }
+div.MagicToolboxSelectorsContainer { 
+    margin: 10px 0;
+    display:none;
+ }
 
 .MagicToolboxSlide { display: none; position:relative; }
 .MagicToolboxSlide.active-magic-slide { display: block; }
