@@ -1216,6 +1216,10 @@ EASING
   position: relative;
 }
 
+section.newsletter-cloud {
+  z-index: 4;
+}
+
 .footer {
   background: #000F44;
   color: #ffffff;
