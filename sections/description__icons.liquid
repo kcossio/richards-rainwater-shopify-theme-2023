@@ -1,0 +1,84 @@
+{{ 'section-icon-grid.css' | asset_url | stylesheet_tag }}
+
+
+
+<div class="product-desc-icons">
+
+  <div class="product-desc">
+    <h2>{{ section.settings.heading }} </h2>
+    {%- if product.description != blank -%}
+      <div class="product__description rte"  {{ block.shopify_attributes }}>
+        {{ product.description }}
+      </div>
+    {%- endif -%}
+  </div>
+
+  <div class="icon-grid">
+  {%- for block in section.blocks -%}
+    {%- case block.type -%}
+
+      {%- when 'icon_item' -%}
+        <div class="icon-item">
+        {%- assign icon = block.settings.icon -%}
+        {%- if icon != blank %}
+        {{ icon | image_url: width: icon.width | image_tag: class: 'icon-image', loading: 'lazy' }}
+        {%- endif -%}
+
+        {%- if block.settings.label != blank -%}
+        <p>{{ block.settings.label }}</p>
+        {%- endif -%}
+        </div><!--End icon-item-->
+
+    {%- endcase -%}
+  {%- endfor -%}
+  </div><!--End icon-grid-->
+
+</div>
+
+
+{% schema %}
+  {
+  "name": "Description + Icons",
+  "class": "desc-icons",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "info": "Enter a heading for this product"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Icon Item",
+      "type": "icon_item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon",
+          "info": "Upload an icon (PNG, GIF, or JPEG format)"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "info": "Add a label for this icon"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Description + Icons"
+    }
+  ]
+}  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

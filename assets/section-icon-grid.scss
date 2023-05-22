@@ -44,3 +44,53 @@
         }
     }
 }
+
+.product-desc-icons {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+    .product-desc {
+        width:100%;
+
+        h2 {
+            margin:0px;
+            font-size:22px;
+            font-weight: 800;
+            letter-spacing:2px;
+            text-transform: uppercase;
+            color: $medium_blue;
+            text-align:center;
+        }
+        p {
+            font-weight: 600;
+            font-size:22px;
+            text-align:center;
+        }
+    }
+    .icon-grid {
+        width:100%;
+    }
+
+    @include breakpoint(tablet) {
+        .product-desc {
+            width:46.5%;
+            padding:20px 0px 20px 38px;
+
+            h2 {
+                text-align:left;
+                font-size:21px;
+            }
+            p {
+                text-align:left;
+                font-size:16.5px;
+            }
+        }
+        .icon-grid {
+            width:31%;
+            border-left:2px solid $dark_blue;
+        }
+    }
+}
