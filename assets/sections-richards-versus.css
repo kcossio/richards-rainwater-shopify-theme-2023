@@ -452,3 +452,8 @@ section.section-versus .select2-container--default .select2-selection--single:fo
     display: flex;
   }
 }
+
+.form-contact-form .input__field::after {
+  display: none !important;
+  border-bottom: 1px solid #000F44;
+}
