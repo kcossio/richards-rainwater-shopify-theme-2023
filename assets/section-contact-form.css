@@ -174,7 +174,8 @@ form.form-contact-form {
   border: 1px solid #FFA500;
 }
 form.form-contact-form .field::after {
-  display: none !important;
+  box-shadow: none !important;
+  border-radius: 0px;
   border-bottom: 1px solid #000F44;
 }
 
