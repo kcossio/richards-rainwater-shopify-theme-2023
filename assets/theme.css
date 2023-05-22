@@ -728,9 +728,13 @@ EASING
   aspect-ratio: 1877/188;
 }
 .clouds.bottom {
+  aspect-ratio: 1876/188;
   position: absolute;
   left: 0px;
   bottom: 0px;
+}
+.clouds.bottom .scroll-parent {
+  aspect-ratio: 1876/188;
 }
 .clouds.top {
   position: absolute;
@@ -1205,6 +1209,11 @@ EASING
 #nav-wrapper.open form.search-form {
   opacity: 1;
   transition: opacity 0.5s ease 0.25s;
+}
+
+.shopify-section-group-footer-group {
+  z-index: 1;
+  position: relative;
 }
 
 .footer {

@@ -187,7 +187,7 @@ section.rainbow-banner.hero-banner {
 }
 @media (min-width: 768px) {
   section.rainbow-banner.hero-banner {
-    min-height: 40vh;
+    min-height: 75vh;
   }
 }
 section.rainbow-banner h2 {

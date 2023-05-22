@@ -16,7 +16,7 @@ section.rainbow-banner {
     &.hero-banner {
         min-height: 70vh;
         @include breakpoint(tablet) {
-            min-height:40vh;
+            min-height:75vh;
         }
     }
 

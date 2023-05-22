@@ -103,6 +103,11 @@
     }
 
     &.bottom {
+        aspect-ratio: 1876 / 188;
+
+        .scroll-parent {
+            aspect-ratio: 1876 / 188;
+        }
         position:absolute;
         left:0px;
         bottom:0px;
