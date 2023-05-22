@@ -76,7 +76,7 @@
 
     @include breakpoint(tablet) {
         .product-desc {
-            width:46.5%;
+            width:54.5%;
             padding:20px 0px 20px 38px;
 
             h2 {
@@ -86,6 +86,7 @@
             p {
                 text-align:left;
                 font-size:16.5px;
+                line-height:1.48em;
             }
         }
         .icon-grid {

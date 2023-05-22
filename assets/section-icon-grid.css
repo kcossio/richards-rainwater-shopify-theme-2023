@@ -241,7 +241,7 @@ EASING
 }
 @media (min-width: 768px) {
   .product-desc-icons .product-desc {
-    width: 46.5%;
+    width: 54.5%;
     padding: 20px 0px 20px 38px;
   }
   .product-desc-icons .product-desc h2 {
@@ -251,6 +251,7 @@ EASING
   .product-desc-icons .product-desc p {
     text-align: left;
     font-size: 16.5px;
+    line-height: 1.48em;
   }
   .product-desc-icons .icon-grid {
     width: 39%;
