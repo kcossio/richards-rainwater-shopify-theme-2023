@@ -204,6 +204,8 @@ ul.careers-list li a h2 {
   margin: 0px;
   font-size: 16px;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 ul.careers-list li a h2::before {
   content: "";

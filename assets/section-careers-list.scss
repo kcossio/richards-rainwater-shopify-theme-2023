@@ -41,6 +41,8 @@ ul.careers-list {
                 margin:0px;
                 font-size:16px;
                 position:relative;
+                display:flex;
+                flex-wrap:wrap;
 
                 &::before {
                     content:"";
