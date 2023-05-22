@@ -251,3 +251,12 @@ section.section-contact-form .select2-container--default .select2-selection--sin
   background:transparent !important;
   color:$medium_blue;
 }
+
+
+.section-form-contact {
+  display:none;
+  
+  &.active {
+    display:block;
+  }
+}
