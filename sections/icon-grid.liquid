@@ -6,7 +6,7 @@
     {%- case block.type -%}
 
       {%- when 'icon_item' -%}
-        <div class="icon-item fade-in-up">
+        <div class="icon-item">
         {%- assign icon = block.settings.icon -%}
         {%- if icon != blank %}
         {{ icon | image_url: width: icon.width | image_tag: class: 'icon-image', loading: 'lazy' }}

@@ -409,6 +409,14 @@
             onLeaveBack: batch => gsap.set(batch, {opacity: 0, y: 25, overwrite: true})
           });
 
+        gsap.set('.icon-item', {opacity:0, y:25 });
+        ScrollTrigger.batch(".icon-item", {
+            onEnter: batch => gsap.to(batch, {opacity: 1, y: 0, stagger: {each: 0.15}, overwrite: true}),
+            onLeave: batch => gsap.set(batch, {opacity: 0, y: -25, overwrite: true}),
+            onEnterBack: batch => gsap.to(batch, {opacity: 1, y: 0, stagger: 0.15, overwrite: true}),
+            onLeaveBack: batch => gsap.set(batch, {opacity: 0, y: 25, overwrite: true})
+          });
+
           // Batch Items
         gsap.set('.product-grid-animate', {opacity:0, y:25 });
         ScrollTrigger.batch(".product-grid-animate", {
