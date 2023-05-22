@@ -84,7 +84,11 @@ section.section-contact-form {
 
   }
 
-  select.form-select,
+  
+  
+}
+
+select.form-select,
   .select2-container--default .select2-selection--single {
       appearance: none;
       -webkit-appearance:none;
@@ -149,8 +153,6 @@ section.section-contact-form {
       }
 
   }
-  
-}
 
 /* Select2 Dropdown Overrides */
 

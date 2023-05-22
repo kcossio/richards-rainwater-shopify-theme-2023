@@ -246,8 +246,9 @@ section.section-contact-form .select-wrap {
     width: 100%;
   }
 }
-section.section-contact-form select.form-select,
-section.section-contact-form .select2-container--default .select2-selection--single {
+
+select.form-select,
+.select2-container--default .select2-selection--single {
   -moz-appearance: none;
        appearance: none;
   -webkit-appearance: none;
@@ -266,12 +267,12 @@ section.section-contact-form .select2-container--default .select2-selection--sin
   width: 100%;
   font-family: "TT Commons", sans-serif;
 }
-section.section-contact-form select.form-select[aria-expanded=true],
-section.section-contact-form .select2-container--default .select2-selection--single[aria-expanded=true] {
+select.form-select[aria-expanded=true],
+.select2-container--default .select2-selection--single[aria-expanded=true] {
   color: #ffffff;
 }
-section.section-contact-form select.form-select[aria-expanded=true]::before,
-section.section-contact-form .select2-container--default .select2-selection--single[aria-expanded=true]::before {
+select.form-select[aria-expanded=true]::before,
+.select2-container--default .select2-selection--single[aria-expanded=true]::before {
   content: "";
   display: block;
   position: absolute;
@@ -282,8 +283,8 @@ section.section-contact-form .select2-container--default .select2-selection--sin
   z-index: -1;
   background: #e3e3e3;
 }
-section.section-contact-form select.form-select[aria-expanded=true]::after,
-section.section-contact-form .select2-container--default .select2-selection--single[aria-expanded=true]::after {
+select.form-select[aria-expanded=true]::after,
+.select2-container--default .select2-selection--single[aria-expanded=true]::after {
   content: "";
   display: block;
   position: absolute;
@@ -294,21 +295,21 @@ section.section-contact-form .select2-container--default .select2-selection--sin
   z-index: -1;
   background: #e3e3e3;
 }
-section.section-contact-form select.form-select:active, section.section-contact-form select.form-select:focus,
-section.section-contact-form .select2-container--default .select2-selection--single:active,
-section.section-contact-form .select2-container--default .select2-selection--single:focus {
+select.form-select:active, select.form-select:focus,
+.select2-container--default .select2-selection--single:active,
+.select2-container--default .select2-selection--single:focus {
   background: #0094DA;
   color: #ffffff !important;
 }
-section.section-contact-form select.form-select:active .select2-selection__rendered, section.section-contact-form select.form-select:focus .select2-selection__rendered,
-section.section-contact-form .select2-container--default .select2-selection--single:active .select2-selection__rendered,
-section.section-contact-form .select2-container--default .select2-selection--single:focus .select2-selection__rendered {
+select.form-select:active .select2-selection__rendered, select.form-select:focus .select2-selection__rendered,
+.select2-container--default .select2-selection--single:active .select2-selection__rendered,
+.select2-container--default .select2-selection--single:focus .select2-selection__rendered {
   background: #0094DA;
   color: #ffffff !important;
 }
 @media (min-width: 768px) {
-  section.section-contact-form select.form-select,
-  section.section-contact-form .select2-container--default .select2-selection--single {
+  select.form-select,
+  .select2-container--default .select2-selection--single {
     font-size: 22px;
     letter-spacing: 2px;
     padding: 15px !important;
