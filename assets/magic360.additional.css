@@ -65,9 +65,9 @@ div.MagicToolboxSelectorsContainer {
     width:345px;
     aspect-ratio: 200 / 23px;
     height:auto;
-    left:0px;
+    left:50%;
     transform:translate(-50%, 0%);
-    background:url(images/spin-arrow.svg) top center no-repeat;
+    background:url(spin-arrow.svg) top center no-repeat;
     background-size:cover;
 }
 div.MagicToolboxSelectorsContainer a {
