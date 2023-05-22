@@ -5,7 +5,7 @@
     {{ 'magic360.additional.css' | asset_url | stylesheet_tag }}
     <script type="text/javascript">
     Magic360.options = {
-		'autospin-direction':'clockwise',
+		'autospin-direction':'anticlockwise',
 		'columns':72,
 		'rows':1,
 		'magnify':false,
@@ -29,7 +29,7 @@
 		'reverse-row':false,
 		'column-increment':1,
 		'row-increment':1,
-		'hint':true
+		'hint':false
     }
     Magic360.lang = {
 		'loading-text':'Loading...',
