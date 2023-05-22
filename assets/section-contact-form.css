@@ -1,3 +1,175 @@
+.red {
+  color: #DE0000;
+}
+
+.orange {
+  color: #FFA500;
+}
+
+.pink {
+  color: #FC4A6A;
+}
+
+.light-blue {
+  color: #0094DA;
+}
+
+.medium-blue {
+  color: #0040A8;
+}
+
+.dark-blue {
+  color: #000F44;
+}
+
+.black,
+.darkest-blue {
+  color: #00142A;
+}
+
+.white {
+  color: #ffffff;
+}
+
+:root {
+  --font-body-family: "TT Commons", sans-serif;
+  --font-heading-family: "TT Commons", sans-serif;
+}
+
+/*-----------------------
+EASING 
+---------------------- */
+/* ------ Font Includes ------ */
+@font-face {
+  font-family: "VadelmaLight";
+  src: url("font_VadelmaLight.woff2") format("woff2"), url("font_VadelmaLight.woff2") format("woff");
+}
+@font-face {
+  font-family: "ImperialURW";
+  src: url("font_ImperialURWUltraBold.woff2") format("woff2"), url("font_ImperialURWUltraBold.woff2") format("woff");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("font_TTCommonsProExtraLight.woff2") format("woff2"), url("font_TTCommonsProExtraLight.woff") format("woff");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("font_TTCommonsProExtraLightItalic.woff2") format("woff2"), url("font_TTCommonsProExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("font_TTCommonsProMedium.woff2") format("woff2"), url("font_TTCommonsProMedium.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("font_TTCommonsProMediumItalic.woff2") format("woff2"), url("font_TTCommonsProMediumItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("font_TTCommonsProDemiBold.woff2") format("woff2"), url("font_TTCommonsProDemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("font_TTCommonsProDemiBoldItalic.woff2") format("woff2"), url("font_TTCommonsProDemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("font_TTCommonsProBold.woff2") format("woff2"), url("font_TTCommonsProBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("font_TTCommonsProBoldItalic.woff2") format("woff2"), url("font_TTCommonsProBoldItalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("font_TTCommonsProExtraBold.woff2") format("woff2"), url("font_TTCommonsProExtraBold.woff") format("woff");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("font_TTCommonsProExtraBoldItalic.woff2") format("woff2"), url("font_TTCommonsProExtraBoldItalic.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("font_TTCommonsProBlack.woff2") format("woff2"), url("font_TTCommonsProBlack.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("font_TTCommonsProBlackItalic.woff2") format("woff2"), url("font_TTCommonsProBlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+}
+/*
+@font-face {
+  font-family: "TTCommonsProThin";
+  src: url('font_TTCommonsProThin.woff2') format('woff2'), url('font_TTCommonsProThin.woff') format('woff');
+}
+@font-face {
+  font-family: "TTCommonsProThinItalic";
+  src: url('font_TTCommonsProThinItalic.woff2') format('woff2'), url('font_TTCommonsProThinItalic.woff') format('woff');
+}
+
+
+
+@font-face {
+  font-family: "TTCommonsProLight";
+  src: url('font_TTCommonsProLight.woff2') format('woff2'), url('font_TTCommonsProLight.woff') format('woff');
+} 
+@font-face {
+  font-family: "TTCommonsProLightItalic";
+  src: url('font_TTCommonsProLightItalic.woff2') format('woff2'), url('font_TTCommonsProLightItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: "TTCommonsProRegular";
+  src: url('font_TTCommonsProRegular.woff2') format('woff2'), url('font_TTCommonsProRegular.woff') format('woff');
+}
+@font-face {
+  font-family: "TTCommonsProItalic";
+  src: url('font_TTCommonsProItalic.woff2') format('woff2'), url('font_TTCommonsProItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: "TTCommonsProNormal";
+  src: url('font_TTCommonsProNormal.woff2') format('woff2'), url('font_TTCommonsProNormal.woff') format('woff');
+}
+@font-face {
+  font-family: "TTCommonsProNormalItalic";
+  src: url('font_TTCommonsProNormalItalic.woff2') format('woff2'), url('font_TTCommonsProNormalItalic.woff') format('woff');
+}
+
+
+
+@font-face {
+  font-family: "TTCommonsProExtraBlack";
+  src: url('font_TTCommonsProExtraBlack.woff2') format('woff2'), url('font_TTCommonsProExtraBlack.woff') format('woff');
+}
+@font-face {
+  font-family: "TTCommonsProExtraBlackItalic";
+  src: url('font_TTCommonsProExtraBlackItalic.woff2') format('woff2'), url('font_TTCommonsProExtraBlackItalic.woff') format('woff');
+}
+
+*/
 .contact img {
   max-width: 100%;
 }
@@ -34,4 +206,215 @@
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 2rem;
   }
+}
+section.section-contact-form {
+  margin: 50px 0px;
+}
+section.section-contact-form .inner {
+  padding: 0px 20px;
+}
+@media (min-width: 768px) {
+  section.section-contact-form {
+    margin: 95px 0px;
+  }
+  section.section-contact-form .inner {
+    padding: 0px 40px;
+  }
+}
+section.section-contact-form h2 {
+  font-size: 34px;
+  margin: 0px 0px 30px 0px;
+  font-weight: 900;
+  color: #0094DA;
+  text-align: center;
+  line-height: 1.1em;
+  width: 100%;
+  letter-spacing: 0.8px;
+}
+@media (min-width: 768px) {
+  section.section-contact-form h2 {
+    font-size: 71px;
+    margin: 0px 0px 40px 0px;
+  }
+}
+section.section-contact-form .versus-selects {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+section.section-contact-form .select-wrap {
+  position: relative;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  section.section-contact-form .select-wrap {
+    width: 100%;
+  }
+}
+section.section-contact-form select,
+section.section-contact-form .select2-container--default .select2-selection--single {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  font-weight: 900;
+  background: #E3E3E3;
+  border: 0px !important;
+  height: auto;
+  font-size: 11px;
+  color: #000F44;
+  text-transform: uppercase;
+  border-radius: 50px !important;
+  padding: 15px 15px !important;
+  text-align: left;
+  letter-spacing: 0.5px;
+  line-height: 1em;
+  width: 100%;
+  font-family: "TT Commons", sans-serif;
+}
+section.section-contact-form select[aria-expanded=true],
+section.section-contact-form .select2-container--default .select2-selection--single[aria-expanded=true] {
+  color: #ffffff;
+}
+section.section-contact-form select[aria-expanded=true]::before,
+section.section-contact-form .select2-container--default .select2-selection--single[aria-expanded=true]::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 51%;
+  left: 0px;
+  width: 1px;
+  height: 40px;
+  z-index: -1;
+  background: #e3e3e3;
+}
+section.section-contact-form select[aria-expanded=true]::after,
+section.section-contact-form .select2-container--default .select2-selection--single[aria-expanded=true]::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 51%;
+  right: 0px;
+  width: 1px;
+  height: 40px;
+  z-index: -1;
+  background: #e3e3e3;
+}
+section.section-contact-form select:active, section.section-contact-form select:focus,
+section.section-contact-form .select2-container--default .select2-selection--single:active,
+section.section-contact-form .select2-container--default .select2-selection--single:focus {
+  background: #0094DA;
+  color: #ffffff !important;
+}
+section.section-contact-form select:active .select2-selection__rendered, section.section-contact-form select:focus .select2-selection__rendered,
+section.section-contact-form .select2-container--default .select2-selection--single:active .select2-selection__rendered,
+section.section-contact-form .select2-container--default .select2-selection--single:focus .select2-selection__rendered {
+  background: #0094DA;
+  color: #ffffff !important;
+}
+@media (min-width: 768px) {
+  section.section-contact-form select,
+  section.section-contact-form .select2-container--default .select2-selection--single {
+    font-size: 22px;
+    letter-spacing: 2px;
+    padding: 15px !important;
+    text-align: center;
+  }
+}
+
+/* Select2 Dropdown Overrides */
+.select2-results__options {
+  text-align: center;
+  font-size: 12px;
+  color: #000F44;
+  font-family: "TT Commons", sans-serif;
+  font-weight: 600;
+  padding-top: 20px;
+}
+.select2-results__options li {
+  position: relative;
+  padding: 6px 20px;
+  background: transparent !important;
+}
+.select2-results__options li::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  width: 80%;
+  left: 10%;
+  display: block;
+  height: 1px;
+  background: #e3e3e3;
+}
+.select2-results__options li:first-child::before {
+  display: none;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding: 0px;
+  line-height: 1em;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: 50%;
+  right: 13px;
+  width: 7px;
+  height: 7px;
+  transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+  .select2-container--default .select2-selection--single .select2-selection__arrow {
+    right: 20px;
+    width: 13px;
+    height: 12px;
+  }
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  border: 0px;
+  transform-origin: center;
+  background: url(select-arrow-down.svg) center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+  border: 0px;
+  background: url(select-arrow-up.svg) center no-repeat;
+  background-size: cover;
+}
+
+section.section-contact-form .select2-container--default .select2-selection--single:active .select2-selection__arrow b,
+section.section-contact-form .select2-container--default .select2-selection--single:focus .select2-selection__arrow b {
+  background: url(select-arrow-up.svg) center no-repeat;
+  transform: rotate(180deg);
+}
+
+.select2-dropdown {
+  border-radius: 30px;
+  border-color: #E3E3E3;
+}
+
+.select2-container--default .select2-results__option--selectable {
+  background: transparent !important;
+  color: #000F44;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  background: transparent !important;
+  color: #0040A8;
+}
+
+.select2-container--default .select2-results__option--highlighted {
+  background: transparent !important;
+  color: #0040A8;
+}
+
+.select2-container--default .select2-results__option--selected {
+  background: transparent !important;
+  color: #0040A8;
 }
