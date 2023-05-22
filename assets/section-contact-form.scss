@@ -11,8 +11,13 @@ form.form-contact-form {
     &::after {
         box-shadow:none !important;
         border-radius:0px;  
-        border-bottom:1px solid $dark_blue;
+        display: none;
     }
+  }
+
+  .field__input {
+    box-shadow:none !important;
+    border-bottom:1px solid $dark_blue;
   }
 
  

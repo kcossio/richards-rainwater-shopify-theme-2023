@@ -176,6 +176,10 @@ form.form-contact-form {
 form.form-contact-form .field::after {
   box-shadow: none !important;
   border-radius: 0px;
+  display: none;
+}
+form.form-contact-form .field__input {
+  box-shadow: none !important;
   border-bottom: 1px solid #000F44;
 }
 
