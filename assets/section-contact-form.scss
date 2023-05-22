@@ -7,15 +7,15 @@ form.form-contact-form {
 
   border:1px solid $orange;
 
-  .field__input {
-      &::after {
-          display:none !important;
+ 
+}
+.field__input {
+  &::after {
+      display:none !important;
 
-          border-bottom:1px solid $dark_blue;
-      }
+      border-bottom:1px solid $dark_blue;
   }
 }
-
 .contact img {
   max-width: 100%;
 }
