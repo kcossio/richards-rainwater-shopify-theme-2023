@@ -1390,7 +1390,7 @@ section.newsletter-cloud {
   .terms-policies ul {
     flex-wrap: nowrap;
     justify-content: flex-start;
-    margin: 0px;
+    margin: 0px 20px 0px 0px;
   }
 }
 .terms-policies ul li {

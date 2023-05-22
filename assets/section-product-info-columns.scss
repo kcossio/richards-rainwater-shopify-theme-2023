@@ -12,7 +12,7 @@ section.section-product-info-box-drops {
     background:$dark_blue;
 
     @include breakpoint(tablet) {
-        padding:98px 0px 0px 0px;
+        padding:0px 0px 0px 0px;
     }
 
     &.w-clouds {
