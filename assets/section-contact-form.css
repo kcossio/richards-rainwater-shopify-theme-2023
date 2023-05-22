@@ -170,9 +170,6 @@ EASING
 }
 
 */
-form.form-contact-form {
-  border: 1px solid #FFA500;
-}
 form.form-contact-form .field::after {
   box-shadow: none !important;
   border-radius: 0px;
@@ -181,6 +178,10 @@ form.form-contact-form .field::after {
 form.form-contact-form .field__input {
   box-shadow: none !important;
   border-bottom: 1px solid #000F44;
+  border-radius: 0px;
+}
+form.form-contact-form .field__input:active, form.form-contact-form .field__input:focus {
+  border-bottom: 1px solid #FFA500;
 }
 
 .contact img {
