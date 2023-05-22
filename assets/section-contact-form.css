@@ -237,11 +237,6 @@ section.section-contact-form h2 {
     margin: 0px 0px 40px 0px;
   }
 }
-section.section-contact-form .versus-selects {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
 section.section-contact-form .select-wrap {
   position: relative;
   width: 100%;

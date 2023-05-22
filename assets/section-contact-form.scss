@@ -74,13 +74,6 @@ section.section-contact-form {
       }
   }
 
-  .versus-selects {
-      width:100%;
-      display:flex;
-      justify-content:space-between;
-  }
-
-
 
   .select-wrap {
       position:relative;
@@ -90,6 +83,7 @@ section.section-contact-form {
       }
 
   }
+  
   select,
   .select2-container--default .select2-selection--single {
       appearance: none;
