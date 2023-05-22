@@ -18,6 +18,10 @@ ul.careers-list {
         &:nth-child(odd) {
             a {
                 background:#f4f4f4;
+
+                h2::before {
+                    background-image:url(icon-drop-med-blue.svg);
+                  }
             }
         }
 
@@ -36,6 +40,20 @@ ul.careers-list {
             h2 {
                 margin:0px;
                 font-size:16px;
+                position:relative;
+
+                &::before {
+                    content:"";
+                    display:block;
+                    position:relative;
+                    margin-right:12px;
+                    aspect-ratio: 20.32 / 28.57;
+                    width:16px;
+                    height:auto;
+                    background-image:url(icon-drop-light-blue.svg);
+                    background-size:100% 100%;
+                  }
+
             }
             
             span.button {

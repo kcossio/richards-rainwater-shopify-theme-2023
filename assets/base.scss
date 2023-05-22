@@ -3270,7 +3270,7 @@ main {
   overflow-x:clip;
 
   &:not(.main-home) {
-    padding-top:40px;
+    padding-top:70px;
 
     @include breakpoint(tablet) {
       padding-top:98px;

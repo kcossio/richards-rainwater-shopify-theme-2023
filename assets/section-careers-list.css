@@ -185,6 +185,9 @@ ul.careers-list li {
 ul.careers-list li:nth-child(odd) a {
   background: #f4f4f4;
 }
+ul.careers-list li:nth-child(odd) a h2::before {
+  background-image: url(icon-drop-med-blue.svg);
+}
 ul.careers-list li a {
   display: flex;
   flex-wrap: wrap;
@@ -200,6 +203,18 @@ ul.careers-list li a {
 ul.careers-list li a h2 {
   margin: 0px;
   font-size: 16px;
+  position: relative;
+}
+ul.careers-list li a h2::before {
+  content: "";
+  display: block;
+  position: relative;
+  margin-right: 12px;
+  aspect-ratio: 20.32/28.57;
+  width: 16px;
+  height: auto;
+  background-image: url(icon-drop-light-blue.svg);
+  background-size: 100% 100%;
 }
 ul.careers-list li a span.button {
   display: none;

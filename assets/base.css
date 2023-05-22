@@ -3316,7 +3316,7 @@ main {
   overflow-x: clip;
 }
 main:not(.main-home) {
-  padding-top: 40px;
+  padding-top: 70px;
 }
 @media (min-width: 768px) {
   main:not(.main-home) {
