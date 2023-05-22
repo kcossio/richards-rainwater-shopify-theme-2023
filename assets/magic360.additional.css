@@ -57,6 +57,19 @@ div.MagicToolboxSelectorsContainer {
     text-align:center;
     display: block;
 }
+.MagicToolboxMessage::before {
+    content:"";
+    display:block;
+    position:absolute;
+    bottom:100%;
+    width:345px;
+    aspect-ratio: 200 / 23px;
+    height:auto;
+    left:0px;
+    transform:translate(-50%, 0%);
+    background:url(images/spin-arrow.svg) top center no-repeat;
+    background-size:cover;
+}
 div.MagicToolboxSelectorsContainer a {
     display: inline-block;
     margin: 4px;
