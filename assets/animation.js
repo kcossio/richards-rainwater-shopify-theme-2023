@@ -162,10 +162,10 @@
                     start: "top bottom",
                     end: "bottom top",        
                     toggleClass: "scrubbing",
-                    scrub: .5
+                    scrub: .75
                 },
                 xPercent: -100,
-                ease:"sine.inOut"
+                ease:"ease"
                 })
             });
 
@@ -177,10 +177,10 @@
                     start: "top bottom",
                     end: "bottom top",        
                     toggleClass: "scrubbing",
-                    scrub: .5
+                    scrub: .75
                 },
                 xPercent: 100,
-                ease:"sine.inOut"
+                ease:"ease"
                 })
             });
 
