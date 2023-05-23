@@ -206,7 +206,7 @@ section.section-product-info-box-drops header {
 }
 @media (min-width: 768px) {
   section.section-product-info-box-drops header {
-    margin: 0px 0px 50px 0px;
+    margin: 0px 0px 20px 0px;
   }
 }
 section.section-product-info-box-drops header h2 {
@@ -217,6 +217,12 @@ section.section-product-info-box-drops header h2 {
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
+  section.section-product-info-box-drops header h2 {
+    font-size: 45px;
+    text-transform: none;
+  }
+}
+@media (min-width: 1280px) {
   section.section-product-info-box-drops header h2 {
     font-size: 75px;
     text-transform: none;
