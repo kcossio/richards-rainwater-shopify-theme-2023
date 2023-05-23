@@ -434,7 +434,7 @@ ul.model-blocks li {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   margin: 0px 0px 32px 0px;
 }
