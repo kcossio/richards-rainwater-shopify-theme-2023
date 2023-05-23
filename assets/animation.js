@@ -165,7 +165,7 @@
                     scrub: .5
                 },
                 xPercent: -100,
-                ease:"power4.out"
+                ease:"sine.inOut"
                 })
             });
 
@@ -180,7 +180,7 @@
                     scrub: .5
                 },
                 xPercent: 100,
-                ease:"power4.out"
+                ease:"sine.inOut"
                 })
             });
 
