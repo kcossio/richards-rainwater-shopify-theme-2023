@@ -1836,6 +1836,9 @@ section.newsletter-cloud {
   font-weight: 900;
   font-size: 15px;
 }
+.newsletter-form__button:hover {
+  background: #0094DA;
+}
 @media (min-width: 768px) {
   .newsletter-form__button {
     padding: 0px 32px;

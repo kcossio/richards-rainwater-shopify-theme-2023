@@ -211,6 +211,10 @@
     font-weight: 900;
     font-size:15px;
 
+    &:hover {
+      background:$light_blue;
+    }
+
     @include breakpoint(tablet) {
       padding:0px 32px;
       font-size:22px;
