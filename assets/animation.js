@@ -162,7 +162,7 @@
                     start: "top bottom",
                     end: "bottom top",        
                     toggleClass: "scrubbing",
-                    scrub: .75
+                    scrub: true
                 },
                 xPercent: -100,
                 ease:"ease"
@@ -177,7 +177,7 @@
                     start: "top bottom",
                     end: "bottom top",        
                     toggleClass: "scrubbing",
-                    scrub: .75
+                    scrub: true
                 },
                 xPercent: 100,
                 ease:"ease"
