@@ -165,7 +165,7 @@
                     scrub: .5
                 },
                 xPercent: -100,
-                ease:"none"
+                ease:"ease"
                 })
             });
 
@@ -180,7 +180,7 @@
                     scrub: .5
                 },
                 xPercent: 100,
-                ease:"none"
+                ease:"ease"
                 })
             });
 
