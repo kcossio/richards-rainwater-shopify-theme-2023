@@ -701,6 +701,9 @@ EASING
 .clouds .scrub {
   animation: none;
 }
+.clouds .scrub.secondary {
+  left: 100%;
+}
 @keyframes primary {
   from {
     left: 0%;

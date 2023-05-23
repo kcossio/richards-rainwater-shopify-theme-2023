@@ -164,14 +164,14 @@
                     toggleClass: "scrubbing",
                     scrub: true
                 },
-                xPercent: -100,
+                xPercent: -50,
                 ease:"ease"
                 })
             });
 
             const scrubCloudsSecondary = gsap.utils.toArray('.scrub.secondary');
             scrubCloudsSecondary.forEach(box => {
-                gsap.from(box, { 
+                gsap.to(box, { 
                     scrollTrigger: {
                     trigger: box,
                     start: "top bottom",
@@ -179,7 +179,7 @@
                     toggleClass: "scrubbing",
                     scrub: true
                 },
-                xPercent: 100,
+                xPercent: -50,
                 ease:"ease"
                 })
             });

@@ -68,6 +68,14 @@
       }
       .scrub {
         animation:none;
+
+        &.primary {
+
+        }
+
+        &.secondary {
+          left:100%;
+        }
       }
       
       @keyframes primary {
