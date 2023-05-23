@@ -340,4 +340,8 @@ section.aisle .aisle-terms p {
   text-transform: uppercase;
   width: 100%;
   letter-spacing: 3px;
+  transition: all 0.3s ease 0s;
+}
+.aisle-form-button-container button.aisle-form-button:hover {
+  background-color: #0094DA;
 }
