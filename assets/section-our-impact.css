@@ -171,11 +171,11 @@ EASING
 
 */
 section.our-impact {
-  margin: 60px 0px;
+  margin: 60px 0px 80px 0px;
 }
 @media (min-width: 768px) {
   section.our-impact {
-    margin: 134px 0px 110px 0px;
+    margin: 80px 0px 13vw 0px;
   }
 }
 section.our-impact .inner {
@@ -215,11 +215,11 @@ section.our-impact .impact-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 40px 0px 80px 0px;
+  margin: 40px 0px 40px 0px;
 }
 @media (min-width: 768px) {
   section.our-impact .impact-items {
-    margin: 80px 0px 13vw 0px;
+    margin: 80px 0px 100px 0px;
   }
 }
 section.our-impact .impact-items .impact-item {
