@@ -153,6 +153,35 @@
             })
         });
 
+            // Slide title
+            const scrubCloudsPrimary = gsap.utils.toArray('.scrub.primary');
+            scrubCloudsPrimary.forEach(box => {
+                gsap.to(box, { 
+                    scrollTrigger: {
+                    trigger: box,
+                    start: "top bottom",
+                    end: "bottom top",        
+                    toggleClass: "scrubbing",
+                    scrub: "true"
+                },
+                xPercent: -100
+                })
+            });
+
+            const scrubCloudsSecondary = gsap.utils.toArray('.scrub.secondary');
+            scrubCloudsSecondary.forEach(box => {
+                gsap.from(box, { 
+                    scrollTrigger: {
+                    trigger: box,
+                    start: "top bottom",
+                    end: "bottom top",        
+                    toggleClass: "scrubbing",
+                    scrub: "true"
+                },
+                xPercent: 100
+                })
+            });
+
         const animateMe = gsap.utils.toArray('.animate');
         animateMe.forEach(box => {
             gsap.to(box, { 

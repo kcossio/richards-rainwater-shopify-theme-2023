@@ -698,6 +698,9 @@ EASING
 .clouds .secondary.bg {
   top: 50%;
 }
+.clouds .scrub {
+  animation: none;
+}
 @keyframes primary {
   from {
     left: 0%;
