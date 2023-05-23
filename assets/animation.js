@@ -160,7 +160,7 @@
                     scrollTrigger: {
                     trigger: box,
                     start: "top bottom",
-                    end: "bottom 40%",        
+                    end: "top 20%",        
                     toggleClass: "scrubbing",
                     scrub: .75
                 },
@@ -175,7 +175,7 @@
                     scrollTrigger: {
                     trigger: box,
                     start: "top bottom",
-                    end: "bottom 40%",        
+                    end: "top 20%",        
                     toggleClass: "scrubbing",
                     scrub: .75
                 },
