@@ -236,12 +236,16 @@ EASING
   margin-right: 10px;
   position: relative;
   z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
 }
 @media (min-width: 768px) {
   .timeline-wrap .timeline-slide .timeline-block-content {
     width: 560px;
     height: 486px;
-    padding: 6.9vw 5.7vw;
+    padding: 40px 5.7vw;
     margin-right: 10px;
   }
 }
