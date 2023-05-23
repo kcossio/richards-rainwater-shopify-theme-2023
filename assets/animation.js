@@ -154,23 +154,8 @@
         });
 
             // Slide title
-            const scrubCloudsPrimary = gsap.utils.toArray('.scrub.primary');
-            scrubCloudsPrimary.forEach(box => {
-                gsap.to(box, { 
-                    scrollTrigger: {
-                    trigger: box,
-                    start: "top bottom",
-                    end: "bottom top",        
-                    toggleClass: "scrubbing",
-                    scrub: true
-                },
-                xPercent: -50,
-                ease:"ease"
-                })
-            });
-
-            const scrubCloudsSecondary = gsap.utils.toArray('.scrub.secondary');
-            scrubCloudsSecondary.forEach(box => {
+            const scrubClouds = gsap.utils.toArray('.scrub.primary');
+            scrubClouds.forEach(box => {
                 gsap.to(box, { 
                     scrollTrigger: {
                     trigger: box,

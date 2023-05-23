@@ -663,7 +663,7 @@ EASING
   top: 0px;
   left: 0px;
   min-width: 100%;
-  height: auto;
+  height: 56px;
   aspect-ratio: 512/56;
 }
 .clouds .scroll-element {
@@ -673,7 +673,6 @@ EASING
   display: block;
   left: 0%;
   top: 0%;
-  animation: primary 10s linear infinite;
 }
 .clouds .scroll-element img {
   position: absolute;
@@ -704,9 +703,27 @@ EASING
 }
 .clouds .scrub {
   animation: none;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: repeat-x;
+  width: 200%;
 }
-.clouds .scrub.secondary {
-  left: 100%;
+.clouds.clouds-mobile {
+  width: 100vw;
+  aspect-ratio: 512/56;
+}
+.clouds.clouds-mobile .scroll-parent {
+  aspect-ratio: 512/56;
+}
+.clouds.bottom {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+.clouds.top {
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 @keyframes primary {
   from {
@@ -723,33 +740,6 @@ EASING
   to {
     left: 0%;
   }
-}
-.clouds.clouds-mobile {
-  width: 100vw;
-  aspect-ratio: 512/56;
-}
-.clouds.clouds-mobile .scroll-parent {
-  aspect-ratio: 512/56;
-}
-.clouds.clouds-wide {
-  aspect-ratio: 1877/188;
-}
-.clouds.clouds-wide .scroll-parent {
-  aspect-ratio: 1877/188;
-}
-.clouds.bottom {
-  aspect-ratio: 1876/188;
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-}
-.clouds.bottom .scroll-parent {
-  aspect-ratio: 1876/188;
-}
-.clouds.top {
-  position: absolute;
-  left: 0px;
-  top: 0px;
 }
 
 /* -------- GSAP Animate Elements ------- */

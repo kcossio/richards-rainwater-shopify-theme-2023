@@ -24,7 +24,7 @@
         top:0px;
         left:0px;
         min-width:100%;
-        height:auto;
+        height:56px;
         aspect-ratio: 512 / 56;
      }
 
@@ -35,7 +35,7 @@
         display:block;
         left: 0%;
         top: 0%;
-        animation: primary 10s linear infinite;
+        //animation: primary 10s linear infinite;
 
         img {
             position:absolute;
@@ -72,33 +72,13 @@
       }
       .scrub {
         animation:none;
-
-        &.primary {
-
-        }
-
-        &.secondary {
-          left:100%;
-        }
+        background-size: auto 100%;
+        background-position: center;
+        background-repeat: repeat-x;
+        width:200%;
+        
       }
       
-      @keyframes primary {
-        from {
-          left: 0%;
-        }
-        to {
-          left: -100%;
-        }
-      }
-      
-      @keyframes secondary {
-        from {
-          left: 100%;
-        }
-        to {
-          left: 0%;
-        }
-      }
 
     &.clouds-mobile {
         width:100vw;
@@ -109,20 +89,10 @@
         }
     }
 
-    &.clouds-wide {
-        aspect-ratio: 1877 / 188;
-
-        .scroll-parent {
-            aspect-ratio: 1877 / 188;
-        }
-    }
+    
 
     &.bottom {
-        aspect-ratio: 1876 / 188;
-
-        .scroll-parent {
-            aspect-ratio: 1876 / 188;
-        }
+        
         position:absolute;
         left:0px;
         bottom:0px;
@@ -131,6 +101,25 @@
       position:absolute;
       left:0px;
       top:0px;
+    }
+
+
+  @keyframes primary {
+    from {
+      left: 0%;
+    }
+    to {
+      left: -100%;
+    }
+  }
+  
+  @keyframes secondary {
+    from {
+      left: 100%;
+    }
+    to {
+      left: 0%;
+    }
   }
 
 }
