@@ -162,9 +162,10 @@
                     start: "top bottom",
                     end: "bottom top",        
                     toggleClass: "scrubbing",
-                    scrub: "true"
+                    scrub: .5
                 },
-                xPercent: -100
+                xPercent: -100,
+                ease:"none"
                 })
             });
 
@@ -176,9 +177,10 @@
                     start: "top bottom",
                     end: "bottom top",        
                     toggleClass: "scrubbing",
-                    scrub: "true"
+                    scrub: .5
                 },
-                xPercent: 100
+                xPercent: 100,
+                ease:"none"
                 })
             });
 
