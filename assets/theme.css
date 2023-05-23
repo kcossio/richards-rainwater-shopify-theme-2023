@@ -1497,7 +1497,7 @@ section.newsletter-cloud {
 }
 
 .product__media-wrapper stars {
-  z-index: -1;
+  z-index: 1;
 }
 
 .product-faqs {
