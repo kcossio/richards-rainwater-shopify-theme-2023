@@ -1496,6 +1496,10 @@ section.newsletter-cloud {
   fill: #ffffff;
 }
 
+.product__media-wrapper stars {
+  z-index: -1;
+}
+
 .product-faqs {
   padding: 60px 0px;
 }

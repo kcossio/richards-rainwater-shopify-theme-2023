@@ -50,4 +50,8 @@
         }
     }
   }
-  
+  .product__media-wrapper {
+    stars {
+        z-index:-1;
+    }
+  }

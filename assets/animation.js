@@ -423,7 +423,7 @@
         gsap.set('.product-grid-animate', {opacity:0, y:25 });
         ScrollTrigger.batch(".product-grid-animate", {
             start: "top 90%",
-            onEnter: batch => gsap.to(batch, {opacity: 1, y: 0, stagger: {each: 0.15}, ease: Bounce.easeIn, overwrite: true}),
+            onEnter: batch => gsap.to(batch, {opacity: 1, y: 0, stagger: {each: 0.15}, overwrite: true}),
             onLeave: batch => gsap.set(batch, {opacity: 0, y: -25, overwrite: true}),
             onEnterBack: batch => gsap.to(batch, {opacity: 1, y: 0, stagger: 0.15, overwrite: true}),
             onLeaveBack: batch => gsap.set(batch, {opacity: 0, y: 25, overwrite: true})
