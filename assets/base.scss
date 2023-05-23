@@ -1472,6 +1472,7 @@ button.shopify-payment-button__button--unbranded {
   transition: all .3s ease 0s;
   -webkit-appearance: none;
   appearance: none;
+  z-index:2;
 
   @include breakpoint(tablet) {
     padding:1.8rem 4rem
