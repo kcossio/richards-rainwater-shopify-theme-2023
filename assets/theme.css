@@ -702,6 +702,7 @@ EASING
   top: 50%;
 }
 .clouds .scrub {
+  height: 100%;
   animation: none;
   background-size: auto 100%;
   background-position: center;
