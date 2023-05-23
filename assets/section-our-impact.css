@@ -227,6 +227,11 @@ section.our-impact .impact-items .impact-item {
   text-align: center;
   margin: 0px 0px 30px 0px;
 }
+@media (min-width: 768px) {
+  section.our-impact .impact-items .impact-item {
+    width: 26%;
+  }
+}
 section.our-impact .impact-items .impact-item h3 {
   margin: 16px 0px 10px 0px;
   line-height: 1em;
@@ -256,9 +261,4 @@ section.our-impact .impact-items .impact-item p {
 }
 section.our-impact .impact-items .impact-item img {
   height: auto;
-}
-@media (min-width: 768px) {
-  section.our-impact .impact-items .impact-item {
-    width: 30%;
-  }
 }
