@@ -164,7 +164,7 @@
                     toggleClass: "scrubbing",
                     scrub: true
                 },
-                xPercent: -50,
+                xPercent: -25,
                 ease:"ease"
                 })
             });
