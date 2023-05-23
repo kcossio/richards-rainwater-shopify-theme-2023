@@ -58,6 +58,7 @@
       
       .secondary {
         animation: secondary 10s linear infinite;
+        left:100%;
     
         &.slow {
             animation: secondary 20s linear infinite;
