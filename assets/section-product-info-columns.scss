@@ -177,7 +177,18 @@ section.section-product-info-box-drops {
             @include breakpoint(tablet) {
 
                 span {
-                    font-size:106px;
+                    font-size:7vw;
+
+                    &.rainwater {
+                        font-size:7vw;
+                    }
+                }
+                
+            }
+            @include breakpoint(laptop) {
+
+                span {
+                    font-size:8.5vw;
 
                     &.rainwater {
                         font-size:8.5vw;
