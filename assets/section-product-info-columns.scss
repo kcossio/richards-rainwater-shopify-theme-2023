@@ -140,6 +140,13 @@ section.section-product-info-box-drops {
                 max-width:41%;
                 width:auto;
                 height:auto;
+
+                @include breakpoint(tablet) {
+                    width:31%;
+                }
+                @include breakpoint(desktopwide) {
+                    width:25%;
+                }
             }
 
             &.single {
@@ -203,10 +210,10 @@ section.section-product-info-box-drops {
             @include breakpoint(desktopwide) {
 
                 span {
-                    font-size:106px;
+                    font-size:6vw;
 
                     &.rainwater {
-                        font-size:122px;
+                        font-size:6vw;
                     }
                 }
                 
