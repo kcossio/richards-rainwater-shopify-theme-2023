@@ -434,6 +434,7 @@ ul.model-blocks li {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: space-between;
   margin: 0px 0px 32px 0px;
 }
@@ -463,6 +464,7 @@ ul.model-blocks li .model-block-content {
 @media (min-width: 768px) {
   ul.model-blocks li .model-block-content {
     width: 45%;
+    padding: 20px 15vw 20px 5vw;
   }
 }
 ul.model-blocks li .model-block-content h3 {

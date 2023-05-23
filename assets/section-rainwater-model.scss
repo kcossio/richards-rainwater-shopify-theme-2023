@@ -97,6 +97,7 @@ ul.model-blocks{
         display:flex;
         width:100%;
         flex-wrap:wrap;
+        align-items:flex-start;
         justify-content:space-between;
         margin:0px 0px 32px 0px;
 
@@ -124,6 +125,7 @@ ul.model-blocks{
 
             @include breakpoint(tablet) {
                 width:45%;
+                padding:20px 15vw 20px 5vw
             }
 
             h3 {
