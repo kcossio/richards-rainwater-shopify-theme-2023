@@ -153,7 +153,7 @@
             })
         });
 
-            // Slide title
+            // Scrub Clouds
             const scrubClouds = gsap.utils.toArray('.scrub');
             scrubClouds.forEach(box => {
                 gsap.to(box, { 
