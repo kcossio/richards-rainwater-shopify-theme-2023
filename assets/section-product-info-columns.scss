@@ -196,17 +196,6 @@ section.section-product-info-box-drops {
                 }
                 
             }
-            @include breakpoint(laptop) {
-
-                span {
-                    font-size:8.5vw;
-
-                    &.rainwater {
-                        font-size:8.5vw;
-                    }
-                }
-                
-            }
             @include breakpoint(desktopwide) {
 
                 span {

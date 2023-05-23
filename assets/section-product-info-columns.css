@@ -366,14 +366,6 @@ section.section-product-info-box-drops .product-info-col h2 span.rainwater {
     font-size: 7vw;
   }
 }
-@media (min-width: 1280px) {
-  section.section-product-info-box-drops .product-info-col h2 span {
-    font-size: 8.5vw;
-  }
-  section.section-product-info-box-drops .product-info-col h2 span.rainwater {
-    font-size: 8.5vw;
-  }
-}
 @media (min-width: 1680px) {
   section.section-product-info-box-drops .product-info-col h2 span {
     font-size: 6vw;
