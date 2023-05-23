@@ -253,7 +253,7 @@ section.section-product-info-box-drops {
             top:50%;
         }
         
-        @include breakpoint(tablet) {
+        @include breakpoint(laptop) {
             width:120px;
         }
 

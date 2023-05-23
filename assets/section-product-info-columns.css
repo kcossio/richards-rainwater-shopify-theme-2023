@@ -411,7 +411,7 @@ section.section-product-info-box-drops .info-drop.info-drop-3 {
   left: 9.2%;
   top: 50%;
 }
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   section.section-product-info-box-drops .info-drop {
     width: 120px;
   }
