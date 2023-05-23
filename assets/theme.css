@@ -649,7 +649,16 @@ EASING
   overflow: hidden;
   position: relative;
   width: 200vw;
+  height: 56px;
   height: auto;
+}
+.clouds.scrubme {
+  height: 56px;
+}
+@media (min-width: 768px) {
+  .clouds.scrubme {
+    height: 144px;
+  }
 }
 @media (min-width: 768px) {
   .clouds {
@@ -663,7 +672,7 @@ EASING
   top: 0px;
   left: 0px;
   min-width: 100%;
-  height: 56px;
+  height: 100%;
   aspect-ratio: 512/56;
 }
 .clouds .scroll-element {
