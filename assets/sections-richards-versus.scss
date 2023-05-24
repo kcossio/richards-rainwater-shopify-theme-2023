@@ -259,11 +259,13 @@ section.section-versus .select2-container--default .select2-selection--single:fo
             transform:translate(0%, -50%);
             transition:all .3s ease 0s;
             
+            flex-wrap:wrap;
+            align-items:center;
 
 
             &.active {
                 transform:translate(0%, 0%);
-                display:block;
+                display:flex;
                 opacity:1;
             }
 
@@ -272,13 +274,23 @@ section.section-versus .select2-container--default .select2-selection--single:fo
                 height:auto;
                 margin:0px auto;
             }
+            .vs-info-box-content {
+                width:60%;
+
+                h3 {
+                    font-size:20px;
+                    text-transform:uppercase;
+                    margin:0px 0px 8px 0px;
+                    line-height:1.2em;
+
+                    @include breakpoint(tablet) {
+                        font-size:28px;
+                    }
+                }
+            }
             @include breakpoint(tablet) {
 
-                
-
                 display:none;
-                flex-wrap:wrap;
-                align-items:center;
                 text-align:left;
                 img {
                     width:28%;
