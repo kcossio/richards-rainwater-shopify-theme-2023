@@ -193,11 +193,17 @@ section.home-bottles-copy + section {
   width: 100%;
   order: 2;
   position: relative;
+  filter: drop-shadow(30px 42px 16px rgba(0, 0, 0, 0.15));
 }
 @media (min-width: 768px) {
   .home-bottles-intro .home-intro-left {
     order: 1;
     width: 50%;
+  }
+}
+@media (min-width: 1280px) {
+  .home-bottles-intro .home-intro-left {
+    filter: drop-shadow(40px 56px 21px rgba(0, 0, 0, 0.15));
   }
 }
 .home-bottles-intro .home-intro-left img.float {

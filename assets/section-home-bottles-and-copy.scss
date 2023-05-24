@@ -24,10 +24,14 @@ section.home-bottles-copy {
         width:100%;
         order:2;
         position:relative;
+        filter:drop-shadow(30px 42px 16px rgba(0,0,0,.15));
 
         @include breakpoint(tablet) {
             order:1;
             width:50%;
+        }
+        @include breakpoint(laptop) {
+            filter:drop-shadow(40px 56px 21px rgba(0,0,0,.15));
         }
 
         img.float {
