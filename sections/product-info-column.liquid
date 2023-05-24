@@ -40,21 +40,21 @@
         
    
         {%- if block.settings.drop_message_1_of_3 != blank -%}
-          <div class="info-drop info-drop-1 fade-in-left float-sm">
+          <div class="info-drop info-drop-1 fade-in">
             <a class="drop-clickme">{% render 'drop-plus', class: drop_color %}</a>
             <p class="info-drop-message">{{ block.settings.drop_message_1_of_3 }} </p>
           </div>
         {%- endif -%}
 
         {%- if block.settings.drop_message_2_of_3 != blank -%}
-          <div class="info-drop info-drop-2 fade-in float-md">
+          <div class="info-drop info-drop-2 fade-in">
             <a class="drop-clickme">{% render 'drop-plus', class: drop_color %}</a>
             <p class="info-drop-message">{{ block.settings.drop_message_2_of_3 }} </p>
           </div>
         {%- endif -%}
         
         {%- if block.settings.drop_message_3_of_3 != blank -%}
-          <div class="info-drop info-drop-3 fade-in-right float-lg">
+          <div class="info-drop info-drop-3 fade-in-right">
             <a class="drop-clickme">{% render 'drop-plus', class: drop_color %}</a>
             <p class="info-drop-message">{{ block.settings.drop_message_3_of_3 }} </p>
           </div>
