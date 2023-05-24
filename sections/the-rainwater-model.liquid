@@ -11,15 +11,13 @@
       <img class="bg-parallax" src="{{ 'bg-rainbow.svg' | asset_url }}>" width="1923" height="2042" role="presentation" alt="rainbow" />
     </div>-->
 
-    <div class="clouds clouds-wide bottom">
-      <div class="scroll-parent">
-        <div class="scroll-element slow primary">
-          <img class="cloud" src="{{ 'cloud-wide.svg' | asset_url }}>" width="1877" height="188" role="presentation" alt="cloud" />
-        </div>
-        <div class="scroll-element slow secondary">
-          <img class="cloud" src="{{ 'cloud-wide.svg' | asset_url }}>" width="1877" height="188" role="presentation" alt="cloud" />
-        </div>
+    {% ## ----- Clouds ------ -## %}  
+    <div class="clouds clouds-wide bottom scrubme">
+        <div class="scroll-parent">
+          <div class="scroll-element scrub" style="background-image:url({{ 'cloud-wide.svg' | asset_url }});">
+          </div>
       </div>
+      {% ## ----- End Clouds ------ -## %}
 
     
 </section><!--End rainbowbanner-->

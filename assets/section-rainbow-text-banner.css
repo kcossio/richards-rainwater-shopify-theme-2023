@@ -203,8 +203,8 @@ section.rainbow-banner h2 {
   }
 }
 @media (min-width: 1680px) {
-  section.rainbow-banner h2 {
-    font-size: 89px;
+  section.rainbow-banner .inner {
+    width: 1440px;
   }
 }
 section.rainbow-banner .inner.center h2 {

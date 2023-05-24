@@ -31,11 +31,15 @@ section.rainbow-banner {
             font-size:6.2vw;
         }
         @include breakpoint(desktopwide) {
-            font-size:89px;
+            //font-size:89px;
         }
     }
 
     .inner {
+        @include breakpoint(desktopwide) {
+            width:1440px;
+        }
+
         &.center {
             h2 {
                 text-align:center;
