@@ -1895,8 +1895,8 @@ section.newsletter-cloud {
 }
 @media (min-width: 768px) {
   .logo-slider img {
-    max-height: 104px;
-    max-width: 256px;
+    max-height: 54px;
+    max-width: 196px;
     margin: 0px 30px;
   }
 }
