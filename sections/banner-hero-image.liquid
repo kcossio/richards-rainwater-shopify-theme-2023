@@ -11,16 +11,15 @@
     {%- endif -%}
 </div>
 
-
-  <div class="clouds clouds-wide bottom">
+{% ## ----- Clouds ------ -## %}  
+<div class="clouds clouds-wide bottom scrubme">
     <div class="scroll-parent">
-      <div class="scroll-element slow primary">
-        <img class="cloud" src="{{ 'cloud-wide-reversed.svg' | asset_url }}>" width="1877" height="188" role="presentation" alt="cloud" />
+      <div class="scroll-element scrub" style="background-image:url({{ 'cloud-wide-reversed.svg' | asset_url }});">
       </div>
-      <div class="scroll-element slow secondary">
-        <img class="cloud" src="{{ 'cloud-wide-reversed.svg' | asset_url }}>" width="1877" height="188" role="presentation" alt="cloud" />
-      </div>
-    </div>
+  </div>
+  {% ## ----- End Clouds ------ -## %}
+
+
 
 
 {% schema %}
