@@ -717,6 +717,8 @@ EASING
   background-position: center;
   background-repeat: repeat-x;
   width: 200%;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
 }
 .clouds.clouds-mobile {
   width: 100vw;

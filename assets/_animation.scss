@@ -90,7 +90,7 @@
         background-position: center;
         background-repeat: repeat-x;
         width:200%;
-        
+        @include animationfix;
       }
       
 
