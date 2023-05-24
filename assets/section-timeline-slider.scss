@@ -14,6 +14,9 @@
     overflow:hidden;
     position:relative;
 
+    .inner.timeline-h2-wrap {
+      width:100%;
+    }
     @include breakpoint(tablet) {
       padding-top:40px;
     }

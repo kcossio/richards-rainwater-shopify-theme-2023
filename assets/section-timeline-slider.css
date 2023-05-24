@@ -178,6 +178,9 @@ EASING
   overflow: hidden;
   position: relative;
 }
+.section-timeline .inner.timeline-h2-wrap {
+  width: 100%;
+}
 @media (min-width: 768px) {
   .section-timeline {
     padding-top: 40px;
