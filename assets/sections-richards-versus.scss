@@ -251,6 +251,7 @@ section.section-versus .select2-container--default .select2-selection--single:fo
 
     .versus-choice-column {
         width:45%;
+        display:flex;
         
         .vs-info-box {
             width:100%;
@@ -270,8 +271,10 @@ section.section-versus .select2-container--default .select2-selection--single:fo
             }
 
             img {
-                width:28%;
+                max-width:28%;
+                max-height: 200px;
                 height:auto;
+                width:auto;
                 margin:0px auto;
             }
             .vs-info-box-content {
@@ -293,12 +296,14 @@ section.section-versus .select2-container--default .select2-selection--single:fo
                 display:none;
                 text-align:left;
                 img {
-                    width:28%;
-                    height:auto;
+                    max-height: 220px;
                 }
                 &.active {
                     display:flex;
                 }
+            }
+            @include breakpoint(laptop) {
+                max-height: 266px;
             }
         }
     }
