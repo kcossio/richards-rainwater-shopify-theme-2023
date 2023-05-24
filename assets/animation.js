@@ -428,9 +428,9 @@
         gsap.set('.icon-item', {opacity:0, y:-25, scale:.3 });
         ScrollTrigger.batch(".icon-item", {
             start: 'top bottom',
-            onEnter: batch => gsap.to(batch, {duration: 1, opacity: 1, y: 0, scale:1, stagger: {each: 0.15}, ease: "bounce.out", overwrite: true}),
+            onEnter: batch => gsap.to(batch, {duration: 1, opacity: 1, y: 0, scale:1, stagger: {each: 0.15}, ease: "elastic.out(1, 0.3)", overwrite: true}),
             onLeave: batch => gsap.set(batch, {opacity: 0, y: -25, scale: .3, overwrite: true}),
-            onEnterBack: batch => gsap.to(batch, {duration: 1, opacity: 1, y: 0, scale: 1, stagger: 0.15, ease: "bounce.out", overwrite: true}),
+            onEnterBack: batch => gsap.to(batch, {duration: 1, opacity: 1, y: 0, scale: 1, stagger: 0.15, ease: "elastic.out(1, 0.3)", overwrite: true}),
             onLeaveBack: batch => gsap.set(batch, {opacity: 0, y: -25,  scale: .3, overwrite: true}),
             
           });
