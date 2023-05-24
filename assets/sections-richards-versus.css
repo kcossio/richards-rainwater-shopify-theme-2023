@@ -469,7 +469,7 @@ section.section-versus .select2-container--default .select2-selection--single:fo
   }
 }
 @media (min-width: 1280px) {
-  .versus-choices-blocks .versus-choice-column .vs-info-box {
+  .versus-choices-blocks .versus-choice-column .vs-info-box img {
     max-height: 266px;
   }
 }

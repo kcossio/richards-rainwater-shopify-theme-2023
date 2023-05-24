@@ -303,7 +303,10 @@ section.section-versus .select2-container--default .select2-selection--single:fo
                 }
             }
             @include breakpoint(laptop) {
-                max-height: 266px;
+
+                img {
+                    max-height: 266px;
+                }
             }
         }
     }
