@@ -269,6 +269,11 @@ section.section-product-info-box-drops {
                 @include breakpoint(tablet) {
                     width:50%;
                 }
+
+                polygon.plus {
+                    transform-origin: 52% 67%;
+                    transition:all .3s ease $easeOutBack;
+                }
             }
 
             transition: all .4s ease 0s;
@@ -303,6 +308,10 @@ section.section-product-info-box-drops {
                 opacity:1;
             }
             
+            polygon.plus {
+                transform:rotate(45deg);
+                fill:$white;
+            }
         }
     }
 }

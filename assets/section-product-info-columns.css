@@ -429,6 +429,10 @@ section.section-product-info-box-drops .info-drop a.drop-clickme svg {
     width: 50%;
   }
 }
+section.section-product-info-box-drops .info-drop a.drop-clickme svg polygon.plus {
+  transform-origin: 52% 67%;
+  transition: all 0.3s ease cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
 section.section-product-info-box-drops .info-drop p {
   color: #ffffff;
   text-align: left;
@@ -454,6 +458,10 @@ section.section-product-info-box-drops .info-drop.open:hover {
 section.section-product-info-box-drops .info-drop.open p {
   transform: translateY(0px);
   opacity: 1;
+}
+section.section-product-info-box-drops .info-drop.open polygon.plus {
+  transform: rotate(45deg);
+  fill: #ffffff;
 }
 
 /* End */
