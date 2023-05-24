@@ -272,7 +272,7 @@ section.section-product-info-box-drops {
 
                 polygon.plus {
                     transform-origin: 52% 67%;
-                    transition:all .3s ease $easeOutBack;
+                    transition:all .3s $easeOutBack 0s;
                 }
             }
 
