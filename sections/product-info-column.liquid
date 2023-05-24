@@ -62,15 +62,15 @@
 
       </div><!--End product-info-col-1-->
 
-      <div class="clouds clouds-wide top">
-        <div class="scroll-parent">
-          <div class="scroll-element slow primary">
-            <img class="cloud" src="{{ 'cloud-wide-top.svg' | asset_url }}>" width="1877" height="188" role="presentation" alt="cloud" />
-          </div>
-          <div class="scroll-element slow secondary">
-            <img class="cloud" src="{{ 'cloud-wide-top.svg' | asset_url }}>" width="1877" height="188" role="presentation" alt="cloud" />
-          </div>
-        </div>
+      {% ## ----- Clouds ------ -## %}  
+<div class="clouds clouds-wide top scrubme">
+    <div class="scroll-parent">
+      <div class="scroll-element scrub" style="background-image:url({{ 'cloud-wide-top.svg' | asset_url }});">
+      </div>
+  </div>
+  {% ## ----- End Clouds ------ -## %}
+
+ 
 
     
 {%- endif -%}
