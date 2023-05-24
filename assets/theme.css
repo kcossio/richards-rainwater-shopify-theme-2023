@@ -1737,6 +1737,7 @@ section.newsletter-cloud {
   width: 60%;
   display: block;
   order: 2;
+  z-index: 3;
 }
 .footer-newsletter .nl-cloud img {
   display: block;
