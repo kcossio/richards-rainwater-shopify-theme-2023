@@ -16,6 +16,7 @@
           "type": "richards_product",
           "settings": {
             "title": "Richard’s® Still Rainwater",
+            "product_image": "shopify:\/\/shop_images\/Richards-Still-product-Beauty.png",
             "product_information": "<p>Lorem ipsum dolor sit amet, consec tetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.<\/p>"
           }
         },
@@ -23,6 +24,7 @@
           "type": "richards_product",
           "settings": {
             "title": "Richard’s® Sparkling Rainwater",
+            "product_image": "shopify:\/\/shop_images\/Richards-Sparkling-product-Beauty.png",
             "product_information": "<p>Lorem ipsum dolor sit amet, consec tetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Ipsum lipsum.<\/p>"
           }
         },
