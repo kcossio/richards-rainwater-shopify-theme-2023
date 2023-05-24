@@ -228,7 +228,7 @@ section.home-bottles-copy + section {
   .home-bottles-intro .home-intro-left img.float.float-2 {
     width: 50.25%;
     left: 40%;
-    margin-top: 0px;
+    margin-top: -60px;
   }
 }
 .home-bottles-intro .home-intro-right {
