@@ -209,6 +209,11 @@ section.section-product-info-box-drops header {
     margin: 0px 0px 20px 0px;
   }
 }
+@media (min-width: 1280px) {
+  section.section-product-info-box-drops header {
+    padding: 76px 40px 40px 40px;
+  }
+}
 section.section-product-info-box-drops header h2 {
   color: #ffffff;
   margin: 0px;
@@ -276,6 +281,11 @@ section.section-product-info-box-drops .product-info-col {
 @media (min-width: 768px) {
   section.section-product-info-box-drops .product-info-col {
     padding: 0px 4vw 60px 4vw;
+  }
+}
+@media (min-width: 1280px) {
+  section.section-product-info-box-drops .product-info-col {
+    padding: 0px 4vw 80px 4vw;
   }
 }
 section.section-product-info-box-drops .product-info-col::before {

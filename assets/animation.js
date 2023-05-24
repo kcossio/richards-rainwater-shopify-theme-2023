@@ -460,7 +460,7 @@
           ScrollTrigger.batch(".letters-row span", {
             toggleClass: "onscreen",
             onEnter: (elements, triggers) => {
-              gsap.to(elements, {duration:1, opacity: 1, ease: Back.easeOut.config(1.7), stagger: {each: 0.15, from: "random" }, overwrite: true});
+              gsap.to(elements, {duration:1, opacity: 1, scale: 1, ease: "elastic.out(1, 0.3)", stagger: {each: 0.15, from: "random" }, overwrite: true});
               //console.log(elements.length, "elements entered");
             }
           });

@@ -39,6 +39,9 @@ section.section-product-info-box-drops {
         @include breakpoint(tablet) {
             margin:0px 0px 20px 0px;
         }
+        @include breakpoint(laptop) {
+            padding:76px 40px 40px 40px;
+        }
 
         h2 {
             color:$white;
@@ -103,6 +106,9 @@ section.section-product-info-box-drops {
 
         @include breakpoint(tablet) {
             padding:0px 4vw 60px 4vw;
+        }
+        @include breakpoint(laptop) {
+            padding:0px 4vw 80px 4vw;
         }
 
         &::before {

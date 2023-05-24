@@ -140,11 +140,10 @@ section.home-banner {
                 display:inline-block;
                 line-height:.9em;
                 opacity:0;
+                scale:.5;
                 //transform:translateY(-50%);
                 //transition:transform .5s $easeInOutBack 0s;
-                &.onscreen {
-                    //transform:translate(0%, 0%);
-                }
+                
 
                 small {
                     display:block;
