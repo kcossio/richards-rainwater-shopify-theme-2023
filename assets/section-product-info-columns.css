@@ -390,9 +390,12 @@ section.section-product-info-box-drops .info-drop {
   width: 100px;
   position: absolute;
   transform: scale(0.8);
-  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
   cursor: pointer;
   z-index: 10;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+}
+section.section-product-info-box-drops .info-drop:hover {
+  transform: scale(1);
 }
 section.section-product-info-box-drops .info-drop.info-drop-1 {
   left: 13%;
@@ -443,6 +446,9 @@ section.section-product-info-box-drops .info-drop p {
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
 }
 section.section-product-info-box-drops .info-drop.open {
+  transform: scale(1.2);
+}
+section.section-product-info-box-drops .info-drop.open:hover {
   transform: scale(1.2);
 }
 section.section-product-info-box-drops .info-drop.open p {

@@ -231,9 +231,14 @@ section.section-product-info-box-drops {
         width:100px;
         position:absolute;
         transform:scale(.8);
-        transition:all .3s $easeInOutCirc 0s;
+        //transition:all .3s $easeInOutCirc 0s;
         cursor:pointer;
         z-index:10;
+        transition:all .3s $easeOutBack 0s;
+
+        &:hover {
+            transform:scale(1);
+        }
 
         &.info-drop-1 {
             left:13%;
@@ -288,6 +293,10 @@ section.section-product-info-box-drops {
 
         &.open {
             transform:scale(1.2);
+
+            &:hover {
+                transform: scale(1.2);
+            }
 
             p {
                 transform:translateY(0px);
