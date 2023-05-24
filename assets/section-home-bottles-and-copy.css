@@ -215,7 +215,7 @@ section.home-bottles-copy + section {
 }
 @media (min-width: 768px) {
   .home-bottles-intro .home-intro-left img.float.float-1 {
-    width: 37%;
+    width: 42%;
     left: 0%;
   }
 }
@@ -226,8 +226,8 @@ section.home-bottles-copy + section {
 }
 @media (min-width: 768px) {
   .home-bottles-intro .home-intro-left img.float.float-2 {
-    width: 53.25%;
-    right: 0%;
+    width: 50.25%;
+    left: 40%;
     margin-top: 0px;
   }
 }
