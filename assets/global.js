@@ -684,7 +684,9 @@ class VariantSelects extends HTMLElement {
 
   updateSticker() {
       console.log('current variant id: ' + `${this.currentVariant.id}`);
-    
+      var currentSticker = "#sticker-" + `${this.currentVariant.id}`;
+      jQuery('.product-variant-sticker').addClass('visually-hidden');
+      jQuery(currentSticker).removeClass('visually-hidden').addClass('bounce-in');
   }
 
   updateMedia() {
