@@ -65,7 +65,7 @@
           {% if product.selected_or_first_available_variant.id == variant.id %} 
             {% assign sticker_class = "product-variant-sticker bounce-in" %}
           {% else %}   
-          {% assign sticker_class = "product-variant-sticker visually-hidden" %}      
+          {% assign sticker_class = "product-variant-sticker bounce-in visually-hidden" %}      
           {% endif %}
           {% assign sticker_id = "sticker-" | append: variant.id %}
 
