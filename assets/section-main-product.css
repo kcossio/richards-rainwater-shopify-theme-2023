@@ -535,6 +535,7 @@ a.product__text {
   word-break: break-word;
   margin-bottom: 1.5rem;
   text-align: left;
+  width: 100%;
 }
 .product__title h1 {
   text-align: left;
@@ -752,6 +753,12 @@ a.product__text {
 
 .product-form__buttons {
   max-width: 44rem;
+}
+.product-form__buttons .button {
+  background: #000F44;
+}
+.product-form__buttons .button:hover {
+  background: #0094DA;
 }
 
 .product--no-media .product__info-container > modal-opener {

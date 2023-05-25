@@ -379,6 +379,7 @@
     word-break: break-word;
     margin-bottom: 1.5rem;
     text-align:left;
+    width:100%;
 
     h1 {
       text-align:left;
@@ -609,6 +610,14 @@
   
   .product-form__buttons {
     max-width: 44rem;
+
+    .button {
+      background:$dark_blue;
+
+      &:hover {
+        background:$light_blue;
+      }
+    }
   }
   
   .product--no-media .product__info-container > modal-opener {
