@@ -14,9 +14,13 @@
     position: absolute;
     visibility: hidden;
     opacity: 0;
-    width:30px;
+    width:25px;
+
+    @include breakpoint(laptop) {
+        width:35px;
+      }
   
-    @include breakpoint(tablet) {
+    @include breakpoint(laptop) {
       width:50px;
     }
   }
