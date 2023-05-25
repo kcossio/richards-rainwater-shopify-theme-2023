@@ -466,69 +466,11 @@
               //console.log(elements.length, "elements entered");
             }
           });
-        
-    }; // --------------------------------------------------------------- End Animation Setup Function -------------------------------------------------------------- //
 
-    
-    // -------------------- Slick Sliders (load in function for Barba) -----------------------------//
-var slickSliders = function(){
 
-    jQuery('.logo-slider').slick({
-        speed: 8000,
-        autoplay: true,
-        autoplaySpeed: 0,
-        centerMode: true,
-        cssEase: 'linear',
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        variableWidth: true,
-        infinite: true,
-        initialSlide: 1,
-        arrows: false,
-        buttons: false,
-        pauseOnFocus: false,
-        pauseOnHover: false,
-        responsive: [
-                {
-                breakpoint: 1024,
-                settings: {
-                }
-                },
-                {
-                breakpoint: 768,
-                settings: {
-            speed: 8000,
-                }
-                },
-                {
-                breakpoint: 500,
-                settings: {
-                }
-                }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
-            ]
-    });
-}
+          // ------------ Twinkle / Drops ---------------- //
 
-    // Turn on animation when loaded
-    jQuery(window).on('load',function () {
-        animation_setup();
-        slickSliders();
-        window.dispatchEvent(new Event('resize'));
-    });
-
-    // On AJAX completion
-    jQuery( document ).ajaxComplete(function() {
-        //console.log('new content loaded via AJAX');
-        ScrollTrigger.refresh();
-        window.dispatchEvent(new Event('resize'));
-    });
-    
-    
-
-     // Twinkle Stars function
+          // Twinkle Stars function
 
      window.twinkle =function(container, amount) {
         
@@ -622,6 +564,69 @@ var slickSliders = function(){
             return min + (max - min) * Math.random();
         }
     }
+        
+    }; // --------------------------------------------------------------- End Animation Setup Function -------------------------------------------------------------- //
+
+    
+    // -------------------- Slick Sliders (load in function for Barba) -----------------------------//
+var slickSliders = function(){
+
+    jQuery('.logo-slider').slick({
+        speed: 8000,
+        autoplay: true,
+        autoplaySpeed: 0,
+        centerMode: true,
+        cssEase: 'linear',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        variableWidth: true,
+        infinite: true,
+        initialSlide: 1,
+        arrows: false,
+        buttons: false,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        responsive: [
+                {
+                breakpoint: 1024,
+                settings: {
+                }
+                },
+                {
+                breakpoint: 768,
+                settings: {
+            speed: 8000,
+                }
+                },
+                {
+                breakpoint: 500,
+                settings: {
+                }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+    });
+}
+
+    // Turn on animation when loaded
+    jQuery(window).on('load',function () {
+        animation_setup();
+        slickSliders();
+        window.dispatchEvent(new Event('resize'));
+    });
+
+    // On AJAX completion
+    jQuery( document ).ajaxComplete(function() {
+        //console.log('new content loaded via AJAX');
+        ScrollTrigger.refresh();
+        window.dispatchEvent(new Event('resize'));
+    });
+    
+    
+
+     
 
     // Do other stuff on window load
     jQuery(window).on('load',function () {
