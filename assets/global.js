@@ -656,9 +656,6 @@ class VariantSelects extends HTMLElement {
     this.removeErrorMessage();
     this.updateVariantStatuses();
 
-    // Add custom functions
-    this.updateSticker();
-
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
       this.setUnavailable();
@@ -683,15 +680,6 @@ class VariantSelects extends HTMLElement {
     });
   }
 
-  updateSticker() {
-
-    if (typeof metaData !== "undefined") {
-      console.log('The metadata variable' + metaData)
-    }
-    
-
-  }
-
   updateMedia() {
     if (!this.currentVariant) return;
     if (!this.currentVariant.featured_media) return;
@@ -703,8 +691,6 @@ class VariantSelects extends HTMLElement {
     if (!modalContent) return;
     const newMediaModal = modalContent.querySelector( `[data-media-id="${this.currentVariant.featured_media.id}"]`);
     modalContent.prepend(newMediaModal);
-
-    
   }
 
   updateURL() {
