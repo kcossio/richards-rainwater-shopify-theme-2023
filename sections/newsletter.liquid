@@ -22,8 +22,10 @@
       <img class="star" src="{{ 'icon-drop-med-blue.svg' | asset_url }}>" width="50" height="69" role="presentation" alt="star" />
     </div>
     
-    <script type="text/javascript">      
-      twinkle('#stars-nl-footer', 10);    
+    <script type="text/javascript">   
+    jQuery(window).on('load',function () {   
+      twinkle('#stars-nl-footer', 10);  
+    });  
     </script>
 
   </div><!--End nl-cloud-->
