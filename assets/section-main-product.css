@@ -760,6 +760,11 @@ a.product__text {
 .product-form__buttons .button:hover {
   background: #0094DA;
 }
+@media (min-width: 768px) {
+  .product-form__buttons .button {
+    font-size: 15px;
+  }
+}
 
 .product--no-media .product__info-container > modal-opener {
   display: block;

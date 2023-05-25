@@ -617,6 +617,10 @@
       &:hover {
         background:$light_blue;
       }
+
+      @include breakpoint(tablet) {
+        font-size:15px;
+      }
     }
   }
   
