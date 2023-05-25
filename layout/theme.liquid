@@ -260,23 +260,44 @@
   <script type="text/javascript" src="https://www.bugherd.com/sidebarv2.js?apikey=ydkcj9pquupbl1ryn2j7vq" async="true"></script>
 </head>
 
-  <body class="gradient">
+  <body class="gradient" data-barba="wrapper" data-trans="block">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
 
-    {%- if settings.cart_type == 'drawer' -%}
-      {%- render 'cart-drawer' -%}
-    {%- endif -%}
+    <div class="transition" id="test">
+      <div class="trans-pane">1</div>
+      <div class="trans-pane">2</div>
+      <div class="trans-pane">3</div>
+    </div>
 
-    {% sections 'header-group' %}
-    {% ## Header Group %}
+    {% assign _page = 'home' %}
+      {% if request.page_type == 'product' %}
+        {% assign _page = 'pdp' %}
+      {% elsif request.page_type == 'collection' %}
+        {% assign _page = 'collection' %}
+      {% elsif request.page_type == 'cart' %}
+        {% assign _page = 'cart' %}
+      {% endif %}
 
-    <main id="MainContent" class="{%- if request.page_type == 'index' -%} main-home {% endif %}  content-for-layout focus-none" role="main" tabindex="-1">
-      {{ content_for_layout }}
-    </main>
+      <div data-barba="container" data-barba-namespace="{{ _page }}">
+        <div class="content">  
 
-    {% sections 'footer-group' %}
+        {%- if settings.cart_type == 'drawer' -%}
+          {%- render 'cart-drawer' -%}
+        {%- endif -%}
+
+        {% sections 'header-group' %}
+        {% ## Header Group %}
+
+        <main id="MainContent" class="{%- if request.page_type == 'index' -%} main-home {% endif %}  content-for-layout focus-none" role="main" tabindex="-1">
+          {{ content_for_layout }}
+        </main>
+
+        {% sections 'footer-group' %}
+
+        </div><--!end content-->
+      </div><!--End barba>
 
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
@@ -316,5 +337,7 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+    <script src="{{ '_barba.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'transitions.js' | asset_url }}" defer="defer"></script>
   </body>
 </html>
