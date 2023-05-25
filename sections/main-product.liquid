@@ -63,14 +63,14 @@
         
           {% assign sticker_img = variant.metafields.variant_extra.variant_sticker %}
           {% if product.selected_or_first_available_variant.id == variant.id %} 
-            {% assign class = "product-variant-sticker bounce-in" %}
+            {% assign sticker_class = "product-variant-sticker bounce-in" %}
           {% else %}   
-          {% assign class = "product-variant-sticker visually-hidden" %}      
+          {% assign sticker_class = "product-variant-sticker visually-hidden" %}      
           {% endif %}
           {% assign sticker_id = "sticker-" | append: variant.id %}
 
           {% if sticker_img != blank %}
-          {{ sticker_img | image_url: width: sticker_img.width | image_tag: class: 'product-variant-sticker bounce-in', id: sticker_id, loading: 'lazy' }}
+          {{ sticker_img | image_url: width: sticker_img.width | image_tag: class: sticker_class, id: sticker_id, loading: 'lazy' }}
           {% endif %}
 
         {% endfor %}
