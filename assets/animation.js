@@ -529,9 +529,9 @@ var slickSliders = function(){
     
 
      // Twinkle Stars function - load plz
-     
 
-     window.twinkle =function(container, amount) {
+
+     window.twinkle = function(container, amount) {
         
 
         var textures = document.querySelectorAll(container + " .star");
