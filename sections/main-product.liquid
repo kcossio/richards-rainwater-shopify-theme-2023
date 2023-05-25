@@ -59,8 +59,10 @@
     <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %} fade-in-up">
         {% for variant in product.variants %}
         {% if product.selected_or_first_available_variant.id == variant.id %}
-          {% assign sticker_img = variant.variant_extra.variant_sticker %}
+          {% assign sticker_img = variant.metafields.variant_extra.variant_sticker %}
+          {% if sticker_img != blank %}
           {{ sticker_img | image_url: width: sticker_img.width | image_tag: class: 'product-variant-sticker bounce-in', loading: 'lazy' }}
+          {% endif %}
         {% endif %}
         {% endfor %}
         <script type="text/javascript">
