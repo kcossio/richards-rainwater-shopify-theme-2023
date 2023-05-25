@@ -680,12 +680,7 @@ class VariantSelects extends HTMLElement {
     });
   }
 
-  updateSticker() {
-    $(document).ajaxComplete(function() {
-      alert("ALL current AJAX calls have completed");
-      console.log('current variant id: ' + `${this.currentVariant.id}`);
-    });
-  }
+ 
 
   updateMedia() {
     if (!this.currentVariant) return;
