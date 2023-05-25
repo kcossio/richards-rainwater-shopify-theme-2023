@@ -113,9 +113,13 @@
       .stars {
         top:90%;
         height:50%;
-        width:100%;
+        width:90%;
         overflow:visible;
         z-index:-1;
+
+        @include breakpoint(laptop) {
+          width:95%;
+        }
       }
     }
 

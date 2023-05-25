@@ -1798,9 +1798,14 @@ section.newsletter-cloud {
 .footer-newsletter .nl-cloud .stars {
   top: 90%;
   height: 50%;
-  width: 100%;
+  width: 90%;
   overflow: visible;
   z-index: -1;
+}
+@media (min-width: 1280px) {
+  .footer-newsletter .nl-cloud .stars {
+    width: 95%;
+  }
 }
 .footer-newsletter .newsletter__wrapper {
   width: 100%;
