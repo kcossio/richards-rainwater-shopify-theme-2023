@@ -174,7 +174,12 @@ EASING
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  min-height: 90vh;
+  min-height: 80vh;
+}
+@media (min-width: 1280px) {
+  .destini-inner {
+    min-height: 80vh;
+  }
 }
 
 .destini-intro {
@@ -182,7 +187,7 @@ EASING
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  align-content: center;
+  align-content: flex-start;
   background: #000F44;
   color: #ffffff;
   padding: 34px 40px;

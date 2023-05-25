@@ -6,7 +6,11 @@
     display:flex;
     flex-wrap:wrap;
     align-items:stretch;
-    min-height:90vh;
+    min-height:80vh;
+
+    @include breakpoint(laptop) {
+        min-height:80vh;
+    }
 }
 
 .destini-intro {
@@ -14,7 +18,7 @@
     display:flex;
     flex-wrap:wrap;
     align-items:flex-start;
-    align-content:center;
+    align-content:flex-start;
     background:$dark_blue;
     color:$white;
     padding:34px 40px;
