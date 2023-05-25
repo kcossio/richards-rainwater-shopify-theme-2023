@@ -18,11 +18,6 @@
         markers:true
     });
 
-
-
-    
-    
-
     // ------ Header Scroll Behavior ------//
     window.addEventListener("load", (event) => {
         console.log('page is loaded. Now run scroll stuff please.');
@@ -531,12 +526,7 @@ var slickSliders = function(){
         window.dispatchEvent(new Event('resize'));
     });
     
-    // On load of the Social Feed
-    jQuery(".ooo-instagram-feed__list").bind("DOMSubtreeModified", function() {
-        //console.log("tree changed");
-        ScrollTrigger.refresh();
-        window.dispatchEvent(new Event('resize'));
-    });
+    
 
      // Twinkle Stars function
 
@@ -643,9 +633,6 @@ var slickSliders = function(){
             ScrollTrigger.refresh();
             return false;
         });
-
-        
-
     });
 
    
