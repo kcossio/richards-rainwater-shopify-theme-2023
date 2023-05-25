@@ -278,17 +278,24 @@
         
         const bounceIn = gsap.utils.toArray('.bounce-in');
         bounceIn.forEach(box => {
+        gsap.set(box, {opacity:0, y:-25, scale:.3});
         gsap.to(box, { 
-            ease: "Strong.easeInOut",
+            ease: "elastic.out(1, 0.3)",
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            duration: 1,
             scrollTrigger: {
             trigger: box,
             start: "top 90%",
             end: "bottom top",        
             toggleClass: "onscreen",
-            toggleActions: "play none none none"
+            toggleActions: "play reverse play reverse"
             }
         })
         });
+
+    
         
 
         const bounceInTop = gsap.utils.toArray('.bounce-in-top');

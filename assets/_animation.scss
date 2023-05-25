@@ -240,6 +240,7 @@
     transform:scale(0);
   }
   
+  /*
   .bounce-in {
     transform-origin: center center;
     opacity:0;
@@ -249,6 +250,7 @@
       animation: bounce-in 1s ease forwards;
     }
   }
+  */
   @keyframes bounce-in {
     0% {
       scale: .3;

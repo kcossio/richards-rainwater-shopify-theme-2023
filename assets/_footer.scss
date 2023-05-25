@@ -254,6 +254,21 @@ section.newsletter-cloud {
   transform: scale(1.07);
 }
 
+.bit-sticker {
+  position:absolute;
+  right:40px;
+  top:0px;
+  margin-top:-10%;
+  z-index:2;
+  pointer-events:none;
+  width:76px;
+  height:auto;
+  display:block;
 
+  @include breakpoint(laptop) {
+    width:104px;
+    margin-top:10%;
+  }
+}
  
   
