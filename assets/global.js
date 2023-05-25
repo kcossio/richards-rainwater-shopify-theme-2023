@@ -684,11 +684,15 @@ class VariantSelects extends HTMLElement {
   }
 
   updateSticker() {
+
+    if (typeof metaData !== "undefined") {
+      console.log('The metadata variable' + metaData)
+    }
     this.currentVariant = this.getVariantData().find((variant) => {
 
-    var get_sticker = metaData[variant.sku];
+    //var get_sticker = metaData[variant.sku];
 
-    console.log('Sticker?' + get_sticker);
+    //console.log('Sticker?' + get_sticker);
       
     });
 
