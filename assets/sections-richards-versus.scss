@@ -262,6 +262,8 @@ section.section-versus .select2-container--default .select2-selection--single:fo
             
             flex-wrap:wrap;
             align-items:center;
+            align-content:center;
+            justify-content: center;
 
 
             &.active {
@@ -278,7 +280,11 @@ section.section-versus .select2-container--default .select2-selection--single:fo
                 margin:0px auto;
             }
             .vs-info-box-content {
-                width:60%;
+                width:100%;
+
+                @include breakpoint(tablet) {
+                    width:60%;
+                }
 
                 h3 {
                     font-size:20px;
@@ -292,8 +298,7 @@ section.section-versus .select2-container--default .select2-selection--single:fo
                 }
             }
             @include breakpoint(tablet) {
-
-                display:none;
+                justify-content: space-between;
                 text-align:left;
                 img {
                     max-height: 220px;
