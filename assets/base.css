@@ -1284,15 +1284,15 @@ summary::-webkit-details-marker {
   margin-bottom: 70px;
 }
 .grid__item.product__info-wrapper {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   /* center this */
 }
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   .grid__item.product__info-wrapper {
-    margin-bottom: 70px;
+    margin-bottom: 0px;
   }
 }
 

@@ -1154,14 +1154,14 @@ summary::-webkit-details-marker {
   margin-bottom:70px;
 
   &.product__info-wrapper {
-    margin-bottom:40px;
+    margin-bottom:20px;
     display:flex;
     align-items:center;
     flex-wrap:wrap;
     /* center this */
 
-    @include breakpoint(tablet) {
-      margin-bottom:70px;
+    @include breakpoint(laptop) {
+      margin-bottom:0px;
     }
   }
 }
