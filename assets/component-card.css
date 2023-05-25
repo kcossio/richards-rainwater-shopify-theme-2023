@@ -284,7 +284,6 @@ EASING
   width: 65%;
   margin: 0px auto;
   display: flex;
-  z-index: 2;
 }
 @media (min-width: 768px) {
   .card__inner {

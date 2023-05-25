@@ -1155,6 +1155,9 @@ summary::-webkit-details-marker {
 
   &.product__info-wrapper {
     margin-bottom:40px;
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
 
     @include breakpoint(tablet) {
       margin-bottom:70px;

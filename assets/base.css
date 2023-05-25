@@ -1285,6 +1285,9 @@ summary::-webkit-details-marker {
 }
 .grid__item.product__info-wrapper {
   margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 @media (min-width: 768px) {
   .grid__item.product__info-wrapper {
