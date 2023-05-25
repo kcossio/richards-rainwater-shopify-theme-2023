@@ -320,7 +320,7 @@ section.section-product-info-box-drops .product-info-col .produt-col-img {
 }
 section.section-product-info-box-drops .product-info-col .produt-col-img img {
   max-width: 41%;
-  max-height: 80vh;
+  max-height: 70vh;
   width: auto;
   height: auto;
 }
@@ -338,8 +338,10 @@ section.section-product-info-box-drops .product-info-col .produt-col-img.single 
   width: 100%;
 }
 section.section-product-info-box-drops .product-info-col .produt-col-img.single img {
-  max-height: 80vh;
+  max-height: 70vh;
   max-width: 23%;
+  height: auto;
+  width: auto;
 }
 @media (min-width: 768px) {
   section.section-product-info-box-drops .product-info-col .produt-col-img.single img {
