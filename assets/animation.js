@@ -528,7 +528,8 @@ var slickSliders = function(){
     
     
 
-     // Twinkle Stars function
+     // Twinkle Stars function - load plz
+     
 
      window.twinkle =function(container, amount) {
         
