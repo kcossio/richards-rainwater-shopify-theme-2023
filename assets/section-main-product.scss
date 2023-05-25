@@ -1894,4 +1894,7 @@
   @include breakpoint(laptop) {
     width:134px;
   }
+  @include breakpoint(laptop) {
+    width:180px;
+  }
 }
