@@ -178,7 +178,7 @@ EASING
 }
 @media (min-width: 1280px) {
   .destini-inner {
-    min-height: 80vh;
+    min-height: 90vh;
   }
 }
 
@@ -266,7 +266,7 @@ EASING
 @media (min-width: 1280px) {
   .storeDiv {
     width: 75%;
-    height: 80vh;
+    height: 100%;
   }
 }
 
