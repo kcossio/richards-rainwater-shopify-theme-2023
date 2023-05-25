@@ -560,6 +560,17 @@ a.product__text {
 .product__title h1 {
   text-align: left;
   color: #000F44;
+  font-size: 25px;
+}
+@media (min-width: 768px) {
+  .product__title h1 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1280px) {
+  .product__title h1 {
+    font-size: 45px;
+  }
 }
 .product__title img {
   width: auto;

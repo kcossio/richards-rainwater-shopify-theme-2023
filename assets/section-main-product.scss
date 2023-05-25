@@ -405,6 +405,15 @@
     h1 {
       text-align:left;
       color:$dark_blue;
+      font-size:25px;
+
+      @include breakpoint(tablet) {
+        font-size:30px;
+      }
+
+      @include breakpoint(laptop) {
+        font-size:45px;
+      }
     }
 
     img {
