@@ -22,12 +22,19 @@
 
       <div class="product-info-col product-info-col-1 single {{ class }} {{ col_type }}">
 
-        {%- assign product_image = product.featured_image -%}
-        {%- if product_image != blank -%}
-          <div class="produt-col-img single fade-in">
-            {{ product_image | image_url: width: product_image.width | image_tag: class: 'product-info-col-img', loading: 'lazy' }}
-          </div>
-        {%- endif -%}
+        {%- if product.metafields.product_extra.water_cropped_image.value != blank %}
+          {% assign product_image = product.metafields.product_extra.water_cropped_image %}
+          {{ product_image | image_url: width: product_image.width | image_tag: class: 'product-info-col-img', loading: 'lazy' }}
+      {%- else -%}
+          {%- assign product_image = product.featured_image -%}
+          {%- if product_image != blank -%}
+            <div class="produt-col-img single fade-in">
+              {{ product_image | image_url: width: product_image.width | image_tag: class: 'product-info-col-img', loading: 'lazy' }}
+            </div>
+          {%- endif -%}
+      {%- endif -%}
+
+        
 
 
         <h2 class="product-col-name fade-in-down">
