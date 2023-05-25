@@ -157,12 +157,20 @@ section.section-product-info-box-drops {
             }
 
             &.single {
-                width:37%;
+                width:100%;
                 img {
                     max-height: 80vh;
+                    max-width:23%;
                 }
                 @include breakpoint(tablet) {
-                    width:22%;
+                    img {
+                        max-width:30%;
+                    }
+                }
+                @include breakpoint(desktop) {
+                    img {
+                        max-width:23%;
+                    }
                 }
             }
         }
@@ -170,9 +178,7 @@ section.section-product-info-box-drops {
         @include breakpoint(tablet) {
             width:50%;
 
-            &.single {
-                width:100%;
-            }
+            
         }
         h2 {
             color:$white;
