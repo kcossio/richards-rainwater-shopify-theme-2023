@@ -281,17 +281,20 @@ section.newsletter-cloud {
     width:82px;
     margin-top:-46px;
   }
-  
+
   @include breakpoint(laptop) {
     width:104px;
-    riht:4vw;
+    right:4vw;
     margin-top:40px;
 
-    #top-letters {
-      path, rect {
-        fill: $white;
+    svg {
+      #top-letters {
+        path, rect {
+          fill: $white;
+        }
       }
     }
+    
   }
 }
  
