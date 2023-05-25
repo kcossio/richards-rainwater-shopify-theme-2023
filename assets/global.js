@@ -680,6 +680,17 @@ class VariantSelects extends HTMLElement {
     });
   }
 
+  updateSticker() {
+    this.currentVariant = this.getVariantData().find((variant) => {
+
+    var get_sticker = metaData[variant.sku];
+
+    console.log('Sticker?' + get_sticker);
+      
+    });
+
+  }
+
   updateMedia() {
     if (!this.currentVariant) return;
     if (!this.currentVariant.featured_media) return;
@@ -692,7 +703,7 @@ class VariantSelects extends HTMLElement {
     const newMediaModal = modalContent.querySelector( `[data-media-id="${this.currentVariant.featured_media.id}"]`);
     modalContent.prepend(newMediaModal);
 
-    console.log(currentVariant);
+    
   }
 
   updateURL() {
