@@ -32,6 +32,7 @@
           "type": "competitors_product",
           "settings": {
             "title": "Tap water",
+            "product_image": "shopify:\/\/shop_images\/FPO-tap-water.jpg",
             "product_information": "<p>Lorem ipsum dolor sit amet, consec tetuer adipiscing nibh euismod tincidunt ut laoreet.<\/p>"
           }
         },
@@ -39,6 +40,7 @@
           "type": "competitors_product",
           "settings": {
             "title": "Artesian",
+            "product_image": "shopify:\/\/shop_images\/FPO-bottle-artesian.jpg",
             "product_information": "<p>Lorem ipsum elit, sed diam nonummy nibh euismod tincidunt ut laoreet.<\/p>"
           }
         },
@@ -46,6 +48,7 @@
           "type": "competitors_product",
           "settings": {
             "title": "Mountain spring",
+            "product_image": "shopify:\/\/shop_images\/FPO-bottle-water.jpg",
             "product_information": "<p>Lorem diam nonummy nibh euismod tincidunt ut laoreet.<\/p>"
           }
         }
