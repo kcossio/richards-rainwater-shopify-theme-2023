@@ -246,8 +246,8 @@ EASING
   }
   .product--medium:not(.product--no-media) .product__info-wrapper,
   .product--small:not(.product--no-media) .product__media-wrapper {
-    max-width: 50%;
-    width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
+    max-width: 51%;
+    width: calc(51% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 }
 /* Dynamic checkout */
@@ -673,6 +673,11 @@ a.product__text {
   border-radius: 50px;
   overflow: hidden;
 }
+@media (min-width: 1280px) {
+  .quantity-and-buttons {
+    width: 90%;
+  }
+}
 .quantity-and-buttons .product-form {
   margin: 0px !important;
 }
@@ -692,8 +697,8 @@ a.product__text {
 }
 @media (min-width: 768px) {
   .quantity-and-buttons .product-form__quantity {
-    width: 50%;
-    max-width: 50%;
+    width: 56%;
+    max-width: 56%;
   }
 }
 .quantity-and-buttons .product-form__quantity .quantity {
@@ -734,7 +739,7 @@ a.product__text {
 }
 @media (min-width: 768px) {
   .quantity-and-buttons .buy-buttons-wrap {
-    width: 50%;
+    width: 44%;
   }
 }
 .quantity-and-buttons .buy-buttons-wrap form {
