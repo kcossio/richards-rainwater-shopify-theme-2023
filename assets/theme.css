@@ -1645,6 +1645,9 @@ section.newsletter-cloud {
   height: auto;
   margin: 18px 0px;
 }
+.toggle-view .panel ul {
+  margin-top: 0px;
+}
 .toggle-view.open .toggle-header:after {
   transform: rotate(45deg);
 }
