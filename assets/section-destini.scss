@@ -18,6 +18,8 @@
     background:$dark_blue;
     color:$white;
     padding:34px 40px;
+    justify-content:center;
+    text-align:center;
 
     @include breakpoint(tablet) {
     }
@@ -51,7 +53,7 @@
         @include breakpoint(tablet) {
             font-size:60px;
             width:auto;
-            margin:20px 60px;
+            margin:0px 60px;
         }
         @include breakpoint(laptop) {
             width:100%;
@@ -66,7 +68,7 @@
         color:$white;
 
         @include breakpoint(tablet) {
-            margin-top:60px;
+            margin-top:30px;
         }
         @include breakpoint(laptop) {
             margin-top:30px;

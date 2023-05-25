@@ -186,6 +186,8 @@ EASING
   background: #000F44;
   color: #ffffff;
   padding: 34px 40px;
+  justify-content: center;
+  text-align: center;
 }
 @media (min-width: 1280px) {
   .destini-intro {
@@ -220,7 +222,7 @@ EASING
   .destini-intro h1 {
     font-size: 60px;
     width: auto;
-    margin: 20px 60px;
+    margin: 0px 60px;
   }
 }
 @media (min-width: 1280px) {
@@ -237,7 +239,7 @@ EASING
 }
 @media (min-width: 768px) {
   .destini-intro p {
-    margin-top: 60px;
+    margin-top: 30px;
   }
 }
 @media (min-width: 1280px) {
