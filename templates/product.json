@@ -19,13 +19,13 @@
             "picker_type": "button"
           }
         },
-        "7d7497e9-b6a8-44f0-b7f8-c8bbd3df0530": {
-          "type": "quantity_and_button",
+        "description": {
+          "type": "description",
           "settings": {
           }
         },
-        "description": {
-          "type": "description",
+        "7d7497e9-b6a8-44f0-b7f8-c8bbd3df0530": {
+          "type": "quantity_and_button",
           "settings": {
           }
         }
@@ -34,8 +34,8 @@
         "title",
         "price",
         "variant_picker",
-        "7d7497e9-b6a8-44f0-b7f8-c8bbd3df0530",
-        "description"
+        "description",
+        "7d7497e9-b6a8-44f0-b7f8-c8bbd3df0530"
       ],
       "settings": {
         "enable_sticky_info": true,
