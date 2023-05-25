@@ -181,7 +181,7 @@ EASING
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   align-content: center;
   background: #000F44;
   color: #ffffff;
@@ -191,7 +191,7 @@ EASING
 }
 @media (min-width: 1280px) {
   .destini-intro {
-    width: 36%;
+    width: 25%;
     padding: 100px 50px;
   }
 }
@@ -228,6 +228,8 @@ EASING
 @media (min-width: 1280px) {
   .destini-intro h1 {
     width: 100%;
+    font-size: 42px;
+    margin: 10px 0px 20px 0px;
   }
 }
 .destini-intro h2 {
@@ -256,9 +258,10 @@ EASING
   width: 100%;
   height: 100%;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .storeDiv {
     width: 75%;
+    height: 80vh;
   }
 }
 
