@@ -1288,6 +1288,7 @@ summary::-webkit-details-marker {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  /* center this */
 }
 @media (min-width: 768px) {
   .grid__item.product__info-wrapper {
