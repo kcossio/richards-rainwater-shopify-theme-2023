@@ -187,12 +187,23 @@ EASING
   color: #ffffff;
   padding: 34px 40px;
 }
+@media (min-width: 1280px) {
+  .destini-intro {
+    width: 36%;
+    padding: 100px 50px;
+  }
+}
 .destini-intro img {
   width: 112px;
   height: auto;
   display: block;
 }
 @media (min-width: 768px) {
+  .destini-intro img {
+    width: 35%;
+  }
+}
+@media (min-width: 1280px) {
   .destini-intro img {
     width: 100%;
   }
@@ -208,6 +219,13 @@ EASING
 @media (min-width: 768px) {
   .destini-intro h1 {
     font-size: 60px;
+    width: auto;
+    margin: 20px 60px;
+  }
+}
+@media (min-width: 1280px) {
+  .destini-intro h1 {
+    width: 100%;
   }
 }
 .destini-intro h2 {
@@ -218,9 +236,13 @@ EASING
   color: #ffffff;
 }
 @media (min-width: 768px) {
-  .destini-intro {
-    width: 36%;
-    padding: 100px 50px;
+  .destini-intro p {
+    margin-top: 60px;
+  }
+}
+@media (min-width: 1280px) {
+  .destini-intro p {
+    margin-top: 30px;
   }
 }
 
@@ -232,9 +254,9 @@ EASING
   width: 100%;
   height: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
   .storeDiv {
-    width: 64%;
+    width: 75%;
   }
 }
 

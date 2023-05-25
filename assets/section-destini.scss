@@ -19,12 +19,23 @@
     color:$white;
     padding:34px 40px;
 
+    @include breakpoint(tablet) {
+    }
+
+    @include breakpoint(laptop) {
+        width:36%;
+        padding:100px 50px;
+    }
+
     img {
         width:112px;
         height:auto;
         display:block;
 
         @include breakpoint(tablet) {
+            width:35%;
+        }
+        @include breakpoint(laptop) {
             width:100%;
         }
     }
@@ -39,6 +50,11 @@
 
         @include breakpoint(tablet) {
             font-size:60px;
+            width:auto;
+            margin:20px 60px;
+        }
+        @include breakpoint(laptop) {
+            width:100%;
         }
     }
 
@@ -48,12 +64,16 @@
     p {
         width:100%;
         color:$white;
+
+        @include breakpoint(tablet) {
+            margin-top:60px;
+        }
+        @include breakpoint(laptop) {
+            margin-top:30px;
+        }
     }
 
-    @include breakpoint(tablet) {
-        width:36%;
-        padding:100px 50px;
-    }
+    
 }
 .storeDiv {
     display: block;
@@ -63,8 +83,9 @@
     width:100%;
     height:100%;
 
-    @include breakpoint(tablet) {
-        width:64%;
+
+    @include breakpoint(desktop) {
+        width:75%;
     }
 }
 .jump-to-aisle {
