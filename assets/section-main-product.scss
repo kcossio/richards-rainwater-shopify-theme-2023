@@ -181,6 +181,7 @@
   variant-radios,
   variant-selects {
     display: block;
+    width:100%;
   }
   
   .product-form__input--dropdown {
@@ -360,8 +361,27 @@
   .product__info-container .product__description,
   .product__info-container .icon-with-text {
     margin: 2.5rem 0;
+
   }
-  
+  .product__description {
+    h3 {
+      color:#6D6D6D;
+      font-weight:900;
+      letter-spacing:1px;
+      margin:0px 0px 8px 0px;
+
+      @include breakpoint(tablet) {
+        font-size:18px;
+      }
+    }
+
+    p {
+      color:#6D6D6D;
+      font-weight:600;
+      font-size:15px;
+      line-height:1.3em;
+    }
+  }
   .product__text {
     margin-bottom: 0;
   }

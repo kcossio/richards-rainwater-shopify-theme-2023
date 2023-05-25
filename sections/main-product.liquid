@@ -246,6 +246,7 @@
                   {% ## My template type is: {{ templateType[0] }} ## %}
                         
                 <div class="product__description rte quick-add-hidden {% if templateType[1] == "water" %} hidden {% endif %}"  {{ block.shopify_attributes }}>
+                  <h3>Description</h3>
                   {{ product.description }}
                 </div>
               {%- endif -%}
