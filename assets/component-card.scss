@@ -114,6 +114,7 @@
     width: 65%;
     margin:0px auto;
     display:flex;
+    z-index:2;
 
     @include breakpoint(tablet) {
       width:85%;
