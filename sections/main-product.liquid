@@ -57,14 +57,23 @@
 
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %} fade-in-up">
-        {% for variant in product.variants %}
-        {% if product.selected_or_first_available_variant.id == variant.id %}
+        
+      
+      {% for variant in product.variants %}
+        
           {% assign sticker_img = variant.metafields.variant_extra.variant_sticker %}
+          {% if product.selected_or_first_available_variant.id == variant.id %} 
+            {% assign class= "product-variant-sticker bounce-in" %}
+          {% else %}   
+          {% assign class= "product-variant-sticker bounce-in visually-hidden" %}      
+          {% endif %}
           {% if sticker_img != blank %}
           {{ sticker_img | image_url: width: sticker_img.width | image_tag: class: 'product-variant-sticker bounce-in', loading: 'lazy' }}
           {% endif %}
-        {% endif %}
+          
         {% endfor %}
+
+        
         <script type="text/javascript">
           // use this to reload the page to load new variant data instead of ajax reload (can help with recharge, etc.)
           /*
@@ -775,16 +784,8 @@
     }
   </script>
 
-  {% capture 'meta_data' %}
-  {% for variant in product.variants %}
-    {{ variant.sku | json }}: "{{ variant.metafields.variant_extra.variant_sticker | file_url }}"
-    {% unless forloop.last %},{% endunless %}
-  {% endfor %}
-  {% endcapture %}
 
-  <script>
-    var metaData = { {{ meta_data }} }
-  </script>
+
   
 </section>
 
