@@ -637,7 +637,6 @@ var slickSliders = function(){
 
    
 
-    !function(){
         const activeTrans = document.querySelector('body').dataset.trans;
         barba.init({
             sync: true,
@@ -740,8 +739,7 @@ var slickSliders = function(){
         });
         if (window.document.documentMode){
             barba.destroy();
-        }
-    }();
+        };
     
     
     const delay = (t) => {
