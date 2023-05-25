@@ -666,6 +666,8 @@ class VariantSelects extends HTMLElement {
       this.renderProductInfo();
       this.updateShareUrl();
     }
+
+    this.updateSticker();
   }
 
   updateOptions() {
@@ -680,7 +682,10 @@ class VariantSelects extends HTMLElement {
     });
   }
 
- 
+  updateSticker() {
+      console.log('current variant id: ' + `${this.currentVariant.id}`);
+    });
+  }
 
   updateMedia() {
     if (!this.currentVariant) return;
