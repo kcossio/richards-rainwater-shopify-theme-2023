@@ -849,17 +849,17 @@ EASING
   transform: scale(0);
 }
 
-/*
 .bounce-in {
   transform-origin: center center;
-  opacity:0;
-
+  opacity: 0;
+  /*
   &.onscreen {
     opacity:1;
     animation: bounce-in 1s ease forwards;
   }
+  */
 }
-*/
+
 @keyframes bounce-in {
   0% {
     scale: 0.3;
