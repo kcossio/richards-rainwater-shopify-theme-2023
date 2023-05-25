@@ -428,8 +428,8 @@ section.section-versus .select2-container--default .select2-selection--single:fo
   transform: translate(0%, -50%);
   transition: all 0.3s ease 0s;
   flex-wrap: wrap;
-  align-items: center;
-  align-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
   justify-content: center;
 }
 .versus-choices-blocks .versus-choice-column .vs-info-box.active {
@@ -440,6 +440,7 @@ section.section-versus .select2-container--default .select2-selection--single:fo
 .versus-choices-blocks .versus-choice-column .vs-info-box img {
   max-width: 28%;
   max-height: 200px;
+  height: 120px;
   height: auto;
   width: auto;
   margin: 0px auto;
@@ -453,23 +454,27 @@ section.section-versus .select2-container--default .select2-selection--single:fo
   }
 }
 .versus-choices-blocks .versus-choice-column .vs-info-box .vs-info-box-content h3 {
-  font-size: 20px;
+  font-size: 16px;
   text-transform: uppercase;
-  margin: 0px 0px 8px 0px;
+  margin: 16px 0px 8px 0px;
   line-height: 1.2em;
 }
 @media (min-width: 768px) {
   .versus-choices-blocks .versus-choice-column .vs-info-box .vs-info-box-content h3 {
     font-size: 28px;
+    margin: 0px 0px 8px 0px;
   }
 }
 @media (min-width: 768px) {
   .versus-choices-blocks .versus-choice-column .vs-info-box {
     justify-content: space-between;
     text-align: left;
+    align-items: center;
+    align-content: center;
   }
   .versus-choices-blocks .versus-choice-column .vs-info-box img {
     max-height: 220px;
+    height: auto;
   }
   .versus-choices-blocks .versus-choice-column .vs-info-box.active {
     display: flex;
