@@ -169,9 +169,10 @@ section.section-product-info-box-drops {
                         max-width:30%;
                     }
                 }
-                @include breakpoint(desktop) {
+                @include breakpoint(laptop) {
                     img {
                         max-width:23%;
+                        max-height:55vh;
                     }
                 }
             }

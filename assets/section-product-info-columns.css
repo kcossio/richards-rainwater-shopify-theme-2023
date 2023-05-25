@@ -348,9 +348,10 @@ section.section-product-info-box-drops .product-info-col .produt-col-img.single 
     max-width: 30%;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   section.section-product-info-box-drops .product-info-col .produt-col-img.single img {
     max-width: 23%;
+    max-height: 55vh;
   }
 }
 @media (min-width: 768px) {
