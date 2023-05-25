@@ -19,16 +19,9 @@
             "picker_type": "button"
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
+        "7d7497e9-b6a8-44f0-b7f8-c8bbd3df0530": {
+          "type": "quantity_and_button",
           "settings": {
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": false
           }
         },
         "description": {
@@ -41,8 +34,7 @@
         "title",
         "price",
         "variant_picker",
-        "quantity_selector",
-        "buy_buttons",
+        "7d7497e9-b6a8-44f0-b7f8-c8bbd3df0530",
         "description"
       ],
       "settings": {
