@@ -637,7 +637,7 @@ var slickSliders = function(){
 
    
 
-        const activeTrans = document.querySelector('body').dataset.trans;
+        //const activeTrans = document.querySelector('body').dataset.trans;
         barba.init({
             sync: true,
             debug: true,
