@@ -1470,7 +1470,7 @@ section.newsletter-cloud {
   position: absolute;
   right: 40px;
   top: 0px;
-  margin-top: -30px;
+  margin-top: -38px;
   z-index: 2;
   pointer-events: none;
   width: 76px;
@@ -1484,6 +1484,12 @@ section.newsletter-cloud {
 }
 .bit-sticker svg #top-letters path, .bit-sticker svg #top-letters rect {
   fill: #000F44;
+}
+@media (min-width: 1280px) {
+  .bit-sticker {
+    width: 82px;
+    margin-top: -46px;
+  }
 }
 @media (min-width: 1280px) {
   .bit-sticker {
