@@ -355,6 +355,9 @@ section.section-product-info-box-drops .product-info-col .produt-col-img.single 
   section.section-product-info-box-drops .product-info-col {
     width: 50%;
   }
+  section.section-product-info-box-drops .product-info-col.single {
+    width: 100%;
+  }
 }
 section.section-product-info-box-drops .product-info-col h2 {
   color: #ffffff;
