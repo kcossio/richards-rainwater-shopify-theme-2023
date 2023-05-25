@@ -253,6 +253,7 @@
   .product-form__input input[type='radio']:checked + label {
     background-color:$white;
     color:$darkest_blue;
+    border-color:$light_blue;
 
     &::before {
       background-image:url(icon-drop-light-blue.svg);
