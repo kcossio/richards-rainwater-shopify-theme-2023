@@ -217,13 +217,14 @@
     font-weight:900;
     line-height: 1;
     text-align: center;
-    transition: border var(--duration-short) ease;
+    transition: all .3s ease 0s;
     cursor: pointer;
     position: relative;
     text-transform:uppercase;
-    letter-spacing:1px;
+    letter-spacing:1.5px;
     border: 1px solid #E3E3E3;
     border-radius: 12px;
+
 
     @include breakpoint(tablet) {
       margin:0px 24px 0px 0px;
@@ -243,6 +244,11 @@
     height:auto;
     background-image:url(icon-drop-grey.svg);
     background-size:cover;
+    transition:all .3s ease 0s;
+
+    @include breakpoint(tablet) {
+      margin-right:8px;
+    }
   }
   
   .product-form__input input[type='radio'] + label:hover:before {

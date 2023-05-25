@@ -374,11 +374,11 @@ fieldset.product-form__input .form__label {
   font-weight: 900;
   line-height: 1;
   text-align: center;
-  transition: border var(--duration-short) ease;
+  transition: all 0.3s ease 0s;
   cursor: pointer;
   position: relative;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   border: 1px solid #E3E3E3;
   border-radius: 12px;
 }
@@ -401,6 +401,12 @@ fieldset.product-form__input .form__label {
   height: auto;
   background-image: url(icon-drop-grey.svg);
   background-size: cover;
+  transition: all 0.3s ease 0s;
+}
+@media (min-width: 768px) {
+  .product-form__input input[type=radio] + label:before {
+    margin-right: 8px;
+  }
 }
 
 .product-form__input input[type=radio] + label:hover:before {
