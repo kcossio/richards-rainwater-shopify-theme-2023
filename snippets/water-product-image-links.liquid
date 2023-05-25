@@ -40,7 +40,7 @@
                 {%- endif -%}
             </h3>
             {%- if product_2.metafields.product_extra.water_cropped_image.value != blank %}
-                {% assign product_2_img = product_1.metafields.product_extra.water_cropped_image %}
+                {% assign product_2_img = product_2.metafields.product_extra.water_cropped_image %}
                 {{ product_2_img | image_url: width: product_2_img.width | image_tag: class: 'water-btn-img', loading: 'lazy' }}
             {%- else -%}
                 {%- assign product_2_image = block.settings.product_2.featured_image -%}
