@@ -7,7 +7,7 @@
       <div class="product-desc">
         <h2 class="fade-in-left">{{ section.settings.heading }} </h2>
         {%- if product.description != blank -%}
-          <div class="product__description fade-in-left rte"  {{ block.shopify_attributes }}>
+          <div class="product__description rte"  {{ block.shopify_attributes }}>
             {{ product.description }}
           </div>
         {%- endif -%}

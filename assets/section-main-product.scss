@@ -211,7 +211,7 @@
     align-items:center;
     justify-content: space-between;
     margin: 0px 6px 0px 0px;
-    padding: 1rem 2rem;
+    padding: 6px 10px;
     font-size: 10px;
     color:#808080;
     font-weight:900;
@@ -221,7 +221,7 @@
     cursor: pointer;
     position: relative;
     text-transform:uppercase;
-    letter-spacing:1.5px;
+    letter-spacing:1px;
     border: 1px solid #E3E3E3;
     border-radius: 12px;
 
@@ -231,6 +231,7 @@
       font-size:18px;
       border:0px;
       padding:0px;
+      letter-spacing:1.5px;
     }
   }
   
@@ -240,7 +241,7 @@
     position:relative;
     margin-right:4px;
     aspect-ratio: 20.32 / 28.57;
-    width:15px;
+    width:8px;
     height:auto;
     background-image:url(icon-drop-grey.svg);
     background-size:cover;
@@ -248,6 +249,7 @@
 
     @include breakpoint(tablet) {
       margin-right:8px;
+      width:15px;
     }
   }
   
