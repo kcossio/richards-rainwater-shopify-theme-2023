@@ -1911,3 +1911,18 @@ nav.water-product-buttons a img.custom-title-img {
   left: 0px;
   transform: skewX(0);
 }
+
+.product-variant-sticker {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  width: 69px;
+  height: auto;
+}
+@media (min-width: 1280px) {
+  .product-variant-sticker {
+    width: 134px;
+  }
+}

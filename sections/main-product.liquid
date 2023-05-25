@@ -57,7 +57,19 @@
 
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %} fade-in-up">
-      
+        {% for variant in product.variants %}
+        {% if product.selected_or_first_available_variant.id == variant.id %}
+          {% assign sticker_img = variant.variant_extra.variant_sticker %}
+          {{ sticker_img | image_url: width: sticker_img.width | image_tag: class: 'product-variant-sticker bounce-in', loading: 'lazy' }}
+        {% endif %}
+        {% endfor %}
+        <script type="text/javascript">
+        jQuery(document).ready(function($){
+        $(".no-js-hidden").on("click", function(){
+        var refreshint = setInterval(function(){
+        location.reload();
+        }, 1000);    });   });
+        </script>
 
                         {% comment %}magictoolbox code begins{% endcomment %}
                         {% assign Magic360ImageCount = 36 %}

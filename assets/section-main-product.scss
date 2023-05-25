@@ -1881,3 +1881,17 @@
   }
 
 }
+
+.product-variant-sticker {
+  display:block;
+  position:absolute;
+  z-index:2;
+  top:0px;
+  left:0px;
+  width:69px;
+  height:auto;
+
+  @include breakpoint(laptop) {
+    width:134px;
+  }
+}
