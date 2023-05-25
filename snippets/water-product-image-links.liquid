@@ -15,9 +15,14 @@
                 {{ product_1.title }}
                 {%- endif -%}
             </h3>
-            {%- assign product_1_image = block.settings.product_1.featured_image -%}
-            {%- if product_1_image != blank -%}
-                {{ product_1_image | image_url: width: product_1_image.width | image_tag: class: 'water-btn-img', loading: 'lazy' }}
+            {%- if product_1.metafields.product_extra.water_cropped_image.value != blank %}
+                {% assign product_1_img = product_1.metafields.product_extra.water_cropped_image %}
+            {%- else -%}
+                {{ product_1_img | image_url: width: product_1_img.width | image_tag: class: 'water-btn-img', loading: 'lazy' }}
+                {%- assign product_1_image = block.settings.product_1.featured_image -%}
+                {%- if product_1_image != blank -%}
+                    {{ product_1_image | image_url: width: product_1_image.width | image_tag: class: 'water-btn-img', loading: 'lazy' }}
+                {%- endif -%}
             {%- endif -%}
         </a>
 
@@ -34,9 +39,14 @@
                 {{ product_2.title }}
                 {%- endif -%}
             </h3>
-            {%- assign product_2_image = block.settings.product_2.featured_image -%}
-            {%- if product_2_image != blank -%}
-                {{ product_2_image | image_url: width: product_2_image.width | image_tag: class: 'water-btn-img', loading: 'lazy' }}
+            {%- if product_2.metafields.product_extra.water_cropped_image.value != blank %}
+                {% assign product_2_img = product_1.metafields.product_extra.water_cropped_image %}
+            {%- else -%}
+                {{ product_2_img | image_url: width: product_2_img.width | image_tag: class: 'water-btn-img', loading: 'lazy' }}
+                {%- assign product_2_image = block.settings.product_2.featured_image -%}
+                {%- if product_2_image != blank -%}
+                    {{ product_2_image | image_url: width: product_2_image.width | image_tag: class: 'water-btn-img', loading: 'lazy' }}
+                {%- endif -%}
             {%- endif -%}
         </a>
 
