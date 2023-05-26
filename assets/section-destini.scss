@@ -13,11 +13,11 @@
         min-height:90vh;
     }
 
-    &::after {
-        content:"";
+   .overlay {
         display:block;
-        transform-origin: top;
+        transform-origin: bottom;
         position:absolute;
+        background:$white;
         top:0px;
         left:0px;
         width:100%;

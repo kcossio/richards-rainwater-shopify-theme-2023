@@ -182,11 +182,11 @@ EASING
     min-height: 90vh;
   }
 }
-.destini-inner::after {
-  content: "";
+.destini-inner .overlay {
   display: block;
-  transform-origin: top;
+  transform-origin: bottom;
   position: absolute;
+  background: #ffffff;
   top: 0px;
   left: 0px;
   width: 100%;
