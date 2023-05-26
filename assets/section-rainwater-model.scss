@@ -88,6 +88,8 @@ ul.model-blocks{
     display:flex;
     flex-wrap:wrap;
     width:100%;
+    z-index:3;
+    position:relative;
 
     @include breakpoint(tablet) {
         margin:80px 0px 0px 0px;

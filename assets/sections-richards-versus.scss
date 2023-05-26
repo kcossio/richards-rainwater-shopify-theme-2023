@@ -283,7 +283,7 @@ section.section-versus .select2-container--default .select2-selection--single:fo
             .vs-info-box-content {
                 width:100%;
 
-                @include breakpoint(tablet) {
+                @include breakpoint(laptop) {
                     width:60%;
                 }
 
@@ -293,13 +293,13 @@ section.section-versus .select2-container--default .select2-selection--single:fo
                     margin:16px 0px 8px 0px;
                     line-height:1.2em;
 
-                    @include breakpoint(tablet) {
+                    @include breakpoint(laptop) {
                         font-size:28px;
                         margin:0px 0px 8px 0px;
                     }
                 }
             }
-            @include breakpoint(tablet) {
+            @include breakpoint(laptop) {
                 justify-content: space-between;
                 text-align:left;
                 align-items:center;

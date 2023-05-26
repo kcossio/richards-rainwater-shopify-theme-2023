@@ -448,7 +448,7 @@ section.section-versus .select2-container--default .select2-selection--single:fo
 .versus-choices-blocks .versus-choice-column .vs-info-box .vs-info-box-content {
   width: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   .versus-choices-blocks .versus-choice-column .vs-info-box .vs-info-box-content {
     width: 60%;
   }
@@ -459,13 +459,13 @@ section.section-versus .select2-container--default .select2-selection--single:fo
   margin: 16px 0px 8px 0px;
   line-height: 1.2em;
 }
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   .versus-choices-blocks .versus-choice-column .vs-info-box .vs-info-box-content h3 {
     font-size: 28px;
     margin: 0px 0px 8px 0px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   .versus-choices-blocks .versus-choice-column .vs-info-box {
     justify-content: space-between;
     text-align: left;

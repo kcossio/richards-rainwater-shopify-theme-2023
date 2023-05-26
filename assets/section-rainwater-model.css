@@ -424,6 +424,8 @@ ul.model-blocks {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  z-index: 3;
+  position: relative;
 }
 @media (min-width: 768px) {
   ul.model-blocks {
