@@ -110,9 +110,21 @@
             
             })
         });
+        //Destini Reveal on Load
+        var destini_tl = gsap.timeline({repeat: 0, delay: .25});
+        destini_tl.to(".destini-inner::after", {   
+            scaleY: 0,
+            ease: "power1.out",
+            duration: 1.25,
+            onStart: function() {
+                //jQuery('.home-grid').addClass('animated');
+                //jQuery('.home-grid-title h2').addClass('animated'); 
+            }
+            }
+        );
+        
 
-        // Reset Product scrolltriggers when the top has been passed
-    // Body Image with Parallax
+    // Product Main
     gsap.to(".section-product-main", {
         scrollTrigger: {
             trigger: ".section-product-main", // start the animation when ".box" enters the viewport (once),

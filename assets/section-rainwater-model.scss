@@ -17,6 +17,7 @@ section.rainwater-model-banner {
     .inner {
         z-index:6;
     }
+    
     @include breakpoint(tablet) {
         padding:9vw 0px 16vw 0px;
     }
