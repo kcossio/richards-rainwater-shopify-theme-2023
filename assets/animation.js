@@ -570,7 +570,7 @@ var slickSliders = function(){
         
 
         // Wait for images to load
-        window.addEventListener("load", onLoad);
+        window.addEventListener("ready", onLoad);
 
         function onLoad() {
             
