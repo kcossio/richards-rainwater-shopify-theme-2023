@@ -113,9 +113,9 @@
         //Destini Reveal on Load
         var destini_tl = gsap.timeline({repeat: 0, delay: 1});
         destini_tl.to(".destini-inner .overlay", {   
-            opacity: 0,
+            scaleY: 0,
             ease: "power1.out",
-            duration: .1,
+            duration: 1.25,
             onStart: function() {
                 //jQuery('.home-grid').addClass('animated');
                 //jQuery('.home-grid-title h2').addClass('animated'); 
