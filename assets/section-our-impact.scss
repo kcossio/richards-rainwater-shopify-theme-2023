@@ -56,9 +56,10 @@ section.our-impact {
         .impact-item {
             width:100%;
             text-align:center;
-            margin:0px 0px 30px 0px;
+            margin:0px 0px 50px 0px;
             @include breakpoint(tablet) {
                 width:30%;
+                margin:0px 0px 30px 0px;
             }
 
             h3 {
@@ -74,9 +75,9 @@ section.our-impact {
                 }
             }
             p {
-                width:65%;
+                width:70%;
                 margin:0px auto;
-                font-size:12px;
+                font-size:14px;
                 font-weight:600;
                 line-height:1.3em;
 
@@ -89,6 +90,10 @@ section.our-impact {
 
             img {
                 height:auto;
+                max-width: 70%;
+                @include breakpoint(tablet) {
+                    max-width:100%;
+                }
             }
 
             
