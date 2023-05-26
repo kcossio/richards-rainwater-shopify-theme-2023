@@ -113,7 +113,7 @@
         //Destini Reveal on Load
         var destini_tl = gsap.timeline({repeat: 0, delay: 1});
         destini_tl.to(".destini-inner .overlay", {   
-            scaleY: 0,
+            opacity: 0,
             ease: "power1.out",
             duration: 1.25,
             onStart: function() {
@@ -570,7 +570,7 @@ var slickSliders = function(){
         
 
         // Wait for images to load
-        window.addEventListener("DOMContentLoaded", onLoad);
+        window.addEventListener("DOMContentLoaded", onLoad); //previously was "load"
 
         function onLoad() {
             
