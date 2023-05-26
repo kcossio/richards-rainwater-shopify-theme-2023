@@ -111,10 +111,10 @@
             })
         });
         //Destini Reveal on Load
-        var destini_tl = gsap.timeline({repeat: 0, delay: 1});
+        var destini_tl = gsap.timeline({repeat: 0, delay: 1.25});
         destini_tl.to(".destini-inner .overlay", {   
             scaleY: 0,
-            ease: "power1.out",
+            ease: "ease",
             duration: 1.25,
             onStart: function() {
                 //jQuery('.home-grid').addClass('animated');
