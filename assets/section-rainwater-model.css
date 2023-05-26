@@ -350,6 +350,9 @@ section.rainwater-model-banner {
   padding: 23vw 0px 30vw 0px;
   background-color: #0040A8;
 }
+section.rainwater-model-banner .inner {
+  z-index: 6;
+}
 @media (min-width: 768px) {
   section.rainwater-model-banner {
     padding: 9vw 0px 16vw 0px;
@@ -434,6 +437,7 @@ ul.model-blocks {
 }
 ul.model-blocks li {
   display: flex;
+  position: relative;
   width: 100%;
   flex-wrap: wrap;
   align-items: center;
@@ -461,7 +465,9 @@ ul.model-blocks li .model-block-content {
   align-items: center;
   align-content: center;
   justify-content: center;
-  padding: 40px 20vw 20px 28vw;
+  padding: 40px 10vw 40px 18vw;
+  position: relative;
+  z-index: 6;
 }
 @media (min-width: 768px) {
   ul.model-blocks li .model-block-content {
@@ -509,10 +515,16 @@ ul.model-blocks li .model-block-content h3 span {
   }
 }
 ul.model-blocks li .model-block-content p {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.4em;
 }
 @media (min-width: 768px) {
+  ul.model-blocks li .model-block-content p {
+    font-size: 16px;
+    line-height: 1.4em;
+  }
+}
+@media (min-width: 1280px) {
   ul.model-blocks li .model-block-content p {
     font-size: 28px;
     line-height: 1.6em;

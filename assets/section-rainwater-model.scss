@@ -14,6 +14,9 @@ section.rainwater-model-banner {
     padding:23vw 0px 30vw 0px;
     background-color:$medium_blue;
 
+    .inner {
+        z-index:6;
+    }
     @include breakpoint(tablet) {
         padding:9vw 0px 16vw 0px;
     }
@@ -97,6 +100,7 @@ ul.model-blocks{
 
     li {
         display:flex;
+        position:relative;
         width:100%;
         flex-wrap:wrap;
         align-items:center;
@@ -123,7 +127,9 @@ ul.model-blocks{
             align-items:center;
             align-content:center;
             justify-content:center;
-            padding:40px 20vw 20px 28vw;
+            padding:40px 10vw 40px 18vw;
+            position: relative;
+            z-index:6;
 
             @include breakpoint(tablet) {
                 width:45%;
@@ -169,10 +175,15 @@ ul.model-blocks{
                 }
             }
             p {
-                font-size:12px;
+                font-size:16px;
                 line-height:1.4em;
 
                 @include breakpoint(tablet) {
+                    font-size:16px;
+                    line-height:1.4em;
+                }
+
+                @include breakpoint(laptop) {
                     font-size:28px;
                     line-height:1.6em;
                 }
