@@ -447,10 +447,12 @@ section.section-versus .select2-container--default .select2-selection--single:fo
 }
 .versus-choices-blocks .versus-choice-column .vs-info-box .vs-info-box-content {
   width: 100%;
+  text-align: center;
 }
 @media (min-width: 1280px) {
   .versus-choices-blocks .versus-choice-column .vs-info-box .vs-info-box-content {
     width: 60%;
+    text-align: left;
   }
 }
 .versus-choices-blocks .versus-choice-column .vs-info-box .vs-info-box-content h3 {

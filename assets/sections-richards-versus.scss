@@ -282,9 +282,11 @@ section.section-versus .select2-container--default .select2-selection--single:fo
             }
             .vs-info-box-content {
                 width:100%;
+                text-align:center;
 
                 @include breakpoint(laptop) {
                     width:60%;
+                    text-align:left;
                 }
 
                 h3 {
