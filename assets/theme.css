@@ -730,12 +730,12 @@ EASING
 .clouds.bottom {
   position: absolute;
   left: 0px;
-  bottom: 0px;
+  bottom: -1px;
 }
 .clouds.top {
   position: absolute;
   left: 0px;
-  top: 0px;
+  top: -1px;
 }
 @keyframes primary {
   from {
