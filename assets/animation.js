@@ -115,7 +115,7 @@
         destini_tl.to(".destini-inner .overlay", {   
             opacity: 0,
             ease: "power1.out",
-            duration: 1.25,
+            duration: .1,
             onStart: function() {
                 //jQuery('.home-grid').addClass('animated');
                 //jQuery('.home-grid-title h2').addClass('animated'); 
