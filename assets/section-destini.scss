@@ -20,7 +20,7 @@
         align-items: center;
         align-content: center;
         transform-origin: bottom;
-        position:absolute;
+        position:fixed;
         background:$white;
         top:0px;
         left:0px;
@@ -28,6 +28,7 @@
         height:100%;
         z-index: 10;
         pointer-events: none;
+        overflow:hidden;
 
         span {
             font-size:16px;

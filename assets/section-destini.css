@@ -189,7 +189,7 @@ EASING
   align-items: center;
   align-content: center;
   transform-origin: bottom;
-  position: absolute;
+  position: fixed;
   background: #ffffff;
   top: 0px;
   left: 0px;
@@ -197,6 +197,7 @@ EASING
   height: 100%;
   z-index: 10;
   pointer-events: none;
+  overflow: hidden;
 }
 .destini-inner .overlay span {
   font-size: 16px;
