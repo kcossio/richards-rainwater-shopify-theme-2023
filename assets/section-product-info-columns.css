@@ -217,7 +217,7 @@ section.section-product-info-box-drops header {
 section.section-product-info-box-drops header h2 {
   color: #ffffff;
   margin: 0px;
-  font-size: 37px;
+  font-size: 30px;
   line-height: 1.2em;
   text-transform: uppercase;
 }
@@ -339,7 +339,7 @@ section.section-product-info-box-drops .product-info-col .produt-col-img.single 
 }
 section.section-product-info-box-drops .product-info-col .produt-col-img.single img {
   max-height: 70vh;
-  max-width: 23%;
+  max-width: 50%;
   height: auto;
   width: auto;
 }
