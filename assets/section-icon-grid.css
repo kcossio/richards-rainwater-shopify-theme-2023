@@ -223,7 +223,7 @@ EASING
   width: 100%;
 }
 .product-desc-icons .product-desc h2 {
-  margin: 0px;
+  margin: 0px 0px 0.5em 0px;
   font-size: 22px;
   font-weight: 800;
   letter-spacing: 1px;
@@ -233,7 +233,7 @@ EASING
 }
 .product-desc-icons .product-desc p {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 16px;
   text-align: center;
 }
 .product-desc-icons .icon-grid {
@@ -247,6 +247,7 @@ EASING
   .product-desc-icons .product-desc h2 {
     text-align: left;
     font-size: 21px;
+    margin: 0px;
   }
   .product-desc-icons .product-desc p {
     text-align: left;
