@@ -1240,7 +1240,8 @@ EASING
 #nav-wrapper.open {
   pointer-events: auto;
   opacity: 1;
-  height: 100vh;
+  min-height: 100vh;
+  overflow-y: scroll;
   transform: translateY(0%);
   transition-delay: 0s;
   background-color: #000F44;
