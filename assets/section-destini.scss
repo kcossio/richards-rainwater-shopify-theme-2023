@@ -50,6 +50,7 @@
     padding:34px 40px;
     justify-content:center;
     text-align:center;
+    order:1;
 
     @include breakpoint(tablet) {
     }
@@ -116,6 +117,7 @@
     overflow: hidden;
     width:100%;
     height:100%;
+    order:3;
 
 
     @include breakpoint(laptop) {
@@ -125,10 +127,9 @@
 }
 .jump-to-aisle {
     display:flex;
-    position:absolute;
+    position:relative;
     z-index:10;
-    aspect-ratio: 372 / 223;
-    width:277px;
+    width:100%;
     height:auto;
     color:$white;
     font-weight:900;
@@ -140,15 +141,22 @@
     padding:20px 36px;
     right:-20px;
     bottom:20%;
-    color:$dark_blue;
+    background:$medium_blue;
+    color:$white;
     line-height:1em;
     text-transform: uppercase;
     text-decoration:none;
     transform-origin:right;
     transform:scale(.7);
+    order:2;
 
     @include breakpoint(tablet) {
         transform:scale(1);
+        position:absolute;
+        aspect-ratio: 372 / 223;
+        width:277px;
+        color:$dark_blue;
+        background:none;
     }
 
 
@@ -163,13 +171,17 @@
     
 
     svg {
-        display:block;
+        display:none;
         position:absolute;
         z-index:1;
         top:0px;
         left:0px;
         width:100%;
         height:100%;
-        filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+
+        @include breakpoint(tablet) {
+            display:block;
+            filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+        }
     }
 }
