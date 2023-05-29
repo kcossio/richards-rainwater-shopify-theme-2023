@@ -112,7 +112,7 @@
         });
         //Destini Reveal on Load
         var destini_tl = gsap.timeline({repeat: 0, delay: 1.5});
-        destini_tl.to(".destini-inner span", { opacity: 0, scale: 0, ease: "elastic.in(1, 0.75)" });
+        destini_tl.to(".destini-inner .overlay span", { opacity: 0, scale: 0, ease: "elastic.in(1, 0.75)" });
         destini_tl.to(".destini-inner .overlay", {   
             height: 0,
             ease: "sine.inOut",
