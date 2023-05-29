@@ -35,7 +35,8 @@
         text-align:center;
         text-transform:uppercase;
         font-size:20px;
-        margin:0px 0px 1em 0px;
+        padding:0px;
+        margin:0px 0px 1em 0px; 
 
         @include breakpoint(tablet) {
             width:50%;
