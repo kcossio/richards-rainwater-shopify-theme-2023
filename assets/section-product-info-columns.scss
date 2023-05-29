@@ -274,7 +274,7 @@ section.section-product-info-box-drops {
         }
 
         &.info-drop-1 {
-            left:6%;
+            left:4%;
             top:0%;
 
             @include breakpoint(tablet) {
@@ -283,7 +283,7 @@ section.section-product-info-box-drops {
             }
         }
         &.info-drop-2 {
-            right:4.8%;
+            right:2.8%;
             top:30%;
 
             @include breakpoint(tablet) {

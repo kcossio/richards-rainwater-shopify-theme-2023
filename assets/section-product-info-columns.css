@@ -426,7 +426,7 @@ section.section-product-info-box-drops .info-drop:hover {
   transform: scale(1);
 }
 section.section-product-info-box-drops .info-drop.info-drop-1 {
-  left: 6%;
+  left: 4%;
   top: 0%;
 }
 @media (min-width: 768px) {
@@ -436,7 +436,7 @@ section.section-product-info-box-drops .info-drop.info-drop-1 {
   }
 }
 section.section-product-info-box-drops .info-drop.info-drop-2 {
-  right: 4.8%;
+  right: 2.8%;
   top: 30%;
 }
 @media (min-width: 768px) {

@@ -294,6 +294,10 @@ section.aisle .aisle-terms p {
   line-height: 1.3em;
   margin: 0px;
   width: 100%;
+  color: #BDBDBD;
+}
+section.aisle .aisle-terms p a {
+  color: #BDBDBD;
 }
 
 #aisle-form-container {
