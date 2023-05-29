@@ -1727,7 +1727,7 @@ section.newsletter-cloud {
 
 .newsletter__wrapper.mobile_nl_wrapper {
   text-align: center;
-  padding: 69px 36px;
+  padding: 69px 36px 120px 36px;
   background: #ffffff;
 }
 .newsletter__wrapper.mobile_nl_wrapper h2.newsletter-signup-heading {
