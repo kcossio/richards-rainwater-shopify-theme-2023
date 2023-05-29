@@ -2741,6 +2741,7 @@ details[open] > .search-modal {
   width: 100%;
   min-height: 0px;
   height: 97.75px;
+  z-index: 10;
 }
 
 details[open] .modal-overlay {

@@ -344,6 +344,7 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
     height: 80px;
     width: 228px;
     transform: translate(208px, 0px);
+    padding: 23px 36px 23px 50px;
   }
 }
 .home-audio-player.closed {

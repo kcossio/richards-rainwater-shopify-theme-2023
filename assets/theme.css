@@ -999,7 +999,7 @@ EASING
   width: 30px;
   height: 30px;
   margin: 0px;
-  z-index: 50;
+  z-index: 2;
   position: relative;
   display: block;
   border: 0px;
