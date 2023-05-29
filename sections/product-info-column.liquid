@@ -16,7 +16,7 @@
       {% assign this_class = 'still' %}
     {%- endif -%}
 
-    <header class="product-info-col-header single {{ class }}">
+    <header class="product-info-col-header single {{ this_class }}">
        
       <h2 class="product-info-col-heading">{{ section.settings.heading }}</h2>
       <p class="product-info-col-subheading">{{ section.settings.subheading }}</p>
@@ -85,6 +85,9 @@
 {%- endfor -%}
 
 <script>
+
+  jQuery('.product-info-box-single').addClass('{{ this_class }}');
+  
   window.addEventListener("load", (event) => {
 
     jQuery('.drop-clickme').click(function () { // Enable the toggle view list for ul.toggle-view for toggle-able lists
@@ -101,7 +104,7 @@
  
    });
   });
-</script>
+</scripty>
 
 {% schema %}
   {
