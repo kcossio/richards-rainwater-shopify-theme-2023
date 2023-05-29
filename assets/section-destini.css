@@ -188,7 +188,7 @@ EASING
   justify-content: center;
   align-items: center;
   align-content: center;
-  transform-origin: bottom;
+  transform-origin: top;
   position: fixed;
   background: #ffffff;
   top: 0px;

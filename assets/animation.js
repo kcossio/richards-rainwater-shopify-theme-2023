@@ -115,8 +115,8 @@
         destini_tl.to(".destini-inner span", { opacity: 0, scale: 0, ease: "elastic.in(1, 0.75)" });
         destini_tl.to(".destini-inner .overlay", {   
             height: 0,
-            ease: "easeInOut",
-            duration: 1.25,
+            ease: "sine.inOut",
+            duration: .75,
             onComplete: function() {
                 jQuery('#stars-loading').remove();
                 //jQuery('.home-grid').addClass('animated');
