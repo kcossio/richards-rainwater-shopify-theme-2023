@@ -162,14 +162,15 @@ section.aisle {
         border:1px solid #707070;
         color:#707070;
         font-weight:800;
-        padding:14px 0px 14px 35px;
+        padding:14px 0px 14px 18px;
         width:65%;
         margin:0px;
-        font-size:16px;
+        font-size:14px;
         font-family:$font_body;
 
         @include breakpoint(tablet) {
             font-size:20px;
+            padding:14px 35px 14px 35px;
         }
 
         &:focus {

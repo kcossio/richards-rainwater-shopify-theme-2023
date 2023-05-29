@@ -319,15 +319,16 @@ section.aisle .aisle-terms p {
   border: 1px solid #707070;
   color: #707070;
   font-weight: 800;
-  padding: 14px 0px 14px 35px;
+  padding: 14px 0px 14px 18px;
   width: 65%;
   margin: 0px;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "TT Commons", sans-serif;
 }
 @media (min-width: 768px) {
   .aisle-form-container input {
     font-size: 20px;
+    padding: 14px 35px 14px 35px;
   }
 }
 .aisle-form-container input:focus {
