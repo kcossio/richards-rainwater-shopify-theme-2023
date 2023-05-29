@@ -36,6 +36,11 @@ section.section-product-info-box-drops {
         margin:0px 0px 40px 0px;
         padding:56px 40px 40px 40px;
 
+        &.sparkling,
+        &.medium {
+            background:$medium_blue;
+        }
+
         @include breakpoint(tablet) {
             margin:0px 0px 20px 0px;
         }

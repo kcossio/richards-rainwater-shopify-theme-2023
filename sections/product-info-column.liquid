@@ -9,9 +9,11 @@
     {%- if class == 'sparkling' -%}
       {% assign drop_color = 'light' %}
       {% assign col_type = 'product-info-col-2' %}
+      {% assign this_class = 'sparkling medium' %}
     {%- else -%}
       {% assign drop_color = 'medium' %}
       {% assign col_type = 'product-info-col-1' %}
+      {% assign this_class = 'still' %}
     {%- endif -%}
 
     <header class="product-info-col-header single {{ class }}">

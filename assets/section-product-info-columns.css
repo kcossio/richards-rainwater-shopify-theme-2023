@@ -204,6 +204,9 @@ section.section-product-info-box-drops header {
   margin: 0px 0px 40px 0px;
   padding: 56px 40px 40px 40px;
 }
+section.section-product-info-box-drops header.sparkling, section.section-product-info-box-drops header.medium {
+  background: #0040A8;
+}
 @media (min-width: 768px) {
   section.section-product-info-box-drops header {
     margin: 0px 0px 20px 0px;
