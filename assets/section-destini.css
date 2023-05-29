@@ -305,6 +305,7 @@ EASING
   color: #ffffff;
   font-weight: 900;
   font-size: 16px;
+  letter-spacing: 1px;
   padding: 20px 36px;
   text-align: center;
   align-items: center;
@@ -331,6 +332,7 @@ EASING
     bottom: 20%;
     transform: scale(0.7);
     font-size: 24px;
+    letter-spacing: 0.5px;
   }
 }
 .jump-to-aisle span {
