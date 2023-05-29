@@ -40,9 +40,11 @@ section.home-bottles-copy {
 
             &.float-1 {
                 width:46%;
+                margin-top:11%;
                 @include breakpoint(tablet) {
                     width:42%;
                     left:0%;
+                    margin-top:0%
                 }
             }
 
