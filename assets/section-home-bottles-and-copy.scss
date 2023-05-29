@@ -3,7 +3,7 @@
 @import "fonts";
 
 section.home-bottles-copy {
-    z-index:1;
+    z-index:3;
     padding:64px 0px 87.5vw 0px;
 
     @include breakpoint(tablet) {
@@ -39,7 +39,7 @@ section.home-bottles-copy {
             width:auto;
 
             &.float-1 {
-                width:66%;
+                width:46%;
                 @include breakpoint(tablet) {
                     width:42%;
                     left:0%;
@@ -47,8 +47,8 @@ section.home-bottles-copy {
             }
 
             &.float-2 {
-                width:80%;
-                left:22%;
+                width:60%;
+                left:30%;
                 margin-top:20%;
                 @include breakpoint(tablet) {
                     width:50.25%;

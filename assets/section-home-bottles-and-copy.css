@@ -171,7 +171,7 @@ EASING
 
 */
 section.home-bottles-copy {
-  z-index: 1;
+  z-index: 3;
   padding: 64px 0px 87.5vw 0px;
 }
 @media (min-width: 768px) {
@@ -211,7 +211,7 @@ section.home-bottles-copy + section {
   width: auto;
 }
 .home-bottles-intro .home-intro-left img.float.float-1 {
-  width: 66%;
+  width: 46%;
 }
 @media (min-width: 768px) {
   .home-bottles-intro .home-intro-left img.float.float-1 {
@@ -220,8 +220,8 @@ section.home-bottles-copy + section {
   }
 }
 .home-bottles-intro .home-intro-left img.float.float-2 {
-  width: 80%;
-  left: 22%;
+  width: 60%;
+  left: 30%;
   margin-top: 20%;
 }
 @media (min-width: 768px) {
