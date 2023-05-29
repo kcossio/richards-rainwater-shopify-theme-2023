@@ -304,21 +304,17 @@ EASING
   height: auto;
   color: #ffffff;
   font-weight: 900;
-  font-size: 24px;
+  font-size: 16px;
   text-align: center;
   align-items: center;
   align-content: center;
   justify-content: center;
-  padding: 20px 36px;
-  right: -20px;
-  bottom: 20%;
   background: #0040A8;
   color: #ffffff;
   line-height: 1em;
   text-transform: uppercase;
   text-decoration: none;
   transform-origin: right;
-  transform: scale(0.7);
   order: 2;
 }
 @media (min-width: 768px) {
@@ -329,6 +325,11 @@ EASING
     width: 277px;
     color: #000F44;
     background: none;
+    padding: 20px 36px;
+    right: -20px;
+    bottom: 20%;
+    transform: scale(0.7);
+    font-size: 24px;
   }
 }
 .jump-to-aisle span {
