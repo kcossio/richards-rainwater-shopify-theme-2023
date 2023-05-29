@@ -14,6 +14,8 @@
     height:56px;
     height:auto;
 
+    @include animationfix();
+
     &.auto {
 
     }
@@ -48,6 +50,7 @@
         display:block;
         left: 0%;
         top: 0%;
+        @include animationfix();
         //animation: primary 10s linear infinite;
 
         img {

@@ -651,6 +651,8 @@ EASING
   width: 200vw;
   height: 56px;
   height: auto;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
 }
 .clouds.scrubme {
   height: 56px;
@@ -682,6 +684,8 @@ EASING
   display: block;
   left: 0%;
   top: 0%;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
 }
 .clouds .scroll-element img {
   position: absolute;
