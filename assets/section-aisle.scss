@@ -10,7 +10,18 @@
 section.aisle {
     padding:60px 0px;
 
+
+    .inner {
+        padding:0px 20px;
+        @include breakpoint(tablet) {
+            padding:0px 40px;
+        }
+    }
     
+    #aisle-form-container {
+        max-width:100%;
+        width:520px;
+    }
 
     
 
@@ -30,11 +41,16 @@ section.aisle {
             }
         }
         p {
-            font-size:24px;
+            font-size:16px;
+            line-height:1.4em;
             margin:0px auto;
             font-weight:700;
             width:872px;
             max-width:100%;
+
+            @include breakpoint(tablet) {
+                font-size:24px;
+            }
         }
     }
 
@@ -146,10 +162,15 @@ section.aisle {
         border:1px solid #707070;
         color:#707070;
         font-weight:800;
-        padding:14px 35px;
+        padding:14px 0px 14px 35px;
         width:65%;
         margin:0px;
+        font-size:16px;
         font-family:$font_body;
+
+        @include breakpoint(tablet) {
+            font-size:20px;
+        }
 
         &:focus {
             border-width: 1px;
@@ -193,10 +214,16 @@ section.aisle {
         text-transform:uppercase;
         width:100%;
         letter-spacing:3px;
+        padding:0px;
+        font-size:16px;
         transition:all .3s ease 0s;
 
         &:hover {
             background-color: $light_blue;
+        }
+        
+        @include breakpoint(tablet) {
+            font-size:22px;
         }
     }
 }

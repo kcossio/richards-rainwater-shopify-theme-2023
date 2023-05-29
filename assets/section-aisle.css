@@ -178,6 +178,18 @@ EASING
 section.aisle {
   padding: 60px 0px;
 }
+section.aisle .inner {
+  padding: 0px 20px;
+}
+@media (min-width: 768px) {
+  section.aisle .inner {
+    padding: 0px 40px;
+  }
+}
+section.aisle #aisle-form-container {
+  max-width: 100%;
+  width: 520px;
+}
 section.aisle .aisle-intro {
   text-align: center;
   margin-bottom: 40px;
@@ -196,11 +208,17 @@ section.aisle .aisle-intro h2 {
   }
 }
 section.aisle .aisle-intro p {
-  font-size: 24px;
+  font-size: 16px;
+  line-height: 1.4em;
   margin: 0px auto;
   font-weight: 700;
   width: 872px;
   max-width: 100%;
+}
+@media (min-width: 768px) {
+  section.aisle .aisle-intro p {
+    font-size: 24px;
+  }
 }
 section.aisle .aisle-steps {
   display: flex;
@@ -301,10 +319,16 @@ section.aisle .aisle-terms p {
   border: 1px solid #707070;
   color: #707070;
   font-weight: 800;
-  padding: 14px 35px;
+  padding: 14px 0px 14px 35px;
   width: 65%;
   margin: 0px;
+  font-size: 16px;
   font-family: "TT Commons", sans-serif;
+}
+@media (min-width: 768px) {
+  .aisle-form-container input {
+    font-size: 20px;
+  }
 }
 .aisle-form-container input:focus {
   border-width: 1px;
@@ -340,8 +364,15 @@ section.aisle .aisle-terms p {
   text-transform: uppercase;
   width: 100%;
   letter-spacing: 3px;
+  padding: 0px;
+  font-size: 16px;
   transition: all 0.3s ease 0s;
 }
 .aisle-form-button-container button.aisle-form-button:hover {
   background-color: #0094DA;
+}
+@media (min-width: 768px) {
+  .aisle-form-button-container button.aisle-form-button {
+    font-size: 22px;
+  }
 }
