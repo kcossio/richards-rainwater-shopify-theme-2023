@@ -485,7 +485,7 @@ section.section-product-info-box-drops .info-drop p {
   display: block;
   position: absolute;
   top: 100%;
-  left: 0px;
+  left: 10%;
   transform: translateY(-10%);
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
 }
@@ -494,6 +494,7 @@ section.section-product-info-box-drops .info-drop p {
     font-size: 16px;
     line-height: 1.4em;
     width: 120%;
+    left: 0%;
   }
 }
 section.section-product-info-box-drops .info-drop.open {

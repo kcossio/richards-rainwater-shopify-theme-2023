@@ -331,7 +331,7 @@ section.section-product-info-box-drops {
             display:block;
             position:absolute;
             top:100%;
-            left:0px;
+            left:10%;
             transform:translateY(-10%);
             transition: all .3s $easeInOutBack 0s;
 
@@ -339,6 +339,7 @@ section.section-product-info-box-drops {
                 font-size:16px;
                 line-height: 1.4em;
                 width:120%;
+                left:0%;
             }
         }
 
