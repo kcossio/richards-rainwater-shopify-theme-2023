@@ -332,7 +332,7 @@ EASING
     bottom: 20%;
     transform: scale(0.7);
     font-size: 24px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0px;
   }
 }
 .jump-to-aisle span {
