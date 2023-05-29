@@ -172,7 +172,7 @@ section.home-banner {
     background:$white;
     border:1px solid #C8C8C8;
     border-radius:18px;
-    padding:23px 36px 23px 50px;
+    padding:10px 32px 13px 29px;
     transform:translate(88px,0px);
     transition:all .3s ease 0s;
 
@@ -214,11 +214,16 @@ section.home-banner {
         position:relative;
         border:0px;
         font-size:0px;
+        
 
         &.play-audio {
             aspect-ratio: 49 / 46;
-            width:36.75px;
+            width:38px;
             height:auto;
+
+            @include breakpoint(tablet) {
+                width:36.75px;
+            }
         }
 
         
