@@ -62,7 +62,6 @@
   <script type="text/javascript">
 
     // First, move the form above the overlay
-    jQuery('#modal-nl-form').insertAfter('#modal-form-overlay');
 
     // Then, set the form and background wrap using gsap (to make sure animation plays correctly)
     gsap.set('#modal-nl-form', {bottom: '15vh', right: '-.5vw', translateY: '0%', translateX: '0%'});
@@ -90,6 +89,9 @@
     // Modal Form
     jQuery('#modal-nl-form').on( "click", function( event ) {
       console.log('Modal Form clicked');
+
+
+      jQuery('#modal-nl-form').insertBefore('#modal-form-overlay');
 
       
 
