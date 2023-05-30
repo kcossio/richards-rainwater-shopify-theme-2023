@@ -87,7 +87,7 @@
                 duration: 0.4,
                 ease: 'ease'
             })
-            .to ('#modal-nl-form'),
+            .to ('#modal-nl-form',
             {
               width: '643px'
             });
@@ -98,12 +98,16 @@
       var tl = gsap.timeline();
         
         return tl
+            .from('#modal-nl-form',
+              {
+                width: '643px'
+              });
             .to('#modal-form-overlay', 
-            {
-                opacity:0,
-                duration: 0.4,
-                ease: 'ease'
-            });
+              {
+                  opacity:0,
+                  duration: 0.4,
+                  ease: 'ease'
+              })
     };
 
     // Audio Player
