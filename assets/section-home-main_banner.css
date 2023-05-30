@@ -482,6 +482,7 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
 }
 .modal-nl-form .newsletter__subheading {
   width: 100%;
+  margin: 0px;
   height: 0px;
   overflow: hidden;
   z-index: 3;
@@ -499,11 +500,13 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   display: none;
   position: relative;
   width: 100%;
+  margin: 0px;
 }
 .modal-nl-form form {
   z-index: 3;
   position: relative;
   width: 100%;
+  margin: 0px;
 }
 .modal-nl-form img {
   position: absolute;
