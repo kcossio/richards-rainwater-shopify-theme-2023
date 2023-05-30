@@ -89,10 +89,12 @@
             })
             .to ('#modal-nl-form',
             {
-              width: '643px'
+              width: '643px',
+              ease: 'Bounce.easeInOut'
             });
     };
 
+    // CLoase the modal
     window.closeModalForm = function() {
 
       var tl = gsap.timeline();
@@ -100,7 +102,8 @@
         return tl
             .to('#modal-nl-form',
               {
-                width: '315px'
+                width: '315px',
+                ease: 'Bounce.easeInOut'
               })
             .to('#modal-form-overlay', 
               {
