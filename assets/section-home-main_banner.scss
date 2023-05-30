@@ -358,8 +358,9 @@ section.home-banner {
     form {
        z-index:3;
         position:relative;
-        width:100%;
-        margin:0px;
+        max-width:100%;
+        margin:0px auto;
+        width:458px;
     }
     img {
         position:absolute;

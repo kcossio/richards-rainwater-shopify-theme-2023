@@ -505,8 +505,9 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
 .modal-nl-form form {
   z-index: 3;
   position: relative;
-  width: 100%;
-  margin: 0px;
+  max-width: 100%;
+  margin: 0px auto;
+  width: 458px;
 }
 .modal-nl-form img {
   position: absolute;
