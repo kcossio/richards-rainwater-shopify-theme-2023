@@ -49,17 +49,32 @@
       </audio>
   </div>
 
-  <div class="modal-nl-form">
+  <div class="modal-nl-form" id="modal-nl-form">
     <h2 class="newsletter-signup-heading imperial">
-      Thirsty 4 More?
+      Thirsty<br />4 More?
     </h2>
     <div class="newsletter__subheading rte"><p>Join the rainmaker movement</p></div>
     {% render 'form-newsletter' %}
 
     <img class="cloud popup-bg" src="{{ 'cloud-popup-newsletter.svg' | asset_url }}" width="876" height="360" role="presentation" alt="cloud" />
   </div><!--End modal-nl-form-->
+  <div class="modal-form-overlay"></div>
 
   <script type="text/javascript">
+
+    // Modal Form
+    jQuery('#modal-nl-form').on( "click", function( event ) {
+      console.log('Modal Form clicked');
+      jQuery(this).toggleClass('open');
+      if(jQuery(this).hasClass('open')) {
+        console.log('modal went from open to closed.');
+      } else {
+        console.log('modal went from closed to open.');
+      }
+    });
+
+
+    // Audio Player
     
     var myAudio = document.getElementById('rainAudio');
 
