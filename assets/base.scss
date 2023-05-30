@@ -2344,7 +2344,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
   top: 0px;
   left: 0px;
   width:100%;
-  z-index: 4;
+  z-index: 5;
 
   @include breakpoint(tablet) {
     height:40px;
