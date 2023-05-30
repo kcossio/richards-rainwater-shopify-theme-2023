@@ -58,7 +58,6 @@
 
     <img class="cloud popup-bg" src="{{ 'cloud-popup-newsletter.svg' | asset_url }}" width="876" height="360" role="presentation" alt="cloud" />
   </div><!--End modal-nl-form-->
-  <div class="modal-form-overlay">Modal form</div>
 
   <script type="text/javascript">
 
@@ -82,7 +81,7 @@
       var tl = gsap.timeline();
         
         return tl
-            .to('.modal-form-overlay', 
+            .to('#modal-form-overlay', 
             {
                 opacity:1,
                 duration: 0.4,
@@ -95,7 +94,7 @@
       var tl = gsap.timeline();
         
         return tl
-            .to('.modal-form-overlay', 
+            .to('#modal-form-overlay', 
             {
                 opacity:0,
                 duration: 0.4,

@@ -426,7 +426,7 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   }
 }
 
-.modal-form-overlay {
+#modal-form-overlay {
   position: fixed;
   z-index: 9;
   width: 100vw;
@@ -440,7 +440,7 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   opacity: 0;
   font-size: 0px;
 }
-.modal-form-overlay.open {
+#modal-form-overlay.open {
   pointer-events: auto;
 }
 
