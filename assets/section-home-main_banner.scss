@@ -309,6 +309,7 @@ section.home-banner {
     aspect-ratio: 876 / 360;
     width:315px;
     transform:translate(0,0);
+    text-align:center;
 
     @include breakpoint(tablet) {
         display: flex;
@@ -326,6 +327,12 @@ section.home-banner {
         line-height:1.2em;
         text-align:center;
         display:block;
+        width:100%;
+    }
+    .newsletter__subheading {
+        width:100%;
+    }
+    .newsletter-form-wrap {
         width:100%;
     }
 
