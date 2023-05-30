@@ -62,7 +62,7 @@
   <script type="text/javascript">
 
     // First, move the form above the overlay
-    jQuery('#modal-nl-form').insertBefore( jQuery('#modal-form-overlay') );
+    jQuery('#modal-nl-form').insertAfter('#modal-form-overlay');
 
     // Then, set the form and background wrap using gsap (to make sure animation plays correctly)
     gsap.set('#modal-nl-form', {bottom: '15vh', right: '-.5vw', translateY: '0%', translateX: '0%'});
