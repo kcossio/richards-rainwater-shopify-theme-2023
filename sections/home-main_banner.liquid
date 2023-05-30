@@ -60,8 +60,15 @@
   </div><!--End modal-nl-form-->
 
   <script type="text/javascript">
+
+    // First, move the form above the overlay
+    jQuery('#modal-nl-form').insertBefore('#modal-form-overlay');
+
+    // Then, set the form and background wrap using gsap (to make sure animation plays correctly)
     gsap.set('#modal-nl-form', {bottom: '15vh', right: '-.5vw', translateY: '0%', translateX: '0%'});
     gsap.set('.newsletter-form-wrap', { height: '0px'})
+
+    // Then create a timeline for showing/hiding the modal
     var cloud_tl = gsap.timeline({paused: true, forward: true })
         .to ('#modal-nl-form',
         {
