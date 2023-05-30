@@ -61,33 +61,35 @@
 
   <script type="text/javascript">
 
+    var cloud_tl = gsap.timeline({paused: true, forward: true })
+        .to('#modal-form-overlay', 
+        {
+            opacity:1,
+            duration: 0.4,
+            ease: 'ease'
+        })
+        .to ('#modal-nl-form',
+        {
+          width: '643px',
+          bottom: '50vh',
+          right: '50vw',
+          translateY: '50%',
+          translateX: '50%',
+          ease: 'CustomEase.create("custom", "M0,0,C0.196,-0.134,0.374,0.306,0.507,0.512,0.652,0.738,0.802,1.154,1,1");'
+        });
+
     // Modal Form
     jQuery('#modal-nl-form').on( "click", function( event ) {
       console.log('Modal Form clicked');
 
-      var tl = gsap.timeline({paused: true})
-            .to('#modal-form-overlay', 
-            {
-                opacity:1,
-                duration: 0.4,
-                ease: 'ease'
-            })
-            .to ('#modal-nl-form',
-            {
-              width: '643px',
-              bottom: '50vh',
-              right: '50vw',
-              translateY: '50%',
-              translateX: '50%',
-              ease: 'CustomEase.create("custom", "M0,0,C0.196,-0.134,0.374,0.306,0.507,0.512,0.652,0.738,0.802,1.154,1,1");'
-            });
+      
 
       if(jQuery(this).hasClass('open')) {
         console.log('modal went from open to closed.');
-        tl.reverse(0);
+        cloud_tl.reverse();
       } else {
         console.log('modal went from closed to open.');
-        tl.play();
+        cloud_tl.play();
       }
 
       jQuery(this).toggleClass('open');
