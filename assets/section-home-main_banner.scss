@@ -288,6 +288,7 @@ section.home-banner {
     background:rgba(125,125,125,.5);
     pointer-events: none;
     opacity:0;
+    font-size:0px;
 
     &.open {
         pointer-events:auto;

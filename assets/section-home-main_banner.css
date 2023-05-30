@@ -434,6 +434,7 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   background: rgba(125, 125, 125, 0.5);
   pointer-events: none;
   opacity: 0;
+  font-size: 0px;
 }
 .modal-form-overlay.open {
   pointer-events: auto;
