@@ -65,7 +65,7 @@
     jQuery('#modal-nl-form').on( "click", function( event ) {
       console.log('Modal Form clicked');
 
-      var tl = gsap.timeline()
+      var tl = gsap.timeline({paused: true})
             .to('#modal-form-overlay', 
             {
                 opacity:1,
