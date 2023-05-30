@@ -295,6 +295,11 @@ section.home-banner h2.home-banner-slogan-letters {
     font-size: 20vw;
   }
 }
+@media (min-width: 1024px) {
+  section.home-banner h2.home-banner-slogan-letters {
+    font-size: 15vw;
+  }
+}
 @media (min-width: 1280px) {
   section.home-banner h2.home-banner-slogan-letters {
     font-size: 12vw;
