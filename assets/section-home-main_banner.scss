@@ -332,6 +332,7 @@ section.home-banner {
         text-align:center;
         display:block;
         width:100%;
+        transform:all .5 ease 0s;
     }
     .newsletter__subheading {
         width:100%;
@@ -373,20 +374,8 @@ section.home-banner {
     }
 
     &.open {
-
-      /*  position:fixed;
-        top:50%;
-        left:50%;
-        bottom:auto;
-        right:auto;
-        transform:translate(-50%, -50%);
-        */
-
-        p {
-           // display:block;
-        }
-        form {
-           // display:flex;
+        h2 {
+            font-size:37.5px;
         }
     }
 }
