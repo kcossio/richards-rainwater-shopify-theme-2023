@@ -454,6 +454,7 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   right: -0.5vw;
   bottom: 15vh;
   left: auto;
+  top: auto;
   z-index: 10;
   aspect-ratio: 876/360;
   width: 315px;
@@ -505,18 +506,20 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   width: 100%;
   height: 100%;
 }
-.modal-nl-form.active {
+.modal-nl-form.open {
   position: fixed;
   top: 50%;
   left: 50%;
+  bottom: auto;
+  right: auto;
   transform: translate(-50%, -50%);
 }
-.modal-nl-form.active::after {
+.modal-nl-form.open::after {
   opacity: 0.5;
 }
-.modal-nl-form.active p {
+.modal-nl-form.open p {
   display: block;
 }
-.modal-nl-form.active form {
+.modal-nl-form.open form {
   display: flex;
 }
