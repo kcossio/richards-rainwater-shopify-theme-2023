@@ -2340,6 +2340,11 @@ product-info .loading-overlay:not(.hidden) ~ *,
   -webkit-box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.3); 
   box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.3);
   height:31px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width:100%;
+  z-index: 4;
 
   @include breakpoint(tablet) {
     height:40px;
@@ -3278,10 +3283,10 @@ main {
   overflow-x:clip;
 
   &:not(.main-home) {
-    padding-top:70px;
+    padding-top:100px;
 
     @include breakpoint(tablet) {
-      padding-top:98px;
+      padding-top:140px;
     }
   }
 }

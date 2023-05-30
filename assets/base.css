@@ -2450,6 +2450,11 @@ product-info .loading-overlay:not(.hidden) ~ *,
   letter-spacing: 1px;
   box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.3);
   height: 31px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 4;
 }
 @media (min-width: 768px) {
   .announcement-bar {
@@ -3318,10 +3323,10 @@ main {
   overflow-x: clip;
 }
 main:not(.main-home) {
-  padding-top: 70px;
+  padding-top: 100px;
 }
 @media (min-width: 768px) {
   main:not(.main-home) {
-    padding-top: 98px;
+    padding-top: 140px;
   }
 }
