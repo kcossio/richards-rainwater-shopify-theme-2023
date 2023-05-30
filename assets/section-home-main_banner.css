@@ -431,7 +431,8 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   z-index: 9;
   width: 100vw;
   height: 100vh;
-  background: rgba(125, 125, 125, 0.5);
+  background: rgb(125, 125, 125);
+  mix-blend-mode: multiply;
   pointer-events: none;
   opacity: 0;
   font-size: 0px;

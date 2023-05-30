@@ -90,6 +90,16 @@
     };
 
     window.closeModalForm = function() {
+
+      var tl = gsap.timeline();
+        
+        return tl
+            .to('.modal-form-overlay', 
+            {
+                opacity:0,
+                duration: 0.4,
+                ease: 'ease'
+            });
     };
 
     // Audio Player
