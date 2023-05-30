@@ -492,11 +492,13 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   display: none;
   position: relative;
   z-index: 3;
+  width: 100%;
 }
 .modal-nl-form form {
   display: none;
   position: relative;
   z-index: 3;
+  width: 100%;
 }
 .modal-nl-form img {
   position: absolute;
@@ -507,12 +509,13 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   height: 100%;
 }
 .modal-nl-form.open {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  bottom: auto;
-  right: auto;
-  transform: translate(-50%, -50%);
+  /*  position:fixed;
+    top:50%;
+    left:50%;
+    bottom:auto;
+    right:auto;
+    transform:translate(-50%, -50%);
+    */
 }
 .modal-nl-form.open::after {
   opacity: 0.5;

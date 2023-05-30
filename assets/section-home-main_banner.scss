@@ -345,11 +345,13 @@ section.home-banner {
         display:none;
         position:relative;
         z-index:3;
+        width:100%;
     }
     form {
         display: none;
         position:relative;
         z-index:3;
+        width:100%;
     }
     img {
         position:absolute;
@@ -362,12 +364,13 @@ section.home-banner {
 
     &.open {
 
-        position:fixed;
+      /*  position:fixed;
         top:50%;
         left:50%;
         bottom:auto;
         right:auto;
         transform:translate(-50%, -50%);
+        */
 
         &::after {
             opacity:.5;
