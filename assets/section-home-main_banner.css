@@ -427,7 +427,7 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
 }
 
 .modal-nl-form {
-  display: block;
+  display: none;
   position: absolute;
   right: 0px;
   bottom: 10%;
@@ -450,7 +450,7 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
 }
 @media (min-width: 768px) {
   .modal-nl-form {
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
   }
@@ -478,7 +478,7 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   left: 0px;
   top: 0px;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 .modal-nl-form.active {
   position: fixed;
