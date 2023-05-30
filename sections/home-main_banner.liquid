@@ -61,6 +61,7 @@
 
   <script type="text/javascript">
     gsap.set('#modal-nl-form', {bottom: '15vh', right: '-.5vw', translateY: '0%', translateX: '0%'});
+    gsap.set('.newsletter-form-wrap', { height: '0px'})
     var cloud_tl = gsap.timeline({paused: true, forward: true })
         .to('#modal-form-overlay', 
         {
@@ -77,6 +78,12 @@
           translateY: '50%',
           translateX: '50%',
           ease: "back.inOut(1.7)"
+        })
+        .to('.newsletter-form-wrap',
+        {
+          height: 'auto',
+          duration: .5,
+          ease: 'ease.inOut'
         });
 
     // Modal Form

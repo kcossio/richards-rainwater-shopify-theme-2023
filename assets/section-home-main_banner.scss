@@ -316,6 +316,7 @@ section.home-banner {
         flex-wrap:wrap;
         align-items: center;
         justify-content: center;
+        align-content:center;
     }
 
     h2 {
@@ -331,6 +332,8 @@ section.home-banner {
     }
     .newsletter__subheading {
         width:100%;
+        height:0px;
+        overflow:hidden;
     }
     .newsletter-form-wrap {
         width:100%;
