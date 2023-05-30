@@ -474,6 +474,7 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   z-index: 3;
   margin: 0px;
   font-size: 32px;
+  padding-top: 17px;
   line-height: 1.2em;
   text-align: center;
 }
