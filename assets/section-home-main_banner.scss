@@ -311,22 +311,9 @@ section.home-banner {
     aspect-ratio: 876 / 360;
     width:315px;
 
-    &::after {
-        content:"";
-        display:block;
-        position: fixed;
-        z-index:1;
-        width:100vw;
-        height:100vw;
-        top:0px;
-        left:0px;
-        pointer-events:none;
-        background:$dark_blue;
-        opacity:0;
-    }
-
     @include breakpoint(tablet) {
         display: flex;
+        flex-wrap:wrap;
         align-items: center;
         justify-content: center;
     }
@@ -372,9 +359,6 @@ section.home-banner {
         transform:translate(-50%, -50%);
         */
 
-        &::after {
-            opacity:.5;
-        }
         p {
             display:block;
         }

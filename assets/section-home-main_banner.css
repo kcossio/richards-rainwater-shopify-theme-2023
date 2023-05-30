@@ -459,22 +459,10 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   aspect-ratio: 876/360;
   width: 315px;
 }
-.modal-nl-form::after {
-  content: "";
-  display: block;
-  position: fixed;
-  z-index: 1;
-  width: 100vw;
-  height: 100vw;
-  top: 0px;
-  left: 0px;
-  pointer-events: none;
-  background: #000F44;
-  opacity: 0;
-}
 @media (min-width: 768px) {
   .modal-nl-form {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
   }
@@ -516,9 +504,6 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
     right:auto;
     transform:translate(-50%, -50%);
     */
-}
-.modal-nl-form.open::after {
-  opacity: 0.5;
 }
 .modal-nl-form.open p {
   display: block;
