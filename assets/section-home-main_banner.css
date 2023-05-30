@@ -458,6 +458,7 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   z-index: 10;
   aspect-ratio: 876/360;
   width: 315px;
+  transform: translate(0, 0);
 }
 @media (min-width: 768px) {
   .modal-nl-form {

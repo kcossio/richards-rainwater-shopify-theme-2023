@@ -310,6 +310,7 @@ section.home-banner {
     z-index:10;
     aspect-ratio: 876 / 360;
     width:315px;
+    transform:translate(0,0);
 
     @include breakpoint(tablet) {
         display: flex;
