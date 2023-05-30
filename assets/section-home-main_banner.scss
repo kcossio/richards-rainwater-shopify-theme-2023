@@ -302,7 +302,7 @@ section.home-banner {
 }
 .modal-nl-form {
     display:none;
-    position:absolute;
+    position:fixed;
     right:-.5vw;
     bottom:15vh;
     left:auto;
@@ -326,6 +326,8 @@ section.home-banner {
         padding-top:17px;
         line-height:1.2em;
         text-align:center;
+        display:block;
+        width:100%;
     }
 
     p {
@@ -360,10 +362,10 @@ section.home-banner {
         */
 
         p {
-            display:block;
+           // display:block;
         }
         form {
-            display:flex;
+           // display:flex;
         }
     }
 }
