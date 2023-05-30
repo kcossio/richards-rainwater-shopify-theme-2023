@@ -285,6 +285,9 @@ section.home-banner {
     z-index:9;
     width:100vw;
     height:100vh;
+    top:0px;
+    left:0px;
+    display: block;
     background:rgba(125,125,125,1);
     mix-blend-mode: multiply;
     pointer-events: none;
