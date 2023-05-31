@@ -527,7 +527,7 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
 }
 .modal-nl-form .newsletter-form__field-wrapper .field__label {
   font-size: 16px;
-  top: calc(1rem + var(--inputs-border-width));
+  top: 0.5rem;
 }
 .modal-nl-form .newsletter-form__field-wrapper .field__input {
   top: 0px;

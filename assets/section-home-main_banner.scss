@@ -386,7 +386,7 @@ section.home-banner {
     .newsletter-form__field-wrapper {
         .field__label {
             font-size:16px;
-            top:calc(1rem + var(--inputs-border-width));
+            top:.5rem;
         }
         .field__input {
             top: 0px;
