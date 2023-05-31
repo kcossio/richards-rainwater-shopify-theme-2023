@@ -538,6 +538,17 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   font-size: 16px;
   letter-spacing: 3px;
 }
+.modal-nl-form .newsletter-form__field-wrapper .field__input:focus ~ .field__label,
+.modal-nl-form .newsletter-form__field-wrapper .field__input:not(:placeholder-shown) ~ .field__label,
+.modal-nl-form .newsletter-form__field-wrapper .field__input:-webkit-autofill ~ .field__label,
+.modal-nl-form .newsletter-form__field-wrapper .customer .field input:focus ~ label,
+.modal-nl-form .newsletter-form__field-wrapper .customer .field input:not(:placeholder-shown) ~ label,
+.modal-nl-form .newsletter-form__field-wrapper .customer .field input:-webkit-autofill ~ label {
+  font-size: 1rem;
+  line-height: 1.3em;
+  top: calc(var(--inputs-border-width) + 0.5rem);
+  left: 25px;
+}
 .modal-nl-form .modal-nl-form-open {
   display: block;
   position: absolute;
