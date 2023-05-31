@@ -102,7 +102,9 @@
   
       // Modal Form
       jQuery('#modal-nl-form').on( "click", function( event ) {
-        console.log('Modal Form clicked');
+
+        event.stopPropagation(); 
+        //console.log('Modal Form clicked');
         
         const body = document.querySelector("body");
   
