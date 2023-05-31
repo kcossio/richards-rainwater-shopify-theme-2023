@@ -62,15 +62,16 @@
   <script type="text/javascript">
 
 
-   gsap.set('#modal-nl-form', {bottom: '15vh', right: '-30vw', translateY: '0%', translateX: '0%'});
+   gsap.set('#modal-nl-form', {bottom: '15vh', opacity: 0, right: '-.5vw', translateY: '0%', translateX: '-100%});
 
 
    //run a timeline to slide the modal in
         var introCloud_tl = gsap.timeline({repeat: 0, delay: 3});
         introCloud_tl.to('#modal-nl-form', { 
             duration: 1, 
-            right: '-.5vw', 
-            ease: 'back.inOut(1.7)'
+            translateX: '0%',
+            opacity: 1,
+            ease: 'ease'
           }
         );
       
