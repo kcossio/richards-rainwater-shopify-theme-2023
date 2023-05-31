@@ -137,16 +137,10 @@
         jQuery(modal).toggleClass('open');
         jQuery('#modal-form-overlay').toggleClass('open');
       }
-      // Modal Form
-      jQuery('#modal-nl-form-open').on( "click", function(e) {
-       
-        openModalForm();
-      });
 
-      // Close the popup using the background
+      // Close Modal function
 
-      //hide it when clicking anywhere else except the popup and the trigger
-      $(document).on('click touch', function(event) {
+      function closeModalForm(event) {
 
         const body = document.querySelector("body");
         const modal = document.querySelector("#modal-nl-form");
@@ -168,6 +162,19 @@
           }
 
         }
+      }
+      // Modal Form
+      jQuery('#modal-nl-form-open').on( "click", function(e) {
+       
+        openModalForm();
+      });
+
+      // Close the popup using the background
+
+      //hide it when clicking anywhere else except the popup and the trigger
+      $(document).on('click touch', function(event) {
+
+       closeModalForm(event);
       });
 
 
