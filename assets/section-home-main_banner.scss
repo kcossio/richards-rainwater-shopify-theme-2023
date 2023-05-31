@@ -301,9 +301,7 @@ section.home-banner {
         //pointer-events:auto;
         opacity:1;
 
-        .modal-nl-form-open {
-            display:none;
-        }
+        
     }
 }
 .modal-nl-form {
@@ -381,6 +379,9 @@ section.home-banner {
         h2 {
             font-size:38px;
             transition: font 1s ease 0s;
+        }
+        .modal-nl-form-open {
+            display:none;
         }
     }
 

@@ -448,9 +448,6 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
 #modal-form-overlay.open {
   opacity: 1;
 }
-#modal-form-overlay.open .modal-nl-form-open {
-  display: none;
-}
 
 .modal-nl-form {
   display: none;
@@ -525,6 +522,9 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
 .modal-nl-form.open h2 {
   font-size: 38px;
   transition: font 1s ease 0s;
+}
+.modal-nl-form.open .modal-nl-form-open {
+  display: none;
 }
 .modal-nl-form .newsletter-form__field-wrapper .field__label {
   padding: 1rem;
