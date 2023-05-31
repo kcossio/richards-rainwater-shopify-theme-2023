@@ -61,12 +61,16 @@
 
   <script type="text/javascript">
 
-   // gsap.set('#modal-nl-form', {bottom: '15vh', right: '-30vw', translateY: '0%', translateX: '0%'});
+   gsap.set('#modal-nl-form', {bottom: '15vh', right: '-30vw', translateY: '0%', translateX: '0%'});
 
-    gsap.delayedCall(4, slideModalForm);
+
     function slideModalForm() {
-      gsap.to('#modal-nl-form', { right: '-.5vw', ease: 'back.inOut(1.7)', duration: 1});
+      var tl = gsap.timeline({paused: true, forward: true })
+      .to('#modal-nl-form', { right: '-.5vw', ease: 'back.inOut(1.7)', duration: 1});
     }
+
+
+    gsap.delayedCall(4, slideModalForm());
     // First, move the form above the overlay
 
     // Then, set the form and background wrap using gsap (to make sure animation plays correctly)
