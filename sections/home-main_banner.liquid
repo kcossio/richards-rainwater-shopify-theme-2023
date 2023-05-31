@@ -101,9 +101,10 @@
           });
   
       // Modal Form
-      jQuery('#modal-nl-form').on( "click", function( event ) {
+      jQuery('#modal-nl-form').click(function(e){
 
-        event.stopPropagation(); 
+        e.stopPropagation(); 
+
         //console.log('Modal Form clicked');
         
         const body = document.querySelector("body");
