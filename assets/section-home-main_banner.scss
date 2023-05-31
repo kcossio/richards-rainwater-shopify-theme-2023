@@ -315,7 +315,6 @@ section.home-banner {
     transform:translate(0,0);
     text-align:center;
     padding:2% 1% 0px 0px;
-    transition:padding .25s ease 0s;
     filter:drop-shadow(3px 5px 2px rgba(0,0,0,.3));
 
     @include breakpoint(tablet) {
@@ -377,7 +376,6 @@ section.home-banner {
     }
 
     &.open {
-        padding:3% 4% 0px 0px;
         .modal-nl-form-open {
             display:none;
         }
