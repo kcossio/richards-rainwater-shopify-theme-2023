@@ -409,5 +409,20 @@ section.home-banner {
         
     }
 
+    .close-modal {
+        display:block;
+        aspect-ratio: 1 / 1;
+        background:url(icon-close-grey-alt.svg) center center no-repeat;
+        background-size:cover;
+        position:absolute;
+        width:13px;
+        height:13px;
+        top:34%;
+        right:25%;
+        font-size:0px;
+        z-index:4;
+        transition:all .25s ease 0s;
+        cursor:pointer;
+    }
     
 }
