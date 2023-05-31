@@ -50,6 +50,7 @@
   </div>
 
   <div class="modal-nl-form" id="modal-nl-form">
+    <a class="modal-nl-form-open" id="modal-nl-form-open">Open</a>
     <h2 class="newsletter-signup-heading imperial">
       Thirsty<br />4 More?
     </h2>
@@ -101,15 +102,16 @@
           });
   
       // Modal Form
-      jQuery('#modal-nl-form').on( "click", function(e) {
+      jQuery('#modal-nl-form-open').on( "click", function(e) {
 
         //e.stopPropagation(); 
 
         //console.log('Modal Form clicked');
         
         const body = document.querySelector("body");
+        const modal = document.querySelector("#modal-nl-form");
   
-        if(jQuery(this).hasClass('open')) {
+        if(jQuery(modal).hasClass('open')) {
           console.log('modal went from open to closed.');
           cloud_tl.reverse();
           jQuery('section.home-banner').append($( "#modal-nl-form" ));
@@ -127,7 +129,7 @@
   
         }
   
-        jQuery(this).toggleClass('open');
+        jQuery(modal).toggleClass('open');
         jQuery('#modal-form-overlay').toggleClass('open');
       });
 
