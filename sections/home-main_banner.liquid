@@ -64,13 +64,13 @@
     jQuery(window).on('load',function () {
 
       function slideModalForm() {
-        var tl = gsap.timeline({paused: true, forward: true })
+        var tl = gsap.timeline();
+        return tl
         .to('#modal-nl-form', { right: '-.5vw', ease: 'back.inOut(1.7)', duration: 1});
-        tl.play();
       }
   
   
-      gsap.delayedCall(4, slideModalForm);
+      gsap.delayedCall(1, slideModalForm);
   
       // First, move the form above the overlay
   
