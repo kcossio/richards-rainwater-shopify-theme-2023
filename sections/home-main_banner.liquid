@@ -134,10 +134,11 @@
       });
 
       // Close the popup using the background
-      jQuery('#modal-form-overlay').on( "click", function(e) {
-        //e.stopPropagation(); 
 
-        const modal = document.querySelector("#modal-nl-form");
+      //hide it when clicking anywhere else except the popup and the trigger
+      $(document).on('click touch', function(event) {
+        if (!$(event.target).parents().addBack().is('#modal-nl-form')) {
+          const modal = document.querySelector("#modal-nl-form");
 
         jQuery(modal).toggleClass('open');
         jQuery('#modal-form-overlay').toggleClass('open');
@@ -148,7 +149,7 @@
   
           //Allow the body element to scroll again
           body.style.overflow = "auto";
-
+        }
       });
 
 
