@@ -334,7 +334,6 @@ section.home-banner {
         text-align:center;
         display:block;
         width:100%;
-        transition: font 1s ease 0s;
     }
     .newsletter__subheading {
         width:100%;
@@ -376,10 +375,6 @@ section.home-banner {
     }
 
     &.open {
-        h2 {
-            font-size:38px;
-            transition: font 1s ease 0s;
-        }
         .modal-nl-form-open {
             display:none;
         }

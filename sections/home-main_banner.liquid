@@ -95,7 +95,13 @@
             xPercent: 50,
             ease: "back.inOut(1.7)"
           })
-          .to('.newsletter-form-wrap, .newsletter__subheading',
+          .to('.modal-nl-form h2',
+          {
+            fontSize: '38px',
+            duration:.25,
+            ease: 'ease.inOut'
+          })
+          .to('.modal-nl-form .newsletter-form-wrap, .newsletter__subheading',
           {
             height: 'auto',
             duration: .5,
