@@ -64,16 +64,16 @@
 
    gsap.set('#modal-nl-form', {bottom: '15vh', right: '-30vw', translateY: '0%', translateX: '0%'});
 
-    jQuery(window).on('load',function () {
 
-      function slideModalForm() {
-        var tl = gsap.timeline();
-        return tl
-        .to('#modal-nl-form', { right: '-.5vw', ease: 'back.inOut(1.7)', duration: 1});
-      }
+        var introCloud_tl = gsap.timeline({repeat: 0, delay: 3});
+        introCloud_tl.to('#modal-nl-form', { 
+            duration, 1, 
+            right: '-.5vw', 
+            ease: 'back.inOut(1.7)'
+          }
+        );
+      
   
-  
-      gsap.delayedCall(1, slideModalForm);
   
       // First, move the form above the overlay
   
@@ -126,8 +126,6 @@
         jQuery(this).toggleClass('open');
         jQuery('#modal-form-overlay').toggleClass('open');
       });
-
-    });
 
 
 
