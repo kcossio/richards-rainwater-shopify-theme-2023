@@ -460,7 +460,9 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   width: 315px;
   transform: translate(0, 0);
   text-align: center;
-  filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.4));
+  padding: 2% 1% 0px 0px;
+  transition: padding 0.25s ease 0s;
+  filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.3));
 }
 @media (min-width: 768px) {
   .modal-nl-form {
@@ -476,8 +478,8 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   z-index: 3;
   margin: 0px;
   font-size: 32px;
-  padding-top: 17px;
-  line-height: 1.2em;
+  padding: 0px;
+  line-height: 1em;
   text-align: center;
   display: block;
   width: 100%;
@@ -518,6 +520,9 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   top: 0px;
   width: 100%;
   height: 100%;
+}
+.modal-nl-form.open {
+  padding: 3% 4% 0px 0px;
 }
 .modal-nl-form.open .modal-nl-form-open {
   display: none;

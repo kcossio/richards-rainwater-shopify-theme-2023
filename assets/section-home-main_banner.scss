@@ -314,7 +314,9 @@ section.home-banner {
     width:315px;
     transform:translate(0,0);
     text-align:center;
-    filter:drop-shadow(3px 5px 2px rgba(0,0,0,.4));
+    padding:2% 1% 0px 0px;
+    transition:padding .25s ease 0s;
+    filter:drop-shadow(3px 5px 2px rgba(0,0,0,.3));
 
     @include breakpoint(tablet) {
         display: flex;
@@ -329,8 +331,8 @@ section.home-banner {
         z-index:3;
         margin:0px;
         font-size:32px;
-        padding-top:17px;
-        line-height:1.2em;
+        padding:0px;
+        line-height:1em;
         text-align:center;
         display:block;
         width:100%;
@@ -375,6 +377,7 @@ section.home-banner {
     }
 
     &.open {
+        padding:3% 4% 0px 0px;
         .modal-nl-form-open {
             display:none;
         }
