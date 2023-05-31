@@ -61,73 +61,74 @@
 
   <script type="text/javascript">
 
+    jQuery(window).on('load',function () {
+
+      function slideModalForm() {
+        var tl = gsap.timeline({paused: true, forward: true })
+        .to('#modal-nl-form', { right: '-.5vw', ease: 'back.inOut(1.7)', duration: 1});
+      }
+  
+  
+      gsap.delayedCall(4, slideModalForm);
+  
+      // First, move the form above the overlay
+  
+      // Then, set the form and background wrap using gsap (to make sure animation plays correctly)
+      gsap.set('.newsletter-form-wrap', { height: '0px'})
+  
+      // Then create a timeline for showing/hiding the modal
+      var cloud_tl = gsap.timeline({paused: true, forward: true })
+          .to ('#modal-nl-form',
+          {
+            duration: 1.5,
+            width: '643px',
+            bottom: '50vh',
+            right: '50vw',
+            translateY: '50%',
+            translateX: '50%',
+            ease: "back.inOut(1.7)"
+          })
+          .to('.newsletter-form-wrap, .newsletter__subheading',
+          {
+            height: 'auto',
+            duration: .5,
+            ease: 'ease.inOut'
+          });
+  
+      // Modal Form
+      jQuery('#modal-nl-form').on( "click", function( event ) {
+        console.log('Modal Form clicked');
+        
+        const body = document.querySelector("body");
+  
+        if(jQuery(this).hasClass('open')) {
+          console.log('modal went from open to closed.');
+          cloud_tl.reverse();
+          jQuery('section.home-banner').append($( "#modal-nl-form" ));
+  
+          //Allow the body element to scroll again
+          body.style.overflow = "auto";
+  
+        } else {
+          console.log('modal went from closed to open.');
+          cloud_tl.play();
+          jQuery('#modal-nl-form').insertBefore('#modal-form-overlay');
+  
+          //Prevent the body element from scrolling
+          body.style.overflow = "hidden";
+  
+        }
+  
+        jQuery(this).toggleClass('open');
+        jQuery('#modal-form-overlay').toggleClass('open');
+      });
+
+    });
+
    gsap.set('#modal-nl-form', {bottom: '15vh', right: '-30vw', translateY: '0%', translateX: '0%'});
 
 
-    function slideModalForm() {
-      var tl = gsap.timeline({paused: true, forward: true })
-      .to('#modal-nl-form', { right: '-.5vw', ease: 'back.inOut(1.7)', duration: 1});
-    }
-
-
-    gsap.delayedCall(4, slideModalForm);
     
-    // First, move the form above the overlay
-
-    // Then, set the form and background wrap using gsap (to make sure animation plays correctly)
-    gsap.set('.newsletter-form-wrap', { height: '0px'})
-
-    // Then create a timeline for showing/hiding the modal
-    var cloud_tl = gsap.timeline({paused: true, forward: true })
-        .to ('#modal-nl-form',
-        {
-          duration: 1.5,
-          width: '643px',
-          bottom: '50vh',
-          right: '50vw',
-          translateY: '50%',
-          translateX: '50%',
-          ease: "back.inOut(1.7)"
-        })
-        .to('.newsletter-form-wrap, .newsletter__subheading',
-        {
-          height: 'auto',
-          duration: .5,
-          ease: 'ease.inOut'
-        });
-
-    // Modal Form
-    jQuery('#modal-nl-form').on( "click", function( event ) {
-      console.log('Modal Form clicked');
-      
-      const body = document.querySelector("body");
-
-      if(jQuery(this).hasClass('open')) {
-        console.log('modal went from open to closed.');
-        cloud_tl.reverse();
-        jQuery('section.home-banner').append($( "#modal-nl-form" ));
-
-        //Allow the body element to scroll again
-        body.style.overflow = "auto";
-
-      } else {
-        console.log('modal went from closed to open.');
-        cloud_tl.play();
-        jQuery('#modal-nl-form').insertBefore('#modal-form-overlay');
-
-        //Prevent the body element from scrolling
-        body.style.overflow = "hidden";
-
-      }
-
-      jQuery(this).toggleClass('open');
-      jQuery('#modal-form-overlay').toggleClass('open');
-    });
-
-    // Open the modal
-   
-
-    // CLoase the modal
    
 
     // Audio Player
