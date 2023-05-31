@@ -138,6 +138,7 @@
       //hide it when clicking anywhere else except the popup and the trigger
       $(document).on('click touch', function(event) {
 
+        const body = document.querySelector("body");
         const modal = document.querySelector("#modal-nl-form");
 
         if( jQuery(modal).hasClass('open')) {
