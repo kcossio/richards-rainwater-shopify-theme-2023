@@ -140,21 +140,24 @@
 
         const modal = document.querySelector("#modal-nl-form");
 
-        if( !jQuery(modal).hasClass('open')) {
-        
+        if( jQuery(modal).hasClass('open')) {
+
           if (!$(event.target).parents().addBack().is('#modal-nl-form')) {
             
 
-          jQuery(modal).toggleClass('open');
-          jQuery('#modal-form-overlay').toggleClass('open');
+            jQuery(modal).toggleClass('open');
+            jQuery('#modal-form-overlay').toggleClass('open');
+  
+              console.log('modal went from open to closed.');
+              cloud_tl.reverse();
+              jQuery('section.home-banner').append($( "#modal-nl-form" ));
+      
+              //Allow the body element to scroll again
+              body.style.overflow = "auto";
+            }
 
-            console.log('modal went from open to closed.');
-            cloud_tl.reverse();
-            jQuery('section.home-banner').append($( "#modal-nl-form" ));
-    
-            //Allow the body element to scroll again
-            body.style.overflow = "auto";
-          }
+        } 
+         
 
         }
       });
