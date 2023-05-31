@@ -62,14 +62,14 @@
   <script type="text/javascript">
 
 
-   gsap.set('#modal-nl-form', {bottom: '15vh', opacity: 0, right: '-.5vw', translateY: '0%', translateX: '-100%});
+   gsap.set('#modal-nl-form', {bottom: '15vh', opacity: 0, right: '-.5vw', yPercent: 0, xPercent: -100 });
 
 
    //run a timeline to slide the modal in
         var introCloud_tl = gsap.timeline({repeat: 0, delay: 3});
         introCloud_tl.to('#modal-nl-form', { 
             duration: 1, 
-            translateX: '0%',
+            xPercent: 0,
             opacity: 1,
             ease: 'ease'
           }
@@ -90,8 +90,8 @@
             width: '643px',
             bottom: '50vh',
             right: '50vw',
-            translateY: '50%',
-            translateX: '50%',
+            yPercent: 50,
+            xPercent: 50,
             ease: "back.inOut(1.7)"
           })
           .to('.newsletter-form-wrap, .newsletter__subheading',
