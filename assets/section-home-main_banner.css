@@ -480,7 +480,7 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   text-align: center;
   display: block;
   width: 100%;
-  transition: all 1s ease 0s;
+  transition: font 1s ease 0s;
 }
 .modal-nl-form .newsletter__subheading {
   width: 100%;
@@ -521,4 +521,5 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
 }
 .modal-nl-form.open h2 {
   font-size: 38px;
+  transition: font 1s ease 0s;
 }
