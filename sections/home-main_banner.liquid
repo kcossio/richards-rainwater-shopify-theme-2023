@@ -63,9 +63,9 @@
 
     gsap.set('#modal-nl-form', {bottom: '15vh', right: '-30vw', translateY: '0%', translateX: '0%'});
 
-    gsap.delayedCall(1.5, slideModalForm);
+    gsap.delayedCall(4, slideModalForm);
     function slideModalForm() {
-      gsap.to('#modal-nl-form', { right: '-.5vw'});
+      gsap.to('#modal-nl-form', { right: '-.5vw', ease: 'back.inOut(1.7)', duration: 1});
     }
     // First, move the form above the overlay
 
