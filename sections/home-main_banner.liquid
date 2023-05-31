@@ -106,16 +106,13 @@
           {
             height: 'auto',
             duration: .5,
+            padding: '0px 0px 12px 0px',
             ease: 'ease.inOut'
           });
   
-      // Modal Form
-      jQuery('#modal-nl-form-open').on( "click", function(e) {
+      // Declare open modal function
+      function openModalForm() {
 
-        //e.stopPropagation(); 
-
-        //console.log('Modal Form clicked');
-        
         const body = document.querySelector("body");
         const modal = document.querySelector("#modal-nl-form");
   
@@ -139,6 +136,11 @@
   
         jQuery(modal).toggleClass('open');
         jQuery('#modal-form-overlay').toggleClass('open');
+      }
+      // Modal Form
+      jQuery('#modal-nl-form-open').on( "click", function(e) {
+       
+        openModalForm();
       });
 
       // Close the popup using the background
