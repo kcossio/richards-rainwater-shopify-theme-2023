@@ -460,7 +460,7 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   width: 315px;
   transform: translate(0, 0);
   text-align: center;
-  padding: 2% 1% 0px 0px;
+  padding: 2% 1% 0% 0%;
   filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.3));
 }
 @media (min-width: 768px) {
