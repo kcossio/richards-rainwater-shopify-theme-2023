@@ -490,6 +490,7 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   overflow: hidden;
   z-index: 3;
   position: relative;
+  padding: 0px;
 }
 .modal-nl-form .newsletter-form-wrap {
   width: 100%;
