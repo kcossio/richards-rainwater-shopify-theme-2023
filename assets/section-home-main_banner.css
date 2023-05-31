@@ -524,9 +524,11 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
   display: none;
 }
 .modal-nl-form .newsletter-form__field-wrapper .field__label {
-  padding: 1rem;
   font-size: 16px;
+}
+.modal-nl-form .newsletter-form__field-wrapper .field__input {
   top: calc(0.5rem + var(--inputs-border-width));
+  padding: 1rem;
 }
 .modal-nl-form .newsletter-form__field-wrapper .newsletter-form__button {
   font-size: 16px;
