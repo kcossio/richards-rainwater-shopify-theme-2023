@@ -137,18 +137,25 @@
 
       //hide it when clicking anywhere else except the popup and the trigger
       $(document).on('click touch', function(event) {
-        if (!$(event.target).parents().addBack().is('#modal-nl-form')) {
-          const modal = document.querySelector("#modal-nl-form");
 
-        jQuery(modal).toggleClass('open');
-        jQuery('#modal-form-overlay').toggleClass('open');
+        const modal = document.querySelector("#modal-nl-form");
 
-          console.log('modal went from open to closed.');
-          cloud_tl.reverse();
-          jQuery('section.home-banner').append($( "#modal-nl-form" ));
-  
-          //Allow the body element to scroll again
-          body.style.overflow = "auto";
+        if( !jQuery(modal).hasClass('open')) {
+        
+          if (!$(event.target).parents().addBack().is('#modal-nl-form')) {
+            
+
+          jQuery(modal).toggleClass('open');
+          jQuery('#modal-form-overlay').toggleClass('open');
+
+            console.log('modal went from open to closed.');
+            cloud_tl.reverse();
+            jQuery('section.home-banner').append($( "#modal-nl-form" ));
+    
+            //Allow the body element to scroll again
+            body.style.overflow = "auto";
+          }
+
         }
       });
 
