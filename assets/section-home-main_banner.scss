@@ -340,6 +340,7 @@ section.home-banner {
         width:100%;
         margin:0px;
         height:0px;
+        padding-bottom:12px;
         overflow:hidden;
         z-index:3;
         position:relative;
@@ -384,10 +385,12 @@ section.home-banner {
     .newsletter-form__field-wrapper {
         .field__label {
             font-size:16px;
+            top:calc(1rem + var(--inputs-border-width));
         }
         .field__input {
-            top: calc(.5rem + var(--inputs-border-width));
+            top: 0px;
             padding:1rem;
+            box-shadow: none !important;
         }
         .newsletter-form__button {
             font-size:16px;
