@@ -531,7 +531,7 @@ section.home-banner h2.home-banner-slogan-letters div span:nth-child(2) {
 }
 .modal-nl-form .newsletter-form__field-wrapper .field__input {
   top: 0px;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   box-shadow: none !important;
 }
 .modal-nl-form .newsletter-form__field-wrapper .newsletter-form__button {
