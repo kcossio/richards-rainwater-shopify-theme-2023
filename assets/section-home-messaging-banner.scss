@@ -1,0 +1,42 @@
+// Messaging Banner //
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+.home-messaging-banner {
+    width:100vw;
+    min-height:100vh;
+    position:relative;
+    
+    .inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: relative;
+
+        @include breakpoint(tabletwide) {
+            justify-content:flex-end;
+        }
+
+        .banner-content {
+            width:100%;
+
+            @include breakpoint(tablet) {
+                width:30%;
+            }
+
+            h2 {
+                font-size:40px;
+                line-height:1.1em;
+                text-transform:uppercase;
+                margin:0px;
+                font-weight:800;
+
+                @include breakpoint(tabletwide) {
+                    font-size:78px;
+
+                }
+            }
+        }
+    }
+}
