@@ -2444,7 +2444,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 /* section-announcement-bar */
 .announcement-bar {
   color: #ffffff;
-  background: #FFA500;
+  background: #000F44;
   font-size: 22px;
   font-weight: 900;
   letter-spacing: 1px;
