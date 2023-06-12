@@ -196,6 +196,15 @@ section.home-banner-simple .home-banner-heading h1 {
   color: #ffffff;
   margin: 0px;
   text-align: left;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1em;
+}
+@media (min-width: 1024px) {
+  section.home-banner-simple .home-banner-heading h1 {
+    font-size: 57px;
+  }
 }
 section.home-banner-simple .home-banner-heading p {
   color: #ffffff;

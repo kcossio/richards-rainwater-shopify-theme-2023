@@ -1,10 +1,11 @@
 {{ 'section-home-simple_banner.css' | asset_url | stylesheet_tag }}
 
-
-<div class="home-banner-heading">
-  {% if section.settings.heading != blank %}<h1>{{ section.settings.heading }}</h1>{% endif %}
-{% if section.settings.subheading != blank %}<p>{{ section.settings.subheading }}</p>{% endif %}
-</div><!--End home-banner-heading-->
+<div class="inner flex">
+  <div class="home-banner-heading">
+    {% if section.settings.heading != blank %}<h1>{{ section.settings.heading }}</h1>{% endif %}
+  {% if section.settings.subheading != blank %}<p>{{ section.settings.subheading }}</p>{% endif %}
+  </div><!--End home-banner-heading-->
+</div><!--End inner -->
 
 {%- assign background_image = section.settings.background_image -%}
 {% if background_image != blank %}

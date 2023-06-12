@@ -29,6 +29,14 @@ section.home-banner-simple {
             color:$white;
             margin:0px;
             text-align:left;
+            text-transform:uppercase;
+            font-size:40px;
+            font-weight:900;
+            line-height:1em;
+
+            @include breakpoint(tabletwide) {
+                font-size:57px;
+            }
         }
         p {
             color:$white;
