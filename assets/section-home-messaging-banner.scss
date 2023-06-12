@@ -22,18 +22,18 @@
             width:100%;
 
             @include breakpoint(tablet) {
-                width:30%;
+                width:40%;
             }
 
             h2 {
                 font-size:40px;
-                line-height:1.1em;
+                line-height:1em;
                 text-transform:uppercase;
                 margin:0px;
-                font-weight:800;
+                font-weight:900;
 
                 @include breakpoint(tabletwide) {
-                    font-size:78px;
+                    font-size:74px;
 
                 }
             }

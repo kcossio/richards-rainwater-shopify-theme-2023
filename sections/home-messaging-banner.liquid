@@ -4,11 +4,10 @@
 
 
     <div class="banner-content">
-      <span class="subhead">{{ section.settings.subheading }}</span>
       <h2>
         {{ section.settings.heading }} 
       </h2>
-      <a class="button light" href="{{ section.settings.call_to_action_button_link }} " role="button">{{ section.settings.call_to_action_button_label }}</a>
+      <a class="button light fade-in" href="{{ section.settings.call_to_action_button_link }} " role="button">{{ section.settings.call_to_action_button_label }}</a>
 
     </div><!--End home_intro-right-->
 
@@ -29,6 +28,18 @@
   {{ mobile_background_image | image_url: width: mobile_background_image.width | image_tag: class: 'bg-parallax', loading: 'lazy' }}
 </div>
 {% endif %}
+
+<script type="text/javascript">
+
+    gsap.set('.banner-content span', { opacity: 0, yPercent: -25 });
+    ScrollTrigger.batch(".banner-content span", {
+        onEnter: batch => gsap.to(batch, {opacity: 1, yPercent: 0, stagger: {each: 0.15}, overwrite: true}),
+        onLeave: batch => gsap.set(batch, {opacity: 0, yPercent: -25, overwrite: true}),
+        onEnterBack: batch => gsap.to(batch, {opacity: 1, yPercent: 0, stagger: 0.15, overwrite: true}),
+        onLeaveBack: batch => gsap.set(batch, {opacity: 0, yPercent: 25, overwrite: true})
+      });
+
+</script>
 
 {% schema %}
   {

@@ -191,18 +191,18 @@ EASING
 }
 @media (min-width: 768px) {
   .home-messaging-banner .inner .banner-content {
-    width: 30%;
+    width: 40%;
   }
 }
 .home-messaging-banner .inner .banner-content h2 {
   font-size: 40px;
-  line-height: 1.1em;
+  line-height: 1em;
   text-transform: uppercase;
   margin: 0px;
-  font-weight: 800;
+  font-weight: 900;
 }
 @media (min-width: 1024px) {
   .home-messaging-banner .inner .banner-content h2 {
-    font-size: 78px;
+    font-size: 74px;
   }
 }
