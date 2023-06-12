@@ -39,14 +39,14 @@
 
 <script type="text/javascript">
 
-    gsap.set('.banner-content span', { opacity: 0, yPercent: -40 });
+    gsap.set('.banner-content span', { opacity: 0, yPercent: 0 });
 
     ScrollTrigger.batch(".banner-content span", {
         start: "top bottom",
         end: "bottom top",
         interval: 2,
         batchMax: 3,
-        delay: 2,
+        //delay: 2,
         duration: 2,
         onEnter: batch => gsap.to(batch, {opacity: 1, yPercent: 0, stagger: {each: 0.60}, overwrite: true})
         //onLeave: batch => gsap.set(batch, {opacity: 0, yPercent: -100, overwrite: true}),
