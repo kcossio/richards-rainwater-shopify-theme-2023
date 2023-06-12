@@ -25,6 +25,10 @@ section.home-banner-simple {
         position:relative;
         z-index:3;
 
+        @include breakpoint(tabletwide) {
+            padding-left:28%;
+        }
+
         h1 {
             color:$white;
             margin:0px;
@@ -33,9 +37,11 @@ section.home-banner-simple {
             font-size:40px;
             font-weight:900;
             line-height:1em;
+            letter-spacing:1px;
 
             @include breakpoint(tabletwide) {
                 font-size:57px;
+                letter-spacing:2px;
             }
         }
         p {

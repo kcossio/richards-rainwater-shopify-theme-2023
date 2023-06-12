@@ -192,6 +192,11 @@ section.home-banner-simple .home-banner-heading {
   position: relative;
   z-index: 3;
 }
+@media (min-width: 1024px) {
+  section.home-banner-simple .home-banner-heading {
+    padding-left: 28%;
+  }
+}
 section.home-banner-simple .home-banner-heading h1 {
   color: #ffffff;
   margin: 0px;
@@ -200,10 +205,12 @@ section.home-banner-simple .home-banner-heading h1 {
   font-size: 40px;
   font-weight: 900;
   line-height: 1em;
+  letter-spacing: 1px;
 }
 @media (min-width: 1024px) {
   section.home-banner-simple .home-banner-heading h1 {
     font-size: 57px;
+    letter-spacing: 2px;
   }
 }
 section.home-banner-simple .home-banner-heading p {
