@@ -2,6 +2,7 @@
   "sections": {
     "76521080-48b1-42b7-8ffe-ccecb8390284": {
       "type": "home-main_banner",
+      "disabled": true,
       "settings": {
         "background_image": "shopify:\/\/shop_images\/bg-home-banner-sky.jpg",
         "bottle_1_image": "shopify:\/\/shop_images\/home-holding-bottle-1.png",
@@ -13,6 +14,7 @@
     },
     "9116c0a2-b6dd-4ac0-bfa7-345ba053c3a0": {
       "type": "home-bottles-and-copy",
+      "disabled": true,
       "settings": {
         "bottle_image_1": "shopify:\/\/shop_images\/Richards-Still-Can-angled.png",
         "bottle_image_2": "shopify:\/\/shop_images\/Richards-Sparkling-Bottle-angled.png",
@@ -20,6 +22,22 @@
         "heading": "<span>RENEWABLE.<\/span>\n<span>REFRESHING. <\/span>\n<span>RAINWATER.<\/span>",
         "call_to_action_button_label": "Shop Richard's",
         "call_to_action_button_link": "shopify:\/\/collections\/shop-all"
+      }
+    },
+    "dee95df6-ac42-4b2d-bdcc-21dfdaf985e4": {
+      "type": "home-simple_banner",
+      "settings": {
+        "heading": "The first net-positive  bottled water. Ever.",
+        "subheading": "Let’s change the world one drink at a time."
+      }
+    },
+    "a4a62baa-c5c2-48e9-86e1-3a8a787f9477": {
+      "type": "home-messaging-banner",
+      "settings": {
+        "heading": "<span class=\"pink\">Clink,<\/span> \n<span class=\"light-blue\">gulp,<\/span> <span class=\"orange\">ahh.<\/span>\n<span class=\"light-blue\">Cheers<\/span> <span class=\"medium-blue\">to<\/span> \n<span class=\"red\">change.<\/span>",
+        "call_to_action_button_label": "Shop Richards",
+        "call_to_action_button_link": "shopify:\/\/collections\/shop-all",
+        "background_image": "shopify:\/\/shop_images\/splash-water-glass.jpg"
       }
     },
     "ca796682-1492-45e1-8073-6b6b626ce353": {
@@ -133,6 +151,8 @@
   "order": [
     "76521080-48b1-42b7-8ffe-ccecb8390284",
     "9116c0a2-b6dd-4ac0-bfa7-345ba053c3a0",
+    "dee95df6-ac42-4b2d-bdcc-21dfdaf985e4",
+    "a4a62baa-c5c2-48e9-86e1-3a8a787f9477",
     "ca796682-1492-45e1-8073-6b6b626ce353",
     "2489de8d-7bd0-4aec-b948-96164c90c4b4",
     "6df38f0a-259a-412a-9fe1-3325f2fc3b85",
