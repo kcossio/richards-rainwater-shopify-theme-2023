@@ -192,3 +192,12 @@ section.home-banner-simple .home-banner-heading {
   position: relative;
   z-index: 3;
 }
+section.home-banner-simple .home-banner-heading h1 {
+  color: #ffffff;
+  margin: 0px;
+  text-align: left;
+}
+section.home-banner-simple .home-banner-heading p {
+  color: #ffffff;
+  text-align: left;
+}
