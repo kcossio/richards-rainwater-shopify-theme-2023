@@ -188,3 +188,7 @@ section.home-banner-simple {
     padding-bottom: 0px;
   }
 }
+section.home-banner-simple .home-banner-heading {
+  position: relative;
+  z-index: 3;
+}

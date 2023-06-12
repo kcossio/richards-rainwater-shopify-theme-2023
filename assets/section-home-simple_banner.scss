@@ -20,4 +20,9 @@ section.home-banner-simple {
     @include breakpoint(tablet) {
         padding-bottom:0px;
     }
+
+    .home-banner-heading {
+        position:relative;
+        z-index:3;
+    }
 }
