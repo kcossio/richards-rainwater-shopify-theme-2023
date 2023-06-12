@@ -31,13 +31,14 @@
 
 <script type="text/javascript">
 
-    gsap.set('.banner-content span', { opacity: 0, yPercent: -25 });
+    gsap.set('.banner-content span', { opacity: 0, yPercent: -100 });
+
     ScrollTrigger.batch(".banner-content span", {
-        start: "top 80%",
+        start: "top 70%",
         onEnter: batch => gsap.to(batch, {opacity: 1, yPercent: 0, stagger: {each: 0.25}, overwrite: true}),
-        onLeave: batch => gsap.set(batch, {opacity: 0, yPercent: -25, overwrite: true}),
+        onLeave: batch => gsap.set(batch, {opacity: 0, yPercent: -100, overwrite: true}),
         onEnterBack: batch => gsap.to(batch, {opacity: 1, yPercent: 0, stagger: 0.25, overwrite: true}),
-        onLeaveBack: batch => gsap.set(batch, {opacity: 0, yPercent: 25, overwrite: true})
+        onLeaveBack: batch => gsap.set(batch, {opacity: 0, yPercent: -100, overwrite: true})
       });
 
 </script>
