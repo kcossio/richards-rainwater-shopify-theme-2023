@@ -181,11 +181,11 @@ section.home-banner-simple {
   align-content: center;
   justify-content: center;
   overflow: hidden;
-  padding-bottom: 15vh;
+  padding-top: 25%;
 }
 @media (min-width: 768px) {
   section.home-banner-simple {
-    padding-bottom: 0px;
+    padding-top: 25%;
   }
 }
 section.home-banner-simple .home-banner-heading {
@@ -194,7 +194,7 @@ section.home-banner-simple .home-banner-heading {
 }
 @media (min-width: 1280px) {
   section.home-banner-simple .home-banner-heading {
-    padding-left: 28%;
+    padding-left: 29%;
   }
 }
 section.home-banner-simple .home-banner-heading h1 {

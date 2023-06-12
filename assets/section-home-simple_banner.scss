@@ -15,10 +15,10 @@ section.home-banner-simple {
     align-content:center;
     justify-content: center;
     overflow:hidden;
-    padding-bottom:15vh;
+    padding-top:25%;
 
     @include breakpoint(tablet) {
-        padding-bottom:0px;
+        padding-top:25%;
     }
 
     .home-banner-heading {
@@ -26,7 +26,7 @@ section.home-banner-simple {
         z-index:3;
 
         @include breakpoint(laptop) {
-            padding-left:28%;
+            padding-left:29%;
         }
 
         h1 {
