@@ -44,8 +44,8 @@
     ScrollTrigger.batch(".banner-content h2 span", {
         start: "top bottom",
         end: "bottom top",
-        interval: .25,
-        batchMax: 2,
+        interval: .15,
+        batchMax: 4,
         //delay: 2,
         duration: 2,
         onEnter: batch => gsap.to(batch, {opacity: 1, yPercent: 0, stagger: {each: 0.50}, overwrite: true})
