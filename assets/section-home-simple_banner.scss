@@ -1,0 +1,23 @@
+// New Banner for Home Page //
+
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+section.home-banner-simple {
+    display:flex;
+    flex-wrap:wrap;
+    position:relative;
+    z-index:4;
+    min-height:100vh;
+    width:100vw;
+    align-items:center;
+    align-content:center;
+    justify-content: center;
+    overflow:hidden;
+    padding-bottom:15vh;
+
+    @include breakpoint(tablet) {
+        padding-bottom:0px;
+    }
+}

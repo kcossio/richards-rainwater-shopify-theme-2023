@@ -1,0 +1,83 @@
+{{ 'section-home-bottles-and-copy.css' | asset_url | stylesheet_tag }}
+
+<div class="home-bottles-intro inner">
+
+
+    <div class="home-intro-right">
+      <span class="subhead">{{ section.settings.subheading }}</span>
+      <h2>
+        {{ section.settings.heading }} 
+      </h2>
+      <a class="button light" href="{{ section.settings.call_to_action_button_link }} " role="button">{{ section.settings.call_to_action_button_label }}</a>
+
+    </div><!--End home_intro-right-->
+
+
+
+</div><!--End home-bottles-info inner-->
+
+{%- assign background_image = section.settings.background_image -%}
+{% if background_image != blank %}
+<div class="bg-img bg-hero hide-on-mobile fade-in">
+  {{ background_image | image_url: width: background_image.width | image_tag: class: 'bg-parallax', loading: 'lazy' }}
+</div>
+{% endif %}
+
+{%- assign mobile_background_image = section.settings.mobile_background_image -%}
+{% if mobile_background_image != blank %}
+<div class="bg-img bg-hero hide-on-desktop fade-in">
+  {{ mobile_background_image | image_url: width: mobile_background_image.width | image_tag: class: 'bg-parallax', loading: 'lazy' }}
+</div>
+{% endif %}
+
+{% schema %}
+  {
+  "name": "Home-Messaging Banner",
+  "class": "home-messaging-banner",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "html",
+      "id": "heading",
+      "label": "Heading",
+      "info": "Add heading text for this section. Note: Use HTML here (e.g. span tags with color classes) to create animated effects."
+    },
+    {
+      "type": "text",
+      "id": "call_to_action_button_label",
+      "label": "Call to Action Button Label",
+      "default": "Learn More",
+      "info": "Enter a label for the Call to Action button"
+    },
+    {
+      "type": "url",
+      "id": "call_to_action_button_link",
+      "label": "Call to Action Button Link",
+      "info": "Enter the link the call to action button should go to"
+    },
+    {
+    "type": "image_picker",
+    "id": "background_image",
+    "label": "Background Image",
+    "info": "Upload a background image for this section"
+    },
+    {
+    "type": "image_picker",
+    "id": "mobile_background_image",
+    "label": "Mobile Background Image",
+    "info": "Upload a background image for this section for MOBILE devices"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Home-Messaging Banner"
+    }
+  ]
+}  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

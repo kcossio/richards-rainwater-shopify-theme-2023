@@ -656,7 +656,7 @@
                             {% render 'product-media-gallery', variant_images: variant_images, is_duplicate: true %}
                             {% comment %}magictoolbox replace code ends{% endcomment %}
                         {% else %}
-                            <div  style="display:none">{% render 'product-media-gallery', variant_images: variant_images, is_duplicate: true %}</div>
+                            {% render 'product-media-gallery', variant_images: variant_images, is_duplicate: true %}
                             {{ m360 }}
                         {% endif %}
                         {% comment %}magictoolbox code ends{% endcomment %}

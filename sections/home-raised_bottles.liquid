@@ -1,0 +1,76 @@
+<div class="home-bottles-intro inner">
+  <div class="home-intro-left">
+    <h2>{{ section.settings.heading }} </h2>
+    {{ section.settings.content }} 
+  </div>
+</div><!--End Home Bottles Intro-->
+
+
+{%- assign background_image = section.settings.background_image -%}
+{% if background_image != blank %}
+<div class="bg-img bg-hero hide-on-mobile fade-in">
+  {{ background_image | image_url: width: background_image.width | image_tag: class: 'bg-parallax', loading: 'lazy' }}
+</div>
+{% endif %}
+
+{%- assign bottle_1_image = section.settings.bottle_1_image -%}
+{%- if bottle_1_image != blank -%}
+{{ bottle_1_image | image_url: width: bottle_1_image.width | image_tag: class: 'home-banner-bottle home-banner-bottle-left bottle-in-up', loading: 'lazy' }}
+{%- endif -%}
+
+{%- assign bottle_2_image = section.settings.bottle_2_image -%}
+{%- if bottle_2_image != blank -%}
+{{ bottle_2_image | image_url: width: bottle_2_image.width | image_tag: class: 'home-banner-bottle home-banner-bottle-right bottle-in-up', loading: 'lazy' }}
+{%- endif -%}
+
+
+{% schema %}
+  {
+  "name": "Home - Raised Bottles",
+  "class": "home-banner-bottles",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "info": "Enter a primary heading for this section"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content",
+      "info": "Add content to this section"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image",
+      "info": "Upload a background image for this section"
+    },
+    {
+      "type": "image_picker",
+      "id": "bottle_image_1",
+      "label": "Bottle Image 1",
+      "info": "Upload the first of two bottle images"
+    },
+    {
+      "type": "image_picker",
+      "id": "bottle_image_2",
+      "label": "Bottle Image 2",
+      "info": "Upload the second of two bottle images"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Home - Raised Bottles"
+    }
+  ]
+}  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
