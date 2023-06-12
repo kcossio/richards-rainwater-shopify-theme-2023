@@ -11,6 +11,7 @@
     },
     "versus": {
       "type": "richards-vs-competition",
+      "disabled": true,
       "blocks": {
         "2a802754-fcb0-477a-9da4-72522935c0ba": {
           "type": "richards_product",
@@ -196,6 +197,7 @@
     },
     "timeline-slider": {
       "type": "timeline-slider",
+      "disabled": true,
       "blocks": {
         "cd30d0b7-51fc-4673-b4bd-90836e19f9ba": {
           "type": "timeline_slide",
