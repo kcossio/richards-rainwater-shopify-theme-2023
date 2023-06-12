@@ -43,9 +43,9 @@
 
     ScrollTrigger.batch(".banner-content span", {
         start: "top 70%",
-        onEnter: batch => gsap.to(batch, {opacity: 1, yPercent: 0, stagger: {each: 0.25}, overwrite: true}),
+        onEnter: batch => gsap.to(batch, {opacity: 1, yPercent: 0, stagger: {each: 0.60}, overwrite: true}),
         onLeave: batch => gsap.set(batch, {opacity: 0, yPercent: -100, overwrite: true}),
-        onEnterBack: batch => gsap.to(batch, {opacity: 1, yPercent: 0, stagger: 0.25, overwrite: true}),
+        onEnterBack: batch => gsap.to(batch, {opacity: 1, yPercent: 0, stagger: 0.60, overwrite: true}),
         onLeaveBack: batch => gsap.set(batch, {opacity: 0, yPercent: -100, overwrite: true})
       });
 

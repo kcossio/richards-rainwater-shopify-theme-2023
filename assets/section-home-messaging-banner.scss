@@ -7,12 +7,18 @@
     width:100vw;
     min-height:100vh;
     position:relative;
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content:center;
+    padding-top:20%;
     
     .inner {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         position: relative;
+    
 
         @include breakpoint(tabletwide) {
             justify-content:flex-end;
