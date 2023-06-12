@@ -42,10 +42,12 @@
     gsap.set('.banner-content span', { opacity: 0, yPercent: -100 });
 
     ScrollTrigger.batch(".banner-content span", {
-        start: "top 70%",
-        onEnter: batch => gsap.to(batch, {opacity: 1, yPercent: 0, stagger: {each: 0.60}, overwrite: true}),
+        start: "top bottom",
+        end: "bottom top",
+        delay: 1,
+        onEnter: batch => gsap.to(batch, {opacity: 1, yPercent: 0, stagger: {each: 0.30}, overwrite: true}),
         onLeave: batch => gsap.set(batch, {opacity: 0, yPercent: -100, overwrite: true}),
-        onEnterBack: batch => gsap.to(batch, {opacity: 1, yPercent: 0, stagger: 0.60, overwrite: true}),
+        onEnterBack: batch => gsap.to(batch, {opacity: 1, yPercent: 0, stagger: 0.30, overwrite: true}),
         onLeaveBack: batch => gsap.set(batch, {opacity: 0, yPercent: -100, overwrite: true})
       });
 
