@@ -1,0 +1,120 @@
+{{ 'section-rainbow-text-banner.css' | asset_url | stylesheet_tag }}
+
+<div class="inner">
+<h2 class="fade-in">{{ section.settings.text }}</h2> 
+
+<div class="icon-grid">
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+  
+        {%- when 'icon_item' -%}
+          <div class="icon-item">
+          {%- assign icon = block.settings.icon -%}
+          {%- if icon != blank %}
+          {{ icon | image_url: width: icon.width | image_tag: class: 'icon-image', loading: 'lazy' }}
+          {%- endif -%}
+  
+          {%- if block.settings.label != blank -%}
+          <p class="{{ block.settings.text_color }}">{{ block.settings.label }}</p>
+          {%- endif -%}
+          </div><!--End icon-item-->
+  
+      {%- endcase -%}
+    {%- endfor -%}
+    </div><!--End icon-grid-->
+
+</div><!--End inner-->
+
+<div class="bg-img bg-hero">
+    {%- assign hero_image = section.settings.hero_image -%}
+    {%- if hero_image != blank -%}
+    {{ hero_image | image_url: width: hero_image.width | image_tag: class: 'bg bg-parallax', loading: 'lazy' }}
+    {%- endif -%}
+</div>
+
+{% ## ----- Clouds ------ -## %}  
+<div class="clouds clouds-wide topscrubme">
+    <div class="scroll-parent">
+      <div class="scroll-element scrub" style="background-image:url({{ 'cloud-wide-top.svg' | asset_url }});">
+      </div>
+  </div>
+  {% ## ----- End Clouds ------ -## %}
+
+
+
+
+{% schema %}
+  {
+  "name": "Banner w/grid items",
+  "class": "rainbow-banner hero-banner fade-in",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Add a hero banner to the page"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero Image",
+      "info": "Upload a large background image for this section"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Icon Item",
+      "type": "icon_item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon",
+          "info": "Upload an icon (PNG, GIF, or JPEG format)"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "info": "Add a label for this icon"
+        },
+        {
+            "type": "select",
+            "id": "text_color",
+            "label": "Text Color",
+            "options": [
+              {
+                "value": "light_blue",
+                "label": "light blue"
+              },
+              {
+                "value": "pink",
+                "label": "pink"
+              },
+              {
+                "value": "red",
+                "label": "red"
+              },
+              {
+                "value": "medium_blue",
+                "label": "medium blue"
+              }
+            ],
+            "default": "medium_blue",
+            "info": "Choose a color for the text in this item"
+          }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner w/Grid Items"
+    }
+  ]
+}  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
