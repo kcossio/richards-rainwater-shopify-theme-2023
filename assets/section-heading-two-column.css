@@ -249,10 +249,10 @@ section.heading-two-column .impact-items .impact-item h3 { /* work */
   }
 }
 section.heading-two-column .impact-items .impact-item p {
-  width: 80%;
+  width: 100%;
   margin: 0px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.3em;
 }
 @media (min-width: 768px) {
@@ -263,7 +263,7 @@ section.heading-two-column .impact-items .impact-item p {
 @media (min-width: 1280px) {
   section.heading-two-column .impact-items .impact-item p {
     font-size: 22px;
-    width: 90%;
+    width: 100%;
     line-height: 1.6em;
   }
 }
