@@ -18,14 +18,14 @@
 {%- assign background_image = section.settings.background_image -%}
 {% if background_image != blank %}
 <div class="bg-img bg-hero hide-on-mobile fade-in">
-  {{ background_image | image_url: width: background_image.width | image_tag: class: 'bg-parallax', loading: 'lazy' }}
+  {{ background_image | image_url: width: background_image.width | image_tag: class: 'bg', loading: 'lazy' }}
 </div>
 {% endif %}
 
 {%- assign mobile_background_image = section.settings.mobile_background_image -%}
 {% if mobile_background_image != blank %}
 <div class="bg-img bg-hero hide-on-desktop fade-in">
-  {{ mobile_background_image | image_url: width: mobile_background_image.width | image_tag: class: 'bg-parallax', loading: 'lazy' }}
+  {{ mobile_background_image | image_url: width: mobile_background_image.width | image_tag: class: 'bg', loading: 'lazy' }}
 </div>
 {% endif %}
 
