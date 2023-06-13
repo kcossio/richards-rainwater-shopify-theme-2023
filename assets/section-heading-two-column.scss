@@ -1,0 +1,102 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+section.heading-two-column {
+    margin:80px 0px 80px 0px;
+
+        @include breakpoint(tablet) {
+            margin:7vw 0px 13vw 0px;
+        }
+    
+    .inner {
+        text-align:center;
+    }
+
+    h2 {
+        margin:0px 0px 10px 0px;
+        position:relative;
+        font-size:36px;
+        line-height:1em;
+        padding-bottom:40px;
+        text-align:left;
+
+        &::after {
+        content:"";
+        display:block;
+        position:absolute;
+        bottom:0px;
+        left:0px;
+        width:100%;
+        height:16px;
+        background:url('bg-rainbow-divider.svg') left center no-repeat;
+        background-size:auto 100%;
+
+            @include breakpoint(tablet) {
+                height:25px;
+            }
+        }
+
+        @include breakpoint(tablet) {
+        margin-bottom:20px;
+        font-size:82px;
+        }
+    }
+
+    .impact-items {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        margin:40px 0px 40px 0px;
+
+        @include breakpoint(tablet) {
+            margin:80px 0px 100px 0px;
+        }
+
+        .impact-item {
+            width:100%;
+            text-align:center;
+            margin:0px 0px 50px 0px;
+            @include breakpoint(tablet) {
+                width:30%;
+                margin:0px 0px 30px 0px;
+            }
+
+            h3 {
+                margin:16px 0px 10px 0px;
+                line-height:1em;
+                font-weight:900;
+                color:$dark_blue;
+                font-size:25px;
+
+                @include breakpoint(tablet) {
+                    font-size:45px;
+                    margin:30px 0px 22px 0px;
+                }
+            }
+            p {
+                width:70%;
+                margin:0px auto;
+                font-size:14px;
+                font-weight:600;
+                line-height:1.3em;
+
+                @include breakpoint(tablet) {
+                    font-size:22px;
+                    width:90%;
+                    line-height:1.6em;
+                }
+            }
+
+            img {
+                height:auto;
+                max-width: 70%;
+                @include breakpoint(tablet) {
+                    max-width:100%;
+                }
+            }
+
+            
+        }
+    }
+}

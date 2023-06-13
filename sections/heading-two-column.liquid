@@ -1,0 +1,138 @@
+{{ 'section-our-impact.css' | asset_url | stylesheet_tag }}
+
+<div class="inner">
+
+
+<h2 class="fade-in">{{ section.settings.heading }}</h2>
+
+
+
+<div class="impact-items">
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+
+    {%- when 'impact_item' -%}
+      <div class="impact-item">
+
+        {%- assign image = block.settings.image -%}
+        {%- if image != blank -%}
+        {{ image | image_url: width: image.width | image_tag: class: 'add_your_class_here', loading: 'lazy' }}
+        {%- endif -%}
+
+        
+        {{ block.settings.image_custom_code }} 
+
+        <h3 class="{{ block.settings.text_color }}">{{ block.settings.title }}</h3> 
+
+        {{ block.settings.content }} 
+      </div><!--End impact-item-->
+
+  {%- endcase -%}
+{%- endfor -%}
+</div><!-- End impact-items-->
+
+<a class="button button-lg lg" href="{{ section.settings.call_to_action_button_link }}">{{ section.settings.call_to_action_button_label }}</a>
+
+
+
+
+
+</div><!--End inner-->
+
+{% schema %}
+  {
+  "name": "Heading + 2 Columns",
+  "class": "heading-two-column",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Our impact",
+      "info": "Add a heading to this section"
+    },
+    {
+      "type": "url",
+      "id": "call_to_action_button_link",
+      "label": "Call to Action Button Link",
+      "info": "Choose a link to add a call to action button to this section"
+    },
+    {
+      "type": "text",
+      "id": "call_to_action_button_label",
+      "label": "Call to Action Button Label",
+      "default": "Learn more",
+      "info": "Add a label for the Call to Action button"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Impact Item",
+      "type": "impact_item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "If using, add a static image for this item"
+        },
+        {
+          "type": "liquid",
+          "id": "image_custom_code",
+          "label": "Image custom code",
+          "info": "If using a custom code instead of a static image (e.g. an SVG that should be animated), add the code for that here"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "info": "Enter a title for this Impact Item"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content",
+          "info": "Add content/text for this impact item"
+        },
+        {
+            "type": "select",
+            "id": "text_color",
+            "label": "Heading Color",
+            "options": [
+              {
+                "value": "light_blue",
+                "label": "light blue"
+              },
+              {
+                "value": "pink",
+                "label": "pink"
+              },
+              {
+                "value": "red",
+                "label": "red"
+              },
+              {
+                "value": "medium_blue",
+                "label": "medium blue"
+              }
+            ],
+            "default": "medium_blue",
+            "info": "Choose a color for the heading color"
+          }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Heading + Two Columns"
+    }
+  ]
+}  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
