@@ -179,6 +179,12 @@ EASING
   flex-wrap: wrap;
   padding: 10% 0px;
 }
+.home-banner-bottles .inner {
+  z-index: 4;
+}
+.home-banner-bottles .clouds {
+  z-index: 3;
+}
 .home-banner-bottles .home-bottles-intro h2 {
   font-size: 40px;
   margin: 0px 0px 40px 0px;
@@ -200,4 +206,11 @@ EASING
   .home-banner-bottles .home-bottles-intro p {
     font-size: 30px;
   }
+}
+.home-banner-bottles .home-banner-bottle {
+  position: absolute;
+  z-index: 1;
+  max-height: 60%;
+  bottom: 0px;
+  right: 0px;
 }

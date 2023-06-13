@@ -10,6 +10,14 @@
     flex-wrap:wrap;
     padding:10% 0px;
 
+    .inner {
+        z-index:4;
+    }
+
+    .clouds {
+        z-index:3;
+    }
+
     .home-bottles-intro {
 
         h2 {
@@ -33,5 +41,13 @@
                 font-size:30px;
             }
         }
+    }
+
+    .home-banner-bottle {
+        position:absolute;
+        z-index:1;
+        max-height:60%;
+        bottom:0px;
+        right:0px;
     }
 }
