@@ -38,6 +38,10 @@
 
             .button {
                 opacity:0;
+
+                &.onscreen {
+                    opacity:1;
+                }
             }
 
             h2 {

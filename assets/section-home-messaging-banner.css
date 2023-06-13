@@ -210,6 +210,9 @@ EASING
 .home-messaging-banner .inner .banner-content .button {
   opacity: 0;
 }
+.home-messaging-banner .inner .banner-content .button.onscreen {
+  opacity: 1;
+}
 .home-messaging-banner .inner .banner-content h2 {
   font-size: 40px;
   line-height: 1em;
