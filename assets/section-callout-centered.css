@@ -175,9 +175,6 @@ EASING
   padding: 66px 0px;
   margin: 0px;
 }
-.callout-centered.notitle {
-  padding: 60px 0px 0px 0px;
-}
 @media (min-width: 768px) {
   .callout-centered {
     padding: 160px 0px 40px 0px;
@@ -194,9 +191,10 @@ EASING
   width: 100%;
   line-height: 1em;
 }
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   .callout-centered header h2 {
-    font-size: 75px;
+    width: 100%;
+    font-size: 67px;
     margin: 0px auto 36px auto;
   }
 }

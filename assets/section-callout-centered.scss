@@ -11,9 +11,6 @@
     margin:0px;
 
 
-    &.notitle {
-        padding:60px 0px 0px 0px;
-    }
     @include breakpoint(tablet) {
         padding:160px 0px 40px 0px;
         &.notitle {
@@ -31,8 +28,9 @@
             width:100%;
             line-height:1em;
 
-            @include breakpoint(tablet) {
-                font-size:75px;
+            @include breakpoint(laptop) {
+                width:100%;
+                font-size:67px;
                 margin:0px auto 36px auto;
             }
         }
