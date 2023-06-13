@@ -56,6 +56,8 @@ section.rainbow-banner {
 
         h2 {
             font-size:40px;
+            color:$dark_blue;
+            text-align: center;
 
             @include breakpoint(laptop) {
                 font-size:112px;
@@ -79,8 +81,12 @@ section.rainbow-banner {
         
             .icon-item {
         
-                width:24%;
+                width:48%;
                 text-align:center;
+
+                @include breakpoint(tablet) {
+                    width:24%;
+                }
         
                 img {
                     height:72px;
