@@ -160,6 +160,38 @@
         "call_to_action_button_link": "shopify:\/\/pages\/store-locator",
         "call_to_action_button_label": "FIND YOUR NEAREST CLOUD"
       }
+    },
+    "83f0d7a5-b17a-4f98-9a12-7ddd92322499": {
+      "type": "heading-two-column",
+      "blocks": {
+        "8325260e-7d4a-4e13-a076-e1b3d133fa48": {
+          "type": "impact_item",
+          "settings": {
+            "image_custom_code": "",
+            "title": "More of the Good Stuff",
+            "content": "<p><strong>Thanks to our high-efficiency,<\/strong> near zero-waste filtration, we infuse more into the drinking water system than any other drinking water source out there and hydrate more people with each drop.<\/p>",
+            "text_color": "light_blue"
+          }
+        },
+        "5759fe50-6a67-4633-ad97-86fe256be163": {
+          "type": "impact_item",
+          "settings": {
+            "image_custom_code": "",
+            "title": "Less of the Bad",
+            "content": "<p>Our <strong>glass bottles and aluminum cans<\/strong> make plastic bottles history and recycle like a charm. We source where the most abundant rain falls so we’re local everywhere– meaning fewer emissions from trains, planes, and automobiles.<\/p>",
+            "text_color": "pink"
+          }
+        }
+      },
+      "block_order": [
+        "8325260e-7d4a-4e13-a076-e1b3d133fa48",
+        "5759fe50-6a67-4633-ad97-86fe256be163"
+      ],
+      "settings": {
+        "heading": "The Path to <br>Net-Positive is Simple",
+        "call_to_action_button_link": "shopify:\/\/pages\/about",
+        "call_to_action_button_label": "Learn more about our impact"
+      }
     }
   },
   "order": [
@@ -172,6 +204,7 @@
     "2489de8d-7bd0-4aec-b948-96164c90c4b4",
     "6df38f0a-259a-412a-9fe1-3325f2fc3b85",
     "5c6beead-2c09-4454-8448-ab25c9f9b543",
-    "3ac0a344-f3ad-461f-a83d-eba9a539692f"
+    "3ac0a344-f3ad-461f-a83d-eba9a539692f",
+    "83f0d7a5-b17a-4f98-9a12-7ddd92322499"
   ]
 }
