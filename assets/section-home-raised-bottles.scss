@@ -15,6 +15,7 @@
         h2 {
             font-size:40px;
             margin:0px 0px 40px 0px;
+            line-height:1em;
 
             @include breakpoint(laptop) {
                 font-size:96px;
@@ -23,10 +24,14 @@
         }
 
         p {
-            width:400px;
+            width:480px;
             max-width:100%;
-            font-weight:500;
-            line-height:1.5em;
+            font-weight:bold;
+            line-height:1.8em;
+
+            @include breakpoint(tablet) {
+                font-size:30px;
+            }
         }
     }
 }
