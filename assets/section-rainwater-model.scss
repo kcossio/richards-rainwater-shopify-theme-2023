@@ -14,6 +14,10 @@ section.rainwater-model-banner {
     padding:23vw 0px 30vw 0px;
     background-color:$medium_blue;
 
+
+    .clouds {
+        z-index:2;
+    }
     .inner {
         z-index:6;
     }
