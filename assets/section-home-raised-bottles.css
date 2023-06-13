@@ -216,3 +216,19 @@ EASING
   bottom: 0px;
   right: 0px;
 }
+.home-banner-bottles .home-banner-bottle.bottle-1 {
+  right: 40%;
+}
+@media (min-width: 1280px) {
+  .home-banner-bottles .home-banner-bottle.bottle-1 {
+    right: 40%;
+  }
+}
+.home-banner-bottles .home-banner-bottle.bottle-2 {
+  right: 30%;
+}
+@media (min-width: 1280px) {
+  .home-banner-bottles .home-banner-bottle.bottle-2 {
+    right: 30%;
+  }
+}

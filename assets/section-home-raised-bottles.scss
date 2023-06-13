@@ -51,5 +51,19 @@
         height: auto;
         bottom:0px;
         right:0px;
+
+        &.bottle-1 {
+            right:40%;
+
+            @include breakpoint(laptop) {
+                right:40%;
+            }
+        }
+        &.bottle-2 {
+            right:30%;
+            @include breakpoint(laptop) {
+                right:30%;
+            }
+        }
     }
 }
