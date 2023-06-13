@@ -19,7 +19,7 @@ section.newsletter-cloud {
     .footer-top {
       display:flex;
       flex-wrap:wrap;
-      align-items:flex-start;
+      align-items:flex-end;
       align-content:flex-start;
       justify-content: space-between;
       width:100%;
@@ -42,7 +42,7 @@ section.newsletter-cloud {
       h2.footer-messaging {
         text-transform:uppercase;
         font-weight:900;
-        margin-top:0px;
+        margin:0px;
         font-size:27px;
         line-height:1.3em;
         letter-spacing:1px;
