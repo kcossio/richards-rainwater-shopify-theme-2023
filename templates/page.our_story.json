@@ -161,7 +161,7 @@
           "type": "button",
           "settings": {
             "button_label": "Download our water quality report",
-            "button_link": ""
+            "button_link": "#"
           }
         }
       },
