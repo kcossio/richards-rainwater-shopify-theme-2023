@@ -359,7 +359,7 @@ section.rainwater-model-banner {
 section.rainwater-model-banner .inner {
   z-index: 6;
 }
-section.rainwater-model-banner .bg-cloud {
+section.rainwater-model-banner .background-cloud {
   z-index: 1;
   width: 100%;
   height: auto;
