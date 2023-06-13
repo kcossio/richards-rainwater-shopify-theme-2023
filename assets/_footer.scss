@@ -51,6 +51,12 @@ section.newsletter-cloud {
         span {
           display:inline-block;
           vertical-align: baseline;
+
+          sub {
+            font-weight: 400;
+            font-size: 50%;
+            line-height: 0px;
+          }
         }
 
         @include breakpoint(tablet) {

@@ -1315,6 +1315,11 @@ section.newsletter-cloud {
   display: inline-block;
   vertical-align: baseline;
 }
+.footer .footer-top h2.footer-messaging span sub {
+  font-weight: 400;
+  font-size: 50%;
+  line-height: 0px;
+}
 @media (min-width: 768px) {
   .footer .footer-top h2.footer-messaging {
     font-size: 54px;
