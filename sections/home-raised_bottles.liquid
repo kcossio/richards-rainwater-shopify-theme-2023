@@ -15,12 +15,12 @@
 </div>
 {% endif %}
 
-{%- assign bottle_1_image = section.settings.bottle_1_image -%}
+{%- assign bottle_1_image = section.settings.bottle_image_1 -%}
 {%- if bottle_1_image != blank -%}
 {{ bottle_1_image | image_url: width: bottle_1_image.width | image_tag: class: 'home-banner-bottle home-banner-bottle-left bottle-in-up', loading: 'lazy' }}
 {%- endif -%}
 
-{%- assign bottle_2_image = section.settings.bottle_2_image -%}
+{%- assign bottle_2_image = section.settings.bottle_image_2 -%}
 {%- if bottle_2_image != blank -%}
 {{ bottle_2_image | image_url: width: bottle_2_image.width | image_tag: class: 'home-banner-bottle home-banner-bottle-right bottle-in-up', loading: 'lazy' }}
 {%- endif -%}
