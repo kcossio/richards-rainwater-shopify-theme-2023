@@ -142,12 +142,39 @@
     },
     "pullquote": {
       "type": "pullquote",
+      "disabled": true,
       "settings": {
         "quote_text": "Lorem ipsum dolor sit amet, consec tetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
       }
     },
+    "8a2c0976-7156-47d0-b965-383ecc12c1cd": {
+      "type": "callout-centered",
+      "blocks": {
+        "template--18984173764895__8a2c0976-7156-47d0-b965-383ecc12c1cd-1686681121792ee462-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "The cleanest water under the sun has the numbers to prove it.",
+            "heading_size": "h2"
+          }
+        },
+        "template--18984173764895__8a2c0976-7156-47d0-b965-383ecc12c1cd-1686681121792ee462-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Download our water quality report",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18984173764895__8a2c0976-7156-47d0-b965-383ecc12c1cd-1686681121792ee462-0",
+        "template--18984173764895__8a2c0976-7156-47d0-b965-383ecc12c1cd-1686681121792ee462-2"
+      ],
+      "settings": {
+      }
+    },
     "85f7042e-640c-4f3b-af6d-ecd56d2faa9e": {
       "type": "rainbow_text_banner",
+      "disabled": true,
       "settings": {
         "text": "Annual Water Quality Report",
         "call_to_action_button_link": "#",
@@ -284,31 +311,6 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
-    },
-    "8a2c0976-7156-47d0-b965-383ecc12c1cd": {
-      "type": "callout-centered",
-      "blocks": {
-        "template--18984173764895__8a2c0976-7156-47d0-b965-383ecc12c1cd-1686681121792ee462-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h2"
-          }
-        },
-        "template--18984173764895__8a2c0976-7156-47d0-b965-383ecc12c1cd-1686681121792ee462-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--18984173764895__8a2c0976-7156-47d0-b965-383ecc12c1cd-1686681121792ee462-0",
-        "template--18984173764895__8a2c0976-7156-47d0-b965-383ecc12c1cd-1686681121792ee462-2"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
@@ -316,11 +318,11 @@
     "versus",
     "the-rainwater-model",
     "pullquote",
+    "8a2c0976-7156-47d0-b965-383ecc12c1cd",
     "85f7042e-640c-4f3b-af6d-ecd56d2faa9e",
     "our-impact",
     "timeline-slider",
     "42b4b5e7-aeba-47d4-a360-f05fa48d17e0",
-    "main",
-    "8a2c0976-7156-47d0-b965-383ecc12c1cd"
+    "main"
   ]
 }
