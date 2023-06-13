@@ -1,0 +1,32 @@
+// Raised Bottles on Home Page //
+
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+.home-banner-bottles {
+    min-height:100vh;
+    display:flex;
+    flex-wrap:wrap;
+    padding:10% 0px;
+
+    .home-bottles-intro {
+
+        h2 {
+            font-size:40px;
+            margin:0px 0px 40px 0px;
+
+            @include breakpoint(laptop) {
+                font-size:96px;
+                margin:0px 0px 60px 0px;
+            }
+        }
+
+        p {
+            width:400px;
+            max-width:100%;
+            font-weight:500;
+            line-height:1.5em;
+        }
+    }
+}
