@@ -10,6 +10,10 @@
     flex-wrap:wrap;
     padding:10% 0px;
 
+    @include breakpoint(laptop) {
+        padding:12vw 0px 20vw 0px;
+    }
+
     .inner {
         z-index:4;
     }
@@ -46,23 +50,28 @@
     .home-banner-bottle {
         position:absolute;
         z-index:1;
-        max-height:60%;
+        max-height:420px;
         width: auto;
         height: auto;
         bottom:0px;
         right:0px;
 
         &.bottle-1 {
-            right:40%;
+            right:90%;
+            max-height:380px;
 
             @include breakpoint(laptop) {
-                right:40%;
+                right:37%;
+                max-height:62%;
             }
         }
         &.bottle-2 {
-            right:30%;
+            right:10%;
+            max-height:420px;
+
             @include breakpoint(laptop) {
-                right:30%;
+                right:12%;
+                max-height:68%;
             }
         }
     }

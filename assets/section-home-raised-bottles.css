@@ -179,6 +179,11 @@ EASING
   flex-wrap: wrap;
   padding: 10% 0px;
 }
+@media (min-width: 1280px) {
+  .home-banner-bottles {
+    padding: 12vw 0px 20vw 0px;
+  }
+}
 .home-banner-bottles .inner {
   z-index: 4;
 }
@@ -210,25 +215,29 @@ EASING
 .home-banner-bottles .home-banner-bottle {
   position: absolute;
   z-index: 1;
-  max-height: 60%;
+  max-height: 420px;
   width: auto;
   height: auto;
   bottom: 0px;
   right: 0px;
 }
 .home-banner-bottles .home-banner-bottle.bottle-1 {
-  right: 40%;
+  right: 90%;
+  max-height: 380px;
 }
 @media (min-width: 1280px) {
   .home-banner-bottles .home-banner-bottle.bottle-1 {
-    right: 40%;
+    right: 37%;
+    max-height: 62%;
   }
 }
 .home-banner-bottles .home-banner-bottle.bottle-2 {
-  right: 30%;
+  right: 10%;
+  max-height: 420px;
 }
 @media (min-width: 1280px) {
   .home-banner-bottles .home-banner-bottle.bottle-2 {
-    right: 30%;
+    right: 12%;
+    max-height: 68%;
   }
 }
