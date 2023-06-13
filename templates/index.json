@@ -46,7 +46,9 @@
       "settings": {
         "heading": "We’re turning  bottled water right  side up. Why?",
         "content": "<p>Because all these bottled water <br\/>honchos have been talking a big <br\/>talk about saving the planet for <br\/>a while now, but all they’re really <br\/>changing is the bottle, not the <br\/>water. We think it’s ‘bout time <br\/>we fixed that. <br\/><br\/>It’s not just sustainable, not just <br\/>carbon-neutral. This water is <br\/>net-positive.<\/p>",
-        "background_image": "shopify:\/\/shop_images\/bg-home-banner-sky.jpg"
+        "background_image": "shopify:\/\/shop_images\/bg-home-banner-sky.jpg",
+        "bottle_image_1": "shopify:\/\/shop_images\/arm-holding-still-can.png",
+        "bottle_image_2": "shopify:\/\/shop_images\/arm-holding-sparkling-bottle.png"
       }
     },
     "ca796682-1492-45e1-8073-6b6b626ce353": {
@@ -60,6 +62,7 @@
     },
     "2489de8d-7bd0-4aec-b948-96164c90c4b4": {
       "type": "text-section",
+      "disabled": true,
       "blocks": {
         "89d9755d-cce4-4a04-9153-a4110024d171": {
           "type": "text",
@@ -76,6 +79,7 @@
     },
     "6df38f0a-259a-412a-9fe1-3325f2fc3b85": {
       "type": "icon-grid",
+      "disabled": true,
       "blocks": {
         "0f31b490-408a-46fe-9484-dcf17b99c5c4": {
           "type": "icon_item",
