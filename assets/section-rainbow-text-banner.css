@@ -220,11 +220,12 @@ section.rainbow-banner .inner.center h2 {
   }
 }
 section.rainbow-banner.grid-banner {
+  min-height: 0px;
   padding: 30vw 0px 23vw 0px;
 }
 @media (min-width: 768px) {
   section.rainbow-banner.grid-banner {
-    padding: 16vw 0px 9vw 0px;
+    padding: 18vw 0px 7vw 0px;
     min-height: 40vh;
   }
 }
