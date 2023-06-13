@@ -51,4 +51,58 @@ section.rainbow-banner {
             }
         }
     }
+
+    &.grid-banner {
+
+        h2 {
+            font-size:40px;
+
+            @include breakpoint(laptop) {
+                font-size:112px;
+            }
+        }
+
+        .icon-grid {
+            display:flex;
+            flex-wrap:wrap;
+            align-items:flex-start;
+            justify-content:space-between;
+            margin:56px 0px;
+        
+            @include breakpoint(tablet) {
+                margin:84px 0px;
+            }
+        
+            .inner {
+                width:1100px;
+            }
+        
+            .icon-item {
+        
+                width:24%;
+                text-align:center;
+        
+                img {
+                    height:72px;
+                    width:auto;
+                    display:block;
+                    margin:0px auto;
+        
+                    @include breakpoint(tablet) {
+                        height:86px;
+                    }
+                }
+                p {
+                    margin:24px 0px 0px 0px;
+                    font-weight:900;
+                    font-size:12px;
+                    line-height:1em;
+        
+                    @include breakpoint(tablet) {
+                        font-size:30px;
+                    }
+                }
+            }
+        }
+    }
 }
