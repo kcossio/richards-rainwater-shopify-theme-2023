@@ -178,6 +178,7 @@ EASING
   display: flex;
   flex-wrap: wrap;
   padding: 10% 0px;
+  overflow: hidden;
 }
 @media (min-width: 1280px) {
   .home-banner-bottles {
