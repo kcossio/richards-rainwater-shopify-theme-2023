@@ -2,6 +2,7 @@
   "sections": {
     "page-top-banner": {
       "type": "page-top-banner",
+      "disabled": true,
       "custom_css": [
 
       ],
@@ -135,8 +136,8 @@
         "6f5800a2-ad8b-4418-80d4-b0d34afc3e22"
       ],
       "settings": {
-        "heading": "The Rainwater Model",
-        "introduction": "<p>What do you see when you look up at the clouds? At Richard’s Rainwater we see the greatest source of pure, delicious water looking right back down at us.  We’ve invented a simple,  powerful technology to collect and bottle rainwater.<\/p>"
+        "heading": "Getting Rain from Cloud to Bottle",
+        "introduction": "<h2>We are accessing the sky’s infinite water supply, we’re making sure we’re not wasting anything as we go.  While others lose almost half their water during filtration, our closed-loop system loses virtually zero. <br\/><br\/>That’s right, zilch, zip, nada.<br\/> <br\/>That means we can use water more wisely, hydrate more people with each drop, and put more water into the drinking water supply. No other drinking water does that– not mountain springs, not mineral water, even tap.<\/h2>"
       }
     },
     "pullquote": {
