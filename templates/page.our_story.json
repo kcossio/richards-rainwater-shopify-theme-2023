@@ -74,15 +74,15 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/rw-model-image-1.png",
             "heading": "Rains",
-            "description": "<p>Our process begins with the <strong>rain<\/strong>. When clouds become saturated, droplets fall from the sky.<\/p>"
+            "description": "<p>Our process begins at the same place all water starts – the <strong>rain.<\/strong> When clouds get filled to the brim, droplets fall from the sky.<\/p>"
           }
         },
         "e7eb975b-d346-4fbf-94cf-da6fc87fc2e7": {
           "type": "model_blocks",
           "settings": {
             "image": "shopify:\/\/shop_images\/rw-model-image-2_600290ef-37b8-4268-9eb6-d286622f2e12.png",
-            "heading": "First Flush",
-            "description": "<p>Rainfall is a <strong>naturally cleansing<\/strong> event. During the ﬁrst few minutes, the raindrops <strong>clean the atmosphere<\/strong> and wash away any dirt or debris from surface areas. <\/p>"
+            "heading": "Rinse",
+            "description": "<p>Rainfall is <strong>Mother Nature’s filtration system.<\/strong> During the first few minutes, raindrops <strong>clean the atmosphere<\/strong> and wash away any dirt or debris.<\/p>"
           }
         },
         "378937ef-79a4-4d1b-a7be-29994910244e": {
@@ -90,7 +90,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/rw-model-image-3_bf362180-0cb6-4b46-a541-00f652ee3236.png",
             "heading": "Collect",
-            "description": "<p>At this <strong>cleanest point<\/strong> in the rain cycle, we collect the <strong>pure<\/strong> raindrops into large storage vessels. <\/p>"
+            "description": "<p>With our proprietary technology, we figure out the <strong>cleanest point<\/strong> in the rain cycle. Then we collect the <strong>pure raindrops<\/strong> into large vessels– think big honkin’ water towers of rain.<\/p>"
           }
         },
         "b281c460-36c7-4aae-a05d-7b81af897ab7": {
@@ -98,7 +98,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/rw-model-image-4_c9824417-0e73-41cf-b137-f436900f22bd.png",
             "heading": "Filter",
-            "description": "<p>Then use a simple, yet eﬀective  combination of <strong>ozone<\/strong> and <strong>microﬁltration<\/strong> to ensure our rainwater surpasses the <strong>highest drinking water standards.<\/strong><\/p>"
+            "description": "<p>Our closed loop filtration beats the highest drinking water standards and purifies with virtually <strong>zero water waste<\/strong>– 99% of the rainwater we collect ends up in your gullet. Compare that to reverse osmosis, which flushes 30-50% of collected water during filtration.<\/p>"
           }
         },
         "b8ef9699-9e69-4fad-93ed-e0a8a91de167": {
@@ -106,23 +106,23 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/rw-model-image-5.png",
             "heading": "Bottle",
-            "description": "<p>We pour the <strong>pure, refreshing<\/strong> rainwater into glass bottles and aluminum cans, packaging as <strong>inﬁnitely renewable<\/strong> as the water itself.<\/p>"
+            "description": "<p>Clean-as-a-whistle <strong>rainwater<\/strong> goes into glass bottles and aluminum cans…packaging as <strong>infinitely renewable<\/strong> as the water itself.<\/p>"
           }
         },
         "bb5d5776-b14f-4309-837e-c1bbe6da19a3": {
           "type": "model_blocks",
           "settings": {
             "image": "shopify:\/\/shop_images\/rw-model-image-6.png",
-            "heading": "Distribute Locally",
-            "description": "<p>Richard’s is building a <strong>network of  collection systems<\/strong> across the country to ensure our rainwater is <strong>local everywhere.<\/strong><\/p>"
+            "heading": "Distribute",
+            "description": "<p>Our fancy meteorological technology helps us place <strong>collection sites<\/strong> where the purest, most abundant rain falls so that we can be <strong>local everywhere.<\/strong><\/p>"
           }
         },
         "6f5800a2-ad8b-4418-80d4-b0d34afc3e22": {
           "type": "model_blocks",
           "settings": {
             "image": "shopify:\/\/shop_images\/rw-model-image-7.png",
-            "heading": "End Result",
-            "description": "<p>The purest, <strong>best-tasting water<\/strong> comes from the sky. Richard’s — Sip the Sky™.<\/p>"
+            "heading": "Drink Up",
+            "description": "<p>Before you know it, we’ve bottled <strong>the purest, best-tasting water<\/strong> from the one place it’ll never run out – <strong>the sky.<\/strong><\/p>"
           }
         }
       },
