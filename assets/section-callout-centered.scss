@@ -1,0 +1,62 @@
+
+.section-callout-centered {
+    text-align:center;
+    padding:66px 0px;
+    margin:0px;
+
+
+    &.notitle {
+        padding:60px 0px 0px 0px;
+    }
+    @include breakpoint(tablet) {
+        padding:160px 0px 40px 0px;
+        &.notitle {
+            padding:40px 0px;
+        }
+    }
+
+    header {
+
+        h2 {
+            color:$light_blue;
+            font-weight:900;
+            margin:0px auto 18px auto;
+            font-size:40px;
+            width:100%;
+            line-height:1em;
+
+            @include breakpoint(tablet) {
+                font-size:75px;
+                margin:0px auto 36px auto;
+            }
+        }
+        p {
+            text-align:center;
+            font-size:22px;
+            font-weight:bold;
+            line-height:1.3em;
+            width:80%;
+            max-width:100%;
+            margin:0px auto;
+
+            @include breakpoint(tablet) {
+                font-size:30px;
+                width:624px;
+            }
+        }
+    }
+
+    a {
+        cursor:pointer;
+    }
+
+    a.button {
+        margin:30px auto;
+
+        @include breakpoint(tablet) {
+            margin:60px auto 30px auto;
+        }
+    }
+
+
+}
