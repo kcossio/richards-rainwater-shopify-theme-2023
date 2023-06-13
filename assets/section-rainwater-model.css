@@ -355,6 +355,10 @@ section.rainwater-model-banner {
   overflow: hidden;
   padding: 23vw 0px 30vw 0px;
   background-color: #0040A8;
+  background-image: url("rainwater-model-bg-clouds.svg");
+  background-position: bottom center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 section.rainwater-model-banner .inner {
   z-index: 6;
