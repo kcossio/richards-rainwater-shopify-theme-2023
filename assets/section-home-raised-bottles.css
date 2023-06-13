@@ -211,6 +211,8 @@ EASING
   position: absolute;
   z-index: 1;
   max-height: 60%;
+  width: auto;
+  height: auto;
   bottom: 0px;
   right: 0px;
 }
