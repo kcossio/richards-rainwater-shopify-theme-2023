@@ -54,6 +54,13 @@ section.rainbow-banner {
 
     &.grid-banner {
 
+        padding:30vw 0px 23vw 0px;
+
+        @include breakpoint(tablet) {
+            padding:16vw 0px 9vw 0px;
+            min-height:40vh;
+        }
+
         h2 {
             font-size:40px;
             color:$dark_blue;
