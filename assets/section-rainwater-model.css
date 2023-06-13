@@ -371,7 +371,7 @@ section.rainwater-model-banner .background-cloud {
   position: absolute;
   bottom: 0px;
   left: 0px;
-  opacity: 0.4;
+  opacity: 0.38;
 }
 @media (min-width: 768px) {
   section.rainwater-model-banner {
