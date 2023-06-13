@@ -1306,7 +1306,7 @@ section.newsletter-cloud {
   text-transform: uppercase;
   font-weight: 900;
   margin: 0px;
-  font-size: 27px;
+  font-size: 32px;
   line-height: 1.3em;
   letter-spacing: 1px;
   white-space: nowrap;
@@ -1317,7 +1317,7 @@ section.newsletter-cloud {
 }
 @media (min-width: 768px) {
   .footer .footer-top h2.footer-messaging {
-    font-size: 36px;
+    font-size: 54px;
   }
 }
 .footer .footer-top ul.footer-menu {
