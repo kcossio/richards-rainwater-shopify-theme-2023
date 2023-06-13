@@ -17,12 +17,12 @@
 
 {%- assign bottle_1_image = section.settings.bottle_image_1 -%}
 {%- if bottle_1_image != blank -%}
-{{ bottle_1_image | image_url: width: bottle_1_image.width | image_tag: class: 'home-banner-bottle bottle-1 bottle-in-up', loading: 'lazy' }}
+{{ bottle_1_image | image_url: width: bottle_1_image.width | image_tag: class: 'home-banner-bottle bottle-1', loading: 'lazy' }}
 {%- endif -%}
 
 {%- assign bottle_2_image = section.settings.bottle_image_2 -%}
 {%- if bottle_2_image != blank -%}
-{{ bottle_2_image | image_url: width: bottle_2_image.width | image_tag: class: 'home-banner-bottle bottle-2 bottle-in-up', loading: 'lazy' }}
+{{ bottle_2_image | image_url: width: bottle_2_image.width | image_tag: class: 'home-banner-bottle bottle-2', loading: 'lazy' }}
 {%- endif -%}
 
 {% ## ----- Clouds ------ -## %}  
@@ -33,6 +33,24 @@
   </div>
   {% ## ----- End Clouds ------ -## %}
 
+  <script type="text/javascript">
+
+    gsap.set('.home-banner-bottle', { opacity: 0, yPercent: 100 });
+
+  ScrollTrigger.batch(".home-banner-bottle", {
+      start: "top 110%",
+      end: "bottom top",
+      interval: 1,
+      batchMax: 2,
+      //delay: 2,
+      duration: 2,
+      ease: "Elastic.easeOut",
+      onEnter: batch => gsap.to(batch, {opacity: 1, yPercent: 0, stagger: {each: 0.25}, overwrite: true})
+      //onLeave: batch => gsap.set(batch, {opacity: 0, yPercent: -100, overwrite: true}),
+      //onEnterBack: batch => gsap.to(batch, {opacity: 1, yPercent: 0, stagger: 0.30, overwrite: true}),
+      //onLeaveBack: batch => gsap.set(batch, {opacity: 0, yPercent: -100, overwrite: true})
+    });
+  </script>
 
 {% schema %}
   {
