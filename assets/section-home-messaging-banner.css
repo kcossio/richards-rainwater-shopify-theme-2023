@@ -183,6 +183,11 @@ EASING
   justify-content: center;
   padding-top: 20%;
 }
+.home-messaging-banner .bg {
+  -o-object-position: center;
+     object-position: center;
+  width: 80%;
+}
 .home-messaging-banner .inner {
   display: flex;
   flex-wrap: wrap;

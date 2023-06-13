@@ -15,11 +15,32 @@ section.home-banner-simple {
     align-content:flex-start;
     justify-content: center;
     overflow:hidden;
-    padding-top:25%;
+    padding-top:40%;
 
     @include breakpoint(tablet) {
-        padding-top:25%;
+        padding-top:40%;
     }
+
+    @include breakpoint(tabletwide) {
+        padding-top:30%;
+    }
+
+    @include breakpoint(laptop) {
+        padding-top:15%;
+    }
+    @include breakpoint(laptopwide) {
+        padding-top:15%;
+    }
+    @include breakpoint(desktop) {
+        padding-top:24%;
+    }
+    @include breakpoint(desktopwide) {
+        padding-top:18%;
+    }
+
+
+
+
 
     .home-banner-heading {
         position:relative;

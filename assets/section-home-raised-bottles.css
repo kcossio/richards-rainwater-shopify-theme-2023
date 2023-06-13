@@ -197,7 +197,7 @@ EASING
 }
 @media (min-width: 1280px) {
   .home-banner-bottles .home-bottles-intro h2 {
-    font-size: 96px;
+    font-size: 92px;
     margin: 0px 0px 60px 0px;
   }
 }
@@ -238,6 +238,6 @@ EASING
 @media (min-width: 1280px) {
   .home-banner-bottles .home-banner-bottle.bottle-2 {
     right: 12%;
-    max-height: 68%;
+    max-height: 72%;
   }
 }
