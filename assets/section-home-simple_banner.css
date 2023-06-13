@@ -237,7 +237,7 @@ section.home-banner-simple .home-banner-heading h1 {
 }
 @media (min-width: 1280px) {
   section.home-banner-simple .home-banner-heading h1 {
-    font-size: 57px;
+    font-size: 3.3vw;
     letter-spacing: 2px;
   }
 }

@@ -61,7 +61,7 @@ section.home-banner-simple {
             letter-spacing:1px;
 
             @include breakpoint(laptop) {
-                font-size:57px;
+                font-size:3.3vw;
                 letter-spacing:2px;
             }
         }
