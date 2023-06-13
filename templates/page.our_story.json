@@ -98,7 +98,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/rw-model-image-4_c9824417-0e73-41cf-b137-f436900f22bd.png",
             "heading": "Filter",
-            "description": "<p>Our closed loop filtration beats the highest drinking water standards and purifies with virtually <strong>zero water waste<\/strong>– 99% of the rainwater we collect ends up in your gullet. Compare that to reverse osmosis, which flushes 30-50% of collected water during filtration.<\/p>"
+            "description": "<p>Our closed loop filtration beats the highest drinking water standards and purifies with virtually <strong>zero water waste<\/strong>.<\/p>"
           }
         },
         "b8ef9699-9e69-4fad-93ed-e0a8a91de167": {
@@ -106,7 +106,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/rw-model-image-5.png",
             "heading": "Bottle",
-            "description": "<p>Clean-as-a-whistle <strong>rainwater<\/strong> goes into glass bottles and aluminum cans…packaging as <strong>infinitely renewable<\/strong> as the water itself.<\/p>"
+            "description": "<p>Clean-as-a-whistle <strong>rainwater<\/strong> goes into glass bottles and aluminum cans … packaging as <strong>infinitely renewable<\/strong> as the water itself.<\/p>"
           }
         },
         "bb5d5776-b14f-4309-837e-c1bbe6da19a3": {
@@ -114,7 +114,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/rw-model-image-6.png",
             "heading": "Distribute",
-            "description": "<p>Our fancy meteorological technology helps us place <strong>collection sites<\/strong> where the purest, most abundant rain falls so that we can be <strong>local everywhere.<\/strong><\/p>"
+            "description": "<p>Using our fancy meteorological technology we place <strong>collection sites<\/strong> where the most abundant rain falls so that we can be <strong>local everywhere<\/strong> with a lower carbon footprint.<\/p>"
           }
         },
         "6f5800a2-ad8b-4418-80d4-b0d34afc3e22": {
@@ -122,7 +122,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/rw-model-image-7.png",
             "heading": "Drink Up",
-            "description": "<p>Before you know it, we’ve bottled <strong>the purest, best-tasting water<\/strong> from the one place it’ll never run out – <strong>the sky.<\/strong><\/p>"
+            "description": "<p>Before you know it, we’ve bottled <strong>the purest, best-tasting water<\/strong> from the one place it’ll never run out — <strong>the sky.<\/strong><\/p>"
           }
         }
       },
@@ -178,28 +178,28 @@
         "e22aed70-6c1a-4772-a88e-5da23e0a3436": {
           "type": "icon_item",
           "settings": {
-            "label": "Infinite Water Source",
+            "label": "Infinite <br>Water Source",
             "text_color": "light_blue"
           }
         },
         "302ef9b9-ffac-4250-9858-b93e76131fcf": {
           "type": "icon_item",
           "settings": {
-            "label": "Zero-Waste Filtration",
+            "label": "Zero-Waste <br> Filtration",
             "text_color": "pink"
           }
         },
         "11148169-9ea7-48a3-b29a-2aa6158a1561": {
           "type": "icon_item",
           "settings": {
-            "label": "Renewable Packaging",
+            "label": "Renewable <br>Packaging",
             "text_color": "red"
           }
         },
         "2fee22c9-1268-4ee5-9340-be9979d81d95": {
           "type": "icon_item",
           "settings": {
-            "label": "More Water For More People",
+            "label": "More Water for <br>More People",
             "text_color": "medium_blue"
           }
         }
@@ -212,7 +212,7 @@
       ],
       "settings": {
         "hero_image": "shopify:\/\/shop_images\/bg-home-banner-sky_df89ff10-7864-449e-8422-4cb4ffcbc9f9.jpg",
-        "heading": "Making Good On Our Good Earth"
+        "heading": "Making Good with Our Good Earth"
       }
     },
     "85f7042e-640c-4f3b-af6d-ecd56d2faa9e": {
