@@ -10,15 +10,18 @@
   color: #FC4A6A;
 }
 
-.light-blue {
+.light-blue,
+.light_blue {
   color: #0094DA;
 }
 
-.medium-blue {
+.medium-blue,
+.medium_blue {
   color: #0040A8;
 }
 
-.dark-blue {
+.dark-blue,
+.dark_blue {
   color: #000F44;
 }
 
