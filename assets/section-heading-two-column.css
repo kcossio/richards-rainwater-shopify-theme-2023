@@ -183,6 +183,7 @@ section.heading-two-column {
 }
 section.heading-two-column .inner {
   text-align: center;
+  width: 1200px;
 }
 section.heading-two-column h2 {
   margin: 0px 0px 10px 0px;
