@@ -236,7 +236,7 @@ section.heading-two-column .impact-items .impact-item {
     margin: 0px 0px 30px 0px;
   }
 }
-section.heading-two-column .impact-items .impact-item h3 {
+section.heading-two-column .impact-items .impact-item h3 { /* work */
   margin: 16px 0px 10px 0px;
   line-height: 1em;
   font-weight: 900;
