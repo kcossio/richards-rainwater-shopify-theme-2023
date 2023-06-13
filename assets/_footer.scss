@@ -49,7 +49,8 @@ section.newsletter-cloud {
         white-space: nowrap;
 
         span {
-          display:block;
+          display:inline-block;
+          vertical-align: baseline;
         }
 
         @include breakpoint(tablet) {

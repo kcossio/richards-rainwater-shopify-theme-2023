@@ -1312,7 +1312,8 @@ section.newsletter-cloud {
   white-space: nowrap;
 }
 .footer .footer-top h2.footer-messaging span {
-  display: block;
+  display: inline-block;
+  vertical-align: baseline;
 }
 @media (min-width: 768px) {
   .footer .footer-top h2.footer-messaging {

@@ -36,9 +36,9 @@
     <div class="footer-top">
       <div class="footer-top-left">
         <h2 class="footer-messaging">
-          <span class="medium-blue">Renewable.</span>
-          <span class="light-blue">Refreshing.</span>
-          <span class="white">Rainwater.</span>
+          <span class="pink">Sip</span>
+          <span class="orange">The </span>
+          <span class="light-blue">Sky <sub>™</sub></span>
         </h2>
         {%- render 'social-icons' -%}
       </div>
@@ -106,7 +106,24 @@
   
 </footer>
 
+<script type="text/javascript">
 
+  gsap.set('.footer-messaging span', { opacity: 0, yPercent: -40 });
+
+  ScrollTrigger.batch(".footer-messaging span", {
+      start: "top bottom",
+      end: "bottom top",
+      interval: 1,
+      batchMax: 6,
+      //delay: 2,
+      duration: 2,
+      onEnter: batch => gsap.to(batch, {opacity: 1, yPercent: 0, stagger: {each: 0.25}, overwrite: true})
+      //onLeave: batch => gsap.set(batch, {opacity: 0, yPercent: -100, overwrite: true}),
+      //onEnterBack: batch => gsap.to(batch, {opacity: 1, yPercent: 0, stagger: 0.30, overwrite: true}),
+      //onLeaveBack: batch => gsap.set(batch, {opacity: 0, yPercent: -100, overwrite: true})
+    });
+  
+  </script>
 
 {% schema %}
 {
