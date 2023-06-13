@@ -178,28 +178,28 @@
         "e22aed70-6c1a-4772-a88e-5da23e0a3436": {
           "type": "icon_item",
           "settings": {
-            "label": "Infinite Water Source",
+            "label": "Infinite <br>Water Source",
             "text_color": "light_blue"
           }
         },
         "302ef9b9-ffac-4250-9858-b93e76131fcf": {
           "type": "icon_item",
           "settings": {
-            "label": "Zero-Waste Filtration",
+            "label": "Zero-Waste <br> Filtration",
             "text_color": "pink"
           }
         },
         "11148169-9ea7-48a3-b29a-2aa6158a1561": {
           "type": "icon_item",
           "settings": {
-            "label": "Renewable Packaging",
+            "label": "Renewable <br>Packaging",
             "text_color": "red"
           }
         },
         "2fee22c9-1268-4ee5-9340-be9979d81d95": {
           "type": "icon_item",
           "settings": {
-            "label": "More Water For More People",
+            "label": "More Water for <br>More People",
             "text_color": "medium_blue"
           }
         }
