@@ -404,6 +404,17 @@ section.rainwater-model-banner h2.onscreen::after {
     font-size: 94px;
   }
 }
+section.rainwater-model-banner h3 {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 900;
+  margin: 1.5em 0px;
+}
+@media (min-width: 1280px) {
+  section.rainwater-model-banner h3 {
+    font-size: 54px;
+  }
+}
 section.rainwater-model-banner p {
   color: #ffffff;
   font-weight: bold;
