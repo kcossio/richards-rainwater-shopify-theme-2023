@@ -27,7 +27,7 @@ section.rainwater-model-banner {
         text-align:center;
         font-size:35px;
         line-height:1.1em;
-        margin:0px 0px 18px 0px;
+        margin:0px auto 18px auto;
         position:relative;
         padding-bottom:22px;
 
@@ -61,6 +61,7 @@ section.rainwater-model-banner {
             font-size:6.2vw;
             margin-bottom:40px;
             padding-bottom:42px;
+            width:80%;
         }
         @include breakpoint(desktopwide) {
             font-size:94px;
@@ -86,7 +87,12 @@ section.rainwater-model-banner {
         margin:0px;
 
         @include breakpoint(tablet) {
+            font-size:22px;
+        }
+
+        @include breakpoint(laptop) {
             font-size:32px;
+            padding:0px 8%;
         }
     }
 

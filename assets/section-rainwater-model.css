@@ -369,7 +369,7 @@ section.rainwater-model-banner h2 {
   text-align: center;
   font-size: 35px;
   line-height: 1.1em;
-  margin: 0px 0px 18px 0px;
+  margin: 0px auto 18px auto;
   position: relative;
   padding-bottom: 22px;
 }
@@ -403,6 +403,7 @@ section.rainwater-model-banner h2.onscreen::after {
     font-size: 6.2vw;
     margin-bottom: 40px;
     padding-bottom: 42px;
+    width: 80%;
   }
 }
 @media (min-width: 1680px) {
@@ -430,7 +431,13 @@ section.rainwater-model-banner p {
 }
 @media (min-width: 768px) {
   section.rainwater-model-banner p {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1280px) {
+  section.rainwater-model-banner p {
     font-size: 32px;
+    padding: 0px 8%;
   }
 }
 
