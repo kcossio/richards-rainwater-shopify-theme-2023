@@ -340,7 +340,7 @@
           "type": "icon_item",
           "settings": {
             "label": "More Water For More People",
-            "text_color": "red"
+            "text_color": "medium_blue"
           }
         }
       },
