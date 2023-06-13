@@ -1465,8 +1465,9 @@ section.newsletter-cloud {
 }
 
 .list-social__item .icon {
-  height: 1.6rem;
-  width: 1.6rem;
+  height: 1.8rem;
+  width: 1.8rem;
+  scale: 0.9;
 }
 
 .list-social__link {
