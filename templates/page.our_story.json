@@ -311,6 +311,48 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "b022380c-0067-42eb-8309-57fa6c889c18": {
+      "type": "banner-grid-items",
+      "blocks": {
+        "e22aed70-6c1a-4772-a88e-5da23e0a3436": {
+          "type": "icon_item",
+          "settings": {
+            "label": "Infinite Water Source",
+            "text_color": "light_blue"
+          }
+        },
+        "302ef9b9-ffac-4250-9858-b93e76131fcf": {
+          "type": "icon_item",
+          "settings": {
+            "label": "Zero-Waste Filtration",
+            "text_color": "pink"
+          }
+        },
+        "11148169-9ea7-48a3-b29a-2aa6158a1561": {
+          "type": "icon_item",
+          "settings": {
+            "label": "Renewable Packaging",
+            "text_color": "red"
+          }
+        },
+        "2fee22c9-1268-4ee5-9340-be9979d81d95": {
+          "type": "icon_item",
+          "settings": {
+            "label": "More Water For More People",
+            "text_color": "red"
+          }
+        }
+      },
+      "block_order": [
+        "e22aed70-6c1a-4772-a88e-5da23e0a3436",
+        "302ef9b9-ffac-4250-9858-b93e76131fcf",
+        "11148169-9ea7-48a3-b29a-2aa6158a1561",
+        "2fee22c9-1268-4ee5-9340-be9979d81d95"
+      ],
+      "settings": {
+        "hero_image": "shopify:\/\/shop_images\/bg-home-banner-sky_df89ff10-7864-449e-8422-4cb4ffcbc9f9.jpg"
+      }
     }
   },
   "order": [
@@ -323,6 +365,7 @@
     "our-impact",
     "timeline-slider",
     "42b4b5e7-aeba-47d4-a360-f05fa48d17e0",
-    "main"
+    "main",
+    "b022380c-0067-42eb-8309-57fa6c889c18"
   ]
 }
