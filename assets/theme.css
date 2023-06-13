@@ -1471,7 +1471,10 @@ section.newsletter-cloud {
 .list-social__link {
   align-items: center;
   display: flex;
-  padding: 0.7rem;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
   border-radius: 50%;
   color: #000F44;
   aspect-ratio: 1/1;
@@ -1481,7 +1484,6 @@ section.newsletter-cloud {
 @media (min-width: 768px) {
   .list-social__link {
     margin: 0px 8px 0px 0px;
-    padding: 1.3rem;
   }
 }
 .list-social__link.facebook {
