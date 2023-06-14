@@ -42,7 +42,13 @@ div.MagicToolboxSelectorsContainer {
     margin: 10px 0;
  }
 
-.MagicToolboxSlide { display: none; position:relative; }
+.MagicToolboxSlide { 
+    display: none; position:relative; 
+    padding-top: 0;
+    aspect-ratio: 741/885;
+    width: 100%;
+    height: auto;
+}
 .MagicToolboxSlide.active-magic-slide { display: block; }
 
 .MagicToolboxMessage {
