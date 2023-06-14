@@ -2021,6 +2021,9 @@ nav.water-product-buttons a img.custom-title-img {
   width: 100%;
 }
 
+.product--thumbnail_slider {
+  /* work */
+}
 .product--thumbnail_slider .slider-btn {
   position: absolute;
   z-index: 2;
