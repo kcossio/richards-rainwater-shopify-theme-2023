@@ -17,10 +17,11 @@ section.heading-two-column {
     h2 {
         margin:0px 0px 10px 0px;
         position:relative;
-        font-size:36px;
         line-height:1em;
         padding-bottom:1.2em;
         text-align:center;
+
+        @include font-size(large);
 
         &::after {
         content:"";
@@ -40,7 +41,6 @@ section.heading-two-column {
 
         @include breakpoint(tablet) {
         margin-bottom:20px;
-        font-size:82px;
         }
     }
 

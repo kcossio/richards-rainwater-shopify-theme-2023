@@ -188,10 +188,25 @@ section.heading-two-column .inner {
 section.heading-two-column h2 {
   margin: 0px 0px 10px 0px;
   position: relative;
-  font-size: 36px;
   line-height: 1em;
   padding-bottom: 1.2em;
   text-align: center;
+  font-size: 40px;
+}
+@media (min-width: 768px) {
+  section.heading-two-column h2 {
+    font-size: 6.38vw;
+  }
+}
+@media (min-width: 1280px) {
+  section.heading-two-column h2 {
+    font-size: 6.38vw;
+  }
+}
+@media (min-width: 1680px) {
+  section.heading-two-column h2 {
+    font-size: 92px;
+  }
 }
 section.heading-two-column h2::after {
   content: "";
@@ -212,7 +227,6 @@ section.heading-two-column h2::after {
 @media (min-width: 768px) {
   section.heading-two-column h2 {
     margin-bottom: 20px;
-    font-size: 82px;
   }
 }
 section.heading-two-column .impact-items {
