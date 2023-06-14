@@ -2008,7 +2008,7 @@
     background-size:cover;
     transform-origin: center;
 
-    &.slider-next { /*work*/
+    &.slick-next { /*work*/
 
       @include breakpoint(tabletwide) {
         rotate:90deg;
@@ -2016,7 +2016,7 @@
       }
     }
 
-    &.slider-previous {
+    &.slick-prev {
 
       @include breakpoint(tabletwide) {
         rotate:-90deg;
@@ -2042,6 +2042,7 @@
 
     .slick-track {
       max-height:100%;
+      he
       max-width:100%;
     }
 

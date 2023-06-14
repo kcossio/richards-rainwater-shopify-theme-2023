@@ -2044,15 +2044,15 @@ nav.water-product-buttons a img.custom-title-img {
   background-size: cover;
   transform-origin: center;
 }
-.product--thumbnail_slider .slick-arrow.slider-next { /*work*/ }
+.product--thumbnail_slider .slick-arrow.slick-next { /*work*/ }
 @media (min-width: 1024px) {
-  .product--thumbnail_slider .slick-arrow.slider-next {
+  .product--thumbnail_slider .slick-arrow.slick-next {
     rotate: 90deg;
     top: calc(100% + 6px);
   }
 }
 @media (min-width: 1024px) {
-  .product--thumbnail_slider .slick-arrow.slider-previous {
+  .product--thumbnail_slider .slick-arrow.slick-prev {
     rotate: -90deg;
     top: -24px;
   }
