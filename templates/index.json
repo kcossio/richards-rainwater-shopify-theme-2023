@@ -35,7 +35,8 @@
       "settings": {
         "heading": "<span class=\"pink\">Clink,<\/span> \n<span class=\"light-blue\">gulp,<\/span> <span class=\"orange\">ahh.<\/span><br>\n<span class=\"medium-blue\">Cheers<\/span> <span class=\"light-blue\">to<\/span> \n<span class=\"red\">change.<\/span>",
         "call_to_action_button_label": "Shop Richard's",
-        "call_to_action_button_link": "shopify:\/\/collections\/shop-all"
+        "call_to_action_button_link": "shopify:\/\/collections\/shop-all",
+        "background_image": "shopify:\/\/shop_images\/splash-water-glass.jpg"
       }
     },
     "f049bad5-c2cd-4966-83a2-7320cefa40e2": {
