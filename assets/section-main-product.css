@@ -2030,6 +2030,11 @@ nav.water-product-buttons a img.custom-title-img {
     max-height: 100%;
     max-width: 100%;
   }
+  .product--thumbnail_slider .thumbnail {
+    border: 0px !important;
+    box-shadow: none !important;
+    border-radius: 14px;
+  }
   .product--thumbnail_slider media-gallery {
     display: flex;
     flex-direction: row-reverse;

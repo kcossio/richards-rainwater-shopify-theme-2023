@@ -155,7 +155,7 @@
     padding: 0;
     border: none;
     outline: none;
-    background: url("arrow-right-white.svg") right center no-repeat;
+    background: url("arrow.svg") right center no-repeat;
     background-size:cover;
     transition:opacity .3s ease 0s;
     
@@ -164,12 +164,12 @@
     }
     
     &:hover {
-      background: url("arrow-right-white.svg") right center no-repeat;
+      background: url("arrow.svg") right center no-repeat;
         background-size:cover;
         border:0px;
     }
     &:focus, &:active {
-       background: url("arrow-right-white.svg") right center no-repeat;
+       background: url("arrow.svg") right center no-repeat;
         background-size:cover;
        
     }
@@ -265,7 +265,7 @@
         padding: 0;
         border: none;
         outline: none;
-        background: url("arrow-right.svg") right center no-repeat;
+        background: url("arrow.svg") right center no-repeat;
         background-size:cover;
         transition:scale .3s ease 0s;
         
@@ -275,13 +275,13 @@
         }
   
         &:hover {
-            background: url("arrow-right.svg") right center no-repeat;
+            background: url("arrow.svg") right center no-repeat;
             background-size:cover;
             border:0px;
         }
   
         &:focus, &:active {
-           background: url("arrow-right.svg") right center no-repeat;
+           background: url("arrow.svg") right center no-repeat;
             background-size:cover;
   
         }
@@ -299,7 +299,7 @@
             height:100%;
             top:0px;
             background:none !important;
-            cursor: url("arrow-right.svg") 21.5 21.5, pointer;
+            cursor: url("arrow.svg") 21.5 21.5, pointer;
         }
     }
     
@@ -347,7 +347,7 @@
     
     .slick-prev,
     .slick-next {
-        background: url("arrow-right.svg") right center no-repeat;
+        background: url("arrow.svg") right center no-repeat;
         background-size:cover;
         height:40px;
         width: 40px;
@@ -412,7 +412,7 @@
     
     .slick-prev,
     .slick-next {
-        background: url("arrow-right.svg") right center no-repeat;
+        background: url("arrow.svg") right center no-repeat;
         background-size:cover;
         height:40px;
         width: 40px;
@@ -465,7 +465,7 @@
     {
         height:10px;
         width: 54px;
-        background-image: url("arrow-right-blue.svg");
+        background-image: url("arrow-blue.svg");
         background-size:cover;
         bottom:0px;
     }

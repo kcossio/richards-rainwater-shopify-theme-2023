@@ -290,7 +290,7 @@ EASING
   padding: 0;
   border: none;
   outline: none;
-  background: url("arrow-right-white.svg") right center no-repeat;
+  background: url("arrow.svg") right center no-repeat;
   background-size: cover;
   transition: opacity 0.3s ease 0s;
 }
@@ -300,14 +300,14 @@ EASING
 }
 .slick-prev:hover,
 .slick-next:hover {
-  background: url("arrow-right-white.svg") right center no-repeat;
+  background: url("arrow.svg") right center no-repeat;
   background-size: cover;
   border: 0px;
 }
 .slick-prev:focus, .slick-prev:active,
 .slick-next:focus,
 .slick-next:active {
-  background: url("arrow-right-white.svg") right center no-repeat;
+  background: url("arrow.svg") right center no-repeat;
   background-size: cover;
 }
 
@@ -390,7 +390,7 @@ EASING
   padding: 0;
   border: none;
   outline: none;
-  background: url("arrow-right.svg") right center no-repeat;
+  background: url("arrow.svg") right center no-repeat;
   background-size: cover;
   transition: scale 0.3s ease 0s;
 }
@@ -400,14 +400,14 @@ EASING
 }
 .gallery-slider .slick-prev:hover,
 .gallery-slider .slick-next:hover {
-  background: url("arrow-right.svg") right center no-repeat;
+  background: url("arrow.svg") right center no-repeat;
   background-size: cover;
   border: 0px;
 }
 .gallery-slider .slick-prev:focus, .gallery-slider .slick-prev:active,
 .gallery-slider .slick-next:focus,
 .gallery-slider .slick-next:active {
-  background: url("arrow-right.svg") right center no-repeat;
+  background: url("arrow.svg") right center no-repeat;
   background-size: cover;
 }
 @media (min-width: 768px) {
@@ -427,7 +427,7 @@ EASING
     height: 100%;
     top: 0px;
     background: none !important;
-    cursor: url("arrow-right.svg") 21.5 21.5, pointer;
+    cursor: url("arrow.svg") 21.5 21.5, pointer;
   }
 }
 .gallery-slider .slick-prev {
@@ -474,7 +474,7 @@ EASING
 }
 #blog-list-slider .slick-prev,
 #blog-list-slider .slick-next {
-  background: url("arrow-right.svg") right center no-repeat;
+  background: url("arrow.svg") right center no-repeat;
   background-size: cover;
   height: 40px;
   width: 40px;
@@ -522,7 +522,7 @@ EASING
 }
 #staff-list-slider .slick-prev,
 #staff-list-slider .slick-next {
-  background: url("arrow-right.svg") right center no-repeat;
+  background: url("arrow.svg") right center no-repeat;
   background-size: cover;
   height: 40px;
   width: 40px;
@@ -563,7 +563,7 @@ EASING
 #testimonials-slider .slick-next {
   height: 10px;
   width: 54px;
-  background-image: url("arrow-right-blue.svg");
+  background-image: url("arrow-blue.svg");
   background-size: cover;
   bottom: 0px;
 }
