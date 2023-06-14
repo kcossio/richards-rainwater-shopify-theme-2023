@@ -298,3 +298,59 @@
     </slider-component>
   {%- endif -%}
 </media-gallery>
+
+<script type="text/javascript">
+
+  jQuery('.thumbnail-slider').slick({
+    autoplay: false,
+    autoplaySpeed: 7000,        
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    centerMode: true,
+    centerPadding: '0px',
+    slidesToShow: 5,
+    variableWidth: true,
+    arrows: true,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 5,
+          variableWidth: true 
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 5
+        }
+      }
+    ]
+  });
+
+  jQuery('a[data-slide]').click(function(e) {
+    e.preventDefault();
+    var slideno = jQuery(this).data('slide');
+    jQuery('#timeline-slider').slick('slickGoTo', slideno - 1);
+  });
+
+
+  jQuery('#timeline-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+
+      var $slides = $('#timeline-slider').slick("getSlick").$slides;
+      var year = $slides.eq( currentSlide ).data("year");
+      console.log('We have entered year:' + year);
+      jQuery('a[data-slide]').removeClass('active');
+      jQuery('a[data-year=' + year +']').addClass('active');
+  
+  });
+
+  jQuery('a[data-slide]:first-child').addClass('active');
+</script>
