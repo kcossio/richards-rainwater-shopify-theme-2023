@@ -675,6 +675,10 @@
   .product__media-list video {
     border-radius: calc(var(--media-radius) - var(--media-border-width));
   }
+
+  .product__media-list .product__media-item {
+    margin-bottom:0px !important;
+  }
   
   @media screen and (max-width: 749px) {
     .product__media-list {
