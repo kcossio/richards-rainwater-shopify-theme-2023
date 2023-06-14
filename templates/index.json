@@ -5,8 +5,6 @@
       "disabled": true,
       "settings": {
         "background_image": "shopify:\/\/shop_images\/bg-home-banner-sky.jpg",
-        "bottle_1_image": "shopify:\/\/shop_images\/home-holding-bottle-1.png",
-        "bottle_2_image": "shopify:\/\/shop_images\/home-holding-bottle-2.png",
         "callout_text": "The first net-positive bottled water. Ever.",
         "enable_audio_player": true,
         "audio_player_label": "Enhance with Audio"
@@ -29,7 +27,7 @@
       "settings": {
         "heading": "The first net-positive <br>bottled water. Ever.",
         "subheading": "",
-        "background_image": "shopify:\/\/shop_images\/bg-home-new-banner-FPO.jpg"
+        "background_image": "shopify:\/\/shop_images\/bg-home-new-banner.jpg"
       }
     },
     "a4a62baa-c5c2-48e9-86e1-3a8a787f9477": {
@@ -37,8 +35,7 @@
       "settings": {
         "heading": "<span class=\"pink\">Clink,<\/span> \n<span class=\"light-blue\">gulp,<\/span> <span class=\"orange\">ahh.<\/span><br>\n<span class=\"medium-blue\">Cheers<\/span> <span class=\"light-blue\">to<\/span> \n<span class=\"red\">change.<\/span>",
         "call_to_action_button_label": "Shop Richard's",
-        "call_to_action_button_link": "shopify:\/\/collections\/shop-all",
-        "background_image": "shopify:\/\/shop_images\/splash-water-glass.jpg"
+        "call_to_action_button_link": "shopify:\/\/collections\/shop-all"
       }
     },
     "f049bad5-c2cd-4966-83a2-7320cefa40e2": {
