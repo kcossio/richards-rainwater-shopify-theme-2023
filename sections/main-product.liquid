@@ -624,6 +624,11 @@
                      </div><!--End store-locator-product-->
                   {%- endif -%}
                 {%- endfor -%}
+
+                {%- when 'external_link' -%}
+                  <div class="external-link">
+                    <a class="button" href="{{ product.metafields.product_extra.product_external_link }}" target="_blank">{{ product.metafields.product_extra.product_external_link_label }}</a>    
+                  </div>
                 
           {%- endcase -%}
         {%- endfor -%}
@@ -2140,6 +2145,12 @@
           "info": "Choose a Product to link to. The image for the product will be automatically used for this button."
         }
       ]
+    },
+    {
+      "type": "external_link",
+      "name": "External Purchase Link",
+      "limit": 1,
+      "settings": []
     },
     {
       "name": "Store Locator Form",
