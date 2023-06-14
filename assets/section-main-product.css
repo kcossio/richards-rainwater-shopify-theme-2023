@@ -1694,6 +1694,7 @@ a.product__text {
      object-fit: cover;
   width: auto;
   height: 100%;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 749px) {
