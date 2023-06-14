@@ -216,17 +216,17 @@ EASING
 }
 @media (min-width: 768px) {
   .home-messaging-banner .inner .banner-content h2 {
-    font-size: 4.4vw;
+    font-size: 4.8vw;
   }
 }
 @media (min-width: 1280px) {
   .home-messaging-banner .inner .banner-content h2 {
-    font-size: 4.4vw;
+    font-size: 4.8vw;
   }
 }
 @media (min-width: 1680px) {
   .home-messaging-banner .inner .banner-content h2 {
-    font-size: 65px;
+    font-size: 75px;
   }
 }
 .home-messaging-banner .inner .banner-content h2 span {

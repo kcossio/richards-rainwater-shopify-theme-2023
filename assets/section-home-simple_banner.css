@@ -245,17 +245,17 @@ section.home-banner-simple .home-banner-heading h1 {
 }
 @media (min-width: 768px) {
   section.home-banner-simple .home-banner-heading h1 {
-    font-size: 4.4vw;
+    font-size: 4.8vw;
   }
 }
 @media (min-width: 1280px) {
   section.home-banner-simple .home-banner-heading h1 {
-    font-size: 4.4vw;
+    font-size: 4.8vw;
   }
 }
 @media (min-width: 1680px) {
   section.home-banner-simple .home-banner-heading h1 {
-    font-size: 65px;
+    font-size: 75px;
   }
 }
 section.home-banner-simple .home-banner-heading p {
