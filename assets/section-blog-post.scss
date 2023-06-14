@@ -39,7 +39,9 @@
 }
 
 .article-template__hero-medium {
-  height: 22rem;
+  height: auto;
+
+  aspect-ratio: 506 / 307;
 
   img {
     width:100%;
@@ -56,9 +58,6 @@
     height: 22rem;
   }
 
-  .article-template__hero-medium {
-    height: 44rem;
-  }
 
   .article-template__hero-large {
     height: 66rem;
@@ -70,9 +69,6 @@
     height: 27.5rem;
   }
 
-  .article-template__hero-medium {
-    height: 55rem;
-  }
 
   .article-template__hero-large {
     height: 82.5rem;

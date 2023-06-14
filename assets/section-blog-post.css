@@ -206,7 +206,8 @@ EASING
 }
 
 .article-template__hero-medium {
-  height: 22rem;
+  height: auto;
+  aspect-ratio: 506/307;
 }
 .article-template__hero-medium img {
   width: 100%;
@@ -221,9 +222,6 @@ EASING
   .article-template__hero-small {
     height: 22rem;
   }
-  .article-template__hero-medium {
-    height: 44rem;
-  }
   .article-template__hero-large {
     height: 66rem;
   }
@@ -231,9 +229,6 @@ EASING
 @media screen and (min-width: 990px) {
   .article-template__hero-small {
     height: 27.5rem;
-  }
-  .article-template__hero-medium {
-    height: 55rem;
   }
   .article-template__hero-large {
     height: 82.5rem;
