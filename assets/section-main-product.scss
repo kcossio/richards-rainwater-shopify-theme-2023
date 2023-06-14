@@ -4,7 +4,8 @@
 
 
 .product-main {
-  width:100%;
+  width:1440px;
+  max-width:100%;
   padding:0px 40px;
 
   @include breakpoint(laptop) {
