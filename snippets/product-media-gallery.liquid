@@ -179,6 +179,11 @@
       >
         {% render 'icon-caret' %}
       </button>
+
+      <div class="slick-controls">
+        <button class="slider-btn slider-next" id="slider-next">Next</button>
+        <button class="slider-btn slider-previous"id="slider-previous">Previous</button>
+      </div>
       <ul
         id="Slider-Thumbnails-{{ section.id }}{{ id_append }}"
         class="thumbnail-list list-unstyled slider slider--mobile{% if section.settings.gallery_layout == 'thumbnail_slider' %} slider--tablet-up{% endif %}"
@@ -295,8 +300,7 @@
       >
         {% render 'icon-caret' %}
       </button>
-      <button class="slider-btn slider-next">Next</button>
-      <button class="slider-btn slider-previous">Previous</button>
+      
     </slider-component>
   {%- endif -%}
 </media-gallery>
