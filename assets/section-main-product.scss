@@ -1971,8 +1971,10 @@
   width:69px;
   height:auto;
 
-  @include breakpoint(laptop) {
-    width:134px;
+  @include breakpoint(tablet) {
+    width:120px;
+    top:4%;
+    left:18%;
   }
   @include breakpoint(laptop) {
     width:180px;

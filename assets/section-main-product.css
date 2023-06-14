@@ -2006,9 +2006,11 @@ nav.water-product-buttons a img.custom-title-img {
   width: 69px;
   height: auto;
 }
-@media (min-width: 1280px) {
+@media (min-width: 768px) {
   .product-variant-sticker {
-    width: 134px;
+    width: 120px;
+    top: 4%;
+    left: 18%;
   }
 }
 @media (min-width: 1280px) {
