@@ -1612,9 +1612,15 @@
   .product-media-container.constrain-height .media {
     //padding-top: min(var(--constrained-height), var(--ratio-percent));
     padding-top:0px;
-    //aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 1;
     width:100%;
     height:auto;
+
+    img {
+      object-fit: cover;
+      width:auto;
+      height:100%;
+    }
   }
   
   @media screen and (max-width: 749px) {
