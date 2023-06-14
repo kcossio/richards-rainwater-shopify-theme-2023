@@ -35,6 +35,7 @@
     -webkit-perspective: 1000;
   }
   
+
 /*-----------------------
 EASING 
 ---------------------- */
@@ -74,3 +75,14 @@ $easeInOutBack: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 $easeInOutFast: cubic-bezier(1,0,0,1);
 
 $authenticMotion: cubic-bezier(.4,0,.2,1);
+
+
+// Repeated Font Sizes
+
+@mixin font-size($font-size) {
+  @if $font-size == large {
+
+    font-size:clamp(1rem, 3.3vw + 0.75rem, 2.024rem);
+   
+  }
+}

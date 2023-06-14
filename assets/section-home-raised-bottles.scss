@@ -40,6 +40,8 @@
                 margin:0px 0px 1.5em 0px;
                 width:76%;
             }
+
+            @include font-size(large);
         }
 
         p {
@@ -69,7 +71,7 @@
 
             @include breakpoint(laptop) {
                 right:37%;
-                max-height:62%;
+                max-height:57%;
             }
         }
         &.bottle-2 {
