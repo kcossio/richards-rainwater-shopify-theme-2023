@@ -106,10 +106,17 @@
           "settings": {
             "product_hide": "richards-sparkling-rainwater-24-pk-bottles"
           }
+        },
+        "ec72bace-8bd9-4d69-932f-2549a566fac2": {
+          "type": "hide_title_on_product",
+          "settings": {
+            "product_hide": "richards-still-rainwater-16oz-24-pack"
+          }
         }
       },
       "block_order": [
-        "bb1c7d6b-0b3c-4728-b0b5-cc595e292de7"
+        "bb1c7d6b-0b3c-4728-b0b5-cc595e292de7",
+        "ec72bace-8bd9-4d69-932f-2549a566fac2"
       ],
       "settings": {
         "heading": "Find Richard’s near you."
@@ -121,21 +128,18 @@
         "f8c8bb45-491c-4302-a368-5b95a3d81659": {
           "type": "icon_item",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/icon-flask.png",
             "label": "PFAs FREE"
           }
         },
         "aff946d8-d99c-44f2-a358-c9d20e359af8": {
           "type": "icon_item",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/icon-recycle.png",
             "label": "LESS WASTE"
           }
         },
         "f2eb4cf5-7473-4c3d-ab93-b428292210bb": {
           "type": "icon_item",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/icon-globe.png",
             "label": "RENEWABLE"
           }
         }
@@ -243,7 +247,6 @@
     "c8b0a5d8-fdc6-482d-bde3-65ecc91bcfc4": {
       "type": "banner-hero-image",
       "settings": {
-        "hero_image": "shopify:\/\/shop_images\/50B4A041-FF42-42DC-9B89-F1EFE2086676.jpg"
       }
     }
   },
