@@ -2029,6 +2029,12 @@ nav.water-product-buttons a img.custom-title-img {
   z-index: 2;
   top: -20px;
   left: calc(50% - 6px);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  border: 0px;
+  padding: 0px;
+  box-shadow: none;
   display: block;
   width: 11px;
   height: 20px;
@@ -2038,13 +2044,13 @@ nav.water-product-buttons a img.custom-title-img {
   transform-origin: center;
 }
 @media (min-width: 1024px) {
-  .product--thumbnail_slider .slider-btn.next {
+  .product--thumbnail_slider .slider-btn.sldier-next {
     rotate: 90deg;
     top: calc(100% + 6px);
   }
 }
 @media (min-width: 1024px) {
-  .product--thumbnail_slider .slider-btn.previous {
+  .product--thumbnail_slider .slider-btn.slider-previous {
     rotate: -90deg;
     top: -24px;
   }

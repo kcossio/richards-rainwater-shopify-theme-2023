@@ -295,8 +295,8 @@
       >
         {% render 'icon-caret' %}
       </button>
-      <a class="slider-btn next">Next</a>
-      <a class="slider-btn previous">Previous</a>
+      <button class="slider-btn slider-next">Next</button>
+      <button class="slider-btn slider-previous">Previous</button>
     </slider-component>
   {%- endif -%}
 </media-gallery>
@@ -333,32 +333,16 @@
     ]
   });
 
-  jQuery('a.slider-btn.next').click(function(e) {
+  jQuery('.slider-next').click(function(e) {
     e.preventDefault();
     jQuery('#Slider-Thumbnails-{{ section.id }}{{ id_append }}').slick('slickNext');
   });
 
-  jQuery('a.slider-btn.previous').click(function(e) {
+  jQuery('.slider-previous').click(function(e) {
     e.preventDefault();
     jQuery('#Slider-Thumbnails-{{ section.id }}{{ id_append }}').slick('slickPrev');
   });
 
-  jQuery('a[data-slide]').click(function(e) {
-    e.preventDefault();
-    var slideno = jQuery(this).data('slide');
-    jQuery('#timeline-slider').slick('slickGoTo', slideno - 1);
-  });
 
 
-  jQuery('#timeline-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
-
-      var $slides = $('#timeline-slider').slick("getSlick").$slides;
-      var year = $slides.eq( currentSlide ).data("year");
-      console.log('We have entered year:' + year);
-      jQuery('a[data-slide]').removeClass('active');
-      jQuery('a[data-year=' + year +']').addClass('active');
-  
-  });
-
-  jQuery('a[data-slide]:first-child').addClass('active');
 </script>
