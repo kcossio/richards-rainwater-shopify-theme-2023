@@ -300,16 +300,15 @@
 </media-gallery>
 
 <script type="text/javascript">
-/*
+
   jQuery('.thumbnail-list').slick({
     autoplay: false,
     autoplaySpeed: 7000,        
     pauseOnFocus: false,
     pauseOnHover: false,
-    centerMode: true,
-    centerPadding: '0px',
     slidesToShow: 5,
     variableWidth: true,
+    vertical: true,
     arrows: true,
     dots: false,
     responsive: [
@@ -317,18 +316,13 @@
         breakpoint: 768,
         settings: {
           arrows: true,
-          centerMode: true,
-          centerPadding: '0px',
           slidesToShow: 5,
-          variableWidth: true 
         }
       },
       {
         breakpoint: 480,
         settings: {
           arrows: true,
-          centerMode: true,
-          centerPadding: '0px',
           slidesToShow: 5
         }
       }
@@ -353,5 +347,4 @@
   });
 
   jQuery('a[data-slide]:first-child').addClass('active');
-  */
 </script>
