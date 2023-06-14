@@ -53,18 +53,17 @@ section.section-product-info-box-drops {
         h2 {
             color:$white;
             margin:0px;
-            font-size:28px;
             line-height:1.2em;
             text-transform:uppercase;
 
             @include breakpoint(tablet) {
-                font-size:45px;
                 text-transform:none;
             }
             @include breakpoint(laptop) {
-                font-size:75px;
                 text-transform:none;
             }
+
+            @include font-size(large);
         }
         p {
             color:$light_blue;
