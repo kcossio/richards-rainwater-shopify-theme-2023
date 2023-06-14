@@ -345,6 +345,47 @@
             
         })           
     });
+
+
+    // Slick Slider
+  var sliderSlick = jQuery('.MagicToolboxSelectorsContainer');
+  sliderSlick.slick({
+    autoplay: false,
+    autoplaySpeed: 7000,        
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    slidesToShow: 4,
+    vertical: true,
+    verticalSwiping: true,
+    infinite: false,
+    arrows: true,
+    appendArrows: jQuery('#MagicToolboxContainer'),
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: true,
+          slidesToShow: 4
+        }
+      },
+      {
+        breakpoint: 500,
+        settings: 
+          'unslick'
+          /*{ arrows: true,
+          slidesToShow: 4,
+          vertical: false,
+          verticalSwiping: false
+        }*/
+        
+      }
+    ]
+  });
+
+ 
+
+
   </script>
 
 {% else %}
