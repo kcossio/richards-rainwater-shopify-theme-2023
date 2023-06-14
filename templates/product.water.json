@@ -34,11 +34,6 @@
           "settings": {
           }
         },
-        "2c5baea9-dbac-4301-9a11-14771ab9a284": {
-          "type": "external_link",
-          "settings": {
-          }
-        },
         "ff628bee-bf3e-4e7d-8aa4-fefdf2dd3e99": {
           "type": "store_locator_form",
           "settings": {
@@ -48,6 +43,11 @@
             ],
             "heading": "Find Richard's Near You!",
             "subheading": "<p>Find sparkling rainwater at your nearest participating store.<\/p>"
+          }
+        },
+        "2c5baea9-dbac-4301-9a11-14771ab9a284": {
+          "type": "external_link",
+          "settings": {
           }
         },
         "description": {
@@ -62,8 +62,8 @@
         "62399502-8414-4318-80a3-021b2666ce89",
         "variant_picker",
         "6b3a7561-9f99-48f1-a848-969a618af235",
-        "2c5baea9-dbac-4301-9a11-14771ab9a284",
         "ff628bee-bf3e-4e7d-8aa4-fefdf2dd3e99",
+        "2c5baea9-dbac-4301-9a11-14771ab9a284",
         "description"
       ],
       "settings": {
