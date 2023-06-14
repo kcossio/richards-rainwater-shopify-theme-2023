@@ -28,6 +28,7 @@
         },
         "6b3a7561-9f99-48f1-a848-969a618af235": {
           "type": "quantity_and_button",
+          "disabled": true,
           "settings": {
           }
         },
@@ -35,7 +36,8 @@
           "type": "store_locator_form",
           "settings": {
             "show_on_these_products": [
-              "richards-sparkling-rainwater-24-pk-bottles"
+              "richards-sparkling-rainwater-24-pk-bottles",
+              "richards-still-rainwater-16oz-24-pack"
             ],
             "heading": "Find Richard's Near You!",
             "subheading": "<p>Find sparkling rainwater at your nearest participating store.<\/p>"
@@ -58,7 +60,7 @@
       ],
       "settings": {
         "enable_sticky_info": false,
-        "media_size": "large",
+        "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "gallery_layout": "thumbnail",
