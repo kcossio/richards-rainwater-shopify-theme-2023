@@ -261,40 +261,11 @@
               {%- capture thumbnail_id -%}
                 Thumbnail-{{ section.id }}-{{ forloop.index }}{{ id_append }}
               {%- endcapture -%}
-              <button
-                class="thumbnail global-media-settings global-media-settings--no-shadow"
-                aria-label="{%- if media.media_type == 'image' -%}{{ 'products.product.media.load_image' | t: index: media_index }}{%- elsif media.media_type == 'model' -%}{{ 'products.product.media.load_model' | t: index: media_index }}{%- elsif media.media_type == 'video' or media.media_type == 'external_video' -%}{{ 'products.product.media.load_video' | t: index: media_index }}{%- endif -%}"
-                {% if media == product.selected_or_first_available_variant.featured_media
-                  or product.selected_or_first_available_variant.featured_media == null
-                  and forloop.index == 1
-                %}
-                  aria-current="true"
-                {% endif %}
-                aria-controls="GalleryViewer-{{ section.id }}{{ id_append }}"
-                aria-describedby="{{ thumbnail_id }}"
-              >
-                {{ media.preview_image | image_url: width: 416 | image_tag:
-                  loading: 'lazy',
-                  sizes: sizes,
-                  widths: '54, 74, 104, 162, 208, 324, 416',
-                  id: thumbnail_id,
-                  alt: media.alt | escape
-                }}
-              </button>
             </li>
           {%- endunless -%}
         {%- endfor -%}
       </ul>
-      <button
-        type="button"
-        class="slider-button slider-button--next{% if media_count <= 3 %} small-hide{% endif %}{% if media_count <= 4 %} medium-hide large-up-hide{% endif %}"
-        name="next"
-        aria-label="{{ 'general.slider.next_slide' | t }}"
-        aria-controls="GalleryThumbnails-{{ section.id }}"
-        data-step="3"
-      >
-        {% render 'icon-caret' %}
-      </button>
+      <a class="slick-arrow slick-next">next</a>
     </slider-component>
   {%- endif -%}
 </media-gallery>
@@ -331,22 +302,11 @@
     ]
   });
 
-  jQuery('a[data-slide]').click(function(e) {
+  jQuery('a.slick-next').click(function(e) {
     e.preventDefault();
     var slideno = jQuery(this).data('slide');
-    jQuery('#timeline-slider').slick('slickGoTo', slideno - 1);
+    jQuery('.thumbnail-list').slick('slickNext');
   });
 
 
-  jQuery('#timeline-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
-
-      var $slides = $('#timeline-slider').slick("getSlick").$slides;
-      var year = $slides.eq( currentSlide ).data("year");
-      console.log('We have entered year:' + year);
-      jQuery('a[data-slide]').removeClass('active');
-      jQuery('a[data-year=' + year +']').addClass('active');
-  
-  });
-
-  jQuery('a[data-slide]:first-child').addClass('active');
 </script>
