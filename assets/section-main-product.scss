@@ -1991,8 +1991,8 @@
     position:absolute;
     z-index:2;
     top:-20px;
-    left:50%;
-    transform:translateX(-50%);
+    left: calc(50%-6px);
+    
     display:block;
     width:11px;
     height:20px;
@@ -2004,7 +2004,7 @@
 
       @include breakpoint(tabletwide) {
         rotate:90deg;
-        top:102%;
+        top:100%;
       }
     }
 
@@ -2012,7 +2012,7 @@
 
       @include breakpoint(tabletwide) {
         rotate:-90deg;
-        top:-2%;
+        top:-24px;
       }
     }
 
@@ -2023,9 +2023,13 @@
   .product--thumbnail_slider {
     position: relative;
 
+    .slider-button {
+      display:none !important;
+    }
+
     ul.thumbnail-list {
       width:60px;
-      height:312px;
+      height:35px;
     }
 
     .slick-track {
