@@ -2044,7 +2044,7 @@ nav.water-product-buttons a img.custom-title-img {
   transform-origin: center;
 }
 @media (min-width: 1024px) {
-  .product--thumbnail_slider .slider-btn.sldier-next {
+  .product--thumbnail_slider .slider-btn.slider-next {
     rotate: 90deg;
     top: calc(100% + 6px);
   }
