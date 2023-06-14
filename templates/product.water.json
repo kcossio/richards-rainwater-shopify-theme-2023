@@ -136,18 +136,21 @@
         "f8c8bb45-491c-4302-a368-5b95a3d81659": {
           "type": "icon_item",
           "settings": {
+            "icon": "shopify:\/\/shop_images\/icon-flask.png",
             "label": "PFAs FREE"
           }
         },
         "aff946d8-d99c-44f2-a358-c9d20e359af8": {
           "type": "icon_item",
           "settings": {
+            "icon": "shopify:\/\/shop_images\/icon-recycle.png",
             "label": "LESS WASTE"
           }
         },
         "f2eb4cf5-7473-4c3d-ab93-b428292210bb": {
           "type": "icon_item",
           "settings": {
+            "icon": "shopify:\/\/shop_images\/icon-globe.png",
             "label": "RENEWABLE"
           }
         }
