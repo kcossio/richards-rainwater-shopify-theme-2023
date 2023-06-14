@@ -105,7 +105,7 @@
                             {% render 'product-media-gallery', variant_images: variant_images %}
                             {% comment %}magictoolbox replace code ends{% endcomment %}
                         {% else %}
-                            {% render 'product-media-gallery', variant_images: variant_images %}
+                            <div  style="display:none">{% render 'product-media-gallery', variant_images: variant_images %}</div>
                             {{ m360 }}
                         {% endif %}
                         {% comment %}magictoolbox code ends{% endcomment %}
