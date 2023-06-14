@@ -1990,7 +1990,7 @@
   /* work */
   .slider-btn {
     position:absolute;
-    z-index:2;
+    z-index:8;
     top:-20px;
     left: calc(50% - 6px);
     
@@ -2007,7 +2007,7 @@
     background-size:cover;
     transform-origin: center;
 
-    &.slider-next {
+    &.slider-next { /*work*/
 
       @include breakpoint(tabletwide) {
         rotate:90deg;

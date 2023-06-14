@@ -303,7 +303,8 @@
 
 <script type="text/javascript">
 
-  jQuery('#Slider-Thumbnails-{{ section.id }}{{ id_append }}').slick({
+  var sliderSlick = jQuery('#Slider-Thumbnails-{{ section.id }}{{ id_append }}');
+  sliderSlick.slick({
     autoplay: false,
     autoplaySpeed: 7000,        
     pauseOnFocus: false,
@@ -334,13 +335,11 @@
   });
 
   jQuery('.slider-next').click(function(e) {
-    e.preventDefault();
-    jQuery('#Slider-Thumbnails-{{ section.id }}{{ id_append }}').slick('slickNext');
+    sliderSlick.slick('slickNext');
   });
 
   jQuery('.slider-previous').click(function(e) {
-    e.preventDefault();
-    jQuery('#Slider-Thumbnails-{{ section.id }}{{ id_append }}').slick('slickPrev');
+    sliderSlick.slick('slickPrev');
   });
 
 
