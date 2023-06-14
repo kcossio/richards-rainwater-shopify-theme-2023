@@ -208,6 +208,10 @@ EASING
 .article-template__hero-medium {
   height: 22rem;
 }
+.article-template__hero-medium img {
+  width: 100%;
+  height: auto;
+}
 
 .article-template__hero-large {
   height: 33rem;

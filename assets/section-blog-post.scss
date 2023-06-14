@@ -40,6 +40,11 @@
 
 .article-template__hero-medium {
   height: 22rem;
+
+  img {
+    width:100%;
+    height:auto;
+  }
 }
 
 .article-template__hero-large {
