@@ -193,6 +193,7 @@ EASING
   flex-wrap: wrap;
   justify-content: space-between;
   position: relative;
+  width: 1400px;
 }
 @media (min-width: 1024px) {
   .home-messaging-banner .inner {
