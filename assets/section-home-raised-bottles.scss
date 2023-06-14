@@ -27,12 +27,18 @@
 
         h2 {
             font-size:40px;
-            margin:0px 0px 40px 0px;
+            margin:0px 0px 1.5em 0px;
             line-height:1em;
+
+            @include breakpoint(tablet) {
+                width:76%;
+                font-size:78px;
+            }
 
             @include breakpoint(laptop) {
                 font-size:92px;
-                margin:0px 0px 60px 0px;
+                margin:0px 0px 1.5em 0px;
+                width:76%;
             }
         }
 
@@ -71,8 +77,8 @@
             max-height:420px;
 
             @include breakpoint(laptop) {
-                right:12%;
-                max-height:72%;
+                right:5%;
+                max-height:76%;
             }
         }
     }
