@@ -217,7 +217,7 @@ section.home-banner-simple {
   }
 }
 section.home-banner-simple .inner {
-  width: 1500px;
+  width: 100%;
 }
 section.home-banner-simple .home-banner-heading {
   position: relative;
