@@ -206,8 +206,12 @@ EASING
 }
 
 .article-template__hero-medium {
-  height: auto;
-  aspect-ratio: 506/307;
+  height: 32vh;
+}
+@media (min-width: 1024px) {
+  .article-template__hero-medium {
+    height: 32vh;
+  }
 }
 .article-template__hero-medium img {
   width: 100%;

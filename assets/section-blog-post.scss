@@ -39,9 +39,11 @@
 }
 
 .article-template__hero-medium {
-  height: auto;
+  height: 32vh;
 
-  aspect-ratio: 506 / 307;
+  @include breakpoint(tabletwide) {
+    height:32vh;
+  }
 
   img {
     width:100%;
