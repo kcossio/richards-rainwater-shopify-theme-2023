@@ -173,6 +173,16 @@ EASING
 }
 
 */
+.product-main {
+  width: 100%;
+  padding: 0px 40px;
+}
+@media (min-width: 1280px) {
+  .product-main {
+    padding: 0px 64px;
+  }
+}
+
 .product {
   margin: 0;
 }

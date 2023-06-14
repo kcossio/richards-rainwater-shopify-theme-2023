@@ -2,6 +2,15 @@
 @import "mixins";
 @import "fonts";
 
+
+.product-main {
+  width:100%;
+  padding:0px 40px;
+
+  @include breakpoint(laptop) {
+    padding:0px 64px;
+  }
+}
 .product {
     margin: 0;
   }
