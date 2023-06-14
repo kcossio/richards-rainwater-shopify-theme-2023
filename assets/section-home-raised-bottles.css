@@ -195,19 +195,32 @@ EASING
   font-size: 40px;
   margin: 0px 0px 1.5em 0px;
   line-height: 1em;
-  font-size: clamp(1rem, 3.3vw + 0.75rem, 2.024rem);
+  font-size: 40px;
 }
 @media (min-width: 768px) {
   .home-banner-bottles .home-bottles-intro h2 {
     width: 76%;
-    font-size: 78px;
   }
 }
 @media (min-width: 1280px) {
   .home-banner-bottles .home-bottles-intro h2 {
-    font-size: 92px;
     margin: 0px 0px 1.5em 0px;
     width: 76%;
+  }
+}
+@media (min-width: 768px) {
+  .home-banner-bottles .home-bottles-intro h2 {
+    font-size: 6.38vw;
+  }
+}
+@media (min-width: 1280px) {
+  .home-banner-bottles .home-bottles-intro h2 {
+    font-size: 6.38vw;
+  }
+}
+@media (min-width: 1680px) {
+  .home-banner-bottles .home-bottles-intro h2 {
+    font-size: 92px;
   }
 }
 .home-banner-bottles .home-bottles-intro p {
