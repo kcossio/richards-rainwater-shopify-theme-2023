@@ -75,34 +75,24 @@
     }
   }
   
-  @media screen and (min-width: 990px) {
-    .product--large:not(.product--no-media) .product__media-wrapper {
-      max-width: 45%;
-      width: calc(45% - var(--grid-desktop-horizontal-spacing) / 2);
+ 
+
+  // Product Media
+
+  .product__media-wrapper,
+  .product__info-wrapper {
+
+      width:100%;
+      max-width:100%;
+
+      @include breakpoint(tablet) {
+        max-width: 50%;
+        width: 50%;
+
+      }
     }
-  
-    .product--large:not(.product--no-media) .product__info-wrapper {
-      padding: 0 0 0 4rem;
-      max-width: 35%;
-      width: calc(35% - var(--grid-desktop-horizontal-spacing) / 2);
-    }
-  
-    .product--large:not(.product--no-media).product--right .product__info-wrapper {
-      padding: 0 4rem 0 0;
-    }
-  
-    .product--medium:not(.product--no-media) .product__media-wrapper,
-    .product--small:not(.product--no-media) .product__info-wrapper {
-      max-width: 48%;
-      width: calc(48% - var(--grid-desktop-horizontal-spacing) / 2);
-    }
-  
-    .product--medium:not(.product--no-media) .product__info-wrapper,
-    .product--small:not(.product--no-media) .product__media-wrapper {
-      max-width: 51%;
-      width: calc(51% - var(--grid-desktop-horizontal-spacing) / 2);
-    }
-  }
+
+
   
   /* Dynamic checkout */
   
