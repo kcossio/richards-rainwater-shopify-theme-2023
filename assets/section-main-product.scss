@@ -2001,13 +2001,13 @@
     display: flex;
     flex-direction: row-reverse;
     align-items:stretch;
+    justify-content: space-between;
  }
   .product--thumbnail_slider .slider-mobile-gutter:not(.thumbnail-slider) {
-    width: calc(100% - 100px);
+    width: calc(100% - 80px);
  }
   .product--thumbnail_slider .thumbnail-slider {
-    width: 100px;
-    padding-right: 10px;
+    width: 60px;
     height:100%;
  }
   .product--thumbnail_slider .slider-button {
