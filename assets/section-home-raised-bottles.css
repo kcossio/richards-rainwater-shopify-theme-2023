@@ -192,10 +192,9 @@ EASING
   z-index: 3;
 }
 .home-banner-bottles .home-bottles-intro h2 {
-  font-size: 40px;
   margin: 0px 0px 1.5em 0px;
   line-height: 1em;
-  font-size: 42px;
+  font-size: 40px;
 }
 @media (min-width: 768px) {
   .home-banner-bottles .home-bottles-intro h2 {
@@ -210,17 +209,17 @@ EASING
 }
 @media (min-width: 768px) {
   .home-banner-bottles .home-bottles-intro h2 {
-    font-size: 4.4vw;
+    font-size: 6.38vw;
   }
 }
 @media (min-width: 1280px) {
   .home-banner-bottles .home-bottles-intro h2 {
-    font-size: 4.4vw;
+    font-size: 6.38vw;
   }
 }
 @media (min-width: 1680px) {
   .home-banner-bottles .home-bottles-intro h2 {
-    font-size: 65px;
+    font-size: 92px;
   }
 }
 .home-banner-bottles .home-bottles-intro p {

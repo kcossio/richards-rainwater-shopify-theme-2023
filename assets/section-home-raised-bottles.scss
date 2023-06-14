@@ -26,7 +26,6 @@
     .home-bottles-intro {
 
         h2 {
-            font-size:40px;
             margin:0px 0px 1.5em 0px;
             line-height:1em;
 
@@ -39,7 +38,7 @@
                 width:76%;
             }
 
-            @include font-size(medium);
+            @include font-size(large);
         }
 
         p {
