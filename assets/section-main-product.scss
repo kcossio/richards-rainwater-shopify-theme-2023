@@ -6,6 +6,7 @@
 .product-main {
   width:1440px;
   max-width:100%;
+  margin:0px auto;
   padding:0px 40px;
 
   @include breakpoint(laptop) {
@@ -1991,7 +1992,7 @@
 
     ul.thumbnail-list {
       width:60px;
-      height:320px;
+      height:312px;
     }
 
     .slick-track {
