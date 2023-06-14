@@ -179,11 +179,6 @@
       >
         {% render 'icon-caret' %}
       </button>
-
-      <div class="slick-controls">
-        <button class="slider-btn slider-next" id="slick-next">Next</button>
-        <button class="slider-btn slider-previous"id="slick-previous">Previous</button>
-      </div>
       <ul
         id="Slider-Thumbnails-{{ section.id }}{{ id_append }}"
         class="thumbnail-list list-unstyled slider slider--mobile{% if section.settings.gallery_layout == 'thumbnail_slider' %} slider--tablet-up{% endif %}"
@@ -300,7 +295,8 @@
       >
         {% render 'icon-caret' %}
       </button>
-      
+      <button class="slider-btn slider-next">Next</button>
+      <button class="slider-btn slider-previous">Previous</button>
     </slider-component>
   {%- endif -%}
 </media-gallery>
@@ -317,18 +313,16 @@
     variableWidth: true,
     vertical: true,
     infinite: false,
-    arrows: false,
+    arrows: true,
+    appendArrows: jQuery('.thumbnail-slider'),
     dots: false,
-    nextArrow: document.getElementById('slick-next'),
-		prevArrow: document.getElementById('slick-previous'),
+
     responsive: [
       {
         breakpoint: 768,
         settings: {
           arrows: true,
-          slidesToShow: 4,
-          nextArrow: document.getElementById('slick-next'),
-		      prevArrow: document.getElementById('slick-previous')
+          slidesToShow: 4
         }
       },
       {
@@ -336,15 +330,12 @@
         settings: {
           arrows: true,
           slidesToShow: 4,
-          vertical: false,
-          nextArrow: document.getElementById('slick-next'),
-		      prevArrow: document.getElementById('slick-previous')
+          vertical: false
         }
       }
     ]
   });
 
-  /*
   window.addEventListener("load", (event) => {
 
     jQuery('.slider-next').click(function(e) {
@@ -359,7 +350,6 @@
     
 
   });
-  */
 
 
 
