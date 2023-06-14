@@ -2023,9 +2023,17 @@ nav.water-product-buttons a img.custom-title-img {
   .product--thumbnail_slider {
     position: relative;
   }
+  .product--thumbnail_slider ul.thumbnail-list {
+    width: 100px;
+  }
+  .product--thumbnail_slider .slick-track {
+    max-height: 100%;
+    max-width: 100%;
+  }
   .product--thumbnail_slider media-gallery {
     display: flex;
     flex-direction: row-reverse;
+    align-items: stretch;
   }
   .product--thumbnail_slider .slider-mobile-gutter:not(.thumbnail-slider) {
     width: calc(100% - 100px);
@@ -2033,6 +2041,7 @@ nav.water-product-buttons a img.custom-title-img {
   .product--thumbnail_slider .thumbnail-slider {
     width: 100px;
     padding-right: 10px;
+    height: 100%;
   }
   .product--thumbnail_slider .slider-button {
     display: none !important;
@@ -2043,5 +2052,6 @@ nav.water-product-buttons a img.custom-title-img {
   }
   .product--thumbnail_slider .thumbnail-slider .thumbnail-list.slider--tablet-up .thumbnail-list__item.slider__slide {
     width: 100%;
+    aspect-ratio: 1/1;
   }
 }
