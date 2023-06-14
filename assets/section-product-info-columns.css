@@ -225,7 +225,7 @@ section.section-product-info-box-drops header h2 {
   margin: 0px;
   line-height: 1.2em;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 42px;
 }
 @media (min-width: 768px) {
   section.section-product-info-box-drops header h2 {
@@ -239,17 +239,17 @@ section.section-product-info-box-drops header h2 {
 }
 @media (min-width: 768px) {
   section.section-product-info-box-drops header h2 {
-    font-size: 6.38vw;
+    font-size: 6vw;
   }
 }
 @media (min-width: 1280px) {
   section.section-product-info-box-drops header h2 {
-    font-size: 6.38vw;
+    font-size: 6vw;
   }
 }
 @media (min-width: 1680px) {
   section.section-product-info-box-drops header h2 {
-    font-size: 92px;
+    font-size: 80px;
   }
 }
 section.section-product-info-box-drops header p {

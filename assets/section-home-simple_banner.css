@@ -216,6 +216,9 @@ section.home-banner-simple {
     padding-top: 18%;
   }
 }
+section.home-banner-simple .inner {
+  width: 1500px;
+}
 section.home-banner-simple .home-banner-heading {
   position: relative;
   z-index: 3;

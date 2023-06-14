@@ -82,16 +82,16 @@ $authenticMotion: cubic-bezier(.4,0,.2,1);
 @mixin font-size($font-size) {
   @if $font-size == large {
 
-    font-size:40px;
+    font-size:42px;
 
     @include breakpoint(tablet) {
-      font-size:6.38vw;
+      font-size:6.0vw;
     }
     @include breakpoint(laptop) {
-      font-size:6.38vw;
+      font-size:6.0vw;
     }
     @include breakpoint(desktopwide) {
-      font-size:92px;
+      font-size:80px;
     }
    
   }

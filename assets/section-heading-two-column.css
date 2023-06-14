@@ -191,21 +191,21 @@ section.heading-two-column h2 {
   line-height: 1em;
   padding-bottom: 1.2em;
   text-align: center;
-  font-size: 40px;
+  font-size: 42px;
 }
 @media (min-width: 768px) {
   section.heading-two-column h2 {
-    font-size: 6.38vw;
+    font-size: 6vw;
   }
 }
 @media (min-width: 1280px) {
   section.heading-two-column h2 {
-    font-size: 6.38vw;
+    font-size: 6vw;
   }
 }
 @media (min-width: 1680px) {
   section.heading-two-column h2 {
-    font-size: 92px;
+    font-size: 80px;
   }
 }
 section.heading-two-column h2::after {
