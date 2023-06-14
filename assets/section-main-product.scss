@@ -2040,7 +2040,10 @@
       height:306px;
     }
 
-    .slick-track {/* test */
+    .slick-track {
+     // max-height:100%;
+      //height:306px;
+      max-width:100%;
     }
 
     .thumbnail {
