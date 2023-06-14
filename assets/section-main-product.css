@@ -2024,7 +2024,8 @@ nav.water-product-buttons a img.custom-title-img {
     position: relative;
   }
   .product--thumbnail_slider ul.thumbnail-list {
-    width: 100px;
+    width: 60px;
+    height: 320px;
   }
   .product--thumbnail_slider .slick-track {
     max-height: 100%;
