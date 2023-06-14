@@ -2006,7 +2006,7 @@
 
       @include breakpoint(tabletwide) {
         rotate:90deg;
-        top:100%;
+        top:calc(100% + 6px);
       }
     }
 
@@ -2031,7 +2031,7 @@
 
     ul.thumbnail-list {
       width:60px;
-      height:315px;
+      height:306px;
     }
 
     .slick-track {
