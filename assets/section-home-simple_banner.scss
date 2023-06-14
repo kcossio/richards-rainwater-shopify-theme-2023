@@ -63,7 +63,7 @@ section.home-banner-simple {
                 letter-spacing:2px;
             }
 
-            @include font-size(large);
+            @include font-size(medium);
         }
         p {
             color:$white;
