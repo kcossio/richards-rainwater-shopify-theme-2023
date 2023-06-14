@@ -5,6 +5,7 @@ div.MagicToolboxContainer {
 }
 
 div.MagicToolboxContainer img {
+    /* Adjust */
     max-width:100%;
     width:auto;
     height:100%;
