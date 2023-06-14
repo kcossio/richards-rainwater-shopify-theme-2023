@@ -2000,7 +2000,7 @@
   .product--thumbnail_slider media-gallery {
     display: flex;
     flex-direction: row-reverse;
-    align-items:stretch;
+    align-items:center;
     justify-content: space-between;
  }
   .product--thumbnail_slider .slider-mobile-gutter:not(.thumbnail-slider) {
@@ -2020,5 +2020,6 @@
   .product--thumbnail_slider .thumbnail-slider .thumbnail-list.slider--tablet-up .thumbnail-list__item.slider__slide {
     width: 100%;
     aspect-ratio: 1 / 1;
+    margin:16px 0px;
  }
 }
