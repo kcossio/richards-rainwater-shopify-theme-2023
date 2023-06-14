@@ -2071,6 +2071,7 @@ nav.water-product-buttons a img.custom-title-img {
   }
   .product--thumbnail_slider .slick-track {
     max-height: 100%;
+    height: 306px;
     max-width: 100%;
   }
   .product--thumbnail_slider .thumbnail {
