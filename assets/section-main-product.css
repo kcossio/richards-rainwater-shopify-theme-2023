@@ -2025,24 +2025,25 @@ nav.water-product-buttons a img.custom-title-img {
   position: absolute;
   z-index: 2;
   top: -20px;
-  left: 50%;
+  left: calc(50% - 6px);
   display: block;
   width: 11px;
   height: 20px;
-  background-image: url("arrow.svg") top center no-repeat;
+  font-size: 0px;
+  background: url("arrow.svg") top center no-repeat;
   background-size: cover;
   transform-origin: center;
 }
 @media (min-width: 1024px) {
   .product--thumbnail_slider .slider-btn.next {
     rotate: 90deg;
-    top: 102%;
+    top: 100%;
   }
 }
 @media (min-width: 1024px) {
   .product--thumbnail_slider .slider-btn.previous {
     rotate: -90deg;
-    top: -2%;
+    top: -24px;
   }
 }
 
@@ -2050,9 +2051,12 @@ nav.water-product-buttons a img.custom-title-img {
   .product--thumbnail_slider {
     position: relative;
   }
+  .product--thumbnail_slider .slider-button {
+    display: none !important;
+  }
   .product--thumbnail_slider ul.thumbnail-list {
     width: 60px;
-    height: 312px;
+    height: 35px;
   }
   .product--thumbnail_slider .slick-track {
     max-height: 100%;
