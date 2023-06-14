@@ -18,24 +18,24 @@ section.home-banner-simple {
     padding-top:40%;
 
     @include breakpoint(tablet) {
-        padding-top:40%;
+        padding-top:30vh;
     }
 
     @include breakpoint(tabletwide) {
-        padding-top:30%;
+        padding-top:29vh
     }
 
     @include breakpoint(laptop) {
-        padding-top:15%;
+        padding-top:29vh;
     }
     @include breakpoint(laptopwide) {
-        padding-top:15%;
+        padding-top:29vh;
     }
     @include breakpoint(desktop) {
-        padding-top:24%;
+        padding-top:29vh;
     }
     @include breakpoint(desktopwide) {
-        padding-top:18%;
+        padding-top:29vh;
     }
 
 
