@@ -2053,7 +2053,7 @@ nav.water-product-buttons a img.custom-title-img {
 }
 @media (min-width: 1024px) {
   .product--thumbnail_slider .slick-arrow.slick-prev {
-    rotate: -90deg;
+    rotate: 90deg;
     top: -24px;
   }
 }

@@ -2019,7 +2019,7 @@
     &.slick-prev {
 
       @include breakpoint(tabletwide) {
-        rotate:-90deg;
+        rotate:90deg;
         top:-24px;
       }
     }
