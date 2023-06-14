@@ -265,7 +265,7 @@
           {%- endunless -%}
         {%- endfor -%}
       </ul>
-      <a class="slick-arrow slick-next">next</a>
+      
     </slider-component>
   {%- endif -%}
 </media-gallery>
@@ -302,7 +302,11 @@
     ]
   });
 
-  
+  jQuery('a.slick-next').click(function(e) {
+    e.preventDefault();
+    var slideno = jQuery(this).data('slide');
+    jQuery('.thumbnail-list').slick('slickNext');
+  });
 
 
 </script>
