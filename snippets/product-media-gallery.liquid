@@ -334,14 +334,18 @@
     ]
   });
 
-  jQuery('.slider-next').click(function(e) {
-    sliderSlick.slick('slickNext');
-    console.log('next is clicked');
-  });
+  window.addEventListener("load", (event) => {
 
-  jQuery('.slider-previous').click(function(e) {
-    sliderSlick.slick('slickPrev');
-    console.log('previous is clicked');
+    jQuery('.slider-next').click(function(e) {
+      sliderSlick.slick('slickNext');
+      console.log('next is clicked');
+    });
+
+    jQuery('.slider-previous').click(function(e) {
+      sliderSlick.slick('slickPrev');
+      console.log('previous is clicked');
+    });
+
   });
 
 
