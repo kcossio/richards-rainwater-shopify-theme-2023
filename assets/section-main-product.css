@@ -2021,6 +2021,32 @@ nav.water-product-buttons a img.custom-title-img {
   width: 100%;
 }
 
+.product--thumbnail_slider .slider-btn {
+  position: absolute;
+  z-index: 2;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 11px;
+  height: 20px;
+  background-image: url("arrow.svg") top center no-repeat;
+  background-size: cover;
+  transform-origin: center;
+}
+@media (min-width: 1024px) {
+  .product--thumbnail_slider .slider-btn.next {
+    rotate: 90deg;
+    top: 102%;
+  }
+}
+@media (min-width: 1024px) {
+  .product--thumbnail_slider .slider-btn.previous {
+    rotate: -90deg;
+    top: -2%;
+  }
+}
+
 @media (min-width: 1024px) {
   .product--thumbnail_slider {
     position: relative;
