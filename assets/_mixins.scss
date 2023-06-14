@@ -95,4 +95,20 @@ $authenticMotion: cubic-bezier(.4,0,.2,1);
     }
    
   }
+
+  @else if $font-size == medium {
+
+    font-size:42px;
+
+    @include breakpoint(tablet) {
+      font-size:4.4vw;
+    }
+    @include breakpoint(laptop) {
+      font-size:4.4vw;
+    }
+    @include breakpoint(desktopwide) {
+      font-size:65px;
+    }
+   
+  }
 }

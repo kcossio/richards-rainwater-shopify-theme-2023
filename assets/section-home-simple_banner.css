@@ -230,15 +230,29 @@ section.home-banner-simple .home-banner-heading h1 {
   margin: 0px;
   text-align: left;
   text-transform: uppercase;
-  font-size: 40px;
   font-weight: 900;
   line-height: 1em;
   letter-spacing: 1px;
+  font-size: 40px;
 }
 @media (min-width: 1280px) {
   section.home-banner-simple .home-banner-heading h1 {
-    font-size: 3.3vw;
     letter-spacing: 2px;
+  }
+}
+@media (min-width: 768px) {
+  section.home-banner-simple .home-banner-heading h1 {
+    font-size: 6.38vw;
+  }
+}
+@media (min-width: 1280px) {
+  section.home-banner-simple .home-banner-heading h1 {
+    font-size: 6.38vw;
+  }
+}
+@media (min-width: 1680px) {
+  section.home-banner-simple .home-banner-heading h1 {
+    font-size: 92px;
   }
 }
 section.home-banner-simple .home-banner-heading p {

@@ -208,15 +208,25 @@ EASING
   }
 }
 .home-messaging-banner .inner .banner-content h2 {
-  font-size: 40px;
   line-height: 1em;
   text-transform: uppercase;
   margin: 0px 0px 0.5em 0px;
   font-weight: 900;
+  font-size: 42px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .home-messaging-banner .inner .banner-content h2 {
-    font-size: 74px;
+    font-size: 4.4vw;
+  }
+}
+@media (min-width: 1280px) {
+  .home-messaging-banner .inner .banner-content h2 {
+    font-size: 4.4vw;
+  }
+}
+@media (min-width: 1680px) {
+  .home-messaging-banner .inner .banner-content h2 {
+    font-size: 65px;
   }
 }
 .home-messaging-banner .inner .banner-content h2 span {

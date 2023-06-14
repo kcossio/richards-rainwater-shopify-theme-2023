@@ -195,7 +195,7 @@ EASING
   font-size: 40px;
   margin: 0px 0px 1.5em 0px;
   line-height: 1em;
-  font-size: 40px;
+  font-size: 42px;
 }
 @media (min-width: 768px) {
   .home-banner-bottles .home-bottles-intro h2 {
@@ -210,17 +210,17 @@ EASING
 }
 @media (min-width: 768px) {
   .home-banner-bottles .home-bottles-intro h2 {
-    font-size: 6.38vw;
+    font-size: 4.4vw;
   }
 }
 @media (min-width: 1280px) {
   .home-banner-bottles .home-bottles-intro h2 {
-    font-size: 6.38vw;
+    font-size: 4.4vw;
   }
 }
 @media (min-width: 1680px) {
   .home-banner-bottles .home-bottles-intro h2 {
-    font-size: 92px;
+    font-size: 65px;
   }
 }
 .home-banner-bottles .home-bottles-intro p {
