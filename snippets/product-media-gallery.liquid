@@ -181,8 +181,8 @@
       </button>
 
       <div class="slick-controls">
-        <button class="slider-btn slider-next" id="slider-next">Next</button>
-        <button class="slider-btn slider-previous"id="slider-previous">Previous</button>
+        <button class="slider-btn slider-next" id="slick-next">Next</button>
+        <button class="slider-btn slider-previous"id="slick-previous">Previous</button>
       </div>
       <ul
         id="Slider-Thumbnails-{{ section.id }}{{ id_append }}"
@@ -319,14 +319,16 @@
     infinite: false,
     arrows: false,
     dots: false,
-    nextArrow: jQuery('.slider-next'),
-    prevArrow: jQuery('.slider-previous'),
+    nextArrow: document.getElementById('slick-next'),
+		prevArrow: document.getElementById('slick-previous'),
     responsive: [
       {
         breakpoint: 768,
         settings: {
           arrows: true,
-          slidesToShow: 4
+          slidesToShow: 4,
+          nextArrow: document.getElementById('slick-next'),
+		      prevArrow: document.getElementById('slick-previous')
         }
       },
       {
@@ -334,7 +336,9 @@
         settings: {
           arrows: true,
           slidesToShow: 4,
-          vertical: false
+          vertical: false,
+          nextArrow: document.getElementById('slick-next'),
+		      prevArrow: document.getElementById('slick-previous')
         }
       }
     ]
