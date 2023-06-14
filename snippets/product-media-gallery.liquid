@@ -295,8 +295,6 @@
       >
         {% render 'icon-caret' %}
       </button>
-      <button class="slider-btn slider-next">Next</button>
-      <button class="slider-btn slider-previous">Previous</button>
     </slider-component>
   {%- endif -%}
 </media-gallery>
@@ -312,6 +310,7 @@
     slidesToShow: 4,
     variableWidth: true,
     vertical: true,
+    verticalSwiping: true,
     infinite: false,
     arrows: true,
     appendArrows: jQuery('.thumbnail-slider'),
@@ -330,7 +329,8 @@
         settings: {
           arrows: true,
           slidesToShow: 4,
-          vertical: false
+          vertical: false,
+        verticalSwiping: false
         }
       }
     ]

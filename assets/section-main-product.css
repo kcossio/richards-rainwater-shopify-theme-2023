@@ -2024,9 +2024,10 @@ nav.water-product-buttons a img.custom-title-img {
 .product--thumbnail_slider {
   /* work */
 }
-.product--thumbnail_slider .slider-btn {
+.product--thumbnail_slider .slick-arrow {
   position: absolute;
   z-index: 8;
+  cursor: pointer;
   top: -20px;
   left: calc(50% - 6px);
   -webkit-appearance: none;
@@ -2043,15 +2044,15 @@ nav.water-product-buttons a img.custom-title-img {
   background-size: cover;
   transform-origin: center;
 }
-.product--thumbnail_slider .slider-btn.slider-next { /*work*/ }
+.product--thumbnail_slider .slick-arrow.slider-next { /*work*/ }
 @media (min-width: 1024px) {
-  .product--thumbnail_slider .slider-btn.slider-next {
+  .product--thumbnail_slider .slick-arrow.slider-next {
     rotate: 90deg;
     top: calc(100% + 6px);
   }
 }
 @media (min-width: 1024px) {
-  .product--thumbnail_slider .slider-btn.slider-previous {
+  .product--thumbnail_slider .slick-arrow.slider-previous {
     rotate: -90deg;
     top: -24px;
   }
