@@ -16,9 +16,11 @@
     @include breakpoint(tablet) {
         padding-bottom:0px;
         padding-top:20%;
+        min-height:60vh;
+    }
+    @include breakpoint(tabletwide) {
         min-height:100vh;
     }
-
     .bg-img {
         top:auto;
         bottom:0px;

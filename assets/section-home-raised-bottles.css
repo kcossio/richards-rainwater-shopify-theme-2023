@@ -198,7 +198,7 @@ EASING
 }
 @media (min-width: 768px) {
   .home-banner-bottles .home-bottles-intro h2 {
-    width: 76%;
+    width: 82%;
   }
 }
 @media (min-width: 1280px) {
@@ -209,7 +209,7 @@ EASING
 }
 @media (min-width: 768px) {
   .home-banner-bottles .home-bottles-intro h2 {
-    font-size: 6vw;
+    font-size: 6.8vw;
   }
 }
 @media (min-width: 1280px) {
@@ -230,6 +230,11 @@ EASING
 }
 @media (min-width: 768px) {
   .home-banner-bottles .home-bottles-intro p {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1280px) {
+  .home-banner-bottles .home-bottles-intro p {
     font-size: 30px;
   }
 }
@@ -246,6 +251,12 @@ EASING
   right: 52%;
   max-height: 386px;
 }
+@media (min-width: 768px) {
+  .home-banner-bottles .home-banner-bottle.bottle-1 {
+    right: 30%;
+    max-height: 54%;
+  }
+}
 @media (min-width: 1280px) {
   .home-banner-bottles .home-banner-bottle.bottle-1 {
     right: 37%;
@@ -261,6 +272,12 @@ EASING
 .home-banner-bottles .home-banner-bottle.bottle-2 {
   right: -12%;
   max-height: 431px;
+}
+@media (min-width: 768px) {
+  .home-banner-bottles .home-banner-bottle.bottle-2 {
+    right: -25%;
+    max-height: 65%;
+  }
 }
 @media (min-width: 1280px) {
   .home-banner-bottles .home-banner-bottle.bottle-2 {

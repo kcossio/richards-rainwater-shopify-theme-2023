@@ -187,6 +187,11 @@ EASING
   .home-messaging-banner {
     padding-bottom: 0px;
     padding-top: 20%;
+    min-height: 60vh;
+  }
+}
+@media (min-width: 1024px) {
+  .home-messaging-banner {
     min-height: 100vh;
   }
 }

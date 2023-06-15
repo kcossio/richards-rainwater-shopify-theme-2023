@@ -195,7 +195,7 @@ section.heading-two-column h2 {
 }
 @media (min-width: 768px) {
   section.heading-two-column h2 {
-    font-size: 6vw;
+    font-size: 6.8vw;
   }
 }
 @media (min-width: 1280px) {
