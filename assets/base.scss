@@ -3291,3 +3291,21 @@ main {
   }
 }
 
+/* Hide on Mobile */
+
+.hide-on-mobile {
+
+  display:none;
+
+  @include breakpoint(tabletwide) {
+    display:flex;
+  }
+
+}
+
+.hide-on-desktop {
+  display:flex;
+  @include breakpoint(tabletwide) {
+    display:none;
+  }
+}

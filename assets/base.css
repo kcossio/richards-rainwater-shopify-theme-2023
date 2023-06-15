@@ -3333,3 +3333,22 @@ main:not(.main-home) {
     padding-top: 140px;
   }
 }
+
+/* Hide on Mobile */
+.hide-on-mobile {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .hide-on-mobile {
+    display: flex;
+  }
+}
+
+.hide-on-desktop {
+  display: flex;
+}
+@media (min-width: 1024px) {
+  .hide-on-desktop {
+    display: none;
+  }
+}
