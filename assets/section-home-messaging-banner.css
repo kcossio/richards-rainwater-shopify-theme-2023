@@ -183,7 +183,7 @@ EASING
   padding-top: 8vh;
   padding-bottom: 52vh;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .home-messaging-banner {
     padding-bottom: 0px;
     padding-top: 20%;
@@ -203,7 +203,7 @@ EASING
   -o-object-fit: contain;
      object-fit: contain;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .home-messaging-banner .bg {
     width: 80%;
   }
@@ -215,7 +215,7 @@ EASING
   position: relative;
   width: 1400px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .home-messaging-banner .inner {
     justify-content: flex-end;
   }
@@ -225,6 +225,12 @@ EASING
   padding: 0px 20px;
 }
 @media (min-width: 768px) {
+  .home-messaging-banner .inner .banner-content {
+    width: 42%;
+    padding: 0px;
+  }
+}
+@media (min-width: 1280px) {
   .home-messaging-banner .inner .banner-content {
     width: 34%;
     padding: 0px;

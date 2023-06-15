@@ -13,7 +13,7 @@
     padding-top:8vh;
     padding-bottom:52vh;
 
-    @include breakpoint(tabletwide) {
+    @include breakpoint(tablet) {
         padding-bottom:0px;
         padding-top:20%;
         min-height:100vh;
@@ -31,7 +31,7 @@
         object-position: bottom center;
         object-fit:contain;
 
-        @include breakpoint(tabletwide) {
+        @include breakpoint(tablet) {
             width:80%;
         }
     }
@@ -44,7 +44,7 @@
         width:1400px;
     
 
-        @include breakpoint(tabletwide) {
+        @include breakpoint(tablet) {
             justify-content:flex-end;
         }
 
@@ -53,6 +53,10 @@
             padding:0px 20px;
 
             @include breakpoint(tablet) {
+                width:42%;
+                padding:0px;
+            }
+            @include breakpoint(laptop) {
                 width:34%;
                 padding:0px;
             }
