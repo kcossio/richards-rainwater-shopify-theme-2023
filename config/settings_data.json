@@ -1,6 +1,8 @@
 {
   "current": {
+    "logo": "shopify:\/\/shop_images\/logo-richards-blue_a8ee43de-b1bf-4b2a-9e12-634a0cebda08.png",
     "logo_width": 90,
+    "favicon": "shopify:\/\/shop_images\/rr-favicon.png",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#121212",
     "gradient_accent_1": "",
