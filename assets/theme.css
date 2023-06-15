@@ -1313,6 +1313,15 @@ section.newsletter-cloud {
   z-index: 4;
 }
 
+.footer-wrap.wide {
+  padding: 0px 30px;
+}
+@media (min-width: 768px) {
+  .footer-wrap.wide {
+    padding: 0px 40px;
+  }
+}
+
 .footer {
   background: #000F44;
   color: #ffffff;
@@ -1340,7 +1349,7 @@ section.newsletter-cloud {
   }
 }
 .footer .footer-top .footer-top-right {
-  width: 35%;
+  width: 32%;
 }
 @media (min-width: 768px) {
   .footer .footer-top .footer-top-right {
@@ -1392,6 +1401,9 @@ section.newsletter-cloud {
   list-style: none;
   line-height: 1.25em;
   margin-bottom: 1.1em;
+}
+.footer .footer-top ul.footer-menu li:last-child {
+  margin-bottom: 0px;
 }
 .footer .footer-top ul.footer-menu li a {
   color: #ffffff;
@@ -1571,7 +1583,7 @@ section.newsletter-cloud {
 
 .bit-sticker {
   position: absolute;
-  right: 40px;
+  left: 40px;
   top: 40px;
   margin-top: 0px;
   z-index: 2;

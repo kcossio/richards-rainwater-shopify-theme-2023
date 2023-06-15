@@ -6,6 +6,14 @@
 section.newsletter-cloud {
   z-index:4;
 }
+
+.footer-wrap.wide {
+  padding:0px 30px;
+
+  @include breakpoint(tablet) {
+    padding:0px 40px;
+  }
+}
 .footer {
 
     background:$dark_blue;
@@ -32,7 +40,7 @@ section.newsletter-cloud {
         }
       }
       .footer-top-right {
-        width:35%;
+        width:32%;
 
         @include breakpoint(tablet) {
           width:auto;
@@ -86,6 +94,10 @@ section.newsletter-cloud {
           list-style:none;
           line-height:1.25em;
           margin-bottom:1.1em;
+
+          &:last-child {
+            margin-bottom:0px;
+          }
           a {
             color:#ffffff;
             font-weight:900;
@@ -280,7 +292,7 @@ section.newsletter-cloud {
 
 .bit-sticker {
   position:absolute;
-  right:40px;
+  left:40px;
   top:40px;
   margin-top:0px;
   z-index:2;
