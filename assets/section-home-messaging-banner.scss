@@ -28,11 +28,12 @@
         width:100%;
         min-height:0px;
         height:auto;
-        object-position: bottom center;
+        object-position: bottom right;
         object-fit:contain;
 
         @include breakpoint(tablet) {
             width:80%;
+            object-fit:cover;
         }
     }
     
