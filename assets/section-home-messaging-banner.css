@@ -204,16 +204,19 @@ EASING
   width: 100%;
   min-height: 0px;
   height: auto;
-  -o-object-position: bottom right;
-     object-position: bottom right;
+  -o-object-position: bottom center;
+     object-position: bottom center;
   -o-object-fit: contain;
      object-fit: contain;
+  position: absolute;
+  bottom: 0px;
 }
 @media (min-width: 768px) {
   .home-messaging-banner .bg {
     width: 80%;
     -o-object-fit: cover;
        object-fit: cover;
+    position: relative;
   }
 }
 @media (min-width: 1280px) {

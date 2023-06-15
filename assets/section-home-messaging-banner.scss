@@ -31,12 +31,15 @@
         width:100%;
         min-height:0px;
         height:auto;
-        object-position: bottom right;
+        object-position: bottom center;
         object-fit:contain;
+        position:absolute;
+        bottom:0px;
 
         @include breakpoint(tablet) {
             width:80%;
             object-fit:cover;
+            position: relative;
         }
         @include breakpoint(laptop) {
             width:70%;
