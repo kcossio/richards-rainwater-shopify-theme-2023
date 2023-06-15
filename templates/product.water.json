@@ -259,6 +259,22 @@
       "settings": {
         "hero_image": "shopify:\/\/shop_images\/pouring-still-water-into-glass.jpg"
       }
+    },
+    "1686790801dd4aae7f": {
+      "type": "apps",
+      "blocks": {
+        "4bb14fda-b02c-4ecd-98d9-b9496b0df5f6": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "4bb14fda-b02c-4ecd-98d9-b9496b0df5f6"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -268,6 +284,7 @@
     "715ff14e-763f-47ec-8222-b651bf406814",
     "fc5233ff-444f-4aa3-8a40-95cec2ee3d1c",
     "ae63e3f8-db42-4d58-a2ee-0e23d8124c18",
-    "c8b0a5d8-fdc6-482d-bde3-65ecc91bcfc4"
+    "c8b0a5d8-fdc6-482d-bde3-65ecc91bcfc4",
+    "1686790801dd4aae7f"
   ]
 }
