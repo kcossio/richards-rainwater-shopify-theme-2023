@@ -181,7 +181,7 @@ EASING
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding-top: 80px;
+  padding-top: 20vh;
   padding-bottom: 40vh;
 }
 @media (min-width: 1024px) {
@@ -195,15 +195,17 @@ EASING
   bottom: 0px;
 }
 .home-messaging-banner .bg {
-  -o-object-position: bottm;
-     object-position: bottm;
-  width: 80%;
+  width: 100%;
+  min-height: 0px;
+  height: auto;
+  -o-object-position: bottom center;
+     object-position: bottom center;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media (min-width: 1024px) {
   .home-messaging-banner .bg {
-    width: 100%;
-    -o-object-position: bottom center;
-       object-position: bottom center;
+    width: 80%;
   }
 }
 .home-messaging-banner .inner {

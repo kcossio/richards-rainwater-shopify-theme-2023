@@ -11,7 +11,7 @@
     flex-wrap:wrap;
     align-items: center;
     justify-content:center;
-    padding-top:80px;
+    padding-top:20vh;
     padding-bottom:40vh;
 
     @include breakpoint(tabletwide) {
@@ -25,12 +25,14 @@
     }
 
     .bg {
-        object-position: bottm;
-        width:80%;
+        width:100%;
+        min-height:0px;
+        height:auto;
+        object-position: bottom center;
+        object-fit:contain;
 
         @include breakpoint(tabletwide) {
-            width:100%;
-            object-position: bottom center;
+            width:80%;
         }
     }
     
