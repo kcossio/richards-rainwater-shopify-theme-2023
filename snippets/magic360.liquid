@@ -168,42 +168,44 @@
 
         </div>
 
-        <div class="MagicToolboxSelectorsContainer">
-            {% if MagicToolboxDefaultView == 'Spin' %}
-            <a data-slide-id="spin" href="#" class="js-no-transition {% if MagicToolbox360IconURL == 'overlay' %}magic360-overlay-icon{% endif %} active-magic-selector">
-                <img alt="360 view" src="{{ MagicToolbox360IconURLFull }}" />
-            </a>
-            {% endif %}
-            {% for image in product.media %}
-                {% if forloop.index0 < still_images_count %}
-          
-                {% assign product_variants = ',' %}            
-
-                {% for v in product.variants %}
-                  {% if image.id == v.featured_media.id %}
-                    {% assign product_variants = product_variants | append: ',' | append: v.id %}
-                  {% endif %}
-                {% endfor %}
-          
-              {% if image.media_type == 'video' or image.media_type == 'external_video' %}
-                <a data-variant-id="{{ product_variants }}" class="js-no-transition video-selector {% if MagicToolboxDefaultView != 'Spin' and forloop.index0 == 0%}active-magic-selector{% endif %}" data-slide-id="image-{{ forloop.index0 }}" href="#">
-                    <img alt="{{ image.alt  | escape }}" src="{{ image.preview_image | image_url: width: MagicToolboxSelectorImageSize }}" />
-                </a>
-              {% else %}
-                <a data-variant-id="{{ product_variants }}" class="js-no-transition{% if MagicToolboxDefaultView != 'Spin' and forloop.index0 == 0%} active-magic-selector{% endif %}" data-slide-id="image-{{ forloop.index0 }}" href="#">
-                    <img alt="{{ image.alt  | escape }}" src="{{ image | image_url: width: MagicToolboxSelectorImageSize }}" />
-                </a>
+        <div class="MagicToolboxSelectorsContainerWrap">
+          <div class="MagicToolboxSelectorsContainer">
+              {% if MagicToolboxDefaultView == 'Spin' %}
+              <a data-slide-id="spin" href="#" class="js-no-transition {% if MagicToolbox360IconURL == 'overlay' %}magic360-overlay-icon{% endif %} active-magic-selector">
+                  <img alt="360 view" src="{{ MagicToolbox360IconURLFull }}" />
+              </a>
               {% endif %}
-          
-          
+              {% for image in product.media %}
+                  {% if forloop.index0 < still_images_count %}
+            
+                  {% assign product_variants = ',' %}            
+
+                  {% for v in product.variants %}
+                    {% if image.id == v.featured_media.id %}
+                      {% assign product_variants = product_variants | append: ',' | append: v.id %}
+                    {% endif %}
+                  {% endfor %}
+            
+                {% if image.media_type == 'video' or image.media_type == 'external_video' %}
+                  <a data-variant-id="{{ product_variants }}" class="js-no-transition video-selector {% if MagicToolboxDefaultView != 'Spin' and forloop.index0 == 0%}active-magic-selector{% endif %}" data-slide-id="image-{{ forloop.index0 }}" href="#">
+                      <img alt="{{ image.alt  | escape }}" src="{{ image.preview_image | image_url: width: MagicToolboxSelectorImageSize }}" />
+                  </a>
+                {% else %}
+                  <a data-variant-id="{{ product_variants }}" class="js-no-transition{% if MagicToolboxDefaultView != 'Spin' and forloop.index0 == 0%} active-magic-selector{% endif %}" data-slide-id="image-{{ forloop.index0 }}" href="#">
+                      <img alt="{{ image.alt  | escape }}" src="{{ image | image_url: width: MagicToolboxSelectorImageSize }}" />
+                  </a>
                 {% endif %}
-            {% endfor %}
-            {% if MagicToolboxDefaultView != 'Spin' %}
-            <a data-slide-id="spin" class="js-no-transition {% if MagicToolbox360IconURL == 'overlay' %}magic360-overlay-icon{% endif %}" href="#">
-                <img alt="360 view" src="{{ MagicToolbox360IconURLFull }}" />
-            </a>
-            {% endif %}
-        </div>
+            
+            
+                  {% endif %}
+              {% endfor %}
+              {% if MagicToolboxDefaultView != 'Spin' %}
+              <a data-slide-id="spin" class="js-no-transition {% if MagicToolbox360IconURL == 'overlay' %}magic360-overlay-icon{% endif %}" href="#">
+                  <img alt="360 view" src="{{ MagicToolbox360IconURLFull }}" />
+              </a>
+              {% endif %}
+          </div><!--End MagicToolboxSelectorsContainer-->
+      </div><!--End MagicToolboxSelectorsContainerWrap-->
 
   <script type="text/javascript">
 
@@ -359,7 +361,7 @@
     verticalSwiping: true,
     infinite: false,
     arrows: true,
-    appendArrows: jQuery('.MagicToolboxContainer'),
+    appendArrows: jQuery('.MagicToolboxSelectorsContainerWrap'),
     dots: false,
     responsive: [
       {

@@ -3,7 +3,9 @@ div.MagicToolboxContainer {
     text-align: center;
     width:100%;
 }
-
+.MagicToolboxSelectorsContainerWrap {
+    position:relative;
+}
 div.MagicToolboxContainer img {
     /* Adjust */
     max-width:100%;
