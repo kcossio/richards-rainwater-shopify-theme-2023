@@ -1350,6 +1350,11 @@ section.newsletter-cloud {
     width: auto;
   }
 }
+@media (min-width: 1280px) {
+  .footer .footer-top .footer-top-left {
+    padding-right: 14%;
+  }
+}
 .footer .footer-top .footer-top-right {
   width: 32%;
 }

@@ -38,6 +38,9 @@ section.newsletter-cloud {
         @include breakpoint(tablet) {
           width:auto;
         }
+        @include breakpoint(laptop) {
+          padding-right:14%;
+        }
       }
       .footer-top-right {
         width:32%;
