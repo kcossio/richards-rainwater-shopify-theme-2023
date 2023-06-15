@@ -70,6 +70,10 @@
                 right:37%;
                 max-height:57%;
             }
+            @include breakpoint(desktop) {
+                right:37%;
+                max-height:65%;
+            }
         }
         &.bottle-2 {
             right:-12%;
@@ -78,6 +82,10 @@
             @include breakpoint(laptop) {
                 right:4%;
                 max-height:67%;
+            }
+            @include breakpoint(desktop) {
+                right:-3%;
+                max-height:79%;
             }
         }
     }

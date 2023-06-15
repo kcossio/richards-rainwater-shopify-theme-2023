@@ -252,6 +252,12 @@ EASING
     max-height: 57%;
   }
 }
+@media (min-width: 1440px) {
+  .home-banner-bottles .home-banner-bottle.bottle-1 {
+    right: 37%;
+    max-height: 65%;
+  }
+}
 .home-banner-bottles .home-banner-bottle.bottle-2 {
   right: -12%;
   max-height: 431px;
@@ -260,5 +266,11 @@ EASING
   .home-banner-bottles .home-banner-bottle.bottle-2 {
     right: 4%;
     max-height: 67%;
+  }
+}
+@media (min-width: 1440px) {
+  .home-banner-bottles .home-banner-bottle.bottle-2 {
+    right: -3%;
+    max-height: 79%;
   }
 }
