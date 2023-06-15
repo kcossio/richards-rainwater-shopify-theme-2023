@@ -25,14 +25,14 @@ section.newsletter-cloud {
       width:100%;
 
       .footer-top-left {
-        width:60%;
+        width:100%;
 
         @include breakpoint(tablet) {
           width:auto;
         }
       }
       .footer-top-right {
-        width:30%;
+        width:100%;
 
         @include breakpoint(tablet) {
           width:auto;
@@ -47,6 +47,7 @@ section.newsletter-cloud {
         line-height:1.3em;
         letter-spacing:1px;
         white-space: nowrap;
+        text-align:center;
 
         span {
           display:inline-block;
@@ -61,6 +62,7 @@ section.newsletter-cloud {
 
         @include breakpoint(tablet) {
           font-size:54px;
+          text-align:left;
         }
       }
       
@@ -68,10 +70,14 @@ section.newsletter-cloud {
       ul.footer-menu {
         margin:0px;
         list-style:none;
-        padding:0px 0px 0px 30px;
+        padding:0px 0px 0px 0px;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
 
         @include breakpoint(tablet) {
           padding:0px 0px 0px 30px;
+          display:block;
         }
 
         li {
@@ -124,7 +130,7 @@ section.newsletter-cloud {
       width:100%;
       border-top:1px solid $light_blue;
       padding:34px 0px 0px 0px;
-      margin-top:34px;
+      margin-top:4px;
 
       @include breakpoint(tablet) {
         padding-top:42px;
@@ -219,6 +225,11 @@ section.newsletter-cloud {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  margin-top:20px;
+
+  @include breakpoint(tablet) {
+    margin-top:0px;
+  }
 }
 
 .list-social__item .icon { /* //work */
