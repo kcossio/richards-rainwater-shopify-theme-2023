@@ -1584,9 +1584,6 @@ section.newsletter-cloud {
   height: auto;
   display: block;
 }
-.bit-sticker svg #top-letters path, .bit-sticker svg #top-letters rect {
-  fill: #000F44;
-}
 @media (min-width: 1280px) {
   .bit-sticker {
     width: 82px;

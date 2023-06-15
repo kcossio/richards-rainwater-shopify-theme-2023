@@ -178,7 +178,7 @@ EASING
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   padding-top: 8vh;
   padding-bottom: 52vh;
