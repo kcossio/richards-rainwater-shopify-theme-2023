@@ -222,10 +222,12 @@ EASING
 }
 .home-messaging-banner .inner .banner-content {
   width: 100%;
+  padding: 0px 20px;
 }
 @media (min-width: 768px) {
   .home-messaging-banner .inner .banner-content {
     width: 34%;
+    padding: 0px;
   }
 }
 .home-messaging-banner .inner .banner-content h2 {

@@ -50,9 +50,11 @@
 
         .banner-content {
             width:100%;
+            padding:0px 20px;
 
             @include breakpoint(tablet) {
                 width:34%;
+                padding:0px;
             }
 
             h2 {
