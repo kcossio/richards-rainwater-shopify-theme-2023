@@ -72,6 +72,12 @@ section.home-banner-simple {
             @include breakpoint(laptop) {
                 letter-spacing:2px;
             }
+            @include breakpoint(375px) {
+                font-size:40px;
+              }
+              @include breakpoint(414px) {
+                font-size:42px;
+              }
 
             @include font-size(medium);
 
@@ -84,6 +90,9 @@ section.home-banner-simple {
             @include breakpoint(laptopwide) {
                 font-size:4.8vw;
             }
+            @include breakpoint(desktopwide) {
+                font-size:75px;
+              }
         }
         p {
             color:$white;
