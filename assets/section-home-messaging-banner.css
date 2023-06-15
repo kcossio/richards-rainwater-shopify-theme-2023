@@ -185,7 +185,7 @@ EASING
 }
 @media (min-width: 768px) {
   .home-messaging-banner {
-    padding-bottom: 0px;
+    padding-bottom: 6%;
     padding-top: 20%;
     min-height: 60vh;
   }
