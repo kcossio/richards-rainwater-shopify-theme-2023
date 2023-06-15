@@ -178,11 +178,12 @@ EASING
   flex-wrap: wrap;
   align-items: stretch;
   min-height: 80vh;
+  height: auto;
   position: relative;
 }
 @media (min-width: 1280px) {
   .destini-inner {
-    min-height: 931.8px;
+    min-height: 0px;
   }
 }
 .destini-inner .overlay {

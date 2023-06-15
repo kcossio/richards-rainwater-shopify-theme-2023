@@ -7,10 +7,11 @@
     flex-wrap:wrap;
     align-items:stretch;
     min-height:80vh;
+    height:auto;
     position:relative;
 
     @include breakpoint(laptop) {
-        min-height:931.8px;
+        min-height:0px;
     }
 
    .overlay {
