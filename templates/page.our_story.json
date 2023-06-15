@@ -150,7 +150,7 @@
         "template--18984173764895__8a2c0976-7156-47d0-b965-383ecc12c1cd-1686681121792ee462-0": {
           "type": "heading",
           "settings": {
-            "heading": "The cleanest water under the sun<br> has the numbers to prove it.",
+            "heading": "The cleanest water under the sun has the numbers to prove it.",
             "heading_size": "h2"
           }
         },
@@ -208,7 +208,8 @@
         "2fee22c9-1268-4ee5-9340-be9979d81d95"
       ],
       "settings": {
-        "heading": "Making Good with <br>Our Good Earth"
+        "hero_image": "shopify:\/\/shop_images\/bg-home-banner-sky.jpg",
+        "heading": "Making Good with Our Good Earth"
       }
     },
     "85f7042e-640c-4f3b-af6d-ecd56d2faa9e": {
