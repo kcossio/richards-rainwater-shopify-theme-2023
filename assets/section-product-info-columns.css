@@ -535,4 +535,35 @@ section.section-product-info-box-drops .info-drop.open polygon.plus {
   fill: #ffffff;
 }
 
+.single.info-drop-1 {
+  left: 29%;
+  top: 0%;
+}
+@media (min-width: 1280px) {
+  .single.info-drop-1 {
+    left: 33%;
+    top: 6.7%;
+  }
+}
+.single.info-drop-2 {
+  right: 23.8%;
+  top: 30%;
+}
+@media (min-width: 1280px) {
+  .single.info-drop-2 {
+    right: 13.8%;
+    top: 20%;
+  }
+}
+.single.info-drop-3 {
+  left: 8.2%;
+  top: 35%;
+}
+@media (min-width: 1280px) {
+  .single.info-drop-3 {
+    left: 91.2%;
+    top: 43%;
+  }
+}
+
 /* End */
