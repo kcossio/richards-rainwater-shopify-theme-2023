@@ -111,26 +111,8 @@
         "padding_bottom": 28
       }
     },
-    "9da798e3-47aa-4f43-a328-e837a3ace8e5": {
-      "type": "store-locator-w-slider",
-      "blocks": {
-        "bb1c7d6b-0b3c-4728-b0b5-cc595e292de7": {
-          "type": "hide_title_on_product",
-          "settings": {
-            "product_hide": "richards-sparkling-rainwater-24-pk-bottles"
-          }
-        },
-        "ec72bace-8bd9-4d69-932f-2549a566fac2": {
-          "type": "hide_title_on_product",
-          "settings": {
-            "product_hide": "richards-still-rainwater-16oz-24-pack"
-          }
-        }
-      },
-      "block_order": [
-        "bb1c7d6b-0b3c-4728-b0b5-cc595e292de7",
-        "ec72bace-8bd9-4d69-932f-2549a566fac2"
-      ],
+    "f0beda7b-c321-45f3-8486-c8856242a4b7": {
+      "type": "logo-slider-basic",
       "settings": {
         "heading": "Find Richard’s near you."
       }
@@ -286,7 +268,7 @@
   "order": [
     "main",
     "related-products",
-    "9da798e3-47aa-4f43-a328-e837a3ace8e5",
+    "f0beda7b-c321-45f3-8486-c8856242a4b7",
     "715ff14e-763f-47ec-8222-b651bf406814",
     "fc5233ff-444f-4aa3-8a40-95cec2ee3d1c",
     "ae63e3f8-db42-4d58-a2ee-0e23d8124c18",
