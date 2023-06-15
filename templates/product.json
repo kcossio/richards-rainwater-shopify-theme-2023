@@ -58,8 +58,8 @@
         "padding_bottom": 12
       }
     },
-    "1e4ebcd3-92af-451a-86f5-eff07afebf3b": {
-      "type": "store-locator-w-slider",
+    "44f9cf02-1d1d-4ce8-8785-6494c4ac1d30": {
+      "type": "logo-slider-basic",
       "settings": {
         "heading": "Find Richard’s near you."
       }
@@ -100,7 +100,7 @@
   },
   "order": [
     "main",
-    "1e4ebcd3-92af-451a-86f5-eff07afebf3b",
+    "44f9cf02-1d1d-4ce8-8785-6494c4ac1d30",
     "judgeme_section_review_widget_0c20",
     "related-products"
   ]
