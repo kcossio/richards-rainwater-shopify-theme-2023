@@ -8,7 +8,7 @@
     min-height:100vh;
     display:flex;
     flex-wrap:wrap;
-    padding:10% 0px;
+    padding:4vh 0px 50vh 0px;
     overflow:hidden;
 
     @include breakpoint(laptop) {
@@ -63,8 +63,8 @@
         right:0px;
 
         &.bottle-1 {
-            right:90%;
-            max-height:380px;
+            right:52%;
+            max-height:386px;
 
             @include breakpoint(laptop) {
                 right:37%;
@@ -72,8 +72,8 @@
             }
         }
         &.bottle-2 {
-            right:10%;
-            max-height:420px;
+            right:-12%;
+            max-height:431px;
 
             @include breakpoint(laptop) {
                 right:4%;

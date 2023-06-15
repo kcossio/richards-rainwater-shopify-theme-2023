@@ -177,7 +177,7 @@ EASING
   min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  padding: 10% 0px;
+  padding: 4vh 0px 50vh 0px;
   overflow: hidden;
 }
 @media (min-width: 1280px) {
@@ -243,8 +243,8 @@ EASING
   right: 0px;
 }
 .home-banner-bottles .home-banner-bottle.bottle-1 {
-  right: 90%;
-  max-height: 380px;
+  right: 52%;
+  max-height: 386px;
 }
 @media (min-width: 1280px) {
   .home-banner-bottles .home-banner-bottle.bottle-1 {
@@ -253,8 +253,8 @@ EASING
   }
 }
 .home-banner-bottles .home-banner-bottle.bottle-2 {
-  right: 10%;
-  max-height: 420px;
+  right: -12%;
+  max-height: 431px;
 }
 @media (min-width: 1280px) {
   .home-banner-bottles .home-banner-bottle.bottle-2 {
