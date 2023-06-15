@@ -267,6 +267,7 @@ EASING
   text-transform: uppercase;
   margin: 0px 0px 0.5em 0px;
   font-weight: 900;
+  /* work */
   font-size: 40px;
 }
 @media (min-width: 768px) {

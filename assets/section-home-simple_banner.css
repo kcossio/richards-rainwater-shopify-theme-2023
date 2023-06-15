@@ -246,6 +246,7 @@ section.home-banner-simple .home-banner-heading h1 {
   font-weight: 900;
   line-height: 1em;
   letter-spacing: 1px;
+  /* work */
   font-size: 40px;
 }
 @media (min-width: 1280px) {
