@@ -2075,6 +2075,9 @@ nav.water-product-buttons a img.custom-title-img {
     width: 60px;
     height: 306px;
   }
+  .product--thumbnail_slider .MagicToolboxSelectorsContainer {
+    overflow: hidden;
+  }
   .product--thumbnail_slider .slick-track {
     max-width: 100%;
   }
