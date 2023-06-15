@@ -20,6 +20,7 @@
 
 .section-locator-w-slider {
     width: 1312px;
+    //width:100vw;
     max-width: 100%;
     padding:20px 0px;
     margin: 0px auto 40px auto;
@@ -28,6 +29,14 @@
 
     @include breakpoint(tablet) {
         padding:40px;
+    }
+    &.no-form {
+        width:100vw;
+        padding:20px 0px;
+
+        @include breakpoint(tablet) {
+            padding:40px 0px;
+        }
     }
 
     h2 {
