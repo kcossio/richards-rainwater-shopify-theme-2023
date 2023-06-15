@@ -34,7 +34,6 @@
           "type": "competitors_product",
           "settings": {
             "title": "Tap water",
-            "product_image": "shopify:\/\/shop_images\/FPO-tap-water.jpg",
             "product_information": "<p>Lorem ipsum dolor sit amet, consec tetuer adipiscing nibh euismod tincidunt ut laoreet.<\/p>"
           }
         },
@@ -42,7 +41,6 @@
           "type": "competitors_product",
           "settings": {
             "title": "Artesian",
-            "product_image": "shopify:\/\/shop_images\/FPO-bottle-artesian.jpg",
             "product_information": "<p>Lorem ipsum elit, sed diam nonummy nibh euismod tincidunt ut laoreet.<\/p>"
           }
         },
@@ -50,7 +48,6 @@
           "type": "competitors_product",
           "settings": {
             "title": "Mountain spring",
-            "product_image": "shopify:\/\/shop_images\/FPO-bottle-water.jpg",
             "product_information": "<p>Lorem diam nonummy nibh euismod tincidunt ut laoreet.<\/p>"
           }
         }
@@ -80,7 +77,7 @@
         "e7eb975b-d346-4fbf-94cf-da6fc87fc2e7": {
           "type": "model_blocks",
           "settings": {
-            "image": "shopify:\/\/shop_images\/rw-model-image-2_600290ef-37b8-4268-9eb6-d286622f2e12.png",
+            "image": "shopify:\/\/shop_images\/rw-model-image-2.png",
             "heading": "Rinse",
             "description": "<p>Rainfall is <strong>Mother Nature’s filtration system.<\/strong> During the first few minutes, raindrops <strong>clean the atmosphere<\/strong> and wash away any dirt or debris.<\/p>"
           }
@@ -88,7 +85,7 @@
         "378937ef-79a4-4d1b-a7be-29994910244e": {
           "type": "model_blocks",
           "settings": {
-            "image": "shopify:\/\/shop_images\/rw-model-image-3_bf362180-0cb6-4b46-a541-00f652ee3236.png",
+            "image": "shopify:\/\/shop_images\/rw-model-image-3.png",
             "heading": "Collect",
             "description": "<p>With our proprietary technology, we figure out the <strong>cleanest point<\/strong> in the rain cycle. Then we collect the <strong>pure raindrops<\/strong> into large vessels– think big honkin’ water towers of rain.<\/p>"
           }
@@ -96,7 +93,7 @@
         "b281c460-36c7-4aae-a05d-7b81af897ab7": {
           "type": "model_blocks",
           "settings": {
-            "image": "shopify:\/\/shop_images\/rw-model-image-4_c9824417-0e73-41cf-b137-f436900f22bd.png",
+            "image": "shopify:\/\/shop_images\/rw-model-image-4.png",
             "heading": "Filter",
             "description": "<p>Our closed loop filtration beats the highest drinking water standards and purifies with virtually <strong>zero water waste<\/strong>. Compare that to reverse osmosis, which flushes 30-50% of collected water during filtration.<\/p>"
           }
@@ -211,7 +208,6 @@
         "2fee22c9-1268-4ee5-9340-be9979d81d95"
       ],
       "settings": {
-        "hero_image": "shopify:\/\/shop_images\/bg-home-banner-sky_df89ff10-7864-449e-8422-4cb4ffcbc9f9.jpg",
         "heading": "Making Good with <br>Our Good Earth"
       }
     },
@@ -231,7 +227,6 @@
         "e6794eba-2234-498b-9329-ff6a2a58e0af": {
           "type": "impact_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/icon-saved.png",
             "image_custom_code": "",
             "title": "Saved",
             "content": "<p>Most importantly, our collection process saved over 400k gallons of water.  That’s enough water to hydrate 2000 people for an entire year!<\/p>"
@@ -240,7 +235,6 @@
         "5ad10781-badd-40c4-baf4-fefa253b681d": {
           "type": "impact_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/icon-optimized.png",
             "image_custom_code": "",
             "title": "Optimized",
             "content": "<p>We optimized our packaging and are on track to save almost 50k pounds of cardboard in 2023.  That’s equal to saving 586 trees!<\/p>"
@@ -249,7 +243,6 @@
         "aa067ea9-dfc4-4c81-8857-cb6800a3df48": {
           "type": "impact_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/icon-diverted.png",
             "image_custom_code": "",
             "title": "Diverted",
             "content": "<p>Diverted 7,725,224 plastic bottles from use, but we didn’t stop there!<\/p>"
@@ -274,7 +267,6 @@
         "cd30d0b7-51fc-4673-b4bd-90836e19f9ba": {
           "type": "timeline_slide",
           "settings": {
-            "hero_image": "shopify:\/\/shop_images\/timeline-hero-1.jpg",
             "year": "1994",
             "title": "Richard catches his first drop",
             "content": "<p>Tired of well water that produced dirty dishes, dry hair, and cardboard-stiff jeans, Richard installed a rain collection system. He creates Tank Town to provide rainwater to his neighbors. <\/p>"
@@ -283,7 +275,6 @@
         "dd57e9a5-1532-4efd-bbc5-fb6b8ace02cf": {
           "type": "timeline_slide",
           "settings": {
-            "hero_image": "shopify:\/\/shop_images\/timeline-hero-2.jpg",
             "year": "1998",
             "title": "Richard builds Tank Town",
             "content": "<p>Right outside of Austin, Texas, Tank Town is the birthplace of Richard’s Rainwater.<\/p>"
@@ -292,7 +283,6 @@
         "4e3ec816-d10d-4772-a646-b46122fc1609": {
           "type": "timeline_slide",
           "settings": {
-            "hero_image": "shopify:\/\/shop_images\/timeline-hero-3.jpg",
             "year": "2002",
             "title": "Pioneering Bottled",
             "content": "<p>In 2002, Richard’s Rainwater becomes the first company in the nation to receive licensing to bottle and distribute rainwater.<\/p>"
@@ -301,7 +291,6 @@
         "19253d1c-d2e8-4ed1-bf1c-577ee4eed61b": {
           "type": "timeline_slide",
           "settings": {
-            "hero_image": "shopify:\/\/shop_images\/timeline-hero-4.jpg",
             "year": "2008",
             "title": "Developing Sparkling Rainwater",
             "content": "<p>Since rainwater is free of minerals and additives, carbonation was a challenge. Richard developed his own recipe using time, ice-cold temps, and pressure.<\/p>"
@@ -310,7 +299,6 @@
         "904fbffc-be82-44ab-865b-5062e4745d07": {
           "type": "timeline_slide",
           "settings": {
-            "hero_image": "shopify:\/\/shop_images\/timeline-hero-5.jpg",
             "year": "2019",
             "title": "Expanding with Lazy Magnolia",
             "content": "<p>Rainwater can be collected almost anywhere, making it the most sustainable water source. Richard’s partners with Lazy Magnolia Brewing in Mississippi to expand rain-catching operations.<\/p>"
@@ -319,7 +307,6 @@
         "d3bb3bef-6b9d-4d83-8895-ce69842a63c5": {
           "type": "timeline_slide",
           "settings": {
-            "hero_image": "shopify:\/\/shop_images\/timeline-hero-6.jpg",
             "year": "2022",
             "title": "Growing with Faubourg",
             "content": "<p>Our newest partner, located in New Orleans, one of the top 3 Rainiest cities in the US. The World’s largest potable rainwater collection site.<\/p>"
