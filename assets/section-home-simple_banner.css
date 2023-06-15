@@ -218,12 +218,12 @@ section.home-banner-simple .bg-img img, section.home-banner-simple .bg-img pictu
 }
 @media (min-width: 1440px) {
   section.home-banner-simple {
-    padding-top: 29vh;
+    padding-top: 24vh;
   }
 }
 @media (min-width: 1680px) {
   section.home-banner-simple {
-    padding-top: 29vh;
+    padding-top: 23vh;
   }
 }
 section.home-banner-simple .inner {
