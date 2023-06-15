@@ -4,7 +4,6 @@
       "type": "home-main_banner",
       "disabled": true,
       "settings": {
-        "background_image": "shopify:\/\/shop_images\/bg-home-banner-sky.jpg",
         "callout_text": "The first net-positive bottled water. Ever.",
         "enable_audio_player": true,
         "audio_player_label": "Enhance with Audio"
@@ -14,8 +13,6 @@
       "type": "home-bottles-and-copy",
       "disabled": true,
       "settings": {
-        "bottle_image_1": "shopify:\/\/shop_images\/Richards-Still-Can-angled.png",
-        "bottle_image_2": "shopify:\/\/shop_images\/Richards-Sparkling-Bottle-angled.png",
         "subheading": "NEW LOOK",
         "heading": "<span>RENEWABLE.<\/span>\n<span>REFRESHING. <\/span>\n<span>RAINWATER.<\/span>",
         "call_to_action_button_label": "Shop Richard's",
@@ -44,8 +41,7 @@
       "settings": {
         "heading": "We’re turning  bottled water right  side up. Why?",
         "content": "<p>Because all these bottled water <br\/>honchos have been talking a big <br\/>talk about saving the planet for <br\/>a while now, but all they’re really <br\/>changing is the bottle, not the <br\/>water. We think it’s ‘bout time <br\/>we fixed that. <br\/><br\/>It’s not just sustainable, not just <br\/>carbon-neutral. This water is <br\/>net-positive.<\/p>",
-        "background_image": "shopify:\/\/shop_images\/bg-home-banner-sky.jpg",
-        "bottle_image_1": "shopify:\/\/shop_images\/arm-holding-still-can.png",
+        "background_image": "shopify:\/\/shop_images\/arm-holding-still-can.png",
         "bottle_image_2": "shopify:\/\/shop_images\/arm-holding-sparkling-bottle.png"
       }
     },
