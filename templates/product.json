@@ -8,6 +8,11 @@
           "settings": {
           }
         },
+        "judgeme_preview_badge_product_page_65b6495a": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -28,17 +33,12 @@
           "type": "quantity_and_button",
           "settings": {
           }
-        },
-        "judgeme_preview_badge_product_page_65b6495a": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
         }
       },
       "block_order": [
         "title",
-        "price",
         "judgeme_preview_badge_product_page_65b6495a",
+        "price",
         "variant_picker",
         "description",
         "7d7497e9-b6a8-44f0-b7f8-c8bbd3df0530"
@@ -48,7 +48,7 @@
         "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "gallery_layout": "thumbnail",
+        "gallery_layout": "thumbnail_slider",
         "media_position": "left",
         "image_zoom": "none",
         "mobile_thumbnails": "show",
@@ -56,6 +56,22 @@
         "enable_video_looping": true,
         "padding_top": 36,
         "padding_bottom": 12
+      }
+    },
+    "judgeme_section_review_widget_0c20": {
+      "type": "apps",
+      "blocks": {
+        "judgeme_review_widget_73ab1de4": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "judgeme_review_widget_73ab1de4"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "related-products": {
@@ -75,26 +91,17 @@
         "padding_bottom": 28
       }
     },
-    "judgeme_section_review_widget_0c20": {
-      "type": "apps",
-      "blocks": {
-        "judgeme_review_widget_73ab1de4": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "judgeme_review_widget_73ab1de4"
-      ],
+    "1e4ebcd3-92af-451a-86f5-eff07afebf3b": {
+      "type": "store-locator-w-slider",
       "settings": {
-        "include_margins": true
+        "heading": "Find Richard’s near you."
       }
     }
   },
   "order": [
     "main",
     "judgeme_section_review_widget_0c20",
-    "related-products"
+    "related-products",
+    "1e4ebcd3-92af-451a-86f5-eff07afebf3b"
   ]
 }
