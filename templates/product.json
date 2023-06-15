@@ -58,6 +58,12 @@
         "padding_bottom": 12
       }
     },
+    "1e4ebcd3-92af-451a-86f5-eff07afebf3b": {
+      "type": "store-locator-w-slider",
+      "settings": {
+        "heading": "Find Richard’s near you."
+      }
+    },
     "judgeme_section_review_widget_0c20": {
       "type": "apps",
       "blocks": {
@@ -90,18 +96,12 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
-    },
-    "1e4ebcd3-92af-451a-86f5-eff07afebf3b": {
-      "type": "store-locator-w-slider",
-      "settings": {
-        "heading": "Find Richard’s near you."
-      }
     }
   },
   "order": [
     "main",
+    "1e4ebcd3-92af-451a-86f5-eff07afebf3b",
     "judgeme_section_review_widget_0c20",
-    "related-products",
-    "1e4ebcd3-92af-451a-86f5-eff07afebf3b"
+    "related-products"
   ]
 }
