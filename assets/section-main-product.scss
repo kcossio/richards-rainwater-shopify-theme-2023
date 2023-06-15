@@ -461,8 +461,11 @@
   
   .product .price--sold-out .price__badge-sold-out {
     background: transparent;
-    color: rgb(var(--color-base-text));
+    color: $red;
     border-color: transparent;
+    font-weight:800;
+    text-transform: uppercase;
+    letter-spacing:.5;
   }
   
   .product .price--sold-out .price__badge-sale {
