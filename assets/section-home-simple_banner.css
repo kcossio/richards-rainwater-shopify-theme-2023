@@ -275,6 +275,11 @@ section.home-banner-simple .home-banner-heading h1 {
 }
 @media (min-width: 1366px) {
   section.home-banner-simple .home-banner-heading h1 {
+    font-size: 4.2vw;
+  }
+}
+@media (min-width: 1366px) {
+  section.home-banner-simple .home-banner-heading h1 {
     font-size: 4.8vw;
   }
 }

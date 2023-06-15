@@ -78,6 +78,9 @@ section.home-banner-simple {
             @include breakpoint(laptop) {
                 font-size:4vw;
             }
+            @include breakpoint(1366px) {
+                font-size:4.2vw;
+            }
             @include breakpoint(laptopwide) {
                 font-size:4.8vw;
             }
