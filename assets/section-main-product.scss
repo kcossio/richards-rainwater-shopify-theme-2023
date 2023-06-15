@@ -20,6 +20,11 @@
   .product.grid {
     gap: 0;
     justify-content:space-between;
+    padding-top:40px;
+
+    @include breakpoint(tablet) {
+      padding-top:60px;
+    }
   }
   
   .product--no-media {

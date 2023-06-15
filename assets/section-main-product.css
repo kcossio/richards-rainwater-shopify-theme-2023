@@ -192,6 +192,12 @@ EASING
 .product.grid {
   gap: 0;
   justify-content: space-between;
+  padding-top: 40px;
+}
+@media (min-width: 768px) {
+  .product.grid {
+    padding-top: 60px;
+  }
 }
 
 .product--no-media {
