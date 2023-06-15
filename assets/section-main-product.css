@@ -625,6 +625,7 @@ a.product__text {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.5;
+  font-size: 16px;
 }
 
 .product .price--sold-out .price__badge-sale {
