@@ -540,7 +540,7 @@ section.section-product-info-box-drops .single .info-drop.info-drop-1 {
 }
 @media (min-width: 1280px) {
   section.section-product-info-box-drops .single .info-drop.info-drop-1 {
-    left: 33%;
+    left: 31%;
     top: 6.7%;
   }
 }
@@ -550,7 +550,7 @@ section.section-product-info-box-drops .single .info-drop.info-drop-2 {
 }
 @media (min-width: 1280px) {
   section.section-product-info-box-drops .single .info-drop.info-drop-2 {
-    right: 23.8%;
+    right: 24.8%;
     top: 20%;
   }
 }
