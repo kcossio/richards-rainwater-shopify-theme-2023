@@ -175,7 +175,6 @@ EASING
 */
 .home-messaging-banner {
   width: 100vw;
-  min-height: 100vh;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -188,6 +187,7 @@ EASING
   .home-messaging-banner {
     padding-bottom: 0px;
     padding-top: 20%;
+    min-height: 100vh;
   }
 }
 .home-messaging-banner .bg-img {

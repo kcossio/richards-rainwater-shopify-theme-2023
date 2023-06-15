@@ -5,7 +5,6 @@
 
 .home-messaging-banner {
     width:100vw;
-    min-height:100vh;
     position:relative;
     display:flex;
     flex-wrap:wrap;
@@ -17,6 +16,7 @@
     @include breakpoint(tabletwide) {
         padding-bottom:0px;
         padding-top:20%;
+        min-height:100vh;
     }
 
     .bg-img {
