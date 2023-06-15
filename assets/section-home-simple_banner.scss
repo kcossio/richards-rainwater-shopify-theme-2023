@@ -17,6 +17,14 @@ section.home-banner-simple {
     overflow:hidden;
     padding-top:40%;
 
+    .bg-img img, .bg-img picture, .bg-img svg {
+        object-position: bottom;
+
+        @include breakpoint(laptop) {
+            object-position:center
+        }
+    }
+
     @include breakpoint(tablet) {
         padding-top:30vh;
     }

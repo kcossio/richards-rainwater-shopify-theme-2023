@@ -186,6 +186,16 @@ section.home-banner-simple {
   overflow: hidden;
   padding-top: 40%;
 }
+section.home-banner-simple .bg-img img, section.home-banner-simple .bg-img picture, section.home-banner-simple .bg-img svg {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+@media (min-width: 1280px) {
+  section.home-banner-simple .bg-img img, section.home-banner-simple .bg-img picture, section.home-banner-simple .bg-img svg {
+    -o-object-position: center;
+       object-position: center;
+  }
+}
 @media (min-width: 768px) {
   section.home-banner-simple {
     padding-top: 30vh;
