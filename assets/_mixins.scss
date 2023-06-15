@@ -99,7 +99,7 @@ $authenticMotion: cubic-bezier(.4,0,.2,1);
   @else if $font-size == medium {
 
     /* work */
-    font-size:40px;
+    font-size:10.1vw;
 
     @include breakpoint(tablet) {
       font-size:6.6vw;

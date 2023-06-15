@@ -268,7 +268,7 @@ EASING
   margin: 0px 0px 0.5em 0px;
   font-weight: 900;
   /* work */
-  font-size: 40px;
+  font-size: 10.1vw;
 }
 @media (min-width: 768px) {
   .home-messaging-banner .inner .banner-content h2 {
