@@ -369,34 +369,40 @@ section.section-product-info-box-drops {
             }
         }
     }
+
+
+&.single {
+
+    .info-drop {
+        &.info-drop-1 {
+            left:29%;
+            top:0%;
+    
+            @include breakpoint(laptop) {
+                left:33%;
+                top:6.7%;
+            }
+        }
+        &.info-drop-2 {
+            right:23.8%;
+            top:30%;
+    
+            @include breakpoint(laptop) {
+                right:13.8%;
+                top:20%;
+            }
+        }
+        &.info-drop-3 {
+            left:8.2%;
+            top:35%;
+    
+            @include breakpoint(laptop) {
+                left:91.2%;
+                top:43%;
+            }
+        }
+    }
+    
 }
-.single {
-    .info-drop-1 {
-        left:29%;
-        top:0%;
-
-        @include breakpoint(laptop) {
-            left:33%;
-            top:6.7%;
-        }
-    }
-    .info-drop-2 {
-        right:23.8%;
-        top:30%;
-
-        @include breakpoint(laptop) {
-            right:13.8%;
-            top:20%;
-        }
-    }
-    .info-drop-3 {
-        left:8.2%;
-        top:35%;
-
-        @include breakpoint(laptop) {
-            left:91.2%;
-            top:43%;
-        }
-    }
 }
 /* End */
