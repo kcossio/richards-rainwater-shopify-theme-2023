@@ -126,6 +126,7 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "shop-all",
+    "checkout_header_image": "shopify:\/\/shop_images\/checkout-banner.jpg",
     "checkout_logo_image": "shopify:\/\/shop_images\/logo-richards-blue.png",
     "checkout_accent_color": "#0040a8",
     "checkout_button_color": "#0094da",
