@@ -180,8 +180,8 @@ EASING
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding-top: 20vh;
-  padding-bottom: 40vh;
+  padding-top: 8vh;
+  padding-bottom: 52vh;
 }
 @media (min-width: 1024px) {
   .home-messaging-banner {
