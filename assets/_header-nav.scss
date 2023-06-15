@@ -153,6 +153,7 @@
   
       &:not(.home-header) {
         background-color:$white;
+        border-bottom:1px solid #C3C3C3;
       }
       @include breakpoint(tablet) {
         padding:22px 36px;
@@ -196,6 +197,7 @@
         top:0px;
         background:$white;
         color:$dark_blue;
+        border-bottom:1px solid #C3C3C3;
   
         .header__heading, 
         .header__heading-link {

@@ -1188,6 +1188,7 @@ EASING
 }
 .section-header .site-header:not(.home-header) {
   background-color: #ffffff;
+  border-bottom: 1px solid #C3C3C3;
 }
 @media (min-width: 768px) {
   .section-header .site-header {
@@ -1219,6 +1220,7 @@ EASING
   top: 0px;
   background: #ffffff;
   color: #000F44;
+  border-bottom: 1px solid #C3C3C3;
 }
 .section-header .site-header.scrolling .header__heading,
 .section-header .site-header.scrolling .header__heading-link {
