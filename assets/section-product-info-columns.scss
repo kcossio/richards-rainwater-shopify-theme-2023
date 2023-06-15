@@ -375,7 +375,7 @@ section.section-product-info-box-drops {
 
     .info-drop {
         &.info-drop-1 {
-            left:29%;
+            left:4%;
             top:0%;
     
             @include breakpoint(laptop) {
@@ -384,11 +384,11 @@ section.section-product-info-box-drops {
             }
         }
         &.info-drop-2 {
-            right:23.8%;
+            right:2.8%;
             top:30%;
     
             @include breakpoint(laptop) {
-                right:13.8%;
+                right:23.8%;
                 top:20%;
             }
         }
@@ -397,7 +397,7 @@ section.section-product-info-box-drops {
             top:35%;
     
             @include breakpoint(laptop) {
-                left:91.2%;
+                left:19.2%;
                 top:43%;
             }
         }
