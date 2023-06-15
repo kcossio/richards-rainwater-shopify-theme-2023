@@ -208,12 +208,12 @@ section.home-banner-simple .bg-img img, section.home-banner-simple .bg-img pictu
 }
 @media (min-width: 1280px) {
   section.home-banner-simple {
-    padding-top: 29vh;
+    padding-top: 25vh;
   }
 }
 @media (min-width: 1366px) {
   section.home-banner-simple {
-    padding-top: 29vh;
+    padding-top: 27vh;
   }
 }
 @media (min-width: 1440px) {
