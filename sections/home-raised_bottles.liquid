@@ -10,7 +10,7 @@
 
 {%- assign background_image = section.settings.background_image -%}
 {% if background_image != blank %}
-<div class="bg-img bg-hero hide-on-mobile fade-in">
+<div class="bg-img bg-hero fade-in">
   {{ background_image | image_url: width: background_image.width | image_tag: class: 'bg-parallax', loading: 'lazy' }}
 </div>
 {% endif %}
