@@ -127,7 +127,7 @@
     "show_cart_note": false,
     "cart_drawer_collection": "shop-all",
     "checkout_header_image": "shopify:\/\/shop_images\/checkout-banner.jpg",
-    "checkout_logo_image": "shopify:\/\/shop_images\/logo-richards-blue.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo-richards-blue_a8ee43de-b1bf-4b2a-9e12-634a0cebda08.png",
     "checkout_accent_color": "#0040a8",
     "checkout_button_color": "#0094da",
     "sections": {
@@ -150,6 +150,12 @@
     "blocks": {
       "judgeme_core_3b9121ae": {
         "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "2153490007123654574": {
+        "type": "shopify:\/\/apps\/consentmo-gdpr\/blocks\/gdpr_cookie_consent\/4fbe573f-a377-4fea-9801-3ee0858cae41",
         "disabled": false,
         "settings": {
         }
