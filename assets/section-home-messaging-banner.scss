@@ -20,6 +20,7 @@
     }
     @include breakpoint(tabletwide) {
         min-height:100vh;
+        padding: 8vh 0px 20vh 0px;
     }
     .bg-img {
         top:auto;
@@ -36,6 +37,16 @@
         @include breakpoint(tablet) {
             width:80%;
             object-fit:cover;
+        }
+        @include breakpoint(laptop) {
+            width:70%;
+            object-fit:cover;
+            object-position: center right;
+        }
+        @include breakpoint(desktop) {
+            width:80%;
+            object-fit:cover;
+            object-position: center right;
         }
     }
     

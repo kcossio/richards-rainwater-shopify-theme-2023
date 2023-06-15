@@ -76,8 +76,8 @@
             }
 
             @include breakpoint(laptop) {
-                right:37%;
-                max-height:57%;
+                right:32%;
+                max-height:66%;
             }
             @include breakpoint(desktop) {
                 right:37%;
@@ -94,8 +94,8 @@
             }
 
             @include breakpoint(laptop) {
-                right:4%;
-                max-height:67%;
+                right:-19%;
+                max-height:81%;
             }
             @include breakpoint(desktop) {
                 right:-3%;

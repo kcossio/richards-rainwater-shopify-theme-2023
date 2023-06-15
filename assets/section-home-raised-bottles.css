@@ -259,8 +259,8 @@ EASING
 }
 @media (min-width: 1280px) {
   .home-banner-bottles .home-banner-bottle.bottle-1 {
-    right: 37%;
-    max-height: 57%;
+    right: 32%;
+    max-height: 66%;
   }
 }
 @media (min-width: 1440px) {
@@ -281,8 +281,8 @@ EASING
 }
 @media (min-width: 1280px) {
   .home-banner-bottles .home-banner-bottle.bottle-2 {
-    right: 4%;
-    max-height: 67%;
+    right: -19%;
+    max-height: 81%;
   }
 }
 @media (min-width: 1440px) {
