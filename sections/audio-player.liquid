@@ -1,0 +1,94 @@
+{%- if section.settings.enable_audio_player -%}
+  {%- # Write your logic here -%} 
+
+
+  <div class="home-audio-player off">
+    <button id="play-audio" class="play-audio">
+      <img class="note off" src="{{ 'note-grey.svg' | asset_url }}" width="49" height="46" role="presentation" alt="note" />
+      <img class="note on" src="{{ 'note-rainbow.svg' | asset_url }}" width="49" height="46" role="presentation" alt="note" />
+    </button>
+    <p>{{ section.settings.audio_player_label }} </p>
+      <button id="close-player" class="close-player">
+        <img class="close-x" src="{{ 'icon-close-grey.svg' | asset_url }}" width="100" height="100" role="presentation" alt="x" />
+      </button>
+      <audio id="rainAudio" loop>
+        <source src="{{ 'audio-rain-loop-2.mp3' | asset_url }}" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+  </div>
+
+  <script type="text/javascript">
+
+
+    
+   
+
+    // Audio Player
+    
+    var myAudio = document.getElementById('rainAudio');
+
+    //Audio Buttons
+    jQuery( "#play-audio, .home-audio-player p" ).on( "click", function( event ) {
+      //event.stopPropagation();
+      //event.preventDefault();
+
+      if (myAudio.duration > 0 && !myAudio.paused) {
+          //Its playing...do your job
+          myAudio.pause(); 
+          jQuery('.home-audio-player').removeClass('on').addClass('off');
+          //console.log('We are now paused');
+        } else {
+          //Not playing...maybe paused, stopped or never played.
+          myAudio.play();
+          jQuery('.home-audio-player').addClass('on').removeClass('off');
+          //console.log('We are now playing');
+      }
+    });
+
+    jQuery( "#close-player" ).on( "click", function( event ) {
+      //event.preventDefault();
+      jQuery('.home-audio-player').toggleClass('closed');
+      console.log('clicked close');
+    });
+
+  </script>
+
+{%- endif -%}
+
+{%- # Label: Audio Player Label -%}
+
+
+{% schema %}
+  {
+  "name": "Audio Player",
+  "class": "audio-player",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "enable_audio_player",
+      "label": "Enable Audio Player",
+      "default": false,
+      "info": "Enable an audio player for rain sounds."
+    },
+    {
+      "type": "text",
+      "id": "audio_player_label",
+      "label": "Audio Player Label",
+      "default": "Enhance with Audio",
+      "info": "Enter the label for the Audio Player button"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Audio Player"
+    }
+  ]
+}  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
