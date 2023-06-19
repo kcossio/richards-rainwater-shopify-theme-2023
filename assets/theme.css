@@ -1361,10 +1361,15 @@ section.newsletter-cloud {
 @media (min-width: 768px) {
   .footer .footer-top .footer-top-right {
     width: auto;
-    margin-right: 0px;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
+  .footer .footer-top .footer-top-right {
+    width: auto;
+    margin-right: 14vw;
+  }
+}
+@media (min-width: 1680px) {
   .footer .footer-top .footer-top-right {
     margin-right: 0px;
   }
