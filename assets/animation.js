@@ -129,13 +129,13 @@
     //Parallax Background
     const darkBG = gsap.utils.toArray('.dark-bg');
     darkBG.forEach(box => {
-        gsap.to('.home-audio-player', { 
+        gsap.to(box, { 
             scrollTrigger: {
                 trigger: box, // start the animation when ".box" enters the viewport (once),
                 start: "top bottom",
                 end: "bottom 83%",
                 scrub: true, 
-                toggleClass: "onscreen",
+                toggleClass: {targets: ".home-audio-player", className: "onscreen"},
                 toggleActions: "play reverse play reverse"
             },        
             ease: "none"
