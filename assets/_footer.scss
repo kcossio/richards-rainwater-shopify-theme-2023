@@ -47,6 +47,11 @@ section.newsletter-cloud {
 
         @include breakpoint(tablet) {
           width:auto;
+          margin-right:0px;
+        }
+
+        @include breakpoint(desktop) {
+          margin-right:0px;
         }
       }
 
