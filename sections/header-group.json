@@ -65,7 +65,6 @@
     },
     "345e491b-691f-44ef-9f5f-2a061c369188": {
       "type": "audio-player",
-      "disabled": true,
       "settings": {
         "enable_audio_player": true,
         "audio_player_label": "Enhance with Audio"
