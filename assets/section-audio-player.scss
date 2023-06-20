@@ -50,6 +50,7 @@
         }
     }
 
+
     button {
         -webkit-appearance:none;
         appearance:none;
@@ -106,6 +107,10 @@
                 opacity:0;
             }
         }
+    }
+
+    &.dark {
+        
     }
     button#close-player {
         display:block; 

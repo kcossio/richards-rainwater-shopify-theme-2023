@@ -135,7 +135,7 @@
                 start: "top bottom",
                 end: "bottom 83%",
                 scrub: true, 
-                toggleClass: {targets: ".home-audio-player", className: "onscreen"},
+                toggleClass: {targets: ".home-audio-player", className: "dark"},
                 toggleActions: "play reverse play reverse"
             },        
             ease: "none"
