@@ -4,9 +4,7 @@
       "type": "home-main_banner",
       "disabled": true,
       "settings": {
-        "callout_text": "The first net-positive bottled water. Ever.",
-        "enable_audio_player": true,
-        "audio_player_label": "Enhance with Audio"
+        "callout_text": "The first net-positive bottled water. Ever."
       }
     },
     "9116c0a2-b6dd-4ac0-bfa7-345ba053c3a0": {
@@ -136,7 +134,7 @@
       ],
       "settings": {
         "heading": "The Path to <br>Net-Positive is Simple",
-        "call_to_action_button_link": "shopify:\/\/pages\/about",
+        "call_to_action_button_link": "shopify:\/\/blogs\/the-rain-drop",
         "call_to_action_button_label": "Learn more about our impact"
       }
     },
