@@ -15,7 +15,7 @@
           {%- endif -%}
   
           {%- if block.settings.label != blank -%}
-          <p class="{{ block.settings.text_color }}">{{ block.settings.label }}</p>
+          <p>{{ block.settings.label }}</p>
           {%- endif -%}
           </div><!--End icon-item-->
   
@@ -82,32 +82,7 @@
           "id": "label",
           "label": "Label",
           "info": "Add a label for this icon"
-        },
-        {
-            "type": "select",
-            "id": "text_color",
-            "label": "Text Color",
-            "options": [
-              {
-                "value": "light_blue",
-                "label": "light blue"
-              },
-              {
-                "value": "pink",
-                "label": "pink"
-              },
-              {
-                "value": "red",
-                "label": "red"
-              },
-              {
-                "value": "medium_blue",
-                "label": "medium blue"
-              }
-            ],
-            "default": "medium_blue",
-            "info": "Choose a color for the text in this item"
-          }
+        }
       ]
     }
   ],

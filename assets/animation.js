@@ -20,7 +20,7 @@
 
     // ------ Header Scroll Behavior ------//
     window.addEventListener("load", (event) => {
-        console.log('page is loaded. Now run scroll stuff please.');
+       // console.log('page is loaded. Now run scroll stuff please.');
         jQuery(window).scroll(function() // Do stuff on scroll
         {   
             var bannerHeight = jQuery('.site-header').height();
@@ -59,7 +59,7 @@
     // ----- Set up Animation function to run on page load ------ //
     var animation_setup = function(){
 
-        console.log('animation has been set up');
+        //console.log('animation has been set up');
 
 
         // ------------- ScrollTriggers for elements that can appear multiple times per page -------- //
