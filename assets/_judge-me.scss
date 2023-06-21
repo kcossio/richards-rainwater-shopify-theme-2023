@@ -2,7 +2,7 @@
 
 .jdgm-rev-widg  {
 
-    .jdgm-rev-widg__title{
+    .jdgm-rev-widg__title {
         font-weight: 900;
         text-align: left;
         text-transform: uppercase;
@@ -26,6 +26,7 @@
           @include breakpoint(tablet) {
             height:25px;
           }
+        }
     }
 
     .jdgm-rev {
