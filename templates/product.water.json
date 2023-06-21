@@ -124,29 +124,37 @@
         "f8c8bb45-491c-4302-a368-5b95a3d81659": {
           "type": "icon_item",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/icon-flask.png",
-            "label": "PFAs FREE"
+            "icon": "shopify:\/\/shop_images\/icon-cloud-blue.svg",
+            "label": "Infinite Water Source"
           }
         },
         "aff946d8-d99c-44f2-a358-c9d20e359af8": {
           "type": "icon_item",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/icon-recycle.png",
-            "label": "LESS WASTE"
+            "icon": "shopify:\/\/shop_images\/icon-drop-red.svg",
+            "label": "Zero-Waste Filtration"
           }
         },
         "f2eb4cf5-7473-4c3d-ab93-b428292210bb": {
           "type": "icon_item",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/icon-globe.png",
-            "label": "RENEWABLE"
+            "icon": "shopify:\/\/shop_images\/icon-packaging-orange.svg",
+            "label": "Renewable Packaging"
+          }
+        },
+        "75cdfc4f-f3a4-429e-b2df-a8358374a3db": {
+          "type": "icon_item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon-person-blue.svg",
+            "label": "More Water for More People"
           }
         }
       },
       "block_order": [
         "f8c8bb45-491c-4302-a368-5b95a3d81659",
         "aff946d8-d99c-44f2-a358-c9d20e359af8",
-        "f2eb4cf5-7473-4c3d-ab93-b428292210bb"
+        "f2eb4cf5-7473-4c3d-ab93-b428292210bb",
+        "75cdfc4f-f3a4-429e-b2df-a8358374a3db"
       ],
       "settings": {
         "heading": "Who knew water could be mouth watering?"
