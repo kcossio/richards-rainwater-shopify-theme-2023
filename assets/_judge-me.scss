@@ -1,59 +1,62 @@
 // Judge.me customizations
 
-.jdgm-rev {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
-    border:0px;
+.jdgm-rev-widg  {
 
-    .jdgm-star {
-        color:$light_blue;
-    }
-    .jdgm-rev__header {
-        width:auto;
-        order:1;
-    }
-    .jdgm-rev__actions {
-        width:auto;
-        order:2;
+    .jdgm-rev {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        border:0px;
 
-        .jdgm-rev__thumb-btn {
-            color:$grey;
+        .jdgm-star {
+            color:$light_blue;
         }
-        .jdgm-rev__thumb-count {
-            font-size:11px;
+        .jdgm-rev__header {
+            width:auto;
+            order:1;
         }
-    }
-    .jdgm-rev__content {
-        width:100%;
-        order:3;
-        padding:20px;
-        background:$light_grey;
+        .jdgm-rev__actions {
+            width:auto;
+            order:2;
 
-        p {
-            font-size:16px;
-            line-height:1.3em;
-            color:$dark_blue;
-
-            &:last-child {
-                margin-bottom: 0px;
+            .jdgm-rev__thumb-btn {
+                color:$grey;
             }
+            .jdgm-rev__thumb-count {
+                font-size:11px;
+            }
+        }
+        .jdgm-rev__content {
+            width:100%;
+            order:3;
+            padding:20px;
+            background:$light_grey;
 
-            @include breakpoint(laptop) {
+            p {
                 font-size:16px;
+                line-height:1.3em;
+                color:$dark_blue;
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+
+                @include breakpoint(laptop) {
+                    font-size:16px;
+                }
+            }
+
+            .jdgm-rev__title {
+                font-weight: 900;
+                text-transform: uppercase;
+                color:$dark_blue;
+
+                @include  breakpoint(laptop) {
+                    font-size:22px;
+                }
             }
         }
 
-        .jdgm-rev__title {
-            font-weight: 900;
-            text-transform: uppercase;
-            color:$dark_blue;
-
-            @include  breakpoint(laptop) {
-                font-size:22px;
-            }
-        }
+        
     }
-
-    
 }
