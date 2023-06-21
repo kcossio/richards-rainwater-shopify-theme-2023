@@ -271,7 +271,8 @@ EASING
     height: 56px;
   }
   .product-desc-icons .icon-grid .icon-item p {
-    font-size: 11px;
+    font-size: 12px;
     margin-top: 14px;
+    line-height: 1.2em;
   }
 }
