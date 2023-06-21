@@ -2052,4 +2052,15 @@ section.newsletter-cloud {
 .jdgm-rev .jdgm-rev__content {
   width: 100%;
   order: 3;
+  padding: 20px;
+  background: #ebebeb;
+}
+.jdgm-rev .jdgm-rev__content .jdgm-rev__title {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+@media (min-width: 1280px) {
+  .jdgm-rev .jdgm-rev__content .jdgm-rev__title {
+    font-size: 22px;
+  }
 }
