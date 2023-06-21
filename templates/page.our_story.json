@@ -175,28 +175,32 @@
         "e22aed70-6c1a-4772-a88e-5da23e0a3436": {
           "type": "icon_item",
           "settings": {
-            "label": "Infinite <br>Water Source",
+            "icon": "shopify:\/\/shop_images\/icon-cloud-blue.svg",
+            "label": "Infinite Water Source",
             "text_color": "light_blue"
           }
         },
         "302ef9b9-ffac-4250-9858-b93e76131fcf": {
           "type": "icon_item",
           "settings": {
-            "label": "Zero-Waste <br> Filtration",
+            "icon": "shopify:\/\/shop_images\/icon-drop-red.svg",
+            "label": "Zero-Waste  Filtration",
             "text_color": "pink"
           }
         },
         "11148169-9ea7-48a3-b29a-2aa6158a1561": {
           "type": "icon_item",
           "settings": {
-            "label": "Renewable <br>Packaging",
+            "icon": "shopify:\/\/shop_images\/icon-packaging-orange.svg",
+            "label": "Renewable Packaging",
             "text_color": "red"
           }
         },
         "2fee22c9-1268-4ee5-9340-be9979d81d95": {
           "type": "icon_item",
           "settings": {
-            "label": "More Water for <br>More People",
+            "icon": "shopify:\/\/shop_images\/icon-person-blue.svg",
+            "label": "More Water for More People",
             "text_color": "medium_blue"
           }
         }
