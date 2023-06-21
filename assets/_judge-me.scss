@@ -4,7 +4,11 @@
     display:flex;
     flex-wrap:wrap;
     justify-content: space-between;
+    border:0px;
 
+    .jdgm-star {
+        color:$light_blue;
+    }
     .jdgm-rev__header {
         width:auto;
         order:1;
@@ -30,6 +34,10 @@
             font-size:16px;
             line-height:1.3em;
             color:$dark_blue;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
 
             @include breakpoint(laptop) {
                 font-size:16px;

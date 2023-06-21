@@ -2040,6 +2040,10 @@ section.newsletter-cloud {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border: 0px;
+}
+.jdgm-rev .jdgm-star {
+  color: #0094DA;
 }
 .jdgm-rev .jdgm-rev__header {
   width: auto;
@@ -2065,6 +2069,9 @@ section.newsletter-cloud {
   font-size: 16px;
   line-height: 1.3em;
   color: #000F44;
+}
+.jdgm-rev .jdgm-rev__content p:last-child {
+  margin-bottom: 0px;
 }
 @media (min-width: 1280px) {
   .jdgm-rev .jdgm-rev__content p {
