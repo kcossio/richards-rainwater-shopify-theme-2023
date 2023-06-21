@@ -158,7 +158,7 @@
           "type": "button",
           "settings": {
             "button_label": "Download our water quality report",
-            "button_link": "#"
+            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0531\/1797\/6738\/files\/2022_Annual_Water_Quality_Report.pdf?v=1687379273"
           }
         }
       },
@@ -176,32 +176,28 @@
           "type": "icon_item",
           "settings": {
             "icon": "shopify:\/\/shop_images\/icon-cloud-blue.svg",
-            "label": "Infinite Water Source",
-            "text_color": "light_blue"
+            "label": "Infinite Water Source"
           }
         },
         "302ef9b9-ffac-4250-9858-b93e76131fcf": {
           "type": "icon_item",
           "settings": {
             "icon": "shopify:\/\/shop_images\/icon-drop-red.svg",
-            "label": "Zero-Waste  Filtration",
-            "text_color": "pink"
+            "label": "Zero-Waste  Filtration"
           }
         },
         "11148169-9ea7-48a3-b29a-2aa6158a1561": {
           "type": "icon_item",
           "settings": {
             "icon": "shopify:\/\/shop_images\/icon-packaging-orange.svg",
-            "label": "Renewable Packaging",
-            "text_color": "red"
+            "label": "Renewable Packaging"
           }
         },
         "2fee22c9-1268-4ee5-9340-be9979d81d95": {
           "type": "icon_item",
           "settings": {
             "icon": "shopify:\/\/shop_images\/icon-person-blue.svg",
-            "label": "More Water for More People",
-            "text_color": "medium_blue"
+            "label": "More Water for More People"
           }
         }
       },
