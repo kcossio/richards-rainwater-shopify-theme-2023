@@ -1,0 +1,20 @@
+// Judge.me customizations
+
+.jdgm-rev {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+
+    .jdgm-rev__header {
+        width:auto;
+        order:1;
+    }
+    .jdgm-rev__actions {
+        width:auto;
+        order:2;
+    }
+    .jdgm-rev__content {
+        width:100%;
+        order:3;
+    }
+}
