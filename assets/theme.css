@@ -2049,11 +2049,26 @@ section.newsletter-cloud {
   width: auto;
   order: 2;
 }
+.jdgm-rev .jdgm-rev__actions .jdgm-rev__thumb-btn {
+  color: #ebebeb;
+}
+.jdgm-rev .jdgm-rev__actions .jdgm-rev__thumb-count {
+  font-size: 11px;
+}
 .jdgm-rev .jdgm-rev__content {
   width: 100%;
   order: 3;
   padding: 20px;
   background: #f4f4f4;
+}
+.jdgm-rev .jdgm-rev__content p {
+  font-size: 16px;
+  line-height: 1.3em;
+}
+@media (min-width: 1280px) {
+  .jdgm-rev .jdgm-rev__content p {
+    font-size: 16px;
+  }
 }
 .jdgm-rev .jdgm-rev__content .jdgm-rev__title {
   font-weight: 900;
