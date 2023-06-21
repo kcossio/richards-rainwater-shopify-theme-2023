@@ -267,6 +267,11 @@ section.rainbow-banner.grid-banner .icon-grid .icon-item {
     justify-content: flex-end;
   }
 }
+@media (min-width: 1440px) {
+  section.rainbow-banner.grid-banner .icon-grid .icon-item {
+    width: 20%;
+  }
+}
 section.rainbow-banner.grid-banner .icon-grid .icon-item img {
   max-height: 52px;
   max-width: 60px;

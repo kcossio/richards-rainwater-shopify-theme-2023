@@ -101,6 +101,9 @@ section.rainbow-banner {
                     flex-direction:column;
                     justify-content: flex-end;
                 }
+                @include breakpoint(desktop) {
+                    width:20%;
+                }
         
                 img {
                     max-height:52px;
