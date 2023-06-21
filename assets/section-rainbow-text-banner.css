@@ -261,6 +261,7 @@ section.rainbow-banner.grid-banner .icon-grid .icon-item {
 @media (min-width: 768px) {
   section.rainbow-banner.grid-banner .icon-grid .icon-item {
     width: 24%;
+    align-items: stretch;
   }
 }
 section.rainbow-banner.grid-banner .icon-grid .icon-item img {
@@ -275,6 +276,8 @@ section.rainbow-banner.grid-banner .icon-grid .icon-item img {
   section.rainbow-banner.grid-banner .icon-grid .icon-item img {
     max-height: 86px;
     max-width: 100px;
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (min-width: 1280px) {
