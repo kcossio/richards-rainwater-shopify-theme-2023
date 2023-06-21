@@ -430,6 +430,7 @@ section.rainwater-model-banner h3 {
   font-size: 32px;
   font-weight: 900;
   margin: 1.2em 0px;
+  line-height: 1.2em;
 }
 @media (min-width: 1280px) {
   section.rainwater-model-banner h3 {
