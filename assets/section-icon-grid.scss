@@ -39,10 +39,10 @@
             line-height:1em;
 
             @include breakpoint(tablet) {
-                font-size:22px;
+                font-size:11px;
             }
             @include breakpoint(laptop) {
-                font-size:30px;
+                font-size:11px;
             }
         }
     }
@@ -103,8 +103,9 @@
                     height:56px;
                 }
                 p {
-                    font-size:15px;
+                    font-size:11px;
                     margin-top:14px;
+                    
                 }
             }
         }

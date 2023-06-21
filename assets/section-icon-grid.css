@@ -211,12 +211,12 @@ EASING
 }
 @media (min-width: 768px) {
   .icon-grid .icon-item p {
-    font-size: 22px;
+    font-size: 11px;
   }
 }
 @media (min-width: 1280px) {
   .icon-grid .icon-item p {
-    font-size: 30px;
+    font-size: 11px;
   }
 }
 
@@ -271,7 +271,7 @@ EASING
     height: 56px;
   }
   .product-desc-icons .icon-grid .icon-item p {
-    font-size: 15px;
+    font-size: 11px;
     margin-top: 14px;
   }
 }
