@@ -2049,9 +2049,20 @@ section.newsletter-cloud {
   width: auto;
   order: 1;
 }
+.jdgm-rev-widg .jdgm-rev .jdgm-rev__header .jdgm-row-rating {
+  display: flex;
+  align-items: center;
+}
+.jdgm-rev-widg .jdgm-rev .jdgm-rev__header .jdgm-row-rating .jdgm-rev__rating {
+  margin-right: 8px;
+}
 .jdgm-rev-widg .jdgm-rev .jdgm-rev__actions {
   width: auto;
   order: 2;
+}
+.jdgm-rev-widg .jdgm-rev .jdgm-rev__actions .jdgm-rev__votes-inner {
+  display: flex;
+  align-items: center;
 }
 .jdgm-rev-widg .jdgm-rev .jdgm-rev__actions .jdgm-rev__thumb-btn {
   color: #ebebeb;

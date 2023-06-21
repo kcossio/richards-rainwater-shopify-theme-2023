@@ -11,14 +11,28 @@
         .jdgm-star {
             color:$light_blue;
         }
+        
         .jdgm-rev__header {
             width:auto;
             order:1;
+
+            .jdgm-row-rating {
+                display:flex;
+                align-items: center;
+
+                .jdgm-rev__rating {
+                    margin-right:8px;
+                }
+            }
         }
         .jdgm-rev__actions {
             width:auto;
             order:2;
 
+            .jdgm-rev__votes-inner {
+                display:flex;
+                align-items: center;
+            }
             .jdgm-rev__thumb-btn {
                 color:$grey;
             }
