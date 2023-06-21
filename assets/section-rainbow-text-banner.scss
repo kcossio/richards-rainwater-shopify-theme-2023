@@ -82,6 +82,7 @@ section.rainbow-banner {
         
             @include breakpoint(tablet) {
                 margin:84px 0px;
+                align-items:stretch;
             }
         
             .inner {
@@ -92,10 +93,13 @@ section.rainbow-banner {
         
                 width:48%;
                 text-align:center;
+                
 
                 @include breakpoint(tablet) {
                     width:24%;
-                    align-items:stretch;
+                    display:flex;
+                    flex-direction:column;
+                    justify-content: flex-end;
                 }
         
                 img {
@@ -109,8 +113,6 @@ section.rainbow-banner {
                     @include breakpoint(tablet) {
                         max-height:86px;
                         max-width:100px;
-                        display:flex;
-                        flex-direction:column;
                     }
 
                     @include breakpoint(laptop) {

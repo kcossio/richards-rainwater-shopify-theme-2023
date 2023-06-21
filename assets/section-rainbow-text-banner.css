@@ -249,6 +249,7 @@ section.rainbow-banner.grid-banner .icon-grid {
 @media (min-width: 768px) {
   section.rainbow-banner.grid-banner .icon-grid {
     margin: 84px 0px;
+    align-items: stretch;
   }
 }
 section.rainbow-banner.grid-banner .icon-grid .inner {
@@ -261,7 +262,9 @@ section.rainbow-banner.grid-banner .icon-grid .icon-item {
 @media (min-width: 768px) {
   section.rainbow-banner.grid-banner .icon-grid .icon-item {
     width: 24%;
-    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 }
 section.rainbow-banner.grid-banner .icon-grid .icon-item img {
@@ -276,8 +279,6 @@ section.rainbow-banner.grid-banner .icon-grid .icon-item img {
   section.rainbow-banner.grid-banner .icon-grid .icon-item img {
     max-height: 86px;
     max-width: 100px;
-    display: flex;
-    flex-direction: column;
   }
 }
 @media (min-width: 1280px) {
