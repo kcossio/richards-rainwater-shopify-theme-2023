@@ -2036,6 +2036,16 @@ section.newsletter-cloud {
   }
 }
 
+.jdgm-rev-widg .jdgm-rev-widg__title {
+  font-weight: 900;
+  text-align: left;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .jdgm-rev-widg .jdgm-rev-widg__title {
+    font-size: 37.5px;
+  }
+}
 .jdgm-rev-widg .jdgm-rev {
   display: flex;
   flex-wrap: wrap;
