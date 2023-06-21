@@ -2062,6 +2062,11 @@ section.newsletter-cloud {
     height: 25px;
   }
 }
+@media (min-width: 768px) {
+  .jdgm-rev-widg .jdgm-rev-widg__summary {
+    align-items: flex-start;
+  }
+}
 .jdgm-rev-widg .jdgm-rev {
   display: flex;
   flex-wrap: wrap;

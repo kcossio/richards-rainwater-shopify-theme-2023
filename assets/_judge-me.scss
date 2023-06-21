@@ -29,6 +29,13 @@
         }
     }
 
+    .jdgm-rev-widg__summary {
+
+        @include breakpoint(tablet) {
+            align-items:flex-start;
+        }
+    }
+
     .jdgm-rev {
         display:flex;
         flex-wrap:wrap;
