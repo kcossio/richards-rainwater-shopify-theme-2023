@@ -19,7 +19,7 @@
 
     .icon-item {
 
-        width:33%;
+        width:24%;
         text-align:center;
 
         img {
@@ -33,12 +33,15 @@
             }
         }
         p {
-            margin:24px 0px 0px 0px;
+            margin:16px 0px 0px 0px;
             font-weight:900;
-            font-size:12px;
+            font-size:11px;
             line-height:1em;
 
             @include breakpoint(tablet) {
+                font-size:22px;
+            }
+            @include breakpoint(laptop) {
                 font-size:30px;
             }
         }
