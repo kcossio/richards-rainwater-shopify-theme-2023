@@ -91,7 +91,7 @@ section.rainbow-banner {
         
             .icon-item {
         
-                width:48%;
+                width:49.8%;
                 text-align:center;
                 padding:0px 30px 30px 30px;
                 
@@ -131,13 +131,19 @@ section.rainbow-banner {
                     }
                 }
                 p {
-                    margin:24px 0px 0px 0px;
+                    margin:16px 0px 0px 0px;
                     font-weight:900;
                     font-size:12px;
                     line-height:1em;
         
                     @include breakpoint(tablet) {
+                        font-size:22px;
+                        margin:20px 0px 0px 0px;
+                    }
+
+                    @include breakpoint(laptop) {
                         font-size:30px;
+                        margin:24px 0px 0px 0px;
                     }
                 }
             }
