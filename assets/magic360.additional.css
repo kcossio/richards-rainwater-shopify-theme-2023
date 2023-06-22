@@ -38,12 +38,15 @@ div.MagicToolboxSlides .Magic360-container::after {
 }
 
 
+/*
 .MagicToolboxContainer.thumbnail-size-pico .MagicToolboxSelectorsContainer a img { height: 16px;width: 16px; }
 .MagicToolboxContainer.thumbnail-size-icon .MagicToolboxSelectorsContainer a img { height: 32px;width: 32px; }
 .MagicToolboxContainer.thumbnail-size-thumb .MagicToolboxSelectorsContainer a img { height: 50px;width: 50px; }
 .MagicToolboxContainer.thumbnail-size-small .MagicToolboxSelectorsContainer a img { height: 100px;width: 100px; }
 .MagicToolboxContainer.thumbnail-size-compact .MagicToolboxSelectorsContainer a img { height: 160px;width: 160px; }
 .MagicToolboxContainer.thumbnail-size-medium .MagicToolboxSelectorsContainer a img { height: 240px;width: 240px; }
+*/
+/* Above hidden as it broke in Safari with slick slider setup */
 
 div.MagicToolboxSelectorsContainer { 
     margin: 10px 0;
