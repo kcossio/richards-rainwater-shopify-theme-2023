@@ -51,12 +51,28 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "e0d60f5a-f874-4a1f-bef4-62b4b5397861": {
+      "type": "video",
+      "settings": {
+        "heading": "Richard's History",
+        "heading_size": "h0",
+        "enable_video_looping": false,
+        "video_url": "https:\/\/www.youtube.com\/watch?v=i3WFvAYSDUI",
+        "cover_image": "shopify:\/\/shop_images\/Richard_s_Rainwater_Intro_-_Video_Hero_Image.jpg",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "29dafaa6-ce0f-4508-839e-be50368f39c4",
     "5e72349e-4f3b-49c3-825b-2d8b2f381543",
-    "dbefbc3c-c94f-46df-b6a8-1baa9ecbfb4b"
+    "dbefbc3c-c94f-46df-b6a8-1baa9ecbfb4b",
+    "e0d60f5a-f874-4a1f-bef4-62b4b5397861"
   ]
 }
