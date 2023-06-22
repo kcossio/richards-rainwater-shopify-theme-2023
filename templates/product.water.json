@@ -253,8 +253,19 @@
     },
     "c8b0a5d8-fdc6-482d-bde3-65ecc91bcfc4": {
       "type": "banner-hero-image",
+      "blocks": {
+        "8ae95ed8-4887-4aec-82dd-e3b21755874f": {
+          "type": "product_item",
+          "settings": {
+            "product_name": "richards-still-rainwater-16oz-24-pack",
+            "hero_image": "shopify:\/\/shop_images\/pouring-still-water-into-glass.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "8ae95ed8-4887-4aec-82dd-e3b21755874f"
+      ],
       "settings": {
-        "hero_image": "shopify:\/\/shop_images\/pouring-still-water-into-glass.jpg"
       }
     },
     "1686790801dd4aae7f": {
