@@ -260,10 +260,18 @@
             "product_name": "richards-still-rainwater-16oz-24-pack",
             "hero_image": "shopify:\/\/shop_images\/pouring-still-water-into-glass.jpg"
           }
+        },
+        "12ee88f1-6741-4910-adbf-b02809330068": {
+          "type": "product_item",
+          "settings": {
+            "product_name": "richards-sparkling-rainwater-24-pk-bottles",
+            "hero_image": "shopify:\/\/shop_images\/hero-banner-sparkling-water.jpg"
+          }
         }
       },
       "block_order": [
-        "8ae95ed8-4887-4aec-82dd-e3b21755874f"
+        "8ae95ed8-4887-4aec-82dd-e3b21755874f",
+        "12ee88f1-6741-4910-adbf-b02809330068"
       ],
       "settings": {
       }
