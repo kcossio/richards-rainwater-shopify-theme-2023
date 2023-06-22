@@ -1,5 +1,6 @@
 {{ 'section-rainbow-text-banner.css' | asset_url | stylesheet_tag }}
 
+{%- for block in section.blocks -%}
 {%- if block.settings.product_name == product.handle -%}
 
 <div class="inner">
@@ -23,6 +24,7 @@
   {% ## ----- End Clouds ------ -## %}
 
 {%- endif -%}
+{%- endfor -%}
 
 
 
