@@ -8,21 +8,6 @@
         "padding_bottom": 36
       }
     },
-    "destini": {
-      "type": "destini_integration",
-      "settings": {
-        "destini_intro_text": "<p>Enter your zip code to find Richard’s Rainwater in <strong>over 2,000 grocery stores<\/strong>!<br\/><br\/><strong>Prefer Grocery Delivery? <\/strong>Click the “Buy Online” button.<\/p>"
-      }
-    },
-    "96963313-bc83-4314-b735-f8516c3d951f": {
-      "type": "stores-logo-slider",
-      "settings": {
-        "heading": "",
-        "subheading": "",
-        "call_to_action_button_link": "",
-        "call_to_action_button_label": ""
-      }
-    },
     "aisle": {
       "type": "aisle_integration",
       "blocks": {
@@ -53,16 +38,31 @@
       "settings": {
         "api_key": "U2FsdGVkX1\/cUKXlTZM475xV1n8hzmOOkTMl40PpUe5ngWdE8MF6HN5mUOoyrddO",
         "campaign_phone_number": "2762778410",
-        "aisle_heading": "FREE 12-PACK",
+        "aisle_heading": "want a FREE 12-Pack?",
         "aisle_intro_text": "<p>Enter your phone number, purchase a 12-pack case of Richard’s at your local retailer and we’ll Venmo or Paypal you back for the cost of the case!<\/p>",
         "fine_print": "<p>You will receive recurring automated marketing text messages at the phone number provided. Consent is not a condition to purchase. Msg & data rates may apply. Msg frequency varies. Reply HELP for help and STOP to cancel. View our <a href=\"\/policies\/terms-of-service\" target=\"_blank\" title=\"Terms of Service\">Terms of Service<\/a> and <a href=\"\/policies\/privacy-policy\" target=\"_blank\" title=\"Privacy Policy\">Privacy Policy<\/a>.<\/p>"
+      }
+    },
+    "destini": {
+      "type": "destini_integration",
+      "settings": {
+        "destini_intro_text": "<p>Enter your zip code to find Richard’s Rainwater in <strong>over 2,000 grocery stores<\/strong>!<br\/><br\/><strong>Prefer Grocery Delivery? <\/strong>Click the “Buy Online” button.<\/p>"
+      }
+    },
+    "96963313-bc83-4314-b735-f8516c3d951f": {
+      "type": "stores-logo-slider",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "call_to_action_button_link": "",
+        "call_to_action_button_label": ""
       }
     }
   },
   "order": [
     "main",
+    "aisle",
     "destini",
-    "96963313-bc83-4314-b735-f8516c3d951f",
-    "aisle"
+    "96963313-bc83-4314-b735-f8516c3d951f"
   ]
 }
