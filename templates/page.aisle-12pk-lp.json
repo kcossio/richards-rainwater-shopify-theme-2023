@@ -43,8 +43,18 @@
         "fine_print": "<p>You will receive recurring automated marketing text messages at the phone number provided. Consent is not a condition to purchase. Msg & data rates may apply. Msg frequency varies. Reply HELP for help and STOP to cancel. View our <a href=\"\/policies\/terms-of-service\" target=\"_blank\" title=\"Terms of Service\">Terms of Service<\/a> and <a href=\"\/policies\/privacy-policy\" target=\"_blank\" title=\"Privacy Policy\">Privacy Policy<\/a>.<\/p>"
       }
     },
+    "8c2a1e2f-d027-4e77-b40c-4a58215fe01e": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<script src=\"\/\/destinilocators.com\/richardsrainwater\/site\/install\/\"><\/script>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "destini": {
       "type": "destini_integration",
+      "disabled": true,
       "settings": {
         "destini_intro_text": "<p>Enter your zip code to find Richard’s Rainwater in <strong>over 2,000 grocery stores<\/strong>!<br\/><br\/><strong>Prefer Grocery Delivery? <\/strong>Click the “Buy Online” button.<\/p>"
       }
@@ -62,6 +72,7 @@
   "order": [
     "main",
     "aisle",
+    "8c2a1e2f-d027-4e77-b40c-4a58215fe01e",
     "destini",
     "96963313-bc83-4314-b735-f8516c3d951f"
   ]
