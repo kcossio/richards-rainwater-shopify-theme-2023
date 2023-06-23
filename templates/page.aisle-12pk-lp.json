@@ -1,0 +1,68 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "destini": {
+      "type": "destini_integration",
+      "settings": {
+        "destini_intro_text": "<p>Enter your zip code to find Richard’s Rainwater in <strong>over 2,000 grocery stores<\/strong>!<br\/><br\/><strong>Prefer Grocery Delivery? <\/strong>Click the “Buy Online” button.<\/p>"
+      }
+    },
+    "96963313-bc83-4314-b735-f8516c3d951f": {
+      "type": "stores-logo-slider",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "call_to_action_button_link": "",
+        "call_to_action_button_label": ""
+      }
+    },
+    "aisle": {
+      "type": "aisle_integration",
+      "blocks": {
+        "64a1a635-e6bc-4cb0-a051-7d7d9b7176cc": {
+          "type": "step",
+          "settings": {
+            "text": "<p>Purchase a bottle or can of Richard’s at your local retailer.<\/p>"
+          }
+        },
+        "8ec0e08e-2b51-4a85-97c1-19a44b0894e0": {
+          "type": "step",
+          "settings": {
+            "text": "<p>Text us a picture of your receipt.<\/p>"
+          }
+        },
+        "b72a5bcc-4eac-4ecf-a608-778491033ff1": {
+          "type": "step",
+          "settings": {
+            "text": "<p>We’ll Venmo or PayPal you cash back within 24 hours.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "64a1a635-e6bc-4cb0-a051-7d7d9b7176cc",
+        "8ec0e08e-2b51-4a85-97c1-19a44b0894e0",
+        "b72a5bcc-4eac-4ecf-a608-778491033ff1"
+      ],
+      "settings": {
+        "api_key": "U2FsdGVkX1+G1iQuk+1fbDluy\/LxlfYSeQSnuczV+kyY0wwvY8dzJ3sNoJHUv9Fo",
+        "campaign_phone_number": "2673884764",
+        "aisle_heading": "Can we buy you a drink?",
+        "aisle_intro_text": "<p>Enter your phone number, purchase a single bottle or can of Richard’s at your local retailer and we’ll Venmo or Paypal you back for the cost of one.<\/p>",
+        "fine_print": "<p>I agree to receive recurring automated marketing text messages (e.g. cart reminders) at the phone number provided. Consent is not a condition to purchase. Msg & data rates may apply. Msg frequency varies. Reply HELP for help and STOP to cancel. View our <a href=\"\/policies\/terms-of-service\" target=\"_blank\" title=\"Terms of Service\">Terms of Service<\/a> and <a href=\"\/policies\/privacy-policy\" target=\"_blank\" title=\"Privacy Policy\">Privacy Policy<\/a>.<\/p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "destini",
+    "96963313-bc83-4314-b735-f8516c3d951f",
+    "aisle"
+  ]
+}
