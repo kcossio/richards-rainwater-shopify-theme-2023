@@ -1465,8 +1465,7 @@ button.shopify-payment-button__button--unbranded {
 
 .button,
 .shopify-challenge__button,
-.customer button,
-#rc_login a {
+.customer button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -1517,12 +1516,46 @@ button.shopify-payment-button__button--unbranded {
 
 }
 
+// ------- Recharge ------ //
 #rc_login {
   margin:80px auto 100px auto !important;
 }
 #rc_login a {
   border-radius:50px;
 }
+#rc_login a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  padding: 1.8rem 3rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: $white;
+  background:$light_blue;
+  transition: all .3s ease 0s;
+  -webkit-appearance: none;
+  appearance: none;
+  z-index:2;
+
+  @include breakpoint(tablet) {
+    padding:1.8rem 4rem
+  }
+
+  font-size:18px;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  line-height:1.1em;
+  font-weight:900;
+
+  &:hover {
+    background:$medium_blue;
+  }
+
+  
+
+}
+// --------- End Recharge ------- //
 
 .button:focus-visible,
 .button:focus,
