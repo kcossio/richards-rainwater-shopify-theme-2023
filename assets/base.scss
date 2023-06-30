@@ -1465,7 +1465,8 @@ button.shopify-payment-button__button--unbranded {
 
 .button,
 .shopify-challenge__button,
-.customer button {
+.customer button
+#rc_login a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
