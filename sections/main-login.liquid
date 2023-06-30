@@ -161,6 +161,11 @@
   {%- endif -%}
 </div>
 
+<script>
+  jQuery(window).on('load',function () {
+    jQuery('#rc_login').find('a').addClass('button');
+  });
+</script>
 
 {% schema %}
 {
