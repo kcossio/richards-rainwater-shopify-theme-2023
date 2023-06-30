@@ -1637,6 +1637,14 @@ button.shopify-payment-button__button--unbranded {
   }
 }
 
+#rc_login {
+  margin-top: 60px;
+}
+
+#rc_login a {
+  border-radius: 50px;
+}
+
 .button:focus-visible,
 .button:focus,
 .button.focused,
