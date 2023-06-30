@@ -14,7 +14,7 @@
   }
 {%- endstyle -%}
 
-<div class="customer login section-{{ section.id }}-padding">
+<section class="customer login section-{{ section.id }}-padding">
   <h1 id="recover" tabindex="-1">
     {{ 'customer.recover_password.title' | t }}
   </h1>
@@ -70,7 +70,7 @@
   <h1 id="login" class="login-title" tabindex="-1">
     {{ 'customer.login_page.title' | t }}
   </h1>
-  <div>
+  <div class="login-form-wrap">
     {%- if recover_success == true -%}
       <h3 class="form__message" tabindex="-1" autofocus>
         <svg aria-hidden="true" focusable="false" viewBox="0 0 13 13">
@@ -145,10 +145,10 @@
         {{ 'customer.login_page.create_account' | t }}
       </a>
     {%- endform -%}
-  </div>
+  </div><!--End login-form-wrap-->
 
   {%- if shop.checkout.guest_login -%}
-    <div>
+    <div class="login-guest">
       <hr>
       <h2>{{ 'customer.login_page.guest_title' | t }}</h2>
 
