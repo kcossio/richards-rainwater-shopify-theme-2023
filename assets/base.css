@@ -1566,7 +1566,8 @@ button.shopify-payment-button__button--unbranded {
 
 .button,
 .shopify-challenge__button,
-.customer button #rc_login a {
+.customer button,
+#rc_login a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -1590,40 +1591,47 @@ button.shopify-payment-button__button--unbranded {
 @media (min-width: 768px) {
   .button,
   .shopify-challenge__button,
-  .customer button #rc_login a {
+  .customer button,
+  #rc_login a {
     padding: 1.8rem 4rem;
   }
 }
 .button:hover,
 .shopify-challenge__button:hover,
-.customer button #rc_login a:hover {
+.customer button:hover,
+#rc_login a:hover {
   background: #0094DA;
 }
 .button.light,
 .shopify-challenge__button.light,
-.customer button #rc_login a.light {
+.customer button.light,
+#rc_login a.light {
   background: #0094DA;
   opacity: 1;
 }
 .button.light:hover,
 .shopify-challenge__button.light:hover,
-.customer button #rc_login a.light:hover {
+.customer button.light:hover,
+#rc_login a.light:hover {
   background: #0040A8;
 }
 .button.dark,
 .shopify-challenge__button.dark,
-.customer button #rc_login a.dark {
+.customer button.dark,
+#rc_login a.dark {
   background: #000F44;
 }
 .button.dark:hover,
 .shopify-challenge__button.dark:hover,
-.customer button #rc_login a.dark:hover {
+.customer button.dark:hover,
+#rc_login a.dark:hover {
   background: #0040A8;
 }
 @media (min-width: 768px) {
   .button.lg,
   .shopify-challenge__button.lg,
-  .customer button #rc_login a.lg {
+  .customer button.lg,
+  #rc_login a.lg {
     font-size: 22px;
     padding: 2.8rem 4rem;
   }
