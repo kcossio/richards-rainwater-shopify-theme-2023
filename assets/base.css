@@ -1638,7 +1638,7 @@ button.shopify-payment-button__button--unbranded {
 }
 
 #rc_login {
-  margin-top: 60px;
+  margin: 80px auto 100px auto !important;
 }
 
 #rc_login a {
