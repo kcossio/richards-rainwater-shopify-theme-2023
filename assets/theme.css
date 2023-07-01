@@ -789,6 +789,10 @@ EASING
   left: 0px;
   top: -1px;
 }
+.clouds.top .scrub {
+  height: 101%;
+  top: -1%;
+}
 @keyframes primary {
   from {
     left: 0%;
