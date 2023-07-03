@@ -5,7 +5,7 @@
   {%- # Write your logic here -%} 
 
 
-  <div class="home-audio-player off fade-in-left">
+  <div class="home-audio-player off">
     <button id="play-audio" class="play-audio">
       <img class="note off" src="{{ 'note-grey.svg' | asset_url }}" width="49" height="46" role="presentation" alt="note" />
       <img class="note on" src="{{ 'note-rainbow.svg' | asset_url }}" width="49" height="46" role="presentation" alt="note" />
@@ -54,7 +54,26 @@
       console.log('clicked close');
     });
 
+    gsap.set(".home-audio-player", { xPercent:-100, opacity:1 });
+    // ---------------- Mobile Menu Functions ---------- //
+    window.revealPlayer = function() {
+      // GSAP tween to stretch the loading screen across the whole screen
+      
+      var nav_tl = gsap.timeline();
+      
+      return nav_tl
+          .to(".home-audio-player", {
+            opacity: 1,
+            xPercent: 0,
+            duration: 0.75,
+            delay: 0.75
+          });
+    }
+    revealPlayer();
+
   </script>
+
+
 
 {%- endif -%}
 
