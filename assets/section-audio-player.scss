@@ -1,7 +1,6 @@
 // Audio Player
 @import "variables";
 @import "mixins";
-@import "fonts";
 
 
 .home-audio-player {
@@ -18,7 +17,7 @@
     border-radius:18px;
     padding:10px 32px 13px 29px;
     transform:translate(88px,0px);
-    transition:all .3s ease 0s;
+    //transition:all .3s ease 0s;
 
     @include breakpoint(tablet) {
         height:80px;
