@@ -259,6 +259,13 @@ EASING
 .home-audio-player.on button img.off {
   opacity: 0;
 }
+.home-audio-player.dark {
+  background: #000F44;
+  border: 1px solid #000F44;
+}
+.home-audio-player.dark button img.off {
+  filter: contrast(0) sepia(100%) hue-rotate(162deg) brightness(0.34) saturate(10);
+}
 .home-audio-player button#close-player {
   display: block;
   width: 13px;
