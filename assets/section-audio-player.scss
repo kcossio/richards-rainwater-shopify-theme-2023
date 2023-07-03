@@ -9,20 +9,22 @@
     flex-wrap:wrap;
     position:fixed;
     z-index:10;
-    right:100%;
+    left:0px;
     bottom:15%;
     height:69px;
     width:108px;
     background:$white;
     border:1px solid #C8C8C8;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
     border-radius:18px;
     padding:10px 32px 13px 29px;
-    transform:translate(88px,0px);
+    //transform:translate(88px,0px);
 
     @include breakpoint(tablet) {
         height:80px;
         width:228px;
-        transform:translate(208px,0px);
+        //transform:translate(208px,0px);
         padding:23px 36px 23px 50px;
     }
 

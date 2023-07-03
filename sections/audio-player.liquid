@@ -54,7 +54,7 @@
       console.log('clicked close');
     });
 
-    //gsap.set(".home-audio-player", { xPercent:-100, opacity:1 });
+    gsap.set(".home-audio-player", { xPercent:-100, opacity:1 });
     // ---------------- Mobile Menu Functions ---------- //
     window.revealPlayer = function() {
       // GSAP tween to stretch the loading screen across the whole screen
@@ -66,10 +66,10 @@
             opacity: 1,
             xPercent: 0,
             duration: 0.75,
-            delay: 3
+            delay: 4
           });
     }
-    //window.addEventListener("DOMContentLoaded", revealPlayer);
+    window.addEventListener("DOMContentLoaded", revealPlayer);
 
   </script>
 
