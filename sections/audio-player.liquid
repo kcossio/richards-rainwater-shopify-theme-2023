@@ -65,8 +65,9 @@
           .to(".home-audio-player", {
             opacity: 1,
             xPercent: 0,
-            duration: 0.75,
-            delay: 4
+            duration: 0.5,
+            delay: 1,
+            ease: "circ.inOut"
           });
     }
     window.addEventListener("DOMContentLoaded", revealPlayer);
