@@ -58,6 +58,8 @@
 
 .article-card__info {
   padding-top: 0.4rem;
+  font-weight:600;
+  letter-spacing:.5px;
 }
 
 .article-card__footer {
