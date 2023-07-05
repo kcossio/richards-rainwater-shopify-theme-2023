@@ -176,6 +176,11 @@ EASING
 form.form-contact-form .field {
   flex-wrap: wrap;
 }
+form.form-contact-form .field span {
+  display: block;
+  line-height: 1em;
+  font-weight: 400;
+}
 form.form-contact-form .field::after {
   box-shadow: none !important;
   border-radius: 0px;
