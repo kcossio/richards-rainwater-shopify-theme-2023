@@ -15,7 +15,7 @@
       </div>
       <ul class="form-status-list caption-large" role="list">
         <li>
-          <a href="#ContactForm-email" class="link">
+          <a href="#ContactForm-email-main" class="link">
             {{ form.errors.translated_fields.email | capitalize }}
             {{ form.errors.messages.email }}
           </a>
@@ -41,7 +41,7 @@
         <input
           autocomplete="email"
           type="email"
-          id="ContactForm-email"
+          id="ContactForm-email-main"
           class="field__input"
           name="contact[email]"
           spellcheck="false"
@@ -50,16 +50,16 @@
           aria-required="true"
           {% if form.errors contains 'email' %}
             aria-invalid="true"
-            aria-describedby="ContactForm-email-error"
+            aria-describedby="ContactForm-email-main-error"
           {% endif %}
           placeholder="Email Address"
         >
-        <label class="field__label" for="ContactForm-email">
+        <label class="field__label" for="ContactForm-email-main">
           Email Address
           <span aria-hidden="true">*</span></label
         >
         {%- if form.errors contains 'email' -%}
-          <small class="contact__field-error" id="ContactForm-email-error">
+          <small class="contact__field-error" id="ContactForm-main-email-error">
             <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
             <span class="form__message">
               {%- render 'icon-error' -%}
@@ -108,7 +108,7 @@
       </textarea>
       <label class="form__label field__label" for="ContactForm-body">Message</label>
     </div><!--End field-->
-    
+
     <div class="contact__button">
       <button type="submit" class="button">
         {{ 'templates.contact.form.send' | t }}

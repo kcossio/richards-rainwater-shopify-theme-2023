@@ -184,7 +184,7 @@ form.form-contact-form .field__input {
   border-radius: 0px;
 }
 form.form-contact-form .field__input:active, form.form-contact-form .field__input:focus {
-  border-bottom: 1px solid #FFA500;
+  border-bottom: 1px solid #0094DA;
 }
 
 .contact img {
