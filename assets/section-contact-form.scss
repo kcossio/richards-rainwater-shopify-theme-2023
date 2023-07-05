@@ -29,12 +29,12 @@ form.form-contact-form {
       order:2;
       width:100%;
       box-shadow:none !important;
-      border-bottom:2px solid $dark_blue;
+      border-bottom:1.5px solid $dark_blue;
       border-radius:0px;
   
       &:active,
       &:focus {
-        border-bottom:2px solid $light_blue;
+        border-bottom:1.5px solid $light_blue;
       }
     }
     .label {
@@ -60,7 +60,8 @@ form.form-contact-form {
 }
 .contact__fields + .contact__fields,
 .contact__fields + .field,
-.full + .full {
+.full + .full,
+.field + .contact__fields {
   margin-top:44px;
 
   @include breakpoint(laptop) {
@@ -169,7 +170,7 @@ section.section-contact-form {
 
   .select2-container {
     width:100% !important;
-    border-bottom:1px solid $dark_blue;
+    border-bottom:1.5px solid $dark_blue;
 
     &.select2-container--focus {
     }
@@ -186,7 +187,7 @@ select.form-select,
       font-size:11px;
       color:$dark_blue;
       border-radius:50px !important;
-      border-bottom:1px solid $dark_blue;
+      border-bottom:1.5px solid $dark_blue;
       padding: 15px 0px !important;
       text-align:left;
       letter-spacing:0px;

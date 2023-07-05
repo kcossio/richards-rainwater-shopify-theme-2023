@@ -193,11 +193,11 @@ form.form-contact-form .field .field__input {
   order: 2;
   width: 100%;
   box-shadow: none !important;
-  border-bottom: 2px solid #000F44;
+  border-bottom: 1.5px solid #000F44;
   border-radius: 0px;
 }
 form.form-contact-form .field .field__input:active, form.form-contact-form .field .field__input:focus {
-  border-bottom: 2px solid #0094DA;
+  border-bottom: 1.5px solid #0094DA;
 }
 form.form-contact-form .field .label {
   width: 100%;
@@ -220,13 +220,15 @@ form.form-contact-form .field .contact__field-error {
 
 .contact__fields + .contact__fields,
 .contact__fields + .field,
-.full + .full {
+.full + .full,
+.field + .contact__fields {
   margin-top: 44px;
 }
 @media (min-width: 1280px) {
   .contact__fields + .contact__fields,
   .contact__fields + .field,
-  .full + .full {
+  .full + .full,
+  .field + .contact__fields {
     margin-top: 50px;
   }
 }
@@ -326,7 +328,7 @@ section.section-contact-form .select-wrap {
 }
 .select-wrap .select2-container {
   width: 100% !important;
-  border-bottom: 1px solid #000F44;
+  border-bottom: 1.5px solid #000F44;
 }
 select.form-select,
 .select2-container--default .select2-selection--single {
@@ -340,7 +342,7 @@ select.form-select,
   font-size: 11px;
   color: #000F44;
   border-radius: 50px !important;
-  border-bottom: 1px solid #000F44;
+  border-bottom: 1.5px solid #000F44;
   padding: 15px 0px !important;
   text-align: left;
   letter-spacing: 0px;
