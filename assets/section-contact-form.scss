@@ -33,10 +33,10 @@ form.form-contact-form {
       order:1;
       color:$dark_blue;
       font-weight:900;
-      font-size:22px;
+      font-size:16px;
 
       @include breakpoint(desktop) {
-        font-size:26px;
+        font-size:19.5px;
       }
     }
 

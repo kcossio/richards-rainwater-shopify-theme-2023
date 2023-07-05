@@ -197,11 +197,11 @@ form.form-contact-form .field .label {
   order: 1;
   color: #000F44;
   font-weight: 900;
-  font-size: 22px;
+  font-size: 16px;
 }
 @media (min-width: 1440px) {
   form.form-contact-form .field .label {
-    font-size: 26px;
+    font-size: 19.5px;
   }
 }
 form.form-contact-form .field .contact__field-error {
