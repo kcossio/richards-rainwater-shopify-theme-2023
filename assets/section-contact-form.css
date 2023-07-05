@@ -206,6 +206,7 @@ form.form-contact-form .field .label {
   color: #000F44;
   font-weight: 900;
   font-size: 16px;
+  line-height: 1.2em;
 }
 @media (min-width: 1440px) {
   form.form-contact-form .field .label {
@@ -215,6 +216,19 @@ form.form-contact-form .field .label {
 form.form-contact-form .field .contact__field-error {
   width: 100%;
   order: 3;
+}
+
+.contact__fields + .contact__fields,
+.contact__fields + .field,
+.full + .full {
+  margin-top: 44px;
+}
+@media (min-width: 1280px) {
+  .contact__fields + .contact__fields,
+  .contact__fields + .field,
+  .full + .full {
+    margin-top: 50px;
+  }
 }
 
 .contact img {

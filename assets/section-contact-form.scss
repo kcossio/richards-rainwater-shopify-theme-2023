@@ -44,6 +44,7 @@ form.form-contact-form {
       color:$dark_blue;
       font-weight:900;
       font-size:16px;
+      line-height:1.2em;
 
       @include breakpoint(desktop) {
         font-size:19.5px;
@@ -55,12 +56,17 @@ form.form-contact-form {
       order:3;
     }
   }
-
-  
-
  
 }
+.contact__fields + .contact__fields,
+.contact__fields + .field,
+.full + .full {
+  margin-top:44px;
 
+  @include breakpoint(laptop) {
+    margin-top:50px;
+  }
+}
 .contact img {
   max-width: 100%;
 }
