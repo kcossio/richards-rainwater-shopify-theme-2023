@@ -272,13 +272,13 @@ select.form-select,
        appearance: none;
   -webkit-appearance: none;
   font-weight: 900;
-  background: #E3E3E3;
+  background: #ffffff;
   border: 0px !important;
   height: auto;
   font-size: 11px;
   color: #000F44;
-  text-transform: uppercase;
   border-radius: 50px !important;
+  border-bottom: 1px solid #000F44;
   padding: 15px 15px !important;
   text-align: left;
   letter-spacing: 0.5px;
