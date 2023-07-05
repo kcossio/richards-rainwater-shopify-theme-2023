@@ -273,11 +273,16 @@ section.section-contact-form .select-wrap {
 
 .select-wrap {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
 }
 .select-wrap h2, .select-wrap select {
   width: 100%;
+}
+.select-wrap .select2-container {
+  width: 100% !important;
+  border-bottom: 1px solid #000F44;
+}
+.select-wrap .select2-container.select2-container--focus {
+  border-bottom: 0px;
 }
 
 select.form-select,

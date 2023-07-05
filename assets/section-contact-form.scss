@@ -120,11 +120,18 @@ section.section-contact-form {
 }
 .select-wrap {
   width:100%;
-  display:flex;
-  flex-wrap:wrap;
 
   h2, select {
     width:100%;
+  }
+
+  .select2-container {
+    width:100% !important;
+    border-bottom:1px solid $dark_blue;
+
+    &.select2-container--focus {
+      border-bottom:0px;
+    }
   }
 }
 select.form-select,
