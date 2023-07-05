@@ -191,9 +191,13 @@ form.form-contact-form .field .field__input {
 form.form-contact-form .field .field__input:active, form.form-contact-form .field .field__input:focus {
   border-bottom: 1px solid #0094DA;
 }
-form.form-contact-form .field .field__label {
+form.form-contact-form .field .label {
+  width: 100%;
   position: relative;
   order: 1;
+  color: #0040A8;
+  font-weight: 700;
+  font-size: 22px;
 }
 form.form-contact-form .field .contact__field-error {
   width: 100%;

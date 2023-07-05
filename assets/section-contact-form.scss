@@ -27,9 +27,13 @@ form.form-contact-form {
         border-bottom:1px solid $light_blue;
       }
     }
-    .field__label {
+    .label {
+      width: 100%;
       position:relative;
       order:1;
+      color:$medium_blue;
+      font-weight:700;
+      font-size:22px;
     }
 
     .contact__field-error {

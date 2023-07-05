@@ -34,7 +34,7 @@
           value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
           placeholder="{{ 'templates.contact.form.name' | t }}"
         >
-        <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
+        <label class="label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
       </div><!--End field-->
 
       <div class="field field--with-error">
@@ -54,7 +54,7 @@
           {% endif %}
           placeholder="Email Address"
         >
-        <label class="field__label" for="ContactForm-email-main">
+        <label class="label" for="ContactForm-email-main">
           Email Address
           <span aria-hidden="true">*</span></label
         >
@@ -77,7 +77,7 @@
       <div class="field">
         
         <input type="text" name="contact[subject]" class="field__input" id="subject" placeholder="Subject"/>
-        <label class="field__label" for="subject">Subject</label>
+        <label class="label" for="subject">Subject</label>
       </div><!--End field-->
 
       <div class="field">
@@ -91,7 +91,7 @@
           value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
           placeholder="{{ 'templates.contact.form.phone' | t }}"
         >
-        <label class="field__label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
+        <label class="label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
       </div><!--End field-->
 
     </div><!--End contact__fields-->
@@ -106,7 +106,7 @@
       >
         {{- form.body -}}
       </textarea>
-      <label class="form__label field__label" for="ContactForm-body">Message</label>
+      <label class="form__label label" for="ContactForm-body">Message</label>
     </div><!--End field-->
 
     <div class="contact__button">
