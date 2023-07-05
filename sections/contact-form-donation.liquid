@@ -1,0 +1,171 @@
+{{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="contact page-width page-width--narrow section-{{ section.id }}-padding">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="title title-wrapper--no-top-margin inline-richtext {{ section.settings.heading_size }}">
+        {{ section.settings.heading }}
+      </h2>
+    {%- else -%}
+      <h2 class="visually-hidden">{{ 'templates.contact.form.title' | t }}</h2>
+    {%- endif -%}
+
+    {% ## Form Selector ## %}
+    <div class="select-wrap hidden">
+      <h2>Request Type</h2>
+      <label class="contact-form-label hidden" for="contact-form-select">Request Type</label>
+      <select class="form-select" name="contact-form-select" id="contact-form-select" aria-label="Request Type">
+        <option value="" class="hidden">What would you like to contact us about?</option>
+        <option value="General" data-href-open="contact-general">General Inquiry</option>
+        <option value="General" data-href-open="contact-wholesale">Wholesaler Application</option>
+        <option value="General" data-href-open="contact-donate">Donation Request</option>
+      </select>
+    </div><!--End select-wrap-->
+    {% ## End Form Selector ## %}
+
+    <section class="section-form-contact active" id="contact-general">
+    {% render 'form-contact-general' %}
+    </section><!--End section-form-contact-->
+
+    <section class="section-form-contact" id="contact-wholesale">
+      {% render 'form-contact-wholesale' %}
+    </section><!--End section-form-contact-->
+
+    <section class="section-form-contact" id="contact-donate">
+      {% render 'form-contact-donate' %}
+    </section><!--End section-form-contact-->
+
+    
+
+
+  </div>
+</div>
+
+{% javascript %}// In your Javascript (external .js resource or <script> tag)
+
+  jQuery( "select#contact-form-select" ).select2({
+      minimumResultsForSearch: Infinity,
+      placeholder: "What would you like to contact us about?"
+    });
+   
+   jQuery('select#contact-form-select').on('change', function() {
+      //console.log('select has been changed');
+      var show = '#' + jQuery(this).find(':selected').attr('data-href-open');
+      console.log('Show this one please:' + show);
+      jQuery('.section-form-contact').removeClass('active');
+      jQuery(show).addClass('active');
+      ScrollTrigger.refresh();
+    });
+  
+    
+{% endjavascript %}
+
+{% schema %}
+{
+  "name": "t:sections.contact-form.name",
+  "tag": "section",
+  "class": "section section-contact-page",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "Contact form",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "t:sections.all.colors.accent_1.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.all.colors.accent_2.label"
+        },
+        {
+          "value": "background-1",
+          "label": "t:sections.all.colors.background_1.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.all.colors.background_2.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.all.colors.inverse.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.all.colors.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.contact-form.presets.name"
+    }
+  ]
+}
+{% endschema %}
