@@ -1591,7 +1591,7 @@ button.shopify-payment-button__button--unbranded {
   .button,
   .shopify-challenge__button,
   .customer button {
-    padding: 1.8rem 4rem;
+    padding: 1.8rem 2rem;
   }
 }
 .button:hover,
@@ -1660,7 +1660,7 @@ button.shopify-payment-button__button--unbranded {
 }
 @media (min-width: 768px) {
   #rc_login a {
-    padding: 1.8rem 4rem;
+    padding: 1.8rem 2rem;
   }
 }
 #rc_login a:hover {
