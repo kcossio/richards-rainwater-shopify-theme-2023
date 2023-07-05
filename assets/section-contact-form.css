@@ -271,6 +271,14 @@ section.section-contact-form .select-wrap {
   text-align: left;
 }
 
+.select-wrap {
+  width: 100%;
+  display: flex;
+}
+.select-wrap > * {
+  width: 100%;
+}
+
 select.form-select,
 .select2-container--default .select2-selection--single {
   -moz-appearance: none;
