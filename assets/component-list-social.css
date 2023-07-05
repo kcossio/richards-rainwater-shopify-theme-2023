@@ -197,6 +197,7 @@ EASING
   color: #ffffff;
   aspect-ratio: 1/1;
   margin: 0px 6px;
+  padding: 0px 0px 0px 1px;
 }
 @media (min-width: 768px) {
   .list-social__link {

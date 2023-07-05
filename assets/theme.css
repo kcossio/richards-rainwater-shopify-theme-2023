@@ -1573,6 +1573,7 @@ section.newsletter-cloud {
   width: 29px;
   margin: 0px 4px;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+  padding: 0px 0px 0px 1px;
 }
 @media (min-width: 768px) {
   .list-social__link {
