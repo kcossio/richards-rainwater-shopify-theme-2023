@@ -180,6 +180,7 @@ form.form-contact-form .field span.sub {
   display: block;
   line-height: 1em;
   font-weight: 400;
+  margin-top: 8px;
 }
 form.form-contact-form .field span.required {
   color: #DE0000;
