@@ -185,18 +185,18 @@ form.form-contact-form .field .field__input {
   order: 2;
   width: 100%;
   box-shadow: none !important;
-  border-bottom: 1px solid #000F44;
+  border-bottom: 2px solid #000F44;
   border-radius: 0px;
 }
 form.form-contact-form .field .field__input:active, form.form-contact-form .field .field__input:focus {
-  border-bottom: 1px solid #0094DA;
+  border-bottom: 2px solid #0094DA;
 }
 form.form-contact-form .field .label {
   width: 100%;
   position: relative;
   order: 1;
   color: #000F44;
-  font-weight: 800;
+  font-weight: 900;
   font-size: 22px;
 }
 @media (min-width: 1440px) {

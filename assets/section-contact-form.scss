@@ -19,12 +19,12 @@ form.form-contact-form {
       order:2;
       width:100%;
       box-shadow:none !important;
-      border-bottom:1px solid $dark_blue;
+      border-bottom:2px solid $dark_blue;
       border-radius:0px;
   
       &:active,
       &:focus {
-        border-bottom:1px solid $light_blue;
+        border-bottom:2px solid $light_blue;
       }
     }
     .label {
@@ -32,7 +32,7 @@ form.form-contact-form {
       position:relative;
       order:1;
       color:$dark_blue;
-      font-weight:800;
+      font-weight:900;
       font-size:22px;
 
       @include breakpoint(desktop) {
