@@ -98,11 +98,11 @@
    
     <div class="field">
       <textarea
-        rows="10"
+        rows="3"
         id="ContactForm-body"
         class="text-area field__input"
-        name="contact[{{ 'templates.contact.form.comment' | t }}]"
-        placeholder="{{ 'templates.contact.form.comment' | t }}"
+        name="contact[message]"
+        placeholder="Message"
       >
         {{- form.body -}}
       </textarea>
