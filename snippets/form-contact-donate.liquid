@@ -57,7 +57,7 @@
         >
         <label class="label" for="ContactForm-email">
           Email Address
-          <span aria-hidden="true">*</span></label
+          <span class="required" aria-hidden="true">*</span></label
         >
         {%- if form.errors contains 'email' -%}
           <small class="contact__field-error" id="ContactForm-email-error">
@@ -100,17 +100,17 @@
 
     <div class="field">        
         <input type="text" name="contact[partners]" class="field__input" id="partners" placeholder="Do you have any other partners for this event?"/>
-        <label class="label" for="partners">Do you have any other partners for this event? <span>(Beverage, CPG, non-profit etc.)</span></label>
+        <label class="label" for="partners">Do you have any other partners for this event? <span class="sub">(Beverage, CPG, non-profit etc.)</span></label>
     </div><!--End field-->
 
     <div class="field">        
         <input type="text" name="contact[marketing_opportunities]" class="field__input" id="marketing-opportunities" placeholder="Are there any co-promotion or marketing opportunities?"/>
-        <label class="label" for="marketing-opportunities">Are there any co-promotion or marketing opportunities?</span></label>
+        <label class="label" for="marketing-opportunities">Are there any co-promotion or marketing opportunities?</label>
     </div><!--End field-->
 
     <div class="field">        
         <input type="text" name="contact[product_pickup]" class="field__input" id="product-pickup" placeholder="Will you be able to pick up the product in person?"/>
-        <label class="label" for="product-pickup">Will you be able to pick up the product in person?</span></label>
+        <label class="label" for="product-pickup">Will you be able to pick up the product in person?</label>
     </div><!--End field-->
 
    

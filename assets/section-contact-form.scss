@@ -9,10 +9,14 @@ form.form-contact-form {
   .field {
     flex-wrap:wrap;
 
-    span {
+    span.sub {
       display:block;
       line-height:1em;
       font-weight:400;
+    }
+
+    span.required {
+      color:$red;
     }
 
     &::after {
