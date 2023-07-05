@@ -121,6 +121,7 @@ section.section-contact-form {
 .select-wrap {
   width:100%;
   display:flex;
+  flex-wrap:wrap;
 
   h2, select {
     width:100%;
