@@ -281,10 +281,6 @@ section.section-contact-form .select-wrap {
   width: 100% !important;
   border-bottom: 1px solid #000F44;
 }
-.select-wrap .select2-container.select2-container--focus {
-  border-bottom: 0px;
-}
-
 select.form-select,
 .select2-container--default .select2-selection--single {
   -moz-appearance: none;
