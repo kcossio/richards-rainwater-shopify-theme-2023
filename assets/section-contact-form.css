@@ -195,6 +195,10 @@ form.form-contact-form .field .field__label {
   position: relative;
   order: 1;
 }
+form.form-contact-form .field .contact__field-error {
+  width: 100%;
+  order: 3;
+}
 
 .contact img {
   max-width: 100%;
