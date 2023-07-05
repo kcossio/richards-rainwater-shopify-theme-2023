@@ -44,7 +44,7 @@
           type="email"
           id="ContactForm-email"
           class="field__input"
-          name="contact[email_general]"
+          name="contact[email]"
           spellcheck="false"
           autocapitalize="off"
           value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
@@ -57,7 +57,7 @@
         >
         <label class="label" for="ContactForm-email">
           Email Address
-          <span class="required" aria-hidden="true">*</span></label
+          <span aria-hidden="true">*</span></label
         >
         {%- if form.errors contains 'email' -%}
           <small class="contact__field-error" id="ContactForm-email-error">
