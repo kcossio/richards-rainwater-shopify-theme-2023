@@ -45,22 +45,26 @@
   </div>
 </div>
 
+<script>
+  jQuery( "select#contact-form-select" ).select2({
+    minimumResultsForSearch: Infinity,
+    placeholder: "What would you like to contact us about?"
+  });
+ 
+ jQuery('select#contact-form-select').on('change', function() {
+    //console.log('select has been changed');
+    var url = jQuery(this).val(); // get selected value
+        if (url) { // require a URL
+            window.location = url; // redirect
+        }
+        return false;
+  });
+
+</script>
+
 {% javascript %}// In your Javascript (external .js resource or <script> tag)
 
-  jQuery( "select#contact-form-select" ).select2({
-      minimumResultsForSearch: Infinity,
-      placeholder: "What would you like to contact us about?"
-    });
-   
-   jQuery('select#contact-form-select').on('change', function() {
-      //console.log('select has been changed');
-      var url = jQuery(this).val(); // get selected value
-          if (url) { // require a URL
-              window.location = url; // redirect
-          }
-          return false;
-    });
-  
+ 
     
 {% endjavascript %}
 
