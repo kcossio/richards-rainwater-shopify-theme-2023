@@ -84,6 +84,20 @@
         <label class="label" for="event-info">Event Page Link, Location & Time</label>
     </div><!--End field-->
 
+    <div class="contact__fields">
+
+      <div class="field">        
+          <input type="text" name="contact[headcount]" class="field__input" id="headcount" placeholder="Estimated Headcount"/>
+          <label class="label" for="headcount">Estimated Headcount</label>
+      </div><!--End field-->
+
+      <div class="field">        
+          <input type="text" name="contact[product_type]" class="field__input" id="product-type" placeholder="Type of Richard’s Products"/>
+          <label class="label" for="product-type">Type of Richard’s Products</label>
+      </div><!--End field-->
+
+    </div><!--End contact__fields-->
+
     <div class="field">
       <input
         type="tel"
@@ -93,9 +107,9 @@
         name="contact[{{ 'templates.contact.form.phone' | t }}]"
         pattern="[0-9\-]*"
         value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
-        placeholder="{{ 'templates.contact.form.phone' | t }}"
+        placeholder="Phone Number"
       >
-      <label class="label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
+      <label class="label" for="ContactForm-phone">Phone Number</label>
     </div>
     <div class="field">
       <textarea
