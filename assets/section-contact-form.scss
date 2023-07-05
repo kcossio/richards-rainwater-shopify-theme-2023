@@ -114,12 +114,15 @@ section.section-contact-form {
   
   
 }
-
+.select2-container {
+  width:100%;
+  text-align:left;
+}
 select.form-select,
   .select2-container--default .select2-selection--single {
       appearance: none;
       -webkit-appearance:none;
-      font-weight:900;
+      font-weight:700;
       background:$white;
       border:0px !important;
       height:auto;
@@ -176,7 +179,7 @@ select.form-select,
           font-size:22px;
           letter-spacing:2px;
           padding:15px !important;
-          text-align:center;
+          text-align:left;
       }
 
   }

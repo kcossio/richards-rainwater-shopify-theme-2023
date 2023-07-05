@@ -266,12 +266,17 @@ section.section-contact-form .select-wrap {
   }
 }
 
+.select2-container {
+  width: 100%;
+  text-align: left;
+}
+
 select.form-select,
 .select2-container--default .select2-selection--single {
   -moz-appearance: none;
        appearance: none;
   -webkit-appearance: none;
-  font-weight: 900;
+  font-weight: 700;
   background: #ffffff;
   border: 0px !important;
   height: auto;
@@ -332,7 +337,7 @@ select.form-select:active .select2-selection__rendered, select.form-select:focus
     font-size: 22px;
     letter-spacing: 2px;
     padding: 15px !important;
-    text-align: center;
+    text-align: left;
   }
 }
 
