@@ -7,23 +7,33 @@ form.form-contact-form {
 
 
   .field {
+    flex-wrap:wrap;
+
     &::after {
         box-shadow:none !important;
         border-radius:0px;  
         display: none;
     }
-  }
 
-  .field__input {
-    box-shadow:none !important;
-    border-bottom:1px solid $dark_blue;
-    border-radius:0px;
-
-    &:active,
-    &:focus {
-      border-bottom:1px solid $light_blue;
+    .field__input {
+      order:2;
+      width:100%;
+      box-shadow:none !important;
+      border-bottom:1px solid $dark_blue;
+      border-radius:0px;
+  
+      &:active,
+      &:focus {
+        border-bottom:1px solid $light_blue;
+      }
+    }
+    .field__label {
+      position:relative;
+      order:1;
     }
   }
+
+  
 
  
 }

@@ -173,18 +173,27 @@ EASING
 }
 
 */
+form.form-contact-form .field {
+  flex-wrap: wrap;
+}
 form.form-contact-form .field::after {
   box-shadow: none !important;
   border-radius: 0px;
   display: none;
 }
-form.form-contact-form .field__input {
+form.form-contact-form .field .field__input {
+  order: 2;
+  width: 100%;
   box-shadow: none !important;
   border-bottom: 1px solid #000F44;
   border-radius: 0px;
 }
-form.form-contact-form .field__input:active, form.form-contact-form .field__input:focus {
+form.form-contact-form .field .field__input:active, form.form-contact-form .field .field__input:focus {
   border-bottom: 1px solid #0094DA;
+}
+form.form-contact-form .field .field__label {
+  position: relative;
+  order: 1;
 }
 
 .contact img {
