@@ -24,6 +24,7 @@
       </ul>
     {%- endif -%}
     <div class="contact__fields">
+
       <div class="field">
         <input
           class="field__input"
@@ -35,14 +36,15 @@
           placeholder="{{ 'templates.contact.form.name' | t }}"
         >
         <label class="label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
-      </div>
+      </div><!--End field-->
+
       <div class="field field--with-error">
         <input
           autocomplete="email"
           type="email"
           id="ContactForm-email"
           class="field__input"
-          name="contact[email]"
+          name="contact[email_general]"
           spellcheck="false"
           autocapitalize="off"
           value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
@@ -51,10 +53,10 @@
             aria-invalid="true"
             aria-describedby="ContactForm-email-error"
           {% endif %}
-          placeholder="{{ 'templates.contact.form.email' | t }}"
+          placeholder="Email Address"
         >
         <label class="label" for="ContactForm-email">
-          {{- 'templates.contact.form.email' | t }}
+          Email Address
           <span aria-hidden="true">*</span></label
         >
         {%- if form.errors contains 'email' -%}
@@ -67,8 +69,21 @@
             </span>
           </small>
         {%- endif -%}
-      </div>
-    </div>
+      </div><!--End field -->
+
+    </div><!-- End contact__fields-->
+
+
+    <div class="field">        
+        <input type="text" name="contact[richards_vision]" class="field__input" id="richards-vision" placeholder="How do you envision Richard’s being a part of your event?"/>
+        <label class="label" for="richards-vision">How do you envision Richard’s being a part of your event?</label>
+    </div><!--End field-->
+
+    <div class="field">        
+        <input type="text" name="contact[event_info]" class="field__input" id="event-info" placeholder="Event Page Link, Location & Time"/>
+        <label class="label" for="event-info">Event Page Link, Location & Time</label>
+    </div><!--End field-->
+
     <div class="field">
       <input
         type="tel"
