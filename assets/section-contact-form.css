@@ -290,7 +290,7 @@ select.form-select,
   -moz-appearance: none;
        appearance: none;
   -webkit-appearance: none;
-  font-weight: 600;
+  font-weight: 500;
   background: #ffffff;
   border: 0px !important;
   height: auto;
@@ -298,7 +298,7 @@ select.form-select,
   color: #000F44;
   border-radius: 50px !important;
   border-bottom: 1px solid #000F44;
-  padding: 15px 15px !important;
+  padding: 15px 0px !important;
   text-align: left;
   letter-spacing: 0px;
   line-height: 1em;
@@ -336,29 +336,27 @@ select.form-select[aria-expanded=true]::after,
 select.form-select:active, select.form-select:focus,
 .select2-container--default .select2-selection--single:active,
 .select2-container--default .select2-selection--single:focus {
-  background: #0094DA;
-  color: #ffffff !important;
+  color: #0094DA !important;
 }
 select.form-select:active .select2-selection__rendered, select.form-select:focus .select2-selection__rendered,
 .select2-container--default .select2-selection--single:active .select2-selection__rendered,
 .select2-container--default .select2-selection--single:focus .select2-selection__rendered {
-  background: #0094DA;
-  color: #ffffff !important;
+  color: #0094DA !important;
 }
 @media (min-width: 768px) {
   select.form-select,
   .select2-container--default .select2-selection--single {
     font-size: 22px;
     letter-spacing: 0px;
-    padding: 15px !important;
+    padding: 15px 0px !important;
     text-align: left;
   }
 }
 
 /* Select2 Dropdown Overrides */
 .select2-results__options {
-  text-align: center;
-  font-size: 12px;
+  text-align: left;
+  font-size: 16px;
   color: #000F44;
   font-family: "TT Commons", sans-serif;
   font-weight: 600;
@@ -406,7 +404,7 @@ select.form-select:active .select2-selection__rendered, select.form-select:focus
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
   border: 0px;
   transform-origin: center;
-  background: url(select-arrow-down.svg) center no-repeat;
+  background: url(select-arrow-down-grey.svg) center no-repeat;
   background-size: cover;
   position: absolute;
   top: 0px;
@@ -418,14 +416,12 @@ select.form-select:active .select2-selection__rendered, select.form-select:focus
 
 .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
   border: 0px;
-  background: url(select-arrow-up.svg) center no-repeat;
-  background-size: cover;
+  scale: -1;
 }
 
 section.section-contact-form .select2-container--default .select2-selection--single:active .select2-selection__arrow b,
 section.section-contact-form .select2-container--default .select2-selection--single:focus .select2-selection__arrow b {
-  background: url(select-arrow-up.svg) center no-repeat;
-  transform: rotate(180deg);
+  scale: -1;
 }
 
 .select2-dropdown {
