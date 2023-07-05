@@ -24,7 +24,12 @@
       </ul>
     {%- endif -%}
 
-    <div class="field">
+    <div class="field full">        
+        <input type="text" name="contact[date]" class="field__input" id="date" placeholder="Date"/>
+        <label class="label" for="date">Date</label>
+    </div><!--End field-->
+
+    <div class="field full">
         <input class="field__input"
             type="text"
             id="WSForm-TaxID"
@@ -35,6 +40,11 @@
         >
             <label class="label" for="WSForm-TaxID">Federal Tax ID <span class="required">*</span></label>
       </div>
+
+      <div class="field full">        
+        <input type="text" name="contact[company_name]" class="field__input" required="required" id="company-name" placeholder="Company Name"/>
+        <label class="label" for="company-name">Company Name<span class="required">*</span></label>
+    </div><!--End field-->
 
       <div class="contact__fields">
 
