@@ -25,27 +25,20 @@
     {%- endif -%}
 
     {% ## Form Selector ## %}
-    <div class="select-wrap hidden">
+    <div class="select-wrap">
       <h2>Request Type</h2>
       <label class="contact-form-label hidden" for="contact-form-select">Request Type</label>
       <select class="form-select" name="contact-form-select" id="contact-form-select" aria-label="Request Type">
         <option value="" class="hidden">What would you like to contact us about?</option>
-        <option value="General" data-href-open="contact-general">General Inquiry</option>
-        <option value="General" data-href-open="contact-wholesale">Wholesaler Application</option>
-        <option value="General" data-href-open="contact-donate">Donation Request</option>
+        <option value="/pages/contact" data-href-open="contact-general" >General Inquiry</option>
+        <option value="/pages/contact-wholesale" data-href-open="contact-wholesale">Wholesaler Application</option>
+        <option value="/pages/contact-donation" data-href-open="contact-donate" selected>Donation Request</option>
       </select>
     </div><!--End select-wrap-->
     {% ## End Form Selector ## %}
 
-    <section class="section-form-contact active" id="contact-general">
-    {% render 'form-contact-general' %}
-    </section><!--End section-form-contact-->
 
-    <section class="section-form-contact" id="contact-wholesale">
-      {% render 'form-contact-wholesale' %}
-    </section><!--End section-form-contact-->
-
-    <section class="section-form-contact" id="contact-donate">
+    <section class="section-form-contact active" id="contact-donate">
       {% render 'form-contact-donate' %}
     </section><!--End section-form-contact-->
 
@@ -62,14 +55,15 @@
       placeholder: "What would you like to contact us about?"
     });
    
-   jQuery('select#contact-form-select').on('change', function() {
+    jQuery('select#contact-form-select').on('change', function() {
       //console.log('select has been changed');
-      var show = '#' + jQuery(this).find(':selected').attr('data-href-open');
-      console.log('Show this one please:' + show);
-      jQuery('.section-form-contact').removeClass('active');
-      jQuery(show).addClass('active');
-      ScrollTrigger.refresh();
+      var url = jQuery(this).val(); // get selected value
+          if (url) { // require a URL
+              window.location = url; // redirect
+          }
+          return false;
     });
+  
   
     
 {% endjavascript %}
