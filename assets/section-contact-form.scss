@@ -124,6 +124,9 @@ section.section-contact-form {
   h2, select {
     width:100%;
   }
+  h2 {
+    margin-top:0px;
+  }
 
   .select2-container {
     width:100% !important;
@@ -298,6 +301,11 @@ section.section-contact-form .select2-container--default .select2-selection--sin
 
 .section-form-contact {
   display:none;
+  margin-top:40px;
+
+  @include breakpoint(tablet) {
+    margin-top:60px;
+  }
   
   &.active {
     display:block;

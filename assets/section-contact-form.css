@@ -277,6 +277,9 @@ section.section-contact-form .select-wrap {
 .select-wrap h2, .select-wrap select {
   width: 100%;
 }
+.select-wrap h2 {
+  margin-top: 0px;
+}
 .select-wrap .select2-container {
   width: 100% !important;
   border-bottom: 1px solid #000F44;
@@ -447,6 +450,12 @@ section.section-contact-form .select2-container--default .select2-selection--sin
 
 .section-form-contact {
   display: none;
+  margin-top: 40px;
+}
+@media (min-width: 768px) {
+  .section-form-contact {
+    margin-top: 60px;
+  }
 }
 .section-form-contact.active {
   display: block;
