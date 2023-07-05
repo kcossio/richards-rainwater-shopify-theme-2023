@@ -275,7 +275,7 @@ section.section-contact-form .select-wrap {
   width: 100%;
   display: flex;
 }
-.select-wrap > * {
+.select-wrap h2, .select-wrap select {
   width: 100%;
 }
 
