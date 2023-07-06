@@ -58,18 +58,26 @@ form.form-contact-form {
         font-size:19.5px;
       }
 
-      &.under {
+      
+    }
+
+    .contact__field-error {
+      width:100%;
+      order:3;
+    }
+
+    &.under {
+
+      .field__input {
+        order:1;
+      }
+      .label {
         order:2;
         margin:0px;
         font-size:15px;
         color:$grey;
         font-weight:500;
       }
-    }
-
-    .contact__field-error {
-      width:100%;
-      order:3;
     }
   }
  

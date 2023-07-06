@@ -222,16 +222,19 @@ form.form-contact-form .field .label {
     font-size: 19.5px;
   }
 }
-form.form-contact-form .field .label.under {
+form.form-contact-form .field .contact__field-error {
+  width: 100%;
+  order: 3;
+}
+form.form-contact-form .field.under .field__input {
+  order: 1;
+}
+form.form-contact-form .field.under .label {
   order: 2;
   margin: 0px;
   font-size: 15px;
   color: #ebebeb;
   font-weight: 500;
-}
-form.form-contact-form .field .contact__field-error {
-  width: 100%;
-  order: 3;
 }
 
 .contact__fields + .contact__fields,
