@@ -231,9 +231,9 @@ form.form-contact-form .field.under .field__input {
 }
 form.form-contact-form .field.under .label {
   order: 2;
-  margin: 0px;
+  margin: 12px 0px 20px 0px;
   font-size: 15px;
-  color: #ebebeb;
+  color: #dbdbdb;
   font-weight: 500;
 }
 
