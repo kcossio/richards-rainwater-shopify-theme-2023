@@ -130,26 +130,33 @@
       {{ terms }} 
 
     </div>
-  
 
+    <div class="field full">        
+        <input type="text" name="contact[digital_signature]" class="field__input" required="required" id="digital-signature" placeholder="Digital Signature"/>
+        <label class="label" for="digital-signature">Digital Signature <span class="required">*</span></label>
+    </div><!--End field-->
+
+    <div class="field full">        
+        <input type="text" name="contact[digital_signature]" class="field__input" required="required" id="digital-signature" placeholder="Digital Signature"/>
+        <label class="label" for="digital-signature">Digital Signature <span class="required">*</span></label>
+    </div><!--End field-->
+
+    <div class="field full">        
+        <input type="date" name="contact[date_2]" class="field__input" id="date-2" placeholder="Date"/>
+        <label class="label" for="date-2">Date</label>
+    </div><!--End field-->
+  
+    <div class="field full">        
+        <input type="text" name="contact[title]" class="field__input" required="required" id="title" placeholder="title"/>
+        <label class="label" for="title">Title <span class="required">*</span></label>
+    </div><!--End field-->
     
-    <div class="field">
-      <textarea
-        rows="10"
-        id="ContactForm-body"
-        class="text-area field__input"
-        name="contact[{{ 'templates.contact.form.comment' | t }}]"
-        placeholder="{{ 'templates.contact.form.comment' | t }}"
-      >
-        {{- form.body -}}
-      </textarea>
-      <label class="form__label label" for="ContactForm-body">
-        {{- 'templates.contact.form.comment' | t -}}
-      </label>
-    </div>
+   
     <div class="contact__button">
       <button type="submit" class="button">
         {{ 'templates.contact.form.send' | t }}
       </button>
     </div>
+
+
   {%- endform -%}
