@@ -249,16 +249,20 @@ form.form-contact-form .field.under .label {
   }
 }
 
-.form_section {
+.form_section,
+.form-section {
   margin: 50px 0px;
 }
 @media (min-width: 1280px) {
-  .form_section {
+  .form_section,
+  .form-section {
     margin: 80px 0px;
   }
 }
 .form_section .field,
-.form_section .contact__fields {
+.form_section .contact__fields,
+.form-section .field,
+.form-section .contact__fields {
   margin-top: 0px !important;
 }
 
@@ -266,7 +270,8 @@ form.form-contact-form .field.under .label {
 .contact__fields + .field,
 .full + .full,
 .field + .contact__fields,
-.field + .form_section {
+.field + .form_section,
+.field + .form-section {
   margin-top: 44px;
 }
 @media (min-width: 1280px) {
@@ -274,7 +279,8 @@ form.form-contact-form .field.under .label {
   .contact__fields + .field,
   .full + .full,
   .field + .contact__fields,
-  .field + .form_section {
+  .field + .form_section,
+  .field + .form-section {
     margin-top: 50px;
   }
 }

@@ -93,7 +93,8 @@ form.form-contact-form {
   }
   
 }
-.form_section {
+.form_section,
+.form-section {
   margin:50px 0px;
 
   @include breakpoint(laptop) {
@@ -109,7 +110,8 @@ form.form-contact-form {
 .contact__fields + .field,
 .full + .full,
 .field + .contact__fields,
-.field + .form_section {
+.field + .form_section,
+.field + .form-section  {
   margin-top:44px;
 
   @include breakpoint(laptop) {
