@@ -174,11 +174,11 @@ EASING
 
 */
 form.form-contact-form .terms {
-  margin: 44px auto;
+  margin: 50px auto;
 }
 @media (min-width: 1280px) {
   form.form-contact-form .terms {
-    margin: 50px auto;
+    margin: 80px auto;
   }
 }
 form.form-contact-form .field {
