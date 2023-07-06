@@ -1,6 +1,6 @@
 
-<h2>Wholesaler Application</h2>
-<p class="hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacinia quis vel eros donec.</p>
+<h2 class="form-title">Wholesaler Application</h2>
+<p>Interested in selling Richard’s in your store or restaurant? Great! Fill out this simple form and somebody from our team will get follow up within 2 business days.</p>
 {%- form 'contact', id: 'ContactFormWholesaleInquiries', class: 'form-contact-form' -%}
     {%- if form.posted_successfully? -%}
       <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
@@ -129,7 +129,7 @@
 
       {{ terms }} 
 
-    </div>
+    </div><!--End terms-->
 
     <div class="field full">        
         <input type="text" name="contact[digital_signature]" class="field__input" required="required" id="digital-signature" placeholder="Digital Signature"/>
