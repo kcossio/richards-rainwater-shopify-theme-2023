@@ -227,6 +227,7 @@ form.form-contact-form .field .label.under {
   margin: 0px;
   font-size: 15px;
   color: #ebebeb;
+  font-weight: 500;
 }
 form.form-contact-form .field .contact__field-error {
   width: 100%;
