@@ -85,11 +85,19 @@ form.form-contact-form {
 .contact__fields + .contact__fields,
 .contact__fields + .field,
 .full + .full,
-.field + .contact__fields {
+.field + .contact__fields
+{
   margin-top:44px;
 
   @include breakpoint(laptop) {
     margin-top:50px;
+  }
+}
+.form_section {
+  margin:60px 0px;
+
+  @include breakpoint(laptop) {
+    margin:80px 0px;
   }
 }
 .contact img {
