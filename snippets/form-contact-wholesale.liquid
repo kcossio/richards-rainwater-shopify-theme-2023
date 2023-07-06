@@ -39,7 +39,7 @@
             placeholder="Federal Tax ID"
         >
             <label class="label" for="WSForm-TaxID">Federal Tax ID <span class="required">*</span></label>
-      </div>
+      </div><!--End field-->
 
       <div class="field full">        
         <input type="text" name="contact[company_name]" class="field__input" required="required" id="company-name" placeholder="Company Name"/>
@@ -79,27 +79,15 @@
 
       <div class="field">        
           <input type="tel" pattern="[0-9\-]*" name="contact[fax_number]" class="field__input" required="required" id="fax-number" placeholder="Fax Number"/>
-          <label class="label" for="fax-number">Fax Number <span class="required">*</span></label>
+          <label class="label" for="fax-number">Fax Number </label>
       </div><!--End field-->
 
     </div><!--End contact__fields-->
 
-      <div class="contact__fields">
 
-        <div class="field">
-          <input
-            class="field__input"
-            autocomplete="name"
-            type="text"
-            id="ContactForm-name"
-            name="contact[{{ 'templates.contact.form.name' | t }}]"
-            value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
-            placeholder="{{ 'templates.contact.form.name' | t }}"
-          >
-          <label class="label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
-        </div><!--End field-->
+         
   
-        <div class="field field--with-error">
+        <div class="field full field--with-error">
           <input
             autocomplete="email"
             type="email"
@@ -131,8 +119,19 @@
             </small>
           {%- endif -%}
         </div><!--End field -->
+
+        <div class="field full">        
+        <input type="text" name="contact[website]" class="field__input" id="website" placeholder="Website"/>
+        <label class="label" for="website">Website<span class="required">*</span></label>
+    </div><!--End field-->
+
+    <div class="terms">
+
+     
+
+
+    </div>
   
-      </div><!-- End contact__fields-->
 
     
     <div class="field">
