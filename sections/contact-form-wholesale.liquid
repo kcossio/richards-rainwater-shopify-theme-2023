@@ -37,9 +37,10 @@
     </div><!--End select-wrap-->
     {% ## End Form Selector ## %}
 
+    {% assign terms = section.settings.wholesale_terms %}
 
     <section class="section-form-contact active" id="contact-wholesale">
-      {% render 'form-contact-wholesale' %}
+      {% render 'form-contact-wholesale', terms: terms %}
     </section><!--End section-form-contact-->
 
 
