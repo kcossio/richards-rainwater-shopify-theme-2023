@@ -25,7 +25,7 @@
     {%- endif -%}
 
     <div class="field full">        
-        <input type="text" name="contact[date]" class="field__input" id="date" placeholder="Date"/>
+        <input type="date" name="contact[date]" class="field__input" id="date" placeholder="Date"/>
         <label class="label" for="date">Date</label>
     </div><!--End field-->
 
@@ -45,6 +45,44 @@
         <input type="text" name="contact[company_name]" class="field__input" required="required" id="company-name" placeholder="Company Name"/>
         <label class="label" for="company-name">Company Name<span class="required">*</span></label>
     </div><!--End field-->
+
+    <div class="contact__fields">
+
+      <div class="field">        
+          <input type="text" name="contact[buyer_firstname]" class="field__input" required="required" id="buyer-firstname" placeholder="Buyer Contact: First Name"/>
+          <label class="label" for="buyer-firstname">Buyer Contact: First Name <span class="required">*</span></label>
+      </div><!--End field-->
+
+      <div class="field">        
+          <input type="text" name="contact[buyer_lastname]" class="field__input" required="required" id="buyer-lastname" placeholder="Buyer Contact: Last Name"/>
+          <label class="label" for="buyer-lastname">Buyer Contact: Last Name <span class="required">*</span></label>
+      </div><!--End field-->
+
+    </div><!--End contact__fields-->
+
+    <div class="contact__fields">
+
+      <div class="field">
+        <input
+          type="tel"
+          id="ContactForm-phone"
+          class="field__input"
+          autocomplete="tel"
+          name="contact[{{ 'templates.contact.form.phone' | t }}]"
+          pattern="[0-9\-]*"
+          required="required" 
+          value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
+          placeholder="{{ 'templates.contact.form.phone' | t }}"
+        >
+        <label class="label" for="ContactForm-phone">Phone Number <span class="required">*</span></label>
+      </div>
+
+      <div class="field">        
+          <input type="tel" pattern="[0-9\-]*" name="contact[fax_number]" class="field__input" required="required" id="fax-number" placeholder="Fax Number"/>
+          <label class="label" for="fax-number">Fax Number <span class="required">*</span></label>
+      </div><!--End field-->
+
+    </div><!--End contact__fields-->
 
       <div class="contact__fields">
 
@@ -96,19 +134,7 @@
   
       </div><!-- End contact__fields-->
 
-    <div class="field">
-      <input
-        type="tel"
-        id="ContactForm-phone"
-        class="field__input"
-        autocomplete="tel"
-        name="contact[{{ 'templates.contact.form.phone' | t }}]"
-        pattern="[0-9\-]*"
-        value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
-        placeholder="{{ 'templates.contact.form.phone' | t }}"
-      >
-      <label class="label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
-    </div>
+    
     <div class="field">
       <textarea
         rows="10"
