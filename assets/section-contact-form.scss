@@ -57,6 +57,13 @@ form.form-contact-form {
       @include breakpoint(desktop) {
         font-size:19.5px;
       }
+
+      &.under {
+        order:2;
+        margin:0px;
+        font-size:15px;
+        color:#dbdbdb;
+      }
     }
 
     .contact__field-error {
