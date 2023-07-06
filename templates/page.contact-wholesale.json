@@ -1,25 +1,26 @@
 {
-    "sections": {
-        "main": {
-            "type": "main-page",
-            "settings": {
-                "padding_top": 36,
-                "padding_bottom": 36
-            }
-        },
-        "form": {
-            "type": "contact-form-wholesale",
-            "settings": {
-                "heading": "",
-                "heading_size": "h1",
-                "color_scheme": "background-1",
-                "padding_top": 36,
-                "padding_bottom": 36
-            }
-        }
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     },
-    "order": [
-        "main",
-        "form"
-    ]
+    "form": {
+      "type": "contact-form-wholesale",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "wholesale_terms": "<h2>Richard’s Wholesale — Terms & Conditions<\/h2><h3>Minimum Order:<\/h3><p>Richard’s requires full case orders only. No split cases.<\/p><h3>Payments:<\/h3><p>All orders require payment before items will be shipped.<\/p><h3>Credit Card Transactions:<\/h3><p>Credit card charges will appear as “Project 7” on your billing statement. Any disputed charges will incur a $25.00 fee, in addition to bank fees or other charges made to Project 7, as a result of a mistaken dispute.<\/p><h3>Summer Shipping:<\/h3><p>All rainwater orders placed during any day of the week will not ship until the following Monday or Tuesday depending on ship to location. There will be a $10 extradited shipping charge added to every case of rainwater for rush orders.<\/p><h3>Missing Items in Shipment:<\/h3><p>Any damaged or missing items must be reported within two (2) days of receipt of boxes.<\/p><h3>Returns:<\/h3><p>All returns must be authorized by a Richard’s Representative. All returns must be made within ten (10) days of receipt of goods and must be shipped prepaid. All returned merchandise is subject to inspection and approval. We are not responsible for goods lost or damaged in transit.<\/p><h3>Refusals:<\/h3><p>A $25.00 fee will be assessed for each box not accepted and returned.<\/p><p>I have read the terms and conditions and agree to be bound for all purchases made from Richard’s.<\/p>",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "form"
+  ]
 }
