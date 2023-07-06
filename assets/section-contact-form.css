@@ -265,14 +265,16 @@ form.form-contact-form .field.under .label {
 .contact__fields + .contact__fields,
 .contact__fields + .field,
 .full + .full,
-.field + .contact__fields {
+.field + .contact__fields,
+.field + .form_section {
   margin-top: 44px;
 }
 @media (min-width: 1280px) {
   .contact__fields + .contact__fields,
   .contact__fields + .field,
   .full + .full,
-  .field + .contact__fields {
+  .field + .contact__fields,
+  .field + .form_section {
     margin-top: 50px;
   }
 }
