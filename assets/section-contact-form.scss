@@ -93,8 +93,8 @@ form.form-contact-form {
     margin-top:50px;
   }
 }
-.form_section {
-  margin:60px 0px;
+.form_section { //address
+  margin:20px 0px;
 
   @include breakpoint(laptop) {
     margin:80px 0px;
