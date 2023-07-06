@@ -5,6 +5,13 @@
 
 form.form-contact-form {
 
+  .terms {
+    margin:44px auto;
+
+    @include breakpoint(laptop) {
+      margin:50px auto;
+    }
+  }
 
   .field {
     flex-wrap:wrap;
