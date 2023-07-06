@@ -245,7 +245,8 @@ form.form-contact-form .field.under .label {
     margin: 80px 0px;
   }
 }
-.form_section .field {
+.form_section .field,
+.form_section .contact__fields {
   margin-top: 0px !important;
 }
 
