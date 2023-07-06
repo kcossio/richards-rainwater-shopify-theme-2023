@@ -237,6 +237,15 @@ form.form-contact-form .field.under .label {
   font-weight: 500;
 }
 
+.form_section {
+  margin: 20px 0px;
+}
+@media (min-width: 1280px) {
+  .form_section {
+    margin: 80px 0px;
+  }
+}
+
 .contact__fields + .contact__fields,
 .contact__fields + .field,
 .full + .full,
@@ -249,15 +258,6 @@ form.form-contact-form .field.under .label {
   .full + .full,
   .field + .contact__fields {
     margin-top: 50px;
-  }
-}
-
-.form_section {
-  margin: 20px 0px;
-}
-@media (min-width: 1280px) {
-  .form_section {
-    margin: 80px 0px;
   }
 }
 
