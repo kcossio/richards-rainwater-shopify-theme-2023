@@ -2006,6 +2006,11 @@ section.newsletter-cloud {
   margin-top: 2rem;
 }
 
+.newsletter-signup-footer-success {
+  padding-left: 21px;
+  margin-top: 0px;
+}
+
 @media screen and (min-width: 750px) {
   .newsletter-form__message {
     justify-content: flex-start;
