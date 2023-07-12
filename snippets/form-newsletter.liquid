@@ -59,9 +59,10 @@
     {% endform %}
   </div>
 
+{% javascript %}
 
-<script>
   jQuery( document ).ready( function ( $ ) {
+    console.log('The AJAX submit script has loaded into the DOM');
       //Run the ajax form script
       // bind to the form's submit event 
       $( '#{{ formId }}' ).submit( function ( event ) {
@@ -98,4 +99,4 @@
           return false;
       } );
   } );
-</script>
+{% endjavascript %}
