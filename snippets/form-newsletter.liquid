@@ -65,10 +65,10 @@
     console.log('The AJAX submit script has loaded');
       //Run the ajax form script
       // bind to the form's submit event 
-      $( '#{{ formId }}' ).submit( function ( event ) {
+      jQuery( '#{{ formId }}' ).submit( function ( event ) {
           event.preventDefault();
 
-          if ( ( jQuery( '#{{ formId }}' ).find( 'input[name=email]' ).val().indexOf( '@' ) == -1 ) || ( jQuery( '#{{ formId }}' ).find( 'input[name=email]' ).val().indexOf( '.' ) == -1 ) ) {
+          if ( ( jQuery( '#{{ formId }}' ).find( 'input[type=email]' ).val().indexOf( '@' ) == -1 ) || ( jQuery( '#{{ formId }}' ).find( 'input[type=email]' ).val().indexOf( '.' ) == -1 ) ) {
               alert( "Please enter a valid email address." );
               return false;
           }
@@ -98,6 +98,6 @@
 
           return false;
       } );
-      
+
   } ); // End on load
 </script>
