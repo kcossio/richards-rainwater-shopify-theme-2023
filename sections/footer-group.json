@@ -29,9 +29,7 @@
         "sections--18829367181599__959c0c66-dc08-4cf1-8373-327213399d07-1683147192a32e07d6-2"
       ],
       "settings": {
-        "color_scheme": "background-1",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "success_message": "Your email was succesfully submitted. Thanks for joining!"
       }
     },
     "footer": {
