@@ -1,5 +1,6 @@
+{%- assign formId = 'Contact_' | append: section.id -%}
 <div class="newsletter-form-wrap" {{ block.shopify_attributes }}>
-    {% form 'customer', class: 'newsletter-form' %}
+    {% form 'customer', class: 'newsletter-form', id: formId %}
       <input type="hidden" name="contact[tags]" value="newsletter">
       <div class="newsletter-form__field-wrapper">
         <div class="field">
