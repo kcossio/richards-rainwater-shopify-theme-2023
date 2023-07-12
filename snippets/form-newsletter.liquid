@@ -59,10 +59,10 @@
     {% endform %}
   </div>
 
-{% javascript %}
+<script type="text/javascript">
+  window.addEventListener("load", (event) => {
 
-  jQuery( document ).ready( function ( $ ) {
-    console.log('The AJAX submit script has loaded into the DOM');
+    console.log('The AJAX submit script has loaded');
       //Run the ajax form script
       // bind to the form's submit event 
       $( '#{{ formId }}' ).submit( function ( event ) {
@@ -98,5 +98,6 @@
 
           return false;
       } );
-  } );
-{% endjavascript %}
+      
+  } ); // End on load
+</script>
