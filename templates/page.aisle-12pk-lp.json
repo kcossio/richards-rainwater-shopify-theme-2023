@@ -52,79 +52,13 @@
         "call_to_action_button_label": "Store locator"
       }
     },
-    "dd644173-947a-4ebb-b0e8-668888747a48": {
-      "type": "rich-text",
-      "disabled": true,
-      "blocks": {
-        "template--16193762099362__dd644173-947a-4ebb-b0e8-668888747a48-1689706337346409e9-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Find Your Cloud",
-            "heading_size": "h1"
-          }
-        },
-        "template--16193762099362__dd644173-947a-4ebb-b0e8-668888747a48-1689706337346409e9-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>If it rains where you live, there's a good chance our water is 'round the corner. <\/p><p>Enter your zip code below to find Richard's in one of <strong>over 2000 locations nationwide!<\/strong><\/p>"
-          }
-        },
-        "250e2330-a60f-493e-81cc-3deccfe1032e": {
-          "type": "caption",
-          "settings": {
-            "caption": "Tag Line",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "large"
-          }
-        }
-      },
-      "block_order": [
-        "template--16193762099362__dd644173-947a-4ebb-b0e8-668888747a48-1689706337346409e9-0",
-        "template--16193762099362__dd644173-947a-4ebb-b0e8-668888747a48-1689706337346409e9-1",
-        "250e2330-a60f-493e-81cc-3deccfe1032e"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 4,
-        "padding_bottom": 0
-      }
-    },
-    "8c2a1e2f-d027-4e77-b40c-4a58215fe01e": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": "<script src=\"\/\/destinilocators.com\/richardsrainwater\/site\/install\/\"><\/script>",
-        "color_scheme": "background-1",
-        "padding_top": 0,
-        "padding_bottom": 52
-      }
-    },
-    "destini": {
-      "type": "destini_integration",
-      "disabled": true,
-      "settings": {
-        "destini_intro_text": "<p>Enter your zip code to find Richard’s Rainwater in <strong>over 2,000 grocery stores<\/strong>!<br\/><br\/><strong>Prefer Grocery Delivery? <\/strong>Click the “Buy Online” button.<\/p>"
-      }
-    },
-    "3a80734d-cff8-40e6-bb8f-f6933d81a299": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": "<html>\n<head>\n<style>\n@media screen and (min-width: 900px) {\n.storeDiv {\nwidth: 75%;\ndisplay: block;\nmargin: auto;\nborder-radius: 25px;\noverflow: hidden;\n}\n<\/style>\n<\/head>\n<body>\n<div class=\"storeDiv\"><script src=\"\/\/destinilocators.com\/richardsrainwater\/site\/install\/?MM=panel2\"><\/script><\/div><\/body><\/html>",
-        "color_scheme": "background-1",
-        "padding_top": 0,
-        "padding_bottom": 52
-      }
-    },
     "a33b27c4-23b8-4c96-af6f-0e40a76283cc": {
       "type": "home-simple_banner",
       "settings": {
         "heading": "",
         "subheading": "",
-        "background_image": "shopify:\/\/shop_images\/Richard_s_Rainwater_-_12_pack_sparkling_free_offer_-_group_enjoying_clean_bottled_water.jpg"
+        "background_image": "shopify:\/\/shop_images\/Richard_s_Rainwater_-_12_pack_sparkling_free_offer_-_group_enjoying_clean_bottled_water.jpg",
+        "mobile_background_image": "shopify:\/\/shop_images\/Richard_s_Rainwater_-_12_pack_sparkling_free_offer_-_group_enjoying_clean_bottled_water_mobile.jpg"
       }
     }
   },
@@ -132,10 +66,6 @@
     "main",
     "aisle",
     "f8e1af69-3688-4a41-9df3-64c14ac42e1e",
-    "dd644173-947a-4ebb-b0e8-668888747a48",
-    "8c2a1e2f-d027-4e77-b40c-4a58215fe01e",
-    "destini",
-    "3a80734d-cff8-40e6-bb8f-f6933d81a299",
     "a33b27c4-23b8-4c96-af6f-0e40a76283cc"
   ]
 }
