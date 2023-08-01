@@ -87,6 +87,23 @@
 
     </div><!--End contact__fields-->
 
+    <div class="form-section">
+
+      <div class="field">
+        <textarea
+          rows="3"
+          id="ContactForm-body"
+          class="text-area field__input"
+          name="contact[message]"
+          placeholder="Message"
+        >
+          {{- form.body -}}
+        </textarea>
+        <label class="form__label label" for="ContactForm-body">Message / Additional Info</label>
+      </div><!--End field-->
+
+    </div><!--End form-section-->
+
     <div class="form_section">
       <h2>Address <span class="required red">*</span></h2>
     
@@ -698,22 +715,7 @@
 
     </div><!--End form-section-->
 
-    <div class="form-section">
-
-      <div class="field">
-        <textarea
-          rows="3"
-          id="ContactForm-body"
-          class="text-area field__input"
-          name="contact[message]"
-          placeholder="Message"
-        >
-          {{- form.body -}}
-        </textarea>
-        <label class="form__label label" for="ContactForm-body">Message</label>
-      </div><!--End field-->
-
-    </div><!--End form-section-->
+    
 
     <div class="terms">
 
