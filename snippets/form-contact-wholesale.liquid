@@ -46,19 +46,19 @@
       </div><!--End field-->
 
       <div class="field full">        
-        <input type="text" name="contact[company_name]" class="field__input" required id="company-name" placeholder="Company Name" oninvalid="this.setCustomValidity('Please enter your company name')"/>
+        <input type="text" name="contact[company_name]" class="field__input" required id="company-name" placeholder="Company Name" oninvalid="this.setCustomValidity('Please enter your company name')"  oninput="setCustomValidity('')"/>
         <label class="label" for="company-name">Company Name<span class="required">*</span></label>
     </div><!--End field-->
 
     <div class="contact__fields">
 
       <div class="field">        
-          <input type="text" name="contact[buyer_firstname]" class="field__input" required id="buyer-firstname" placeholder="Buyer Contact: First Name" oninvalid="this.setCustomValidity('Please enter your first name')"/>
+          <input type="text" name="contact[buyer_firstname]" class="field__input" required id="buyer-firstname" placeholder="Buyer Contact: First Name" oninvalid="this.setCustomValidity('Please enter your first name')"  oninput="setCustomValidity('')"/>
           <label class="label" for="buyer-firstname">Buyer Contact: First Name <span class="required">*</span></label>
       </div><!--End field-->
 
       <div class="field">        
-          <input type="text" name="contact[buyer_lastname]" class="field__input" required id="buyer-lastname" placeholder="Buyer Contact: Last Name" oninvalid="this.setCustomValidity('Please enter your last name')"/>
+          <input type="text" name="contact[buyer_lastname]" class="field__input" required id="buyer-lastname" placeholder="Buyer Contact: Last Name" oninvalid="this.setCustomValidity('Please enter your last name')"  oninput="setCustomValidity('')"/>
           <label class="label" for="buyer-lastname">Buyer Contact: Last Name <span class="required">*</span></label>
       </div><!--End field-->
 
@@ -110,24 +110,24 @@
     
       <div class="field under full">
         <label class="label" for="street-address">Street Address</label>
-        <input type="text" id="street-address" class="field__input" name="contact[street-address]" autocomplete="street-address" required enterkeyhint="next" oninvalid="this.setCustomValidity('Please enter your street address')"></input>  
+        <input type="text" id="street-address" class="field__input" name="contact[street-address]" autocomplete="street-address" required enterkeyhint="next" oninvalid="this.setCustomValidity('Please enter your street address')" oninput="setCustomValidity('')" />
       </div>
       <div class="field under full">
         <label class="label" for="street-address">Address Line 2</label>
-        <input type="text" id="street-address" class="field__input" name="contact[street-address-2]" autocomplete="street-address" enterkeyhint="next"></input>  
+        <input type="text" id="street-address" class="field__input" name="contact[street-address-2]" autocomplete="street-address" enterkeyhint="next" />
       </div>
       <div class="contact__fields">
         <div class="field under">
           <label class="label" for="city">City</label>
-          <input required type="text" id="city" class="field__input" name="contact[city]" autocomplete="address-level2" enterkeyhint="next" oninvalid="this.setCustomValidity('Please enter your city')">
+          <input required type="text" id="city" class="field__input" name="contact[city]" autocomplete="address-level2" enterkeyhint="next" oninvalid="this.setCustomValidity('Please enter your city')"  oninput="setCustomValidity('')" />
         </div>       
         <div class="field under">
           <label class="label" for="city">State/Province/Region</label>
-          <input required type="text" id="city" class="field__input" name="contact[state]" autocomplete="address-level1" enterkeyhint="next" oninvalid="this.setCustomValidity('Please enter your state')">
+          <input required type="text" id="city" class="field__input" name="contact[state]" autocomplete="address-level1" enterkeyhint="next" oninvalid="this.setCustomValidity('Please enter your state')"  oninput="setCustomValidity('')" />
         </div>   
         <div class="field under">
           <label class="label" for="postal-code">Postal / Zip Code</label>
-          <input required type="text" id="postal-code" class="field__input" name="contact[postal-code]" autocomplete="postal-code" enterkeyhint="next" oninvalid="this.setCustomValidity('Please enter your zip or postal code')">
+          <input required type="text" id="postal-code" class="field__input" name="contact[postal-code]" autocomplete="postal-code" enterkeyhint="next" oninvalid="this.setCustomValidity('Please enter your zip or postal code')"  oninput="setCustomValidity('')" />
         </div>  
         <div class="field under">
           <label class="label" for="country">Country</label>
@@ -407,8 +407,9 @@
               aria-describedby="ContactForm-email-error"
             {% endif %}
             placeholder="Email Address"
-            oninvalid="this.setCustomValidity('Please enter your email address')"
-          >
+            oninvalid="this.setCustomValidity('Please enter your email address')" 
+            oninput="setCustomValidity('')" 
+         />
           <label class="label" for="ContactForm-email">
             Email Address <span aria-hidden="true" class="required">*</span></label
           >
@@ -439,24 +440,24 @@
     
       <div class="field under full">
         <label class="label" for="street-address-shipping">Street Address</label>
-        <input type="text" id="street-address-shipping" class="field__input" name="contact[street-address-shipping]" autocomplete="street-address" required enterkeyhint="next" oninvalid="this.setCustomValidity('Please enter your shipping address')"></input>  
+        <input type="text" id="street-address-shipping" class="field__input" name="contact[street-address-shipping]" autocomplete="street-address" required enterkeyhint="next" oninvalid="this.setCustomValidity('Please enter your shipping address')"  oninput="setCustomValidity('')" /> 
       </div>
       <div class="field under full">
         <label class="label" for="street-address-shipping">Address Line 2</label>
-        <input type="text" id="street-address-shipping" class="field__input" name="contact[street-address-2-shipping]" autocomplete="street-address" enterkeyhint="next"></input>  
+        <input type="text" id="street-address-shipping" class="field__input" name="contact[street-address-2-shipping]" autocomplete="street-address" enterkeyhint="next"  oninput="setCustomValidity('')" />
       </div>
       <div class="contact__fields">
         <div class="field under">
           <label class="label" for="city-shipping">City</label>
-          <input required type="text" id="city-shipping" class="field__input" name="contact[city-shipping]" autocomplete="address-level2" enterkeyhint="next" oninvalid="this.setCustomValidity('Please enter your shipping city')">
+          <input required type="text" id="city-shipping" class="field__input" name="contact[city-shipping]" autocomplete="address-level2" enterkeyhint="next" oninvalid="this.setCustomValidity('Please enter your shipping city')"  oninput="setCustomValidity('')" />
         </div>       
         <div class="field under">
           <label class="label" for="city-shipping">State/Province/Region</label>
-          <input required type="text" id="city-shipping" class="field__input" name="contact[state-shipping]" autocomplete="address-level1" enterkeyhint="next" oninvalid="this.setCustomValidity('Please enter your shipping State')">
+          <input required type="text" id="city-shipping" class="field__input" name="contact[state-shipping]" autocomplete="address-level1" enterkeyhint="next" oninvalid="this.setCustomValidity('Please enter your shipping State')"  oninput="setCustomValidity('')"/>
         </div>   
         <div class="field under">
           <label class="label" for="postal-code-shipping">Postal / Zip Code</label>
-          <input required type="text" id="postal-code-shipping" class="field__input" name="contact[postal-code-shipping]" autocomplete="postal-code" enterkeyhint="next" oninvalid="this.setCustomValidity('Please enter your shipping zip or postal code')">
+          <input required type="text" id="postal-code-shipping" class="field__input" name="contact[postal-code-shipping]" autocomplete="postal-code" enterkeyhint="next" oninvalid="this.setCustomValidity('Please enter your shipping zip or postal code')"  oninput="setCustomValidity('')" />
         </div>  
         <div class="field under">
           <label class="label" for="country-shipping">Country</label>
@@ -726,18 +727,18 @@
     </div><!--End terms-->
 
     <div class="field full">        
-        <input type="text" name="contact[digital_signature]" class="field__input" required id="digital-signature" placeholder="Digital Signature" oninvalid="this.setCustomValidity('Please enter your digital signature')"/>
+        <input type="text" name="contact[digital_signature]" class="field__input" required id="digital-signature" placeholder="Digital Signature" oninvalid="this.setCustomValidity('Please enter your digital signature')"  oninput="setCustomValidity('')" />
         <label class="label" for="digital-signature">Digital Signature <span class="required">*</span></label>
     </div><!--End field-->
 
 
     <div class="field full">        
-        <input type="date" name="contact[date_2]" class="field__input" id="date-2" required placeholder="Date" oninvalid="this.setCustomValidity('Please enter the date')"/>
+        <input type="date" name="contact[date_2]" class="field__input" id="date-2" required placeholder="Date" oninvalid="this.setCustomValidity('Please enter the date')"  oninput="setCustomValidity('')" />
         <label class="label" for="date-2">Date <span class="required">*</span></label>
     </div><!--End field-->
   
     <div class="field full">        
-        <input type="text" name="contact[title]" class="field__input" required id="title" placeholder="title" oninvalid="this.setCustomValidity('Please enter your title')"/>
+        <input type="text" name="contact[title]" class="field__input" required id="title" placeholder="title" oninvalid="this.setCustomValidity('Please enter your title')"  oninput="setCustomValidity('')" />
         <label class="label" for="title">Title <span class="required">*</span></label>
     </div><!--End field-->
     
