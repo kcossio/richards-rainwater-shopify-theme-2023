@@ -9,9 +9,6 @@
       <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
         {% render 'icon-success' %}
         {{ 'templates.contact.form.post_success' | t }}
-        <script>
-          jQuery('#ContactFormWholesaleInquiries').css('padding-top', '100px');
-        </script>
       </h2>
     {%- elsif form.errors -%}
       <div class="form__message">

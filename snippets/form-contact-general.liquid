@@ -115,9 +115,3 @@
       </button>
     </div>
   {%- endform -%}
-
-  <script>
-    var offset = $(':target').offset();
-    var scrollto = offset.top - 120; // minus fixed header height
-    jQuery('html, body').animate({ scrollTop:scrollto }, 0);
-  </script>
