@@ -3,7 +3,9 @@
     // Add spacing if a hashtag is in the url 
     function offsetAnchor() {
         if (location.hash.length !== 0) {
-            window.scrollTo(window.scrollX, window.scrollY - 140);
+            var header_height = jQuery('header.header').height();
+            var hash_height = header_height + 40;
+            window.scrollTo(window.scrollX, window.scrollY - hash_height);
         }
     }
 
