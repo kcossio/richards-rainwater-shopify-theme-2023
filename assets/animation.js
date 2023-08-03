@@ -1,18 +1,17 @@
 (function( $ ) {
 
     // Add spacing if a hashtag is in the url 
-    window.addEventListener('hashchange', offsetAnchor);
-    window.addEventListener('load', offsetAnchor);
-    window.setTimeout(offsetAnchor, 1);
     function offsetAnchor() {
         if (location.hash.length !== 0) {
-            window.scrollTo(window.scrollX, window.scrollY - 120);
+            window.scrollTo(window.scrollX, window.scrollY - 100);
         }
     }
 
     window.onload = (event) => {
         offsetAnchor();
       };
+
+    window.addEventListener('hashchange', offsetAnchor);
 
     
 
