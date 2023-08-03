@@ -4,7 +4,7 @@
     function offsetAnchor() {
         if (location.hash.length !== 0) {
             var header_height = jQuery('header.header').height();
-            var hash_height = header_height + 40;
+            var hash_height = header_height + 80;
             window.scrollTo(window.scrollX, window.scrollY - hash_height);
             console.log('hash height = ' + hash_height);
         }
