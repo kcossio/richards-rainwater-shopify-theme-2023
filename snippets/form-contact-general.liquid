@@ -56,6 +56,7 @@
             aria-describedby="ContactForm-email-error"
           {% endif %}
           placeholder="Email Address"
+          oninvalid="this.setCustomValidity('Please fill in your email address.')"
         >
         <label class="label" for="ContactForm-email">
           Email Address
