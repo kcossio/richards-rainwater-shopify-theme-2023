@@ -3,7 +3,7 @@
     // Add spacing if a hashtag is in the url 
     function offsetAnchor() {
         if (location.hash.length !== 0) {
-            window.scrollTo(window.scrollX, window.scrollY - 120);
+            window.scrollTo(window.scrollX, window.scrollY - 140);
         }
     }
 
