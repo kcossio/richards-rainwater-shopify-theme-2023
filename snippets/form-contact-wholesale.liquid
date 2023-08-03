@@ -33,31 +33,32 @@
     </div><!--End field-->
 
     <div class="field full">
-        <input class="field__input required"
+        <input class="field__input"
             type="text"
             id="WSForm-TaxID"
             name="contact[federal_tax_id]" 
             required
             placeholder="Federal Tax ID"
             oninvalid="this.setCustomValidity('Please enter your federal tax ID')"
-        >
+            oninput="setCustomValidity('')"
+        />
             <label class="label" for="WSForm-TaxID">Federal Tax ID <span class="required">*</span></label>
       </div><!--End field-->
 
       <div class="field full">        
-        <input type="text" name="contact[company_name]" class="field__input required" required id="company-name" placeholder="Company Name" oninvalid="this.setCustomValidity('Please enter your company name')"/>
+        <input type="text" name="contact[company_name]" class="field__input" required id="company-name" placeholder="Company Name" oninvalid="this.setCustomValidity('Please enter your company name')"/>
         <label class="label" for="company-name">Company Name<span class="required">*</span></label>
     </div><!--End field-->
 
     <div class="contact__fields">
 
       <div class="field">        
-          <input type="text" name="contact[buyer_firstname]" class="field__input required" required id="buyer-firstname" placeholder="Buyer Contact: First Name" oninvalid="this.setCustomValidity('Please enter your first name')"/>
+          <input type="text" name="contact[buyer_firstname]" class="field__input" required id="buyer-firstname" placeholder="Buyer Contact: First Name" oninvalid="this.setCustomValidity('Please enter your first name')"/>
           <label class="label" for="buyer-firstname">Buyer Contact: First Name <span class="required">*</span></label>
       </div><!--End field-->
 
       <div class="field">        
-          <input type="text" name="contact[buyer_lastname]" class="field__input required " required id="buyer-lastname" placeholder="Buyer Contact: Last Name" oninvalid="this.setCustomValidity('Please enter your last name')"/>
+          <input type="text" name="contact[buyer_lastname]" class="field__input" required id="buyer-lastname" placeholder="Buyer Contact: Last Name" oninvalid="this.setCustomValidity('Please enter your last name')"/>
           <label class="label" for="buyer-lastname">Buyer Contact: Last Name <span class="required">*</span></label>
       </div><!--End field-->
 
