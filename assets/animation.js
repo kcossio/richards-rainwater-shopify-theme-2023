@@ -10,6 +10,10 @@
         }
     }
 
+    window.onload = (event) => {
+        offsetAnchor();
+      };
+
     
 
     // --------------------------------- GSAP/ScrollTrigger - scrolling and tweens ----------------------------- //
