@@ -49,7 +49,7 @@
     });
 
     window.revealPlayer = function() {      
-      if (jQuery.cookie('closed_player') == "yes") {
+      if (jQuery.cookie('closed_player') != "yes") {
         jQuery('.home-audio-player').addClass('open');
       }
     }
