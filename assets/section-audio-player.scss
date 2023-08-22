@@ -26,7 +26,7 @@
         height:80px;
         width:228px;
         padding:23px 36px 23px 36px;
-        transform:translate(-77px, 0px);
+        transform:translate(-203px, 0px);
     }
 
     &.open {
@@ -138,7 +138,7 @@
         top:10px;
         right:10px;
         cursor:pointer;
-        transform:rotate(0deg);
+        transform:rotate(45deg);
 
         @include breakpoint(tablet) {
             width:8px;
