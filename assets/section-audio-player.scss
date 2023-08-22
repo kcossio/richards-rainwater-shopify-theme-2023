@@ -19,21 +19,25 @@
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     padding:10px 32px 13px 29px;
-    //transform:translate(88px,0px);
+    transform:translate(-77px, 0px);
 
     @include breakpoint(tablet) {
         height:80px;
         width:228px;
-        //transform:translate(208px,0px);
         padding:23px 36px 23px 36px;
     }
 
-    &.closed {
-        transform:translate(30px, 0px);
+    &.open {
+        transition:transform(0px,0px);
         button#close-player {
-            transform:rotate(45deg);
+            transform:rotate(0deg);
+        }
+        @include breakpoint(tablet) {
+            transform:translate(-203px, 0px);
         }
     }
+
+    
 
     p {
         color:#C8C8C8;
@@ -60,6 +64,7 @@
         position:relative;
         border:0px;
         font-size:0px;
+        
         
 
         &.play-audio {
@@ -134,6 +139,7 @@
         top:10px;
         right:10px;
         cursor:pointer;
+        transform:rotate(0deg);
 
         @include breakpoint(tablet) {
             width:8px;

@@ -50,27 +50,31 @@
 
     jQuery( "#close-player" ).on( "click", function( event ) {
       //event.preventDefault();
-      jQuery('.home-audio-player').toggleClass('closed');
-      console.log('clicked close');
+      if('.home-audio-player').hasClass('open') {
+        closePlayer();
+      } else {
+        openPlayer();
+      }
     });
 
-    gsap.set(".home-audio-player", { xPercent:-100, opacity:1 });
-    // ---------------- Mobile Menu Functions ---------- //
-    window.revealPlayer = function() {
-      // GSAP tween to stretch the loading screen across the whole screen
-      
-      var nav_tl = gsap.timeline();
-      
-      return nav_tl
-          .to(".home-audio-player", {
-            opacity: 1,
-            xPercent: 0,
-            duration: 0.5,
-            delay: 4,
-            ease: "circ.inOut"
-          });
+    // ---------------- Show Player on open ---------- //
+
+    window.revealPlayer = function() {      
+      jQuery('.home-audio-player').addClass('open');
     }
     window.addEventListener("DOMContentLoaded", revealPlayer);
+
+     // ---------------- Open Player ---------- //
+    window.openPlayer = function() {
+      
+      jQuery('.home-audio-player').addClass('open');
+    }
+    // ------------------ Hide player -------------------- //
+    window.hidePlayer = function() {
+      // GSAP tween to stretch the loading screen across the whole screen
+      jQuery('.home-audio-player').removeClass('open');
+      
+    }
 
   </script>
 
