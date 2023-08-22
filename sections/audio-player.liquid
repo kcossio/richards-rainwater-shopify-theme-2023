@@ -50,7 +50,7 @@
 
     jQuery( "#close-player" ).on( "click", function( event ) {
       //event.preventDefault();
-      if jQuery('.home-audio-player').hasClass('open') {
+      if (jQuery('.home-audio-player').hasClass('open')) {
         closePlayer();
       } else {
         openPlayer();
