@@ -28,7 +28,7 @@
     }
 
     &.open {
-        transition:transform(0px,0px);
+        transform:translate(0px,0px);
         button#close-player {
             transform:rotate(0deg);
         }

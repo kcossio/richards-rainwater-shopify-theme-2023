@@ -198,7 +198,7 @@ EASING
   }
 }
 .home-audio-player.open {
-  transition: transform(0px, 0px);
+  transform: translate(0px, 0px);
 }
 .home-audio-player.open button#close-player {
   transform: rotate(0deg);
