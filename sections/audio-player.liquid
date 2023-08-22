@@ -49,7 +49,9 @@
     });
 
     window.revealPlayer = function() {      
-      jQuery('.home-audio-player').addClass('open');
+      if (Cookies.get('closed_player') != "yes") {
+        jQuery('.home-audio-player').addClass('open');
+      }
     }
     window.addEventListener("DOMContentLoaded", revealPlayer);
 
