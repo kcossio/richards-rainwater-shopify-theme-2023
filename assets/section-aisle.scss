@@ -205,6 +205,13 @@ section.aisle {
     .aisle-form-input-text-error {
         order:3;
         width:100%;
+        text-align:center;
+    }
+
+    .aisle-form-container-subscribed {
+        order:3;
+        width:100%;
+        text-align:center;
     }
 }
 .aisle-form-button-container {

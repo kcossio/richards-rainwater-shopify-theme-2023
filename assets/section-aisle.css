@@ -355,6 +355,12 @@ section.aisle .aisle-terms p a {
 .aisle-form-container .aisle-form-input-text-error {
   order: 3;
   width: 100%;
+  text-align: center;
+}
+.aisle-form-container .aisle-form-container-subscribed {
+  order: 3;
+  width: 100%;
+  text-align: center;
 }
 
 .aisle-form-button-container {
