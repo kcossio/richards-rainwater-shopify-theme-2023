@@ -48,17 +48,6 @@
       }
     });
 
-    jQuery( "#close-player" ).on( "click", function( event ) {
-      //event.preventDefault();
-      if (jQuery('.home-audio-player').hasClass('open')) {
-        closePlayer();
-      } else {
-        openPlayer();
-      }
-    });
-
-    // ---------------- Show Player on open ---------- //
-
     window.revealPlayer = function() {      
       jQuery('.home-audio-player').addClass('open');
     }
@@ -75,6 +64,19 @@
       jQuery('.home-audio-player').removeClass('open');
       
     }
+
+    jQuery( "#close-player" ).on( "click", function( event ) {
+      //event.preventDefault();
+      if (jQuery('.home-audio-player').hasClass('open')) {
+        closePlayer();
+      } else {
+        openPlayer();
+      }
+    });
+
+    // ---------------- Show Player on open ---------- //
+
+   
 
   </script>
 
