@@ -189,12 +189,14 @@ EASING
   border-bottom-left-radius: 0px;
   padding: 10px 32px 13px 29px;
   transform: translate(-77px, 0px);
+  transition: all 0.3s ease 0s;
 }
 @media (min-width: 768px) {
   .home-audio-player {
     height: 80px;
     width: 228px;
     padding: 23px 36px 23px 36px;
+    transform: translate(-77px, 0px);
   }
 }
 .home-audio-player.open {
