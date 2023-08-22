@@ -357,7 +357,7 @@ section.aisle .aisle-terms p a {
   width: 100%;
   text-align: center;
 }
-.aisle-form-container .aisle-form-container-subscribed {
+.aisle-form-container #aisle-form-container-subscribed {
   order: 3;
   width: 100%;
   text-align: center;
