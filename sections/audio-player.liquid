@@ -51,7 +51,7 @@
     window.revealPlayer = function() {      
       if (Cookies.get('closed_player') != "yes") {
         jQuery('.home-audio-player').addClass('open');
-        console.log('Audio player has not been closed yet in this session, so open it.')
+        //console.log('Audio player has not been closed yet in this session, so open it.')
       } else {
         console.log('Player has been closed before in this session, so we are not reopening it.')
       }
@@ -74,6 +74,7 @@
       //event.preventDefault();
       if (jQuery('.home-audio-player').hasClass('open')) {
         closePlayer();
+        Cookies.set('closed_player', 'yes');
       } else {
         openPlayer();
       }
