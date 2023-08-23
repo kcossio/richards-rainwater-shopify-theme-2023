@@ -60,6 +60,7 @@
     },
     "44f9cf02-1d1d-4ce8-8785-6494c4ac1d30": {
       "type": "logo-slider-basic",
+      "disabled": true,
       "settings": {
         "heading": "Find Richard’s near you."
       }
@@ -83,7 +84,7 @@
     "related-products": {
       "type": "related-products",
       "settings": {
-        "heading": "Shop More Merch!",
+        "heading": "Shop More Merch & Rainwater!",
         "heading_size": "h0",
         "products_to_show": 4,
         "columns_desktop": 4,
@@ -96,12 +97,31 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "8cb87318-1d61-4bd6-8563-54273e3dea77": {
+      "type": "banner-hero-image",
+      "blocks": {
+        "f59a0f37-c04d-400c-af21-8ab4795fdebe": {
+          "type": "product_item",
+          "settings": {
+            "product_name": "sip-the-sky-towel",
+            "hero_image": "shopify:\/\/shop_images\/Sip_the_Sky_Towel_-_PDP_Bottom_Image.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "f59a0f37-c04d-400c-af21-8ab4795fdebe"
+      ],
+      "disabled": true,
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
     "44f9cf02-1d1d-4ce8-8785-6494c4ac1d30",
     "judgeme_section_review_widget_0c20",
-    "related-products"
+    "related-products",
+    "8cb87318-1d61-4bd6-8563-54273e3dea77"
   ]
 }
