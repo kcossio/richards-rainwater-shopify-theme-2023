@@ -60,6 +60,7 @@
     },
     "44f9cf02-1d1d-4ce8-8785-6494c4ac1d30": {
       "type": "logo-slider-basic",
+      "disabled": true,
       "settings": {
         "heading": "Find Richard’s near you."
       }
