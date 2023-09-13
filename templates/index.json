@@ -57,7 +57,6 @@
     },
     "2489de8d-7bd0-4aec-b948-96164c90c4b4": {
       "type": "text-section",
-      "disabled": true,
       "blocks": {
         "89d9755d-cce4-4a04-9153-a4110024d171": {
           "type": "text",
@@ -69,12 +68,12 @@
       "block_order": [
         "89d9755d-cce4-4a04-9153-a4110024d171"
       ],
+      "disabled": true,
       "settings": {
       }
     },
     "6df38f0a-259a-412a-9fe1-3325f2fc3b85": {
       "type": "icon-grid",
-      "disabled": true,
       "blocks": {
         "0f31b490-408a-46fe-9484-dcf17b99c5c4": {
           "type": "icon_item",
@@ -103,6 +102,7 @@
         "02ac6bbc-117d-4867-ba15-4f12833269f9",
         "89c28a19-1756-478a-bcad-99c892bef4e5"
       ],
+      "disabled": true,
       "settings": {
       }
     },
@@ -164,7 +164,7 @@
             "call_to_action_button_label": "Learn more",
             "drop_message_1_of_3": "Makes bubbles that crackle and fizz for days after you pop it open.",
             "drop_message_2_of_3": "Naturally pure – we don’t need to put anything in it.  No chlorine, no fluoride, no nothing.",
-            "drop_message_3_of_3": "Cold-pressed & crisp-tasting – it plays real nice in a cocktail"
+            "drop_message_3_of_3": "Cold-pressured & crisp-tasting – it plays real nice in a cocktail"
           }
         }
       },
