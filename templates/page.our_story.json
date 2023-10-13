@@ -12,7 +12,6 @@
     },
     "versus": {
       "type": "richards-vs-competition",
-      "disabled": true,
       "blocks": {
         "2a802754-fcb0-477a-9da4-72522935c0ba": {
           "type": "richards_product",
@@ -59,6 +58,7 @@
         "35a3c4bf-d6ab-414f-be54-36f4cc602a26",
         "7bbd6c66-9f26-4d42-80a8-322246635b66"
       ],
+      "disabled": true,
       "settings": {
         "heading": "How Richard’s Compares"
       }
@@ -95,7 +95,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/rw-model-image-4.png",
             "heading": "Filter",
-            "description": "<p>Our closed loop filtration beats the highest drinking water standards and purifies with virtually <strong>zero water waste<\/strong>. Compare that to reverse osmosis, which flushes 30-50% of collected water during filtration.<\/p>"
+            "description": "<p>Our closed loop filtration beats the highest drinking water standards and purifies with virtually <strong>zero water waste<\/strong>. Compare that to reverse osmosis, which flushes over 2\/3 of collected water during filtration.<\/p>"
           }
         },
         "b8ef9699-9e69-4fad-93ed-e0a8a91de167": {
@@ -134,7 +134,7 @@
       ],
       "settings": {
         "heading": "Getting Rain from Cloud to Bottle",
-        "introduction": "<p>We’re accessing the sky’s infinite water supply and making sure we’re not wasting anything as we go. While others lose almost half their water during filtration, our closed-loop system loses virtually zero. <\/p><h3>That’s right, zilch, zip, nada.<\/h3><p>That means we can use water more wisely, hydrate more people with each drop, and put more water into the drinking water supply. No other drinking water does that — not mountain springs, not mineral water, not even tap.<\/p>"
+        "introduction": "<p>We’re accessing the sky’s infinite water supply and making sure we’re not wasting anything as we go. While others waste over 2\/3 of their water during filtration, our closed-loop system loses virtually zero. <\/p><h3>That’s right, zilch, zip, nada.<\/h3><p>That means we can use water more wisely, hydrate more people with each drop, and put more water into the drinking water supply. No other drinking water does that — not mountain springs, not mineral water, not even tap.<\/p>"
       }
     },
     "pullquote": {
@@ -223,7 +223,6 @@
     },
     "our-impact": {
       "type": "our-impact",
-      "disabled": true,
       "blocks": {
         "e6794eba-2234-498b-9329-ff6a2a58e0af": {
           "type": "impact_item",
@@ -255,6 +254,7 @@
         "5ad10781-badd-40c4-baf4-fefa253b681d",
         "aa067ea9-dfc4-4c81-8857-cb6800a3df48"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Our impact",
         "call_to_action_button_link": "#",
@@ -263,7 +263,6 @@
     },
     "timeline-slider": {
       "type": "timeline-slider",
-      "disabled": true,
       "blocks": {
         "cd30d0b7-51fc-4673-b4bd-90836e19f9ba": {
           "type": "timeline_slide",
@@ -322,6 +321,7 @@
         "904fbffc-be82-44ab-865b-5062e4745d07",
         "d3bb3bef-6b9d-4d83-8895-ce69842a63c5"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Born in the Texas Sky"
       }
